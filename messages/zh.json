@@ -1,0 +1,1306 @@
+{
+  "Metadata": {
+    "name": "ThumbAI",
+    "title": "ThumbAI - AI YouTube 封面生成器",
+    "description": "输入视频想法或 YouTube 链接，快速生成 3 张适合测试的封面方向。"
+  },
+  "Common": {
+    "premium": "付费文章",
+    "login": "登录",
+    "logout": "退出",
+    "signUp": "注册",
+    "language": "切换语言",
+    "mode": {
+      "label": "切换模式",
+      "light": "浅色模式",
+      "dark": "深色模式",
+      "system": "跟随系统"
+    },
+    "copy": "复制",
+    "save": "保存",
+    "saving": "保存中...",
+    "loading": "加载中...",
+    "cancel": "取消",
+    "logoutFailed": "退出失败",
+    "table": {
+      "totalRecords": "总共 {count} 条记录",
+      "noResults": "无结果",
+      "loading": "加载中...",
+      "columns": "列",
+      "rowsPerPage": "每页行数",
+      "page": "页",
+      "firstPage": "第一页",
+      "lastPage": "最后一页",
+      "nextPage": "下一页",
+      "previousPage": "上一页",
+      "ascending": "升序",
+      "descending": "降序",
+      "resetSorting": "重置",
+      "hideColumn": "隐藏",
+      "viewOptions": "视图",
+      "toggleColumns": "切换列显示",
+      "searchColumns": "搜索列...",
+      "noColumns": "未找到列",
+      "clearFilters": "清除筛选"
+    }
+  },
+  "PricingPage": {
+    "title": "选择适合封面工作流的套餐",
+    "description": "免费版先测试方向。Pro 和 Max 直接包含每月真实生成积分、更干净的导出流程和更快迭代。",
+    "subtitle": "选择适合你的套餐",
+    "monthly": "月付",
+    "yearly": "年付",
+    "PricingCard": {
+      "freePrice": "$0",
+      "perMonth": "/月",
+      "perYear": "/年",
+      "popular": "热门",
+      "currentPlan": "当前方案",
+      "yourCurrentPlan": "您的当前方案",
+      "getStartedForFree": "开始免费使用",
+      "getLifetimeAccess": "开启终身会员",
+      "getStarted": "开始免费试用",
+      "notAvailable": "不可用",
+      "daysTrial": "{days} 天试用期"
+    },
+    "CheckoutButton": {
+      "loading": "加载中...",
+      "checkoutFailed": "打开结账页面失败"
+    },
+    "hero": {
+      "eyebrow": "ThumbAI 价格",
+      "badgeFree": "可免费开始",
+      "badgeCredits": "套餐包含每月积分",
+      "badgeCancel": "不需要单独充值",
+      "primaryCta": "试试封面生成器",
+      "secondaryCta": "生成测试封面"
+    },
+    "plansEyebrow": "套餐",
+    "plansTitle": "订阅直接包含积分，简单清楚",
+    "plansDescription": "免费版用于探索，Pro 适合每周更新，Max 适合高频测试。积分会随套餐按月发放。",
+    "creditPacks": {
+      "eyebrow": "积分包",
+      "title": "这周需要更多真实生成？",
+      "description": "视频批量制作、赞助内容截止、频道冲刺时，可以单独购买积分。",
+      "cta": "管理积分",
+      "popular": "最划算",
+      "basic": {
+        "name": "Starter",
+        "credits": "20 积分",
+        "price": "$5",
+        "description": "适合测试钩子和少量真实封面方向。"
+      },
+      "standard": {
+        "name": "Creator",
+        "credits": "60 积分",
+        "price": "$12",
+        "description": "适合每周更新和 A/B 测试变体。"
+      },
+      "premium": {
+        "name": "Studio",
+        "credits": "150 积分",
+        "price": "$25",
+        "description": "适合批量生产、客户草稿和快速迭代。"
+      }
+    }
+  },
+  "PricePlans": {
+    "free": {
+      "name": "免费版",
+      "description": "适合先体验流程，测试少量封面想法。",
+      "features": {
+        "feature-1": "快速 mock 封面方向",
+        "feature-2": "每月 10 个真实生成积分",
+        "feature-3": "16:9 YouTube 预览",
+        "feature-4": "基础 A/B 测试标签"
+      },
+      "limits": {
+        "limit-1": "免费导出后续会带水印",
+        "limit-2": "标准生成队列",
+        "limit-3": "暂不包含品牌素材库"
+      }
+    },
+    "pro": {
+      "name": "Pro",
+      "description": "给每周稳定更新的创作者。",
+      "features": {
+        "feature-1": "每月 300 个真实生成积分",
+        "feature-2": "保存生成历史",
+        "feature-3": "参考图工作流",
+        "feature-4": "后续无水印导出",
+        "feature-5": "后续优先队列"
+      },
+      "limits": {
+        "limit-1": "单创作者工作区",
+        "limit-2": "不包含自定义模型训练"
+      }
+    },
+    "max": {
+      "name": "Max",
+      "description": "适合高频频道、批量制作和认真做 A/B 测试。",
+      "features": {
+        "feature-1": "每月 1,000 个真实生成积分",
+        "feature-2": "包含 Pro 全部功能",
+        "feature-3": "后续更高优先级队列",
+        "feature-4": "后续批量封面工作流",
+        "feature-5": "高级参考图工作流",
+        "feature-6": "后续创作者头像工具",
+        "feature-7": "优先体验新工具"
+      }
+    }
+  },
+  "CreditPackages": {
+    "basic": {
+      "name": "Starter",
+      "description": "20 次真实生成，适合快速测试。"
+    },
+    "standard": {
+      "name": "Creator",
+      "description": "60 个积分，适合每周更新。"
+    },
+    "premium": {
+      "name": "Studio",
+      "description": "150 个积分，适合批量制作。"
+    },
+    "enterprise": {
+      "name": "Scale",
+      "description": "500 个积分，适合高频封面测试。"
+    }
+  },
+  "NotFoundPage": {
+    "title": "404",
+    "message": "抱歉，您正在寻找的页面不存在",
+    "backToHome": "返回首页"
+  },
+  "ErrorPage": {
+    "title": "哎呀！出错了！",
+    "tryAgain": "重试",
+    "backToHome": "返回首页"
+  },
+  "AboutPage": {
+    "title": "关于我们",
+    "description": "MkSaaS 是一个使用最先进的技术栈构建的 AI SaaS 模板，它可以帮助你更快更好地构建你的 SaaS。如果你有任何问题，欢迎联系我。",
+    "authorName": "MkSaaS",
+    "authorBio": "最好的 AI SaaS 模板",
+    "introduction": "👋 你好，这里是 MkSaaS，一个使用最先进的技术栈构建的 AI SaaS 模板，它可以帮助你更快更好地构建你的 SaaS。如果你有任何问题，欢迎联系我。",
+    "talkWithMe": "联系我",
+    "followMe": "关注我"
+  },
+  "ChangelogPage": {
+    "title": "更新日志",
+    "description": "查看我们产品的最新动态",
+    "subtitle": "查看我们产品的最新动态"
+  },
+  "AiPage": {
+    "title": "AI 体验场",
+    "description": "基于 Vercel AI SDK 构建，支持 DeepSeek 和 OpenAI GPT 模型切换。"
+  },
+  "RoadmapPage": {
+    "title": "路线图",
+    "description": "探索我们的未来计划和即将推出的功能",
+    "subtitle": "探索我们的未来计划和即将推出的功能"
+  },
+  "ContactPage": {
+    "title": "联系我们",
+    "description": "我们帮助您找到合适的计划",
+    "subtitle": "我们帮助您找到合适的计划",
+    "form": {
+      "title": "联系我们",
+      "description": "如果您有任何问题或反馈，请随时联系我们的团队",
+      "name": "姓名",
+      "email": "邮箱",
+      "message": "消息",
+      "submit": "提交",
+      "submitting": "提交中...",
+      "success": "消息发送成功",
+      "fail": "消息发送失败",
+      "nameMinLength": "姓名必须至少包含 3 个字符",
+      "nameMaxLength": "姓名必须不超过 30 个字符",
+      "emailValidation": "请输入有效的邮箱地址",
+      "messageMinLength": "消息必须至少包含 10 个字符",
+      "messageMaxLength": "消息必须不超过 500 个字符"
+    }
+  },
+  "WaitlistPage": {
+    "title": "等待队列",
+    "description": "加入等待队列，及时获取最新消息和更新",
+    "subtitle": "加入等待队列，及时获取最新消息和更新",
+    "form": {
+      "title": "加入等待队列",
+      "description": "我们将在产品发布时及时通知您",
+      "email": "邮箱",
+      "subscribe": "加入等待队列",
+      "subscribing": "加入等待队列中...",
+      "success": "加入等待队列成功",
+      "fail": "加入等待队列失败",
+      "emailValidation": "请输入有效的邮箱地址"
+    }
+  },
+  "Newsletter": {
+    "title": "邮件列表",
+    "subtitle": "加入我们的社区",
+    "description": "订阅邮件列表，及时获取最新消息和更新",
+    "form": {
+      "email": "邮箱",
+      "subscribe": "订阅",
+      "subscribing": "订阅中...",
+      "success": "订阅成功",
+      "fail": "订阅失败",
+      "emailValidation": "请输入有效的邮箱地址"
+    }
+  },
+  "AuthPage": {
+    "login": {
+      "title": "登录",
+      "welcomeBack": "欢迎回来",
+      "email": "邮箱",
+      "password": "密码",
+      "signIn": "登录",
+      "signUpHint": "没有账号？注册",
+      "forgotPassword": "忘记密码？",
+      "signInWithGoogle": "使用 Google 登录",
+      "signInWithGitHub": "使用 GitHub 登录",
+      "showPassword": "显示密码",
+      "hidePassword": "隐藏密码",
+      "or": "或以社媒账号登录",
+      "emailRequired": "请输入邮箱",
+      "passwordRequired": "请输入密码",
+      "captchaInvalid": "验证码验证失败",
+      "captchaError": "验证码验证出错"
+    },
+    "register": {
+      "title": "注册",
+      "createAccount": "创建账号",
+      "name": "姓名",
+      "email": "邮箱",
+      "password": "密码",
+      "signUp": "注册",
+      "signInHint": "已经有账号？登录",
+      "checkEmail": "请检查您的邮箱",
+      "showPassword": "显示密码",
+      "hidePassword": "隐藏密码",
+      "nameRequired": "请输入姓名",
+      "emailRequired": "请输入邮箱",
+      "passwordRequired": "请输入密码",
+      "captchaInvalid": "验证码验证失败",
+      "captchaError": "验证码验证出错"
+    },
+    "forgotPassword": {
+      "title": "忘记密码",
+      "email": "邮箱",
+      "send": "发送重置密码链接",
+      "backToLogin": "返回登录",
+      "checkEmail": "请检查您的邮箱",
+      "emailRequired": "请输入邮箱"
+    },
+    "resetPassword": {
+      "title": "重置密码",
+      "password": "密码",
+      "reset": "重置密码",
+      "backToLogin": "返回登录",
+      "showPassword": "显示密码",
+      "hidePassword": "隐藏密码",
+      "minLength": "密码必须至少包含 8 个字符"
+    },
+    "error": {
+      "title": "哎呀！出错了！",
+      "tryAgain": "请重试",
+      "backToLogin": "返回登录",
+      "checkEmail": "请检查您的邮箱",
+      "codes": {
+        "verification_token_expired": "验证链接已失效，请重新获取。",
+        "verification_failed": "验证失败，请重新获取验证邮件。",
+        "email_not_verified": "请重新登录，系统会发送新的验证邮件。"
+      }
+    },
+    "common": {
+      "termsOfService": "服务条款",
+      "privacyPolicy": "隐私政策",
+      "byClickingContinue": "继续即表示您同意我们的 ",
+      "and": " 和 "
+    }
+  },
+  "BlogPage": {
+    "title": "博客",
+    "description": "来自我们的团队最新新闻和更新",
+    "subtitle": "来自我们的团队最新新闻和更新",
+    "author": "作者",
+    "categories": "分类",
+    "tableOfContents": "目录",
+    "readTime": "{minutes} 分钟阅读",
+    "all": "全部",
+    "noPostsFound": "没有找到文章",
+    "allPosts": "全部文章",
+    "morePosts": "更多文章"
+  },
+  "DocsPage": {
+    "toc": "目录",
+    "search": "搜索文档",
+    "lastUpdate": "最后更新于",
+    "searchNoResult": "没有结果",
+    "previousPage": "上一页",
+    "nextPage": "下一页",
+    "chooseLanguage": "选择语言",
+    "title": "MkSaaS文档",
+    "homepage": "首页",
+    "PageActions": {
+      "copyMarkdown": "复制 Markdown",
+      "open": "打开",
+      "openInChatGPT": "在 ChatGPT 中打开",
+      "openInClaude": "在 Claude 中打开",
+      "queryHint": "阅读 {url}，我想根据它的内容进行提问。"
+    }
+  },
+  "PremiumContent": {
+    "title": "解锁付费内容",
+    "description": "订阅我们的付费计划，访问所有付费内容和独家内容。",
+    "upgradeCta": "立即升级",
+    "benefit1": "所有内容",
+    "benefit2": "独家内容",
+    "benefit3": "随时取消",
+    "signIn": "登录",
+    "loginRequired": "登录以继续阅读",
+    "loginDescription": "这是一篇付费内容，请登录您的账户以访问完整内容。",
+    "checkingAccess": "检查阅读权限...",
+    "loadingContent": "加载完整内容..."
+  },
+  "Marketing": {
+    "navbar": {
+      "features": {
+        "title": "功能"
+      },
+      "pricing": {
+        "title": "价格"
+      },
+      "blog": {
+        "title": "博客"
+      },
+      "docs": {
+        "title": "文档"
+      },
+      "pages": {
+        "title": "内置页面",
+        "items": {
+          "about": {
+            "title": "关于我们",
+            "description": "了解更多关于我们的公司、使命和价值观"
+          },
+          "contact": {
+            "title": "联系我们",
+            "description": "与我们的团队联系，以获取支持或咨询"
+          },
+          "waitlist": {
+            "title": "邮件列表",
+            "description": "加入我们的邮件列表，获取最新消息和更新"
+          },
+          "changelog": {
+            "title": "更新日志",
+            "description": "查看我们产品的更新历史，查看最新动态"
+          },
+          "ai": {
+            "title": "AI 演示",
+            "description": "体验 DeepSeek 和 OpenAI GPT 模型支持的 AI 功能"
+          },
+          "roadmap": {
+            "title": "路线图",
+            "description": "探索我们的未来计划和即将推出的功能"
+          },
+          "cookiePolicy": {
+            "title": "Cookie 政策",
+            "description": "关于我们如何在网站上使用 Cookie 的信息"
+          },
+          "privacyPolicy": {
+            "title": "隐私政策",
+            "description": "关于我们将如何保护和处理您在网站上的数据"
+          },
+          "termsOfService": {
+            "title": "服务条款",
+            "description": "关于您与我们公司之间的法律协议和条款"
+          }
+        }
+      },
+      "thumbnailMaker": {
+        "title": "封面生成"
+      },
+      "inspiration": {
+        "title": "灵感案例"
+      }
+    },
+    "footer": {
+      "tagline": "为 YouTube 创作者打造的封面生成工具。先把点击理由讲清楚，再把画面做漂亮。",
+      "product": {
+        "title": "产品",
+        "items": {
+          "thumbnailMaker": "封面生成",
+          "inspiration": "灵感案例",
+          "pricing": "价格"
+        }
+      },
+      "resources": {
+        "title": "资源",
+        "items": {
+          "blog": "博客",
+          "contact": "联系"
+        }
+      },
+      "legal": {
+        "title": "法律",
+        "items": {
+          "cookiePolicy": "Cookie 政策",
+          "privacyPolicy": "隐私政策",
+          "termsOfService": "服务条款"
+        }
+      }
+    },
+    "avatar": {
+      "dashboard": "工作台",
+      "billing": "账单",
+      "credits": "积分",
+      "settings": "设置"
+    }
+  },
+  "Dashboard": {
+    "dashboard": {
+      "title": "仪表盘"
+    },
+    "admin": {
+      "title": "系统管理",
+      "users": {
+        "title": "用户管理",
+        "fakeData": "注：只为演示功能，数据为假数据，封禁功能不可用",
+        "error": "获取用户失败",
+        "search": "搜索用户...",
+        "noResults": "没有找到用户",
+        "columns": {
+          "columns": "显示列",
+          "name": "姓名",
+          "email": "邮箱",
+          "role": "角色",
+          "createdAt": "创建时间",
+          "customerId": "客户ID",
+          "status": "状态",
+          "banReason": "封禁原因",
+          "banExpires": "封禁到期时间"
+        },
+        "admin": "管理员",
+        "user": "用户",
+        "email": {
+          "verified": "邮箱已验证",
+          "unverified": "邮箱未验证"
+        },
+        "emailCopied": "邮箱已复制到剪贴板",
+        "banned": "账号被封禁",
+        "active": "账号正常",
+        "inactive": "账号封禁",
+        "clearSearch": "清除搜索",
+        "joined": "加入时间",
+        "updated": "更新时间",
+        "ban": {
+          "reason": "封禁原因",
+          "reasonPlaceholder": "请输入封禁该用户的原因",
+          "defaultReason": "垃圾信息",
+          "never": "永不解禁",
+          "expires": "封禁到期时间",
+          "selectDate": "选择日期",
+          "button": "封禁用户",
+          "success": "用户已被封禁",
+          "error": "封禁用户失败"
+        },
+        "unban": {
+          "button": "解除封禁",
+          "success": "用户已被解除封禁",
+          "error": "解除封禁失败"
+        },
+        "close": "关闭"
+      }
+    },
+    "settings": {
+      "title": "设置",
+      "profile": {
+        "title": "账户",
+        "description": "管理您的账户信息",
+        "avatar": {
+          "title": "头像",
+          "description": "点击上传按钮上传自定义头像",
+          "recommendation": "头像是可选的，但强烈推荐设置",
+          "uploading": "上传中...",
+          "uploadAvatar": "上传头像",
+          "success": "头像更新成功",
+          "fail": "更新头像失败"
+        },
+        "name": {
+          "title": "名字",
+          "description": "请输入您的名字",
+          "placeholder": "名字",
+          "minLength": "请至少使用 3 个字符",
+          "maxLength": "请最多使用 30 个字符",
+          "hint": "请使用 3-30 个字符",
+          "success": "名字更新成功",
+          "fail": "更新名字失败",
+          "saving": "保存中...",
+          "save": "保存"
+        }
+      },
+      "billing": {
+        "title": "账单",
+        "description": "管理您的订阅和账单信息",
+        "status": {
+          "active": "已激活",
+          "trial": "试用中",
+          "free": "免费版",
+          "lifetime": "终身版"
+        },
+        "interval": {
+          "month": "月",
+          "year": "年",
+          "oneTime": "一次性"
+        },
+        "currentPlan": {
+          "title": "当前方案",
+          "description": "您当前的方案详情",
+          "noPlan": "您没有激活的方案"
+        },
+        "CustomerPortalButton": {
+          "loading": "加载中...",
+          "createCustomerPortalFailed": "打开Stripe客户界面失败"
+        },
+        "price": "价格：",
+        "periodStartDate": "周期开始日期：",
+        "periodEndDate": "周期结束日期：",
+        "trialEnds": "试用结束日期：",
+        "freePlanMessage": "您当前使用的是功能有限的免费方案",
+        "lifetimeMessage": "您拥有所有高级功能的终身使用权限",
+        "manageSubscription": "管理订阅和账单",
+        "manageBilling": "管理账单",
+        "upgradePlan": "升级方案",
+        "retry": "重试",
+        "errorMessage": "获取数据失败",
+        "paymentSuccess": "支付成功"
+      },
+      "payment": {
+        "processing": {
+          "title": "正在处理支付",
+          "description": "请稍候，我们正在确认您的支付..."
+        },
+        "success": {
+          "title": "支付成功",
+          "description": "页面自动跳转中..."
+        },
+        "failed": {
+          "title": "支付失败",
+          "description": "您的支付出现了问题"
+        },
+        "timeout": {
+          "title": "处理超时",
+          "description": "支付处理超时，请你稍后重试"
+        },
+        "retry": "重试"
+      },
+      "credits": {
+        "title": "生成积分",
+        "description": "查看余额，并追踪真实 AI 生成的消耗记录。",
+        "tabs": {
+          "balance": "积分余额",
+          "transactions": "交易记录"
+        },
+        "balance": {
+          "title": "积分余额",
+          "description": "用于真实 AI 封面生成",
+          "credits": "积分",
+          "creditsDescription": "你当前有 {credits} 个积分",
+          "creditsExpired": "积分已过期",
+          "creditsAdded": "积分已添加到您的账户",
+          "viewTransactions": "查看积分记录",
+          "retry": "重试",
+          "expiringCredits": "{credits} 积分将在 {days} 天内过期"
+        },
+        "packages": {
+          "title": "套餐积分",
+          "description": "ThumbAI 的积分来自你的月度套餐。MVP 阶段暂不单独出售积分包。",
+          "purchase": "购买积分",
+          "processing": "处理中...",
+          "popular": "推荐",
+          "completePurchase": "请支付订单",
+          "failedToFetchCredits": "获取积分失败",
+          "failedToCreatePaymentIntent": "创建付款意向失败",
+          "failedToInitiatePayment": "发起付款失败",
+          "cancel": "取消",
+          "purchaseFailed": "购买积分失败",
+          "checkoutFailed": "创建支付会话失败",
+          "loading": "加载中...",
+          "pay": "支付"
+        },
+        "transactions": {
+          "title": "积分记录",
+          "error": "获取积分交易记录失败",
+          "search": "搜索积分记录...",
+          "clearSearch": "清除搜索",
+          "paymentIdCopied": "支付ID已复制到剪贴板",
+          "noResults": "没有找到结果",
+          "columns": {
+            "columns": "列",
+            "id": "ID",
+            "type": "类型",
+            "description": "描述",
+            "amount": "金额",
+            "remainingAmount": "剩余金额",
+            "paymentId": "支付编号",
+            "expirationDate": "过期日期",
+            "expirationDateProcessedAt": "过期处理时间",
+            "createdAt": "创建时间",
+            "updatedAt": "更新时间"
+          },
+          "types": {
+            "MONTHLY_REFRESH": "每月赠送",
+            "REGISTER_GIFT": "注册赠送",
+            "PURCHASE": "购买积分",
+            "USAGE": "使用积分",
+            "EXPIRE": "过期积分",
+            "SUBSCRIPTION_RENEWAL": "订阅月度积分",
+            "LIFETIME_MONTHLY": "终身月度积分"
+          },
+          "detailViewer": {
+            "title": "积分交易详情",
+            "close": "关闭"
+          },
+          "expired": "已过期",
+          "never": "永不过期"
+        },
+        "hero": {
+          "eyebrow": "积分怎么用",
+          "title": "积分让真实 AI 生成更可控。",
+          "description": "Mock 预览保持轻量免费。只有真实 Replicate 生成成功，并且图片保存后，才会消耗积分。",
+          "points": {
+            "0": {
+              "title": "真实生成 1 次 = 1 积分",
+              "description": "一次真实生成会返回 3 个封面方向。"
+            },
+            "1": {
+              "title": "Mock 预览不扣积分",
+              "description": "先用 mock 把 brief 调准，再消耗积分。"
+            },
+            "2": {
+              "title": "需要时再加量",
+              "description": "发布周、赞助视频、批量制作时再升级套餐。"
+            }
+          }
+        }
+      },
+      "notification": {
+        "title": "通知",
+        "description": "管理您的通知设置",
+        "newsletter": {
+          "title": "订阅",
+          "description": "管理您的邮件列表订阅偏好",
+          "label": "订阅邮件列表",
+          "hint": "您可以随时更改订阅偏好",
+          "emailRequired": "订阅邮件列表需要邮箱",
+          "subscribeSuccess": "成功订阅邮件列表",
+          "subscribeFail": "订阅邮件列表失败",
+          "unsubscribeSuccess": "成功取消订阅邮件列表",
+          "unsubscribeFail": "取消订阅邮件列表失败",
+          "error": "更新订阅时发生错误"
+        }
+      },
+      "security": {
+        "title": "安全",
+        "description": "管理您的安全设置",
+        "updatePassword": {
+          "title": "修改密码",
+          "description": "输入您的当前密码和新密码",
+          "currentPassword": "当前密码",
+          "currentRequired": "当前密码是必填项",
+          "newPassword": "新密码",
+          "newMinLength": "密码必须至少包含 8 个字符",
+          "hint": "请至少使用 8 个字符作为密码",
+          "showPassword": "显示密码",
+          "hidePassword": "隐藏密码",
+          "success": "密码更新成功",
+          "fail": "更新密码失败",
+          "saving": "保存中...",
+          "save": "保存"
+        },
+        "resetPassword": {
+          "title": "重置密码",
+          "description": "重置密码以启用邮箱登录",
+          "info": "重置密码将允许您除了社交登录方式外，还可以使用邮箱和密码登录，您将收到一封包含重置密码链接的电子邮件",
+          "button": "重置密码"
+        },
+        "deleteAccount": {
+          "title": "删除账号",
+          "description": "永久删除您的账号和所有内容",
+          "warning": "此操作是不可逆的，请谨慎操作",
+          "button": "删除账号",
+          "confirmTitle": "删除账号",
+          "confirmDescription": "您确定要删除您的账号吗？此操作无法撤销",
+          "confirm": "删除",
+          "cancel": "取消",
+          "deleting": "删除中...",
+          "success": "账号删除成功",
+          "fail": "删除账号失败"
+        }
+      },
+      "apiKeys": {
+        "title": "API 密钥",
+        "description": "管理您的 API 密钥以进行身份验证",
+        "createButton": "创建 API 密钥",
+        "createDialogTitle": "创建新的 API 密钥",
+        "createDialogDescription": "为您的 API 密钥命名以便后续识别",
+        "keyNameLabel": "密钥名称",
+        "keyNamePlaceholder": "请输入 API 密钥的名称",
+        "cancel": "取消",
+        "create": "创建",
+        "creating": "创建中...",
+        "noResults": "未找到 API 密钥",
+        "createSuccess": "API 密钥创建成功",
+        "createError": "创建 API 密钥失败",
+        "deleteSuccess": "API 密钥已删除",
+        "deleteError": "删除 API 密钥失败",
+        "never": "永不过期",
+        "delete": "删除",
+        "done": "完成",
+        "newKeyDialogTitle": "您的新 API 密钥",
+        "newKeyDialogDescription": "请立即复制并保存此密钥，您将无法再次查看它！",
+        "columns": {
+          "name": "名称",
+          "key": "密钥",
+          "createdAt": "创建时间",
+          "expiresAt": "过期时间",
+          "actions": "操作"
+        }
+      }
+    },
+    "upgrade": {
+      "title": "升级",
+      "description": "升级到Pro以获取所有功能",
+      "button": "升级"
+    }
+  },
+  "Mail": {
+    "common": {
+      "team": "{name} 团队",
+      "copyright": "©️ {year} 版权所有。"
+    },
+    "verifyEmail": {
+      "title": "你好，{name}。",
+      "body": "请点击下面的链接验证您的邮箱地址。",
+      "confirmEmail": "确认邮箱",
+      "subject": "验证您的邮箱"
+    },
+    "forgotPassword": {
+      "title": "你好，{name}。",
+      "body": "请点击下面的链接重置您的密码。",
+      "resetPassword": "重置密码",
+      "subject": "重置您的密码"
+    },
+    "subscribeNewsletter": {
+      "body": "感谢您订阅我们的邮件列表，我们将为您提供最新的新闻和更新。",
+      "subject": "感谢您的订阅"
+    },
+    "contactMessage": {
+      "name": "姓名: {name}",
+      "email": "邮箱: {email}",
+      "message": "消息: {message}",
+      "subject": "来自网站的联系消息"
+    }
+  },
+  "HomePage": {
+    "title": "MkSaaS",
+    "description": "使用 MkSaaS 在几天内轻松构建您的 AI SaaS 产品",
+    "hero": {
+      "title": "使用 MkSaaS 轻松构建您的 AI SaaS 产品",
+      "description": "MkSaaS 是构建 AI SaaS 的最佳模板，内置 AI、身份验证、全球支付、博客、文档、邮件订阅、SEO、多彩主题、丰富组件等。",
+      "introduction": "介绍 MkSaaS 模板",
+      "primary": "开始使用",
+      "secondary": "查看演示"
+    },
+    "logocloud": {
+      "title": "您最爱公司都是我们的合作伙伴"
+    },
+    "integration": {
+      "title": "集成",
+      "subtitle": "与您最喜欢的工具集成",
+      "description": "无缝连接流行的平台和服务，以增强您的工作流程。",
+      "learnMore": "了解更多",
+      "items": {
+        "item-1": {
+          "title": "Google Gemini",
+          "description": "这里是Google Gemini的描述，详细介绍Google Gemini的功能和优势。"
+        },
+        "item-2": {
+          "title": "Replit",
+          "description": "这里是Replit的描述，详细介绍Replit的功能和优势。"
+        },
+        "item-3": {
+          "title": "MagicUI",
+          "description": "这里是MagicUI的描述，详细介绍MagicUI的功能和优势。"
+        },
+        "item-4": {
+          "title": "VSCodium",
+          "description": "这里是VSCodium的描述，详细介绍VSCodium的功能和优势。"
+        },
+        "item-5": {
+          "title": "MediaWiki",
+          "description": "这里是MediaWiki的描述，详细介绍MediaWiki的功能和优势。"
+        },
+        "item-6": {
+          "title": "Google PaLM",
+          "description": "这里是Google PaLM的描述，详细介绍Google PaLM的功能和优势。"
+        }
+      }
+    },
+    "integration2": {
+      "title": "与您最喜欢的工具集成",
+      "description": "无缝连接流行的平台和服务，以增强您的工作流程。",
+      "primaryButton": "开始使用",
+      "secondaryButton": "查看演示"
+    },
+    "features": {
+      "title": "功能",
+      "subtitle": "您的 SaaS 产品功能",
+      "description": "请在这里介绍您的 SaaS 产品的特色功能的信息",
+      "items": {
+        "item-1": {
+          "title": "产品特色功能一",
+          "description": "请在这里详细描述您的产品特色功能一，尽可能详细，使其更吸引用户，提高落地页的转化率"
+        },
+        "item-2": {
+          "title": "产品特色功能二",
+          "description": "请在这里详细描述您的产品特色功能二，尽可能详细，使其更吸引用户，提高落地页的转化率"
+        },
+        "item-3": {
+          "title": "产品特色功能三",
+          "description": "请在这里详细描述您的产品特色功能三，尽可能详细，使其更吸引用户，提高落地页的转化率"
+        },
+        "item-4": {
+          "title": "产品特色功能四",
+          "description": "请在这里详细描述您的产品特色功能四，尽可能详细，使其更吸引用户，提高落地页的转化率"
+        }
+      }
+    },
+    "features2": {
+      "title": "功能2",
+      "subtitle": "您的 SaaS 产品功能",
+      "description": "请在这里介绍您的 SaaS 产品的特色功能的信息",
+      "feature-1": "特色功能特点一",
+      "feature-2": "特色功能特点二",
+      "feature-3": "特色功能特点三",
+      "feature-4": "特色功能特点四"
+    },
+    "features3": {
+      "title": "功能3",
+      "subtitle": "您的 SaaS 产品功能",
+      "description": "请在这里介绍您的 SaaS 产品的特色功能的信息",
+      "items": {
+        "item-1": {
+          "title": "产品特色功能一",
+          "description": "请在这里详细描述您的产品特色功能一，尽可能详细，使其更吸引用户"
+        },
+        "item-2": {
+          "title": "产品特色功能二",
+          "description": "请在这里详细描述您的产品特色功能二，尽可能详细，使其更吸引用户"
+        },
+        "item-3": {
+          "title": "产品特色功能三",
+          "description": "请在这里详细描述您的产品特色功能三，尽可能详细，使其更吸引用户"
+        },
+        "item-4": {
+          "title": "产品特色功能四",
+          "description": "请在这里详细描述您的产品特色功能四，尽可能详细，使其更吸引用户"
+        },
+        "item-5": {
+          "title": "产品特色功能五",
+          "description": "请在这里详细描述您的产品特色功能五，尽可能详细，使其更吸引用户"
+        },
+        "item-6": {
+          "title": "产品特色功能六",
+          "description": "请在这里详细描述您的产品特色功能六，尽可能详细，使其更吸引用户"
+        }
+      }
+    },
+    "pricing": {
+      "title": "价格",
+      "subtitle": "简单透明",
+      "description": "先免费试方向。需要高清、无水印和更高额度时，再升级 Pro。"
+    },
+    "faqs": {
+      "title": "常见问题",
+      "subtitle": "如果您有任何问题，请随时联系我们",
+      "items": {
+        "item-1": {
+          "question": "你们提供免费试用吗？",
+          "answer": "是的，我们提供7天的免费试用。"
+        },
+        "item-2": {
+          "question": "如何取消我的订阅？",
+          "answer": "您可以通过访问账单页面取消您的订阅。"
+        },
+        "item-3": {
+          "question": "我可以更改我的计划吗？",
+          "answer": "是的，您可以随时通过访问账单页面更改您的计划。"
+        },
+        "item-4": {
+          "question": "你们的退款政策是什么？",
+          "answer": "是的，我们提供30天的退款保证。"
+        },
+        "item-5": {
+          "question": "找不到您想问的问题？",
+          "answer": "请联系我们的客户支持团队，邮箱地址：support@mksaas.com"
+        }
+      }
+    },
+    "testimonials": {
+      "title": "客户评价",
+      "subtitle": "我们的客户对我们的评价",
+      "items": {
+        "item-1": {
+          "name": "Jonathan Yombo",
+          "role": "软件工程师",
+          "image": "https://randomuser.me/api/portraits/men/1.jpg",
+          "quote": "MkSaaS 非常出色且实用，无需费心，一个真正的金矿。"
+        },
+        "item-2": {
+          "name": "Yves Kalume",
+          "role": "Android GDE",
+          "image": "https://randomuser.me/api/portraits/men/6.jpg",
+          "quote": "没有网页设计经验，我只需几分钟就可以用 Tailwindcss 重新设计我的整个网站，感谢 MkSaaS。"
+        },
+        "item-3": {
+          "name": "Yucel Faruksahan",
+          "role": "Tailkits 创建者",
+          "image": "https://randomuser.me/api/portraits/men/7.jpg",
+          "quote": "MkSaaS 模板做得很好，这是我见过最好的 SaaS 模板，没有之一 :)"
+        },
+        "item-4": {
+          "name": "Anonymous author",
+          "role": "产品经理",
+          "image": "https://randomuser.me/api/portraits/men/8.jpg",
+          "quote": "我不熟悉 Tailwind，我想自己做一些页面，我在网上搜索了很多英雄页面和区块。然而，大多数都没有给我一个清晰的想法，或者需要一些 HTML/CSS 编码背景来从原始文件中做一些更改，或者太贵了。我下载了其中一个 MkSaaS 模板，它非常容易理解，你可以在开始时修改代码/区块以完美地适应你的页面目的。"
+        },
+        "item-5": {
+          "name": "Shekinah Tshiokufila",
+          "role": "高级软件工程师",
+          "image": "https://randomuser.me/api/portraits/men/4.jpg",
+          "quote": "MkSaaS 正在重新定义网页设计标准，这些区块为那些喜欢美丽但可能缺乏时间实现它的人提供了简单且高效的方式。我只能推荐这个不可思议的奇迹。"
+        },
+        "item-6": {
+          "name": "Oketa Fred",
+          "role": "全栈开发工程师",
+          "image": "https://randomuser.me/api/portraits/men/2.jpg",
+          "quote": "我绝对喜欢 MkSaaS！这些组件区块设计精美且易于使用，使创建一个出色的网站变得轻而易举。"
+        },
+        "item-7": {
+          "name": "Zeki",
+          "role": "ChatExtend 创始人",
+          "image": "https://randomuser.me/api/portraits/men/5.jpg",
+          "quote": "使用 MkSaaS 就像解锁了一个秘密的设计超能力。它是简单性和多功能性的完美融合，使我们能够创建既令人惊叹又用户友好的界面。"
+        },
+        "item-8": {
+          "name": "Joseph Kitheka",
+          "role": "全栈开发工程师",
+          "image": "https://randomuser.me/api/portraits/men/9.jpg",
+          "quote": "MkSaaS 改变了我的网页开发方式。他们的 UI 组件、区块和模板极大地加速了我的工作流程。定制每个方面的灵活性使我能够创建独特的用户体验。MkSaaS 是现代网页开发的游戏规则改变者！"
+        },
+        "item-9": {
+          "name": "Khatab Wedaa",
+          "role": "MerakiUI 创建者",
+          "image": "https://randomuser.me/api/portraits/men/10.jpg",
+          "quote": "MkSaaS 是一个优雅、干净且响应式的 SaaS 模板，它非常有助于快速开始您的项目。"
+        },
+        "item-10": {
+          "name": "Rodrigo Aguilar",
+          "role": "TailwindAwesome 创建者",
+          "image": "https://randomuser.me/api/portraits/men/11.jpg",
+          "quote": "我爱 MkSaaS ❤️。这些组件区块结构良好，易于使用，设计精美。它使创建一个出色的网站变得非常容易。"
+        },
+        "item-11": {
+          "name": "Eric Ampire",
+          "role": "Google 开发者专家",
+          "image": "https://randomuser.me/api/portraits/men/12.jpg",
+          "quote": "MkSaaS 模板是任何想要创建一个美丽且功能齐全的网站但没有网页设计经验的人的完美解决方案。这些模板易于使用，可定制，并且响应迅速。我强烈推荐 MkSaaS 模板给任何想要创建网站的人。"
+        },
+        "item-12": {
+          "name": "Roland Tubonge",
+          "role": "软件工程师",
+          "image": "https://randomuser.me/api/portraits/men/13.jpg",
+          "quote": "MkSaaS 设计得如此出色，即使没有网页设计经验，您也可以创造奇迹。让自己被吸引！"
+        }
+      }
+    },
+    "stats": {
+      "title": "统计",
+      "subtitle": "MkSaaS 相关的数字",
+      "description": "MkSaaS 可让您在几天内轻松构建您的 AI SaaS",
+      "items": {
+        "item-1": {
+          "title": "GitHub 上的星星"
+        },
+        "item-2": {
+          "title": "使用 MkSaaS 的活跃用户"
+        },
+        "item-3": {
+          "title": "使用 MkSaaS 启动的应用"
+        }
+      }
+    },
+    "calltoaction": {
+      "title": "开始构建",
+      "description": "MkSaaS 可让您在几天内轻松构建您的 AI SaaS",
+      "primaryButton": "开始使用",
+      "secondaryButton": "查看演示"
+    }
+  },
+  "ThumbAIHome": {
+    "copy": {
+      "hero": {
+        "badge": "AI 封面生成器",
+        "title": "ThumbAI",
+        "description": "几秒钟内创建让人想点的 YouTube 封面。写下封面文案，可选上传一张参考图，先预览 3 个适合 A/B 测试的概念。",
+        "proof": ["全球免费体验", "Beta 无限试方向", "无需登录试用"],
+        "ideaLabel": "封面文案 / 视频钩子",
+        "ideaPlaceholder": "输入封面大字、标题想法，或观众必须点开的那个理由...",
+        "generate": "生成",
+        "generating": "生成中",
+        "generationError": "暂时无法生成 mock 封面，请重试。",
+        "workbenchQuestion": "需要视频、头像、脚本或链接分析？",
+        "workbenchLink": "打开完整工作台",
+        "fallbackPrompt": "我的 30 天 AI 实验",
+        "resultEyebrow": "A/B 方向",
+        "scoreLabel": "分数",
+        "useExample": "使用示例"
+      },
+      "uploads": {
+        "reference": {
+          "label": "参考封面",
+          "description": "加一张频道风格图",
+          "uploading": "参考图上传中",
+          "uploaded": "参考图已上传",
+          "failed": "上传失败",
+          "retry": "重试上传",
+          "remove": "移除参考图"
+        },
+        "unsupported": "请使用 JPG、PNG 或 WebP 图片",
+        "tooLarge": "图片不能超过 4MB",
+        "referenceApplied": "已参考频道风格"
+      },
+      "options": {
+        "styles": {
+          "bigText": "大字冲击",
+          "faceReaction": "表情反应",
+          "beforeAfter": "前后对比",
+          "shockReveal": "反转揭秘",
+          "stepByStep": "步骤清单",
+          "proofShot": "证据截图"
+        },
+        "layouts": {
+          "bigFace": "大脸特写",
+          "split": "分屏构图",
+          "closeUp": "近景主体",
+          "beforeAfter": "前后对比",
+          "cleanSpace": "留白文字区"
+        }
+      },
+      "variants": {
+        "curiosity": "好奇钩子",
+        "face": "人脸聚焦",
+        "bold": "大字标题"
+      },
+      "inspiration": {
+        "eyebrow": "灵感案例",
+        "title": "点一下，就能换一种封面思路",
+        "description": "这些不是普通模板，而是常见 YouTube 点击动机的起点。首页保持轻量，头像、视频和脚本放到工作台。",
+        "cards": [
+          {
+            "title": "反转挑战",
+            "type": "真人频道",
+            "hook": "太离谱"
+          },
+          {
+            "title": "效率实验",
+            "type": "成长频道",
+            "hook": "30 天后"
+          },
+          {
+            "title": "桌面改造",
+            "type": "科技频道",
+            "hook": "50 元 setup"
+          },
+          {
+            "title": "食谱测试",
+            "type": "美食频道",
+            "hook": "少一个步骤"
+          }
+        ]
+      },
+      "features": {
+        "eyebrow": "第一轮迁移重点",
+        "title": "先把首页做成一个真的能用的入口",
+        "items": [
+          {
+            "title": "默认 3 个方向",
+            "description": "每次输出 3 张封面方向，分别覆盖好奇、表情和大字标题，方便做 A/B 判断。"
+          },
+          {
+            "title": "语言跟生成分离",
+            "description": "界面语言可以用中文或英文，封面文字语言单独选择，后续更适合全球用户。"
+          },
+          {
+            "title": "优先服务 YouTube",
+            "description": "16:9 是主封面尺寸，Shorts 和社媒比例保留为后续工作台能力。"
+          }
+        ]
+      }
+    }
+  },
+  "ThumbAIWorkbench": {
+    "meta": {
+      "title": "YouTube 封面生成工作台",
+      "description": "用 ThumbAI 整理视频想法、参考封面、创作者头像、视频和脚本，先生成 3 个适合 A/B 测试的封面方向。"
+    },
+    "copy": {
+      "hero": {
+        "eyebrow": "完整封面工作台",
+        "title": "把封面策划一次性说清楚",
+        "description": "放入视频想法、链接、参考封面、创作者头像、视频或脚本。ThumbAI 会先把这些素材整理成 3 个可对比的封面方向。",
+        "generate": "生成方向",
+        "generating": "正在整理方向",
+        "ideaLabel": "视频想法或钩子",
+        "ideaPlaceholder": "例如：我用最便宜的 AI 桌面 setup 坚持了 30 天...",
+        "urlLabel": "YouTube 或素材链接",
+        "urlPlaceholder": "https://youtube.com/watch?v=...",
+        "outputLabel": "输出",
+        "strategyLabel": "封面策略",
+        "layoutLabel": "画面构图",
+        "assetsTitle": "可选创意素材",
+        "assetsDescription": "有什么就传什么。素材越完整，真实 AI 生成的封面方向越稳。",
+        "selected": "已选素材",
+        "empty": "暂未选择素材",
+        "mockNotice": "登录后使用真实 AI，首页预览保持轻量",
+        "fallbackPrompt": "我用最便宜的 AI 桌面 setup 坚持了 30 天",
+        "useExample": "使用示例"
+      },
+      "uploads": {
+        "reference": {
+          "title": "参考封面",
+          "description": "上传一张你想借鉴的封面风格。",
+          "cta": "选择图片"
+        },
+        "portrait": {
+          "title": "创作者头像",
+          "description": "加入人脸照，后续用来做人像聚焦封面。",
+          "cta": "选择头像"
+        },
+        "video": {
+          "title": "视频文件",
+          "description": "后续可以从视频帧里找封面灵感。",
+          "cta": "选择视频"
+        },
+        "script": {
+          "title": "脚本文件",
+          "description": "上传脚本或笔记，让标题钩子更贴合内容。",
+          "cta": "选择脚本"
+        }
+      },
+      "strategies": {
+        "curiosity": "好奇钩子",
+        "face": "表情反应",
+        "boldText": "大字标题",
+        "beforeAfter": "前后对比",
+        "proof": "证据截图"
+      },
+      "layouts": {
+        "bigFace": "大脸特写",
+        "split": "分屏构图",
+        "cleanText": "留白文字区",
+        "productShot": "产品近景",
+        "timeline": "时间线揭示"
+      },
+      "results": {
+        "title": "适合 A/B 测试的预览结果",
+        "description": "生成完成前会先显示预览卡片。登录后的生成会替换为真实 AI 图片。",
+        "score": "分数",
+        "variants": {
+          "hook": "好奇优先",
+          "face": "人脸聚焦",
+          "text": "大字主导"
+        },
+        "checks": ["文字可读", "主体清晰", "移动端安全"],
+        "liveTitle": "适合 A/B 测试的 AI 结果",
+        "liveDescription": "通过 Replicate 生成，并保存到存储里的真实 AI 图片。",
+        "download": "下载",
+        "openImage": "打开原图",
+        "exportCover": "导出封面 PNG"
+      },
+      "side": {
+        "title": "为什么要单独做工作台",
+        "items": [
+          "首页保持轻量，适合第一次来的用户立刻试。",
+          "重型素材放在这里，创作者可以做更完整的封面简报。",
+          "这个路由后续可以直接接 SEO、登录额度、历史记录和 Pro 下载。"
+        ]
+      },
+      "assetActions": {
+        "remove": "移除",
+        "ready": "已准备好进入下一步 AI 流程",
+        "reading": "正在读取脚本预览..."
+      },
+      "mode": {
+        "simple": "简单模式",
+        "pro": "Pro Brief",
+        "simpleTitle": "先留下大多数创作者真的会用的输入。",
+        "simpleDescription": "用来快速找方向：标题想法、素材链接、尺寸和语言。它不会和首页重合，因为这里会保留结果、控制项和后续历史记录。",
+        "proTitle": "给创作者、频道运营和封面设计师的专业简报。",
+        "proDescription": "用策略、构图、参考封面、创作者头像、视频和脚本搭一份真正能交给设计师的封面 brief。",
+        "proCta": "打开 Pro Brief"
+      },
+      "history": {
+        "title": "生成历史",
+        "description": "这里会保存你最近的真实生成记录。点击卡片可以查看 brief、重新导出，或者从账号里删除。",
+        "empty": "还没有生成任务。输入一个想法，先跑一次封面方向。",
+        "clear": "清空",
+        "retry": "重试",
+        "active": "当前预览",
+        "created": "创建",
+        "assets": "素材",
+        "error": "这次生成失败了。点击重试，可以重新发送到队列。",
+        "status": {
+          "queued": "排队中",
+          "generating": "生成中",
+          "completed": "已完成",
+          "failed": "失败"
+        },
+        "details": "详情",
+        "prompt": "提示词",
+        "source": "来源",
+        "provider": "服务",
+        "model": "模型",
+        "strategy": "策略",
+        "layout": "构图",
+        "delete": "删除",
+        "deleting": "删除中"
+      },
+      "authGate": {
+        "eyebrow": "真实生成权限",
+        "signedOutTitle": "登录后生成真实封面",
+        "signedOutDescription": "首页继续保持免费预览。工作台会调用真实 AI、写入 R2，并承接后续历史记录，所以需要先登录。",
+        "signedInTitle": "真实生成已解锁",
+        "signedInDescription": "你的工作台会走受保护的真实生成流程，包含限流和图片存储。",
+        "signInCta": "登录后生成",
+        "checking": "正在检查权限"
+      },
+      "credits": {
+        "eyebrow": "真实生成积分",
+        "loading": "正在检查你的积分",
+        "readyTitle": "可以进行真实 AI 生成",
+        "readyDescription": "只有图片生成并保存成功后才会扣积分。",
+        "balance": "剩余积分",
+        "cost": "每次消耗",
+        "insufficientTitle": "积分不足，暂时不能真实生成",
+        "insufficientDescription": "你仍然可以使用 mock 预览。要继续调用 Replicate 生成，需要先补充积分或升级。",
+        "addCredits": "充值积分",
+        "viewPricing": "查看定价",
+        "unavailable": "暂时无法获取积分余额。"
+      }
+    }
+  }
+}
