@@ -16,7 +16,7 @@ const guideCards = [
   {
     title: 'Beginner Route',
     description: 'First-session priorities, safe loops, scanning habits, and spoiler-light survival notes.',
-    href: `${Routes.Subnautica2}#beginner`,
+    href: Routes.Subnautica2Beginner,
     icon: CompassIcon,
   },
   {
@@ -34,40 +34,40 @@ const guideCards = [
   {
     title: 'Map & Biomes',
     description: 'Route-first map planning for safe areas, resource zones, base spots, and danger markers.',
-    href: `${Routes.Subnautica2}#map`,
+    href: Routes.Subnautica2Map,
     icon: MapIcon,
   },
 ];
 
 export function AbyssHome() {
   return (
-    <main className="min-h-screen bg-[#f3f0e7] text-[#10201f] dark:bg-[#07110f] dark:text-[#e8efe8]">
-      <section className="relative overflow-hidden border-b border-[#10201f]/10 dark:border-white/10">
+    <main className="min-h-screen bg-[#031314] text-[#dff8f0] dark:bg-[#031314] dark:text-[#dff8f0]">
+      <section className="relative overflow-hidden border-b border-cyan-200/10">
         <div
           aria-hidden="true"
-          className="absolute inset-0 opacity-[0.18] dark:opacity-[0.24]"
+          className="absolute inset-0 opacity-[0.20]"
           style={{
             backgroundImage:
-              'linear-gradient(rgba(16,32,31,.12) 1px, transparent 1px), linear-gradient(90deg, rgba(16,32,31,.12) 1px, transparent 1px)',
+              'linear-gradient(rgba(106, 240, 224, .16) 1px, transparent 1px), linear-gradient(90deg, rgba(106, 240, 224, .16) 1px, transparent 1px)',
             backgroundSize: '44px 44px',
           }}
         />
         <div
           aria-hidden="true"
-          className="absolute inset-x-0 bottom-0 h-32 bg-[linear-gradient(180deg,transparent,rgba(11,63,67,.16))] dark:bg-[linear-gradient(180deg,transparent,rgba(19,74,75,.34))]"
+          className="absolute inset-0 bg-[radial-gradient(circle_at_75%_30%,rgba(64,224,208,.22),transparent_32%),radial-gradient(circle_at_18%_80%,rgba(244,143,63,.13),transparent_30%),linear-gradient(180deg,rgba(3,19,20,.25),rgba(1,9,12,.92))]"
         />
 
         <Container className="relative px-4 py-16 md:py-24">
           <div className="grid items-center gap-12 lg:grid-cols-[1fr_420px]">
             <div className="max-w-3xl">
-              <div className="mb-6 inline-flex items-center gap-2 border border-[#0b5b59]/20 bg-[#d8eee5] px-3 py-1 text-sm font-medium text-[#16413d] dark:border-[#93e0cd]/20 dark:bg-[#112d2a] dark:text-[#a7eadb]">
+              <div className="mb-6 inline-flex items-center gap-2 border border-cyan-200/20 bg-cyan-300/10 px-3 py-1 text-sm font-medium text-cyan-100">
                 <RadioIcon className="size-4" />
                 Subnautica 2 Early Access guide hub
               </div>
-              <h1 className="max-w-4xl text-balance font-semibold text-5xl leading-[1.02] tracking-normal md:text-7xl">
-                Field notes for strange oceans.
+              <h1 className="max-w-4xl text-balance font-semibold text-5xl leading-[1.02] tracking-normal text-[#e8fff9] md:text-7xl">
+                Field notes from the alien deep.
               </h1>
-              <p className="mt-6 max-w-2xl text-lg leading-8 text-[#40504d] dark:text-[#b9c9c3]">
+              <p className="mt-6 max-w-2xl text-lg leading-8 text-[#a9c9c3]">
                 Abyss Guides publishes practical routes, resource tables,
                 crafting notes, map planning, and update trackers for deep-sea
                 survival games. We are starting with Subnautica 2 and building
@@ -84,7 +84,7 @@ export function AbyssHome() {
                   href={Routes.Subnautica2Resources}
                   className={cn(
                     buttonVariants({ variant: 'outline', size: 'lg' }),
-                    'rounded-md border-[#10201f]/20 bg-white/50 dark:border-white/15 dark:bg-white/5'
+                    'rounded-md border-cyan-200/25 bg-cyan-100/5 text-cyan-50 hover:bg-cyan-100/10'
                   )}
                 >
                   Browse resources
@@ -92,12 +92,13 @@ export function AbyssHome() {
               </div>
             </div>
 
-            <div className="relative min-h-[420px] border border-[#10201f]/15 bg-[#0b2525] p-5 text-[#d9fff4] shadow-2xl shadow-[#0b2525]/20 dark:border-white/10">
+            <div className="relative min-h-[420px] border border-cyan-200/20 bg-[#041d22] p-5 text-[#d9fff4] shadow-2xl shadow-cyan-950/40">
               <div className="flex items-center justify-between border-b border-[#d9fff4]/15 pb-4 text-xs uppercase tracking-[0.18em] text-[#9fe6d4]">
                 <span>Abyss scan</span>
                 <span>EA-2026</span>
               </div>
-              <div className="relative mt-6 aspect-square overflow-hidden border border-[#d9fff4]/10 bg-[#071817]">
+              <div className="relative mt-6 aspect-square overflow-hidden border border-[#d9fff4]/10 bg-[#020d12]">
+                <div className="absolute inset-0 bg-[radial-gradient(circle,rgba(95,232,214,.11),transparent_56%)]" />
                 <div className="absolute inset-8 rounded-full border border-[#5ee1c6]/20" />
                 <div className="absolute inset-16 rounded-full border border-[#5ee1c6]/20" />
                 <div className="absolute inset-24 rounded-full border border-[#5ee1c6]/20" />
@@ -130,7 +131,7 @@ export function AbyssHome() {
         </Container>
       </section>
 
-      <section className="border-b border-[#10201f]/10 bg-[#fbfaf5] dark:border-white/10 dark:bg-[#0b1715]">
+      <section className="border-b border-cyan-200/10 bg-[#071f23]">
         <Container className="px-4 py-14">
           <div className="mb-8 flex flex-col justify-between gap-4 md:flex-row md:items-end">
             <div>
@@ -141,7 +142,7 @@ export function AbyssHome() {
                 Subnautica 2 pages to publish first
               </h2>
             </div>
-            <p className="max-w-xl text-[#53615e] dark:text-[#b7c4bf]">
+              <p className="max-w-xl text-[#abc8c3]">
               The site starts as a guide hub, then grows into calculators and
               update trackers once the Early Access data is verified.
             </p>
@@ -153,11 +154,11 @@ export function AbyssHome() {
                 <LocaleLink
                   key={item.title}
                   href={item.href}
-                  className="group border border-[#10201f]/10 bg-[#f3f0e7] p-5 transition hover:-translate-y-1 hover:border-[#0b5b59]/40 dark:border-white/10 dark:bg-[#10201f] dark:hover:border-[#9fe6d4]/40"
+                  className="group border border-cyan-200/12 bg-[#0a2a2f] p-5 transition hover:-translate-y-1 hover:border-cyan-200/40"
                 >
-                  <Icon className="mb-6 size-6 text-[#0b5b59] dark:text-[#9fe6d4]" />
+                  <Icon className="mb-6 size-6 text-[#78ead7]" />
                   <h3 className="text-lg font-semibold">{item.title}</h3>
-                  <p className="mt-3 text-sm leading-6 text-[#53615e] dark:text-[#b7c4bf]">
+                  <p className="mt-3 text-sm leading-6 text-[#a8c6c0]">
                     {item.description}
                   </p>
                 </LocaleLink>
@@ -167,14 +168,14 @@ export function AbyssHome() {
         </Container>
       </section>
 
-      <section className="bg-[#efe7d8] dark:bg-[#091412]">
+      <section className="bg-[#031314]">
         <Container className="px-4 py-14">
           <div className="grid gap-8 md:grid-cols-[0.9fr_1.1fr] md:items-center">
             <div>
-              <BookOpenIcon className="mb-5 size-8 text-[#bf6f45]" />
+              <BookOpenIcon className="mb-5 size-8 text-[#f08b4f]" />
               <h2 className="text-3xl font-semibold">Built as an independent fan guide.</h2>
             </div>
-            <p className="text-base leading-8 text-[#485753] dark:text-[#bfcbc6]">
+            <p className="text-base leading-8 text-[#b5c9c4]">
               Abyss Guides is not an official Subnautica 2 site. The goal is to
               publish original explanations, verified tables, and practical
               tools. Game names, trademarks, and assets belong to their
