@@ -462,6 +462,7 @@
         "title": "Legal",
         "items": {
           "cookiePolicy": "Cookie Policy",
+          "affiliateDisclosure": "Affiliate Disclosure",
           "privacyPolicy": "Privacy Policy",
           "termsOfService": "Terms of Service"
         }

@@ -67,6 +67,11 @@ export function useFooterLinks(): NestedMenuItem[] {
           external: false,
         },
         {
+          title: t('legal.items.affiliateDisclosure'),
+          href: Routes.AffiliateDisclosure,
+          external: false,
+        },
+        {
           title: t('legal.items.privacyPolicy'),
           href: Routes.PrivacyPolicy,
           external: false,

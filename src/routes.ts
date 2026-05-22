@@ -27,6 +27,7 @@ export enum Routes {
   Changelog = '/changelog',
   Roadmap = '/roadmap',
   CookiePolicy = '/cookie',
+  AffiliateDisclosure = '/affiliate-disclosure',
   PrivacyPolicy = '/privacy',
   TermsOfService = '/terms',
 

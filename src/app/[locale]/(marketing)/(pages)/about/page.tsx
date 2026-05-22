@@ -1,13 +1,7 @@
 import Container from '@/components/layout/container';
-import { Avatar, AvatarFallback, AvatarImage } from '@/components/ui/avatar';
-import { Button, buttonVariants } from '@/components/ui/button';
-import { websiteConfig } from '@/config/website';
 import { constructMetadata } from '@/lib/metadata';
-import { cn } from '@/lib/utils';
-import { MailIcon, TwitterIcon } from 'lucide-react';
 import type { Metadata } from 'next';
 import type { Locale } from 'next-intl';
-import { getTranslations } from 'next-intl/server';
 
 export async function generateMetadata({
   params,
@@ -15,89 +9,71 @@ export async function generateMetadata({
   params: Promise<{ locale: Locale }>;
 }): Promise<Metadata | undefined> {
   const { locale } = await params;
-  const t = await getTranslations({ locale, namespace: 'Metadata' });
-  const pt = await getTranslations({ locale, namespace: 'AboutPage' });
 
   return constructMetadata({
-    title: pt('title') + ' | ' + t('title'),
-    description: pt('description'),
+    title: 'About Abyss Guides',
+    description:
+      'Learn about Abyss Guides, an independent fan-made guide site for Subnautica 2 and deep-sea survival games.',
     locale,
     pathname: '/about',
   });
 }
 
-/**
- * inspired by https://astro-nomy.vercel.app/about
- */
-export default async function AboutPage() {
-  const t = await getTranslations('AboutPage');
-
+export default function AboutPage() {
   return (
-    <Container className="py-16 px-4">
-      <div className="max-w-4xl mx-auto space-y-8">
-        {/* about section */}
-        <div className="relative max-w-(--breakpoint-md) mx-auto mb-24 mt-8 md:mt-16">
-          <div className="mx-auto flex flex-col justify-between">
-            <div className="grid gap-8 sm:grid-cols-2">
-              {/* avatar and name */}
-              <div className="flex items-center gap-8">
-                <Avatar className="size-32 p-0.5">
-                  <AvatarImage
-                    className="rounded-full border-4 border-gray-200"
-                    src="/logo.png"
-                    alt="Avatar"
-                  />
-                  <AvatarFallback>
-                    <div className="size-32 text-muted-foreground" />
-                  </AvatarFallback>
-                </Avatar>
-                <div>
-                  <h1 className="text-4xl text-foreground">
-                    {t('authorName')}
-                  </h1>
-                  <p className="text-base text-muted-foreground mt-2">
-                    {t('authorBio')}
-                  </p>
-                </div>
-              </div>
-
-              {/* introduction */}
-              <div>
-                <p className="mb-8 text-base text-muted-foreground">
-                  {t('introduction')}
-                </p>
-
-                <div className="flex items-center gap-4">
-                  {websiteConfig.metadata.social?.twitter && (
-                    <a
-                      href={websiteConfig.metadata.social.twitter}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className={cn(
-                        buttonVariants({ variant: 'outline' }),
-                        'rounded-lg'
-                      )}
-                    >
-                      <TwitterIcon className="mr-1 size-4" />
-                      {t('followMe')}
-                    </a>
-                  )}
-                  {websiteConfig.mail.supportEmail && (
-                    <div className="flex items-center gap-4">
-                      <Button className="rounded-lg">
-                        <MailIcon className="mr-1 size-4" />
-                        <a href={`mailto:${websiteConfig.mail.supportEmail}`}>
-                          {t('talkWithMe')}
-                        </a>
-                      </Button>
-                    </div>
-                  )}
-                </div>
-              </div>
-            </div>
-          </div>
+    <main className="min-h-screen bg-[#031314] text-[#dff8f0]">
+      <Container className="px-4 py-16 md:py-24">
+        <div className="max-w-3xl">
+          <p className="text-sm font-semibold uppercase tracking-[0.18em] text-[#f08b4f]">
+            Independent fan guide
+          </p>
+          <h1 className="mt-4 text-4xl font-semibold tracking-normal md:text-6xl">
+            About Abyss Guides
+          </h1>
+          <p className="mt-6 text-lg leading-8 text-[#abc8c3]">
+            Abyss Guides is a practical guide site for deep-sea survival and
+            exploration games, starting with Subnautica 2 Early Access. The goal
+            is to publish clear routes, resource notes, crafting data, map
+            planning, co-op help, and update summaries that players can use
+            while actually playing.
+          </p>
         </div>
-      </div>
-    </Container>
+
+        <div className="mt-12 grid gap-5 md:grid-cols-3">
+          {[
+            [
+              'Useful first',
+              'Pages should answer the player question quickly before adding deeper detail.',
+            ],
+            [
+              'Verified when possible',
+              'Early Access details can change, so exact locations and recipes should be checked before they are treated as final.',
+            ],
+            [
+              'Independent',
+              'Abyss Guides is not affiliated with the official Subnautica 2 team or its publishers.',
+            ],
+          ].map(([title, body]) => (
+            <section
+              key={title}
+              className="border border-cyan-200/12 bg-[#071f23] p-6"
+            >
+              <h2 className="text-xl font-semibold text-[#effffb]">{title}</h2>
+              <p className="mt-4 leading-7 text-[#abc8c3]">{body}</p>
+            </section>
+          ))}
+        </div>
+
+        <section className="mt-10 border border-cyan-200/12 bg-[#082226] p-6">
+          <h2 className="text-2xl font-semibold">Fan-site disclaimer</h2>
+          <p className="mt-4 leading-8 text-[#abc8c3]">
+            Abyss Guides is an independent fan-made guide site and is not
+            affiliated with Unknown Worlds Entertainment, Krafton, or the
+            official Subnautica 2 team. Game names, trademarks, and assets
+            belong to their respective owners.
+          </p>
+        </section>
+      </Container>
+    </main>
   );
 }
