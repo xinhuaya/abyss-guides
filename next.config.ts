@@ -75,6 +75,50 @@ const nextConfig: NextConfig = {
       },
     ];
   },
+  async redirects() {
+    return [
+      ...[
+        '/pricing',
+        '/tools/:path*',
+        '/blog/:path*',
+        '/docs/:path*',
+        '/ai',
+        '/waitlist',
+        '/changelog',
+        '/roadmap',
+        '/test',
+      ].flatMap((source) => [
+        {
+          source,
+          destination: '/games/subnautica-2',
+          permanent: false,
+        },
+        {
+          source: `/en${source}`,
+          destination: '/games/subnautica-2',
+          permanent: false,
+        },
+      ]),
+      ...[
+        '/auth/:path*',
+        '/dashboard/:path*',
+        '/settings/:path*',
+        '/admin/:path*',
+        '/payment/:path*',
+      ].flatMap((source) => [
+        {
+          source,
+          destination: '/',
+          permanent: false,
+        },
+        {
+          source: `/en${source}`,
+          destination: '/',
+          permanent: false,
+        },
+      ]),
+    ];
+  },
 };
 
 /**

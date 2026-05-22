@@ -3,6 +3,7 @@ import { getLocalePathname } from '@/i18n/navigation';
 import { routing } from '@/i18n/routing';
 import { generateHreflangUrls } from '@/lib/hreflang';
 import { blogSource, categorySource, source } from '@/lib/source';
+import { Routes } from '@/routes';
 import type { MetadataRoute } from 'next';
 import type { Locale } from 'next-intl';
 import { getBaseUrl } from '@/lib/urls';
@@ -13,17 +14,20 @@ type Href = Parameters<typeof getLocalePathname>[0]['href'];
  * static routes for sitemap, you may change the routes for your own
  */
 const staticRoutes = [
-  '/',
-  '/pricing',
-  '/about',
-  '/contact',
-  '/waitlist',
-  '/changelog',
-  '/privacy',
-  '/terms',
-  '/cookie',
-  '/auth/login',
-  '/auth/register',
+  Routes.Root,
+  Routes.Subnautica2,
+  Routes.Subnautica2Beginner,
+  Routes.Subnautica2Resources,
+  Routes.Subnautica2Crafting,
+  Routes.Subnautica2Map,
+  Routes.Subnautica2Coop,
+  Routes.Subnautica2Updates,
+  Routes.About,
+  Routes.Contact,
+  Routes.AffiliateDisclosure,
+  Routes.PrivacyPolicy,
+  Routes.TermsOfService,
+  Routes.CookiePolicy,
   ...(websiteConfig.blog.enable ? ['/blog'] : []),
   ...(websiteConfig.docs.enable ? ['/docs'] : []),
 ];
