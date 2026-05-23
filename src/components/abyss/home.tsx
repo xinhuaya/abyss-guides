@@ -6,9 +6,12 @@ import { Routes } from '@/routes';
 import {
   BookOpenIcon,
   BoxesIcon,
+  CheckCircle2Icon,
   CompassIcon,
   MapIcon,
   RadioIcon,
+  ScanLineIcon,
+  ShieldIcon,
   WrenchIcon,
 } from 'lucide-react';
 
@@ -43,6 +46,18 @@ const guideCards = [
   },
 ];
 
+const missionStats = [
+  ['20+', 'live guide pages'],
+  ['50', 'page target'],
+  ['3', 'tool ideas'],
+];
+
+const activeRoutes = [
+  'Copper, Silver, and O2 starter loop',
+  'Tadpole and Power Cell prep',
+  'Alien Ruins rare-metal chain',
+];
+
 export function AbyssHome() {
   return (
     <main className="min-h-screen bg-[#031314] text-[#dff8f0] dark:bg-[#031314] dark:text-[#dff8f0]">
@@ -56,7 +71,7 @@ export function AbyssHome() {
         />
         <div
           aria-hidden="true"
-          className="absolute inset-0 bg-[linear-gradient(90deg,rgba(1,12,18,.96)_0%,rgba(2,20,27,.82)_37%,rgba(2,20,27,.34)_68%,rgba(1,12,18,.20)_100%),linear-gradient(180deg,rgba(3,19,20,.10),rgba(1,9,12,.96))]"
+          className="absolute inset-0 bg-[linear-gradient(90deg,rgba(1,12,18,.97)_0%,rgba(2,20,27,.88)_34%,rgba(2,20,27,.34)_62%,rgba(1,12,18,.10)_100%),linear-gradient(180deg,rgba(3,19,20,.06),rgba(1,9,12,.94))]"
         />
         <div
           aria-hidden="true"
@@ -69,8 +84,8 @@ export function AbyssHome() {
         />
 
         <Container className="relative px-4 py-16 md:py-24">
-          <div className="grid min-h-[560px] items-center gap-12 lg:grid-cols-[1fr_390px]">
-            <div className="max-w-3xl">
+          <div className="flex min-h-[590px] items-center">
+            <div className="max-w-[760px]">
               <div className="mb-6 inline-flex items-center gap-2 border border-cyan-200/20 bg-cyan-300/10 px-3 py-1 text-sm font-medium text-cyan-100">
                 <RadioIcon className="size-4" />
                 Subnautica 2 Early Access guide hub
@@ -101,41 +116,75 @@ export function AbyssHome() {
                   Browse resources
                 </LocaleLink>
               </div>
-            </div>
 
-            <div className="relative min-h-[420px] border border-cyan-200/20 bg-[#041d22]/90 p-5 text-[#d9fff4] shadow-2xl shadow-cyan-950/40 backdrop-blur-md">
-              <div className="flex items-center justify-between border-b border-[#d9fff4]/15 pb-4 text-xs uppercase tracking-[0.18em] text-[#9fe6d4]">
-                <span>Wiki field card</span>
-                <span>cute-mode</span>
-              </div>
-              <div className="relative mt-6 aspect-square overflow-hidden border border-[#d9fff4]/10 bg-[#020d12]">
-                <div className="absolute inset-0 bg-[radial-gradient(circle,rgba(95,232,214,.11),transparent_56%)]" />
-                <div className="absolute inset-8 rounded-full border border-[#5ee1c6]/20" />
-                <div className="absolute inset-16 rounded-full border border-[#5ee1c6]/20" />
-                <div className="absolute inset-24 rounded-full border border-[#5ee1c6]/20" />
-                <div className="absolute left-1/2 top-1/2 h-px w-[46%] origin-left bg-[#f0b35a]" />
-                <div className="absolute left-[22%] top-[31%] size-2 bg-[#f0b35a]" />
-                <div className="absolute right-[24%] top-[45%] size-2 bg-[#9fe6d4]" />
-                <div className="absolute bottom-[24%] left-[41%] size-2 bg-[#ff8a6b]" />
-                <div className="absolute bottom-4 left-4 right-4 grid grid-cols-3 gap-2 text-[11px] text-[#b5d8d0]">
-                  <span>resources</span>
-                  <span>biomes</span>
-                  <span>patches</span>
-                </div>
-              </div>
-              <div className="mt-5 grid grid-cols-3 gap-3 text-sm">
-                <div className="border border-[#d9fff4]/10 p-3">
-                  <div className="text-2xl font-semibold">50</div>
-                  <div className="text-[#9fbdb6]">page targets</div>
-                </div>
-                <div className="border border-[#d9fff4]/10 p-3">
-                  <div className="text-2xl font-semibold">3</div>
-                  <div className="text-[#9fbdb6]">tool ideas</div>
-                </div>
-                <div className="border border-[#d9fff4]/10 p-3">
-                  <div className="text-2xl font-semibold">1</div>
-                  <div className="text-[#9fbdb6]">game hub</div>
-                </div>
+              <div className="mt-8 grid gap-4 lg:grid-cols-[1fr_270px]">
+                <section className="border border-cyan-200/18 bg-[#041d22]/86 p-5 shadow-2xl shadow-cyan-950/30 backdrop-blur-md">
+                  <div className="flex items-center justify-between border-b border-cyan-200/15 pb-3 text-xs uppercase tracking-[0.18em] text-[#9fe6d4]">
+                    <span>Wiki field card</span>
+                    <span>cute-mode</span>
+                  </div>
+                  <div className="mt-4 grid gap-3">
+                    {activeRoutes.map((route) => (
+                      <div
+                        className="flex items-center gap-3 border border-cyan-200/10 bg-cyan-300/5 px-3 py-2 text-sm text-[#d1e8e2]"
+                        key={route}
+                      >
+                        <CheckCircle2Icon className="size-4 shrink-0 text-[#78ead7]" />
+                        <span>{route}</span>
+                      </div>
+                    ))}
+                  </div>
+                  <div className="mt-4 grid grid-cols-3 gap-2">
+                    {missionStats.map(([value, label]) => (
+                      <div
+                        className="border border-cyan-200/10 bg-[#020d12]/60 p-3"
+                        key={label}
+                      >
+                        <div className="text-xl font-semibold text-[#e8fff9]">
+                          {value}
+                        </div>
+                        <div className="mt-1 text-xs leading-4 text-[#9fbdb6]">
+                          {label}
+                        </div>
+                      </div>
+                    ))}
+                  </div>
+                </section>
+
+                <section className="border border-cyan-200/18 bg-[#041d22]/82 p-5 shadow-2xl shadow-cyan-950/30 backdrop-blur-md">
+                  <div className="flex items-center gap-2 text-sm font-semibold uppercase tracking-[0.16em] text-[#9fe6d4]">
+                    <ScanLineIcon className="size-4" />
+                    Scan queue
+                  </div>
+                  <div className="mt-5 space-y-4 text-sm">
+                    <div className="flex items-start gap-3">
+                      <CompassIcon className="mt-0.5 size-4 shrink-0 text-[#f08b4f]" />
+                      <p className="leading-6 text-[#bddbd5]">
+                        Route-first guides for beginner dives, crafting chains,
+                        and base planning.
+                      </p>
+                    </div>
+                    <div className="flex items-start gap-3">
+                      <ShieldIcon className="mt-0.5 size-4 shrink-0 text-[#78ead7]" />
+                      <p className="leading-6 text-[#bddbd5]">
+                        Original cute deep-sea art, no official screenshots or
+                        creature assets.
+                      </p>
+                    </div>
+                  </div>
+                  <div className="mt-5 flex flex-wrap gap-2 text-xs text-[#d1e8e2]">
+                    {['resources', 'vehicles', 'bases', 'patches'].map(
+                      (tag) => (
+                        <span
+                          className="border border-cyan-200/15 bg-cyan-300/5 px-2 py-1"
+                          key={tag}
+                        >
+                          {tag}
+                        </span>
+                      )
+                    )}
+                  </div>
+                </section>
               </div>
             </div>
           </div>
