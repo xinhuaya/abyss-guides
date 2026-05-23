@@ -9,6 +9,7 @@ const localizedRoutes: Partial<Record<Locale, ReadonlySet<string>>> = {
     Routes.Subnautica2Silver,
     Routes.Subnautica2Copper,
     Routes.Subnautica2AirTank,
+    Routes.Subnautica2Scanner,
   ]),
   ru: new Set([
     Routes.Root,
@@ -16,6 +17,7 @@ const localizedRoutes: Partial<Record<Locale, ReadonlySet<string>>> = {
     Routes.Subnautica2Silver,
     Routes.Subnautica2Copper,
     Routes.Subnautica2AirTank,
+    Routes.Subnautica2Scanner,
   ]),
   de: new Set([
     Routes.Root,
@@ -23,6 +25,7 @@ const localizedRoutes: Partial<Record<Locale, ReadonlySet<string>>> = {
     Routes.Subnautica2Silver,
     Routes.Subnautica2Copper,
     Routes.Subnautica2AirTank,
+    Routes.Subnautica2Scanner,
   ]),
   fr: new Set([
     Routes.Root,
@@ -30,6 +33,7 @@ const localizedRoutes: Partial<Record<Locale, ReadonlySet<string>>> = {
     Routes.Subnautica2Silver,
     Routes.Subnautica2Copper,
     Routes.Subnautica2AirTank,
+    Routes.Subnautica2Scanner,
   ]),
   'pt-BR': new Set([
     Routes.Root,
@@ -37,6 +41,7 @@ const localizedRoutes: Partial<Record<Locale, ReadonlySet<string>>> = {
     Routes.Subnautica2Silver,
     Routes.Subnautica2Copper,
     Routes.Subnautica2AirTank,
+    Routes.Subnautica2Scanner,
   ]),
   'es-419': new Set([
     Routes.Root,
@@ -44,6 +49,7 @@ const localizedRoutes: Partial<Record<Locale, ReadonlySet<string>>> = {
     Routes.Subnautica2Silver,
     Routes.Subnautica2Copper,
     Routes.Subnautica2AirTank,
+    Routes.Subnautica2Scanner,
   ]),
   ko: new Set([
     Routes.Root,
@@ -51,6 +57,7 @@ const localizedRoutes: Partial<Record<Locale, ReadonlySet<string>>> = {
     Routes.Subnautica2Silver,
     Routes.Subnautica2Copper,
     Routes.Subnautica2AirTank,
+    Routes.Subnautica2Scanner,
   ]),
   ja: new Set([
     Routes.Root,
@@ -58,6 +65,7 @@ const localizedRoutes: Partial<Record<Locale, ReadonlySet<string>>> = {
     Routes.Subnautica2Silver,
     Routes.Subnautica2Copper,
     Routes.Subnautica2AirTank,
+    Routes.Subnautica2Scanner,
   ]),
 };
 
