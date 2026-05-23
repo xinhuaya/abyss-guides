@@ -32,6 +32,12 @@ export type ResourceGuideCopy = {
   tableTitle: string;
   tableHeaders: [string, string];
   tableRows: Array<[string, string]>;
+  visualTitle?: string;
+  visualItems?: Array<{
+    label: string;
+    value: string;
+    note: string;
+  }>;
   cautionTitle: string;
   cautionBody: string;
   faqTitle: string;
@@ -266,6 +272,43 @@ export function LocalizedResourceGuidePage({
                 ))}
               </div>
             </section>
+
+            {copy.visualItems && copy.visualItems.length > 0 ? (
+              <section>
+                <h2 className="text-3xl font-semibold text-[#effffb]">
+                  {copy.visualTitle}
+                </h2>
+                <div className="mt-5 grid gap-4 md:grid-cols-3">
+                  {copy.visualItems.map((item, index) => (
+                    <section
+                      className="relative overflow-hidden border border-cyan-200/12 bg-[#071f23] p-5"
+                      key={item.label}
+                    >
+                      <div
+                        aria-hidden="true"
+                        className="absolute inset-x-0 top-0 h-1 bg-[#123a40]"
+                      >
+                        <div
+                          className="h-full bg-[#f08b4f]"
+                          style={{
+                            width: `${Math.min(100, (index + 1) * 33)}%`,
+                          }}
+                        />
+                      </div>
+                      <p className="text-xs font-semibold uppercase tracking-[0.18em] text-[#78ead7]">
+                        {item.label}
+                      </p>
+                      <p className="mt-4 text-2xl font-semibold text-[#effffb]">
+                        {item.value}
+                      </p>
+                      <p className="mt-3 text-sm leading-6 text-[#abc8c3]">
+                        {item.note}
+                      </p>
+                    </section>
+                  ))}
+                </div>
+              </section>
+            ) : null}
 
             <section>
               <h2 className="text-3xl font-semibold text-[#effffb]">
