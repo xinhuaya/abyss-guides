@@ -3,18 +3,54 @@ import { Routes } from '@/routes';
 import type { Locale } from 'next-intl';
 
 const localizedRoutes: Partial<Record<Locale, ReadonlySet<string>>> = {
-  zh: new Set([Routes.Root, Routes.Subnautica2, Routes.Subnautica2Silver]),
-  ru: new Set([Routes.Root, Routes.Subnautica2, Routes.Subnautica2Silver]),
-  de: new Set([Routes.Root, Routes.Subnautica2, Routes.Subnautica2Silver]),
-  fr: new Set([Routes.Root, Routes.Subnautica2, Routes.Subnautica2Silver]),
-  'pt-BR': new Set([Routes.Root, Routes.Subnautica2, Routes.Subnautica2Silver]),
+  zh: new Set([
+    Routes.Root,
+    Routes.Subnautica2,
+    Routes.Subnautica2Silver,
+    Routes.Subnautica2Copper,
+  ]),
+  ru: new Set([
+    Routes.Root,
+    Routes.Subnautica2,
+    Routes.Subnautica2Silver,
+    Routes.Subnautica2Copper,
+  ]),
+  de: new Set([
+    Routes.Root,
+    Routes.Subnautica2,
+    Routes.Subnautica2Silver,
+    Routes.Subnautica2Copper,
+  ]),
+  fr: new Set([
+    Routes.Root,
+    Routes.Subnautica2,
+    Routes.Subnautica2Silver,
+    Routes.Subnautica2Copper,
+  ]),
+  'pt-BR': new Set([
+    Routes.Root,
+    Routes.Subnautica2,
+    Routes.Subnautica2Silver,
+    Routes.Subnautica2Copper,
+  ]),
   'es-419': new Set([
     Routes.Root,
     Routes.Subnautica2,
     Routes.Subnautica2Silver,
+    Routes.Subnautica2Copper,
   ]),
-  ko: new Set([Routes.Root, Routes.Subnautica2, Routes.Subnautica2Silver]),
-  ja: new Set([Routes.Root, Routes.Subnautica2, Routes.Subnautica2Silver]),
+  ko: new Set([
+    Routes.Root,
+    Routes.Subnautica2,
+    Routes.Subnautica2Silver,
+    Routes.Subnautica2Copper,
+  ]),
+  ja: new Set([
+    Routes.Root,
+    Routes.Subnautica2,
+    Routes.Subnautica2Silver,
+    Routes.Subnautica2Copper,
+  ]),
 };
 
 export function normalizeRoutePath(
