@@ -24,6 +24,9 @@ export type ResourceGuideCopy = {
   eyebrow: string;
   title: string;
   description: string;
+  publishedAt?: string;
+  updatedAt?: string;
+  checkedAt?: string;
   quickLabel: string;
   quickAnswer: string;
   contentsLabel: string;
@@ -69,6 +72,17 @@ type LocalizedResourceGuidePageProps = {
   }>;
 };
 
+const DEFAULT_CONTENT_DATE = '2026-05-23';
+
+function formatGuideDate(date: string, locale: Locale) {
+  return new Intl.DateTimeFormat(locale, {
+    day: 'numeric',
+    month: 'long',
+    timeZone: 'UTC',
+    year: 'numeric',
+  }).format(new Date(`${date}T00:00:00.000Z`));
+}
+
 export function LocalizedResourceGuidePage({
   locale,
   pathname,
@@ -79,6 +93,9 @@ export function LocalizedResourceGuidePage({
   const baseUrl = getBaseUrl().replace(/\/$/, '');
   const pageUrl = getUrlWithLocale(pathname, locale).replace(/\/$/, '');
   const hubUrl = `${baseUrl}${getPathWithLocale(Routes.Subnautica2, locale)}`;
+  const publishedAt = copy.publishedAt ?? DEFAULT_CONTENT_DATE;
+  const updatedAt = copy.updatedAt ?? publishedAt;
+  const checkedAt = copy.checkedAt ?? formatGuideDate(updatedAt, locale);
   const jsonLd = [
     {
       '@context': 'https://schema.org',
@@ -86,8 +103,8 @@ export function LocalizedResourceGuidePage({
       headline: copy.title,
       description: copy.description,
       url: pageUrl,
-      datePublished: '2026-05-23',
-      dateModified: '2026-05-23',
+      datePublished: publishedAt,
+      dateModified: updatedAt,
       inLanguage: locale,
       author: {
         '@type': 'Organization',
@@ -202,7 +219,7 @@ export function LocalizedResourceGuidePage({
                 </div>
                 <div className="flex items-center justify-between border border-cyan-200/10 bg-cyan-300/5 px-3 py-2">
                   <span>{copy.cardVerifiedLabel}</span>
-                  <span className="text-[#f08b4f]">May 23, 2026</span>
+                  <span className="text-[#f08b4f]">{checkedAt}</span>
                 </div>
                 <div className="flex items-center justify-between border border-cyan-200/10 bg-cyan-300/5 px-3 py-2">
                   <span>{copy.cardStatusLabel}</span>
