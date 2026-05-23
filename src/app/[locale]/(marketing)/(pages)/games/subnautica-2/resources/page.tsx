@@ -95,9 +95,19 @@ const priorityResources = [
 
 const pagePlan = [
   {
+    title: 'Where to Find Copper in Subnautica 2',
+    body: 'Early electronics page for batteries, scanner setup, wiring, and repeatable Lifepod cave routes.',
+    href: Routes.Subnautica2Copper,
+  },
+  {
     title: 'Where to Find Silver in Subnautica 2',
     body: 'High-priority bottleneck page with early-game route notes, patch caveats, and crafting uses.',
     href: Routes.Subnautica2Silver,
+  },
+  {
+    title: 'How to Make Titanium Ingots in Subnautica 2',
+    body: 'Processor material page for turning basic Titanium into advanced crafting-chain inputs.',
+    href: Routes.Subnautica2TitaniumIngot,
   },
   {
     title: 'Where to Find Troilite in Subnautica 2',
@@ -343,9 +353,21 @@ export default function ResourcesGuidePage() {
               <div className="mt-4 grid gap-3 text-sm">
                 <LocaleLink
                   className="text-[#78ead7] hover:underline"
+                  href={Routes.Subnautica2Copper}
+                >
+                  Copper Location
+                </LocaleLink>
+                <LocaleLink
+                  className="text-[#78ead7] hover:underline"
                   href={Routes.Subnautica2Silver}
                 >
                   Silver Location
+                </LocaleLink>
+                <LocaleLink
+                  className="text-[#78ead7] hover:underline"
+                  href={Routes.Subnautica2TitaniumIngot}
+                >
+                  Titanium Ingot
                 </LocaleLink>
                 <LocaleLink
                   className="text-[#78ead7] hover:underline"

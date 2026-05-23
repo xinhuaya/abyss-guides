@@ -278,6 +278,18 @@ export default function CraftingGuidePage() {
               <div className="mt-4 grid gap-3 text-sm">
                 <LocaleLink
                   className="text-[#78ead7] hover:underline"
+                  href={Routes.Subnautica2TitaniumIngot}
+                >
+                  Titanium Ingot Guide
+                </LocaleLink>
+                <LocaleLink
+                  className="text-[#78ead7] hover:underline"
+                  href={Routes.Subnautica2Tadpole}
+                >
+                  Tadpole Vehicle
+                </LocaleLink>
+                <LocaleLink
+                  className="text-[#78ead7] hover:underline"
                   href={Routes.Subnautica2Mangalloy}
                 >
                   Mangalloy Ingot Guide

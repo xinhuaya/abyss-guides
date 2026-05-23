@@ -57,10 +57,28 @@ const sections = [
 
 const priorityResources = [
   {
+    href: Routes.Subnautica2Copper,
+    title: 'Where to Find Copper',
+    description:
+      'Early battery and electronics material with Lifepod cave route notes.',
+  },
+  {
     href: Routes.Subnautica2Silver,
     title: 'Where to Find Silver',
     description:
       'Early-game air tank and electronics bottleneck with patch-sensitive route notes.',
+  },
+  {
+    href: Routes.Subnautica2AirTank,
+    title: 'Air Tank and O2',
+    description:
+      'Oxygen upgrades, Air Bladders, bubble sources, and safe early dive planning.',
+  },
+  {
+    href: Routes.Subnautica2Tadpole,
+    title: 'Tadpole Vehicle',
+    description:
+      'Fragment scanning, vehicle crafting, Power Cell prep, and upgrade planning.',
   },
   {
     href: Routes.Subnautica2Troilite,
