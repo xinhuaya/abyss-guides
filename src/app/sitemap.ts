@@ -18,6 +18,8 @@ const staticRoutes = [
   Routes.Subnautica2,
   Routes.Subnautica2Beginner,
   Routes.Subnautica2Resources,
+  Routes.Subnautica2Silver,
+  Routes.Subnautica2Troilite,
   Routes.Subnautica2Crafting,
   Routes.Subnautica2Map,
   Routes.Subnautica2Coop,

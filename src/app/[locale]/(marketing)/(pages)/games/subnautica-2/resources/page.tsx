@@ -22,7 +22,8 @@ export async function generateMetadata({
   const { locale } = await params;
 
   return constructMetadata({
-    title: 'Subnautica 2 Resources Guide - Materials, Farming, and Crafting Uses',
+    title:
+      'Subnautica 2 Resources Guide - Materials, Farming, and Crafting Uses',
     description:
       'A Subnautica 2 resources guide for Early Access materials, farming priorities, crafting bottlenecks, resource routes, and future resource location pages.',
     locale,
@@ -41,7 +42,12 @@ const resourceGroups = [
     title: 'Electronics and upgrade materials',
     icon: ScanLineIcon,
     body: 'Resources that block tools, scanners, upgrade paths, or base systems. These usually become high-value guide pages because players hit progression walls here.',
-    examples: ['Silver', 'Gold', 'Copper Wire', 'Computer Chip-style components'],
+    examples: [
+      'Silver',
+      'Gold',
+      'Copper Wire',
+      'Computer Chip-style components',
+    ],
   },
   {
     title: 'Processed materials',
@@ -58,21 +64,58 @@ const resourceGroups = [
 ];
 
 const priorityResources = [
-  ['Titanium', 'Early construction, tools, storage, and base expansion.', 'High'],
+  [
+    'Titanium',
+    'Early construction, tools, storage, and base expansion.',
+    'High',
+  ],
   ['Copper', 'Electronics, wiring, and early progression recipes.', 'High'],
-  ['Silver', 'Known early bottleneck for some players; watch patch changes.', 'High'],
-  ['Quartz', 'Glass-related crafting and useful early recipe families.', 'Medium'],
+  [
+    'Silver',
+    'Known early bottleneck for some players; watch patch changes.',
+    'High',
+  ],
+  [
+    'Quartz',
+    'Glass-related crafting and useful early recipe families.',
+    'Medium',
+  ],
   ['Gold', 'Electronics and mid-game recipe paths.', 'Medium'],
-  ['Atacamite', 'Reported as important for Mangalloy Ingots and later progression.', 'Late-route'],
-  ['Troilite', 'Reported as a rarer material used in Mangalloy Ingot crafting.', 'Late-route'],
+  [
+    'Atacamite',
+    'Reported as important for Mangalloy Ingots and later progression.',
+    'Late-route',
+  ],
+  [
+    'Troilite',
+    'Reported as a rarer material used in Mangalloy Ingot crafting.',
+    'Late-route',
+  ],
 ];
 
 const pagePlan = [
-  ['Where to Find Titanium in Subnautica 2', 'Basic material page with common route, uses, and farming notes.'],
-  ['Where to Find Copper in Subnautica 2', 'Early electronics page with route safety and recipe links.'],
-  ['Where to Find Silver in Subnautica 2', 'High-priority bottleneck page with patch-sensitive notes.'],
-  ['Where to Find Atacamite in Subnautica 2', 'Late-route material page tied to Mangalloy and progression tasks.'],
-  ['Where to Find Troilite in Subnautica 2', 'Rare material page that should be verified carefully before publishing.'],
+  {
+    title: 'Where to Find Silver in Subnautica 2',
+    body: 'High-priority bottleneck page with early-game route notes, patch caveats, and crafting uses.',
+    href: Routes.Subnautica2Silver,
+  },
+  {
+    title: 'Where to Find Troilite in Subnautica 2',
+    body: 'Rare late-route material page for Mangalloy Ingots, Metal Farms, and route safety.',
+    href: Routes.Subnautica2Troilite,
+  },
+  {
+    title: 'Where to Find Titanium in Subnautica 2',
+    body: 'Basic material page with common route, uses, and farming notes.',
+  },
+  {
+    title: 'Where to Find Copper in Subnautica 2',
+    body: 'Early electronics page with route safety and recipe links.',
+  },
+  {
+    title: 'Where to Find Atacamite in Subnautica 2',
+    body: 'Late-route material page tied to Mangalloy and progression tasks.',
+  },
 ];
 
 export default function ResourcesGuidePage() {
@@ -102,10 +145,10 @@ export default function ResourcesGuidePage() {
               Subnautica 2 Resources Guide
             </h1>
             <p className="mt-6 max-w-3xl text-lg leading-8 text-[#a9c9c3]">
-              This is the main resource hub for Subnautica 2 materials,
-              crafting bottlenecks, farming priorities, and future individual
-              resource location pages. It is designed for Early Access, where
-              exact routes can change after patches.
+              This is the main resource hub for Subnautica 2 materials, crafting
+              bottlenecks, farming priorities, and future individual resource
+              location pages. It is designed for Early Access, where exact
+              routes can change after patches.
             </p>
           </div>
         </Container>
@@ -254,16 +297,27 @@ export default function ResourcesGuidePage() {
                 Individual resource pages to build next
               </h2>
               <div className="mt-5 grid gap-4">
-                {pagePlan.map(([title, body]) => (
+                {pagePlan.map((item) => (
                   <section
-                    key={title}
+                    key={item.title}
                     className="border border-cyan-200/12 bg-[#071f23] p-5"
                   >
                     <div className="flex items-center gap-2">
                       <CircleDotIcon className="size-4 text-[#f08b4f]" />
-                      <h3 className="font-semibold text-[#effffb]">{title}</h3>
+                      {item.href ? (
+                        <LocaleLink
+                          className="font-semibold text-[#effffb] hover:text-[#78ead7]"
+                          href={item.href}
+                        >
+                          {item.title}
+                        </LocaleLink>
+                      ) : (
+                        <h3 className="font-semibold text-[#effffb]">
+                          {item.title}
+                        </h3>
+                      )}
                     </div>
-                    <p className="mt-3 leading-7 text-[#abc8c3]">{body}</p>
+                    <p className="mt-3 leading-7 text-[#abc8c3]">{item.body}</p>
                   </section>
                 ))}
               </div>
@@ -276,6 +330,18 @@ export default function ResourcesGuidePage() {
                 Read next
               </h2>
               <div className="mt-4 grid gap-3 text-sm">
+                <LocaleLink
+                  className="text-[#78ead7] hover:underline"
+                  href={Routes.Subnautica2Silver}
+                >
+                  Silver Location
+                </LocaleLink>
+                <LocaleLink
+                  className="text-[#78ead7] hover:underline"
+                  href={Routes.Subnautica2Troilite}
+                >
+                  Troilite Location
+                </LocaleLink>
                 <LocaleLink
                   className="text-[#78ead7] hover:underline"
                   href={Routes.Subnautica2Beginner}

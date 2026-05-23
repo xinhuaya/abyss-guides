@@ -23,12 +23,51 @@ export async function generateMetadata({
 }
 
 const sections = [
-  [Routes.Subnautica2Beginner, 'Beginner Guide', 'First-session priorities, safe routes, scanning habits, and base planning.'],
-  [Routes.Subnautica2Resources, 'Resources', 'Material tables, farming notes, and individual resource pages as data is verified.'],
-  [Routes.Subnautica2Crafting, 'Crafting', 'Recipe tracking, blueprint unlock notes, and calculator-ready recipe structure.'],
-  [Routes.Subnautica2Map, 'Map & Biomes', 'Route planning, safety notes, base-friendly areas, and danger markers.'],
-  [Routes.Subnautica2Coop, 'Co-op', 'Team roles, shared storage habits, setup checks, and multiplayer troubleshooting.'],
-  [Routes.Subnautica2Updates, 'Roadmap', 'Early Access changes, patch summaries, and guide pages that need updating.'],
+  [
+    Routes.Subnautica2Beginner,
+    'Beginner Guide',
+    'First-session priorities, safe routes, scanning habits, and base planning.',
+  ],
+  [
+    Routes.Subnautica2Resources,
+    'Resources',
+    'Material tables, farming notes, and individual resource pages as data is verified.',
+  ],
+  [
+    Routes.Subnautica2Crafting,
+    'Crafting',
+    'Recipe tracking, blueprint unlock notes, and calculator-ready recipe structure.',
+  ],
+  [
+    Routes.Subnautica2Map,
+    'Map & Biomes',
+    'Route planning, safety notes, base-friendly areas, and danger markers.',
+  ],
+  [
+    Routes.Subnautica2Coop,
+    'Co-op',
+    'Team roles, shared storage habits, setup checks, and multiplayer troubleshooting.',
+  ],
+  [
+    Routes.Subnautica2Updates,
+    'Roadmap',
+    'Early Access changes, patch summaries, and guide pages that need updating.',
+  ],
+];
+
+const priorityResources = [
+  {
+    href: Routes.Subnautica2Silver,
+    title: 'Where to Find Silver',
+    description:
+      'Early-game air tank and electronics bottleneck with patch-sensitive route notes.',
+  },
+  {
+    href: Routes.Subnautica2Troilite,
+    title: 'Where to Find Troilite',
+    description:
+      'Late-route rare material guide for Mangalloy, Metal Farms, and safer planning.',
+  },
 ];
 
 export default function Subnautica2HubPage() {
@@ -64,6 +103,31 @@ export default function Subnautica2HubPage() {
             </LocaleLink>
           ))}
         </div>
+
+        <section className="mt-12 border border-cyan-200/12 bg-[#082226] p-6">
+          <p className="text-sm font-semibold uppercase tracking-[0.18em] text-[#bf6f45]">
+            High-demand resource pages
+          </p>
+          <h2 className="mt-3 text-2xl font-semibold text-[#effffb]">
+            Start with the materials players get stuck on
+          </h2>
+          <div className="mt-5 grid gap-4 md:grid-cols-2">
+            {priorityResources.map((item) => (
+              <LocaleLink
+                key={item.title}
+                href={item.href}
+                className="border border-cyan-200/12 bg-[#071f23] p-5 transition hover:-translate-y-1 hover:border-cyan-200/40"
+              >
+                <h3 className="text-xl font-semibold text-[#78ead7]">
+                  {item.title}
+                </h3>
+                <p className="mt-3 text-sm leading-6 text-[#abc8c3]">
+                  {item.description}
+                </p>
+              </LocaleLink>
+            ))}
+          </div>
+        </section>
 
         <section
           id="updates"
