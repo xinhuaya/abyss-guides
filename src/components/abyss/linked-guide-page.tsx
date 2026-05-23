@@ -2,7 +2,13 @@ import Container from '@/components/layout/container';
 import { LocaleLink } from '@/i18n/navigation';
 import { getBaseUrl } from '@/lib/urls';
 import type { LucideIcon } from 'lucide-react';
-import { AlertTriangleIcon, BookOpenIcon } from 'lucide-react';
+import {
+  AlertTriangleIcon,
+  BookOpenIcon,
+  ChevronRightIcon,
+  ListIcon,
+  RadarIcon,
+} from 'lucide-react';
 import type { ComponentProps } from 'react';
 
 type LocaleHref = ComponentProps<typeof LocaleLink>['href'];
@@ -132,6 +138,13 @@ export function LinkedGuidePage({
       <section className="relative overflow-hidden border-b border-cyan-200/10">
         <div
           aria-hidden="true"
+          className="absolute inset-0 bg-cover bg-right opacity-40"
+          style={{
+            backgroundImage: "url('/abyss/chibi-deep-sea-hero.webp')",
+          }}
+        />
+        <div
+          aria-hidden="true"
           className="absolute inset-0 opacity-[0.18]"
           style={{
             backgroundImage:
@@ -141,20 +154,56 @@ export function LinkedGuidePage({
         />
         <div
           aria-hidden="true"
-          className="absolute inset-0 bg-[radial-gradient(circle_at_74%_20%,rgba(64,224,208,.18),transparent_34%),radial-gradient(circle_at_18%_80%,rgba(240,139,79,.12),transparent_30%),linear-gradient(180deg,rgba(3,19,20,.16),rgba(1,9,12,.96))]"
+          className="absolute inset-0 bg-[linear-gradient(90deg,rgba(1,12,18,.96)_0%,rgba(3,19,20,.86)_46%,rgba(3,19,20,.55)_74%,rgba(1,9,12,.74)_100%),radial-gradient(circle_at_18%_80%,rgba(240,139,79,.12),transparent_30%),linear-gradient(180deg,rgba(3,19,20,.16),rgba(1,9,12,.96))]"
         />
         <Container className="relative px-4 py-16 md:py-24">
-          <div className="max-w-4xl">
-            <div className="mb-6 inline-flex items-center gap-2 border border-cyan-200/20 bg-cyan-300/10 px-3 py-1 text-sm font-medium text-cyan-100">
-              <Icon className="size-4" />
-              {eyebrow}
+          <div className="grid gap-8 lg:grid-cols-[minmax(0,1fr)_340px] lg:items-end">
+            <div className="max-w-4xl">
+              <div className="mb-6 inline-flex items-center gap-2 border border-cyan-200/20 bg-cyan-300/10 px-3 py-1 text-sm font-medium text-cyan-100">
+                <Icon className="size-4" />
+                {eyebrow}
+              </div>
+              <h1 className="text-balance text-4xl font-semibold leading-tight text-[#e8fff9] md:text-6xl">
+                {title}
+              </h1>
+              <p className="mt-6 max-w-3xl text-lg leading-8 text-[#a9c9c3]">
+                {description}
+              </p>
             </div>
-            <h1 className="text-balance text-4xl font-semibold leading-tight text-[#e8fff9] md:text-6xl">
-              {title}
-            </h1>
-            <p className="mt-6 max-w-3xl text-lg leading-8 text-[#a9c9c3]">
-              {description}
-            </p>
+            <aside className="border border-cyan-200/20 bg-[#041d22]/88 p-5 shadow-2xl shadow-cyan-950/40 backdrop-blur-md">
+              <div className="flex items-center justify-between border-b border-cyan-200/15 pb-3 text-xs uppercase tracking-[0.18em] text-[#9fe6d4]">
+                <span>Abyss wiki card</span>
+                <span>EA</span>
+              </div>
+              <div className="mt-5 flex items-start gap-4">
+                <div className="flex size-12 shrink-0 items-center justify-center border border-cyan-200/20 bg-cyan-300/10">
+                  <Icon className="size-6 text-[#78ead7]" />
+                </div>
+                <div>
+                  <p className="text-sm font-semibold text-[#effffb]">
+                    {title}
+                  </p>
+                  <p className="mt-2 text-sm leading-6 text-[#a9c9c3]">
+                    Independent guide notes, route logic, and patch-sensitive
+                    planning.
+                  </p>
+                </div>
+              </div>
+              <div className="mt-5 grid gap-2 text-sm text-[#d1e8e2]">
+                <div className="flex items-center justify-between border border-cyan-200/10 bg-cyan-300/5 px-3 py-2">
+                  <span>Type</span>
+                  <span className="text-[#78ead7]">Guide</span>
+                </div>
+                <div className="flex items-center justify-between border border-cyan-200/10 bg-cyan-300/5 px-3 py-2">
+                  <span>Verified</span>
+                  <span className="text-[#f08b4f]">May 23, 2026</span>
+                </div>
+                <div className="flex items-center justify-between border border-cyan-200/10 bg-cyan-300/5 px-3 py-2">
+                  <span>Status</span>
+                  <span className="text-[#78ead7]">Early Access</span>
+                </div>
+              </div>
+            </aside>
           </div>
         </Container>
       </section>
@@ -162,6 +211,33 @@ export function LinkedGuidePage({
       <Container className="px-4 py-12">
         <div className="grid gap-6 lg:grid-cols-[minmax(0,1fr)_320px]">
           <article className="space-y-8">
+            <nav
+              aria-label="Guide contents"
+              className="border border-cyan-200/12 bg-[#071f23] p-5"
+            >
+              <div className="flex items-center gap-2 text-[#78ead7]">
+                <ListIcon className="size-4" />
+                <h2 className="text-sm font-semibold uppercase tracking-[0.18em]">
+                  Contents
+                </h2>
+              </div>
+              <div className="mt-4 grid gap-2 md:grid-cols-2">
+                {sections.map((section) => (
+                  <a
+                    className="flex items-center gap-2 border border-cyan-200/10 bg-cyan-300/5 px-3 py-2 text-sm text-[#d1e8e2] hover:border-cyan-200/30 hover:text-[#78ead7]"
+                    href={`#${section.title
+                      .toLowerCase()
+                      .replace(/[^a-z0-9]+/g, '-')
+                      .replace(/(^-|-$)/g, '')}`}
+                    key={section.title}
+                  >
+                    <ChevronRightIcon className="size-4 text-[#f08b4f]" />
+                    {section.title}
+                  </a>
+                ))}
+              </div>
+            </nav>
+
             <section className="border border-cyan-200/15 bg-[#082226] p-6">
               <p className="text-sm font-semibold uppercase tracking-[0.18em] text-[#f08b4f]">
                 Quick answer
@@ -180,6 +256,10 @@ export function LinkedGuidePage({
                   <section
                     key={section.title}
                     className="border border-cyan-200/12 bg-[#071f23] p-5"
+                    id={section.title
+                      .toLowerCase()
+                      .replace(/[^a-z0-9]+/g, '-')
+                      .replace(/(^-|-$)/g, '')}
                   >
                     <h3 className="text-xl font-semibold text-[#effffb]">
                       {section.title}
@@ -252,6 +332,28 @@ export function LinkedGuidePage({
           </article>
 
           <aside className="space-y-5 lg:sticky lg:top-24 lg:self-start">
+            <section className="overflow-hidden border border-cyan-200/12 bg-[#071f23]">
+              <div
+                aria-hidden="true"
+                className="h-40 bg-cover bg-right"
+                style={{
+                  backgroundImage: "url('/abyss/chibi-deep-sea-hero.webp')",
+                }}
+              />
+              <div className="border-t border-cyan-200/12 p-5">
+                <div className="flex items-center gap-2 text-[#78ead7]">
+                  <RadarIcon className="size-4" />
+                  <h2 className="text-lg font-semibold text-[#effffb]">
+                    Field note
+                  </h2>
+                </div>
+                <p className="mt-3 text-sm leading-6 text-[#abc8c3]">
+                  Original Abyss Guides art. No official game images, logos, or
+                  creature artwork are used here.
+                </p>
+              </div>
+            </section>
+
             <section className="border border-cyan-200/12 bg-[#071f23] p-5">
               <h2 className="text-lg font-semibold text-[#effffb]">
                 Read next

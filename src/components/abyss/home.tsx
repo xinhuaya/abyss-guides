@@ -15,25 +15,29 @@ import {
 const guideCards = [
   {
     title: 'Beginner Route',
-    description: 'First-session priorities, safe loops, scanning habits, and spoiler-light survival notes.',
+    description:
+      'First-session priorities, safe loops, scanning habits, and spoiler-light survival notes.',
     href: Routes.Subnautica2Beginner,
     icon: CompassIcon,
   },
   {
     title: 'Resources',
-    description: 'Material tables, farming notes, and individual resource pages as Early Access data is verified.',
+    description:
+      'Material tables, farming notes, and individual resource pages as Early Access data is verified.',
     href: Routes.Subnautica2Resources,
     icon: BoxesIcon,
   },
   {
     title: 'Crafting',
-    description: 'Recipe tracking, blueprint unlock notes, and the foundation for a crafting calculator.',
+    description:
+      'Recipe tracking, blueprint unlock notes, and the foundation for a crafting calculator.',
     href: Routes.Subnautica2Crafting,
     icon: WrenchIcon,
   },
   {
     title: 'Map & Biomes',
-    description: 'Route-first map planning for safe areas, resource zones, base spots, and danger markers.',
+    description:
+      'Route-first map planning for safe areas, resource zones, base spots, and danger markers.',
     href: Routes.Subnautica2Map,
     icon: MapIcon,
   },
@@ -42,23 +46,30 @@ const guideCards = [
 export function AbyssHome() {
   return (
     <main className="min-h-screen bg-[#031314] text-[#dff8f0] dark:bg-[#031314] dark:text-[#dff8f0]">
-      <section className="relative overflow-hidden border-b border-cyan-200/10">
+      <section className="relative min-h-[720px] overflow-hidden border-b border-cyan-200/10">
         <div
           aria-hidden="true"
-          className="absolute inset-0 opacity-[0.20]"
+          className="absolute inset-0 bg-cover bg-center md:bg-right"
+          style={{
+            backgroundImage: "url('/abyss/chibi-deep-sea-hero.webp')",
+          }}
+        />
+        <div
+          aria-hidden="true"
+          className="absolute inset-0 bg-[linear-gradient(90deg,rgba(1,12,18,.96)_0%,rgba(2,20,27,.82)_37%,rgba(2,20,27,.34)_68%,rgba(1,12,18,.20)_100%),linear-gradient(180deg,rgba(3,19,20,.10),rgba(1,9,12,.96))]"
+        />
+        <div
+          aria-hidden="true"
+          className="absolute inset-0 opacity-[0.18]"
           style={{
             backgroundImage:
               'linear-gradient(rgba(106, 240, 224, .16) 1px, transparent 1px), linear-gradient(90deg, rgba(106, 240, 224, .16) 1px, transparent 1px)',
             backgroundSize: '44px 44px',
           }}
         />
-        <div
-          aria-hidden="true"
-          className="absolute inset-0 bg-[radial-gradient(circle_at_75%_30%,rgba(64,224,208,.22),transparent_32%),radial-gradient(circle_at_18%_80%,rgba(244,143,63,.13),transparent_30%),linear-gradient(180deg,rgba(3,19,20,.25),rgba(1,9,12,.92))]"
-        />
 
         <Container className="relative px-4 py-16 md:py-24">
-          <div className="grid items-center gap-12 lg:grid-cols-[1fr_420px]">
+          <div className="grid min-h-[560px] items-center gap-12 lg:grid-cols-[1fr_390px]">
             <div className="max-w-3xl">
               <div className="mb-6 inline-flex items-center gap-2 border border-cyan-200/20 bg-cyan-300/10 px-3 py-1 text-sm font-medium text-cyan-100">
                 <RadioIcon className="size-4" />
@@ -92,10 +103,10 @@ export function AbyssHome() {
               </div>
             </div>
 
-            <div className="relative min-h-[420px] border border-cyan-200/20 bg-[#041d22] p-5 text-[#d9fff4] shadow-2xl shadow-cyan-950/40">
+            <div className="relative min-h-[420px] border border-cyan-200/20 bg-[#041d22]/90 p-5 text-[#d9fff4] shadow-2xl shadow-cyan-950/40 backdrop-blur-md">
               <div className="flex items-center justify-between border-b border-[#d9fff4]/15 pb-4 text-xs uppercase tracking-[0.18em] text-[#9fe6d4]">
-                <span>Abyss scan</span>
-                <span>EA-2026</span>
+                <span>Wiki field card</span>
+                <span>cute-mode</span>
               </div>
               <div className="relative mt-6 aspect-square overflow-hidden border border-[#d9fff4]/10 bg-[#020d12]">
                 <div className="absolute inset-0 bg-[radial-gradient(circle,rgba(95,232,214,.11),transparent_56%)]" />
@@ -114,7 +125,7 @@ export function AbyssHome() {
               </div>
               <div className="mt-5 grid grid-cols-3 gap-3 text-sm">
                 <div className="border border-[#d9fff4]/10 p-3">
-                  <div className="text-2xl font-semibold">60</div>
+                  <div className="text-2xl font-semibold">50</div>
                   <div className="text-[#9fbdb6]">page targets</div>
                 </div>
                 <div className="border border-[#d9fff4]/10 p-3">
@@ -142,7 +153,7 @@ export function AbyssHome() {
                 Subnautica 2 pages to publish first
               </h2>
             </div>
-              <p className="max-w-xl text-[#abc8c3]">
+            <p className="max-w-xl text-[#abc8c3]">
               The site starts as a guide hub, then grows into calculators and
               update trackers once the Early Access data is verified.
             </p>
@@ -173,7 +184,9 @@ export function AbyssHome() {
           <div className="grid gap-8 md:grid-cols-[0.9fr_1.1fr] md:items-center">
             <div>
               <BookOpenIcon className="mb-5 size-8 text-[#f08b4f]" />
-              <h2 className="text-3xl font-semibold">Built as an independent fan guide.</h2>
+              <h2 className="text-3xl font-semibold">
+                Built as an independent fan guide.
+              </h2>
             </div>
             <p className="text-base leading-8 text-[#b5c9c4]">
               Abyss Guides is not an official Subnautica 2 site. The goal is to
