@@ -2,6 +2,7 @@ import { websiteConfig } from '@/config/website';
 import { getLocalePathname } from '@/i18n/navigation';
 import { routing } from '@/i18n/routing';
 import { generateHreflangUrls } from '@/lib/hreflang';
+import { getReadyLocalesForPathname } from '@/lib/localized-routes';
 import { blogSource, categorySource, source } from '@/lib/source';
 import { Routes } from '@/routes';
 import type { MetadataRoute } from 'next';
@@ -58,7 +59,7 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
   // add static routes
   sitemapList.push(
     ...staticRoutes.flatMap((route) => {
-      return routing.locales.map((locale) => ({
+      return getReadyLocalesForPathname(String(route)).map((locale) => ({
         url: getUrl(route, locale),
         alternates: {
           languages: generateHreflangUrls(route),

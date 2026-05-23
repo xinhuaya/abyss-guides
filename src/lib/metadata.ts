@@ -1,9 +1,12 @@
 import { websiteConfig } from '@/config/website';
 import { defaultMessages } from '@/i18n/messages';
-import { routing } from '@/i18n/routing';
 import type { Metadata } from 'next';
 import type { Locale } from 'next-intl';
 import { generateAlternates, getCurrentHreflang } from './hreflang';
+import {
+  getReadyLocalesForPathname,
+  isRouteReadyForLocale,
+} from './localized-routes';
 import { getBaseUrl, getImageUrl, getUrlWithLocale } from './urls';
 
 /**
@@ -33,10 +36,14 @@ export function constructMetadata({
   const canonicalUrl = locale
     ? getUrlWithLocale(pathname || '', locale).replace(/\/$/, '')
     : undefined;
+  const routeReadyForLocale =
+    locale && pathname ? isRouteReadyForLocale(pathname, locale) : true;
+  const hasLocaleAlternates =
+    pathname && getReadyLocalesForPathname(pathname).length > 1;
 
   // Generate hreflang alternates if pathname is provided and we have multiple locales
   const alternates =
-    pathname && routing.locales.length > 1
+    pathname && hasLocaleAlternates
       ? {
           canonical: canonicalUrl,
           ...generateAlternates(pathname),
@@ -72,7 +79,7 @@ export function constructMetadata({
     },
     metadataBase: new URL(getBaseUrl()),
     manifest: `${getBaseUrl()}/manifest.webmanifest`,
-    ...(noIndex && {
+    ...((noIndex || !routeReadyForLocale) && {
       robots: {
         index: false,
         follow: false,
