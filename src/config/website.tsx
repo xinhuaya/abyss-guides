@@ -91,14 +91,49 @@ export const websiteConfig: WebsiteConfig = {
     defaultLocale: 'en',
     locales: {
       en: {
-        flag: 'US',
+        flag: 'EN',
         name: 'English',
         hreflang: 'en',
       },
       zh: {
-        flag: 'CN',
+        flag: '中',
         name: '中文',
         hreflang: 'zh-CN',
+      },
+      ru: {
+        flag: 'RU',
+        name: 'Русский',
+        hreflang: 'ru',
+      },
+      de: {
+        flag: 'DE',
+        name: 'Deutsch',
+        hreflang: 'de',
+      },
+      fr: {
+        flag: 'FR',
+        name: 'Français',
+        hreflang: 'fr',
+      },
+      'pt-BR': {
+        flag: 'BR',
+        name: 'Português BR',
+        hreflang: 'pt-BR',
+      },
+      'es-419': {
+        flag: 'ES',
+        name: 'Español LATAM',
+        hreflang: 'es-419',
+      },
+      ko: {
+        flag: 'KO',
+        name: '한국어',
+        hreflang: 'ko',
+      },
+      ja: {
+        flag: 'JP',
+        name: '日本語',
+        hreflang: 'ja',
       },
     },
   },

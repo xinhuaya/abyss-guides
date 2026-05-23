@@ -263,8 +263,342 @@ const copyByLocale: Record<'en' | 'zh', HubCopy> = {
   },
 };
 
+const hubCopyOverrides: Record<string, Partial<HubCopy>> = {
+  ru: {
+    metadata: {
+      title: 'Subnautica 2 Guide Hub - ресурсы, крафт, карта и кооп',
+      description:
+        'Русский хаб по Subnautica 2: первые маршруты, ресурсы, крафт, карта, кооп и обновления Early Access.',
+    },
+    updated: 'Обновлено 23 мая 2026',
+    title: 'Subnautica 2 Guide Hub',
+    description:
+      'Subnautica 2 находится в раннем доступе, поэтому точные данные могут меняться. Этот хаб собирает стартовые маршруты, ресурсы, крафт, карту, кооп и обновления в одном месте.',
+    sections: [
+      {
+        href: Routes.Subnautica2Beginner,
+        title: 'Гайд для новичков',
+        description: 'Первые цели, безопасные маршруты, сканирование и база.',
+      },
+      {
+        href: Routes.Subnautica2Resources,
+        title: 'Ресурсы',
+        description: 'Материалы, фарм и страницы отдельных ресурсов.',
+      },
+      {
+        href: Routes.Subnautica2Crafting,
+        title: 'Крафт',
+        description: 'Рецепты, чертежи и цепочки материалов.',
+      },
+      {
+        href: Routes.Subnautica2Map,
+        title: 'Карта и биомы',
+        description: 'Маршруты, безопасность, ресурсы и места для базы.',
+      },
+      {
+        href: Routes.Subnautica2Coop,
+        title: 'Кооп',
+        description: 'Роли, общее хранилище и командная выживаемость.',
+      },
+      {
+        href: Routes.Subnautica2Updates,
+        title: 'Обновления',
+        description:
+          'Патчи Early Access и страницы, которые нужно перепроверить.',
+      },
+    ],
+    editorialTitle: 'Правило публикации',
+    editorialBody:
+      'Локализованные страницы попадают в sitemap только после ручной подготовки. Непереведенные статьи остаются noindex.',
+  },
+  de: {
+    metadata: {
+      title: 'Subnautica 2 Guide Hub - Ressourcen, Crafting, Karte und Koop',
+      description:
+        'Deutscher Subnautica 2 Hub fuer Anfaenger, Ressourcen, Crafting, Karte, Koop und Early-Access-Updates.',
+    },
+    updated: 'Zuletzt aktualisiert am 23. Mai 2026',
+    title: 'Subnautica 2 Guide Hub',
+    description:
+      'Subnautica 2 ist im Early Access, also koennen Details nach Patches wechseln. Dieser Hub sammelt Start-Routen, Ressourcen, Crafting, Karte, Koop und Updates.',
+    sections: [
+      {
+        href: Routes.Subnautica2Beginner,
+        title: 'Anfaenger-Guide',
+        description: 'Erste Ziele, sichere Routen, Scans und Basisplanung.',
+      },
+      {
+        href: Routes.Subnautica2Resources,
+        title: 'Ressourcen',
+        description: 'Materialien, Farming und einzelne Ressourcenseiten.',
+      },
+      {
+        href: Routes.Subnautica2Crafting,
+        title: 'Crafting',
+        description: 'Rezepte, Blueprints und Materialketten.',
+      },
+      {
+        href: Routes.Subnautica2Map,
+        title: 'Karte und Biome',
+        description: 'Routen, Sicherheit, Ressourcen und Basisorte.',
+      },
+      {
+        href: Routes.Subnautica2Coop,
+        title: 'Koop',
+        description: 'Teamrollen, Lagerregeln und Multiplayer-Probleme.',
+      },
+      {
+        href: Routes.Subnautica2Updates,
+        title: 'Updates',
+        description:
+          'Early-Access-Patches und Seiten, die geprueft werden muessen.',
+      },
+    ],
+    editorialTitle: 'SEO-Regel',
+    editorialBody:
+      'Lokalisierte Seiten kommen erst in sitemap und hreflang, wenn sie wirklich uebersetzt sind. Unfertige Artikel bleiben noindex.',
+  },
+  fr: {
+    metadata: {
+      title: 'Subnautica 2 Guide Hub - ressources, craft, carte et coop',
+      description:
+        'Hub francais pour Subnautica 2 : debuter, ressources, craft, carte, coop et mises a jour Early Access.',
+    },
+    updated: 'Mis a jour le 23 mai 2026',
+    title: 'Hub de guides Subnautica 2',
+    description:
+      'Subnautica 2 est en Early Access, donc les details peuvent changer. Ce hub regroupe les routes de depart, les ressources, le craft, la carte, la coop et les mises a jour.',
+    sections: [
+      {
+        href: Routes.Subnautica2Beginner,
+        title: 'Guide debutant',
+        description: 'Priorites de depart, routes sures, scan et base.',
+      },
+      {
+        href: Routes.Subnautica2Resources,
+        title: 'Ressources',
+        description: 'Materiaux, farm et pages par ressource.',
+      },
+      {
+        href: Routes.Subnautica2Crafting,
+        title: 'Craft',
+        description: 'Recettes, blueprints et chaines de materiaux.',
+      },
+      {
+        href: Routes.Subnautica2Map,
+        title: 'Carte et biomes',
+        description: 'Routes, securite, ressources et bases.',
+      },
+      {
+        href: Routes.Subnautica2Coop,
+        title: 'Coop',
+        description: 'Roles, stockage partage et problemes multijoueur.',
+      },
+      {
+        href: Routes.Subnautica2Updates,
+        title: 'Mises a jour',
+        description: 'Patchs Early Access et pages a verifier.',
+      },
+    ],
+    editorialTitle: 'Regle SEO',
+    editorialBody:
+      'Une page localisee entre dans le sitemap seulement quand elle est vraiment traduite. Les articles incomplets restent noindex.',
+  },
+  'pt-BR': {
+    metadata: {
+      title: 'Subnautica 2 Hub - recursos, fabricacao, mapa e coop',
+      description:
+        'Hub em portugues do Brasil para Subnautica 2: inicio, recursos, fabricacao, mapa, coop e atualizacoes do Early Access.',
+    },
+    updated: 'Atualizado em 23 de maio de 2026',
+    title: 'Hub de guias de Subnautica 2',
+    description:
+      'Subnautica 2 esta em Early Access, entao detalhes mudam com patches. Este hub junta rotas iniciais, recursos, fabricacao, mapa, coop e atualizacoes.',
+    sections: [
+      {
+        href: Routes.Subnautica2Beginner,
+        title: 'Guia inicial',
+        description: 'Primeiras prioridades, rotas seguras, scans e base.',
+      },
+      {
+        href: Routes.Subnautica2Resources,
+        title: 'Recursos',
+        description: 'Materiais, farm e paginas de recursos.',
+      },
+      {
+        href: Routes.Subnautica2Crafting,
+        title: 'Fabricacao',
+        description: 'Receitas, blueprints e cadeias de materiais.',
+      },
+      {
+        href: Routes.Subnautica2Map,
+        title: 'Mapa e biomas',
+        description: 'Rotas, seguranca, recursos e locais de base.',
+      },
+      {
+        href: Routes.Subnautica2Coop,
+        title: 'Coop',
+        description: 'Funcoes, armazenamento compartilhado e multiplayer.',
+      },
+      {
+        href: Routes.Subnautica2Updates,
+        title: 'Atualizacoes',
+        description: 'Patches do Early Access e paginas para revisar.',
+      },
+    ],
+    editorialTitle: 'Regra de SEO',
+    editorialBody:
+      'Uma pagina localizada so entra no sitemap depois de traducao real. Artigos incompletos continuam noindex.',
+  },
+  'es-419': {
+    metadata: {
+      title: 'Subnautica 2 Hub - recursos, fabricacion, mapa y cooperativo',
+      description:
+        'Hub en espanol latino para Subnautica 2: inicio, recursos, fabricacion, mapa, cooperativo y actualizaciones de Early Access.',
+    },
+    updated: 'Actualizado el 23 de mayo de 2026',
+    title: 'Centro de guias de Subnautica 2',
+    description:
+      'Subnautica 2 esta en Early Access, asi que los datos pueden cambiar. Este hub junta rutas iniciales, recursos, fabricacion, mapa, cooperativo y actualizaciones.',
+    sections: [
+      {
+        href: Routes.Subnautica2Beginner,
+        title: 'Guia inicial',
+        description: 'Primeras prioridades, rutas seguras, escaneo y base.',
+      },
+      {
+        href: Routes.Subnautica2Resources,
+        title: 'Recursos',
+        description: 'Materiales, farmeo y paginas por recurso.',
+      },
+      {
+        href: Routes.Subnautica2Crafting,
+        title: 'Fabricacion',
+        description: 'Recetas, blueprints y cadenas de materiales.',
+      },
+      {
+        href: Routes.Subnautica2Map,
+        title: 'Mapa y biomas',
+        description: 'Rutas, seguridad, recursos y lugares para base.',
+      },
+      {
+        href: Routes.Subnautica2Coop,
+        title: 'Cooperativo',
+        description: 'Roles, almacenamiento compartido y multijugador.',
+      },
+      {
+        href: Routes.Subnautica2Updates,
+        title: 'Actualizaciones',
+        description: 'Parches de Early Access y paginas para revisar.',
+      },
+    ],
+    editorialTitle: 'Regla SEO',
+    editorialBody:
+      'Una pagina localizada entra al sitemap solo cuando esta traducida de verdad. Los articulos incompletos siguen con noindex.',
+  },
+  ko: {
+    metadata: {
+      title: 'Subnautica 2 공략 허브 - 자원, 제작, 지도, 협동',
+      description:
+        'Subnautica 2 한국어 공략 허브입니다. 초반 루트, 자원, 제작, 지도, 협동 플레이, 얼리 액세스 업데이트를 정리합니다.',
+    },
+    updated: '마지막 업데이트: 2026년 5월 23일',
+    title: 'Subnautica 2 공략 허브',
+    description:
+      'Subnautica 2는 얼리 액세스 게임이라 패치마다 정보가 바뀔 수 있습니다. 이 허브는 초반 루트, 자원, 제작, 지도, 협동, 업데이트를 한곳에 묶습니다.',
+    sections: [
+      {
+        href: Routes.Subnautica2Beginner,
+        title: '초보자 가이드',
+        description: '첫 목표, 안전 루트, 스캔 습관, 기지 계획.',
+      },
+      {
+        href: Routes.Subnautica2Resources,
+        title: '자원',
+        description: '재료표, 파밍 노트, 개별 자원 페이지.',
+      },
+      {
+        href: Routes.Subnautica2Crafting,
+        title: '제작',
+        description: '레시피, 청사진, 재료 체인.',
+      },
+      {
+        href: Routes.Subnautica2Map,
+        title: '지도와 생태계',
+        description: '루트, 안전도, 자원, 기지 후보.',
+      },
+      {
+        href: Routes.Subnautica2Coop,
+        title: '협동',
+        description: '팀 역할, 공동 창고, 멀티플레이 문제.',
+      },
+      {
+        href: Routes.Subnautica2Updates,
+        title: '업데이트',
+        description: '얼리 액세스 패치와 다시 확인할 페이지.',
+      },
+    ],
+    editorialTitle: 'SEO 규칙',
+    editorialBody:
+      '현지화 페이지는 실제 번역이 끝난 뒤 sitemap에 넣습니다. 미완성 글은 noindex 상태로 둡니다.',
+  },
+  ja: {
+    metadata: {
+      title: 'Subnautica 2 攻略ハブ - 資源、クラフト、マップ、協力プレイ',
+      description:
+        'Subnautica 2 日本語攻略ハブ。序盤ルート、資源、クラフト、マップ、協力プレイ、早期アクセス更新を整理します。',
+    },
+    updated: '最終更新: 2026年5月23日',
+    title: 'Subnautica 2 攻略ハブ',
+    description:
+      'Subnautica 2 は早期アクセス中なので、情報はパッチで変わります。このハブでは序盤ルート、資源、クラフト、マップ、協力プレイ、更新情報をまとめます。',
+    sections: [
+      {
+        href: Routes.Subnautica2Beginner,
+        title: '初心者ガイド',
+        description: '最初の目標、安全なルート、スキャン、拠点計画。',
+      },
+      {
+        href: Routes.Subnautica2Resources,
+        title: '資源',
+        description: '素材表、集め方、個別資源ページ。',
+      },
+      {
+        href: Routes.Subnautica2Crafting,
+        title: 'クラフト',
+        description: 'レシピ、設計図、素材チェーン。',
+      },
+      {
+        href: Routes.Subnautica2Map,
+        title: 'マップとバイオーム',
+        description: 'ルート、安全度、資源、拠点候補。',
+      },
+      {
+        href: Routes.Subnautica2Coop,
+        title: '協力プレイ',
+        description: '役割分担、共有ストレージ、マルチプレイの注意点。',
+      },
+      {
+        href: Routes.Subnautica2Updates,
+        title: 'アップデート',
+        description: '早期アクセスのパッチと再確認が必要なページ。',
+      },
+    ],
+    editorialTitle: 'SEO ルール',
+    editorialBody:
+      'ローカライズ済みページだけを sitemap に入れます。未翻訳の記事は noindex のままにします。',
+  },
+};
+
 function getHubCopy(locale: Locale): HubCopy {
-  return locale === 'zh' ? copyByLocale.zh : copyByLocale.en;
+  if (locale === 'zh') {
+    return copyByLocale.zh;
+  }
+
+  return {
+    ...copyByLocale.en,
+    ...(locale ? hubCopyOverrides[locale] : {}),
+  };
 }
 
 export async function generateMetadata({

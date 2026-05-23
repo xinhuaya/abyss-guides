@@ -46,6 +46,15 @@ const searchAPI = createI18nSearchAPI('advanced', {
 
     // Use the default English tokenizer for English content
     en: 'english',
+    ru: 'russian',
+    de: 'german',
+    fr: 'french',
+    'pt-BR': 'portuguese',
+    'es-419': 'spanish',
+    // Orama does not provide built-in Korean/Japanese tokenizers here.
+    // Keep docs search from crashing; game SEO pages do not rely on docs search.
+    ko: 'english',
+    ja: 'english',
   },
 
   // Global search configuration

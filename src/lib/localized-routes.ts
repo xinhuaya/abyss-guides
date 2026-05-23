@@ -4,6 +4,13 @@ import type { Locale } from 'next-intl';
 
 const localizedRoutes: Partial<Record<Locale, ReadonlySet<string>>> = {
   zh: new Set([Routes.Root, Routes.Subnautica2]),
+  ru: new Set([Routes.Root, Routes.Subnautica2]),
+  de: new Set([Routes.Root, Routes.Subnautica2]),
+  fr: new Set([Routes.Root, Routes.Subnautica2]),
+  'pt-BR': new Set([Routes.Root, Routes.Subnautica2]),
+  'es-419': new Set([Routes.Root, Routes.Subnautica2]),
+  ko: new Set([Routes.Root, Routes.Subnautica2]),
+  ja: new Set([Routes.Root, Routes.Subnautica2]),
 };
 
 export function normalizeRoutePath(

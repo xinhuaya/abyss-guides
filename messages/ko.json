@@ -1,0 +1,43 @@
+{
+  "Metadata": {
+    "name": "Abyss Guides",
+    "title": "Abyss Guides - 생존 게임 공략, 자원표, 도구",
+    "description": "심해 생존 게임을 위한 독립 공략 사이트입니다. 루트, 자원표, 제작 데이터, 지도 계획, 업데이트 노트를 정리합니다. 첫 시작은 Subnautica 2입니다."
+  },
+  "Common": {
+    "language": "언어 변경",
+    "mode": {
+      "label": "테마 변경",
+      "light": "라이트",
+      "dark": "다크",
+      "system": "시스템"
+    }
+  },
+  "Marketing": {
+    "navbar": {
+      "guideHub": {
+        "title": "공략 허브"
+      },
+      "resources": {
+        "title": "자원"
+      },
+      "crafting": {
+        "title": "제작"
+      },
+      "updates": {
+        "title": "업데이트"
+      }
+    },
+    "footer": {
+      "tagline": "낯선 바다와 위험한 세계를 위한 독립 공략, 자원표, 제작 데이터, 생존 도구.",
+      "product": {
+        "title": "콘텐츠",
+        "items": {
+          "guideHub": "Subnautica 2 허브",
+          "resources": "자원",
+          "updates": "업데이트"
+        }
+      }
+    }
+  }
+}

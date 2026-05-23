@@ -1,0 +1,43 @@
+{
+  "Metadata": {
+    "name": "Abyss Guides",
+    "title": "Abyss Guides - guias, tabelas de recursos e ferramentas de sobrevivencia",
+    "description": "Guias independentes para jogos de sobrevivencia submarina: rotas, recursos, fabricacao, mapas e notas de atualizacao. Comecamos por Subnautica 2."
+  },
+  "Common": {
+    "language": "Trocar idioma",
+    "mode": {
+      "label": "Trocar tema",
+      "light": "Claro",
+      "dark": "Escuro",
+      "system": "Sistema"
+    }
+  },
+  "Marketing": {
+    "navbar": {
+      "guideHub": {
+        "title": "Central de guias"
+      },
+      "resources": {
+        "title": "Recursos"
+      },
+      "crafting": {
+        "title": "Fabricacao"
+      },
+      "updates": {
+        "title": "Atualizacoes"
+      }
+    },
+    "footer": {
+      "tagline": "Notas independentes, tabelas de recursos, dados de fabricacao e ferramentas para oceanos perigosos.",
+      "product": {
+        "title": "Conteudo",
+        "items": {
+          "guideHub": "Central de Subnautica 2",
+          "resources": "Recursos",
+          "updates": "Atualizacoes"
+        }
+      }
+    }
+  }
+}

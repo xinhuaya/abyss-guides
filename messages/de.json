@@ -1,0 +1,43 @@
+{
+  "Metadata": {
+    "name": "Abyss Guides",
+    "title": "Abyss Guides - Guides, Ressourcentabellen und Tools fuer Survival-Spiele",
+    "description": "Unabhaengige Guides fuer Unterwasser-Survival-Spiele: Routen, Ressourcen, Crafting, Kartenplanung und Update-Notizen. Wir starten mit Subnautica 2."
+  },
+  "Common": {
+    "language": "Sprache wechseln",
+    "mode": {
+      "label": "Darstellung wechseln",
+      "light": "Hell",
+      "dark": "Dunkel",
+      "system": "System"
+    }
+  },
+  "Marketing": {
+    "navbar": {
+      "guideHub": {
+        "title": "Guide-Hub"
+      },
+      "resources": {
+        "title": "Ressourcen"
+      },
+      "crafting": {
+        "title": "Crafting"
+      },
+      "updates": {
+        "title": "Updates"
+      }
+    },
+    "footer": {
+      "tagline": "Unabhaengige Notizen, Ressourcentabellen, Crafting-Daten und Tools fuer fremde Ozeane.",
+      "product": {
+        "title": "Inhalte",
+        "items": {
+          "guideHub": "Subnautica 2 Hub",
+          "resources": "Ressourcen",
+          "updates": "Updates"
+        }
+      }
+    }
+  }
+}

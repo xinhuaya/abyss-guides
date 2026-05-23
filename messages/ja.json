@@ -1,0 +1,43 @@
+{
+  "Metadata": {
+    "name": "Abyss Guides",
+    "title": "Abyss Guides - サバイバルゲーム攻略、資源表、ツール",
+    "description": "深海サバイバルゲーム向けの独立攻略サイトです。ルート、資源表、クラフト、マップ計画、アップデート情報を整理します。まずは Subnautica 2 から始めます。"
+  },
+  "Common": {
+    "language": "言語を切り替え",
+    "mode": {
+      "label": "表示モードを切り替え",
+      "light": "ライト",
+      "dark": "ダーク",
+      "system": "システム"
+    }
+  },
+  "Marketing": {
+    "navbar": {
+      "guideHub": {
+        "title": "攻略ハブ"
+      },
+      "resources": {
+        "title": "資源"
+      },
+      "crafting": {
+        "title": "クラフト"
+      },
+      "updates": {
+        "title": "更新"
+      }
+    },
+    "footer": {
+      "tagline": "未知の海と危険な世界のための独立攻略、資源表、クラフトデータ、実用ツール。",
+      "product": {
+        "title": "コンテンツ",
+        "items": {
+          "guideHub": "Subnautica 2 ハブ",
+          "resources": "資源",
+          "updates": "更新"
+        }
+      }
+    }
+  }
+}

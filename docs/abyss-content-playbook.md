@@ -32,9 +32,10 @@ Every publishable guide should include:
 ## Localization
 
 - English remains the default URL set.
-- Chinese pages are published in `/zh` only after they have real Chinese copy.
-- Current indexed Chinese pages: `/zh` and `/zh/games/subnautica-2`.
-- Unfinished Chinese routes stay out of sitemap and hreflang until the page is localized.
+- Localized pages are published only after they have real localized title, metadata, headings, body copy, and navigation text.
+- Current localized entry pages: `/zh`, `/ru`, `/de`, `/fr`, `/pt-BR`, `/es-419`, `/ko`, `/ja`, plus each locale's `/games/subnautica-2` hub.
+- Unfinished localized article routes stay out of sitemap and hreflang until the page is localized.
+- First article translation queue: Chinese, Russian, German, French, Brazilian Portuguese, Latin American Spanish, Korean, Japanese.
 
 ## Visuals
 

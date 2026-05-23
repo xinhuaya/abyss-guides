@@ -174,8 +174,293 @@ const copyByLocale: Record<'en' | 'zh', HomeCopy> = {
   },
 };
 
+const homeCopyOverrides: Record<string, Partial<HomeCopy>> = {
+  ru: {
+    eyebrow: 'Хаб гайдов Subnautica 2 Early Access',
+    title: 'Практичные заметки из чужого океана.',
+    description:
+      'Abyss Guides собирает маршруты, таблицы ресурсов, заметки по крафту, планирование карты и трекер обновлений для Subnautica 2.',
+    primaryCta: 'Открыть хаб гайдов',
+    secondaryCta: 'Смотреть ресурсы',
+    guideCards: [
+      {
+        title: 'Маршрут новичка',
+        description:
+          'Первые цели, безопасные циклы, сканирование и советы без лишних спойлеров.',
+        href: Routes.Subnautica2Beginner,
+        icon: CompassIcon,
+      },
+      {
+        title: 'Ресурсы',
+        description:
+          'Таблицы материалов, заметки по фарму и страницы ресурсов после проверки данных.',
+        href: Routes.Subnautica2Resources,
+        icon: BoxesIcon,
+      },
+      {
+        title: 'Крафт',
+        description:
+          'Рецепты, чертежи и основа для будущего калькулятора крафта.',
+        href: Routes.Subnautica2Crafting,
+        icon: WrenchIcon,
+      },
+      {
+        title: 'Карта и биомы',
+        description:
+          'Планирование маршрутов, безопасные зоны, ресурсы, базы и опасности.',
+        href: Routes.Subnautica2Map,
+        icon: MapIcon,
+      },
+    ],
+    firstLaunchTitle: 'Первые страницы по Subnautica 2',
+    independentTitle: 'Независимый фанатский гайд.',
+  },
+  de: {
+    eyebrow: 'Subnautica 2 Early-Access-Guide-Hub',
+    title: 'Feldnotizen aus der fremden Tiefe.',
+    description:
+      'Abyss Guides sammelt praktische Routen, Ressourcentabellen, Crafting-Notizen, Kartenplanung und Update-Tracker fuer Subnautica 2.',
+    primaryCta: 'Guide-Hub oeffnen',
+    secondaryCta: 'Ressourcen ansehen',
+    guideCards: [
+      {
+        title: 'Anfaengerroute',
+        description:
+          'Erste Ziele, sichere Schleifen, Scan-Gewohnheiten und spoilerarme Tipps.',
+        href: Routes.Subnautica2Beginner,
+        icon: CompassIcon,
+      },
+      {
+        title: 'Ressourcen',
+        description:
+          'Materialtabellen, Farming-Notizen und einzelne Ressourcenseiten.',
+        href: Routes.Subnautica2Resources,
+        icon: BoxesIcon,
+      },
+      {
+        title: 'Crafting',
+        description:
+          'Rezepte, Blueprint-Hinweise und Daten fuer einen Crafting-Rechner.',
+        href: Routes.Subnautica2Crafting,
+        icon: WrenchIcon,
+      },
+      {
+        title: 'Karte und Biome',
+        description:
+          'Routenplanung fuer sichere Bereiche, Ressourcen, Basen und Gefahren.',
+        href: Routes.Subnautica2Map,
+        icon: MapIcon,
+      },
+    ],
+    firstLaunchTitle: 'Die ersten Subnautica 2 Seiten',
+    independentTitle: 'Ein unabhaengiger Fan-Guide.',
+  },
+  fr: {
+    eyebrow: 'Hub de guides Subnautica 2 Early Access',
+    title: 'Notes de terrain dans les abysses alien.',
+    description:
+      'Abyss Guides publie des routes utiles, des tableaux de ressources, du craft, de la carte et un suivi des mises a jour pour Subnautica 2.',
+    primaryCta: 'Ouvrir le hub',
+    secondaryCta: 'Voir les ressources',
+    guideCards: [
+      {
+        title: 'Route debutant',
+        description:
+          'Priorites de depart, boucles sures, scan et conseils avec peu de spoilers.',
+        href: Routes.Subnautica2Beginner,
+        icon: CompassIcon,
+      },
+      {
+        title: 'Ressources',
+        description:
+          'Tableaux de materiaux, notes de farm et pages detaillees par ressource.',
+        href: Routes.Subnautica2Resources,
+        icon: BoxesIcon,
+      },
+      {
+        title: 'Craft',
+        description:
+          'Recettes, blueprints et base de donnees pour un futur calculateur.',
+        href: Routes.Subnautica2Crafting,
+        icon: WrenchIcon,
+      },
+      {
+        title: 'Carte et biomes',
+        description:
+          'Routes, zones sures, ressources, emplacements de base et dangers.',
+        href: Routes.Subnautica2Map,
+        icon: MapIcon,
+      },
+    ],
+    firstLaunchTitle: 'Les premieres pages Subnautica 2',
+    independentTitle: 'Un guide de fan independant.',
+  },
+  'pt-BR': {
+    eyebrow: 'Central de guias de Subnautica 2 Early Access',
+    title: 'Notas de campo do oceano alienigena.',
+    description:
+      'Abyss Guides organiza rotas praticas, tabelas de recursos, fabricacao, mapas e atualizacoes para Subnautica 2.',
+    primaryCta: 'Abrir central de guias',
+    secondaryCta: 'Ver recursos',
+    guideCards: [
+      {
+        title: 'Rota inicial',
+        description:
+          'Prioridades da primeira sessao, rotas seguras, scans e dicas com poucos spoilers.',
+        href: Routes.Subnautica2Beginner,
+        icon: CompassIcon,
+      },
+      {
+        title: 'Recursos',
+        description:
+          'Tabelas de materiais, farm e paginas de recursos depois da verificacao.',
+        href: Routes.Subnautica2Resources,
+        icon: BoxesIcon,
+      },
+      {
+        title: 'Fabricacao',
+        description:
+          'Receitas, blueprints e base para um futuro calculador de craft.',
+        href: Routes.Subnautica2Crafting,
+        icon: WrenchIcon,
+      },
+      {
+        title: 'Mapa e biomas',
+        description:
+          'Planejamento de rotas, areas seguras, recursos, bases e perigos.',
+        href: Routes.Subnautica2Map,
+        icon: MapIcon,
+      },
+    ],
+    firstLaunchTitle: 'Primeiras paginas de Subnautica 2',
+    independentTitle: 'Um guia de fã independente.',
+  },
+  'es-419': {
+    eyebrow: 'Centro de guias de Subnautica 2 Early Access',
+    title: 'Notas de campo desde el oceano alienigena.',
+    description:
+      'Abyss Guides reune rutas practicas, tablas de recursos, fabricacion, mapas y seguimiento de actualizaciones para Subnautica 2.',
+    primaryCta: 'Abrir centro de guias',
+    secondaryCta: 'Ver recursos',
+    guideCards: [
+      {
+        title: 'Ruta inicial',
+        description:
+          'Prioridades de la primera partida, rutas seguras, escaneo y consejos con pocos spoilers.',
+        href: Routes.Subnautica2Beginner,
+        icon: CompassIcon,
+      },
+      {
+        title: 'Recursos',
+        description:
+          'Tablas de materiales, farmeo y paginas de recursos al verificar datos.',
+        href: Routes.Subnautica2Resources,
+        icon: BoxesIcon,
+      },
+      {
+        title: 'Fabricacion',
+        description:
+          'Recetas, blueprints y base para un futuro calculador de craft.',
+        href: Routes.Subnautica2Crafting,
+        icon: WrenchIcon,
+      },
+      {
+        title: 'Mapa y biomas',
+        description:
+          'Rutas, zonas seguras, recursos, bases y marcadores de peligro.',
+        href: Routes.Subnautica2Map,
+        icon: MapIcon,
+      },
+    ],
+    firstLaunchTitle: 'Primeras paginas de Subnautica 2',
+    independentTitle: 'Un guia independiente hecho por fans.',
+  },
+  ko: {
+    eyebrow: 'Subnautica 2 얼리 액세스 공략 허브',
+    title: '외계 심해를 위한 현장 노트.',
+    description:
+      'Abyss Guides는 Subnautica 2의 탐색 루트, 자원표, 제작 노트, 지도 계획, 업데이트 기록을 정리합니다.',
+    primaryCta: '공략 허브 열기',
+    secondaryCta: '자원 보기',
+    guideCards: [
+      {
+        title: '초반 루트',
+        description:
+          '첫 플레이 우선순위, 안전 루프, 스캔 습관, 낮은 스포일러 팁.',
+        href: Routes.Subnautica2Beginner,
+        icon: CompassIcon,
+      },
+      {
+        title: '자원',
+        description: '재료표, 파밍 노트, 검증된 개별 자원 페이지.',
+        href: Routes.Subnautica2Resources,
+        icon: BoxesIcon,
+      },
+      {
+        title: '제작',
+        description: '레시피, 청사진 해금, 제작 계산기를 위한 데이터.',
+        href: Routes.Subnautica2Crafting,
+        icon: WrenchIcon,
+      },
+      {
+        title: '지도와 생태계',
+        description:
+          '안전 구역, 자원 구역, 기지 후보, 위험 지점 중심의 루트 계획.',
+        href: Routes.Subnautica2Map,
+        icon: MapIcon,
+      },
+    ],
+    firstLaunchTitle: '먼저 만들 Subnautica 2 페이지',
+    independentTitle: '독립 팬 가이드입니다.',
+  },
+  ja: {
+    eyebrow: 'Subnautica 2 早期アクセス攻略ハブ',
+    title: '未知の深海を泳ぐための実用メモ。',
+    description:
+      'Abyss Guides は Subnautica 2 の探索ルート、資源表、クラフト、マップ計画、アップデート情報を整理します。',
+    primaryCta: '攻略ハブを開く',
+    secondaryCta: '資源を見る',
+    guideCards: [
+      {
+        title: '初心者ルート',
+        description:
+          '最初にやること、安全な周回、スキャン、ネタバレ控えめの生存メモ。',
+        href: Routes.Subnautica2Beginner,
+        icon: CompassIcon,
+      },
+      {
+        title: '資源',
+        description: '素材表、集め方、検証済みの個別資源ページ。',
+        href: Routes.Subnautica2Resources,
+        icon: BoxesIcon,
+      },
+      {
+        title: 'クラフト',
+        description: 'レシピ、設計図、今後のクラフト計算機につながるデータ。',
+        href: Routes.Subnautica2Crafting,
+        icon: WrenchIcon,
+      },
+      {
+        title: 'マップとバイオーム',
+        description: '安全地帯、資源エリア、拠点候補、危険地点をルートで整理。',
+        href: Routes.Subnautica2Map,
+        icon: MapIcon,
+      },
+    ],
+    firstLaunchTitle: '最初に公開する Subnautica 2 ページ',
+    independentTitle: '独立したファンガイドです。',
+  },
+};
+
 function getHomeCopy(locale?: Locale): HomeCopy {
-  return locale === 'zh' ? copyByLocale.zh : copyByLocale.en;
+  if (locale === 'zh') {
+    return copyByLocale.zh;
+  }
+
+  return {
+    ...copyByLocale.en,
+    ...(locale ? homeCopyOverrides[locale] : {}),
+  };
 }
 
 export function AbyssHome({ locale }: { locale?: Locale }) {

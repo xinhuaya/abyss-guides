@@ -62,21 +62,32 @@ export default function LocaleSwitcher() {
         <Button
           variant="ghost"
           size="sm"
-          className="size-8 p-0.5 border border-border rounded-full"
+          className="h-8 gap-2 rounded-full border border-border px-3 text-xs font-medium"
         >
           <Languages className="size-3" />
+          <span>
+            {websiteConfig.i18n.locales[currentLocale ?? locale]?.flag}
+          </span>
           <span className="sr-only">{t('language')}</span>
         </Button>
       </DropdownMenuTrigger>
-      <DropdownMenuContent align="end">
+      <DropdownMenuContent
+        align="end"
+        className="max-h-[420px] min-w-44 overflow-y-auto"
+      >
         {Object.entries(websiteConfig.i18n.locales).map(
           ([localeOption, data]) => (
             <DropdownMenuItem
               key={localeOption}
               onClick={() => setLocale(localeOption)}
+              className="cursor-pointer justify-between gap-3"
             >
-              {data.flag && <span className="mr-2 text-md">{data.flag}</span>}
               <span className="text-sm">{data.name}</span>
+              {data.flag && (
+                <span className="text-xs text-muted-foreground">
+                  {data.flag}
+                </span>
+              )}
             </DropdownMenuItem>
           )
         )}

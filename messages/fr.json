@@ -1,0 +1,43 @@
+{
+  "Metadata": {
+    "name": "Abyss Guides",
+    "title": "Abyss Guides - guides, tableaux de ressources et outils de survie",
+    "description": "Guides independants pour les jeux de survie sous-marine : routes, ressources, craft, cartes et notes de mise a jour. On commence avec Subnautica 2."
+  },
+  "Common": {
+    "language": "Changer de langue",
+    "mode": {
+      "label": "Changer le theme",
+      "light": "Clair",
+      "dark": "Sombre",
+      "system": "Systeme"
+    }
+  },
+  "Marketing": {
+    "navbar": {
+      "guideHub": {
+        "title": "Hub de guides"
+      },
+      "resources": {
+        "title": "Ressources"
+      },
+      "crafting": {
+        "title": "Craft"
+      },
+      "updates": {
+        "title": "Mises a jour"
+      }
+    },
+    "footer": {
+      "tagline": "Notes independantes, tableaux de ressources, donnees de craft et outils pour oceans dangereux.",
+      "product": {
+        "title": "Contenu",
+        "items": {
+          "guideHub": "Hub Subnautica 2",
+          "resources": "Ressources",
+          "updates": "Mises a jour"
+        }
+      }
+    }
+  }
+}
