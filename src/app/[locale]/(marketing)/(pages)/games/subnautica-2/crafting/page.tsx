@@ -22,7 +22,8 @@ export async function generateMetadata({
   const { locale } = await params;
 
   return constructMetadata({
-    title: 'Subnautica 2 Crafting Guide - Recipes, Blueprints, and Material Chains',
+    title:
+      'Subnautica 2 Crafting Guide - Recipes, Blueprints, and Material Chains',
     description:
       'A Subnautica 2 crafting guide for Early Access recipes, blueprint unlocks, material chains, Mangalloy Ingots, Metal Farms, and future calculator data.',
     locale,
@@ -54,13 +55,41 @@ const craftingSystems = [
 ];
 
 const recipePriorities = [
-  ['Scanner and scan tools', 'Unlock blueprints and turn exploration into progress.', 'Very high'],
-  ['Repair and safety tools', 'Keep equipment and vehicles usable after risky trips.', 'High'],
-  ['Storage and base pieces', 'Reduce inventory friction and make routes repeatable.', 'High'],
-  ['Power systems', 'Support a practical base before expanding too far.', 'High'],
-  ['Vehicle and depth upgrades', 'Open deeper routes and longer dives.', 'Progression'],
-  ['Processed ingots', 'Compress raw materials into advanced crafting chains.', 'Mid to late'],
-  ['Metal Farm', 'Reported as important for duplicating rare metals, but requires careful setup.', 'Late-route'],
+  [
+    'Scanner and scan tools',
+    'Unlock blueprints and turn exploration into progress.',
+    'Very high',
+  ],
+  [
+    'Repair and safety tools',
+    'Keep equipment and vehicles usable after risky trips.',
+    'High',
+  ],
+  [
+    'Storage and base pieces',
+    'Reduce inventory friction and make routes repeatable.',
+    'High',
+  ],
+  [
+    'Power systems',
+    'Support a practical base before expanding too far.',
+    'High',
+  ],
+  [
+    'Vehicle and depth upgrades',
+    'Open deeper routes and longer dives.',
+    'Progression',
+  ],
+  [
+    'Processed ingots',
+    'Compress raw materials into advanced crafting chains.',
+    'Mid to late',
+  ],
+  [
+    'Metal Farm',
+    'Reported as important for duplicating rare metals, but requires careful setup.',
+    'Late-route',
+  ],
 ];
 
 const cautionRules = [
@@ -247,6 +276,24 @@ export default function CraftingGuidePage() {
                 Read next
               </h2>
               <div className="mt-4 grid gap-3 text-sm">
+                <LocaleLink
+                  className="text-[#78ead7] hover:underline"
+                  href={Routes.Subnautica2Mangalloy}
+                >
+                  Mangalloy Ingot Guide
+                </LocaleLink>
+                <LocaleLink
+                  className="text-[#78ead7] hover:underline"
+                  href={Routes.Subnautica2MetalFarm}
+                >
+                  Metal Farm Guide
+                </LocaleLink>
+                <LocaleLink
+                  className="text-[#78ead7] hover:underline"
+                  href={Routes.Subnautica2Atacamite}
+                >
+                  Atacamite Location
+                </LocaleLink>
                 <LocaleLink
                   className="text-[#78ead7] hover:underline"
                   href={Routes.Subnautica2Resources}

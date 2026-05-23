@@ -105,16 +105,27 @@ const pagePlan = [
     href: Routes.Subnautica2Troilite,
   },
   {
+    title: 'Where to Find Atacamite in Subnautica 2',
+    body: 'Alien Ruins material page tied to Mangalloy Ingots and power-plant progression.',
+    href: Routes.Subnautica2Atacamite,
+  },
+  {
+    title: 'How to Make Mangalloy Ingots in Subnautica 2',
+    body: 'Processed-material page connecting Troilite, Atacamite, Titanium Ingots, and advanced builds.',
+    href: Routes.Subnautica2Mangalloy,
+  },
+  {
+    title: 'How to Build a Metal Farm in Subnautica 2',
+    body: 'Production-system page for scanning, building, powering, and duplicating rare metals.',
+    href: Routes.Subnautica2MetalFarm,
+  },
+  {
     title: 'Where to Find Titanium in Subnautica 2',
     body: 'Basic material page with common route, uses, and farming notes.',
   },
   {
     title: 'Where to Find Copper in Subnautica 2',
     body: 'Early electronics page with route safety and recipe links.',
-  },
-  {
-    title: 'Where to Find Atacamite in Subnautica 2',
-    body: 'Late-route material page tied to Mangalloy and progression tasks.',
   },
 ];
 
@@ -341,6 +352,18 @@ export default function ResourcesGuidePage() {
                   href={Routes.Subnautica2Troilite}
                 >
                   Troilite Location
+                </LocaleLink>
+                <LocaleLink
+                  className="text-[#78ead7] hover:underline"
+                  href={Routes.Subnautica2Atacamite}
+                >
+                  Atacamite Location
+                </LocaleLink>
+                <LocaleLink
+                  className="text-[#78ead7] hover:underline"
+                  href={Routes.Subnautica2MetalFarm}
+                >
+                  Metal Farm Guide
                 </LocaleLink>
                 <LocaleLink
                   className="text-[#78ead7] hover:underline"

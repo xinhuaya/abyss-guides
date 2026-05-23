@@ -68,6 +68,18 @@ const priorityResources = [
     description:
       'Late-route rare material guide for Mangalloy, Metal Farms, and safer planning.',
   },
+  {
+    href: Routes.Subnautica2Atacamite,
+    title: 'Where to Find Atacamite',
+    description:
+      'Alien Ruins route notes for the other rare material in Mangalloy Ingots.',
+  },
+  {
+    href: Routes.Subnautica2MetalFarm,
+    title: 'Metal Farm Guide',
+    description:
+      'Blueprint scans, power planning, and rare-metal duplication workflow.',
+  },
 ];
 
 export default function Subnautica2HubPage() {
