@@ -6,6 +6,7 @@ const localizedRoutes: Partial<Record<Locale, ReadonlySet<string>>> = {
   zh: new Set([
     Routes.Root,
     Routes.Subnautica2,
+    Routes.Subnautica2Beginner,
     Routes.Subnautica2Silver,
     Routes.Subnautica2Copper,
     Routes.Subnautica2AirTank,
@@ -14,6 +15,7 @@ const localizedRoutes: Partial<Record<Locale, ReadonlySet<string>>> = {
   ru: new Set([
     Routes.Root,
     Routes.Subnautica2,
+    Routes.Subnautica2Beginner,
     Routes.Subnautica2Silver,
     Routes.Subnautica2Copper,
     Routes.Subnautica2AirTank,
@@ -22,6 +24,7 @@ const localizedRoutes: Partial<Record<Locale, ReadonlySet<string>>> = {
   de: new Set([
     Routes.Root,
     Routes.Subnautica2,
+    Routes.Subnautica2Beginner,
     Routes.Subnautica2Silver,
     Routes.Subnautica2Copper,
     Routes.Subnautica2AirTank,
@@ -30,6 +33,7 @@ const localizedRoutes: Partial<Record<Locale, ReadonlySet<string>>> = {
   fr: new Set([
     Routes.Root,
     Routes.Subnautica2,
+    Routes.Subnautica2Beginner,
     Routes.Subnautica2Silver,
     Routes.Subnautica2Copper,
     Routes.Subnautica2AirTank,
@@ -38,6 +42,7 @@ const localizedRoutes: Partial<Record<Locale, ReadonlySet<string>>> = {
   'pt-BR': new Set([
     Routes.Root,
     Routes.Subnautica2,
+    Routes.Subnautica2Beginner,
     Routes.Subnautica2Silver,
     Routes.Subnautica2Copper,
     Routes.Subnautica2AirTank,
@@ -46,6 +51,7 @@ const localizedRoutes: Partial<Record<Locale, ReadonlySet<string>>> = {
   'es-419': new Set([
     Routes.Root,
     Routes.Subnautica2,
+    Routes.Subnautica2Beginner,
     Routes.Subnautica2Silver,
     Routes.Subnautica2Copper,
     Routes.Subnautica2AirTank,
@@ -54,6 +60,7 @@ const localizedRoutes: Partial<Record<Locale, ReadonlySet<string>>> = {
   ko: new Set([
     Routes.Root,
     Routes.Subnautica2,
+    Routes.Subnautica2Beginner,
     Routes.Subnautica2Silver,
     Routes.Subnautica2Copper,
     Routes.Subnautica2AirTank,
@@ -62,6 +69,7 @@ const localizedRoutes: Partial<Record<Locale, ReadonlySet<string>>> = {
   ja: new Set([
     Routes.Root,
     Routes.Subnautica2,
+    Routes.Subnautica2Beginner,
     Routes.Subnautica2Silver,
     Routes.Subnautica2Copper,
     Routes.Subnautica2AirTank,
