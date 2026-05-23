@@ -353,6 +353,12 @@ export default function ResourcesGuidePage() {
               <div className="mt-4 grid gap-3 text-sm">
                 <LocaleLink
                   className="text-[#78ead7] hover:underline"
+                  href={Routes.Subnautica2StrongAcid}
+                >
+                  Strong Acid
+                </LocaleLink>
+                <LocaleLink
+                  className="text-[#78ead7] hover:underline"
                   href={Routes.Subnautica2Copper}
                 >
                   Copper Location

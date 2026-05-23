@@ -75,10 +75,34 @@ const priorityResources = [
       'Oxygen upgrades, Air Bladders, bubble sources, and safe early dive planning.',
   },
   {
+    href: Routes.Subnautica2Scanner,
+    title: 'Scanner and Bioscanner',
+    description:
+      'Blueprint scanning, Bioscanner upgrade route, Biomod unlocks, and route priorities.',
+  },
+  {
+    href: Routes.Subnautica2StrongAcid,
+    title: 'Strong Acid',
+    description:
+      'Necrolei Cysts, Processor setup, Power Cell crafting, and Tadpole prep.',
+  },
+  {
     href: Routes.Subnautica2Tadpole,
     title: 'Tadpole Vehicle',
     description:
       'Fragment scanning, vehicle crafting, Power Cell prep, and upgrade planning.',
+  },
+  {
+    href: Routes.Subnautica2BaseBuilding,
+    title: 'Base Building',
+    description:
+      'First base priorities, power, storage, route placement, and expansion rules.',
+  },
+  {
+    href: Routes.Subnautica2BestBaseLocations,
+    title: 'Best Base Locations',
+    description:
+      'Early, mid-route, and deep-route base placement notes for safer progression.',
   },
   {
     href: Routes.Subnautica2Troilite,

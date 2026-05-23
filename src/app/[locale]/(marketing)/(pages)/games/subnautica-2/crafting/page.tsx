@@ -278,6 +278,12 @@ export default function CraftingGuidePage() {
               <div className="mt-4 grid gap-3 text-sm">
                 <LocaleLink
                   className="text-[#78ead7] hover:underline"
+                  href={Routes.Subnautica2StrongAcid}
+                >
+                  Strong Acid Guide
+                </LocaleLink>
+                <LocaleLink
+                  className="text-[#78ead7] hover:underline"
                   href={Routes.Subnautica2TitaniumIngot}
                 >
                   Titanium Ingot Guide
