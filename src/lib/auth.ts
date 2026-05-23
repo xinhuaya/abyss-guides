@@ -14,8 +14,12 @@ import { drizzleAdapter } from 'better-auth/adapters/drizzle';
 import { admin, apiKey } from 'better-auth/plugins';
 import { parse as parseCookies } from 'cookie';
 import type { Locale } from 'next-intl';
+import { randomBytes } from 'node:crypto';
 import { getAllPricePlans } from './price-plan';
 import { getBaseUrl, getUrlWithLocaleInCallbackUrl } from './urls';
+
+const authSecret =
+  process.env.BETTER_AUTH_SECRET ?? randomBytes(32).toString('hex');
 
 /**
  * Better Auth configuration
@@ -27,6 +31,7 @@ import { getBaseUrl, getUrlWithLocaleInCallbackUrl } from './urls';
 export const auth = betterAuth({
   baseURL: getBaseUrl(),
   appName: defaultMessages.Metadata.name,
+  secret: authSecret,
   database: drizzleAdapter(await getDb(), {
     provider: 'pg', // or "mysql", "sqlite"
   }),
