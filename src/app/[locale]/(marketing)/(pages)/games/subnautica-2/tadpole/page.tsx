@@ -31,6 +31,7 @@ export default function TadpoleGuidePage() {
       description="The Tadpole is the first real vehicle milestone for many Subnautica 2 players. It extends range, protects oxygen, and opens the path toward deeper resource loops."
       eyebrow="Vehicle milestone"
       icon={ShipWheelIcon}
+      pathname={Routes.Subnautica2Tadpole}
       quickAnswer="Unlock the Tadpole by scanning Tadpole fragments, then craft it through the vehicle-building chain. GameSpot reports that the blueprint requires at least three Tadpole Fragment scans, while PC Gamer emphasizes Power Cell prep and vehicle support."
       related={[
         { href: Routes.Subnautica2AirTank, label: 'Air Tank and O2' },
@@ -89,6 +90,18 @@ export default function TadpoleGuidePage() {
         ],
         title: 'Tadpole progression checklist',
       }}
+      faqs={[
+        {
+          question: 'How do you unlock the Tadpole in Subnautica 2?',
+          answer:
+            'Scan Tadpole fragments until the blueprint unlocks, then build it through the vehicle crafting chain.',
+        },
+        {
+          question: 'What should you prepare before using the Tadpole?',
+          answer:
+            'Prepare power, repair safety, and a clear return route before using the Tadpole for deeper exploration.',
+        },
+      ]}
       title="Subnautica 2 Tadpole Guide"
     />
   );

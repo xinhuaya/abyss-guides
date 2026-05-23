@@ -31,6 +31,7 @@ export default function AirTankGuidePage() {
       description="More oxygen changes everything in Subnautica 2: how deep you can search, how long you can scan, and how calmly you can return from caves."
       eyebrow="O2 and survival upgrade"
       icon={GaugeIcon}
+      pathname={Routes.Subnautica2AirTank}
       quickAnswer="Increase O2 early by using environmental oxygen sources, carrying Air Bladders, unlocking Oxygen Control, and crafting the Standard Air Tank as soon as you can spare Silver, Titanium, and Rubber."
       related={[
         { href: Routes.Subnautica2Silver, label: 'Silver Location' },
@@ -79,6 +80,18 @@ export default function AirTankGuidePage() {
         ],
         title: 'Oxygen options',
       }}
+      faqs={[
+        {
+          question: 'How do you increase oxygen early in Subnautica 2?',
+          answer:
+            'Use oxygen sources, carry Air Bladders, unlock Oxygen Control, and craft the Standard Air Tank when you have the materials.',
+        },
+        {
+          question: 'What resource blocks the first Air Tank upgrade?',
+          answer:
+            'Silver is one of the key early bottlenecks for the Standard Air Tank route.',
+        },
+      ]}
       title="Subnautica 2 Air Tank and O2 Guide"
     />
   );

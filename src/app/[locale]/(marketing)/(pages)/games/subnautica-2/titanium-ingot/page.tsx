@@ -31,6 +31,7 @@ export default function TitaniumIngotGuidePage() {
       description="Titanium Ingots are where basic construction material becomes a crafting-chain input. They matter early for planning and later for advanced materials like Mangalloy."
       eyebrow="Processor material chain"
       icon={BoxesIcon}
+      pathname={Routes.Subnautica2TitaniumIngot}
       quickAnswer="Make Titanium Ingots by processing Titanium once the Processor is available. PC Gamer ties Titanium Ingots into later crafting chains, including Mangalloy Ingot production, so stockpile raw Titanium before converting it."
       related={[
         { href: Routes.Subnautica2Mangalloy, label: 'Mangalloy Ingot Guide' },
@@ -84,6 +85,18 @@ export default function TitaniumIngotGuidePage() {
         ],
         title: 'Titanium Ingot planning table',
       }}
+      faqs={[
+        {
+          question: 'How do you make Titanium Ingots in Subnautica 2?',
+          answer:
+            'Use the Processor to convert raw Titanium into Titanium Ingots once the station is available.',
+        },
+        {
+          question: 'Should you process all Titanium into ingots?',
+          answer:
+            'No. Keep raw Titanium for base pieces and only process what your next recipe needs.',
+        },
+      ]}
       title="How to Make Titanium Ingots in Subnautica 2"
     />
   );

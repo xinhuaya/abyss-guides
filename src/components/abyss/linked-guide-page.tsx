@@ -1,5 +1,6 @@
 import Container from '@/components/layout/container';
 import { LocaleLink } from '@/i18n/navigation';
+import { getBaseUrl } from '@/lib/urls';
 import type { LucideIcon } from 'lucide-react';
 import { AlertTriangleIcon, BookOpenIcon } from 'lucide-react';
 import type { ComponentProps } from 'react';
@@ -10,6 +11,7 @@ type LinkedGuidePageProps = {
   eyebrow: string;
   title: string;
   description: string;
+  pathname: string;
   icon: LucideIcon;
   quickAnswer: string;
   sections: Array<{
@@ -34,12 +36,17 @@ type LinkedGuidePageProps = {
     href: string;
     label: string;
   }>;
+  faqs?: Array<{
+    question: string;
+    answer: string;
+  }>;
 };
 
 export function LinkedGuidePage({
   eyebrow,
   title,
   description,
+  pathname,
   icon: Icon,
   quickAnswer,
   sections,
@@ -47,9 +54,81 @@ export function LinkedGuidePage({
   caution,
   related,
   sources,
+  faqs,
 }: LinkedGuidePageProps) {
+  const baseUrl = getBaseUrl().replace(/\/$/, '');
+  const pageUrl = `${baseUrl}${pathname}`;
+  const faqItems =
+    faqs && faqs.length > 0
+      ? faqs
+      : [
+          {
+            question: title,
+            answer: quickAnswer,
+          },
+        ];
+  const jsonLd = [
+    {
+      '@context': 'https://schema.org',
+      '@type': 'Article',
+      headline: title,
+      description,
+      url: pageUrl,
+      datePublished: '2026-05-23',
+      dateModified: '2026-05-23',
+      author: {
+        '@type': 'Organization',
+        name: 'Abyss Guides',
+        url: baseUrl,
+      },
+      publisher: {
+        '@type': 'Organization',
+        name: 'Abyss Guides',
+        url: baseUrl,
+      },
+      mainEntityOfPage: pageUrl,
+    },
+    {
+      '@context': 'https://schema.org',
+      '@type': 'BreadcrumbList',
+      itemListElement: [
+        {
+          '@type': 'ListItem',
+          position: 1,
+          name: 'Abyss Guides',
+          item: baseUrl,
+        },
+        {
+          '@type': 'ListItem',
+          position: 2,
+          name: 'Subnautica 2',
+          item: `${baseUrl}/games/subnautica-2`,
+        },
+        {
+          '@type': 'ListItem',
+          position: 3,
+          name: title,
+          item: pageUrl,
+        },
+      ],
+    },
+    {
+      '@context': 'https://schema.org',
+      '@type': 'FAQPage',
+      mainEntity: faqItems.map((faq) => ({
+        '@type': 'Question',
+        name: faq.question,
+        acceptedAnswer: {
+          '@type': 'Answer',
+          text: faq.answer,
+        },
+      })),
+    },
+  ];
+
   return (
     <main className="min-h-screen bg-[#031314] text-[#dff8f0]">
+      <script type="application/ld+json">{JSON.stringify(jsonLd)}</script>
       <section className="relative overflow-hidden border-b border-cyan-200/10">
         <div
           aria-hidden="true"

@@ -31,6 +31,7 @@ export default function CopperGuidePage() {
       description="Copper is the early electronics material that turns a stranded diver into a real explorer. Use this page to build a repeatable first route instead of hoping caves are kind."
       eyebrow="Early electronics route"
       icon={ZapIcon}
+      pathname={Routes.Subnautica2Copper}
       quickAnswer="For early Copper, search the cave systems directly below and near the Lifepod. Current guides point to easy Copper close to the starting area, especially cave pockets within short swimming distance, so treat the Lifepod as your route anchor."
       related={[
         { href: Routes.Subnautica2Silver, label: 'Silver Location' },
@@ -87,6 +88,18 @@ export default function CopperGuidePage() {
         ],
         title: 'What Copper is used for',
       }}
+      faqs={[
+        {
+          question: 'Where do you find Copper early in Subnautica 2?',
+          answer:
+            'Search cave systems below and near the Lifepod first, then expand to nearby cave pockets once you have oxygen margin.',
+        },
+        {
+          question: 'What should you use Copper for first?',
+          answer:
+            'Prioritize batteries, scanner access, and early electronics before spending Copper on optional crafting.',
+        },
+      ]}
       title="Where to Find Copper in Subnautica 2"
     />
   );
