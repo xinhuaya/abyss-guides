@@ -264,6 +264,7 @@ const roadmapCopy: Record<string, RoadmapCopy> = {
     ],
     readNextTitle: 'Read next',
     readNext: [
+      { href: Routes.Subnautica2Hotfix2, label: 'Hotfix 2 Changes' },
       { href: Routes.Subnautica2Resources, label: 'Resources Guide' },
       { href: Routes.Subnautica2Silver, label: 'Silver Location' },
       { href: Routes.Subnautica2Coop, label: 'Co-op Guide' },
@@ -430,6 +431,7 @@ const roadmapCopy: Record<string, RoadmapCopy> = {
     ],
     readNextTitle: '继续阅读',
     readNext: [
+      { href: Routes.Subnautica2Hotfix2, label: 'Hotfix 2 更新内容' },
       { href: Routes.Subnautica2Resources, label: '资源指南' },
       { href: Routes.Subnautica2Silver, label: '银位置' },
       { href: Routes.Subnautica2Coop, label: '联机指南' },
@@ -599,6 +601,7 @@ const roadmapCopy: Record<string, RoadmapCopy> = {
     ],
     readNextTitle: 'Дальше',
     readNext: [
+      { href: Routes.Subnautica2Hotfix2, label: 'Hotfix 2 Changes' },
       { href: Routes.Subnautica2Resources, label: 'Resources Guide' },
       { href: Routes.Subnautica2Silver, label: 'Silver Location' },
       { href: Routes.Subnautica2Coop, label: 'Co-op Guide' },
@@ -768,6 +771,7 @@ const roadmapCopy: Record<string, RoadmapCopy> = {
     ],
     readNextTitle: 'Weiterlesen',
     readNext: [
+      { href: Routes.Subnautica2Hotfix2, label: 'Hotfix 2 Changes' },
       { href: Routes.Subnautica2Resources, label: 'Resources Guide' },
       { href: Routes.Subnautica2Silver, label: 'Silver Location' },
       { href: Routes.Subnautica2Coop, label: 'Co-op Guide' },
@@ -936,6 +940,7 @@ const roadmapCopy: Record<string, RoadmapCopy> = {
     ],
     readNextTitle: 'Lire ensuite',
     readNext: [
+      { href: Routes.Subnautica2Hotfix2, label: 'Hotfix 2 Changes' },
       { href: Routes.Subnautica2Resources, label: 'Resources Guide' },
       { href: Routes.Subnautica2Silver, label: 'Silver Location' },
       { href: Routes.Subnautica2Coop, label: 'Co-op Guide' },
@@ -1105,6 +1110,7 @@ const roadmapCopy: Record<string, RoadmapCopy> = {
     ],
     readNextTitle: 'Ler depois',
     readNext: [
+      { href: Routes.Subnautica2Hotfix2, label: 'Hotfix 2 Changes' },
       { href: Routes.Subnautica2Resources, label: 'Resources Guide' },
       { href: Routes.Subnautica2Silver, label: 'Silver Location' },
       { href: Routes.Subnautica2Coop, label: 'Co-op Guide' },
@@ -1273,6 +1279,7 @@ const roadmapCopy: Record<string, RoadmapCopy> = {
     ],
     readNextTitle: 'Leer despues',
     readNext: [
+      { href: Routes.Subnautica2Hotfix2, label: 'Hotfix 2 Changes' },
       { href: Routes.Subnautica2Resources, label: 'Resources Guide' },
       { href: Routes.Subnautica2Silver, label: 'Silver Location' },
       { href: Routes.Subnautica2Coop, label: 'Co-op Guide' },
@@ -1442,6 +1449,7 @@ const roadmapCopy: Record<string, RoadmapCopy> = {
     ],
     readNextTitle: '다음 읽기',
     readNext: [
+      { href: Routes.Subnautica2Hotfix2, label: 'Hotfix 2 Changes' },
       { href: Routes.Subnautica2Resources, label: 'Resources Guide' },
       { href: Routes.Subnautica2Silver, label: 'Silver Location' },
       { href: Routes.Subnautica2Coop, label: 'Co-op Guide' },
@@ -1611,6 +1619,7 @@ const roadmapCopy: Record<string, RoadmapCopy> = {
     ],
     readNextTitle: '次に読む',
     readNext: [
+      { href: Routes.Subnautica2Hotfix2, label: 'Hotfix 2 Changes' },
       { href: Routes.Subnautica2Resources, label: 'Resources Guide' },
       { href: Routes.Subnautica2Silver, label: 'Silver Location' },
       { href: Routes.Subnautica2Coop, label: 'Co-op Guide' },

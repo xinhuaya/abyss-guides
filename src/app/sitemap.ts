@@ -36,6 +36,7 @@ const staticRoutes = [
   Routes.Subnautica2Map,
   Routes.Subnautica2Coop,
   Routes.Subnautica2Updates,
+  Routes.Subnautica2Hotfix2,
   Routes.About,
   Routes.Contact,
   Routes.AffiliateDisclosure,

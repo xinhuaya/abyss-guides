@@ -18,6 +18,7 @@ const localizedRoutes: Partial<Record<Locale, ReadonlySet<string>>> = {
     Routes.Subnautica2AirTank,
     Routes.Subnautica2Scanner,
     Routes.Subnautica2Updates,
+    Routes.Subnautica2Hotfix2,
   ]),
   ru: new Set([
     Routes.Root,
@@ -34,6 +35,7 @@ const localizedRoutes: Partial<Record<Locale, ReadonlySet<string>>> = {
     Routes.Subnautica2AirTank,
     Routes.Subnautica2Scanner,
     Routes.Subnautica2Updates,
+    Routes.Subnautica2Hotfix2,
   ]),
   de: new Set([
     Routes.Root,
@@ -50,6 +52,7 @@ const localizedRoutes: Partial<Record<Locale, ReadonlySet<string>>> = {
     Routes.Subnautica2AirTank,
     Routes.Subnautica2Scanner,
     Routes.Subnautica2Updates,
+    Routes.Subnautica2Hotfix2,
   ]),
   fr: new Set([
     Routes.Root,
@@ -66,6 +69,7 @@ const localizedRoutes: Partial<Record<Locale, ReadonlySet<string>>> = {
     Routes.Subnautica2AirTank,
     Routes.Subnautica2Scanner,
     Routes.Subnautica2Updates,
+    Routes.Subnautica2Hotfix2,
   ]),
   'pt-BR': new Set([
     Routes.Root,
@@ -82,6 +86,7 @@ const localizedRoutes: Partial<Record<Locale, ReadonlySet<string>>> = {
     Routes.Subnautica2AirTank,
     Routes.Subnautica2Scanner,
     Routes.Subnautica2Updates,
+    Routes.Subnautica2Hotfix2,
   ]),
   'es-419': new Set([
     Routes.Root,
@@ -98,6 +103,7 @@ const localizedRoutes: Partial<Record<Locale, ReadonlySet<string>>> = {
     Routes.Subnautica2AirTank,
     Routes.Subnautica2Scanner,
     Routes.Subnautica2Updates,
+    Routes.Subnautica2Hotfix2,
   ]),
   ko: new Set([
     Routes.Root,
@@ -114,6 +120,7 @@ const localizedRoutes: Partial<Record<Locale, ReadonlySet<string>>> = {
     Routes.Subnautica2AirTank,
     Routes.Subnautica2Scanner,
     Routes.Subnautica2Updates,
+    Routes.Subnautica2Hotfix2,
   ]),
   ja: new Set([
     Routes.Root,
@@ -130,6 +137,7 @@ const localizedRoutes: Partial<Record<Locale, ReadonlySet<string>>> = {
     Routes.Subnautica2AirTank,
     Routes.Subnautica2Scanner,
     Routes.Subnautica2Updates,
+    Routes.Subnautica2Hotfix2,
   ]),
 };
 

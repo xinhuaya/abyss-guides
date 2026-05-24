@@ -27,6 +27,7 @@ export enum Routes {
   Subnautica2Map = '/games/subnautica-2/map',
   Subnautica2Coop = '/games/subnautica-2/co-op-guide',
   Subnautica2Updates = '/games/subnautica-2/roadmap',
+  Subnautica2Hotfix2 = '/games/subnautica-2/hotfix-2',
   ThumbnailMaker = '/tools/youtube-thumbnail-maker',
   ThumbnailMakerAnchor = '/#thumbnail-maker',
   Inspiration = '/#inspiration',
