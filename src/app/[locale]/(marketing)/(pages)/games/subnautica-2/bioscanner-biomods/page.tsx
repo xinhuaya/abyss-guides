@@ -139,6 +139,10 @@ const bioscannerCopy: Record<string, BioscannerCopy> = {
     readNextTitle: 'Read next',
     related: [
       { href: Routes.Subnautica2Scanner, label: 'Scanner Guide' },
+      {
+        href: Routes.Subnautica2FeedbackResonator,
+        label: 'Feedback Resonator Guide',
+      },
       { href: Routes.Subnautica2OxygenDepth, label: 'Oxygen and Depth' },
       { href: Routes.Subnautica2Biomes, label: 'Biomes Guide' },
       { href: Routes.Subnautica2Resources, label: 'Resources Guide' },
@@ -241,6 +245,10 @@ const bioscannerCopy: Record<string, BioscannerCopy> = {
     readNextTitle: '继续看',
     related: [
       { href: Routes.Subnautica2Scanner, label: 'Scanner 指南' },
+      {
+        href: Routes.Subnautica2FeedbackResonator,
+        label: 'Feedback Resonator 指南',
+      },
       { href: Routes.Subnautica2OxygenDepth, label: '氧气和下潜深度' },
       { href: Routes.Subnautica2Biomes, label: '生物群系指南' },
       { href: Routes.Subnautica2Resources, label: '资源指南' },
@@ -343,6 +351,10 @@ const bioscannerCopy: Record<string, BioscannerCopy> = {
     readNextTitle: '次に読む',
     related: [
       { href: Routes.Subnautica2Scanner, label: 'Scanner Guide' },
+      {
+        href: Routes.Subnautica2FeedbackResonator,
+        label: 'Feedback Resonator Guide',
+      },
       { href: Routes.Subnautica2OxygenDepth, label: 'Oxygen and Depth' },
       { href: Routes.Subnautica2Biomes, label: 'Biomes Guide' },
       { href: Routes.Subnautica2Resources, label: 'Resources Guide' },

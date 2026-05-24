@@ -26,6 +26,7 @@ const staticRoutes = [
   Routes.Subnautica2OxygenDepth,
   Routes.Subnautica2Scanner,
   Routes.Subnautica2BioscannerBiomods,
+  Routes.Subnautica2FeedbackResonator,
   Routes.Subnautica2StrongAcid,
   Routes.Subnautica2Tadpole,
   Routes.Subnautica2BaseBuilding,

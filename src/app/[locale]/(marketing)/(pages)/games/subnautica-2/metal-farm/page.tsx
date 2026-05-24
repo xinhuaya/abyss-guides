@@ -212,6 +212,12 @@ export default function MetalFarmGuidePage() {
               <div className="mt-4 grid gap-3 text-sm">
                 <LocaleLink
                   className="text-[#78ead7] hover:underline"
+                  href={Routes.Subnautica2FeedbackResonator}
+                >
+                  Feedback Resonator Guide
+                </LocaleLink>
+                <LocaleLink
+                  className="text-[#78ead7] hover:underline"
                   href={Routes.Subnautica2Mangalloy}
                 >
                   Mangalloy Ingot Guide

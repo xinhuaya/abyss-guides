@@ -122,6 +122,12 @@ const copyByLocale: Record<'en' | 'zh', HubCopy> = {
           'Bioscanner timing, lifeform scan habits, Biomod priorities, and first upgrade choices.',
       },
       {
+        href: Routes.Subnautica2FeedbackResonator,
+        title: 'Feedback Resonator',
+        description:
+          'Sonic Resonator prep, Alien Ruins scan route, craft materials, and safe ranged clearing.',
+      },
+      {
         href: Routes.Subnautica2StrongAcid,
         title: 'Strong Acid',
         description:
