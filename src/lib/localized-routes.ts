@@ -19,6 +19,7 @@ const localizedRoutes: Partial<Record<Locale, ReadonlySet<string>>> = {
     Routes.Subnautica2Scanner,
     Routes.Subnautica2Updates,
     Routes.Subnautica2Hotfix2,
+    Routes.Subnautica2SilverAfterHotfix2,
   ]),
   ru: new Set([
     Routes.Root,
@@ -36,6 +37,7 @@ const localizedRoutes: Partial<Record<Locale, ReadonlySet<string>>> = {
     Routes.Subnautica2Scanner,
     Routes.Subnautica2Updates,
     Routes.Subnautica2Hotfix2,
+    Routes.Subnautica2SilverAfterHotfix2,
   ]),
   de: new Set([
     Routes.Root,
@@ -53,6 +55,7 @@ const localizedRoutes: Partial<Record<Locale, ReadonlySet<string>>> = {
     Routes.Subnautica2Scanner,
     Routes.Subnautica2Updates,
     Routes.Subnautica2Hotfix2,
+    Routes.Subnautica2SilverAfterHotfix2,
   ]),
   fr: new Set([
     Routes.Root,
@@ -70,6 +73,7 @@ const localizedRoutes: Partial<Record<Locale, ReadonlySet<string>>> = {
     Routes.Subnautica2Scanner,
     Routes.Subnautica2Updates,
     Routes.Subnautica2Hotfix2,
+    Routes.Subnautica2SilverAfterHotfix2,
   ]),
   'pt-BR': new Set([
     Routes.Root,
@@ -87,6 +91,7 @@ const localizedRoutes: Partial<Record<Locale, ReadonlySet<string>>> = {
     Routes.Subnautica2Scanner,
     Routes.Subnautica2Updates,
     Routes.Subnautica2Hotfix2,
+    Routes.Subnautica2SilverAfterHotfix2,
   ]),
   'es-419': new Set([
     Routes.Root,
@@ -104,6 +109,7 @@ const localizedRoutes: Partial<Record<Locale, ReadonlySet<string>>> = {
     Routes.Subnautica2Scanner,
     Routes.Subnautica2Updates,
     Routes.Subnautica2Hotfix2,
+    Routes.Subnautica2SilverAfterHotfix2,
   ]),
   ko: new Set([
     Routes.Root,
@@ -121,6 +127,7 @@ const localizedRoutes: Partial<Record<Locale, ReadonlySet<string>>> = {
     Routes.Subnautica2Scanner,
     Routes.Subnautica2Updates,
     Routes.Subnautica2Hotfix2,
+    Routes.Subnautica2SilverAfterHotfix2,
   ]),
   ja: new Set([
     Routes.Root,
@@ -138,6 +145,7 @@ const localizedRoutes: Partial<Record<Locale, ReadonlySet<string>>> = {
     Routes.Subnautica2Scanner,
     Routes.Subnautica2Updates,
     Routes.Subnautica2Hotfix2,
+    Routes.Subnautica2SilverAfterHotfix2,
   ]),
 };
 

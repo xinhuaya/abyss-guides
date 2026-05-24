@@ -139,6 +139,10 @@ const hotfixCopy: Record<string, HotfixCopy> = {
     readNextTitle: 'Read next',
     related: [
       { href: Routes.Subnautica2Updates, label: 'Roadmap and Updates' },
+      {
+        href: Routes.Subnautica2SilverAfterHotfix2,
+        label: 'Silver After Hotfix 2',
+      },
       { href: Routes.Subnautica2Silver, label: 'Silver Location' },
       { href: Routes.Subnautica2Resources, label: 'Resources Guide' },
       { href: Routes.Subnautica2Coop, label: 'Co-op Guide' },
@@ -235,6 +239,10 @@ const hotfixCopy: Record<string, HotfixCopy> = {
     readNextTitle: '继续阅读',
     related: [
       { href: Routes.Subnautica2Updates, label: '路线图与更新' },
+      {
+        href: Routes.Subnautica2SilverAfterHotfix2,
+        label: 'Hotfix 2 后银怎么找',
+      },
       { href: Routes.Subnautica2Silver, label: '银在哪里找' },
       { href: Routes.Subnautica2Resources, label: '资源指南' },
       { href: Routes.Subnautica2Coop, label: '联机指南' },
@@ -339,6 +347,10 @@ const hotfixCopy: Record<string, HotfixCopy> = {
     readNextTitle: 'Дальше',
     related: [
       { href: Routes.Subnautica2Updates, label: 'Roadmap and Updates' },
+      {
+        href: Routes.Subnautica2SilverAfterHotfix2,
+        label: 'Silver After Hotfix 2',
+      },
       { href: Routes.Subnautica2Silver, label: 'Silver Location' },
       { href: Routes.Subnautica2Resources, label: 'Resources Guide' },
       { href: Routes.Subnautica2Coop, label: 'Co-op Guide' },
@@ -443,6 +455,10 @@ const hotfixCopy: Record<string, HotfixCopy> = {
     readNextTitle: 'Weiterlesen',
     related: [
       { href: Routes.Subnautica2Updates, label: 'Roadmap and Updates' },
+      {
+        href: Routes.Subnautica2SilverAfterHotfix2,
+        label: 'Silver After Hotfix 2',
+      },
       { href: Routes.Subnautica2Silver, label: 'Silver Location' },
       { href: Routes.Subnautica2Resources, label: 'Resources Guide' },
       { href: Routes.Subnautica2Coop, label: 'Co-op Guide' },
@@ -550,6 +566,10 @@ const hotfixCopy: Record<string, HotfixCopy> = {
     readNextTitle: 'Lire ensuite',
     related: [
       { href: Routes.Subnautica2Updates, label: 'Roadmap and Updates' },
+      {
+        href: Routes.Subnautica2SilverAfterHotfix2,
+        label: 'Silver After Hotfix 2',
+      },
       { href: Routes.Subnautica2Silver, label: 'Silver Location' },
       { href: Routes.Subnautica2Resources, label: 'Resources Guide' },
       { href: Routes.Subnautica2Coop, label: 'Co-op Guide' },
@@ -657,6 +677,10 @@ const hotfixCopy: Record<string, HotfixCopy> = {
     readNextTitle: 'Ler depois',
     related: [
       { href: Routes.Subnautica2Updates, label: 'Roadmap and Updates' },
+      {
+        href: Routes.Subnautica2SilverAfterHotfix2,
+        label: 'Silver After Hotfix 2',
+      },
       { href: Routes.Subnautica2Silver, label: 'Silver Location' },
       { href: Routes.Subnautica2Resources, label: 'Resources Guide' },
       { href: Routes.Subnautica2Coop, label: 'Co-op Guide' },
@@ -764,6 +788,10 @@ const hotfixCopy: Record<string, HotfixCopy> = {
     readNextTitle: 'Leer despues',
     related: [
       { href: Routes.Subnautica2Updates, label: 'Roadmap and Updates' },
+      {
+        href: Routes.Subnautica2SilverAfterHotfix2,
+        label: 'Silver After Hotfix 2',
+      },
       { href: Routes.Subnautica2Silver, label: 'Silver Location' },
       { href: Routes.Subnautica2Resources, label: 'Resources Guide' },
       { href: Routes.Subnautica2Coop, label: 'Co-op Guide' },
@@ -861,6 +889,10 @@ const hotfixCopy: Record<string, HotfixCopy> = {
     readNextTitle: '다음 읽기',
     related: [
       { href: Routes.Subnautica2Updates, label: 'Roadmap and Updates' },
+      {
+        href: Routes.Subnautica2SilverAfterHotfix2,
+        label: 'Silver After Hotfix 2',
+      },
       { href: Routes.Subnautica2Silver, label: 'Silver Location' },
       { href: Routes.Subnautica2Resources, label: 'Resources Guide' },
       { href: Routes.Subnautica2Coop, label: 'Co-op Guide' },
@@ -958,6 +990,10 @@ const hotfixCopy: Record<string, HotfixCopy> = {
     readNextTitle: '次に読む',
     related: [
       { href: Routes.Subnautica2Updates, label: 'Roadmap and Updates' },
+      {
+        href: Routes.Subnautica2SilverAfterHotfix2,
+        label: 'Silver After Hotfix 2',
+      },
       { href: Routes.Subnautica2Silver, label: 'Silver Location' },
       { href: Routes.Subnautica2Resources, label: 'Resources Guide' },
       { href: Routes.Subnautica2Coop, label: 'Co-op Guide' },
