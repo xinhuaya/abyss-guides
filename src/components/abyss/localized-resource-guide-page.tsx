@@ -187,7 +187,7 @@ export function LocalizedResourceGuidePage({
                 <Icon className="size-4" />
                 {copy.eyebrow}
               </div>
-              <h1 className="text-balance text-4xl font-semibold leading-tight text-[#e8fff9] md:text-6xl">
+              <h1 className="text-balance break-words text-4xl font-semibold leading-tight text-[#e8fff9] md:text-6xl">
                 {copy.title}
               </h1>
               <p className="mt-6 max-w-3xl text-lg leading-8 text-[#a9c9c3]">
@@ -203,27 +203,39 @@ export function LocalizedResourceGuidePage({
                 <div className="flex size-12 shrink-0 items-center justify-center border border-cyan-200/20 bg-cyan-300/10">
                   <Icon className="size-6 text-[#78ead7]" />
                 </div>
-                <div>
-                  <p className="text-sm font-semibold text-[#effffb]">
+                <div className="min-w-0">
+                  <p className="break-words text-sm font-semibold text-[#effffb]">
                     {copy.title}
                   </p>
-                  <p className="mt-2 text-sm leading-6 text-[#a9c9c3]">
+                  <p className="mt-2 break-words text-sm leading-6 text-[#a9c9c3]">
                     {copy.cardBody}
                   </p>
                 </div>
               </div>
               <div className="mt-5 grid gap-2 text-sm text-[#d1e8e2]">
-                <div className="flex items-center justify-between border border-cyan-200/10 bg-cyan-300/5 px-3 py-2">
-                  <span>{copy.cardTypeLabel}</span>
-                  <span className="text-[#78ead7]">{copy.cardTypeValue}</span>
+                <div className="flex items-center justify-between gap-3 border border-cyan-200/10 bg-cyan-300/5 px-3 py-2">
+                  <span className="min-w-0 break-words">
+                    {copy.cardTypeLabel}
+                  </span>
+                  <span className="min-w-0 break-words text-right text-[#78ead7]">
+                    {copy.cardTypeValue}
+                  </span>
                 </div>
-                <div className="flex items-center justify-between border border-cyan-200/10 bg-cyan-300/5 px-3 py-2">
-                  <span>{copy.cardVerifiedLabel}</span>
-                  <span className="text-[#f08b4f]">{checkedAt}</span>
+                <div className="flex items-center justify-between gap-3 border border-cyan-200/10 bg-cyan-300/5 px-3 py-2">
+                  <span className="min-w-0 break-words">
+                    {copy.cardVerifiedLabel}
+                  </span>
+                  <span className="min-w-0 break-words text-right text-[#f08b4f]">
+                    {checkedAt}
+                  </span>
                 </div>
-                <div className="flex items-center justify-between border border-cyan-200/10 bg-cyan-300/5 px-3 py-2">
-                  <span>{copy.cardStatusLabel}</span>
-                  <span className="text-[#78ead7]">{copy.cardStatusValue}</span>
+                <div className="flex items-center justify-between gap-3 border border-cyan-200/10 bg-cyan-300/5 px-3 py-2">
+                  <span className="min-w-0 break-words">
+                    {copy.cardStatusLabel}
+                  </span>
+                  <span className="min-w-0 break-words text-right text-[#78ead7]">
+                    {copy.cardStatusValue}
+                  </span>
                 </div>
               </div>
             </aside>

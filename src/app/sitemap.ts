@@ -38,6 +38,7 @@ const staticRoutes = [
   Routes.Subnautica2Updates,
   Routes.Subnautica2Hotfix2,
   Routes.Subnautica2SilverAfterHotfix2,
+  Routes.Subnautica2TroiliteAfterHotfix2,
   Routes.About,
   Routes.Contact,
   Routes.AffiliateDisclosure,
