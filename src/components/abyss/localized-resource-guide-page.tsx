@@ -187,7 +187,7 @@ export function LocalizedResourceGuidePage({
                 <Icon className="size-4" />
                 {copy.eyebrow}
               </div>
-              <h1 className="text-balance break-words text-4xl font-semibold leading-tight text-[#e8fff9] md:text-6xl">
+              <h1 className="text-balance break-words text-3xl font-semibold leading-tight text-[#e8fff9] sm:text-4xl md:text-6xl">
                 {copy.title}
               </h1>
               <p className="mt-6 max-w-3xl text-lg leading-8 text-[#a9c9c3]">
@@ -213,27 +213,27 @@ export function LocalizedResourceGuidePage({
                 </div>
               </div>
               <div className="mt-5 grid gap-2 text-sm text-[#d1e8e2]">
-                <div className="flex items-center justify-between gap-3 border border-cyan-200/10 bg-cyan-300/5 px-3 py-2">
+                <div className="flex flex-col items-start gap-1 border border-cyan-200/10 bg-cyan-300/5 px-3 py-2 sm:flex-row sm:items-center sm:justify-between sm:gap-3">
                   <span className="min-w-0 break-words">
                     {copy.cardTypeLabel}
                   </span>
-                  <span className="min-w-0 break-words text-right text-[#78ead7]">
+                  <span className="min-w-0 break-words text-[#78ead7] sm:text-right">
                     {copy.cardTypeValue}
                   </span>
                 </div>
-                <div className="flex items-center justify-between gap-3 border border-cyan-200/10 bg-cyan-300/5 px-3 py-2">
+                <div className="flex flex-col items-start gap-1 border border-cyan-200/10 bg-cyan-300/5 px-3 py-2 sm:flex-row sm:items-center sm:justify-between sm:gap-3">
                   <span className="min-w-0 break-words">
                     {copy.cardVerifiedLabel}
                   </span>
-                  <span className="min-w-0 break-words text-right text-[#f08b4f]">
+                  <span className="min-w-0 break-words text-[#f08b4f] sm:text-right">
                     {checkedAt}
                   </span>
                 </div>
-                <div className="flex items-center justify-between gap-3 border border-cyan-200/10 bg-cyan-300/5 px-3 py-2">
+                <div className="flex flex-col items-start gap-1 border border-cyan-200/10 bg-cyan-300/5 px-3 py-2 sm:flex-row sm:items-center sm:justify-between sm:gap-3">
                   <span className="min-w-0 break-words">
                     {copy.cardStatusLabel}
                   </span>
-                  <span className="min-w-0 break-words text-right text-[#78ead7]">
+                  <span className="min-w-0 break-words text-[#78ead7] sm:text-right">
                     {copy.cardStatusValue}
                   </span>
                 </div>

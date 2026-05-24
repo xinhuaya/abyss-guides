@@ -32,6 +32,7 @@ const staticRoutes = [
   Routes.Subnautica2Atacamite,
   Routes.Subnautica2Mangalloy,
   Routes.Subnautica2MetalFarm,
+  Routes.Subnautica2MineralizedClinker,
   Routes.Subnautica2Crafting,
   Routes.Subnautica2Map,
   Routes.Subnautica2Coop,

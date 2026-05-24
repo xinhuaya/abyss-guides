@@ -226,6 +226,18 @@ export default function TroiliteGuidePage() {
               <div className="mt-4 grid gap-3 text-sm">
                 <LocaleLink
                   className="text-[#78ead7] hover:underline"
+                  href={Routes.Subnautica2MineralizedClinker}
+                >
+                  Mineralized Clinker Guide
+                </LocaleLink>
+                <LocaleLink
+                  className="text-[#78ead7] hover:underline"
+                  href={Routes.Subnautica2TroiliteAfterHotfix2}
+                >
+                  Troilite After Hotfix 2
+                </LocaleLink>
+                <LocaleLink
+                  className="text-[#78ead7] hover:underline"
                   href={Routes.Subnautica2Crafting}
                 >
                   Crafting Guide
@@ -250,7 +262,7 @@ export default function TroiliteGuidePage() {
                 Source note
               </h2>
               <p className="mt-3 text-sm leading-6 text-[#abc8c3]">
-                Checked May 23, 2026 against Unknown Worlds Hotfix 2 and current
+                Checked May 24, 2026 against Unknown Worlds Hotfix 2 and current
                 Troilite route reporting. Recheck after every major Early Access
                 patch.
               </p>

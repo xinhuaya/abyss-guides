@@ -224,6 +224,12 @@ export default function MetalFarmGuidePage() {
                 </LocaleLink>
                 <LocaleLink
                   className="text-[#78ead7] hover:underline"
+                  href={Routes.Subnautica2MineralizedClinker}
+                >
+                  Mineralized Clinker Guide
+                </LocaleLink>
+                <LocaleLink
+                  className="text-[#78ead7] hover:underline"
                   href={Routes.Subnautica2Atacamite}
                 >
                   Atacamite Location
@@ -236,7 +242,7 @@ export default function MetalFarmGuidePage() {
                 Source note
               </h2>
               <p className="mt-3 text-sm leading-6 text-[#abc8c3]">
-                Checked May 23, 2026 against current PC Gamer Metal Farm
+                Checked May 24, 2026 against current PC Gamer Metal Farm
                 reporting. Recheck blueprint and ingredient requirements after
                 patches.
               </p>

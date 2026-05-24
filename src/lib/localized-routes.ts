@@ -21,6 +21,7 @@ const localizedRoutes: Partial<Record<Locale, ReadonlySet<string>>> = {
     Routes.Subnautica2Hotfix2,
     Routes.Subnautica2SilverAfterHotfix2,
     Routes.Subnautica2TroiliteAfterHotfix2,
+    Routes.Subnautica2MineralizedClinker,
   ]),
   ru: new Set([
     Routes.Root,
@@ -40,6 +41,7 @@ const localizedRoutes: Partial<Record<Locale, ReadonlySet<string>>> = {
     Routes.Subnautica2Hotfix2,
     Routes.Subnautica2SilverAfterHotfix2,
     Routes.Subnautica2TroiliteAfterHotfix2,
+    Routes.Subnautica2MineralizedClinker,
   ]),
   de: new Set([
     Routes.Root,
@@ -59,6 +61,7 @@ const localizedRoutes: Partial<Record<Locale, ReadonlySet<string>>> = {
     Routes.Subnautica2Hotfix2,
     Routes.Subnautica2SilverAfterHotfix2,
     Routes.Subnautica2TroiliteAfterHotfix2,
+    Routes.Subnautica2MineralizedClinker,
   ]),
   fr: new Set([
     Routes.Root,
@@ -78,6 +81,7 @@ const localizedRoutes: Partial<Record<Locale, ReadonlySet<string>>> = {
     Routes.Subnautica2Hotfix2,
     Routes.Subnautica2SilverAfterHotfix2,
     Routes.Subnautica2TroiliteAfterHotfix2,
+    Routes.Subnautica2MineralizedClinker,
   ]),
   'pt-BR': new Set([
     Routes.Root,
@@ -97,6 +101,7 @@ const localizedRoutes: Partial<Record<Locale, ReadonlySet<string>>> = {
     Routes.Subnautica2Hotfix2,
     Routes.Subnautica2SilverAfterHotfix2,
     Routes.Subnautica2TroiliteAfterHotfix2,
+    Routes.Subnautica2MineralizedClinker,
   ]),
   'es-419': new Set([
     Routes.Root,
@@ -116,6 +121,7 @@ const localizedRoutes: Partial<Record<Locale, ReadonlySet<string>>> = {
     Routes.Subnautica2Hotfix2,
     Routes.Subnautica2SilverAfterHotfix2,
     Routes.Subnautica2TroiliteAfterHotfix2,
+    Routes.Subnautica2MineralizedClinker,
   ]),
   ko: new Set([
     Routes.Root,
@@ -135,6 +141,7 @@ const localizedRoutes: Partial<Record<Locale, ReadonlySet<string>>> = {
     Routes.Subnautica2Hotfix2,
     Routes.Subnautica2SilverAfterHotfix2,
     Routes.Subnautica2TroiliteAfterHotfix2,
+    Routes.Subnautica2MineralizedClinker,
   ]),
   ja: new Set([
     Routes.Root,
@@ -154,6 +161,7 @@ const localizedRoutes: Partial<Record<Locale, ReadonlySet<string>>> = {
     Routes.Subnautica2Hotfix2,
     Routes.Subnautica2SilverAfterHotfix2,
     Routes.Subnautica2TroiliteAfterHotfix2,
+    Routes.Subnautica2MineralizedClinker,
   ]),
 };
 

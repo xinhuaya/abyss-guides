@@ -23,6 +23,10 @@ type HubCopy = {
   priorityEyebrow: string;
   priorityTitle: string;
   priorityResources: HubLink[];
+  patchEyebrow: string;
+  patchTitle: string;
+  patchBody: string;
+  patchLinks: HubLink[];
   editorialTitle: string;
   editorialBody: string;
   disclaimer: string;
@@ -36,7 +40,7 @@ const copyByLocale: Record<'en' | 'zh', HubCopy> = {
       description:
         'Start here for Subnautica 2 beginner tips, resource locations, crafting recipes, map and biome notes, co-op help, settings fixes, and Early Access updates.',
     },
-    updated: 'Last updated May 23, 2026',
+    updated: 'Last updated May 24, 2026',
     title: 'Subnautica 2 Guide Hub',
     description:
       'Subnautica 2 is in Early Access, so guides need to stay flexible. This hub organizes beginner routes, resources, crafting, map notes, co-op help, settings, and updates in one place.',
@@ -136,6 +140,12 @@ const copyByLocale: Record<'en' | 'zh', HubCopy> = {
           'Late-route rare material guide for Mangalloy, Metal Farms, and safer planning.',
       },
       {
+        href: Routes.Subnautica2MineralizedClinker,
+        title: 'Mineralized Clinker Guide',
+        description:
+          'Deposit-name notes for Troilite routes after Hotfix 2 and late-game resource checks.',
+      },
+      {
         href: Routes.Subnautica2Atacamite,
         title: 'Where to Find Atacamite',
         description:
@@ -146,6 +156,36 @@ const copyByLocale: Record<'en' | 'zh', HubCopy> = {
         title: 'Metal Farm Guide',
         description:
           'Blueprint scans, power planning, and rare-metal duplication workflow.',
+      },
+    ],
+    patchEyebrow: 'Hotfix 2 tracker',
+    patchTitle: 'Patch-sensitive pages to recheck first',
+    patchBody:
+      'Hotfix 2 changes early Silver availability and late-game Troilite resource areas. Start here when an old guide feels too harsh or too narrow.',
+    patchLinks: [
+      {
+        href: Routes.Subnautica2Hotfix2,
+        title: 'Hotfix 2 Changes',
+        description:
+          'Silver, Troilite, oxygen, Hammerhead, co-op, crashes, and affected guide pages.',
+      },
+      {
+        href: Routes.Subnautica2SilverAfterHotfix2,
+        title: 'Silver After Hotfix 2',
+        description:
+          'What changed in early Silver routing and what old advice needs rechecking.',
+      },
+      {
+        href: Routes.Subnautica2TroiliteAfterHotfix2,
+        title: 'Troilite After Hotfix 2',
+        description:
+          'Late-game Troilite area changes and how to treat launch-week scarcity notes.',
+      },
+      {
+        href: Routes.Subnautica2MineralizedClinker,
+        title: 'Mineralized Clinker',
+        description:
+          'The deposit name players should watch for when following Troilite routes.',
       },
     ],
     editorialTitle: 'Editorial rule',
@@ -160,7 +200,7 @@ const copyByLocale: Record<'en' | 'zh', HubCopy> = {
       description:
         'Subnautica 2 中文攻略入口，整理新手路线、资源位置、制作链、地图生态区、联机建议和抢先体验更新。',
     },
-    updated: '最后更新：2026 年 5 月 23 日',
+    updated: '最后更新：2026 年 5 月 24 日',
     title: 'Subnautica 2 攻略中心',
     description:
       'Subnautica 2 还在抢先体验阶段，数据会变，攻略也要跟着改。这个入口先把新手路线、资源、制作、地图、联机和更新放在一起，方便玩家快速跳到要查的内容。',
@@ -245,6 +285,12 @@ const copyByLocale: Record<'en' | 'zh', HubCopy> = {
         description: 'Mangalloy、Metal Farm 和后期路线相关稀有材料。',
       },
       {
+        href: Routes.Subnautica2MineralizedClinker,
+        title: 'Mineralized Clinker 指南',
+        description:
+          'Hotfix 2 后找 Troilite 时要留意的矿点名称和后期路线说明。',
+      },
+      {
         href: Routes.Subnautica2Atacamite,
         title: 'Atacamite 在哪里找',
         description: '外星遗迹路线，以及 Mangalloy Ingot 相关材料。',
@@ -253,6 +299,33 @@ const copyByLocale: Record<'en' | 'zh', HubCopy> = {
         href: Routes.Subnautica2MetalFarm,
         title: 'Metal Farm 指南',
         description: '扫描、供电、建造和稀有金属复制流程。',
+      },
+    ],
+    patchEyebrow: 'Hotfix 2 更新追踪',
+    patchTitle: '先复查这些补丁相关页面',
+    patchBody:
+      'Hotfix 2 改了前期银资源点，也增加了后期 Troilite 资源区域。遇到首发周攻略说法太绝对时，优先从这组页面重新核对。',
+    patchLinks: [
+      {
+        href: Routes.Subnautica2Hotfix2,
+        title: 'Hotfix 2 更新内容',
+        description: '银、Troilite、氧气、Hammerhead、联机和崩溃修复整理。',
+      },
+      {
+        href: Routes.Subnautica2SilverAfterHotfix2,
+        title: 'Hotfix 2 后银怎么找',
+        description: '前期银资源点增加后，旧路线哪些地方需要重新跑。',
+      },
+      {
+        href: Routes.Subnautica2TroiliteAfterHotfix2,
+        title: 'Hotfix 2 后 Troilite 怎么找',
+        description: '后期 Troilite 区域增加后，旧稀缺描述怎么判断。',
+      },
+      {
+        href: Routes.Subnautica2MineralizedClinker,
+        title: 'Mineralized Clinker',
+        description:
+          '跟 Troilite 路线相关的矿点名称，避免只盯着 Troilite 这个词找。',
       },
     ],
     editorialTitle: '收录规则',
@@ -669,6 +742,36 @@ export default async function Subnautica2HubPage({
                 key={item.title}
                 href={item.href}
                 className="border border-cyan-200/12 bg-[#071f23] p-5 transition hover:-translate-y-1 hover:border-cyan-200/40"
+              >
+                <h3 className="text-xl font-semibold text-[#78ead7]">
+                  {item.title}
+                </h3>
+                <p className="mt-3 text-sm leading-6 text-[#abc8c3]">
+                  {item.description}
+                </p>
+              </LocaleLink>
+            ))}
+          </div>
+        </section>
+
+        <section className="mt-12 overflow-hidden border border-cyan-200/12 bg-[#071f23]">
+          <div className="border-b border-cyan-200/12 bg-[#0a2a30] p-6">
+            <p className="text-sm font-semibold uppercase tracking-[0.18em] text-[#f08b4f]">
+              {copy.patchEyebrow}
+            </p>
+            <h2 className="mt-3 text-2xl font-semibold text-[#effffb]">
+              {copy.patchTitle}
+            </h2>
+            <p className="mt-4 max-w-3xl leading-7 text-[#abc8c3]">
+              {copy.patchBody}
+            </p>
+          </div>
+          <div className="grid md:grid-cols-2">
+            {copy.patchLinks.map((item) => (
+              <LocaleLink
+                key={item.title}
+                href={item.href}
+                className="border-b border-cyan-200/10 p-5 transition hover:bg-cyan-300/5 md:border-r"
               >
                 <h3 className="text-xl font-semibold text-[#78ead7]">
                   {item.title}

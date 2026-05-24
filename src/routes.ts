@@ -23,6 +23,7 @@ export enum Routes {
   Subnautica2Atacamite = '/games/subnautica-2/atacamite',
   Subnautica2Mangalloy = '/games/subnautica-2/mangalloy-ingot',
   Subnautica2MetalFarm = '/games/subnautica-2/metal-farm',
+  Subnautica2MineralizedClinker = '/games/subnautica-2/mineralized-clinker',
   Subnautica2Crafting = '/games/subnautica-2/crafting',
   Subnautica2Map = '/games/subnautica-2/map',
   Subnautica2Coop = '/games/subnautica-2/co-op-guide',

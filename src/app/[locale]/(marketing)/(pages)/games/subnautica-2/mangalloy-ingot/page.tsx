@@ -207,6 +207,12 @@ export default function MangalloyGuidePage() {
                 </LocaleLink>
                 <LocaleLink
                   className="text-[#78ead7] hover:underline"
+                  href={Routes.Subnautica2MineralizedClinker}
+                >
+                  Mineralized Clinker Guide
+                </LocaleLink>
+                <LocaleLink
+                  className="text-[#78ead7] hover:underline"
                   href={Routes.Subnautica2Atacamite}
                 >
                   Atacamite Location
@@ -225,7 +231,7 @@ export default function MangalloyGuidePage() {
                 Source note
               </h2>
               <p className="mt-3 text-sm leading-6 text-[#abc8c3]">
-                Checked May 23, 2026 against current PC Gamer reporting on Metal
+                Checked May 24, 2026 against current PC Gamer reporting on Metal
                 Farms and Atacamite. Recipe data is patch-sensitive.
               </p>
               <div className="mt-4 grid gap-2 text-sm">
