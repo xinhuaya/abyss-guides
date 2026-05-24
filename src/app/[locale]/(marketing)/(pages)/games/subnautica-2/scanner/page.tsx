@@ -126,6 +126,10 @@ const scannerCopy: Record<string, ScannerCopy> = {
     ],
     readNextTitle: 'Read next',
     related: [
+      {
+        href: Routes.Subnautica2BioscannerBiomods,
+        label: 'Bioscanner and Biomods',
+      },
       { href: Routes.Subnautica2Copper, label: 'Copper Location' },
       { href: Routes.Subnautica2AirTank, label: 'Air Tank and O2' },
       { href: Routes.Subnautica2Resources, label: 'Resources Guide' },

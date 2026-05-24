@@ -112,6 +112,10 @@ const beginnerCopy: Record<string, BeginnerCopy> = {
       { href: Routes.Subnautica2OxygenDepth, label: 'Oxygen and Depth' },
       { href: Routes.Subnautica2AirTank, label: 'Air Tank and O2' },
       { href: Routes.Subnautica2Scanner, label: 'Scanner Guide' },
+      {
+        href: Routes.Subnautica2BioscannerBiomods,
+        label: 'Bioscanner and Biomods',
+      },
     ],
     sourcesTitle: 'Source note',
     sourceBody:

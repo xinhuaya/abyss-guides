@@ -116,6 +116,12 @@ const copyByLocale: Record<'en' | 'zh', HubCopy> = {
           'Blueprint scanning, Bioscanner upgrade route, Biomod unlocks, and route priorities.',
       },
       {
+        href: Routes.Subnautica2BioscannerBiomods,
+        title: 'Bioscanner and Biomods',
+        description:
+          'Bioscanner timing, lifeform scan habits, Biomod priorities, and first upgrade choices.',
+      },
+      {
         href: Routes.Subnautica2StrongAcid,
         title: 'Strong Acid',
         description:
