@@ -139,6 +139,10 @@ const resourcesCopy: Record<string, ResourcesCopy> = {
         href: Routes.Subnautica2BioscannerBiomods,
         label: 'Bioscanner and Biomods',
       },
+      {
+        href: Routes.Subnautica2SonicResonator,
+        label: 'Sonic Resonator Guide',
+      },
     ],
     sourcesTitle: 'Source note',
     sourceBody:

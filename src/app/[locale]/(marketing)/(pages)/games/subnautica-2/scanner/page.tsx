@@ -130,6 +130,10 @@ const scannerCopy: Record<string, ScannerCopy> = {
         href: Routes.Subnautica2BioscannerBiomods,
         label: 'Bioscanner and Biomods',
       },
+      {
+        href: Routes.Subnautica2SonicResonator,
+        label: 'Sonic Resonator Guide',
+      },
       { href: Routes.Subnautica2Copper, label: 'Copper Location' },
       { href: Routes.Subnautica2AirTank, label: 'Air Tank and O2' },
       { href: Routes.Subnautica2Resources, label: 'Resources Guide' },
@@ -227,6 +231,10 @@ const scannerCopy: Record<string, ScannerCopy> = {
     ],
     readNextTitle: '继续阅读',
     related: [
+      {
+        href: Routes.Subnautica2SonicResonator,
+        label: 'Sonic Resonator 指南',
+      },
       { href: Routes.Subnautica2Copper, label: '铜位置' },
       { href: Routes.Subnautica2AirTank, label: '气瓶和氧气' },
       { href: Routes.Subnautica2Resources, label: '资源指南' },
@@ -936,6 +944,10 @@ const scannerCopy: Record<string, ScannerCopy> = {
     ],
     readNextTitle: '次に読む',
     related: [
+      {
+        href: Routes.Subnautica2SonicResonator,
+        label: 'Sonic Resonator Guide',
+      },
       { href: Routes.Subnautica2Copper, label: 'Copper の場所' },
       { href: Routes.Subnautica2AirTank, label: 'Air Tank と O2' },
       { href: Routes.Subnautica2Resources, label: '資源ガイド' },

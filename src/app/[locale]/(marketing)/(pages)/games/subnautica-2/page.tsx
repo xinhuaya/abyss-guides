@@ -122,6 +122,12 @@ const copyByLocale: Record<'en' | 'zh', HubCopy> = {
           'Bioscanner timing, lifeform scan habits, Biomod priorities, and first upgrade choices.',
       },
       {
+        href: Routes.Subnautica2SonicResonator,
+        title: 'Sonic Resonator',
+        description:
+          'Mining tool fragments, large ore use, route blockers, and Feedback Resonator prep.',
+      },
+      {
         href: Routes.Subnautica2FeedbackResonator,
         title: 'Feedback Resonator',
         description:
@@ -298,6 +304,11 @@ const copyByLocale: Record<'en' | 'zh', HubCopy> = {
         href: Routes.Subnautica2Tadpole,
         title: '蝌蚪号载具',
         description: '碎片扫描、载具制作、动力电池和升级准备。',
+      },
+      {
+        href: Routes.Subnautica2SonicResonator,
+        title: 'Sonic Resonator 指南',
+        description: '挖矿工具碎片、大矿节点、路线清障和后续远程升级前置。',
       },
       {
         href: Routes.Subnautica2BaseBuilding,

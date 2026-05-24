@@ -138,6 +138,10 @@ const feedbackCopy: Record<string, FeedbackCopy> = {
     ],
     readNextTitle: 'Read next',
     related: [
+      {
+        href: Routes.Subnautica2SonicResonator,
+        label: 'Sonic Resonator Guide',
+      },
       { href: Routes.Subnautica2Tadpole, label: 'Tadpole Vehicle Guide' },
       { href: Routes.Subnautica2MetalFarm, label: 'Metal Farm Guide' },
       {
@@ -256,6 +260,10 @@ const feedbackCopy: Record<string, FeedbackCopy> = {
     ],
     readNextTitle: '继续看',
     related: [
+      {
+        href: Routes.Subnautica2SonicResonator,
+        label: 'Sonic Resonator 指南',
+      },
       { href: Routes.Subnautica2Tadpole, label: 'Tadpole 载具指南' },
       { href: Routes.Subnautica2MetalFarm, label: 'Metal Farm 指南' },
       {
@@ -372,6 +380,10 @@ const feedbackCopy: Record<string, FeedbackCopy> = {
     ],
     readNextTitle: 'Read next',
     related: [
+      {
+        href: Routes.Subnautica2SonicResonator,
+        label: 'Sonic Resonator Guide',
+      },
       { href: Routes.Subnautica2Tadpole, label: 'Tadpole Guide' },
       { href: Routes.Subnautica2MetalFarm, label: 'Metal Farm Guide' },
       {
