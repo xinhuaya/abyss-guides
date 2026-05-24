@@ -143,6 +143,10 @@ const clinkerCopy: Record<string, ClinkerCopy> = {
         href: Routes.Subnautica2TroiliteAfterHotfix2,
         label: 'Troilite After Hotfix 2',
       },
+      {
+        href: Routes.Subnautica2TroiliteSoftlock,
+        label: 'Troilite Softlock Fix',
+      },
       { href: Routes.Subnautica2MetalFarm, label: 'Metal Farm Guide' },
       { href: Routes.Subnautica2Mangalloy, label: 'Mangalloy Ingot' },
       { href: Routes.Subnautica2Hotfix2, label: 'Hotfix 2 Changes' },

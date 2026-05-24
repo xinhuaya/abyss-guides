@@ -146,6 +146,12 @@ const copyByLocale: Record<'en' | 'zh', HubCopy> = {
           'Deposit-name notes for Troilite routes after Hotfix 2 and late-game resource checks.',
       },
       {
+        href: Routes.Subnautica2TroiliteSoftlock,
+        title: 'Troilite Softlock Fix',
+        description:
+          'What to do if you spent your first Troilite before Metal Farm or Mangalloy planning.',
+      },
+      {
         href: Routes.Subnautica2Atacamite,
         title: 'Where to Find Atacamite',
         description:
@@ -186,6 +192,12 @@ const copyByLocale: Record<'en' | 'zh', HubCopy> = {
         title: 'Mineralized Clinker',
         description:
           'The deposit name players should watch for when following Troilite routes.',
+      },
+      {
+        href: Routes.Subnautica2TroiliteSoftlock,
+        title: 'Troilite Softlock Fix',
+        description:
+          'A recovery checklist for players who spent Troilite too early.',
       },
     ],
     editorialTitle: 'Editorial rule',

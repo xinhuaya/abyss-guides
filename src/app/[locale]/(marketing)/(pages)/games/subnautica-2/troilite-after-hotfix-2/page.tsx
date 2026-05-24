@@ -140,6 +140,10 @@ const troilitePatchCopy: Record<string, TroilitePatchCopy> = {
     related: [
       { href: Routes.Subnautica2Hotfix2, label: 'Hotfix 2 Changes' },
       { href: Routes.Subnautica2Troilite, label: 'Troilite Location' },
+      {
+        href: Routes.Subnautica2TroiliteSoftlock,
+        label: 'Troilite Softlock Fix',
+      },
       { href: Routes.Subnautica2MetalFarm, label: 'Metal Farm Guide' },
       { href: Routes.Subnautica2Mangalloy, label: 'Mangalloy Ingot' },
       { href: Routes.Subnautica2Resources, label: 'Resources Guide' },

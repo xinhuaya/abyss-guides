@@ -230,6 +230,12 @@ export default function MetalFarmGuidePage() {
                 </LocaleLink>
                 <LocaleLink
                   className="text-[#78ead7] hover:underline"
+                  href={Routes.Subnautica2TroiliteSoftlock}
+                >
+                  Troilite Softlock Fix
+                </LocaleLink>
+                <LocaleLink
+                  className="text-[#78ead7] hover:underline"
                   href={Routes.Subnautica2Atacamite}
                 >
                   Atacamite Location
