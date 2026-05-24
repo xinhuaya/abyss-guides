@@ -17,6 +17,7 @@ const localizedRoutes: Partial<Record<Locale, ReadonlySet<string>>> = {
     Routes.Subnautica2Copper,
     Routes.Subnautica2AirTank,
     Routes.Subnautica2Scanner,
+    Routes.Subnautica2Updates,
   ]),
   ru: new Set([
     Routes.Root,
@@ -32,6 +33,7 @@ const localizedRoutes: Partial<Record<Locale, ReadonlySet<string>>> = {
     Routes.Subnautica2Copper,
     Routes.Subnautica2AirTank,
     Routes.Subnautica2Scanner,
+    Routes.Subnautica2Updates,
   ]),
   de: new Set([
     Routes.Root,
@@ -47,6 +49,7 @@ const localizedRoutes: Partial<Record<Locale, ReadonlySet<string>>> = {
     Routes.Subnautica2Copper,
     Routes.Subnautica2AirTank,
     Routes.Subnautica2Scanner,
+    Routes.Subnautica2Updates,
   ]),
   fr: new Set([
     Routes.Root,
@@ -62,6 +65,7 @@ const localizedRoutes: Partial<Record<Locale, ReadonlySet<string>>> = {
     Routes.Subnautica2Copper,
     Routes.Subnautica2AirTank,
     Routes.Subnautica2Scanner,
+    Routes.Subnautica2Updates,
   ]),
   'pt-BR': new Set([
     Routes.Root,
@@ -77,6 +81,7 @@ const localizedRoutes: Partial<Record<Locale, ReadonlySet<string>>> = {
     Routes.Subnautica2Copper,
     Routes.Subnautica2AirTank,
     Routes.Subnautica2Scanner,
+    Routes.Subnautica2Updates,
   ]),
   'es-419': new Set([
     Routes.Root,
@@ -92,6 +97,7 @@ const localizedRoutes: Partial<Record<Locale, ReadonlySet<string>>> = {
     Routes.Subnautica2Copper,
     Routes.Subnautica2AirTank,
     Routes.Subnautica2Scanner,
+    Routes.Subnautica2Updates,
   ]),
   ko: new Set([
     Routes.Root,
@@ -107,6 +113,7 @@ const localizedRoutes: Partial<Record<Locale, ReadonlySet<string>>> = {
     Routes.Subnautica2Copper,
     Routes.Subnautica2AirTank,
     Routes.Subnautica2Scanner,
+    Routes.Subnautica2Updates,
   ]),
   ja: new Set([
     Routes.Root,
@@ -122,6 +129,7 @@ const localizedRoutes: Partial<Record<Locale, ReadonlySet<string>>> = {
     Routes.Subnautica2Copper,
     Routes.Subnautica2AirTank,
     Routes.Subnautica2Scanner,
+    Routes.Subnautica2Updates,
   ]),
 };
 
