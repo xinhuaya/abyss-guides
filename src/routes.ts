@@ -19,6 +19,7 @@ export enum Routes {
   Subnautica2Tadpole = '/games/subnautica-2/tadpole',
   Subnautica2BaseBuilding = '/games/subnautica-2/base-building',
   Subnautica2BestBaseLocations = '/games/subnautica-2/best-base-locations',
+  Subnautica2Biomes = '/games/subnautica-2/biomes',
   Subnautica2Troilite = '/games/subnautica-2/troilite',
   Subnautica2Atacamite = '/games/subnautica-2/atacamite',
   Subnautica2Mangalloy = '/games/subnautica-2/mangalloy-ingot',

@@ -127,6 +127,7 @@ const baseLocationsCopy: Record<string, BaseLocationsCopy> = {
     readNextTitle: 'Read next',
     related: [
       { href: Routes.Subnautica2BaseBuilding, label: 'Base Building Guide' },
+      { href: Routes.Subnautica2Biomes, label: 'Biomes Guide' },
       { href: Routes.Subnautica2Map, label: 'Map and Biomes' },
       { href: Routes.Subnautica2Resources, label: 'Resources Guide' },
       { href: Routes.Subnautica2Coop, label: 'Co-op Guide' },

@@ -64,10 +64,10 @@ const copyByLocale: Record<'en' | 'zh', HubCopy> = {
           'Recipe tracking, blueprint unlock notes, and calculator-ready recipe structure.',
       },
       {
-        href: Routes.Subnautica2Map,
+        href: Routes.Subnautica2Biomes,
         title: 'Map & Biomes',
         description:
-          'Route planning, safety notes, base-friendly areas, and danger markers.',
+          'Biome routes, safety notes, base-friendly areas, and patch-sensitive map planning.',
       },
       {
         href: Routes.Subnautica2Coop,

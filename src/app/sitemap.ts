@@ -28,6 +28,7 @@ const staticRoutes = [
   Routes.Subnautica2Tadpole,
   Routes.Subnautica2BaseBuilding,
   Routes.Subnautica2BestBaseLocations,
+  Routes.Subnautica2Biomes,
   Routes.Subnautica2Troilite,
   Routes.Subnautica2Atacamite,
   Routes.Subnautica2Mangalloy,
