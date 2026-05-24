@@ -109,6 +109,7 @@ const beginnerCopy: Record<string, BeginnerCopy> = {
     related: [
       { href: Routes.Subnautica2Copper, label: 'Copper Location' },
       { href: Routes.Subnautica2Silver, label: 'Silver Location' },
+      { href: Routes.Subnautica2OxygenDepth, label: 'Oxygen and Depth' },
       { href: Routes.Subnautica2AirTank, label: 'Air Tank and O2' },
       { href: Routes.Subnautica2Scanner, label: 'Scanner Guide' },
     ],

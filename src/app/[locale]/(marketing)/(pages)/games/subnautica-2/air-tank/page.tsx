@@ -120,6 +120,7 @@ const airTankCopy: Record<string, AirTankCopy> = {
     ],
     readNextTitle: 'Read next',
     related: [
+      { href: Routes.Subnautica2OxygenDepth, label: 'Oxygen and Depth' },
       { href: Routes.Subnautica2Silver, label: 'Silver Location' },
       { href: Routes.Subnautica2Copper, label: 'Copper Location' },
       { href: Routes.Subnautica2Resources, label: 'Resources Guide' },

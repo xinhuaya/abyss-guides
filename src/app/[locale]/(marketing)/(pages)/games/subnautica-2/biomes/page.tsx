@@ -139,6 +139,7 @@ const biomesCopy: Record<string, BiomesCopy> = {
     readNextTitle: 'Read next',
     related: [
       { href: Routes.Subnautica2Map, label: 'Map and Routes' },
+      { href: Routes.Subnautica2OxygenDepth, label: 'Oxygen and Depth' },
       {
         href: Routes.Subnautica2BestBaseLocations,
         label: 'Best Base Locations',

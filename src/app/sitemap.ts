@@ -23,6 +23,7 @@ const staticRoutes = [
   Routes.Subnautica2Copper,
   Routes.Subnautica2TitaniumIngot,
   Routes.Subnautica2AirTank,
+  Routes.Subnautica2OxygenDepth,
   Routes.Subnautica2Scanner,
   Routes.Subnautica2StrongAcid,
   Routes.Subnautica2Tadpole,

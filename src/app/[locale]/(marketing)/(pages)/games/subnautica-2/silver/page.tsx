@@ -137,6 +137,7 @@ const silverCopy: Record<string, SilverCopy> = {
     readNextTitle: 'Read next',
     readNext: [
       { href: Routes.Subnautica2Resources, label: 'Resources Guide' },
+      { href: Routes.Subnautica2OxygenDepth, label: 'Oxygen and Depth' },
       { href: Routes.Subnautica2AirTank, label: 'Air Tank and O2' },
       { href: Routes.Subnautica2Crafting, label: 'Crafting Guide' },
       { href: Routes.Subnautica2Beginner, label: 'Beginner Guide' },

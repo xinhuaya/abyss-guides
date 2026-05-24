@@ -104,6 +104,12 @@ const copyByLocale: Record<'en' | 'zh', HubCopy> = {
           'Oxygen upgrades, Air Bladders, bubble sources, and safe early dive planning.',
       },
       {
+        href: Routes.Subnautica2OxygenDepth,
+        title: 'Oxygen and Depth',
+        description:
+          'Dive-readiness checks, turn-back rules, cave pressure, and deeper route planning.',
+      },
+      {
         href: Routes.Subnautica2Scanner,
         title: 'Scanner and Bioscanner',
         description:
