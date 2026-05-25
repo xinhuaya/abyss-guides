@@ -218,6 +218,12 @@ const copyByLocale: Record<'en' | 'zh', HubCopy> = {
           'Coral dome pickups, northwest Lifepod sweep, Glass, Scanner, System Chip, and Sonic Resonator bulk mining.',
       },
       {
+        href: Routes.Subnautica2Glass,
+        title: 'Glass',
+        description:
+          'Quartz x2, Salt alternate recipe, Fabricator, Processor, Habitat Builder, and upgrade chain planning.',
+      },
+      {
         href: Routes.Subnautica2Lithium,
         title: 'Lithium',
         description:
@@ -535,6 +541,12 @@ const copyByLocale: Record<'en' | 'zh', HubCopy> = {
         title: 'Quartz 位置',
         description:
           '珊瑚穹顶手捡、Lifepod 西北路线、Glass、Scanner、System Chip 和 Sonic Resonator 批量采集。',
+      },
+      {
+        href: Routes.Subnautica2Glass,
+        title: 'Glass 配方',
+        description:
+          'Quartz x2、Salt 替代配方、Fabricator、Processor、Habitat Builder 和升级链规划。',
       },
       {
         href: Routes.Subnautica2Lithium,

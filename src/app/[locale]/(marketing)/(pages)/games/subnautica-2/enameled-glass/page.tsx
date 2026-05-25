@@ -138,6 +138,7 @@ const enameledGlassCopy: Record<string, EnameledGlassCopy> = {
     ],
     readNextTitle: 'Read next',
     related: [
+      { href: Routes.Subnautica2Glass, label: 'Glass Recipe Guide' },
       {
         href: Routes.Subnautica2CreatureEnamel,
         label: 'Creature Enamel Guide',
@@ -262,6 +263,7 @@ const enameledGlassCopy: Record<string, EnameledGlassCopy> = {
     ],
     readNextTitle: '继续阅读',
     related: [
+      { href: Routes.Subnautica2Glass, label: 'Glass 配方指南' },
       {
         href: Routes.Subnautica2CreatureEnamel,
         label: 'Creature Enamel 指南',
@@ -380,6 +382,7 @@ const enameledGlassCopy: Record<string, EnameledGlassCopy> = {
     ],
     readNextTitle: '次に読む',
     related: [
+      { href: Routes.Subnautica2Glass, label: 'Glass Recipe Guide' },
       {
         href: Routes.Subnautica2CreatureEnamel,
         label: 'Creature Enamel ガイド',
