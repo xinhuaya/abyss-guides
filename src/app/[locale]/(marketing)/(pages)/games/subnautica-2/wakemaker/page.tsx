@@ -129,6 +129,7 @@ const wakemakerCopy: Record<string, WakemakerCopy> = {
     related: [
       { href: Routes.Subnautica2BasicBattery, label: 'Basic Battery Guide' },
       { href: Routes.Subnautica2CopperWire, label: 'Copper Wire Guide' },
+      { href: Routes.Subnautica2FiberMesh, label: 'Fiber Mesh Guide' },
       { href: Routes.Subnautica2AirTank, label: 'Air Tank Guide' },
       { href: Routes.Subnautica2OxygenDepth, label: 'Oxygen and Depth Guide' },
       { href: Routes.Subnautica2Scanner, label: 'Scanner Guide' },
@@ -238,6 +239,7 @@ const wakemakerCopy: Record<string, WakemakerCopy> = {
     related: [
       { href: Routes.Subnautica2BasicBattery, label: 'Basic Battery 指南' },
       { href: Routes.Subnautica2CopperWire, label: 'Copper Wire 指南' },
+      { href: Routes.Subnautica2FiberMesh, label: 'Fiber Mesh 指南' },
       { href: Routes.Subnautica2AirTank, label: 'Air Tank 指南' },
       { href: Routes.Subnautica2OxygenDepth, label: '氧气与深度指南' },
       { href: Routes.Subnautica2Scanner, label: 'Scanner 指南' },

@@ -176,6 +176,12 @@ const copyByLocale: Record<'en' | 'zh', HubCopy> = {
           'Fragment scan route, Life Pod 1 shallows, Lily Pads backup, recipe, and early swim timing.',
       },
       {
+        href: Routes.Subnautica2FiberMesh,
+        title: 'Fiber Mesh',
+        description:
+          'Creepvine material route, Fabricator recipe check, Wakemaker use, and storage timing.',
+      },
+      {
         href: Routes.Subnautica2Scanner,
         title: 'Scanner and Bioscanner',
         description:
@@ -421,6 +427,12 @@ const copyByLocale: Record<'en' | 'zh', HubCopy> = {
         title: 'Wakemaker 指南',
         description:
           '碎片扫描路线、Life Pod 1 浅滩、Lily Pads 备用路线、配方和前期游泳节奏。',
+      },
+      {
+        href: Routes.Subnautica2FiberMesh,
+        title: 'Fiber Mesh 指南',
+        description:
+          'Creepvine 材料路线、Fabricator 配方检查、Wakemaker 用途和前期收纳。',
       },
       {
         href: Routes.Subnautica2Scanner,

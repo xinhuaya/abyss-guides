@@ -38,6 +38,7 @@ export enum Routes {
   Subnautica2EnameledGlass = '/games/subnautica-2/enameled-glass',
   Subnautica2Strontium = '/games/subnautica-2/strontium',
   Subnautica2StrongAcid = '/games/subnautica-2/strong-acid',
+  Subnautica2FiberMesh = '/games/subnautica-2/fiber-mesh',
   Subnautica2Tadpole = '/games/subnautica-2/tadpole',
   Subnautica2TadpoleDepthModule = '/games/subnautica-2/tadpole-depth-module',
   Subnautica2BaseBuilding = '/games/subnautica-2/base-building',

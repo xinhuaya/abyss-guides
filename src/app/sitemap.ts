@@ -47,6 +47,7 @@ const staticRoutes = [
   Routes.Subnautica2EnameledGlass,
   Routes.Subnautica2Strontium,
   Routes.Subnautica2StrongAcid,
+  Routes.Subnautica2FiberMesh,
   Routes.Subnautica2Tadpole,
   Routes.Subnautica2TadpoleDepthModule,
   Routes.Subnautica2BaseBuilding,
