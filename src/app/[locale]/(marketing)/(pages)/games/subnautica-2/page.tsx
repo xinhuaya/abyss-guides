@@ -218,6 +218,12 @@ const copyByLocale: Record<'en' | 'zh', HubCopy> = {
           'Great Jaw route, ruin pickup, Sonic Resonator mining, Plasteel Ingot, and High Capacity Air Tank prep.',
       },
       {
+        href: Routes.Subnautica2Lead,
+        title: 'Lead',
+        description:
+          'Northeast ravine route, blue current entry, hand pickups, Sonic Resonator unlock, and Germanium processing.',
+      },
+      {
         href: Routes.Subnautica2FiberMesh,
         title: 'Fiber Mesh',
         description:
@@ -511,6 +517,12 @@ const copyByLocale: Record<'en' | 'zh', HubCopy> = {
         title: 'Lithium 位置',
         description:
           'The Great Jaw 路线、废墟外拾取、Sonic Resonator 挖矿、Plasteel Ingot 和高容量氧气瓶准备。',
+      },
+      {
+        href: Routes.Subnautica2Lead,
+        title: 'Lead 位置',
+        description:
+          '东北峡谷路线、蓝色水流入口、手捡小块、Sonic Resonator 解锁和 Germanium 加工。',
       },
       {
         href: Routes.Subnautica2FiberMesh,
