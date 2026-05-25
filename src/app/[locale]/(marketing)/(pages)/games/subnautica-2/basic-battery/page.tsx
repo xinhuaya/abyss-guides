@@ -136,6 +136,7 @@ const basicBatteryCopy: Record<string, BasicBatteryCopy> = {
       { href: Routes.Subnautica2CopperWire, label: 'Copper Wire Guide' },
       { href: Routes.Subnautica2Wakemaker, label: 'Wakemaker Guide' },
       { href: Routes.Subnautica2Scanner, label: 'Scanner Guide' },
+      { href: Routes.Subnautica2RepairTool, label: 'Repair Tool Guide' },
       {
         href: Routes.Subnautica2HabitatBuilder,
         label: 'Habitat Builder Guide',
@@ -254,6 +255,7 @@ const basicBatteryCopy: Record<string, BasicBatteryCopy> = {
       { href: Routes.Subnautica2CopperWire, label: 'Copper Wire 指南' },
       { href: Routes.Subnautica2Wakemaker, label: 'Wakemaker 指南' },
       { href: Routes.Subnautica2Scanner, label: 'Scanner 指南' },
+      { href: Routes.Subnautica2RepairTool, label: 'Repair Tool 指南' },
       { href: Routes.Subnautica2HabitatBuilder, label: 'Habitat Builder 指南' },
       { href: Routes.Subnautica2Resources, label: '资源指南' },
       { href: Routes.Subnautica2Crafting, label: '制作指南' },
@@ -370,6 +372,7 @@ const basicBatteryCopy: Record<string, BasicBatteryCopy> = {
       { href: Routes.Subnautica2CopperWire, label: 'Copper Wire ガイド' },
       { href: Routes.Subnautica2Wakemaker, label: 'Wakemaker Guide' },
       { href: Routes.Subnautica2Scanner, label: 'Scanner ガイド' },
+      { href: Routes.Subnautica2RepairTool, label: 'Repair Tool Guide' },
       {
         href: Routes.Subnautica2HabitatBuilder,
         label: 'Habitat Builder Guide',

@@ -194,6 +194,12 @@ const copyByLocale: Record<'en' | 'zh', HubCopy> = {
           'Copper and Titanium recipe, scan unlock, marker naming, exits, and route navigation.',
       },
       {
+        href: Routes.Subnautica2RepairTool,
+        title: 'Repair Tool',
+        description:
+          'Fragment scans, Titanium Ingot, Wiring Kit, Basic Battery, Sulfur, and safe repair prep.',
+      },
+      {
         href: Routes.Subnautica2FiberMesh,
         title: 'Fiber Mesh',
         description:
@@ -463,6 +469,12 @@ const copyByLocale: Record<'en' | 'zh', HubCopy> = {
         title: 'Beacon 指南',
         description:
           'Copper 与 Titanium 配方、扫描解锁、标记命名、出口和路线导航。',
+      },
+      {
+        href: Routes.Subnautica2RepairTool,
+        title: 'Repair Tool 指南',
+        description:
+          '碎片扫描、Titanium Ingot、Wiring Kit、Basic Battery、Sulfur 和安全维修准备。',
       },
       {
         href: Routes.Subnautica2FiberMesh,
