@@ -135,6 +135,10 @@ const craftingCopy: Record<string, CraftingCopy> = {
       { href: Routes.Subnautica2AirTank, label: 'Air Tank and O2' },
       { href: Routes.Subnautica2Copper, label: 'Copper Location' },
       { href: Routes.Subnautica2BasicBattery, label: 'Basic Battery Guide' },
+      {
+        href: Routes.Subnautica2AcidicRaionPouch,
+        label: 'Acidic Raion Pouch Guide',
+      },
       { href: Routes.Subnautica2CopperWire, label: 'Copper Wire Guide' },
       {
         href: Routes.Subnautica2HabitatBuilder,
@@ -251,6 +255,10 @@ const craftingCopy: Record<string, CraftingCopy> = {
       { href: Routes.Subnautica2Scanner, label: 'Scanner 攻略' },
       { href: Routes.Subnautica2AirTank, label: '气瓶和氧气' },
       { href: Routes.Subnautica2Copper, label: 'Copper 位置' },
+      {
+        href: Routes.Subnautica2AcidicRaionPouch,
+        label: 'Acidic Raion Pouch Guide',
+      },
       { href: Routes.Subnautica2Silver, label: 'Silver 位置' },
     ],
     sourcesTitle: '来源说明',

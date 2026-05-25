@@ -98,6 +98,12 @@ const copyByLocale: Record<'en' | 'zh', HubCopy> = {
           'Default unlock, Copper x2, Acidic Raion Pouch x1, 100 energy, and early tool priorities.',
       },
       {
+        href: Routes.Subnautica2AcidicRaionPouch,
+        title: 'Acidic Raion Pouch',
+        description:
+          'Coral Gardens harvest lead, Basic Battery use, Mild Acid use, and current map-data caveat.',
+      },
+      {
         href: Routes.Subnautica2CopperWire,
         title: 'Copper Wire',
         description:

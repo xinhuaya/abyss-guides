@@ -133,6 +133,10 @@ const resourcesCopy: Record<string, ResourcesCopy> = {
       { href: Routes.Subnautica2Beginner, label: 'Beginner Route' },
       { href: Routes.Subnautica2Copper, label: 'Copper Location' },
       { href: Routes.Subnautica2BasicBattery, label: 'Basic Battery Guide' },
+      {
+        href: Routes.Subnautica2AcidicRaionPouch,
+        label: 'Acidic Raion Pouch Guide',
+      },
       { href: Routes.Subnautica2CopperWire, label: 'Copper Wire Guide' },
       {
         href: Routes.Subnautica2HabitatBuilder,
@@ -276,6 +280,10 @@ const resourcesCopy: Record<string, ResourcesCopy> = {
     related: [
       { href: Routes.Subnautica2Beginner, label: '新手路线' },
       { href: Routes.Subnautica2Copper, label: 'Copper 位置' },
+      {
+        href: Routes.Subnautica2AcidicRaionPouch,
+        label: 'Acidic Raion Pouch Guide',
+      },
       { href: Routes.Subnautica2Silver, label: 'Silver 位置' },
       { href: Routes.Subnautica2AirTank, label: '气瓶和氧气' },
       { href: Routes.Subnautica2Scanner, label: 'Scanner 攻略' },
