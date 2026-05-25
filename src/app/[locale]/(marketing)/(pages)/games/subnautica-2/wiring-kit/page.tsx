@@ -138,6 +138,7 @@ const wiringKitCopy: Record<string, WiringKitCopy> = {
     ],
     readNextTitle: 'Read next',
     related: [
+      { href: Routes.Subnautica2CopperWire, label: 'Copper Wire Guide' },
       { href: Routes.Subnautica2Silver, label: 'Silver Location' },
       { href: Routes.Subnautica2Copper, label: 'Copper Location' },
       { href: Routes.Subnautica2SystemChip, label: 'System Chip Guide' },
@@ -252,6 +253,7 @@ const wiringKitCopy: Record<string, WiringKitCopy> = {
     ],
     readNextTitle: '继续阅读',
     related: [
+      { href: Routes.Subnautica2CopperWire, label: 'Copper Wire 指南' },
       { href: Routes.Subnautica2Silver, label: 'Silver 位置' },
       { href: Routes.Subnautica2Copper, label: 'Copper 位置' },
       { href: Routes.Subnautica2SystemChip, label: 'System Chip 指南' },
@@ -366,6 +368,7 @@ const wiringKitCopy: Record<string, WiringKitCopy> = {
     ],
     readNextTitle: '次に読む',
     related: [
+      { href: Routes.Subnautica2CopperWire, label: 'Copper Wire ガイド' },
       { href: Routes.Subnautica2Silver, label: 'Silver の場所' },
       { href: Routes.Subnautica2Copper, label: 'Copper の場所' },
       { href: Routes.Subnautica2SystemChip, label: 'System Chip ガイド' },

@@ -92,6 +92,12 @@ const copyByLocale: Record<'en' | 'zh', HubCopy> = {
           'Early battery and electronics material with Lifepod cave route notes.',
       },
       {
+        href: Routes.Subnautica2CopperWire,
+        title: 'Copper Wire',
+        description:
+          '2 Copper recipe, battery timing, Wiring Kit prep, and base-building electronics use.',
+      },
+      {
         href: Routes.Subnautica2Silver,
         title: 'Where to Find Silver',
         description:
@@ -327,6 +333,12 @@ const copyByLocale: Record<'en' | 'zh', HubCopy> = {
         href: Routes.Subnautica2Copper,
         title: '铜在哪里找',
         description: '开局电池、电子元件和扫描器相关路线。',
+      },
+      {
+        href: Routes.Subnautica2CopperWire,
+        title: 'Copper Wire 指南',
+        description:
+          '2 Copper 配方、电池制作时机、Wiring Kit 前置和基地电子材料用途。',
       },
       {
         href: Routes.Subnautica2Silver,
