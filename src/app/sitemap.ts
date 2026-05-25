@@ -39,6 +39,7 @@ const staticRoutes = [
   Routes.Subnautica2ScannerStation,
   Routes.Subnautica2Beacon,
   Routes.Subnautica2RepairTool,
+  Routes.Subnautica2Sulfur,
   Routes.Subnautica2Scanner,
   Routes.Subnautica2SystemChip,
   Routes.Subnautica2WiringKit,

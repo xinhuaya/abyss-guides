@@ -48,6 +48,7 @@ export default function StrongAcidGuidePage() {
       related={[
         { href: Routes.Subnautica2Processor, label: 'Processor Guide' },
         { href: Routes.Subnautica2MildAcid, label: 'Mild Acid Guide' },
+        { href: Routes.Subnautica2Sulfur, label: 'Sulfur Location Guide' },
         { href: Routes.Subnautica2FiberMesh, label: 'Fiber Mesh Guide' },
         { href: Routes.Subnautica2Tadpole, label: 'Tadpole Vehicle' },
         { href: Routes.Subnautica2TitaniumIngot, label: 'Titanium Ingot' },

@@ -200,6 +200,12 @@ const copyByLocale: Record<'en' | 'zh', HubCopy> = {
           'Fragment scans, Titanium Ingot, Wiring Kit, Basic Battery, Sulfur, and safe repair prep.',
       },
       {
+        href: Routes.Subnautica2Sulfur,
+        title: 'Sulfur',
+        description:
+          'Early Lifepod route, hand pickups, Sonic Resonator bulk mining, Repair Tool use, and heat-route warning.',
+      },
+      {
         href: Routes.Subnautica2FiberMesh,
         title: 'Fiber Mesh',
         description:
@@ -475,6 +481,12 @@ const copyByLocale: Record<'en' | 'zh', HubCopy> = {
         title: 'Repair Tool 指南',
         description:
           '碎片扫描、Titanium Ingot、Wiring Kit、Basic Battery、Sulfur 和安全维修准备。',
+      },
+      {
+        href: Routes.Subnautica2Sulfur,
+        title: 'Sulfur 位置',
+        description:
+          'Lifepod 早期路线、手捡小块、Sonic Resonator 批量采集、Repair Tool 用途和热源提醒。',
       },
       {
         href: Routes.Subnautica2FiberMesh,

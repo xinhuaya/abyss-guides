@@ -30,6 +30,7 @@ export enum Routes {
   Subnautica2ScannerStation = '/games/subnautica-2/scanner-station',
   Subnautica2Beacon = '/games/subnautica-2/beacon',
   Subnautica2RepairTool = '/games/subnautica-2/repair-tool',
+  Subnautica2Sulfur = '/games/subnautica-2/sulfur',
   Subnautica2Scanner = '/games/subnautica-2/scanner',
   Subnautica2SystemChip = '/games/subnautica-2/system-chip',
   Subnautica2WiringKit = '/games/subnautica-2/wiring-kit',

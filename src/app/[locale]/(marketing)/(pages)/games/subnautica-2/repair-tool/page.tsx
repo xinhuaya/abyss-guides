@@ -51,7 +51,7 @@ const repairToolCopy: Record<string, RepairToolCopy> = {
       'Repair Tool is the boring-looking item you only miss after something breaks. Build it before your first long Tadpole route or serious base stretch.',
     quickLabel: 'Quick answer',
     quickAnswer:
-      'Current Subnautica2.gg and Subnautica2Hub data list Repair Tool as a scan-unlocked tool crafted at the Fabrication Station / Fabricator with Titanium Ingot x1, Wiring Kit x1, Basic Battery x1, and Sulfur x1. Subnautica2.gg currently maps 11 scan locations and says the unlock needs 3 Repair Tool scans. Use it to repair vehicles, bases, and systems before a damaged Tadpole or flooded base turns a route into a reset.',
+      'Current Subnautica2.gg and Subnautica2Hub data list Repair Tool as a scan-unlocked tool crafted at the Fabrication Station / Fabricator with Titanium Ingot, Wiring Kit, Basic Battery, and Sulfur. PC Gamer currently reports 2 Titanium Ingots while the database pages list 1, so check your PDA before the final craft. Subnautica2.gg maps 11 scan locations and says the unlock needs 3 Repair Tool scans.',
     contentsLabel: 'Contents',
     routeTitle: 'Repair Tool unlock and craft plan',
     routeSteps: [
@@ -61,7 +61,7 @@ const repairToolCopy: Record<string, RepairToolCopy> = {
       },
       {
         title: 'Treat the recipe as a small chain',
-        body: 'The public blueprint pages list Titanium Ingot, Wiring Kit, Basic Battery, and Sulfur. That means raw Titanium, Silver, Copper, Quartz, and battery materials can all become blockers.',
+        body: 'The public blueprint pages list Titanium Ingot, Wiring Kit, Basic Battery, and Sulfur. PC Gamer currently disagrees on the Titanium Ingot count, so bring a spare if you are crafting away from base.',
       },
       {
         title: 'Build it before vehicle confidence',
@@ -81,7 +81,10 @@ const repairToolCopy: Record<string, RepairToolCopy> = {
     tableRows: [
       ['Unlock', 'Subnautica2.gg currently lists 3 Repair Tool scans.'],
       ['Station', 'Fabrication Station / Fabricator in current data.'],
-      ['Titanium Ingot x1', 'Process Titanium before the final craft.'],
+      [
+        'Titanium Ingot',
+        'Public sources differ between x1 and x2. Check the PDA.',
+      ],
       ['Wiring Kit x1', 'Plan the Silver chain before you leave base.'],
       [
         'Basic Battery x1',
@@ -118,7 +121,7 @@ const repairToolCopy: Record<string, RepairToolCopy> = {
       },
       {
         title: 'What is the Repair Tool recipe?',
-        body: 'Current public blueprint pages list Titanium Ingot x1, Wiring Kit x1, Basic Battery x1, and Sulfur x1 at the Fabrication Station / Fabricator.',
+        body: 'Current database pages list Titanium Ingot x1, Wiring Kit x1, Basic Battery x1, and Sulfur x1 at the Fabrication Station / Fabricator; PC Gamer currently reports 2 Titanium Ingots, so check your PDA before crafting.',
       },
       {
         title: 'What does the Repair Tool repair?',
@@ -132,6 +135,7 @@ const repairToolCopy: Record<string, RepairToolCopy> = {
     readNextTitle: 'Read next',
     related: [
       { href: Routes.Subnautica2Tadpole, label: 'Tadpole Vehicle Guide' },
+      { href: Routes.Subnautica2Sulfur, label: 'Sulfur Location Guide' },
       { href: Routes.Subnautica2BasicBattery, label: 'Basic Battery Guide' },
       { href: Routes.Subnautica2WiringKit, label: 'Wiring Kit Guide' },
       { href: Routes.Subnautica2TitaniumIngot, label: 'Titanium Ingot Guide' },
@@ -141,7 +145,7 @@ const repairToolCopy: Record<string, RepairToolCopy> = {
     ],
     sourcesTitle: 'Source note',
     sourceBody:
-      'Checked May 26, 2026 against Subnautica2.gg, Subnautica2Hub, GamesRadar, and PC Gamer. Current public pages agree on scan unlock, the four-input recipe, and vehicle/base repair use, but Early Access saves can change after patches.',
+      'Checked May 26, 2026 against Subnautica2.gg, Subnautica2Hub, GamesRadar, and PC Gamer. Current public pages agree on scan unlock, Sulfur use, and vehicle/base repair use; Titanium Ingot count differs between database pages and PC Gamer, so check your PDA after patches.',
     cardKicker: 'Repair card',
     cardBody:
       'Scan unlock, Fabricator recipe, Titanium Ingot, Wiring Kit, Basic Battery, Sulfur, Tadpole repairs, and base repair timing.',
@@ -163,7 +167,7 @@ const repairToolCopy: Record<string, RepairToolCopy> = {
       'Repair Tool 看起来不抢眼，但等 Tadpole 冒烟、基地漏水时，你会希望它早就在背包里。',
     quickLabel: '快速结论',
     quickAnswer:
-      'Subnautica2.gg 和 Subnautica2Hub 当前资料把 Repair Tool 写成扫描解锁工具，在 Fabrication Station / Fabricator 用 Titanium Ingot x1、Wiring Kit x1、Basic Battery x1、Sulfur x1 制作。Subnautica2.gg 当前还写到需要扫描 3 个 Repair Tool，并列出 11 个扫描位置。做 Tadpole 长路线、基地扩建或高风险资源循环前，先把它做出来。',
+      'Subnautica2.gg 和 Subnautica2Hub 当前资料把 Repair Tool 写成扫描解锁工具，在 Fabrication Station / Fabricator 用 Titanium Ingot、Wiring Kit、Basic Battery 和 Sulfur 制作。PC Gamer 当前写 Titanium Ingot x2，而数据库页写 x1，所以最终制作前看一眼 PDA。Subnautica2.gg 当前还写到需要扫描 3 个 Repair Tool，并列出 11 个扫描位置。',
     contentsLabel: '目录',
     routeTitle: 'Repair Tool 解锁和制作路线',
     routeSteps: [
@@ -173,7 +177,7 @@ const repairToolCopy: Record<string, RepairToolCopy> = {
       },
       {
         title: '把配方当成一条小材料链',
-        body: '公开蓝图页列的是 Titanium Ingot、Wiring Kit、Basic Battery 和 Sulfur。也就是说 Titanium、Silver、Copper、Quartz 和电池材料都有可能卡住你。',
+        body: '公开蓝图页列的是 Titanium Ingot、Wiring Kit、Basic Battery 和 Sulfur。PC Gamer 和数据库页在 Titanium Ingot 数量上有出入，如果离基地远，最好多带一份 Titanium 准备。',
       },
       {
         title: '别等载具坏了才想起来',
@@ -193,7 +197,7 @@ const repairToolCopy: Record<string, RepairToolCopy> = {
     tableRows: [
       ['解锁', 'Subnautica2.gg 当前写的是扫描 3 个 Repair Tool。'],
       ['工作站', '当前资料写作 Fabrication Station / Fabricator。'],
-      ['Titanium Ingot x1', '最后制作前先把 Titanium 加工好。'],
+      ['Titanium Ingot', '公开资料在 x1 / x2 上有出入，最终看 PDA。'],
       ['Wiring Kit x1', '出门前确认 Silver 链路没有断。'],
       ['Basic Battery x1', '别把最后一块电池都塞进手电筒路线。'],
       ['Sulfur x1', '提前留一份，别被其他配方用空。'],
@@ -227,7 +231,7 @@ const repairToolCopy: Record<string, RepairToolCopy> = {
       },
       {
         title: 'Repair Tool 配方是什么？',
-        body: '当前公开蓝图页写的是在 Fabrication Station / Fabricator 用 Titanium Ingot x1、Wiring Kit x1、Basic Battery x1、Sulfur x1 制作。',
+        body: '当前数据库页写的是在 Fabrication Station / Fabricator 用 Titanium Ingot x1、Wiring Kit x1、Basic Battery x1、Sulfur x1 制作；PC Gamer 当前写 Titanium Ingot x2，所以最终以 PDA 为准。',
       },
       {
         title: 'Repair Tool 能修什么？',
@@ -241,6 +245,7 @@ const repairToolCopy: Record<string, RepairToolCopy> = {
     readNextTitle: '继续阅读',
     related: [
       { href: Routes.Subnautica2Tadpole, label: 'Tadpole 载具指南' },
+      { href: Routes.Subnautica2Sulfur, label: 'Sulfur 位置指南' },
       { href: Routes.Subnautica2BasicBattery, label: 'Basic Battery 指南' },
       { href: Routes.Subnautica2WiringKit, label: 'Wiring Kit 指南' },
       { href: Routes.Subnautica2TitaniumIngot, label: 'Titanium Ingot 指南' },
@@ -250,7 +255,7 @@ const repairToolCopy: Record<string, RepairToolCopy> = {
     ],
     sourcesTitle: '来源说明',
     sourceBody:
-      '2026 年 5 月 26 日核对 Subnautica2.gg、Subnautica2Hub、GamesRadar 和 PC Gamer。当前公开资料在扫描解锁、四项配方和载具/基地维修用途上基本一致，但抢先体验版本后续可能调整。',
+      '2026 年 5 月 26 日核对 Subnautica2.gg、Subnautica2Hub、GamesRadar 和 PC Gamer。当前公开资料在扫描解锁、Sulfur 用途和载具/基地维修上基本一致；Titanium Ingot 数量在数据库页和 PC Gamer 之间有出入，更新后请以 PDA 为准。',
     cardKicker: '维修工具卡',
     cardBody:
       '扫描解锁、Fabricator 配方、Titanium Ingot、Wiring Kit、Basic Battery、Sulfur、Tadpole 维修和基地维修时机。',
