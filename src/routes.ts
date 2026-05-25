@@ -22,6 +22,7 @@ export enum Routes {
   Subnautica2FeedbackResonator = '/games/subnautica-2/feedback-resonator',
   Subnautica2Celestine = '/games/subnautica-2/celestine',
   Subnautica2CreatureEnamel = '/games/subnautica-2/creature-enamel',
+  Subnautica2EnameledGlass = '/games/subnautica-2/enameled-glass',
   Subnautica2Strontium = '/games/subnautica-2/strontium',
   Subnautica2StrongAcid = '/games/subnautica-2/strong-acid',
   Subnautica2Tadpole = '/games/subnautica-2/tadpole',

@@ -36,6 +36,10 @@ export default function TadpoleGuidePage() {
       related={[
         { href: Routes.Subnautica2AirTank, label: 'Air Tank and O2' },
         { href: Routes.Subnautica2Crafting, label: 'Crafting Guide' },
+        {
+          href: Routes.Subnautica2EnameledGlass,
+          label: 'Enameled Glass Guide',
+        },
         { href: Routes.Subnautica2Map, label: 'Map and Biomes' },
         {
           href: Routes.Subnautica2FeedbackResonator,

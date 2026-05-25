@@ -159,6 +159,10 @@ const resourcesCopy: Record<string, ResourcesCopy> = {
         href: Routes.Subnautica2CreatureEnamel,
         label: 'Creature Enamel Guide',
       },
+      {
+        href: Routes.Subnautica2EnameledGlass,
+        label: 'Enameled Glass Guide',
+      },
     ],
     sourcesTitle: 'Source note',
     sourceBody:

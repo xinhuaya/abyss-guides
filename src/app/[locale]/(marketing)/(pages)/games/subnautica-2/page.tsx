@@ -152,6 +152,12 @@ const copyByLocale: Record<'en' | 'zh', HubCopy> = {
           'Needler Mango route, Alien Ruins safety, Tadpole prep, and Enameled Glass planning.',
       },
       {
+        href: Routes.Subnautica2EnameledGlass,
+        title: 'Enameled Glass',
+        description:
+          'Glass recipe chain, Creature Enamel gate, craft timing, and upgrade storage.',
+      },
+      {
         href: Routes.Subnautica2Strontium,
         title: 'Strontium',
         description:
@@ -339,6 +345,18 @@ const copyByLocale: Record<'en' | 'zh', HubCopy> = {
         title: 'Conduit Crystal 指南',
         description:
           'Alien Ruins 深水路线、Sonic Resonator 采集和工具升级材料用途。',
+      },
+      {
+        href: Routes.Subnautica2CreatureEnamel,
+        title: 'Creature Enamel 指南',
+        description:
+          'Needler Mango 路线、Alien Ruins 安全停靠、Tadpole 准备和 Enameled Glass 规划。',
+      },
+      {
+        href: Routes.Subnautica2EnameledGlass,
+        title: 'Enameled Glass 指南',
+        description:
+          'Glass 配方链、Creature Enamel 卡点、制作时机和升级材料存放。',
       },
       {
         href: Routes.Subnautica2BaseBuilding,
