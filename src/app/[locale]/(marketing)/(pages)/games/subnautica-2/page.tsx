@@ -212,6 +212,12 @@ const copyByLocale: Record<'en' | 'zh', HubCopy> = {
           'Coral dome pickups, northwest Lifepod sweep, Glass, Scanner, System Chip, and Sonic Resonator bulk mining.',
       },
       {
+        href: Routes.Subnautica2Lithium,
+        title: 'Lithium',
+        description:
+          'Great Jaw route, ruin pickup, Sonic Resonator mining, Plasteel Ingot, and High Capacity Air Tank prep.',
+      },
+      {
         href: Routes.Subnautica2FiberMesh,
         title: 'Fiber Mesh',
         description:
@@ -499,6 +505,12 @@ const copyByLocale: Record<'en' | 'zh', HubCopy> = {
         title: 'Quartz 位置',
         description:
           '珊瑚穹顶手捡、Lifepod 西北路线、Glass、Scanner、System Chip 和 Sonic Resonator 批量采集。',
+      },
+      {
+        href: Routes.Subnautica2Lithium,
+        title: 'Lithium 位置',
+        description:
+          'The Great Jaw 路线、废墟外拾取、Sonic Resonator 挖矿、Plasteel Ingot 和高容量氧气瓶准备。',
       },
       {
         href: Routes.Subnautica2FiberMesh,
