@@ -104,6 +104,12 @@ const copyByLocale: Record<'en' | 'zh', HubCopy> = {
           'Coral Gardens harvest lead, Basic Battery use, Mild Acid use, and current map-data caveat.',
       },
       {
+        href: Routes.Subnautica2MildAcid,
+        title: 'Mild Acid',
+        description:
+          'Acidic Raion Pouch, Copper, Fabricator recipe, Processor route, and upgrade uses.',
+      },
+      {
         href: Routes.Subnautica2CopperWire,
         title: 'Copper Wire',
         description:
@@ -390,6 +396,12 @@ const copyByLocale: Record<'en' | 'zh', HubCopy> = {
         title: 'Wiring Kit 指南',
         description:
           'Silver、Copper Wire、电子材料收纳、System Chip 前置和升级材料时机。',
+      },
+      {
+        href: Routes.Subnautica2MildAcid,
+        title: 'Mild Acid Guide',
+        description:
+          'Acidic Raion Pouch, Copper, Fabricator recipe, Processor route, and upgrade uses.',
       },
       {
         href: Routes.Subnautica2StrongAcid,

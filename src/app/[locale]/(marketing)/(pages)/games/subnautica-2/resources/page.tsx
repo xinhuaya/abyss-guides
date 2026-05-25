@@ -137,6 +137,7 @@ const resourcesCopy: Record<string, ResourcesCopy> = {
         href: Routes.Subnautica2AcidicRaionPouch,
         label: 'Acidic Raion Pouch Guide',
       },
+      { href: Routes.Subnautica2MildAcid, label: 'Mild Acid Guide' },
       { href: Routes.Subnautica2CopperWire, label: 'Copper Wire Guide' },
       {
         href: Routes.Subnautica2HabitatBuilder,
@@ -284,6 +285,7 @@ const resourcesCopy: Record<string, ResourcesCopy> = {
         href: Routes.Subnautica2AcidicRaionPouch,
         label: 'Acidic Raion Pouch Guide',
       },
+      { href: Routes.Subnautica2MildAcid, label: 'Mild Acid Guide' },
       { href: Routes.Subnautica2Silver, label: 'Silver 位置' },
       { href: Routes.Subnautica2AirTank, label: '气瓶和氧气' },
       { href: Routes.Subnautica2Scanner, label: 'Scanner 攻略' },

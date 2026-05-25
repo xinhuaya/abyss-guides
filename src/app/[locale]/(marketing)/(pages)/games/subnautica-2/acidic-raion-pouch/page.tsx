@@ -127,6 +127,7 @@ const acidicRaionPouchCopy: Record<string, AcidicRaionPouchCopy> = {
     readNextTitle: 'Read next',
     related: [
       { href: Routes.Subnautica2BasicBattery, label: 'Basic Battery Guide' },
+      { href: Routes.Subnautica2MildAcid, label: 'Mild Acid Guide' },
       { href: Routes.Subnautica2Copper, label: 'Copper Location' },
       { href: Routes.Subnautica2Scanner, label: 'Scanner Guide' },
       { href: Routes.Subnautica2Resources, label: 'Resources Guide' },
@@ -234,6 +235,7 @@ const acidicRaionPouchCopy: Record<string, AcidicRaionPouchCopy> = {
     readNextTitle: '继续阅读',
     related: [
       { href: Routes.Subnautica2BasicBattery, label: 'Basic Battery 指南' },
+      { href: Routes.Subnautica2MildAcid, label: 'Mild Acid 指南' },
       { href: Routes.Subnautica2Copper, label: 'Copper 位置' },
       { href: Routes.Subnautica2Scanner, label: 'Scanner 指南' },
       { href: Routes.Subnautica2Resources, label: '资源指南' },
@@ -341,6 +343,7 @@ const acidicRaionPouchCopy: Record<string, AcidicRaionPouchCopy> = {
     readNextTitle: '次に読む',
     related: [
       { href: Routes.Subnautica2BasicBattery, label: 'Basic Battery Guide' },
+      { href: Routes.Subnautica2MildAcid, label: 'Mild Acid Guide' },
       { href: Routes.Subnautica2Copper, label: 'Copper の場所' },
       { href: Routes.Subnautica2Scanner, label: 'Scanner ガイド' },
       { href: Routes.Subnautica2Resources, label: '資源ガイド' },
