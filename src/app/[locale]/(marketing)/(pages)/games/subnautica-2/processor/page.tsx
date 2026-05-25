@@ -136,6 +136,7 @@ const processorCopy: Record<string, ProcessorCopy> = {
     readNextTitle: 'Read next',
     related: [
       { href: Routes.Subnautica2MildAcid, label: 'Mild Acid Guide' },
+      { href: Routes.Subnautica2Biolab, label: 'Biolab Guide' },
       {
         href: Routes.Subnautica2AcidicRaionPouch,
         label: 'Acidic Raion Pouch Guide',
@@ -250,6 +251,7 @@ const processorCopy: Record<string, ProcessorCopy> = {
     readNextTitle: '继续阅读',
     related: [
       { href: Routes.Subnautica2MildAcid, label: 'Mild Acid 指南' },
+      { href: Routes.Subnautica2Biolab, label: 'Biolab 指南' },
       {
         href: Routes.Subnautica2AcidicRaionPouch,
         label: 'Acidic Raion Pouch 指南',
@@ -361,6 +363,7 @@ const processorCopy: Record<string, ProcessorCopy> = {
     readNextTitle: '次に読む',
     related: [
       { href: Routes.Subnautica2MildAcid, label: 'Mild Acid Guide' },
+      { href: Routes.Subnautica2Biolab, label: 'Biolab Guide' },
       {
         href: Routes.Subnautica2AcidicRaionPouch,
         label: 'Acidic Raion Pouch Guide',

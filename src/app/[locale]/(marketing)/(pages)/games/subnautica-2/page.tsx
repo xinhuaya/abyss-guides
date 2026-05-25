@@ -116,6 +116,12 @@ const copyByLocale: Record<'en' | 'zh', HubCopy> = {
           'Scan unlock, Old Habitat lead, Titanium, Mild Acid, Copper Wire, and processing chains.',
       },
       {
+        href: Routes.Subnautica2Biolab,
+        title: 'Biolab',
+        description:
+          'Welcome Center route, Titanium, Copper Wire, Mild Acid, and Biomod management.',
+      },
+      {
         href: Routes.Subnautica2CopperWire,
         title: 'Copper Wire',
         description:
@@ -414,6 +420,12 @@ const copyByLocale: Record<'en' | 'zh', HubCopy> = {
         title: 'Processor Guide',
         description:
           'Scan unlock, Old Habitat lead, Titanium, Mild Acid, Copper Wire, and processing chains.',
+      },
+      {
+        href: Routes.Subnautica2Biolab,
+        title: 'Biolab Guide',
+        description:
+          'Welcome Center route, Titanium, Copper Wire, Mild Acid, and Biomod management.',
       },
       {
         href: Routes.Subnautica2StrongAcid,
