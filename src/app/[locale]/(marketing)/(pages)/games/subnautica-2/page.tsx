@@ -128,6 +128,12 @@ const copyByLocale: Record<'en' | 'zh', HubCopy> = {
           'Mining tool fragments, large ore use, route blockers, and Feedback Resonator prep.',
       },
       {
+        href: Routes.Subnautica2ConduitCrystal,
+        title: 'Conduit Crystal',
+        description:
+          'Alien Ruins route, depth planning, Sonic Resonator mining, and upgrade material use.',
+      },
+      {
         href: Routes.Subnautica2FeedbackResonator,
         title: 'Feedback Resonator',
         description:
@@ -309,6 +315,12 @@ const copyByLocale: Record<'en' | 'zh', HubCopy> = {
         href: Routes.Subnautica2SonicResonator,
         title: 'Sonic Resonator 指南',
         description: '挖矿工具碎片、大矿节点、路线清障和后续远程升级前置。',
+      },
+      {
+        href: Routes.Subnautica2ConduitCrystal,
+        title: 'Conduit Crystal 指南',
+        description:
+          'Alien Ruins 深水路线、Sonic Resonator 采集和工具升级材料用途。',
       },
       {
         href: Routes.Subnautica2BaseBuilding,

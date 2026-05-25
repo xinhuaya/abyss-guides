@@ -18,6 +18,7 @@ export enum Routes {
   Subnautica2Scanner = '/games/subnautica-2/scanner',
   Subnautica2BioscannerBiomods = '/games/subnautica-2/bioscanner-biomods',
   Subnautica2SonicResonator = '/games/subnautica-2/sonic-resonator',
+  Subnautica2ConduitCrystal = '/games/subnautica-2/conduit-crystal',
   Subnautica2FeedbackResonator = '/games/subnautica-2/feedback-resonator',
   Subnautica2StrongAcid = '/games/subnautica-2/strong-acid',
   Subnautica2Tadpole = '/games/subnautica-2/tadpole',

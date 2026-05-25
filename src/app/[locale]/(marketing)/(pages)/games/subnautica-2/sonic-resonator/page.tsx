@@ -135,6 +135,10 @@ const sonicCopy: Record<string, SonicCopy> = {
     readNextTitle: 'Read next',
     related: [
       {
+        href: Routes.Subnautica2ConduitCrystal,
+        label: 'Conduit Crystal Guide',
+      },
+      {
         href: Routes.Subnautica2FeedbackResonator,
         label: 'Feedback Resonator Guide',
       },
@@ -243,6 +247,10 @@ const sonicCopy: Record<string, SonicCopy> = {
     readNextTitle: '继续看',
     related: [
       {
+        href: Routes.Subnautica2ConduitCrystal,
+        label: 'Conduit Crystal 指南',
+      },
+      {
         href: Routes.Subnautica2FeedbackResonator,
         label: 'Feedback Resonator 指南',
       },
@@ -344,6 +352,10 @@ const sonicCopy: Record<string, SonicCopy> = {
     ],
     readNextTitle: 'Read next',
     related: [
+      {
+        href: Routes.Subnautica2ConduitCrystal,
+        label: 'Conduit Crystal Guide',
+      },
       {
         href: Routes.Subnautica2FeedbackResonator,
         label: 'Feedback Resonator Guide',

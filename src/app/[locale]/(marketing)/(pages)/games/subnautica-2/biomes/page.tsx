@@ -144,6 +144,10 @@ const biomesCopy: Record<string, BiomesCopy> = {
         href: Routes.Subnautica2BestBaseLocations,
         label: 'Best Base Locations',
       },
+      {
+        href: Routes.Subnautica2ConduitCrystal,
+        label: 'Conduit Crystal Guide',
+      },
       { href: Routes.Subnautica2Resources, label: 'Resources Guide' },
       { href: Routes.Subnautica2AirTank, label: 'Air Tank and O2' },
       {
@@ -258,6 +262,7 @@ const biomesCopy: Record<string, BiomesCopy> = {
     related: [
       { href: Routes.Subnautica2Map, label: '地图和路线' },
       { href: Routes.Subnautica2BestBaseLocations, label: '最佳基地位置' },
+      { href: Routes.Subnautica2ConduitCrystal, label: 'Conduit Crystal 指南' },
       { href: Routes.Subnautica2Resources, label: '资源指南' },
       { href: Routes.Subnautica2AirTank, label: '气瓶和氧气' },
       {
@@ -368,6 +373,10 @@ const biomesCopy: Record<string, BiomesCopy> = {
       {
         href: Routes.Subnautica2BestBaseLocations,
         label: 'Best Base Locations',
+      },
+      {
+        href: Routes.Subnautica2ConduitCrystal,
+        label: 'Conduit Crystal Guide',
       },
       { href: Routes.Subnautica2Resources, label: 'Resources Guide' },
       { href: Routes.Subnautica2AirTank, label: 'Air Tank and O2' },
