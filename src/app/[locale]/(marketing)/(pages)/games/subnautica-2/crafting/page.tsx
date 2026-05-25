@@ -135,6 +135,7 @@ const craftingCopy: Record<string, CraftingCopy> = {
       { href: Routes.Subnautica2AirTank, label: 'Air Tank and O2' },
       { href: Routes.Subnautica2Copper, label: 'Copper Location' },
       { href: Routes.Subnautica2Silver, label: 'Silver Location' },
+      { href: Routes.Subnautica2SystemChip, label: 'System Chip Guide' },
       { href: Routes.Subnautica2EnameledGlass, label: 'Enameled Glass Guide' },
       {
         href: Routes.Subnautica2CreatureEnamel,

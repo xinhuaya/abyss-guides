@@ -152,6 +152,7 @@ const tadpoleDepthModuleCopy: Record<string, TadpoleDepthModuleCopy> = {
         label: 'Creature Enamel Guide',
       },
       { href: Routes.Subnautica2Celestine, label: 'Celestine Guide' },
+      { href: Routes.Subnautica2SystemChip, label: 'System Chip Guide' },
       {
         href: Routes.Subnautica2FeedbackResonator,
         label: 'Feedback Resonator Guide',
@@ -272,6 +273,7 @@ const tadpoleDepthModuleCopy: Record<string, TadpoleDepthModuleCopy> = {
         label: 'Creature Enamel 指南',
       },
       { href: Routes.Subnautica2Celestine, label: 'Celestine 指南' },
+      { href: Routes.Subnautica2SystemChip, label: 'System Chip 指南' },
       {
         href: Routes.Subnautica2FeedbackResonator,
         label: 'Feedback Resonator 指南',
@@ -395,6 +397,7 @@ const tadpoleDepthModuleCopy: Record<string, TadpoleDepthModuleCopy> = {
         label: 'Creature Enamel ガイド',
       },
       { href: Routes.Subnautica2Celestine, label: 'Celestine ガイド' },
+      { href: Routes.Subnautica2SystemChip, label: 'System Chip ガイド' },
       {
         href: Routes.Subnautica2FeedbackResonator,
         label: 'Feedback Resonator ガイド',

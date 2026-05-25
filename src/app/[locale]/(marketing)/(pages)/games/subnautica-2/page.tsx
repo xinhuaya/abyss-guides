@@ -122,6 +122,12 @@ const copyByLocale: Record<'en' | 'zh', HubCopy> = {
           'Bioscanner timing, lifeform scan habits, Biomod priorities, and first upgrade choices.',
       },
       {
+        href: Routes.Subnautica2SystemChip,
+        title: 'System Chip',
+        description:
+          'Wiring Kit, Quartz, Silver prep, and electronics use for Tadpole and depth upgrades.',
+      },
+      {
         href: Routes.Subnautica2SonicResonator,
         title: 'Sonic Resonator',
         description:
@@ -330,6 +336,12 @@ const copyByLocale: Record<'en' | 'zh', HubCopy> = {
         href: Routes.Subnautica2Scanner,
         title: '扫描器和生物扫描器',
         description: '蓝图扫描、升级路线、Biomod 解锁和探索优先级。',
+      },
+      {
+        href: Routes.Subnautica2SystemChip,
+        title: 'System Chip 指南',
+        description:
+          'Wiring Kit、Quartz、Silver 准备，以及 Tadpole 和深度升级用途。',
       },
       {
         href: Routes.Subnautica2StrongAcid,
