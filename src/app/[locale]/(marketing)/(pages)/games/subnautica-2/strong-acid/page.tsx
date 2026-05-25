@@ -46,6 +46,8 @@ export default function StrongAcidGuidePage() {
       pathname={Routes.Subnautica2StrongAcid}
       quickAnswer="To get Strong Acid, gather Necrolei Cysts around the Old Habitat route and craft them at the Processor. PC Gamer notes that Strong Acid is key for Power Cells, which are needed for the Tadpole."
       related={[
+        { href: Routes.Subnautica2Processor, label: 'Processor Guide' },
+        { href: Routes.Subnautica2MildAcid, label: 'Mild Acid Guide' },
         { href: Routes.Subnautica2Tadpole, label: 'Tadpole Vehicle' },
         { href: Routes.Subnautica2TitaniumIngot, label: 'Titanium Ingot' },
         { href: Routes.Subnautica2Crafting, label: 'Crafting Guide' },

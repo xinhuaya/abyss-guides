@@ -15,6 +15,7 @@ export enum Routes {
   Subnautica2BasicBattery = '/games/subnautica-2/basic-battery',
   Subnautica2AcidicRaionPouch = '/games/subnautica-2/acidic-raion-pouch',
   Subnautica2MildAcid = '/games/subnautica-2/mild-acid',
+  Subnautica2Processor = '/games/subnautica-2/processor',
   Subnautica2CopperWire = '/games/subnautica-2/copper-wire',
   Subnautica2HabitatBuilder = '/games/subnautica-2/habitat-builder',
   Subnautica2TitaniumIngot = '/games/subnautica-2/titanium-ingot',

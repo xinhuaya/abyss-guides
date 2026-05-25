@@ -110,6 +110,12 @@ const copyByLocale: Record<'en' | 'zh', HubCopy> = {
           'Acidic Raion Pouch, Copper, Fabricator recipe, Processor route, and upgrade uses.',
       },
       {
+        href: Routes.Subnautica2Processor,
+        title: 'Processor',
+        description:
+          'Scan unlock, Old Habitat lead, Titanium, Mild Acid, Copper Wire, and processing chains.',
+      },
+      {
         href: Routes.Subnautica2CopperWire,
         title: 'Copper Wire',
         description:
@@ -402,6 +408,12 @@ const copyByLocale: Record<'en' | 'zh', HubCopy> = {
         title: 'Mild Acid Guide',
         description:
           'Acidic Raion Pouch, Copper, Fabricator recipe, Processor route, and upgrade uses.',
+      },
+      {
+        href: Routes.Subnautica2Processor,
+        title: 'Processor Guide',
+        description:
+          'Scan unlock, Old Habitat lead, Titanium, Mild Acid, Copper Wire, and processing chains.',
       },
       {
         href: Routes.Subnautica2StrongAcid,

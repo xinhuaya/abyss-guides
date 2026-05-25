@@ -140,6 +140,7 @@ const craftingCopy: Record<string, CraftingCopy> = {
         label: 'Acidic Raion Pouch Guide',
       },
       { href: Routes.Subnautica2MildAcid, label: 'Mild Acid Guide' },
+      { href: Routes.Subnautica2Processor, label: 'Processor Guide' },
       { href: Routes.Subnautica2CopperWire, label: 'Copper Wire Guide' },
       {
         href: Routes.Subnautica2HabitatBuilder,
@@ -261,6 +262,7 @@ const craftingCopy: Record<string, CraftingCopy> = {
         label: 'Acidic Raion Pouch Guide',
       },
       { href: Routes.Subnautica2MildAcid, label: 'Mild Acid Guide' },
+      { href: Routes.Subnautica2Processor, label: 'Processor Guide' },
       { href: Routes.Subnautica2Silver, label: 'Silver 位置' },
     ],
     sourcesTitle: '来源说明',
