@@ -150,6 +150,10 @@ const biomesCopy: Record<string, BiomesCopy> = {
       },
       { href: Routes.Subnautica2Strontium, label: 'Strontium Guide' },
       { href: Routes.Subnautica2Celestine, label: 'Celestine Guide' },
+      {
+        href: Routes.Subnautica2CreatureEnamel,
+        label: 'Creature Enamel Guide',
+      },
       { href: Routes.Subnautica2Resources, label: 'Resources Guide' },
       { href: Routes.Subnautica2AirTank, label: 'Air Tank and O2' },
       {

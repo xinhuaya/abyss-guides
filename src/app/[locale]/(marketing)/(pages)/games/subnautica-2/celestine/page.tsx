@@ -140,6 +140,10 @@ const celestineCopy: Record<string, CelestineCopy> = {
     related: [
       { href: Routes.Subnautica2Strontium, label: 'Strontium Guide' },
       {
+        href: Routes.Subnautica2CreatureEnamel,
+        label: 'Creature Enamel Guide',
+      },
+      {
         href: Routes.Subnautica2SonicResonator,
         label: 'Sonic Resonator Guide',
       },

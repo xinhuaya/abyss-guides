@@ -145,6 +145,10 @@ const conduitCopy: Record<string, ConduitCopy> = {
       { href: Routes.Subnautica2Strontium, label: 'Strontium Guide' },
       { href: Routes.Subnautica2Celestine, label: 'Celestine Guide' },
       {
+        href: Routes.Subnautica2CreatureEnamel,
+        label: 'Creature Enamel Guide',
+      },
+      {
         href: Routes.Subnautica2BioscannerBiomods,
         label: 'Bioscanner and Biomods',
       },

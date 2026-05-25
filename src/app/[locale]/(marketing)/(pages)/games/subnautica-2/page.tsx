@@ -146,6 +146,12 @@ const copyByLocale: Record<'en' | 'zh', HubCopy> = {
           'Alien Ruins mining route, blue mineral veins, Needler risk, and Strontium processing.',
       },
       {
+        href: Routes.Subnautica2CreatureEnamel,
+        title: 'Creature Enamel',
+        description:
+          'Needler Mango route, Alien Ruins safety, Tadpole prep, and Enameled Glass planning.',
+      },
+      {
         href: Routes.Subnautica2Strontium,
         title: 'Strontium',
         description:

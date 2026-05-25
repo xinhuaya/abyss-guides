@@ -137,6 +137,10 @@ const strontiumCopy: Record<string, StrontiumCopy> = {
     related: [
       { href: Routes.Subnautica2Celestine, label: 'Celestine Guide' },
       {
+        href: Routes.Subnautica2CreatureEnamel,
+        label: 'Creature Enamel Guide',
+      },
+      {
         href: Routes.Subnautica2SonicResonator,
         label: 'Sonic Resonator Guide',
       },

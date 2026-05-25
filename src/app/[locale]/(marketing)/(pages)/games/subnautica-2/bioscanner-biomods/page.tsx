@@ -145,6 +145,10 @@ const bioscannerCopy: Record<string, BioscannerCopy> = {
       },
       { href: Routes.Subnautica2OxygenDepth, label: 'Oxygen and Depth' },
       { href: Routes.Subnautica2Biomes, label: 'Biomes Guide' },
+      {
+        href: Routes.Subnautica2CreatureEnamel,
+        label: 'Creature Enamel Guide',
+      },
       { href: Routes.Subnautica2Resources, label: 'Resources Guide' },
       { href: Routes.Subnautica2Beginner, label: 'Beginner Route' },
     ],
