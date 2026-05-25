@@ -35,6 +35,7 @@ const staticRoutes = [
   Routes.Subnautica2AirTank,
   Routes.Subnautica2OxygenDepth,
   Routes.Subnautica2Wakemaker,
+  Routes.Subnautica2Rebreather,
   Routes.Subnautica2Scanner,
   Routes.Subnautica2SystemChip,
   Routes.Subnautica2WiringKit,

@@ -131,6 +131,7 @@ const fiberMeshCopy: Record<string, FiberMeshCopy> = {
     readNextTitle: 'Read next',
     related: [
       { href: Routes.Subnautica2Wakemaker, label: 'Wakemaker Guide' },
+      { href: Routes.Subnautica2Rebreather, label: 'Rebreather Guide' },
       { href: Routes.Subnautica2BasicBattery, label: 'Basic Battery Guide' },
       { href: Routes.Subnautica2AirTank, label: 'Air Tank and O2' },
       { href: Routes.Subnautica2OxygenDepth, label: 'Oxygen and Depth Guide' },
@@ -239,6 +240,7 @@ const fiberMeshCopy: Record<string, FiberMeshCopy> = {
     readNextTitle: '继续阅读',
     related: [
       { href: Routes.Subnautica2Wakemaker, label: 'Wakemaker 指南' },
+      { href: Routes.Subnautica2Rebreather, label: 'Rebreather 指南' },
       { href: Routes.Subnautica2BasicBattery, label: 'Basic Battery 指南' },
       { href: Routes.Subnautica2AirTank, label: '气瓶和氧气' },
       { href: Routes.Subnautica2OxygenDepth, label: '氧气与深度指南' },
