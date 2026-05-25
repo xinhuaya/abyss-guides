@@ -206,6 +206,12 @@ const copyByLocale: Record<'en' | 'zh', HubCopy> = {
           'Early Lifepod route, hand pickups, Sonic Resonator bulk mining, Repair Tool use, and heat-route warning.',
       },
       {
+        href: Routes.Subnautica2Quartz,
+        title: 'Quartz',
+        description:
+          'Coral dome pickups, northwest Lifepod sweep, Glass, Scanner, System Chip, and Sonic Resonator bulk mining.',
+      },
+      {
         href: Routes.Subnautica2FiberMesh,
         title: 'Fiber Mesh',
         description:
@@ -487,6 +493,12 @@ const copyByLocale: Record<'en' | 'zh', HubCopy> = {
         title: 'Sulfur 位置',
         description:
           'Lifepod 早期路线、手捡小块、Sonic Resonator 批量采集、Repair Tool 用途和热源提醒。',
+      },
+      {
+        href: Routes.Subnautica2Quartz,
+        title: 'Quartz 位置',
+        description:
+          '珊瑚穹顶手捡、Lifepod 西北路线、Glass、Scanner、System Chip 和 Sonic Resonator 批量采集。',
       },
       {
         href: Routes.Subnautica2FiberMesh,
