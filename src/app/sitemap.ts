@@ -27,6 +27,7 @@ const staticRoutes = [
   Routes.Subnautica2Processor,
   Routes.Subnautica2Biolab,
   Routes.Subnautica2EchoLocation,
+  Routes.Subnautica2ModificationStation,
   Routes.Subnautica2CopperWire,
   Routes.Subnautica2HabitatBuilder,
   Routes.Subnautica2TitaniumIngot,

@@ -123,6 +123,10 @@ const echoLocationCopy: Record<string, EchoLocationCopy> = {
     ],
     readNextTitle: 'Read next',
     related: [
+      {
+        href: Routes.Subnautica2ModificationStation,
+        label: 'Modification Station Guide',
+      },
       { href: Routes.Subnautica2MildAcid, label: 'Mild Acid Guide' },
       { href: Routes.Subnautica2Atacamite, label: 'Atacamite Guide' },
       { href: Routes.Subnautica2Tadpole, label: 'Tadpole Vehicle Guide' },
@@ -223,6 +227,10 @@ const echoLocationCopy: Record<string, EchoLocationCopy> = {
     ],
     readNextTitle: '继续阅读',
     related: [
+      {
+        href: Routes.Subnautica2ModificationStation,
+        label: 'Modification Station 指南',
+      },
       { href: Routes.Subnautica2MildAcid, label: 'Mild Acid 指南' },
       { href: Routes.Subnautica2Atacamite, label: 'Atacamite 指南' },
       { href: Routes.Subnautica2Tadpole, label: 'Tadpole 载具指南' },
@@ -327,6 +335,10 @@ const echoLocationCopy: Record<string, EchoLocationCopy> = {
     ],
     readNextTitle: '次に読む',
     related: [
+      {
+        href: Routes.Subnautica2ModificationStation,
+        label: 'Modification Station Guide',
+      },
       { href: Routes.Subnautica2MildAcid, label: 'Mild Acid Guide' },
       { href: Routes.Subnautica2Atacamite, label: 'Atacamite Guide' },
       { href: Routes.Subnautica2Tadpole, label: 'Tadpole Guide' },

@@ -128,6 +128,12 @@ const copyByLocale: Record<'en' | 'zh', HubCopy> = {
           'Modification Station recipe, Quartz, Mild Acid, Atacamite, and Tadpole resource ping use.',
       },
       {
+        href: Routes.Subnautica2ModificationStation,
+        title: 'Modification Station',
+        description:
+          'Scan/Data Box unlock, Alien Ruins route, Titanium, Celestine, Copper, and upgrade crafting.',
+      },
+      {
         href: Routes.Subnautica2CopperWire,
         title: 'Copper Wire',
         description:
@@ -438,6 +444,12 @@ const copyByLocale: Record<'en' | 'zh', HubCopy> = {
         title: 'Echo Location Guide',
         description:
           'Modification Station recipe, Quartz, Mild Acid, Atacamite, and Tadpole resource ping use.',
+      },
+      {
+        href: Routes.Subnautica2ModificationStation,
+        title: 'Modification Station Guide',
+        description:
+          'Scan/Data Box unlock, Alien Ruins route, Titanium, Celestine, Copper, and upgrade crafting.',
       },
       {
         href: Routes.Subnautica2StrongAcid,
