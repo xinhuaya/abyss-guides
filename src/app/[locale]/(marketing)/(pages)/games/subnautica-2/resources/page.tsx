@@ -147,6 +147,10 @@ const resourcesCopy: Record<string, ResourcesCopy> = {
         href: Routes.Subnautica2ConduitCrystal,
         label: 'Conduit Crystal Guide',
       },
+      {
+        href: Routes.Subnautica2Strontium,
+        label: 'Strontium Guide',
+      },
     ],
     sourcesTitle: 'Source note',
     sourceBody:

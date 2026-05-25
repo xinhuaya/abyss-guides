@@ -146,6 +146,7 @@ const feedbackCopy: Record<string, FeedbackCopy> = {
         href: Routes.Subnautica2ConduitCrystal,
         label: 'Conduit Crystal Guide',
       },
+      { href: Routes.Subnautica2Strontium, label: 'Strontium Guide' },
       { href: Routes.Subnautica2Tadpole, label: 'Tadpole Vehicle Guide' },
       { href: Routes.Subnautica2MetalFarm, label: 'Metal Farm Guide' },
       {
@@ -272,6 +273,7 @@ const feedbackCopy: Record<string, FeedbackCopy> = {
         href: Routes.Subnautica2ConduitCrystal,
         label: 'Conduit Crystal 指南',
       },
+      { href: Routes.Subnautica2Strontium, label: 'Strontium 指南' },
       { href: Routes.Subnautica2Tadpole, label: 'Tadpole 载具指南' },
       { href: Routes.Subnautica2MetalFarm, label: 'Metal Farm 指南' },
       {
@@ -396,6 +398,7 @@ const feedbackCopy: Record<string, FeedbackCopy> = {
         href: Routes.Subnautica2ConduitCrystal,
         label: 'Conduit Crystal Guide',
       },
+      { href: Routes.Subnautica2Strontium, label: 'Strontium Guide' },
       { href: Routes.Subnautica2Tadpole, label: 'Tadpole Guide' },
       { href: Routes.Subnautica2MetalFarm, label: 'Metal Farm Guide' },
       {

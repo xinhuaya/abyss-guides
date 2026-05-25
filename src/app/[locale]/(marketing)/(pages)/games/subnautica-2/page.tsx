@@ -140,6 +140,12 @@ const copyByLocale: Record<'en' | 'zh', HubCopy> = {
           'Sonic Resonator prep, Alien Ruins scan route, craft materials, and safe ranged clearing.',
       },
       {
+        href: Routes.Subnautica2Strontium,
+        title: 'Strontium',
+        description:
+          'Celestine route, Processor conversion, and upgrade planning for advanced tools.',
+      },
+      {
         href: Routes.Subnautica2StrongAcid,
         title: 'Strong Acid',
         description:
