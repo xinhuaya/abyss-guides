@@ -51,6 +51,7 @@ export default function TadpoleGuidePage() {
           label: 'Tadpole Depth Module Guide',
         },
         { href: Routes.Subnautica2SystemChip, label: 'System Chip Guide' },
+        { href: Routes.Subnautica2Salt, label: 'Salt Location Guide' },
         {
           href: Routes.Subnautica2EnameledGlass,
           label: 'Enameled Glass Guide',

@@ -230,6 +230,12 @@ const copyByLocale: Record<'en' | 'zh', HubCopy> = {
           'Volcanic vent route, Heat Tolerance gate, crashed colony ship farming, Advanced Wiring Kit, and Thermal Plant prep.',
       },
       {
+        href: Routes.Subnautica2Salt,
+        title: 'Salt',
+        description:
+          'Chap Black Box cave route, respawning early pickups, Power Cell priority, jerky caution, and Coral Gardens farming.',
+      },
+      {
         href: Routes.Subnautica2FiberMesh,
         title: 'Fiber Mesh',
         description:
@@ -535,6 +541,12 @@ const copyByLocale: Record<'en' | 'zh', HubCopy> = {
         title: 'Gold 位置',
         description:
           '火山热泉路线、Heat Tolerance 门槛、坠毁殖民船采集、Advanced Wiring Kit 和 Thermal Plant 准备。',
+      },
+      {
+        href: Routes.Subnautica2Salt,
+        title: 'Salt 位置',
+        description:
+          'Chap Black Box 洞穴路线、前期刷新拾取、Power Cell 优先级、jerky 提醒和 Coral Gardens 采集。',
       },
       {
         href: Routes.Subnautica2FiberMesh,

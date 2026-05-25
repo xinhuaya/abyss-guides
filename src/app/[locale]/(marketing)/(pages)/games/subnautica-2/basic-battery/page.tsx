@@ -137,6 +137,7 @@ const basicBatteryCopy: Record<string, BasicBatteryCopy> = {
       { href: Routes.Subnautica2Wakemaker, label: 'Wakemaker Guide' },
       { href: Routes.Subnautica2Scanner, label: 'Scanner Guide' },
       { href: Routes.Subnautica2RepairTool, label: 'Repair Tool Guide' },
+      { href: Routes.Subnautica2Salt, label: 'Salt Location Guide' },
       {
         href: Routes.Subnautica2HabitatBuilder,
         label: 'Habitat Builder Guide',
