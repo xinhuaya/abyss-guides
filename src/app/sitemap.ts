@@ -29,6 +29,7 @@ const staticRoutes = [
   Routes.Subnautica2SonicResonator,
   Routes.Subnautica2ConduitCrystal,
   Routes.Subnautica2FeedbackResonator,
+  Routes.Subnautica2Celestine,
   Routes.Subnautica2Strontium,
   Routes.Subnautica2StrongAcid,
   Routes.Subnautica2Tadpole,

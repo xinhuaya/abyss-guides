@@ -143,6 +143,7 @@ const conduitCopy: Record<string, ConduitCopy> = {
         label: 'Feedback Resonator Guide',
       },
       { href: Routes.Subnautica2Strontium, label: 'Strontium Guide' },
+      { href: Routes.Subnautica2Celestine, label: 'Celestine Guide' },
       {
         href: Routes.Subnautica2BioscannerBiomods,
         label: 'Bioscanner and Biomods',
@@ -260,6 +261,7 @@ const conduitCopy: Record<string, ConduitCopy> = {
         label: 'Feedback Resonator 指南',
       },
       { href: Routes.Subnautica2Strontium, label: 'Strontium 指南' },
+      { href: Routes.Subnautica2Celestine, label: 'Celestine 指南' },
       {
         href: Routes.Subnautica2BioscannerBiomods,
         label: 'Bioscanner 和 Biomods',
@@ -373,6 +375,7 @@ const conduitCopy: Record<string, ConduitCopy> = {
         label: 'Feedback Resonator Guide',
       },
       { href: Routes.Subnautica2Strontium, label: 'Strontium Guide' },
+      { href: Routes.Subnautica2Celestine, label: 'Celestine Guide' },
       {
         href: Routes.Subnautica2BioscannerBiomods,
         label: 'Bioscanner and Biomods',

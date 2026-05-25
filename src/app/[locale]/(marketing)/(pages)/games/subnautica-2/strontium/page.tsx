@@ -135,6 +135,7 @@ const strontiumCopy: Record<string, StrontiumCopy> = {
     ],
     readNextTitle: 'Read next',
     related: [
+      { href: Routes.Subnautica2Celestine, label: 'Celestine Guide' },
       {
         href: Routes.Subnautica2SonicResonator,
         label: 'Sonic Resonator Guide',
@@ -260,6 +261,7 @@ const strontiumCopy: Record<string, StrontiumCopy> = {
     ],
     readNextTitle: '继续看',
     related: [
+      { href: Routes.Subnautica2Celestine, label: 'Celestine 指南' },
       { href: Routes.Subnautica2SonicResonator, label: 'Sonic Resonator 指南' },
       {
         href: Routes.Subnautica2FeedbackResonator,
@@ -365,6 +367,7 @@ const strontiumCopy: Record<string, StrontiumCopy> = {
     ],
     readNextTitle: 'Read next',
     related: [
+      { href: Routes.Subnautica2Celestine, label: 'Celestine Guide' },
       {
         href: Routes.Subnautica2SonicResonator,
         label: 'Sonic Resonator Guide',
