@@ -145,6 +145,10 @@ const resourcesCopy: Record<string, ResourcesCopy> = {
         href: Routes.Subnautica2ModificationStation,
         label: 'Modification Station Guide',
       },
+      {
+        href: Routes.Subnautica2EngineEfficiency,
+        label: 'Engine Efficiency Guide',
+      },
       { href: Routes.Subnautica2CopperWire, label: 'Copper Wire Guide' },
       {
         href: Routes.Subnautica2HabitatBuilder,
@@ -299,6 +303,10 @@ const resourcesCopy: Record<string, ResourcesCopy> = {
       {
         href: Routes.Subnautica2ModificationStation,
         label: 'Modification Station Guide',
+      },
+      {
+        href: Routes.Subnautica2EngineEfficiency,
+        label: 'Engine Efficiency Guide',
       },
       { href: Routes.Subnautica2Silver, label: 'Silver 位置' },
       { href: Routes.Subnautica2AirTank, label: '气瓶和氧气' },

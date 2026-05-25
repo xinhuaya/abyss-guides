@@ -130,6 +130,10 @@ const modificationStationCopy: Record<string, ModificationStationCopy> = {
     ],
     readNextTitle: 'Read next',
     related: [
+      {
+        href: Routes.Subnautica2EngineEfficiency,
+        label: 'Engine Efficiency Guide',
+      },
       { href: Routes.Subnautica2EchoLocation, label: 'Echo Location Guide' },
       {
         href: Routes.Subnautica2TadpoleDepthModule,
@@ -247,6 +251,10 @@ const modificationStationCopy: Record<string, ModificationStationCopy> = {
     ],
     readNextTitle: '继续阅读',
     related: [
+      {
+        href: Routes.Subnautica2EngineEfficiency,
+        label: 'Engine Efficiency 指南',
+      },
       { href: Routes.Subnautica2EchoLocation, label: 'Echo Location 指南' },
       { href: Routes.Subnautica2TadpoleDepthModule, label: 'Tadpole 深度模块' },
       {

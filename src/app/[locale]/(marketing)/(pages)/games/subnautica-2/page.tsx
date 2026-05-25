@@ -134,6 +134,12 @@ const copyByLocale: Record<'en' | 'zh', HubCopy> = {
           'Scan/Data Box unlock, Alien Ruins route, Titanium, Celestine, Copper, and upgrade crafting.',
       },
       {
+        href: Routes.Subnautica2EngineEfficiency,
+        title: 'Engine Efficiency',
+        description:
+          'Tadpole power-saving module, 20% stack text, Modification Station recipe, and Alien Ruins pickup note.',
+      },
+      {
         href: Routes.Subnautica2CopperWire,
         title: 'Copper Wire',
         description:
@@ -450,6 +456,12 @@ const copyByLocale: Record<'en' | 'zh', HubCopy> = {
         title: 'Modification Station Guide',
         description:
           'Scan/Data Box unlock, Alien Ruins route, Titanium, Celestine, Copper, and upgrade crafting.',
+      },
+      {
+        href: Routes.Subnautica2EngineEfficiency,
+        title: 'Engine Efficiency Guide',
+        description:
+          'Tadpole power-saving module, 20% stack text, Modification Station recipe, and Alien Ruins pickup note.',
       },
       {
         href: Routes.Subnautica2StrongAcid,

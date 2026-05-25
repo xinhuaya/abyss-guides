@@ -34,6 +34,10 @@ export default function TitaniumIngotGuidePage() {
       pathname={Routes.Subnautica2TitaniumIngot}
       quickAnswer="Make Titanium Ingots by processing Titanium once the Processor is available. PC Gamer ties Titanium Ingots into later crafting chains, including Mangalloy Ingot production, so stockpile raw Titanium before converting it."
       related={[
+        {
+          href: Routes.Subnautica2EngineEfficiency,
+          label: 'Engine Efficiency Guide',
+        },
         { href: Routes.Subnautica2Mangalloy, label: 'Mangalloy Ingot Guide' },
         { href: Routes.Subnautica2Resources, label: 'Resources Guide' },
         { href: Routes.Subnautica2Crafting, label: 'Crafting Guide' },

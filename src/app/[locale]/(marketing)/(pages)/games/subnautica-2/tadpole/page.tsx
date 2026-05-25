@@ -34,6 +34,10 @@ export default function TadpoleGuidePage() {
       pathname={Routes.Subnautica2Tadpole}
       quickAnswer="Unlock the Tadpole by scanning Tadpole fragments, then craft it through the vehicle-building chain. GameSpot reports that the blueprint requires at least three Tadpole Fragment scans, while PC Gamer emphasizes Power Cell prep and vehicle support."
       related={[
+        {
+          href: Routes.Subnautica2EngineEfficiency,
+          label: 'Engine Efficiency Guide',
+        },
         { href: Routes.Subnautica2EchoLocation, label: 'Echo Location Guide' },
         {
           href: Routes.Subnautica2ModificationStation,

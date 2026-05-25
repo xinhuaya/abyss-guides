@@ -143,6 +143,10 @@ const systemChipCopy: Record<string, SystemChipCopy> = {
       { href: Routes.Subnautica2Silver, label: 'Silver Location' },
       { href: Routes.Subnautica2Copper, label: 'Copper Location' },
       { href: Routes.Subnautica2Crafting, label: 'Crafting Guide' },
+      {
+        href: Routes.Subnautica2EngineEfficiency,
+        label: 'Engine Efficiency Guide',
+      },
       { href: Routes.Subnautica2Tadpole, label: 'Tadpole Vehicle Guide' },
       {
         href: Routes.Subnautica2TadpoleDepthModule,
@@ -261,6 +265,10 @@ const systemChipCopy: Record<string, SystemChipCopy> = {
       { href: Routes.Subnautica2Silver, label: 'Silver 位置' },
       { href: Routes.Subnautica2Copper, label: 'Copper 位置' },
       { href: Routes.Subnautica2Crafting, label: '制作指南' },
+      {
+        href: Routes.Subnautica2EngineEfficiency,
+        label: 'Engine Efficiency 指南',
+      },
       { href: Routes.Subnautica2Tadpole, label: 'Tadpole 载具指南' },
       {
         href: Routes.Subnautica2TadpoleDepthModule,
@@ -379,6 +387,10 @@ const systemChipCopy: Record<string, SystemChipCopy> = {
       { href: Routes.Subnautica2Silver, label: 'Silver の場所' },
       { href: Routes.Subnautica2Copper, label: 'Copper の場所' },
       { href: Routes.Subnautica2Crafting, label: 'クラフトガイド' },
+      {
+        href: Routes.Subnautica2EngineEfficiency,
+        label: 'Engine Efficiency Guide',
+      },
       { href: Routes.Subnautica2Tadpole, label: 'Tadpole ガイド' },
       {
         href: Routes.Subnautica2TadpoleDepthModule,
