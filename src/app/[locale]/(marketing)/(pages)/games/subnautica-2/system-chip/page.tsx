@@ -140,6 +140,10 @@ const systemChipCopy: Record<string, SystemChipCopy> = {
     readNextTitle: 'Read next',
     related: [
       { href: Routes.Subnautica2Rebreather, label: 'Rebreather Guide' },
+      {
+        href: Routes.Subnautica2ScannerStation,
+        label: 'Scanner Station Guide',
+      },
       { href: Routes.Subnautica2WiringKit, label: 'Wiring Kit Guide' },
       { href: Routes.Subnautica2Silver, label: 'Silver Location' },
       { href: Routes.Subnautica2Copper, label: 'Copper Location' },
@@ -263,6 +267,7 @@ const systemChipCopy: Record<string, SystemChipCopy> = {
     readNextTitle: '继续阅读',
     related: [
       { href: Routes.Subnautica2Rebreather, label: 'Rebreather 指南' },
+      { href: Routes.Subnautica2ScannerStation, label: 'Scanner Station 指南' },
       { href: Routes.Subnautica2WiringKit, label: 'Wiring Kit 指南' },
       { href: Routes.Subnautica2Silver, label: 'Silver 位置' },
       { href: Routes.Subnautica2Copper, label: 'Copper 位置' },
@@ -386,6 +391,10 @@ const systemChipCopy: Record<string, SystemChipCopy> = {
     readNextTitle: '次に読む',
     related: [
       { href: Routes.Subnautica2Rebreather, label: 'Rebreather Guide' },
+      {
+        href: Routes.Subnautica2ScannerStation,
+        label: 'Scanner Station Guide',
+      },
       { href: Routes.Subnautica2WiringKit, label: 'Wiring Kit ガイド' },
       { href: Routes.Subnautica2Silver, label: 'Silver の場所' },
       { href: Routes.Subnautica2Copper, label: 'Copper の場所' },

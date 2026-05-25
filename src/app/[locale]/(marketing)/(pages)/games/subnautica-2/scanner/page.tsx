@@ -140,6 +140,10 @@ const scannerCopy: Record<string, ScannerCopy> = {
         href: Routes.Subnautica2HabitatBuilder,
         label: 'Habitat Builder Guide',
       },
+      {
+        href: Routes.Subnautica2ScannerStation,
+        label: 'Scanner Station Guide',
+      },
       { href: Routes.Subnautica2Wakemaker, label: 'Wakemaker Guide' },
       { href: Routes.Subnautica2AirTank, label: 'Air Tank and O2' },
       { href: Routes.Subnautica2Resources, label: 'Resources Guide' },
@@ -241,6 +245,7 @@ const scannerCopy: Record<string, ScannerCopy> = {
         href: Routes.Subnautica2SonicResonator,
         label: 'Sonic Resonator 指南',
       },
+      { href: Routes.Subnautica2ScannerStation, label: 'Scanner Station 指南' },
       { href: Routes.Subnautica2Copper, label: '铜位置' },
       { href: Routes.Subnautica2Wakemaker, label: 'Wakemaker 指南' },
       { href: Routes.Subnautica2AirTank, label: '气瓶和氧气' },
@@ -954,6 +959,10 @@ const scannerCopy: Record<string, ScannerCopy> = {
       {
         href: Routes.Subnautica2SonicResonator,
         label: 'Sonic Resonator Guide',
+      },
+      {
+        href: Routes.Subnautica2ScannerStation,
+        label: 'Scanner Station Guide',
       },
       { href: Routes.Subnautica2Copper, label: 'Copper の場所' },
       { href: Routes.Subnautica2Wakemaker, label: 'Wakemaker Guide' },

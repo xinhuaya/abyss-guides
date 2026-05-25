@@ -182,6 +182,12 @@ const copyByLocale: Record<'en' | 'zh', HubCopy> = {
           'Blueprint Analyzer unlock, System Chip, Fiber Mesh, and deep-route oxygen planning.',
       },
       {
+        href: Routes.Subnautica2ScannerStation,
+        title: 'Scanner Station',
+        description:
+          'Base utility planning, System Chip, Copper Wire, Titanium, power margin, and resource search use.',
+      },
+      {
         href: Routes.Subnautica2FiberMesh,
         title: 'Fiber Mesh',
         description:
@@ -439,6 +445,12 @@ const copyByLocale: Record<'en' | 'zh', HubCopy> = {
         title: 'Rebreather 指南',
         description:
           'Blueprint Analyzer 解锁、System Chip、Fiber Mesh 和深水氧气路线规划。',
+      },
+      {
+        href: Routes.Subnautica2ScannerStation,
+        title: 'Scanner Station 指南',
+        description:
+          '基地工具规划、System Chip、Copper Wire、Titanium、供电余量和资源搜索用途。',
       },
       {
         href: Routes.Subnautica2FiberMesh,
