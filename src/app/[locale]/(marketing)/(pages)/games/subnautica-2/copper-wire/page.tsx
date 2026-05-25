@@ -137,6 +137,7 @@ const copperWireCopy: Record<string, CopperWireCopy> = {
     related: [
       { href: Routes.Subnautica2Copper, label: 'Copper Location' },
       { href: Routes.Subnautica2BasicBattery, label: 'Basic Battery Guide' },
+      { href: Routes.Subnautica2Wakemaker, label: 'Wakemaker Guide' },
       { href: Routes.Subnautica2WiringKit, label: 'Wiring Kit Guide' },
       { href: Routes.Subnautica2Silver, label: 'Silver Location' },
       { href: Routes.Subnautica2SystemChip, label: 'System Chip Guide' },
@@ -254,6 +255,7 @@ const copperWireCopy: Record<string, CopperWireCopy> = {
     related: [
       { href: Routes.Subnautica2Copper, label: 'Copper 位置' },
       { href: Routes.Subnautica2BasicBattery, label: 'Basic Battery 指南' },
+      { href: Routes.Subnautica2Wakemaker, label: 'Wakemaker 指南' },
       { href: Routes.Subnautica2WiringKit, label: 'Wiring Kit 指南' },
       { href: Routes.Subnautica2Silver, label: 'Silver 位置' },
       { href: Routes.Subnautica2SystemChip, label: 'System Chip 指南' },
@@ -368,6 +370,7 @@ const copperWireCopy: Record<string, CopperWireCopy> = {
     related: [
       { href: Routes.Subnautica2Copper, label: 'Copper の場所' },
       { href: Routes.Subnautica2BasicBattery, label: 'Basic Battery Guide' },
+      { href: Routes.Subnautica2Wakemaker, label: 'Wakemaker Guide' },
       { href: Routes.Subnautica2WiringKit, label: 'Wiring Kit ガイド' },
       { href: Routes.Subnautica2Silver, label: 'Silver の場所' },
       { href: Routes.Subnautica2SystemChip, label: 'System Chip ガイド' },

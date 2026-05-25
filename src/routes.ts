@@ -25,6 +25,7 @@ export enum Routes {
   Subnautica2TitaniumIngot = '/games/subnautica-2/titanium-ingot',
   Subnautica2AirTank = '/games/subnautica-2/air-tank',
   Subnautica2OxygenDepth = '/games/subnautica-2/oxygen-depth',
+  Subnautica2Wakemaker = '/games/subnautica-2/wakemaker',
   Subnautica2Scanner = '/games/subnautica-2/scanner',
   Subnautica2SystemChip = '/games/subnautica-2/system-chip',
   Subnautica2WiringKit = '/games/subnautica-2/wiring-kit',

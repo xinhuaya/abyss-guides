@@ -170,6 +170,12 @@ const copyByLocale: Record<'en' | 'zh', HubCopy> = {
           'Dive-readiness checks, turn-back rules, cave pressure, and deeper route planning.',
       },
       {
+        href: Routes.Subnautica2Wakemaker,
+        title: 'Wakemaker',
+        description:
+          'Fragment scan route, Life Pod 1 shallows, Lily Pads backup, recipe, and early swim timing.',
+      },
+      {
         href: Routes.Subnautica2Scanner,
         title: 'Scanner and Bioscanner',
         description:
@@ -409,6 +415,12 @@ const copyByLocale: Record<'en' | 'zh', HubCopy> = {
         href: Routes.Subnautica2AirTank,
         title: '气瓶和氧气',
         description: '氧气升级、Air Bladder、气泡源和安全潜水节奏。',
+      },
+      {
+        href: Routes.Subnautica2Wakemaker,
+        title: 'Wakemaker 指南',
+        description:
+          '碎片扫描路线、Life Pod 1 浅滩、Lily Pads 备用路线、配方和前期游泳节奏。',
       },
       {
         href: Routes.Subnautica2Scanner,

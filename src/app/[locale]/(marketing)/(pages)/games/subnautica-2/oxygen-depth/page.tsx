@@ -139,6 +139,7 @@ const oxygenDepthCopy: Record<string, OxygenDepthCopy> = {
     readNextTitle: 'Read next',
     related: [
       { href: Routes.Subnautica2AirTank, label: 'Air Tank and O2' },
+      { href: Routes.Subnautica2Wakemaker, label: 'Wakemaker Guide' },
       { href: Routes.Subnautica2Silver, label: 'Silver Location' },
       { href: Routes.Subnautica2Biomes, label: 'Biomes Guide' },
       { href: Routes.Subnautica2Map, label: 'Map and Routes' },
@@ -247,6 +248,7 @@ const oxygenDepthCopy: Record<string, OxygenDepthCopy> = {
     readNextTitle: '继续看',
     related: [
       { href: Routes.Subnautica2AirTank, label: '气瓶和氧气' },
+      { href: Routes.Subnautica2Wakemaker, label: 'Wakemaker 指南' },
       { href: Routes.Subnautica2Silver, label: 'Silver 位置' },
       { href: Routes.Subnautica2Biomes, label: '生物群系指南' },
       { href: Routes.Subnautica2Map, label: '地图和路线' },
@@ -336,6 +338,7 @@ const oxygenDepthCopy: Record<string, OxygenDepthCopy> = {
     readNextTitle: '次に読む',
     related: [
       { href: Routes.Subnautica2AirTank, label: 'Air Tank and O2' },
+      { href: Routes.Subnautica2Wakemaker, label: 'Wakemaker Guide' },
       { href: Routes.Subnautica2Silver, label: 'Silver Location' },
       { href: Routes.Subnautica2Biomes, label: 'Biomes Guide' },
       { href: Routes.Subnautica2Map, label: 'Map and Routes' },
