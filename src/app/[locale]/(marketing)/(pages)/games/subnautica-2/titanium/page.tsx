@@ -129,6 +129,7 @@ const titaniumCopy: Record<string, TitaniumCopy> = {
     ],
     readNextTitle: 'Read next',
     related: [
+      { href: Routes.Subnautica2MetalSalvage, label: 'Metal Salvage Guide' },
       { href: Routes.Subnautica2TitaniumIngot, label: 'Titanium Ingot Guide' },
       { href: Routes.Subnautica2BaseBuilding, label: 'Base Building Guide' },
       {
@@ -249,6 +250,7 @@ const titaniumCopy: Record<string, TitaniumCopy> = {
     ],
     readNextTitle: '继续阅读',
     related: [
+      { href: Routes.Subnautica2MetalSalvage, label: 'Metal Salvage 指南' },
       { href: Routes.Subnautica2TitaniumIngot, label: 'Titanium Ingot 指南' },
       { href: Routes.Subnautica2BaseBuilding, label: '基地建造指南' },
       { href: Routes.Subnautica2HabitatBuilder, label: 'Habitat Builder 指南' },

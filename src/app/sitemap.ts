@@ -47,6 +47,7 @@ const staticRoutes = [
   Routes.Subnautica2Lead,
   Routes.Subnautica2Gold,
   Routes.Subnautica2Salt,
+  Routes.Subnautica2MetalSalvage,
   Routes.Subnautica2Scanner,
   Routes.Subnautica2SystemChip,
   Routes.Subnautica2WiringKit,

@@ -248,6 +248,12 @@ const copyByLocale: Record<'en' | 'zh', HubCopy> = {
           'Chap Black Box cave route, respawning early pickups, Power Cell priority, jerky caution, and Coral Gardens farming.',
       },
       {
+        href: Routes.Subnautica2MetalSalvage,
+        title: 'Metal Salvage',
+        description:
+          'Wreck debris pickup, Fabricator conversion, Salvaged Titanium, backpack space, and base-building stock.',
+      },
+      {
         href: Routes.Subnautica2FiberMesh,
         title: 'Fiber Mesh',
         description:
@@ -571,6 +577,12 @@ const copyByLocale: Record<'en' | 'zh', HubCopy> = {
         title: 'Salt 位置',
         description:
           'Chap Black Box 洞穴路线、前期刷新拾取、Power Cell 优先级、jerky 提醒和 Coral Gardens 采集。',
+      },
+      {
+        href: Routes.Subnautica2MetalSalvage,
+        title: 'Metal Salvage 指南',
+        description:
+          '残骸拾取、Fabricator 加工、Salvaged Titanium、背包空间和基地建造储备。',
       },
       {
         href: Routes.Subnautica2FiberMesh,
