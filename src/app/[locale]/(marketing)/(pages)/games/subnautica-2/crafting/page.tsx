@@ -145,6 +145,7 @@ const craftingCopy: Record<string, CraftingCopy> = {
       { href: Routes.Subnautica2Quartz, label: 'Quartz Location Guide' },
       { href: Routes.Subnautica2Lithium, label: 'Lithium Location Guide' },
       { href: Routes.Subnautica2Lead, label: 'Lead Location Guide' },
+      { href: Routes.Subnautica2Gold, label: 'Gold Location Guide' },
       { href: Routes.Subnautica2FiberMesh, label: 'Fiber Mesh Guide' },
       { href: Routes.Subnautica2Copper, label: 'Copper Location' },
       { href: Routes.Subnautica2BasicBattery, label: 'Basic Battery Guide' },
@@ -288,6 +289,7 @@ const craftingCopy: Record<string, CraftingCopy> = {
       { href: Routes.Subnautica2Quartz, label: 'Quartz Location Guide' },
       { href: Routes.Subnautica2Lithium, label: 'Lithium Location Guide' },
       { href: Routes.Subnautica2Lead, label: 'Lead Location Guide' },
+      { href: Routes.Subnautica2Gold, label: 'Gold Location Guide' },
       { href: Routes.Subnautica2FiberMesh, label: 'Fiber Mesh 指南' },
       { href: Routes.Subnautica2Copper, label: 'Copper 位置' },
       {

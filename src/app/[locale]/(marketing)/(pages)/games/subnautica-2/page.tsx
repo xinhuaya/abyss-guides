@@ -224,6 +224,12 @@ const copyByLocale: Record<'en' | 'zh', HubCopy> = {
           'Northeast ravine route, blue current entry, hand pickups, Sonic Resonator unlock, and Germanium processing.',
       },
       {
+        href: Routes.Subnautica2Gold,
+        title: 'Gold',
+        description:
+          'Volcanic vent route, Heat Tolerance gate, crashed colony ship farming, Advanced Wiring Kit, and Thermal Plant prep.',
+      },
+      {
         href: Routes.Subnautica2FiberMesh,
         title: 'Fiber Mesh',
         description:
@@ -523,6 +529,12 @@ const copyByLocale: Record<'en' | 'zh', HubCopy> = {
         title: 'Lead 位置',
         description:
           '东北峡谷路线、蓝色水流入口、手捡小块、Sonic Resonator 解锁和 Germanium 加工。',
+      },
+      {
+        href: Routes.Subnautica2Gold,
+        title: 'Gold 位置',
+        description:
+          '火山热泉路线、Heat Tolerance 门槛、坠毁殖民船采集、Advanced Wiring Kit 和 Thermal Plant 准备。',
       },
       {
         href: Routes.Subnautica2FiberMesh,
