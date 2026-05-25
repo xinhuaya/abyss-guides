@@ -260,6 +260,12 @@ const copyByLocale: Record<'en' | 'zh', HubCopy> = {
           'Creepvine material route, Fabricator recipe check, Wakemaker use, and storage timing.',
       },
       {
+        href: Routes.Subnautica2Rubber,
+        title: 'Rubber',
+        description:
+          'Lucifer Rotsac recipe, Fabricator timing, Basic Fins, Air Bladder, and Standard Air Tank planning.',
+      },
+      {
         href: Routes.Subnautica2Scanner,
         title: 'Scanner and Bioscanner',
         description:
@@ -589,6 +595,12 @@ const copyByLocale: Record<'en' | 'zh', HubCopy> = {
         title: 'Fiber Mesh 指南',
         description:
           'Creepvine 材料路线、Fabricator 配方检查、Wakemaker 用途和前期收纳。',
+      },
+      {
+        href: Routes.Subnautica2Rubber,
+        title: 'Rubber 配方',
+        description:
+          'Lucifer Rotsac 配方、Fabricator 时机、Basic Fins、Air Bladder 和 Standard Air Tank 规划。',
       },
       {
         href: Routes.Subnautica2Scanner,

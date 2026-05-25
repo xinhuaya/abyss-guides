@@ -130,6 +130,7 @@ const fiberMeshCopy: Record<string, FiberMeshCopy> = {
     ],
     readNextTitle: 'Read next',
     related: [
+      { href: Routes.Subnautica2Rubber, label: 'Rubber Recipe Guide' },
       { href: Routes.Subnautica2Wakemaker, label: 'Wakemaker Guide' },
       { href: Routes.Subnautica2Rebreather, label: 'Rebreather Guide' },
       { href: Routes.Subnautica2BasicBattery, label: 'Basic Battery Guide' },
@@ -239,6 +240,7 @@ const fiberMeshCopy: Record<string, FiberMeshCopy> = {
     ],
     readNextTitle: '继续阅读',
     related: [
+      { href: Routes.Subnautica2Rubber, label: 'Rubber 配方指南' },
       { href: Routes.Subnautica2Wakemaker, label: 'Wakemaker 指南' },
       { href: Routes.Subnautica2Rebreather, label: 'Rebreather 指南' },
       { href: Routes.Subnautica2BasicBattery, label: 'Basic Battery 指南' },

@@ -120,6 +120,7 @@ const airTankCopy: Record<string, AirTankCopy> = {
     ],
     readNextTitle: 'Read next',
     related: [
+      { href: Routes.Subnautica2Rubber, label: 'Rubber Recipe Guide' },
       { href: Routes.Subnautica2OxygenDepth, label: 'Oxygen and Depth' },
       { href: Routes.Subnautica2Rebreather, label: 'Rebreather Guide' },
       { href: Routes.Subnautica2Wakemaker, label: 'Wakemaker Guide' },
@@ -222,6 +223,7 @@ const airTankCopy: Record<string, AirTankCopy> = {
     ],
     readNextTitle: '继续阅读',
     related: [
+      { href: Routes.Subnautica2Rubber, label: 'Rubber 配方指南' },
       { href: Routes.Subnautica2Silver, label: '银位置' },
       { href: Routes.Subnautica2Copper, label: '铜位置' },
       { href: Routes.Subnautica2Resources, label: '资源指南' },
