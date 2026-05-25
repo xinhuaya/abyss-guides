@@ -122,6 +122,12 @@ const copyByLocale: Record<'en' | 'zh', HubCopy> = {
           'Welcome Center route, Titanium, Copper Wire, Mild Acid, and Biomod management.',
       },
       {
+        href: Routes.Subnautica2EchoLocation,
+        title: 'Echo Location',
+        description:
+          'Modification Station recipe, Quartz, Mild Acid, Atacamite, and Tadpole resource ping use.',
+      },
+      {
         href: Routes.Subnautica2CopperWire,
         title: 'Copper Wire',
         description:
@@ -426,6 +432,12 @@ const copyByLocale: Record<'en' | 'zh', HubCopy> = {
         title: 'Biolab Guide',
         description:
           'Welcome Center route, Titanium, Copper Wire, Mild Acid, and Biomod management.',
+      },
+      {
+        href: Routes.Subnautica2EchoLocation,
+        title: 'Echo Location Guide',
+        description:
+          'Modification Station recipe, Quartz, Mild Acid, Atacamite, and Tadpole resource ping use.',
       },
       {
         href: Routes.Subnautica2StrongAcid,
