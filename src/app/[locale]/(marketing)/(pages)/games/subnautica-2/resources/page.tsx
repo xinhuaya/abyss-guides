@@ -135,6 +135,7 @@ const resourcesCopy: Record<string, ResourcesCopy> = {
       { href: Routes.Subnautica2Silver, label: 'Silver Location' },
       { href: Routes.Subnautica2AirTank, label: 'Air Tank and O2' },
       { href: Routes.Subnautica2Scanner, label: 'Scanner Guide' },
+      { href: Routes.Subnautica2WiringKit, label: 'Wiring Kit Guide' },
       { href: Routes.Subnautica2SystemChip, label: 'System Chip Guide' },
       {
         href: Routes.Subnautica2BioscannerBiomods,

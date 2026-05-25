@@ -128,6 +128,12 @@ const copyByLocale: Record<'en' | 'zh', HubCopy> = {
           'Wiring Kit, Quartz, Silver prep, and electronics use for Tadpole and depth upgrades.',
       },
       {
+        href: Routes.Subnautica2WiringKit,
+        title: 'Wiring Kit',
+        description:
+          'Silver, Copper Wire, electronics storage, System Chip prep, and upgrade-material timing.',
+      },
+      {
         href: Routes.Subnautica2SonicResonator,
         title: 'Sonic Resonator',
         description:
@@ -342,6 +348,12 @@ const copyByLocale: Record<'en' | 'zh', HubCopy> = {
         title: 'System Chip 指南',
         description:
           'Wiring Kit、Quartz、Silver 准备，以及 Tadpole 和深度升级用途。',
+      },
+      {
+        href: Routes.Subnautica2WiringKit,
+        title: 'Wiring Kit 指南',
+        description:
+          'Silver、Copper Wire、电子材料收纳、System Chip 前置和升级材料时机。',
       },
       {
         href: Routes.Subnautica2StrongAcid,
