@@ -132,6 +132,7 @@ const resourcesCopy: Record<string, ResourcesCopy> = {
     related: [
       { href: Routes.Subnautica2Beginner, label: 'Beginner Route' },
       { href: Routes.Subnautica2Copper, label: 'Copper Location' },
+      { href: Routes.Subnautica2Titanium, label: 'Titanium Location Guide' },
       { href: Routes.Subnautica2BasicBattery, label: 'Basic Battery Guide' },
       {
         href: Routes.Subnautica2AcidicRaionPouch,
@@ -307,6 +308,7 @@ const resourcesCopy: Record<string, ResourcesCopy> = {
     related: [
       { href: Routes.Subnautica2Beginner, label: '新手路线' },
       { href: Routes.Subnautica2Copper, label: 'Copper 位置' },
+      { href: Routes.Subnautica2Titanium, label: 'Titanium 位置指南' },
       {
         href: Routes.Subnautica2AcidicRaionPouch,
         label: 'Acidic Raion Pouch Guide',
@@ -442,6 +444,7 @@ const resourcesCopy: Record<string, ResourcesCopy> = {
     related: [
       { href: Routes.Subnautica2Beginner, label: 'Маршрут новичка' },
       { href: Routes.Subnautica2Copper, label: 'Где найти Copper' },
+      { href: Routes.Subnautica2Titanium, label: 'Titanium Location Guide' },
       { href: Routes.Subnautica2Silver, label: 'Где найти Silver' },
       { href: Routes.Subnautica2AirTank, label: 'Air Tank и O2' },
       { href: Routes.Subnautica2Scanner, label: 'Scanner' },
@@ -549,6 +552,7 @@ const resourcesCopy: Record<string, ResourcesCopy> = {
     related: [
       { href: Routes.Subnautica2Beginner, label: 'Anfängerroute' },
       { href: Routes.Subnautica2Copper, label: 'Copper finden' },
+      { href: Routes.Subnautica2Titanium, label: 'Titanium Location Guide' },
       { href: Routes.Subnautica2Silver, label: 'Silver finden' },
       { href: Routes.Subnautica2AirTank, label: 'Air Tank und O2' },
       { href: Routes.Subnautica2Scanner, label: 'Scanner Guide' },
@@ -659,6 +663,7 @@ const resourcesCopy: Record<string, ResourcesCopy> = {
     related: [
       { href: Routes.Subnautica2Beginner, label: 'Route débutant' },
       { href: Routes.Subnautica2Copper, label: 'Où trouver Copper' },
+      { href: Routes.Subnautica2Titanium, label: 'Titanium Location Guide' },
       { href: Routes.Subnautica2Silver, label: 'Où trouver Silver' },
       { href: Routes.Subnautica2AirTank, label: 'Air Tank et O2' },
       { href: Routes.Subnautica2Scanner, label: 'Scanner Guide' },
@@ -769,6 +774,7 @@ const resourcesCopy: Record<string, ResourcesCopy> = {
     related: [
       { href: Routes.Subnautica2Beginner, label: 'Rota inicial' },
       { href: Routes.Subnautica2Copper, label: 'Onde encontrar Copper' },
+      { href: Routes.Subnautica2Titanium, label: 'Titanium Location Guide' },
       { href: Routes.Subnautica2Silver, label: 'Onde encontrar Silver' },
       { href: Routes.Subnautica2AirTank, label: 'Air Tank e O2' },
       { href: Routes.Subnautica2Scanner, label: 'Scanner Guide' },
@@ -879,6 +885,7 @@ const resourcesCopy: Record<string, ResourcesCopy> = {
     related: [
       { href: Routes.Subnautica2Beginner, label: 'Ruta inicial' },
       { href: Routes.Subnautica2Copper, label: 'Dónde encontrar Copper' },
+      { href: Routes.Subnautica2Titanium, label: 'Titanium Location Guide' },
       { href: Routes.Subnautica2Silver, label: 'Dónde encontrar Silver' },
       { href: Routes.Subnautica2AirTank, label: 'Air Tank y O2' },
       { href: Routes.Subnautica2Scanner, label: 'Scanner Guide' },
@@ -983,6 +990,7 @@ const resourcesCopy: Record<string, ResourcesCopy> = {
     related: [
       { href: Routes.Subnautica2Beginner, label: '초보 루트' },
       { href: Routes.Subnautica2Copper, label: 'Copper 위치' },
+      { href: Routes.Subnautica2Titanium, label: 'Titanium Location Guide' },
       { href: Routes.Subnautica2Silver, label: 'Silver 위치' },
       { href: Routes.Subnautica2AirTank, label: 'Air Tank와 O2' },
       { href: Routes.Subnautica2Scanner, label: 'Scanner 가이드' },
@@ -1087,6 +1095,7 @@ const resourcesCopy: Record<string, ResourcesCopy> = {
     related: [
       { href: Routes.Subnautica2Beginner, label: '初心者ルート' },
       { href: Routes.Subnautica2Copper, label: 'Copper の場所' },
+      { href: Routes.Subnautica2Titanium, label: 'Titanium Location Guide' },
       { href: Routes.Subnautica2Silver, label: 'Silver の場所' },
       { href: Routes.Subnautica2AirTank, label: 'Air Tank と O2' },
       { href: Routes.Subnautica2Scanner, label: 'Scanner ガイド' },

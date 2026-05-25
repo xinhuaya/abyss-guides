@@ -137,6 +137,7 @@ const baseCopy: Record<string, BaseCopy> = {
       },
       { href: Routes.Subnautica2Beacon, label: 'Beacon Guide' },
       { href: Routes.Subnautica2RepairTool, label: 'Repair Tool Guide' },
+      { href: Routes.Subnautica2Titanium, label: 'Titanium Location Guide' },
       { href: Routes.Subnautica2Resources, label: 'Resources Guide' },
       { href: Routes.Subnautica2CopperWire, label: 'Copper Wire Guide' },
       { href: Routes.Subnautica2Crafting, label: 'Crafting Guide' },
@@ -239,6 +240,7 @@ const baseCopy: Record<string, BaseCopy> = {
       { href: Routes.Subnautica2ScannerStation, label: 'Scanner Station 指南' },
       { href: Routes.Subnautica2Beacon, label: 'Beacon 指南' },
       { href: Routes.Subnautica2RepairTool, label: 'Repair Tool 指南' },
+      { href: Routes.Subnautica2Titanium, label: 'Titanium 位置指南' },
       { href: Routes.Subnautica2Resources, label: '资源指南' },
       { href: Routes.Subnautica2Crafting, label: '制作指南' },
       { href: Routes.Subnautica2Coop, label: '联机指南' },
@@ -346,6 +348,7 @@ const baseCopy: Record<string, BaseCopy> = {
     related: [
       { href: Routes.Subnautica2Map, label: 'Карта и биомы' },
       { href: Routes.Subnautica2Resources, label: 'Ресурсы' },
+      { href: Routes.Subnautica2Titanium, label: 'Titanium Location Guide' },
       { href: Routes.Subnautica2Crafting, label: 'Крафт' },
       { href: Routes.Subnautica2Coop, label: 'Co-op' },
       { href: Routes.Subnautica2Beginner, label: 'Маршрут новичка' },
@@ -444,6 +447,7 @@ const baseCopy: Record<string, BaseCopy> = {
     related: [
       { href: Routes.Subnautica2Map, label: 'Karte und Biome' },
       { href: Routes.Subnautica2Resources, label: 'Ressourcen' },
+      { href: Routes.Subnautica2Titanium, label: 'Titanium Location Guide' },
       { href: Routes.Subnautica2Crafting, label: 'Crafting' },
       { href: Routes.Subnautica2Coop, label: 'Co-op Guide' },
       { href: Routes.Subnautica2Beginner, label: 'Anfängerroute' },
@@ -545,6 +549,7 @@ const baseCopy: Record<string, BaseCopy> = {
     related: [
       { href: Routes.Subnautica2Map, label: 'Carte et biomes' },
       { href: Routes.Subnautica2Resources, label: 'Ressources' },
+      { href: Routes.Subnautica2Titanium, label: 'Titanium Location Guide' },
       { href: Routes.Subnautica2Crafting, label: 'Crafting' },
       { href: Routes.Subnautica2Coop, label: 'Guide co-op' },
       { href: Routes.Subnautica2Beginner, label: 'Route débutant' },
@@ -646,6 +651,7 @@ const baseCopy: Record<string, BaseCopy> = {
     related: [
       { href: Routes.Subnautica2Map, label: 'Mapa e biomas' },
       { href: Routes.Subnautica2Resources, label: 'Recursos' },
+      { href: Routes.Subnautica2Titanium, label: 'Titanium Location Guide' },
       { href: Routes.Subnautica2Crafting, label: 'Crafting' },
       { href: Routes.Subnautica2Coop, label: 'Guia co-op' },
       { href: Routes.Subnautica2Beginner, label: 'Rota inicial' },
@@ -747,6 +753,7 @@ const baseCopy: Record<string, BaseCopy> = {
     related: [
       { href: Routes.Subnautica2Map, label: 'Mapa y biomas' },
       { href: Routes.Subnautica2Resources, label: 'Recursos' },
+      { href: Routes.Subnautica2Titanium, label: 'Titanium Location Guide' },
       { href: Routes.Subnautica2Crafting, label: 'Crafting' },
       { href: Routes.Subnautica2Coop, label: 'Guía co-op' },
       { href: Routes.Subnautica2Beginner, label: 'Ruta inicial' },
@@ -841,6 +848,7 @@ const baseCopy: Record<string, BaseCopy> = {
     related: [
       { href: Routes.Subnautica2Map, label: '지도와 바이옴' },
       { href: Routes.Subnautica2Resources, label: '자원 가이드' },
+      { href: Routes.Subnautica2Titanium, label: 'Titanium Location Guide' },
       { href: Routes.Subnautica2Crafting, label: '제작 가이드' },
       { href: Routes.Subnautica2Coop, label: '협동 가이드' },
       { href: Routes.Subnautica2Beginner, label: '초보 루트' },
@@ -935,6 +943,7 @@ const baseCopy: Record<string, BaseCopy> = {
     related: [
       { href: Routes.Subnautica2Map, label: 'マップとバイオーム' },
       { href: Routes.Subnautica2Resources, label: '資源ガイド' },
+      { href: Routes.Subnautica2Titanium, label: 'Titanium Location Guide' },
       { href: Routes.Subnautica2Crafting, label: '制作ガイド' },
       { href: Routes.Subnautica2Coop, label: '協力ガイド' },
       { href: Routes.Subnautica2Beginner, label: '初心者ルート' },

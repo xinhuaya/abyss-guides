@@ -31,6 +31,7 @@ const staticRoutes = [
   Routes.Subnautica2EngineEfficiency,
   Routes.Subnautica2CopperWire,
   Routes.Subnautica2HabitatBuilder,
+  Routes.Subnautica2Titanium,
   Routes.Subnautica2TitaniumIngot,
   Routes.Subnautica2AirTank,
   Routes.Subnautica2OxygenDepth,

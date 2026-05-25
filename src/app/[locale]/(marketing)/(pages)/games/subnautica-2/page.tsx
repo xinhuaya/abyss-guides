@@ -152,6 +152,12 @@ const copyByLocale: Record<'en' | 'zh', HubCopy> = {
           'Scan unlock, Titanium, Glass, Basic Battery, Copper Wire, and first base prep.',
       },
       {
+        href: Routes.Subnautica2Titanium,
+        title: 'Titanium',
+        description:
+          'Coral Gardens nodes, Metal Salvage processing, Sonic Resonator deposits, base storage, and ingot planning.',
+      },
+      {
         href: Routes.Subnautica2Silver,
         title: 'Where to Find Silver',
         description:
@@ -471,6 +477,12 @@ const copyByLocale: Record<'en' | 'zh', HubCopy> = {
         title: 'Habitat Builder 指南',
         description:
           '扫描解锁、Titanium、Glass、Basic Battery、Copper Wire 和第一座基地准备。',
+      },
+      {
+        href: Routes.Subnautica2Titanium,
+        title: 'Titanium 位置',
+        description:
+          'Coral Gardens 节点、Metal Salvage 加工、Sonic Resonator 大矿、基地收纳和 ingot 规划。',
       },
       {
         href: Routes.Subnautica2Silver,
