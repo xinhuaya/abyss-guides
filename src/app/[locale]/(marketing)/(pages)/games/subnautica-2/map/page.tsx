@@ -127,6 +127,7 @@ const mapCopy: Record<string, MapCopy> = {
     readNextTitle: 'Read next',
     related: [
       { href: Routes.Subnautica2Biomes, label: 'Biomes Guide' },
+      { href: Routes.Subnautica2Beacon, label: 'Beacon Guide' },
       { href: Routes.Subnautica2Beginner, label: 'Beginner Route' },
       { href: Routes.Subnautica2Resources, label: 'Resources Guide' },
       { href: Routes.Subnautica2Crafting, label: 'Crafting Guide' },
@@ -225,6 +226,7 @@ const mapCopy: Record<string, MapCopy> = {
     ],
     readNextTitle: '继续阅读',
     related: [
+      { href: Routes.Subnautica2Beacon, label: 'Beacon 指南' },
       { href: Routes.Subnautica2Beginner, label: '新手路线' },
       { href: Routes.Subnautica2Resources, label: '资源指南' },
       { href: Routes.Subnautica2Crafting, label: '制作指南' },

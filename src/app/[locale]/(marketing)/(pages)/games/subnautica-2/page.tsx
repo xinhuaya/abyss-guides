@@ -188,6 +188,12 @@ const copyByLocale: Record<'en' | 'zh', HubCopy> = {
           'Base utility planning, System Chip, Copper Wire, Titanium, power margin, and resource search use.',
       },
       {
+        href: Routes.Subnautica2Beacon,
+        title: 'Beacon',
+        description:
+          'Copper and Titanium recipe, scan unlock, marker naming, exits, and route navigation.',
+      },
+      {
         href: Routes.Subnautica2FiberMesh,
         title: 'Fiber Mesh',
         description:
@@ -451,6 +457,12 @@ const copyByLocale: Record<'en' | 'zh', HubCopy> = {
         title: 'Scanner Station 指南',
         description:
           '基地工具规划、System Chip、Copper Wire、Titanium、供电余量和资源搜索用途。',
+      },
+      {
+        href: Routes.Subnautica2Beacon,
+        title: 'Beacon 指南',
+        description:
+          'Copper 与 Titanium 配方、扫描解锁、标记命名、出口和路线导航。',
       },
       {
         href: Routes.Subnautica2FiberMesh,

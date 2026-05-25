@@ -135,6 +135,7 @@ const baseCopy: Record<string, BaseCopy> = {
         href: Routes.Subnautica2ScannerStation,
         label: 'Scanner Station Guide',
       },
+      { href: Routes.Subnautica2Beacon, label: 'Beacon Guide' },
       { href: Routes.Subnautica2Resources, label: 'Resources Guide' },
       { href: Routes.Subnautica2CopperWire, label: 'Copper Wire Guide' },
       { href: Routes.Subnautica2Crafting, label: 'Crafting Guide' },
@@ -235,6 +236,7 @@ const baseCopy: Record<string, BaseCopy> = {
     related: [
       { href: Routes.Subnautica2Map, label: '地图与生态区' },
       { href: Routes.Subnautica2ScannerStation, label: 'Scanner Station 指南' },
+      { href: Routes.Subnautica2Beacon, label: 'Beacon 指南' },
       { href: Routes.Subnautica2Resources, label: '资源指南' },
       { href: Routes.Subnautica2Crafting, label: '制作指南' },
       { href: Routes.Subnautica2Coop, label: '联机指南' },
