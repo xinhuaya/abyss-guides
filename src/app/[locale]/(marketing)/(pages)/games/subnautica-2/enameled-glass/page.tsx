@@ -143,6 +143,10 @@ const enameledGlassCopy: Record<string, EnameledGlassCopy> = {
         label: 'Creature Enamel Guide',
       },
       { href: Routes.Subnautica2Tadpole, label: 'Tadpole Vehicle Guide' },
+      {
+        href: Routes.Subnautica2TadpoleDepthModule,
+        label: 'Tadpole Depth Module Guide',
+      },
       { href: Routes.Subnautica2Crafting, label: 'Crafting Guide' },
       { href: Routes.Subnautica2Strontium, label: 'Strontium Guide' },
       {
@@ -263,6 +267,10 @@ const enameledGlassCopy: Record<string, EnameledGlassCopy> = {
         label: 'Creature Enamel 指南',
       },
       { href: Routes.Subnautica2Tadpole, label: 'Tadpole 载具指南' },
+      {
+        href: Routes.Subnautica2TadpoleDepthModule,
+        label: 'Tadpole Depth Module 指南',
+      },
       { href: Routes.Subnautica2Crafting, label: '制作指南' },
       { href: Routes.Subnautica2Strontium, label: 'Strontium 指南' },
       {
@@ -377,6 +385,10 @@ const enameledGlassCopy: Record<string, EnameledGlassCopy> = {
         label: 'Creature Enamel ガイド',
       },
       { href: Routes.Subnautica2Tadpole, label: 'Tadpole ガイド' },
+      {
+        href: Routes.Subnautica2TadpoleDepthModule,
+        label: 'Tadpole Depth Module ガイド',
+      },
       { href: Routes.Subnautica2Crafting, label: 'クラフトガイド' },
       { href: Routes.Subnautica2Strontium, label: 'Strontium ガイド' },
       {

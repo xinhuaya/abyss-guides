@@ -176,6 +176,12 @@ const copyByLocale: Record<'en' | 'zh', HubCopy> = {
           'Fragment scanning, vehicle crafting, Power Cell prep, and upgrade planning.',
       },
       {
+        href: Routes.Subnautica2TadpoleDepthModule,
+        title: 'Tadpole Depth Module',
+        description:
+          'Mk.1 scan route, Alien Ruins Needler risk, Celestine, Enameled Glass, and deep route prep.',
+      },
+      {
         href: Routes.Subnautica2BaseBuilding,
         title: 'Base Building',
         description:

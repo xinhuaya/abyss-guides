@@ -35,6 +35,7 @@ const staticRoutes = [
   Routes.Subnautica2Strontium,
   Routes.Subnautica2StrongAcid,
   Routes.Subnautica2Tadpole,
+  Routes.Subnautica2TadpoleDepthModule,
   Routes.Subnautica2BaseBuilding,
   Routes.Subnautica2BestBaseLocations,
   Routes.Subnautica2Biomes,

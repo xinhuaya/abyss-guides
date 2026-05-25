@@ -37,6 +37,10 @@ export default function TadpoleGuidePage() {
         { href: Routes.Subnautica2AirTank, label: 'Air Tank and O2' },
         { href: Routes.Subnautica2Crafting, label: 'Crafting Guide' },
         {
+          href: Routes.Subnautica2TadpoleDepthModule,
+          label: 'Tadpole Depth Module Guide',
+        },
+        {
           href: Routes.Subnautica2EnameledGlass,
           label: 'Enameled Glass Guide',
         },

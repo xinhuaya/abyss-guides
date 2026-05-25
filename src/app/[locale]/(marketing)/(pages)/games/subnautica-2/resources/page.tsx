@@ -163,6 +163,10 @@ const resourcesCopy: Record<string, ResourcesCopy> = {
         href: Routes.Subnautica2EnameledGlass,
         label: 'Enameled Glass Guide',
       },
+      {
+        href: Routes.Subnautica2TadpoleDepthModule,
+        label: 'Tadpole Depth Module Guide',
+      },
     ],
     sourcesTitle: 'Source note',
     sourceBody:
