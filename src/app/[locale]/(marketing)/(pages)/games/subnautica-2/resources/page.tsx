@@ -132,6 +132,7 @@ const resourcesCopy: Record<string, ResourcesCopy> = {
     related: [
       { href: Routes.Subnautica2Beginner, label: 'Beginner Route' },
       { href: Routes.Subnautica2Copper, label: 'Copper Location' },
+      { href: Routes.Subnautica2BasicBattery, label: 'Basic Battery Guide' },
       { href: Routes.Subnautica2CopperWire, label: 'Copper Wire Guide' },
       {
         href: Routes.Subnautica2HabitatBuilder,

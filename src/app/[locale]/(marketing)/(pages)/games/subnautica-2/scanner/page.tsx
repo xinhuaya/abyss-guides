@@ -135,6 +135,7 @@ const scannerCopy: Record<string, ScannerCopy> = {
         label: 'Sonic Resonator Guide',
       },
       { href: Routes.Subnautica2Copper, label: 'Copper Location' },
+      { href: Routes.Subnautica2BasicBattery, label: 'Basic Battery Guide' },
       {
         href: Routes.Subnautica2HabitatBuilder,
         label: 'Habitat Builder Guide',

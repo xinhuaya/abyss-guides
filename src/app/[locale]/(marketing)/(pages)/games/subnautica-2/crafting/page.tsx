@@ -134,6 +134,7 @@ const craftingCopy: Record<string, CraftingCopy> = {
       { href: Routes.Subnautica2Scanner, label: 'Scanner Guide' },
       { href: Routes.Subnautica2AirTank, label: 'Air Tank and O2' },
       { href: Routes.Subnautica2Copper, label: 'Copper Location' },
+      { href: Routes.Subnautica2BasicBattery, label: 'Basic Battery Guide' },
       { href: Routes.Subnautica2CopperWire, label: 'Copper Wire Guide' },
       {
         href: Routes.Subnautica2HabitatBuilder,

@@ -130,6 +130,7 @@ const habitatBuilderCopy: Record<string, HabitatBuilderCopy> = {
     readNextTitle: 'Read next',
     related: [
       { href: Routes.Subnautica2BaseBuilding, label: 'Base Building Guide' },
+      { href: Routes.Subnautica2BasicBattery, label: 'Basic Battery Guide' },
       { href: Routes.Subnautica2CopperWire, label: 'Copper Wire Guide' },
       { href: Routes.Subnautica2Copper, label: 'Copper Location' },
       { href: Routes.Subnautica2Scanner, label: 'Scanner Guide' },
@@ -238,6 +239,7 @@ const habitatBuilderCopy: Record<string, HabitatBuilderCopy> = {
     readNextTitle: '继续阅读',
     related: [
       { href: Routes.Subnautica2BaseBuilding, label: '基地建造指南' },
+      { href: Routes.Subnautica2BasicBattery, label: 'Basic Battery 指南' },
       { href: Routes.Subnautica2CopperWire, label: 'Copper Wire 指南' },
       { href: Routes.Subnautica2Copper, label: 'Copper 位置' },
       { href: Routes.Subnautica2Scanner, label: 'Scanner 指南' },
@@ -346,6 +348,7 @@ const habitatBuilderCopy: Record<string, HabitatBuilderCopy> = {
     readNextTitle: '次に読む',
     related: [
       { href: Routes.Subnautica2BaseBuilding, label: 'Base Building ガイド' },
+      { href: Routes.Subnautica2BasicBattery, label: 'Basic Battery Guide' },
       { href: Routes.Subnautica2CopperWire, label: 'Copper Wire ガイド' },
       { href: Routes.Subnautica2Copper, label: 'Copper の場所' },
       { href: Routes.Subnautica2Scanner, label: 'Scanner ガイド' },

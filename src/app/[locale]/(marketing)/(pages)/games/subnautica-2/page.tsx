@@ -92,6 +92,12 @@ const copyByLocale: Record<'en' | 'zh', HubCopy> = {
           'Early battery and electronics material with Lifepod cave route notes.',
       },
       {
+        href: Routes.Subnautica2BasicBattery,
+        title: 'Basic Battery',
+        description:
+          'Default unlock, Copper x2, Acidic Raion Pouch x1, 100 energy, and early tool priorities.',
+      },
+      {
         href: Routes.Subnautica2CopperWire,
         title: 'Copper Wire',
         description:
