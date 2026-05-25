@@ -98,6 +98,12 @@ const copyByLocale: Record<'en' | 'zh', HubCopy> = {
           '2 Copper recipe, battery timing, Wiring Kit prep, and base-building electronics use.',
       },
       {
+        href: Routes.Subnautica2HabitatBuilder,
+        title: 'Habitat Builder',
+        description:
+          'Scan unlock, Titanium, Glass, Basic Battery, Copper Wire, and first base prep.',
+      },
+      {
         href: Routes.Subnautica2Silver,
         title: 'Where to Find Silver',
         description:
@@ -339,6 +345,12 @@ const copyByLocale: Record<'en' | 'zh', HubCopy> = {
         title: 'Copper Wire 指南',
         description:
           '2 Copper 配方、电池制作时机、Wiring Kit 前置和基地电子材料用途。',
+      },
+      {
+        href: Routes.Subnautica2HabitatBuilder,
+        title: 'Habitat Builder 指南',
+        description:
+          '扫描解锁、Titanium、Glass、Basic Battery、Copper Wire 和第一座基地准备。',
       },
       {
         href: Routes.Subnautica2Silver,

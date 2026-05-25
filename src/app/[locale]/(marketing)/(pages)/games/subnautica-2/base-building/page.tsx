@@ -126,6 +126,10 @@ const baseCopy: Record<string, BaseCopy> = {
     ],
     readNextTitle: 'Read next',
     related: [
+      {
+        href: Routes.Subnautica2HabitatBuilder,
+        label: 'Habitat Builder Guide',
+      },
       { href: Routes.Subnautica2Map, label: 'Map and Biomes' },
       { href: Routes.Subnautica2Resources, label: 'Resources Guide' },
       { href: Routes.Subnautica2CopperWire, label: 'Copper Wire Guide' },
