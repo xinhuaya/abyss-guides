@@ -148,6 +148,7 @@ const craftingCopy: Record<string, CraftingCopy> = {
       { href: Routes.Subnautica2PlasteelIngot, label: 'Plasteel Ingot Guide' },
       { href: Routes.Subnautica2Lead, label: 'Lead Location Guide' },
       { href: Routes.Subnautica2Gold, label: 'Gold Location Guide' },
+      { href: Routes.Subnautica2GoldIngot, label: 'Gold Ingot Guide' },
       { href: Routes.Subnautica2HeatTolerance, label: 'Heat Tolerance Guide' },
       { href: Routes.Subnautica2AngelComb, label: 'Angel Comb Guide' },
       { href: Routes.Subnautica2BloomBiofilm, label: 'Bloom Biofilm Guide' },
