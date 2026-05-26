@@ -123,6 +123,7 @@ const rubberCopy: Record<string, RubberCopy> = {
     ],
     readNextTitle: 'Read next',
     related: [
+      { href: Routes.Subnautica2BasicFins, label: 'Basic Fins Guide' },
       { href: Routes.Subnautica2AirTank, label: 'Air Tank and O2 Guide' },
       { href: Routes.Subnautica2Wakemaker, label: 'Wakemaker Guide' },
       { href: Routes.Subnautica2FiberMesh, label: 'Fiber Mesh Guide' },
@@ -231,6 +232,7 @@ const rubberCopy: Record<string, RubberCopy> = {
     ],
     readNextTitle: '继续阅读',
     related: [
+      { href: Routes.Subnautica2BasicFins, label: 'Basic Fins 指南' },
       { href: Routes.Subnautica2AirTank, label: '气瓶和氧气指南' },
       { href: Routes.Subnautica2Wakemaker, label: 'Wakemaker 指南' },
       { href: Routes.Subnautica2FiberMesh, label: 'Fiber Mesh 指南' },

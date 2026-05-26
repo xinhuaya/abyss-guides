@@ -266,6 +266,12 @@ const copyByLocale: Record<'en' | 'zh', HubCopy> = {
           'Lucifer Rotsac recipe, Fabricator timing, Basic Fins, Air Bladder, and Standard Air Tank planning.',
       },
       {
+        href: Routes.Subnautica2BasicFins,
+        title: 'Basic Fins',
+        description:
+          'First swim-speed upgrade, Rubber, Fiber or Fiber Mesh check, Fabricator timing, and Improved Fins planning.',
+      },
+      {
         href: Routes.Subnautica2Scanner,
         title: 'Scanner and Bioscanner',
         description:
@@ -601,6 +607,12 @@ const copyByLocale: Record<'en' | 'zh', HubCopy> = {
         title: 'Rubber 配方',
         description:
           'Lucifer Rotsac 配方、Fabricator 时机、Basic Fins、Air Bladder 和 Standard Air Tank 规划。',
+      },
+      {
+        href: Routes.Subnautica2BasicFins,
+        title: 'Basic Fins 指南',
+        description:
+          '第一件游速升级、Rubber、Fiber 或 Fiber Mesh 检查、Fabricator 时机和 Improved Fins 规划。',
       },
       {
         href: Routes.Subnautica2Scanner,
