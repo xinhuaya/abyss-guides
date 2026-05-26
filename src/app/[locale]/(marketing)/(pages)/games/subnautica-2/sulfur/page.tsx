@@ -139,6 +139,7 @@ const sulfurCopy: Record<string, SulfurCopy> = {
     ],
     readNextTitle: 'Read next',
     related: [
+      { href: Routes.Subnautica2HeatTolerance, label: 'Heat Tolerance Guide' },
       { href: Routes.Subnautica2RepairTool, label: 'Repair Tool Guide' },
       {
         href: Routes.Subnautica2SonicResonator,
@@ -250,6 +251,7 @@ const sulfurCopy: Record<string, SulfurCopy> = {
     ],
     readNextTitle: '继续阅读',
     related: [
+      { href: Routes.Subnautica2HeatTolerance, label: 'Heat Tolerance Guide' },
       { href: Routes.Subnautica2RepairTool, label: 'Repair Tool 指南' },
       { href: Routes.Subnautica2SonicResonator, label: 'Sonic Resonator 指南' },
       { href: Routes.Subnautica2StrongAcid, label: 'Strong Acid 指南' },

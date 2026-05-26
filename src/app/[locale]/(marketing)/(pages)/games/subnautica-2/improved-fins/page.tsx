@@ -127,6 +127,7 @@ const improvedFinsCopy: Record<string, ImprovedFinsCopy> = {
     ],
     readNextTitle: 'Read next',
     related: [
+      { href: Routes.Subnautica2HeatTolerance, label: 'Heat Tolerance Guide' },
       { href: Routes.Subnautica2BasicFins, label: 'Basic Fins Guide' },
       { href: Routes.Subnautica2FiberMesh, label: 'Fiber Mesh Guide' },
       {
@@ -242,6 +243,7 @@ const improvedFinsCopy: Record<string, ImprovedFinsCopy> = {
     ],
     readNextTitle: '继续阅读',
     related: [
+      { href: Routes.Subnautica2HeatTolerance, label: 'Heat Tolerance Guide' },
       { href: Routes.Subnautica2BasicFins, label: 'Basic Fins 指南' },
       { href: Routes.Subnautica2FiberMesh, label: 'Fiber Mesh 指南' },
       { href: Routes.Subnautica2ConduitCrystal, label: 'Conduit Crystal 指南' },

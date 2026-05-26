@@ -134,6 +134,7 @@ const goldCopy: Record<string, GoldCopy> = {
     ],
     readNextTitle: 'Read next',
     related: [
+      { href: Routes.Subnautica2HeatTolerance, label: 'Heat Tolerance Guide' },
       {
         href: Routes.Subnautica2SonicResonator,
         label: 'Sonic Resonator Guide',
@@ -252,6 +253,7 @@ const goldCopy: Record<string, GoldCopy> = {
     ],
     readNextTitle: '继续阅读',
     related: [
+      { href: Routes.Subnautica2HeatTolerance, label: 'Heat Tolerance Guide' },
       { href: Routes.Subnautica2SonicResonator, label: 'Sonic Resonator 指南' },
       { href: Routes.Subnautica2SystemChip, label: 'System Chip 指南' },
       { href: Routes.Subnautica2StrongAcid, label: 'Strong Acid 指南' },
