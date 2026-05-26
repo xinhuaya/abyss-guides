@@ -20,6 +20,7 @@ const staticRoutes = [
   Routes.Subnautica2Beginner,
   Routes.Subnautica2Resources,
   Routes.Subnautica2Silver,
+  Routes.Subnautica2SilverIngot,
   Routes.Subnautica2Copper,
   Routes.Subnautica2BasicBattery,
   Routes.Subnautica2BatteryTerminal,

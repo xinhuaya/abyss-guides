@@ -137,6 +137,7 @@ const silverCopy: Record<string, SilverCopy> = {
     readNextTitle: 'Read next',
     readNext: [
       { href: Routes.Subnautica2Resources, label: 'Resources Guide' },
+      { href: Routes.Subnautica2SilverIngot, label: 'Silver Ingot Guide' },
       { href: Routes.Subnautica2OxygenDepth, label: 'Oxygen and Depth' },
       { href: Routes.Subnautica2AirTank, label: 'Air Tank and O2' },
       { href: Routes.Subnautica2WiringKit, label: 'Wiring Kit Guide' },
@@ -228,6 +229,7 @@ const silverCopy: Record<string, SilverCopy> = {
     readNextTitle: '继续阅读',
     readNext: [
       { href: Routes.Subnautica2Resources, label: '资源指南' },
+      { href: Routes.Subnautica2SilverIngot, label: 'Silver Ingot 指南' },
       { href: Routes.Subnautica2AirTank, label: '气瓶和氧气' },
       { href: Routes.Subnautica2Crafting, label: '制作指南' },
       { href: Routes.Subnautica2Beginner, label: '新手指南' },

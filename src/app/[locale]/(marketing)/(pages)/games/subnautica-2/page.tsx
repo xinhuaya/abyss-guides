@@ -194,6 +194,12 @@ const copyByLocale: Record<'en' | 'zh', HubCopy> = {
           'Early-game air tank and electronics bottleneck with patch-sensitive route notes.',
       },
       {
+        href: Routes.Subnautica2SilverIngot,
+        title: 'Silver Ingot',
+        description:
+          'Silver x3, Processor conversion, Advanced Battery, Tadpole Dock, and raw Silver buffer planning.',
+      },
+      {
         href: Routes.Subnautica2AirTank,
         title: 'Air Tank and O2',
         description:
@@ -596,6 +602,12 @@ const copyByLocale: Record<'en' | 'zh', HubCopy> = {
         href: Routes.Subnautica2Silver,
         title: '银在哪里找',
         description: '前期常见卡点，和氧气、电子制作都有关系。',
+      },
+      {
+        href: Routes.Subnautica2SilverIngot,
+        title: 'Silver Ingot 指南',
+        description:
+          'Silver x3、Processor 加工、Advanced Battery、Tadpole Dock 和原矿库存规划。',
       },
       {
         href: Routes.Subnautica2AirTank,
