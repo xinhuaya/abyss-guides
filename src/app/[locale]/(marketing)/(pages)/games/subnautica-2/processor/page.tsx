@@ -146,6 +146,10 @@ const processorCopy: Record<string, ProcessorCopy> = {
       { href: Routes.Subnautica2PlasteelIngot, label: 'Plasteel Ingot Guide' },
       { href: Routes.Subnautica2GoldIngot, label: 'Gold Ingot Guide' },
       {
+        href: Routes.Subnautica2GermaniumIngot,
+        label: 'Germanium Ingot Guide',
+      },
+      {
         href: Routes.Subnautica2HabitatBuilder,
         label: 'Habitat Builder Guide',
       },
@@ -379,6 +383,10 @@ const processorCopy: Record<string, ProcessorCopy> = {
       { href: Routes.Subnautica2CopperWire, label: 'Copper Wire Guide' },
       { href: Routes.Subnautica2PlasteelIngot, label: 'Plasteel Ingot Guide' },
       { href: Routes.Subnautica2GoldIngot, label: 'Gold Ingot Guide' },
+      {
+        href: Routes.Subnautica2GermaniumIngot,
+        label: 'Germanium Ingot Guide',
+      },
       {
         href: Routes.Subnautica2HabitatBuilder,
         label: 'Habitat Builder Guide',

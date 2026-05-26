@@ -188,6 +188,10 @@ const resourcesCopy: Record<string, ResourcesCopy> = {
       { href: Routes.Subnautica2Lithium, label: 'Lithium Location Guide' },
       { href: Routes.Subnautica2PlasteelIngot, label: 'Plasteel Ingot Guide' },
       { href: Routes.Subnautica2Lead, label: 'Lead Location Guide' },
+      {
+        href: Routes.Subnautica2GermaniumIngot,
+        label: 'Germanium Ingot Guide',
+      },
       { href: Routes.Subnautica2Gold, label: 'Gold Location Guide' },
       { href: Routes.Subnautica2GoldIngot, label: 'Gold Ingot Guide' },
       { href: Routes.Subnautica2HeatTolerance, label: 'Heat Tolerance Guide' },
@@ -374,6 +378,10 @@ const resourcesCopy: Record<string, ResourcesCopy> = {
       { href: Routes.Subnautica2Lithium, label: 'Lithium Location Guide' },
       { href: Routes.Subnautica2PlasteelIngot, label: 'Plasteel Ingot 指南' },
       { href: Routes.Subnautica2Lead, label: 'Lead Location Guide' },
+      {
+        href: Routes.Subnautica2GermaniumIngot,
+        label: 'Germanium Ingot 指南',
+      },
       { href: Routes.Subnautica2Gold, label: 'Gold Location Guide' },
       { href: Routes.Subnautica2GoldIngot, label: 'Gold Ingot 指南' },
       { href: Routes.Subnautica2HeatTolerance, label: 'Heat Tolerance Guide' },

@@ -296,6 +296,12 @@ const copyByLocale: Record<'en' | 'zh', HubCopy> = {
           'Northeast ravine route, blue current entry, hand pickups, Sonic Resonator unlock, and Germanium processing.',
       },
       {
+        href: Routes.Subnautica2GermaniumIngot,
+        title: 'Germanium Ingot',
+        description:
+          'Lead x2 or Silver x2, Processor crafting, input choice, and base-power uses.',
+      },
+      {
         href: Routes.Subnautica2Gold,
         title: 'Gold',
         description:
@@ -727,6 +733,12 @@ const copyByLocale: Record<'en' | 'zh', HubCopy> = {
         title: 'Lead 位置',
         description:
           '东北峡谷路线、蓝色水流入口、手捡小块、Sonic Resonator 解锁和 Germanium 加工。',
+      },
+      {
+        href: Routes.Subnautica2GermaniumIngot,
+        title: 'Germanium Ingot',
+        description:
+          'Lead x2 或 Silver x2、Processor 加工、原料选择和基地供电用途。',
       },
       {
         href: Routes.Subnautica2Gold,

@@ -134,6 +134,10 @@ const leadCopy: Record<string, LeadCopy> = {
       { href: Routes.Subnautica2OxygenDepth, label: 'Oxygen and Depth' },
       { href: Routes.Subnautica2Resources, label: 'Resources Guide' },
       { href: Routes.Subnautica2Silver, label: 'Silver Location Guide' },
+      {
+        href: Routes.Subnautica2GermaniumIngot,
+        label: 'Germanium Ingot Guide',
+      },
       { href: Routes.Subnautica2Lithium, label: 'Lithium Location Guide' },
       { href: Routes.Subnautica2MetalFarm, label: 'Metal Farm Guide' },
     ],
@@ -242,6 +246,7 @@ const leadCopy: Record<string, LeadCopy> = {
       { href: Routes.Subnautica2OxygenDepth, label: '氧气和深度' },
       { href: Routes.Subnautica2Resources, label: '资源指南' },
       { href: Routes.Subnautica2Silver, label: 'Silver 位置指南' },
+      { href: Routes.Subnautica2GermaniumIngot, label: 'Germanium Ingot 指南' },
       { href: Routes.Subnautica2Lithium, label: 'Lithium 位置指南' },
       { href: Routes.Subnautica2MetalFarm, label: '金属采集路线' },
     ],
