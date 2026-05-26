@@ -140,6 +140,12 @@ const copyByLocale: Record<'en' | 'zh', HubCopy> = {
           'Scan/Data Box unlock leads, Titanium x5, Habitat Builder placement, Tadpole Dock clearance, and insufficient-space fixes.',
       },
       {
+        href: Routes.Subnautica2InsufficientSpaceToDock,
+        title: 'Insufficient Space to Dock Fix',
+        description:
+          'Moonpool depth, Tadpole Dock clearance, approach path, Vehicle Fabricator spacing, and rebuild timing.',
+      },
+      {
         href: Routes.Subnautica2AcidicRaionPouch,
         title: 'Acidic Raion Pouch',
         description:
@@ -609,6 +615,12 @@ const copyByLocale: Record<'en' | 'zh', HubCopy> = {
         title: 'Moonpool 指南',
         description:
           '扫描 / Data Box 解锁线索、Titanium x5、Habitat Builder 摆放、Tadpole Dock 空间和空间不足修正。',
+      },
+      {
+        href: Routes.Subnautica2InsufficientSpaceToDock,
+        title: 'Insufficient Space to Dock 修复',
+        description:
+          'Moonpool 深度、Tadpole Dock 空间、进出路线、Vehicle Fabricator 距离和重建时机。',
       },
       {
         href: Routes.Subnautica2HabitatBuilder,

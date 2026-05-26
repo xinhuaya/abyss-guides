@@ -46,6 +46,10 @@ export default function TadpoleGuidePage() {
           label: 'Vehicle Fabricator Guide',
         },
         { href: Routes.Subnautica2Moonpool, label: 'Moonpool Guide' },
+        {
+          href: Routes.Subnautica2InsufficientSpaceToDock,
+          label: 'Insufficient Space to Dock Fix',
+        },
         { href: Routes.Subnautica2TadpoleDock, label: 'Tadpole Dock Guide' },
         {
           href: Routes.Subnautica2ModificationStation,

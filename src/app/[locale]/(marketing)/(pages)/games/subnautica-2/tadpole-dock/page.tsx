@@ -126,6 +126,10 @@ const tadpoleDockCopy: Record<string, TadpoleDockCopy> = {
     related: [
       { href: Routes.Subnautica2Moonpool, label: 'Moonpool Guide' },
       {
+        href: Routes.Subnautica2InsufficientSpaceToDock,
+        label: 'Insufficient Space to Dock Fix',
+      },
+      {
         href: Routes.Subnautica2VehicleFabricator,
         label: 'Vehicle Fabricator Guide',
       },
@@ -244,6 +248,10 @@ const tadpoleDockCopy: Record<string, TadpoleDockCopy> = {
     readNextTitle: '继续阅读',
     related: [
       { href: Routes.Subnautica2Moonpool, label: 'Moonpool 指南' },
+      {
+        href: Routes.Subnautica2InsufficientSpaceToDock,
+        label: 'Insufficient Space to Dock 修复',
+      },
       {
         href: Routes.Subnautica2VehicleFabricator,
         label: 'Vehicle Fabricator 指南',

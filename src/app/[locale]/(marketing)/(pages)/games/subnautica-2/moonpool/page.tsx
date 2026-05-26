@@ -134,6 +134,10 @@ const moonpoolCopy: Record<string, MoonpoolCopy> = {
     ],
     readNextTitle: 'Read next',
     related: [
+      {
+        href: Routes.Subnautica2InsufficientSpaceToDock,
+        label: 'Insufficient Space to Dock Fix',
+      },
       { href: Routes.Subnautica2BaseBuilding, label: 'Base Building Guide' },
       {
         href: Routes.Subnautica2HabitatBuilder,
@@ -250,6 +254,10 @@ const moonpoolCopy: Record<string, MoonpoolCopy> = {
     ],
     readNextTitle: '继续阅读',
     related: [
+      {
+        href: Routes.Subnautica2InsufficientSpaceToDock,
+        label: 'Insufficient Space to Dock 修复',
+      },
       { href: Routes.Subnautica2BaseBuilding, label: '基地建造指南' },
       { href: Routes.Subnautica2HabitatBuilder, label: 'Habitat Builder 指南' },
       { href: Routes.Subnautica2TadpoleDock, label: 'Tadpole Dock 指南' },
