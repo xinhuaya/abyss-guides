@@ -134,6 +134,10 @@ const scannerStationCopy: Record<string, ScannerStationCopy> = {
       { href: Routes.Subnautica2SystemChip, label: 'System Chip Guide' },
       { href: Routes.Subnautica2WiringKit, label: 'Wiring Kit Guide' },
       { href: Routes.Subnautica2CopperWire, label: 'Copper Wire Guide' },
+      {
+        href: Routes.Subnautica2BatteryTerminal,
+        label: 'Battery Terminal Guide',
+      },
       { href: Routes.Subnautica2BaseBuilding, label: 'Base Building Guide' },
       { href: Routes.Subnautica2Resources, label: 'Resources Guide' },
       { href: Routes.Subnautica2Crafting, label: 'Crafting Guide' },
@@ -242,6 +246,10 @@ const scannerStationCopy: Record<string, ScannerStationCopy> = {
       { href: Routes.Subnautica2SystemChip, label: 'System Chip 指南' },
       { href: Routes.Subnautica2WiringKit, label: 'Wiring Kit 指南' },
       { href: Routes.Subnautica2CopperWire, label: 'Copper Wire 指南' },
+      {
+        href: Routes.Subnautica2BatteryTerminal,
+        label: 'Battery Terminal Guide',
+      },
       { href: Routes.Subnautica2BaseBuilding, label: '基地建造指南' },
       { href: Routes.Subnautica2Resources, label: '资源指南' },
       { href: Routes.Subnautica2Crafting, label: '制作指南' },

@@ -98,6 +98,12 @@ const copyByLocale: Record<'en' | 'zh', HubCopy> = {
           'Default unlock, Copper x2, Acidic Raion Pouch x1, 100 energy, and early tool priorities.',
       },
       {
+        href: Routes.Subnautica2BatteryTerminal,
+        title: 'Battery Terminal',
+        description:
+          'Old Habitat fragment route, Habitat Builder placement, Copper Wire prep, six-slot battery rotation, and base power safety.',
+      },
+      {
         href: Routes.Subnautica2AcidicRaionPouch,
         title: 'Acidic Raion Pouch',
         description:
@@ -513,6 +519,12 @@ const copyByLocale: Record<'en' | 'zh', HubCopy> = {
         href: Routes.Subnautica2Copper,
         title: '铜在哪里找',
         description: '开局电池、电子元件和扫描器相关路线。',
+      },
+      {
+        href: Routes.Subnautica2BatteryTerminal,
+        title: 'Battery Terminal 指南',
+        description:
+          'Old Habitat 碎片路线、Habitat Builder 放置、Copper Wire 准备、6 格电池轮换和基地供电安全。',
       },
       {
         href: Routes.Subnautica2CopperWire,

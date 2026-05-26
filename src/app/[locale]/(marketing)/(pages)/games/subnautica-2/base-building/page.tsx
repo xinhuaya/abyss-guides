@@ -238,6 +238,10 @@ const baseCopy: Record<string, BaseCopy> = {
     related: [
       { href: Routes.Subnautica2Map, label: '地图与生态区' },
       { href: Routes.Subnautica2ScannerStation, label: 'Scanner Station 指南' },
+      {
+        href: Routes.Subnautica2BatteryTerminal,
+        label: 'Battery Terminal Guide',
+      },
       { href: Routes.Subnautica2Beacon, label: 'Beacon 指南' },
       { href: Routes.Subnautica2RepairTool, label: 'Repair Tool 指南' },
       { href: Routes.Subnautica2Titanium, label: 'Titanium 位置指南' },

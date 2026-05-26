@@ -131,6 +131,10 @@ const habitatBuilderCopy: Record<string, HabitatBuilderCopy> = {
     related: [
       { href: Routes.Subnautica2BaseBuilding, label: 'Base Building Guide' },
       { href: Routes.Subnautica2BasicBattery, label: 'Basic Battery Guide' },
+      {
+        href: Routes.Subnautica2BatteryTerminal,
+        label: 'Battery Terminal Guide',
+      },
       { href: Routes.Subnautica2CopperWire, label: 'Copper Wire Guide' },
       { href: Routes.Subnautica2Quartz, label: 'Quartz Location Guide' },
       { href: Routes.Subnautica2Glass, label: 'Glass Recipe Guide' },
@@ -242,6 +246,10 @@ const habitatBuilderCopy: Record<string, HabitatBuilderCopy> = {
     related: [
       { href: Routes.Subnautica2BaseBuilding, label: '基地建造指南' },
       { href: Routes.Subnautica2BasicBattery, label: 'Basic Battery 指南' },
+      {
+        href: Routes.Subnautica2BatteryTerminal,
+        label: 'Battery Terminal Guide',
+      },
       { href: Routes.Subnautica2CopperWire, label: 'Copper Wire 指南' },
       { href: Routes.Subnautica2Quartz, label: 'Quartz Location Guide' },
       { href: Routes.Subnautica2Glass, label: 'Glass 配方指南' },
@@ -353,6 +361,10 @@ const habitatBuilderCopy: Record<string, HabitatBuilderCopy> = {
     related: [
       { href: Routes.Subnautica2BaseBuilding, label: 'Base Building ガイド' },
       { href: Routes.Subnautica2BasicBattery, label: 'Basic Battery Guide' },
+      {
+        href: Routes.Subnautica2BatteryTerminal,
+        label: 'Battery Terminal Guide',
+      },
       { href: Routes.Subnautica2CopperWire, label: 'Copper Wire ガイド' },
       { href: Routes.Subnautica2Quartz, label: 'Quartz Location Guide' },
       { href: Routes.Subnautica2Glass, label: 'Glass Recipe Guide' },

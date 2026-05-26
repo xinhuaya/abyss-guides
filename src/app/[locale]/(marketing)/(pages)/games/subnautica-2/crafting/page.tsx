@@ -158,6 +158,10 @@ const craftingCopy: Record<string, CraftingCopy> = {
       { href: Routes.Subnautica2ImprovedFins, label: 'Improved Fins Guide' },
       { href: Routes.Subnautica2Titanium, label: 'Titanium Location Guide' },
       { href: Routes.Subnautica2Copper, label: 'Copper Location' },
+      {
+        href: Routes.Subnautica2BatteryTerminal,
+        label: 'Battery Terminal Guide',
+      },
       { href: Routes.Subnautica2BasicBattery, label: 'Basic Battery Guide' },
       {
         href: Routes.Subnautica2AcidicRaionPouch,
@@ -312,6 +316,10 @@ const craftingCopy: Record<string, CraftingCopy> = {
       { href: Routes.Subnautica2Titanium, label: 'Titanium 位置指南' },
       { href: Routes.Subnautica2Copper, label: 'Copper 位置' },
       {
+        href: Routes.Subnautica2BatteryTerminal,
+        label: 'Battery Terminal Guide',
+      },
+      {
         href: Routes.Subnautica2AcidicRaionPouch,
         label: 'Acidic Raion Pouch Guide',
       },
@@ -436,6 +444,10 @@ const craftingCopy: Record<string, CraftingCopy> = {
       { href: Routes.Subnautica2Titanium, label: 'Titanium Location Guide' },
       { href: Routes.Subnautica2Glass, label: 'Glass Recipe Guide' },
       { href: Routes.Subnautica2Copper, label: 'Copper' },
+      {
+        href: Routes.Subnautica2BatteryTerminal,
+        label: 'Battery Terminal Guide',
+      },
       { href: Routes.Subnautica2Silver, label: 'Silver' },
     ],
     sourcesTitle: 'Источники',
@@ -539,6 +551,10 @@ const craftingCopy: Record<string, CraftingCopy> = {
       { href: Routes.Subnautica2Titanium, label: 'Titanium Location Guide' },
       { href: Routes.Subnautica2Glass, label: 'Glass Recipe Guide' },
       { href: Routes.Subnautica2Copper, label: 'Copper finden' },
+      {
+        href: Routes.Subnautica2BatteryTerminal,
+        label: 'Battery Terminal Guide',
+      },
       { href: Routes.Subnautica2Silver, label: 'Silver finden' },
     ],
     sourcesTitle: 'Quellen',
@@ -651,6 +667,10 @@ const craftingCopy: Record<string, CraftingCopy> = {
       { href: Routes.Subnautica2Titanium, label: 'Titanium Location Guide' },
       { href: Routes.Subnautica2Glass, label: 'Glass Recipe Guide' },
       { href: Routes.Subnautica2Copper, label: 'Où trouver Copper' },
+      {
+        href: Routes.Subnautica2BatteryTerminal,
+        label: 'Battery Terminal Guide',
+      },
       { href: Routes.Subnautica2Silver, label: 'Où trouver Silver' },
     ],
     sourcesTitle: 'Sources',
@@ -754,6 +774,10 @@ const craftingCopy: Record<string, CraftingCopy> = {
       { href: Routes.Subnautica2Titanium, label: 'Titanium Location Guide' },
       { href: Routes.Subnautica2Glass, label: 'Glass Recipe Guide' },
       { href: Routes.Subnautica2Copper, label: 'Onde encontrar Copper' },
+      {
+        href: Routes.Subnautica2BatteryTerminal,
+        label: 'Battery Terminal Guide',
+      },
       { href: Routes.Subnautica2Silver, label: 'Onde encontrar Silver' },
     ],
     sourcesTitle: 'Fontes',
@@ -857,6 +881,10 @@ const craftingCopy: Record<string, CraftingCopy> = {
       { href: Routes.Subnautica2Titanium, label: 'Titanium Location Guide' },
       { href: Routes.Subnautica2Glass, label: 'Glass Recipe Guide' },
       { href: Routes.Subnautica2Copper, label: 'Dónde encontrar Copper' },
+      {
+        href: Routes.Subnautica2BatteryTerminal,
+        label: 'Battery Terminal Guide',
+      },
       { href: Routes.Subnautica2Silver, label: 'Dónde encontrar Silver' },
     ],
     sourcesTitle: 'Fuentes',
@@ -960,6 +988,10 @@ const craftingCopy: Record<string, CraftingCopy> = {
       { href: Routes.Subnautica2Titanium, label: 'Titanium Location Guide' },
       { href: Routes.Subnautica2Glass, label: 'Glass Recipe Guide' },
       { href: Routes.Subnautica2Copper, label: 'Copper 위치' },
+      {
+        href: Routes.Subnautica2BatteryTerminal,
+        label: 'Battery Terminal Guide',
+      },
       { href: Routes.Subnautica2Silver, label: 'Silver 위치' },
     ],
     sourcesTitle: '출처 메모',
@@ -1063,6 +1095,10 @@ const craftingCopy: Record<string, CraftingCopy> = {
       { href: Routes.Subnautica2Titanium, label: 'Titanium Location Guide' },
       { href: Routes.Subnautica2Glass, label: 'Glass Recipe Guide' },
       { href: Routes.Subnautica2Copper, label: 'Copper の場所' },
+      {
+        href: Routes.Subnautica2BatteryTerminal,
+        label: 'Battery Terminal Guide',
+      },
       { href: Routes.Subnautica2Silver, label: 'Silver の場所' },
     ],
     sourcesTitle: '出典メモ',
