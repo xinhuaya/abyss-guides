@@ -137,6 +137,7 @@ const heatToleranceCopy: Record<string, HeatToleranceCopy> = {
     readNextTitle: 'Read next',
     related: [
       { href: Routes.Subnautica2AngelComb, label: 'Angel Comb Guide' },
+      { href: Routes.Subnautica2BloomBiofilm, label: 'Bloom Biofilm Guide' },
       {
         href: Routes.Subnautica2SonicResonator,
         label: 'Sonic Resonator Guide',

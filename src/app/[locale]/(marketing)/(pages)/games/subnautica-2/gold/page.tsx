@@ -136,6 +136,7 @@ const goldCopy: Record<string, GoldCopy> = {
     related: [
       { href: Routes.Subnautica2HeatTolerance, label: 'Heat Tolerance Guide' },
       { href: Routes.Subnautica2AngelComb, label: 'Angel Comb Guide' },
+      { href: Routes.Subnautica2BloomBiofilm, label: 'Bloom Biofilm Guide' },
       {
         href: Routes.Subnautica2SonicResonator,
         label: 'Sonic Resonator Guide',
@@ -256,6 +257,7 @@ const goldCopy: Record<string, GoldCopy> = {
     related: [
       { href: Routes.Subnautica2HeatTolerance, label: 'Heat Tolerance Guide' },
       { href: Routes.Subnautica2AngelComb, label: 'Angel Comb Guide' },
+      { href: Routes.Subnautica2BloomBiofilm, label: 'Bloom Biofilm Guide' },
       { href: Routes.Subnautica2SonicResonator, label: 'Sonic Resonator 指南' },
       { href: Routes.Subnautica2SystemChip, label: 'System Chip 指南' },
       { href: Routes.Subnautica2StrongAcid, label: 'Strong Acid 指南' },

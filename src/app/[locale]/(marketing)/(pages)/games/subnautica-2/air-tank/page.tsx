@@ -122,6 +122,7 @@ const airTankCopy: Record<string, AirTankCopy> = {
     related: [
       { href: Routes.Subnautica2HeatTolerance, label: 'Heat Tolerance Guide' },
       { href: Routes.Subnautica2AngelComb, label: 'Angel Comb Guide' },
+      { href: Routes.Subnautica2BloomBiofilm, label: 'Bloom Biofilm Guide' },
       { href: Routes.Subnautica2BasicFins, label: 'Basic Fins Guide' },
       { href: Routes.Subnautica2ImprovedFins, label: 'Improved Fins Guide' },
       { href: Routes.Subnautica2Rubber, label: 'Rubber Recipe Guide' },
@@ -229,6 +230,7 @@ const airTankCopy: Record<string, AirTankCopy> = {
     related: [
       { href: Routes.Subnautica2HeatTolerance, label: 'Heat Tolerance Guide' },
       { href: Routes.Subnautica2AngelComb, label: 'Angel Comb Guide' },
+      { href: Routes.Subnautica2BloomBiofilm, label: 'Bloom Biofilm Guide' },
       { href: Routes.Subnautica2BasicFins, label: 'Basic Fins 指南' },
       { href: Routes.Subnautica2Rubber, label: 'Rubber 配方指南' },
       { href: Routes.Subnautica2Silver, label: '银位置' },
@@ -331,6 +333,7 @@ const airTankCopy: Record<string, AirTankCopy> = {
     related: [
       { href: Routes.Subnautica2HeatTolerance, label: 'Heat Tolerance Guide' },
       { href: Routes.Subnautica2AngelComb, label: 'Angel Comb Guide' },
+      { href: Routes.Subnautica2BloomBiofilm, label: 'Bloom Biofilm Guide' },
       { href: Routes.Subnautica2Silver, label: 'Где найти Silver' },
       { href: Routes.Subnautica2Copper, label: 'Где найти Copper' },
       { href: Routes.Subnautica2Resources, label: 'Ресурсы' },
@@ -432,6 +435,7 @@ const airTankCopy: Record<string, AirTankCopy> = {
     related: [
       { href: Routes.Subnautica2HeatTolerance, label: 'Heat Tolerance Guide' },
       { href: Routes.Subnautica2AngelComb, label: 'Angel Comb Guide' },
+      { href: Routes.Subnautica2BloomBiofilm, label: 'Bloom Biofilm Guide' },
       { href: Routes.Subnautica2Silver, label: 'Silver finden' },
       { href: Routes.Subnautica2Copper, label: 'Copper finden' },
       { href: Routes.Subnautica2Resources, label: 'Ressourcen' },
@@ -539,6 +543,7 @@ const airTankCopy: Record<string, AirTankCopy> = {
     related: [
       { href: Routes.Subnautica2HeatTolerance, label: 'Heat Tolerance Guide' },
       { href: Routes.Subnautica2AngelComb, label: 'Angel Comb Guide' },
+      { href: Routes.Subnautica2BloomBiofilm, label: 'Bloom Biofilm Guide' },
       { href: Routes.Subnautica2Silver, label: 'Trouver Silver' },
       { href: Routes.Subnautica2Copper, label: 'Trouver Copper' },
       { href: Routes.Subnautica2Resources, label: 'Ressources' },
@@ -640,6 +645,7 @@ const airTankCopy: Record<string, AirTankCopy> = {
     related: [
       { href: Routes.Subnautica2HeatTolerance, label: 'Heat Tolerance Guide' },
       { href: Routes.Subnautica2AngelComb, label: 'Angel Comb Guide' },
+      { href: Routes.Subnautica2BloomBiofilm, label: 'Bloom Biofilm Guide' },
       { href: Routes.Subnautica2Silver, label: 'Onde encontrar Silver' },
       { href: Routes.Subnautica2Copper, label: 'Onde encontrar Copper' },
       { href: Routes.Subnautica2Resources, label: 'Recursos' },
@@ -741,6 +747,7 @@ const airTankCopy: Record<string, AirTankCopy> = {
     related: [
       { href: Routes.Subnautica2HeatTolerance, label: 'Heat Tolerance Guide' },
       { href: Routes.Subnautica2AngelComb, label: 'Angel Comb Guide' },
+      { href: Routes.Subnautica2BloomBiofilm, label: 'Bloom Biofilm Guide' },
       { href: Routes.Subnautica2Silver, label: 'Dónde encontrar Silver' },
       { href: Routes.Subnautica2Copper, label: 'Dónde encontrar Copper' },
       { href: Routes.Subnautica2Resources, label: 'Recursos' },
@@ -842,6 +849,7 @@ const airTankCopy: Record<string, AirTankCopy> = {
     related: [
       { href: Routes.Subnautica2HeatTolerance, label: 'Heat Tolerance Guide' },
       { href: Routes.Subnautica2AngelComb, label: 'Angel Comb Guide' },
+      { href: Routes.Subnautica2BloomBiofilm, label: 'Bloom Biofilm Guide' },
       { href: Routes.Subnautica2Silver, label: 'Silver 위치' },
       { href: Routes.Subnautica2Copper, label: 'Copper 위치' },
       { href: Routes.Subnautica2Resources, label: '자원 가이드' },
@@ -942,6 +950,7 @@ const airTankCopy: Record<string, AirTankCopy> = {
     related: [
       { href: Routes.Subnautica2HeatTolerance, label: 'Heat Tolerance Guide' },
       { href: Routes.Subnautica2AngelComb, label: 'Angel Comb Guide' },
+      { href: Routes.Subnautica2BloomBiofilm, label: 'Bloom Biofilm Guide' },
       { href: Routes.Subnautica2Silver, label: 'Silver の場所' },
       { href: Routes.Subnautica2Copper, label: 'Copper の場所' },
       { href: Routes.Subnautica2Resources, label: '資源ガイド' },

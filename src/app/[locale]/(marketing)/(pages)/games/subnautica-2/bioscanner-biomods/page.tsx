@@ -139,6 +139,7 @@ const bioscannerCopy: Record<string, BioscannerCopy> = {
     readNextTitle: 'Read next',
     related: [
       { href: Routes.Subnautica2AngelComb, label: 'Angel Comb Guide' },
+      { href: Routes.Subnautica2BloomBiofilm, label: 'Bloom Biofilm Guide' },
       { href: Routes.Subnautica2Biolab, label: 'Biolab Guide' },
       { href: Routes.Subnautica2Scanner, label: 'Scanner Guide' },
       {
@@ -251,6 +252,7 @@ const bioscannerCopy: Record<string, BioscannerCopy> = {
     readNextTitle: '继续看',
     related: [
       { href: Routes.Subnautica2AngelComb, label: 'Angel Comb Guide' },
+      { href: Routes.Subnautica2BloomBiofilm, label: 'Bloom Biofilm Guide' },
       { href: Routes.Subnautica2Biolab, label: 'Biolab 指南' },
       { href: Routes.Subnautica2Scanner, label: 'Scanner 指南' },
       {
@@ -359,6 +361,7 @@ const bioscannerCopy: Record<string, BioscannerCopy> = {
     readNextTitle: '次に読む',
     related: [
       { href: Routes.Subnautica2AngelComb, label: 'Angel Comb Guide' },
+      { href: Routes.Subnautica2BloomBiofilm, label: 'Bloom Biofilm Guide' },
       { href: Routes.Subnautica2Biolab, label: 'Biolab Guide' },
       { href: Routes.Subnautica2Scanner, label: 'Scanner Guide' },
       {

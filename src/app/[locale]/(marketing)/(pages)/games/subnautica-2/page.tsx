@@ -254,6 +254,12 @@ const copyByLocale: Record<'en' | 'zh', HubCopy> = {
           'Bloom Biofilm clearing order, northwest search pocket, Sonic Resonator prep, and Heat Tolerance route safety.',
       },
       {
+        href: Routes.Subnautica2BloomBiofilm,
+        title: 'Bloom Biofilm',
+        description:
+          'Sonic Resonator controls, Bloom Cankers, Angel Comb blockers, Feedback Resonator timing, and common mistakes.',
+      },
+      {
         href: Routes.Subnautica2Salt,
         title: 'Salt',
         description:
@@ -613,6 +619,12 @@ const copyByLocale: Record<'en' | 'zh', HubCopy> = {
         title: 'Angel Comb 指南',
         description:
           'Bloom Biofilm 清理顺序、西北搜索区域、Sonic Resonator 准备和 Heat Tolerance 路线安全。',
+      },
+      {
+        href: Routes.Subnautica2BloomBiofilm,
+        title: 'Bloom Biofilm 指南',
+        description:
+          'Sonic Resonator 操作、Bloom Cankers、Angel Comb 卡关、Feedback Resonator 时机和常见错误。',
       },
       {
         href: Routes.Subnautica2Salt,

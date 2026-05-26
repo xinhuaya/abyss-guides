@@ -133,6 +133,7 @@ const angelCombCopy: Record<string, AngelCombCopy> = {
     ],
     readNextTitle: 'Read next',
     related: [
+      { href: Routes.Subnautica2BloomBiofilm, label: 'Bloom Biofilm Guide' },
       { href: Routes.Subnautica2HeatTolerance, label: 'Heat Tolerance Guide' },
       {
         href: Routes.Subnautica2SonicResonator,
@@ -249,6 +250,7 @@ const angelCombCopy: Record<string, AngelCombCopy> = {
     ],
     readNextTitle: '继续阅读',
     related: [
+      { href: Routes.Subnautica2BloomBiofilm, label: 'Bloom Biofilm 指南' },
       { href: Routes.Subnautica2HeatTolerance, label: 'Heat Tolerance 指南' },
       { href: Routes.Subnautica2SonicResonator, label: 'Sonic Resonator 指南' },
       { href: Routes.Subnautica2AirTank, label: '气瓶和氧气指南' },

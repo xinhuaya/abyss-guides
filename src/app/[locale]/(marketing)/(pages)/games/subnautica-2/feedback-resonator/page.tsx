@@ -138,6 +138,7 @@ const feedbackCopy: Record<string, FeedbackCopy> = {
     ],
     readNextTitle: 'Read next',
     related: [
+      { href: Routes.Subnautica2BloomBiofilm, label: 'Bloom Biofilm Guide' },
       {
         href: Routes.Subnautica2SonicResonator,
         label: 'Sonic Resonator Guide',
@@ -269,6 +270,7 @@ const feedbackCopy: Record<string, FeedbackCopy> = {
     ],
     readNextTitle: '继续看',
     related: [
+      { href: Routes.Subnautica2BloomBiofilm, label: 'Bloom Biofilm Guide' },
       {
         href: Routes.Subnautica2SonicResonator,
         label: 'Sonic Resonator 指南',
@@ -398,6 +400,7 @@ const feedbackCopy: Record<string, FeedbackCopy> = {
     ],
     readNextTitle: 'Read next',
     related: [
+      { href: Routes.Subnautica2BloomBiofilm, label: 'Bloom Biofilm Guide' },
       {
         href: Routes.Subnautica2SonicResonator,
         label: 'Sonic Resonator Guide',
