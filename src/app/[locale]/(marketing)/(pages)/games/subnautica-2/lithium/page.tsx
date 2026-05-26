@@ -144,6 +144,7 @@ const lithiumCopy: Record<string, LithiumCopy> = {
         label: 'Sonic Resonator Guide',
       },
       { href: Routes.Subnautica2Wakemaker, label: 'Wakemaker Guide' },
+      { href: Routes.Subnautica2PlasteelIngot, label: 'Plasteel Ingot Guide' },
       { href: Routes.Subnautica2Tadpole, label: 'Tadpole Vehicle Guide' },
       { href: Routes.Subnautica2Resources, label: 'Resources Guide' },
       { href: Routes.Subnautica2Quartz, label: 'Quartz Location Guide' },
