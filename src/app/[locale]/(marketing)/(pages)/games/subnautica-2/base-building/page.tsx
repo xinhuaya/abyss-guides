@@ -134,6 +134,7 @@ const baseCopy: Record<string, BaseCopy> = {
         href: Routes.Subnautica2VehicleFabricator,
         label: 'Vehicle Fabricator Guide',
       },
+      { href: Routes.Subnautica2Moonpool, label: 'Moonpool Guide' },
       { href: Routes.Subnautica2TadpoleDock, label: 'Tadpole Dock Guide' },
       { href: Routes.Subnautica2Map, label: 'Map and Biomes' },
       {
@@ -246,6 +247,7 @@ const baseCopy: Record<string, BaseCopy> = {
         href: Routes.Subnautica2VehicleFabricator,
         label: 'Vehicle Fabricator 指南',
       },
+      { href: Routes.Subnautica2Moonpool, label: 'Moonpool 指南' },
       { href: Routes.Subnautica2TadpoleDock, label: 'Tadpole Dock 指南' },
       { href: Routes.Subnautica2ScannerStation, label: 'Scanner Station 指南' },
       {

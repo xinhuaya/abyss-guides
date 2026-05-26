@@ -134,6 +134,7 @@ const habitatBuilderCopy: Record<string, HabitatBuilderCopy> = {
         href: Routes.Subnautica2VehicleFabricator,
         label: 'Vehicle Fabricator Guide',
       },
+      { href: Routes.Subnautica2Moonpool, label: 'Moonpool Guide' },
       { href: Routes.Subnautica2TadpoleDock, label: 'Tadpole Dock Guide' },
       { href: Routes.Subnautica2BasicBattery, label: 'Basic Battery Guide' },
       {
@@ -254,6 +255,7 @@ const habitatBuilderCopy: Record<string, HabitatBuilderCopy> = {
         href: Routes.Subnautica2VehicleFabricator,
         label: 'Vehicle Fabricator 指南',
       },
+      { href: Routes.Subnautica2Moonpool, label: 'Moonpool 指南' },
       { href: Routes.Subnautica2TadpoleDock, label: 'Tadpole Dock 指南' },
       { href: Routes.Subnautica2BasicBattery, label: 'Basic Battery 指南' },
       {

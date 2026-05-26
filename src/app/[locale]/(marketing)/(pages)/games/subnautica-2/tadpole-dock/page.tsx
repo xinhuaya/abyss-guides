@@ -124,6 +124,7 @@ const tadpoleDockCopy: Record<string, TadpoleDockCopy> = {
     ],
     readNextTitle: 'Read next',
     related: [
+      { href: Routes.Subnautica2Moonpool, label: 'Moonpool Guide' },
       {
         href: Routes.Subnautica2VehicleFabricator,
         label: 'Vehicle Fabricator Guide',
@@ -242,6 +243,7 @@ const tadpoleDockCopy: Record<string, TadpoleDockCopy> = {
     ],
     readNextTitle: '继续阅读',
     related: [
+      { href: Routes.Subnautica2Moonpool, label: 'Moonpool 指南' },
       {
         href: Routes.Subnautica2VehicleFabricator,
         label: 'Vehicle Fabricator 指南',

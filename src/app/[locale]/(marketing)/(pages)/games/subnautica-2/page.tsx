@@ -134,6 +134,12 @@ const copyByLocale: Record<'en' | 'zh', HubCopy> = {
           'Moonpool placement, dock clearance, Titanium Ingot, Silver Ingot, Copper Wire, and Tadpole approach testing.',
       },
       {
+        href: Routes.Subnautica2Moonpool,
+        title: 'Moonpool',
+        description:
+          'Scan/Data Box unlock leads, Titanium x5, Habitat Builder placement, Tadpole Dock clearance, and insufficient-space fixes.',
+      },
+      {
         href: Routes.Subnautica2AcidicRaionPouch,
         title: 'Acidic Raion Pouch',
         description:
@@ -597,6 +603,12 @@ const copyByLocale: Record<'en' | 'zh', HubCopy> = {
         title: 'Tadpole Dock 指南',
         description:
           'Moonpool 摆放、Dock 下方空间、Titanium Ingot、Silver Ingot、Copper Wire 和 Tadpole 进出测试。',
+      },
+      {
+        href: Routes.Subnautica2Moonpool,
+        title: 'Moonpool 指南',
+        description:
+          '扫描 / Data Box 解锁线索、Titanium x5、Habitat Builder 摆放、Tadpole Dock 空间和空间不足修正。',
       },
       {
         href: Routes.Subnautica2HabitatBuilder,

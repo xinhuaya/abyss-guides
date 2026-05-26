@@ -45,6 +45,7 @@ const staticRoutes = [
   Routes.Subnautica2PowerCell,
   Routes.Subnautica2VehicleFabricator,
   Routes.Subnautica2TadpoleDock,
+  Routes.Subnautica2Moonpool,
   Routes.Subnautica2Rebreather,
   Routes.Subnautica2ScannerStation,
   Routes.Subnautica2Beacon,
