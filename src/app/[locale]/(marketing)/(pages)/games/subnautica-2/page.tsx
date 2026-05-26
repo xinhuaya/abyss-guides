@@ -272,6 +272,12 @@ const copyByLocale: Record<'en' | 'zh', HubCopy> = {
           'First swim-speed upgrade, Rubber, Fiber or Fiber Mesh check, Fabricator timing, and Improved Fins planning.',
       },
       {
+        href: Routes.Subnautica2ImprovedFins,
+        title: 'Improved Fins',
+        description:
+          'Mid-game scan route, Basic Fins upgrade path, Fiber Mesh, Conduit Crystal, and Tadpole safety prep.',
+      },
+      {
         href: Routes.Subnautica2Scanner,
         title: 'Scanner and Bioscanner',
         description:
@@ -613,6 +619,12 @@ const copyByLocale: Record<'en' | 'zh', HubCopy> = {
         title: 'Basic Fins 指南',
         description:
           '第一件游速升级、Rubber、Fiber 或 Fiber Mesh 检查、Fabricator 时机和 Improved Fins 规划。',
+      },
+      {
+        href: Routes.Subnautica2ImprovedFins,
+        title: 'Improved Fins 指南',
+        description:
+          '中期扫描路线、Basic Fins 升级链、Fiber Mesh、Conduit Crystal 和 Tadpole 安全准备。',
       },
       {
         href: Routes.Subnautica2Scanner,

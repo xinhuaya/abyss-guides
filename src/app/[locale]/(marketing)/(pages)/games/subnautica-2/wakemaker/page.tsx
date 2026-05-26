@@ -132,6 +132,7 @@ const wakemakerCopy: Record<string, WakemakerCopy> = {
       { href: Routes.Subnautica2FiberMesh, label: 'Fiber Mesh Guide' },
       { href: Routes.Subnautica2Rubber, label: 'Rubber Recipe Guide' },
       { href: Routes.Subnautica2BasicFins, label: 'Basic Fins Guide' },
+      { href: Routes.Subnautica2ImprovedFins, label: 'Improved Fins Guide' },
       { href: Routes.Subnautica2AirTank, label: 'Air Tank Guide' },
       { href: Routes.Subnautica2OxygenDepth, label: 'Oxygen and Depth Guide' },
       { href: Routes.Subnautica2Scanner, label: 'Scanner Guide' },

@@ -134,6 +134,7 @@ const conduitCopy: Record<string, ConduitCopy> = {
     ],
     readNextTitle: 'Read next',
     related: [
+      { href: Routes.Subnautica2ImprovedFins, label: 'Improved Fins Guide' },
       {
         href: Routes.Subnautica2SonicResonator,
         label: 'Sonic Resonator Guide',
@@ -259,6 +260,7 @@ const conduitCopy: Record<string, ConduitCopy> = {
     ],
     readNextTitle: '继续看',
     related: [
+      { href: Routes.Subnautica2ImprovedFins, label: 'Improved Fins Guide' },
       { href: Routes.Subnautica2SonicResonator, label: 'Sonic Resonator 指南' },
       {
         href: Routes.Subnautica2FeedbackResonator,
@@ -370,6 +372,7 @@ const conduitCopy: Record<string, ConduitCopy> = {
     ],
     readNextTitle: 'Read next',
     related: [
+      { href: Routes.Subnautica2ImprovedFins, label: 'Improved Fins Guide' },
       {
         href: Routes.Subnautica2SonicResonator,
         label: 'Sonic Resonator Guide',

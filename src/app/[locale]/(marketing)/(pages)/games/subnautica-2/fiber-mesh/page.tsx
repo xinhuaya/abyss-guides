@@ -131,6 +131,7 @@ const fiberMeshCopy: Record<string, FiberMeshCopy> = {
     readNextTitle: 'Read next',
     related: [
       { href: Routes.Subnautica2BasicFins, label: 'Basic Fins Guide' },
+      { href: Routes.Subnautica2ImprovedFins, label: 'Improved Fins Guide' },
       { href: Routes.Subnautica2Rubber, label: 'Rubber Recipe Guide' },
       { href: Routes.Subnautica2Wakemaker, label: 'Wakemaker Guide' },
       { href: Routes.Subnautica2Rebreather, label: 'Rebreather Guide' },

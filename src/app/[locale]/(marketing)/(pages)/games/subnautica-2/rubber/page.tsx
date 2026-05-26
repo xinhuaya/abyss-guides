@@ -124,6 +124,7 @@ const rubberCopy: Record<string, RubberCopy> = {
     readNextTitle: 'Read next',
     related: [
       { href: Routes.Subnautica2BasicFins, label: 'Basic Fins Guide' },
+      { href: Routes.Subnautica2ImprovedFins, label: 'Improved Fins Guide' },
       { href: Routes.Subnautica2AirTank, label: 'Air Tank and O2 Guide' },
       { href: Routes.Subnautica2Wakemaker, label: 'Wakemaker Guide' },
       { href: Routes.Subnautica2FiberMesh, label: 'Fiber Mesh Guide' },

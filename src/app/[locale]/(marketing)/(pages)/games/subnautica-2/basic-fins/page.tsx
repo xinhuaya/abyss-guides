@@ -130,6 +130,7 @@ const basicFinsCopy: Record<string, BasicFinsCopy> = {
     ],
     readNextTitle: 'Read next',
     related: [
+      { href: Routes.Subnautica2ImprovedFins, label: 'Improved Fins Guide' },
       { href: Routes.Subnautica2Rubber, label: 'Rubber Recipe Guide' },
       { href: Routes.Subnautica2FiberMesh, label: 'Fiber Mesh Guide' },
       { href: Routes.Subnautica2AirTank, label: 'Air Tank and O2 Guide' },
@@ -245,6 +246,7 @@ const basicFinsCopy: Record<string, BasicFinsCopy> = {
     ],
     readNextTitle: '继续阅读',
     related: [
+      { href: Routes.Subnautica2ImprovedFins, label: 'Improved Fins 指南' },
       { href: Routes.Subnautica2Rubber, label: 'Rubber 配方指南' },
       { href: Routes.Subnautica2FiberMesh, label: 'Fiber Mesh 指南' },
       { href: Routes.Subnautica2AirTank, label: '气瓶和氧气指南' },

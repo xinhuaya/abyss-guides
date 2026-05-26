@@ -142,6 +142,7 @@ const tadpoleDepthModuleCopy: Record<string, TadpoleDepthModuleCopy> = {
     ],
     readNextTitle: 'Read next',
     related: [
+      { href: Routes.Subnautica2ImprovedFins, label: 'Improved Fins Guide' },
       { href: Routes.Subnautica2Tadpole, label: 'Tadpole Vehicle Guide' },
       {
         href: Routes.Subnautica2EnameledGlass,
@@ -263,6 +264,7 @@ const tadpoleDepthModuleCopy: Record<string, TadpoleDepthModuleCopy> = {
     ],
     readNextTitle: '继续阅读',
     related: [
+      { href: Routes.Subnautica2ImprovedFins, label: 'Improved Fins Guide' },
       { href: Routes.Subnautica2Tadpole, label: 'Tadpole 载具指南' },
       {
         href: Routes.Subnautica2EnameledGlass,
@@ -387,6 +389,7 @@ const tadpoleDepthModuleCopy: Record<string, TadpoleDepthModuleCopy> = {
     ],
     readNextTitle: '次に読む',
     related: [
+      { href: Routes.Subnautica2ImprovedFins, label: 'Improved Fins Guide' },
       { href: Routes.Subnautica2Tadpole, label: 'Tadpole ガイド' },
       {
         href: Routes.Subnautica2EnameledGlass,

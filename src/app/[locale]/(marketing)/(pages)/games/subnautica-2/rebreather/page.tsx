@@ -127,6 +127,7 @@ const rebreatherCopy: Record<string, RebreatherCopy> = {
     ],
     readNextTitle: 'Read next',
     related: [
+      { href: Routes.Subnautica2ImprovedFins, label: 'Improved Fins Guide' },
       { href: Routes.Subnautica2OxygenDepth, label: 'Oxygen and Depth Guide' },
       { href: Routes.Subnautica2AirTank, label: 'Air Tank and O2' },
       { href: Routes.Subnautica2SystemChip, label: 'System Chip Guide' },
@@ -235,6 +236,7 @@ const rebreatherCopy: Record<string, RebreatherCopy> = {
     ],
     readNextTitle: '继续阅读',
     related: [
+      { href: Routes.Subnautica2ImprovedFins, label: 'Improved Fins Guide' },
       { href: Routes.Subnautica2OxygenDepth, label: '氧气与深度指南' },
       { href: Routes.Subnautica2AirTank, label: '气瓶和氧气' },
       { href: Routes.Subnautica2SystemChip, label: 'System Chip 指南' },
