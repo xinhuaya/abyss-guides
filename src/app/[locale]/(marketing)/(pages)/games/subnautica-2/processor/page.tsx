@@ -142,6 +142,7 @@ const processorCopy: Record<string, ProcessorCopy> = {
         label: 'Acidic Raion Pouch Guide',
       },
       { href: Routes.Subnautica2CopperWire, label: 'Copper Wire Guide' },
+      { href: Routes.Subnautica2CopperIngot, label: 'Copper Ingot Guide' },
       {
         href: Routes.Subnautica2HabitatBuilder,
         label: 'Habitat Builder Guide',
@@ -259,6 +260,7 @@ const processorCopy: Record<string, ProcessorCopy> = {
         label: 'Acidic Raion Pouch 指南',
       },
       { href: Routes.Subnautica2CopperWire, label: 'Copper Wire 指南' },
+      { href: Routes.Subnautica2CopperIngot, label: 'Copper Ingot 指南' },
       { href: Routes.Subnautica2HabitatBuilder, label: 'Habitat Builder 指南' },
       { href: Routes.Subnautica2StrongAcid, label: 'Strong Acid 指南' },
       { href: Routes.Subnautica2PowerCell, label: 'Power Cell 指南' },

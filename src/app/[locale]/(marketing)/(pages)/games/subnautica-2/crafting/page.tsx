@@ -158,6 +158,7 @@ const craftingCopy: Record<string, CraftingCopy> = {
       { href: Routes.Subnautica2ImprovedFins, label: 'Improved Fins Guide' },
       { href: Routes.Subnautica2Titanium, label: 'Titanium Location Guide' },
       { href: Routes.Subnautica2Copper, label: 'Copper Location' },
+      { href: Routes.Subnautica2CopperIngot, label: 'Copper Ingot Guide' },
       {
         href: Routes.Subnautica2BatteryTerminal,
         label: 'Battery Terminal Guide',
@@ -358,6 +359,7 @@ const craftingCopy: Record<string, CraftingCopy> = {
       },
       { href: Routes.Subnautica2Silver, label: 'Silver 位置' },
       { href: Routes.Subnautica2SilverIngot, label: 'Silver Ingot 指南' },
+      { href: Routes.Subnautica2CopperIngot, label: 'Copper Ingot 指南' },
     ],
     sourcesTitle: '来源说明',
     sourceBody:

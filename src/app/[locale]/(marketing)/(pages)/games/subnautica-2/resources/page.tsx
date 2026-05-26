@@ -132,6 +132,7 @@ const resourcesCopy: Record<string, ResourcesCopy> = {
     related: [
       { href: Routes.Subnautica2Beginner, label: 'Beginner Route' },
       { href: Routes.Subnautica2Copper, label: 'Copper Location' },
+      { href: Routes.Subnautica2CopperIngot, label: 'Copper Ingot Guide' },
       { href: Routes.Subnautica2Titanium, label: 'Titanium Location Guide' },
       { href: Routes.Subnautica2BasicBattery, label: 'Basic Battery Guide' },
       {
@@ -331,6 +332,7 @@ const resourcesCopy: Record<string, ResourcesCopy> = {
     related: [
       { href: Routes.Subnautica2Beginner, label: '新手路线' },
       { href: Routes.Subnautica2Copper, label: 'Copper 位置' },
+      { href: Routes.Subnautica2CopperIngot, label: 'Copper Ingot 指南' },
       { href: Routes.Subnautica2Titanium, label: 'Titanium 位置指南' },
       { href: Routes.Subnautica2PowerCell, label: 'Power Cell 指南' },
       {

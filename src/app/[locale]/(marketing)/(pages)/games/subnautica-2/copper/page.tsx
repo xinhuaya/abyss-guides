@@ -102,6 +102,7 @@ const copperCopy: Record<string, CopperCopy> = {
     related: [
       { href: Routes.Subnautica2BasicBattery, label: 'Basic Battery Guide' },
       { href: Routes.Subnautica2CopperWire, label: 'Copper Wire Guide' },
+      { href: Routes.Subnautica2CopperIngot, label: 'Copper Ingot Guide' },
       { href: Routes.Subnautica2Silver, label: 'Silver Location' },
       { href: Routes.Subnautica2WiringKit, label: 'Wiring Kit Guide' },
       {
@@ -195,6 +196,7 @@ const copperCopy: Record<string, CopperCopy> = {
     readNextTitle: '继续阅读',
     related: [
       { href: Routes.Subnautica2Silver, label: '银位置' },
+      { href: Routes.Subnautica2CopperIngot, label: 'Copper Ingot 指南' },
       { href: Routes.Subnautica2AirTank, label: '气瓶和氧气' },
       { href: Routes.Subnautica2Resources, label: '资源指南' },
       { href: Routes.Subnautica2Crafting, label: '制作指南' },

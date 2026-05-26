@@ -143,6 +143,7 @@ const vehicleFabricatorCopy: Record<string, VehicleFabricatorCopy> = {
       },
       { href: Routes.Subnautica2TitaniumIngot, label: 'Titanium Ingot Guide' },
       { href: Routes.Subnautica2Copper, label: 'Copper Location Guide' },
+      { href: Routes.Subnautica2CopperIngot, label: 'Copper Ingot Guide' },
       { href: Routes.Subnautica2Glass, label: 'Glass Recipe Guide' },
       {
         href: Routes.Subnautica2TadpoleDepthModule,
@@ -266,6 +267,7 @@ const vehicleFabricatorCopy: Record<string, VehicleFabricatorCopy> = {
       { href: Routes.Subnautica2HabitatBuilder, label: 'Habitat Builder 指南' },
       { href: Routes.Subnautica2TitaniumIngot, label: 'Titanium Ingot 指南' },
       { href: Routes.Subnautica2Copper, label: 'Copper 位置指南' },
+      { href: Routes.Subnautica2CopperIngot, label: 'Copper Ingot 指南' },
       { href: Routes.Subnautica2Glass, label: 'Glass 配方指南' },
       {
         href: Routes.Subnautica2TadpoleDepthModule,

@@ -92,6 +92,12 @@ const copyByLocale: Record<'en' | 'zh', HubCopy> = {
           'Early battery and electronics material with Lifepod cave route notes.',
       },
       {
+        href: Routes.Subnautica2CopperIngot,
+        title: 'Copper Ingot',
+        description:
+          'Copper x3, Processor conversion, Vehicle Fabricator prep, Copper Wire timing, and raw Copper reserves.',
+      },
+      {
         href: Routes.Subnautica2BasicBattery,
         title: 'Basic Battery',
         description:
@@ -549,6 +555,12 @@ const copyByLocale: Record<'en' | 'zh', HubCopy> = {
         href: Routes.Subnautica2Copper,
         title: '铜在哪里找',
         description: '开局电池、电子元件和扫描器相关路线。',
+      },
+      {
+        href: Routes.Subnautica2CopperIngot,
+        title: 'Copper Ingot 指南',
+        description:
+          'Copper x3、Processor 加工、Vehicle Fabricator 准备、Copper Wire 时机和原矿库存规划。',
       },
       {
         href: Routes.Subnautica2BatteryTerminal,
