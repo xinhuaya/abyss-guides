@@ -122,6 +122,12 @@ const copyByLocale: Record<'en' | 'zh', HubCopy> = {
           'Moonpool clearance, Tadpole Dock setup, current recipe data, Power Cell timing, and vehicle bay planning.',
       },
       {
+        href: Routes.Subnautica2TadpoleDock,
+        title: 'Tadpole Dock',
+        description:
+          'Moonpool placement, dock clearance, Titanium Ingot, Silver Ingot, Copper Wire, and Tadpole approach testing.',
+      },
+      {
         href: Routes.Subnautica2AcidicRaionPouch,
         title: 'Acidic Raion Pouch',
         description:
@@ -567,6 +573,12 @@ const copyByLocale: Record<'en' | 'zh', HubCopy> = {
         title: 'Vehicle Fabricator 指南',
         description:
           'Moonpool 空间、Tadpole Dock 设置、当前配方数据、Power Cell 时机和载具区规划。',
+      },
+      {
+        href: Routes.Subnautica2TadpoleDock,
+        title: 'Tadpole Dock 指南',
+        description:
+          'Moonpool 摆放、Dock 下方空间、Titanium Ingot、Silver Ingot、Copper Wire 和 Tadpole 进出测试。',
       },
       {
         href: Routes.Subnautica2HabitatBuilder,

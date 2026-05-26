@@ -136,6 +136,7 @@ const copperWireCopy: Record<string, CopperWireCopy> = {
     readNextTitle: 'Read next',
     related: [
       { href: Routes.Subnautica2Copper, label: 'Copper Location' },
+      { href: Routes.Subnautica2TadpoleDock, label: 'Tadpole Dock Guide' },
       { href: Routes.Subnautica2BasicBattery, label: 'Basic Battery Guide' },
       {
         href: Routes.Subnautica2BatteryTerminal,
@@ -259,6 +260,7 @@ const copperWireCopy: Record<string, CopperWireCopy> = {
     readNextTitle: '继续阅读',
     related: [
       { href: Routes.Subnautica2Copper, label: 'Copper 位置' },
+      { href: Routes.Subnautica2TadpoleDock, label: 'Tadpole Dock 指南' },
       { href: Routes.Subnautica2BasicBattery, label: 'Basic Battery 指南' },
       {
         href: Routes.Subnautica2BatteryTerminal,

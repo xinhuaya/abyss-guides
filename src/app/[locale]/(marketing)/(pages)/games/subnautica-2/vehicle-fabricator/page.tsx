@@ -133,6 +133,7 @@ const vehicleFabricatorCopy: Record<string, VehicleFabricatorCopy> = {
     ],
     readNextTitle: 'Read next',
     related: [
+      { href: Routes.Subnautica2TadpoleDock, label: 'Tadpole Dock Guide' },
       { href: Routes.Subnautica2Tadpole, label: 'Tadpole Vehicle Guide' },
       { href: Routes.Subnautica2PowerCell, label: 'Power Cell Guide' },
       { href: Routes.Subnautica2BaseBuilding, label: 'Base Building Guide' },
@@ -258,6 +259,7 @@ const vehicleFabricatorCopy: Record<string, VehicleFabricatorCopy> = {
     ],
     readNextTitle: '继续阅读',
     related: [
+      { href: Routes.Subnautica2TadpoleDock, label: 'Tadpole Dock 指南' },
       { href: Routes.Subnautica2Tadpole, label: 'Tadpole 载具指南' },
       { href: Routes.Subnautica2PowerCell, label: 'Power Cell 指南' },
       { href: Routes.Subnautica2BaseBuilding, label: '基地建造指南' },

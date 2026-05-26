@@ -45,6 +45,7 @@ export default function TadpoleGuidePage() {
           href: Routes.Subnautica2VehicleFabricator,
           label: 'Vehicle Fabricator Guide',
         },
+        { href: Routes.Subnautica2TadpoleDock, label: 'Tadpole Dock Guide' },
         {
           href: Routes.Subnautica2ModificationStation,
           label: 'Modification Station Guide',

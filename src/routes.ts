@@ -33,6 +33,7 @@ export enum Routes {
   Subnautica2AdvancedBattery = '/games/subnautica-2/advanced-battery',
   Subnautica2PowerCell = '/games/subnautica-2/power-cell',
   Subnautica2VehicleFabricator = '/games/subnautica-2/vehicle-fabricator',
+  Subnautica2TadpoleDock = '/games/subnautica-2/tadpole-dock',
   Subnautica2Rebreather = '/games/subnautica-2/rebreather',
   Subnautica2ScannerStation = '/games/subnautica-2/scanner-station',
   Subnautica2Beacon = '/games/subnautica-2/beacon',
