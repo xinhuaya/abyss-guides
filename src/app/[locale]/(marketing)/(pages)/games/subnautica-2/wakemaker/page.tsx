@@ -131,6 +131,10 @@ const wakemakerCopy: Record<string, WakemakerCopy> = {
       { href: Routes.Subnautica2AngelComb, label: 'Angel Comb Guide' },
       { href: Routes.Subnautica2BloomBiofilm, label: 'Bloom Biofilm Guide' },
       { href: Routes.Subnautica2BasicBattery, label: 'Basic Battery Guide' },
+      {
+        href: Routes.Subnautica2AdvancedBattery,
+        label: 'Advanced Battery Guide',
+      },
       { href: Routes.Subnautica2CopperWire, label: 'Copper Wire Guide' },
       { href: Routes.Subnautica2FiberMesh, label: 'Fiber Mesh Guide' },
       { href: Routes.Subnautica2Rubber, label: 'Rubber Recipe Guide' },
@@ -247,6 +251,10 @@ const wakemakerCopy: Record<string, WakemakerCopy> = {
       { href: Routes.Subnautica2AngelComb, label: 'Angel Comb Guide' },
       { href: Routes.Subnautica2BloomBiofilm, label: 'Bloom Biofilm Guide' },
       { href: Routes.Subnautica2BasicBattery, label: 'Basic Battery 指南' },
+      {
+        href: Routes.Subnautica2AdvancedBattery,
+        label: 'Advanced Battery 指南',
+      },
       { href: Routes.Subnautica2CopperWire, label: 'Copper Wire 指南' },
       { href: Routes.Subnautica2FiberMesh, label: 'Fiber Mesh 指南' },
       { href: Routes.Subnautica2Rubber, label: 'Rubber 配方指南' },

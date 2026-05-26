@@ -143,6 +143,10 @@ const conduitCopy: Record<string, ConduitCopy> = {
         href: Routes.Subnautica2FeedbackResonator,
         label: 'Feedback Resonator Guide',
       },
+      {
+        href: Routes.Subnautica2AdvancedBattery,
+        label: 'Advanced Battery Guide',
+      },
       { href: Routes.Subnautica2Strontium, label: 'Strontium Guide' },
       { href: Routes.Subnautica2Celestine, label: 'Celestine Guide' },
       {
@@ -266,6 +270,10 @@ const conduitCopy: Record<string, ConduitCopy> = {
         href: Routes.Subnautica2FeedbackResonator,
         label: 'Feedback Resonator 指南',
       },
+      {
+        href: Routes.Subnautica2AdvancedBattery,
+        label: 'Advanced Battery Guide',
+      },
       { href: Routes.Subnautica2Strontium, label: 'Strontium 指南' },
       { href: Routes.Subnautica2Celestine, label: 'Celestine 指南' },
       {
@@ -380,6 +388,10 @@ const conduitCopy: Record<string, ConduitCopy> = {
       {
         href: Routes.Subnautica2FeedbackResonator,
         label: 'Feedback Resonator Guide',
+      },
+      {
+        href: Routes.Subnautica2AdvancedBattery,
+        label: 'Advanced Battery Guide',
       },
       { href: Routes.Subnautica2Strontium, label: 'Strontium Guide' },
       { href: Routes.Subnautica2Celestine, label: 'Celestine Guide' },

@@ -104,6 +104,12 @@ const copyByLocale: Record<'en' | 'zh', HubCopy> = {
           'Old Habitat fragment route, Habitat Builder placement, Copper Wire prep, six-slot battery rotation, and base power safety.',
       },
       {
+        href: Routes.Subnautica2AdvancedBattery,
+        title: 'Advanced Battery',
+        description:
+          'Karakorum fragment route, Data Box unlock, Conduit Crystal, Strong Acid, Silver Ingot, 200 energy, and charger rotation.',
+      },
+      {
         href: Routes.Subnautica2AcidicRaionPouch,
         title: 'Acidic Raion Pouch',
         description:
@@ -531,6 +537,12 @@ const copyByLocale: Record<'en' | 'zh', HubCopy> = {
         title: 'Copper Wire 指南',
         description:
           '2 Copper 配方、电池制作时机、Wiring Kit 前置和基地电子材料用途。',
+      },
+      {
+        href: Routes.Subnautica2AdvancedBattery,
+        title: 'Advanced Battery 指南',
+        description:
+          'Karakorum 碎片路线、Data Box 解锁、Conduit Crystal、Strong Acid、Silver Ingot、200 能量和充电轮换。',
       },
       {
         href: Routes.Subnautica2HabitatBuilder,

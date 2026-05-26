@@ -162,6 +162,10 @@ const craftingCopy: Record<string, CraftingCopy> = {
         href: Routes.Subnautica2BatteryTerminal,
         label: 'Battery Terminal Guide',
       },
+      {
+        href: Routes.Subnautica2AdvancedBattery,
+        label: 'Advanced Battery Guide',
+      },
       { href: Routes.Subnautica2BasicBattery, label: 'Basic Battery Guide' },
       {
         href: Routes.Subnautica2AcidicRaionPouch,
@@ -320,6 +324,10 @@ const craftingCopy: Record<string, CraftingCopy> = {
         label: 'Battery Terminal Guide',
       },
       {
+        href: Routes.Subnautica2AdvancedBattery,
+        label: 'Advanced Battery Guide',
+      },
+      {
         href: Routes.Subnautica2AcidicRaionPouch,
         label: 'Acidic Raion Pouch Guide',
       },
@@ -448,6 +456,10 @@ const craftingCopy: Record<string, CraftingCopy> = {
         href: Routes.Subnautica2BatteryTerminal,
         label: 'Battery Terminal Guide',
       },
+      {
+        href: Routes.Subnautica2AdvancedBattery,
+        label: 'Advanced Battery Guide',
+      },
       { href: Routes.Subnautica2Silver, label: 'Silver' },
     ],
     sourcesTitle: 'Источники',
@@ -554,6 +566,10 @@ const craftingCopy: Record<string, CraftingCopy> = {
       {
         href: Routes.Subnautica2BatteryTerminal,
         label: 'Battery Terminal Guide',
+      },
+      {
+        href: Routes.Subnautica2AdvancedBattery,
+        label: 'Advanced Battery Guide',
       },
       { href: Routes.Subnautica2Silver, label: 'Silver finden' },
     ],
@@ -671,6 +687,10 @@ const craftingCopy: Record<string, CraftingCopy> = {
         href: Routes.Subnautica2BatteryTerminal,
         label: 'Battery Terminal Guide',
       },
+      {
+        href: Routes.Subnautica2AdvancedBattery,
+        label: 'Advanced Battery Guide',
+      },
       { href: Routes.Subnautica2Silver, label: 'Où trouver Silver' },
     ],
     sourcesTitle: 'Sources',
@@ -777,6 +797,10 @@ const craftingCopy: Record<string, CraftingCopy> = {
       {
         href: Routes.Subnautica2BatteryTerminal,
         label: 'Battery Terminal Guide',
+      },
+      {
+        href: Routes.Subnautica2AdvancedBattery,
+        label: 'Advanced Battery Guide',
       },
       { href: Routes.Subnautica2Silver, label: 'Onde encontrar Silver' },
     ],
@@ -885,6 +909,10 @@ const craftingCopy: Record<string, CraftingCopy> = {
         href: Routes.Subnautica2BatteryTerminal,
         label: 'Battery Terminal Guide',
       },
+      {
+        href: Routes.Subnautica2AdvancedBattery,
+        label: 'Advanced Battery Guide',
+      },
       { href: Routes.Subnautica2Silver, label: 'Dónde encontrar Silver' },
     ],
     sourcesTitle: 'Fuentes',
@@ -992,6 +1020,10 @@ const craftingCopy: Record<string, CraftingCopy> = {
         href: Routes.Subnautica2BatteryTerminal,
         label: 'Battery Terminal Guide',
       },
+      {
+        href: Routes.Subnautica2AdvancedBattery,
+        label: 'Advanced Battery Guide',
+      },
       { href: Routes.Subnautica2Silver, label: 'Silver 위치' },
     ],
     sourcesTitle: '출처 메모',
@@ -1098,6 +1130,10 @@ const craftingCopy: Record<string, CraftingCopy> = {
       {
         href: Routes.Subnautica2BatteryTerminal,
         label: 'Battery Terminal Guide',
+      },
+      {
+        href: Routes.Subnautica2AdvancedBattery,
+        label: 'Advanced Battery Guide',
       },
       { href: Routes.Subnautica2Silver, label: 'Silver の場所' },
     ],

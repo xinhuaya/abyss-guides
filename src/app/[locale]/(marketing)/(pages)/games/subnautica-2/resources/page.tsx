@@ -139,6 +139,10 @@ const resourcesCopy: Record<string, ResourcesCopy> = {
         label: 'Battery Terminal Guide',
       },
       {
+        href: Routes.Subnautica2AdvancedBattery,
+        label: 'Advanced Battery Guide',
+      },
+      {
         href: Routes.Subnautica2AcidicRaionPouch,
         label: 'Acidic Raion Pouch Guide',
       },

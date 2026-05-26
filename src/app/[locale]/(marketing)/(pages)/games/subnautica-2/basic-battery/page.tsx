@@ -138,6 +138,10 @@ const basicBatteryCopy: Record<string, BasicBatteryCopy> = {
         href: Routes.Subnautica2BatteryTerminal,
         label: 'Battery Terminal Guide',
       },
+      {
+        href: Routes.Subnautica2AdvancedBattery,
+        label: 'Advanced Battery Guide',
+      },
       { href: Routes.Subnautica2Wakemaker, label: 'Wakemaker Guide' },
       { href: Routes.Subnautica2Scanner, label: 'Scanner Guide' },
       { href: Routes.Subnautica2RepairTool, label: 'Repair Tool Guide' },
@@ -262,6 +266,10 @@ const basicBatteryCopy: Record<string, BasicBatteryCopy> = {
         href: Routes.Subnautica2BatteryTerminal,
         label: 'Battery Terminal Guide',
       },
+      {
+        href: Routes.Subnautica2AdvancedBattery,
+        label: 'Advanced Battery Guide',
+      },
       { href: Routes.Subnautica2Wakemaker, label: 'Wakemaker 指南' },
       { href: Routes.Subnautica2Scanner, label: 'Scanner 指南' },
       { href: Routes.Subnautica2RepairTool, label: 'Repair Tool 指南' },
@@ -382,6 +390,10 @@ const basicBatteryCopy: Record<string, BasicBatteryCopy> = {
       {
         href: Routes.Subnautica2BatteryTerminal,
         label: 'Battery Terminal Guide',
+      },
+      {
+        href: Routes.Subnautica2AdvancedBattery,
+        label: 'Advanced Battery Guide',
       },
       { href: Routes.Subnautica2Wakemaker, label: 'Wakemaker Guide' },
       { href: Routes.Subnautica2Scanner, label: 'Scanner ガイド' },

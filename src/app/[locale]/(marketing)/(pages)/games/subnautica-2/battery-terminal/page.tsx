@@ -132,6 +132,10 @@ const batteryTerminalCopy: Record<string, BatteryTerminalCopy> = {
     readNextTitle: 'Read next',
     related: [
       { href: Routes.Subnautica2BasicBattery, label: 'Basic Battery Guide' },
+      {
+        href: Routes.Subnautica2AdvancedBattery,
+        label: 'Advanced Battery Guide',
+      },
       { href: Routes.Subnautica2CopperWire, label: 'Copper Wire Guide' },
       { href: Routes.Subnautica2Quartz, label: 'Quartz Location Guide' },
       {
@@ -247,6 +251,10 @@ const batteryTerminalCopy: Record<string, BatteryTerminalCopy> = {
     readNextTitle: '继续阅读',
     related: [
       { href: Routes.Subnautica2BasicBattery, label: 'Basic Battery 指南' },
+      {
+        href: Routes.Subnautica2AdvancedBattery,
+        label: 'Advanced Battery Guide',
+      },
       { href: Routes.Subnautica2CopperWire, label: 'Copper Wire 指南' },
       { href: Routes.Subnautica2Quartz, label: 'Quartz 位置指南' },
       { href: Routes.Subnautica2HabitatBuilder, label: 'Habitat Builder 指南' },
