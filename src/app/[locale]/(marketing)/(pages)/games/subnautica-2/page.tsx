@@ -116,6 +116,12 @@ const copyByLocale: Record<'en' | 'zh', HubCopy> = {
           'Basic Battery x2, Strong Acid, Salt, Fabricator crafting, Tadpole use, and vehicle power planning.',
       },
       {
+        href: Routes.Subnautica2VehicleFabricator,
+        title: 'Vehicle Fabricator',
+        description:
+          'Moonpool clearance, Tadpole Dock setup, current recipe data, Power Cell timing, and vehicle bay planning.',
+      },
+      {
         href: Routes.Subnautica2AcidicRaionPouch,
         title: 'Acidic Raion Pouch',
         description:
@@ -555,6 +561,12 @@ const copyByLocale: Record<'en' | 'zh', HubCopy> = {
         title: 'Power Cell 指南',
         description:
           'Basic Battery x2、Strong Acid、Salt、Fabricator 制作、Tadpole 用途和载具供电规划。',
+      },
+      {
+        href: Routes.Subnautica2VehicleFabricator,
+        title: 'Vehicle Fabricator 指南',
+        description:
+          'Moonpool 空间、Tadpole Dock 设置、当前配方数据、Power Cell 时机和载具区规划。',
       },
       {
         href: Routes.Subnautica2HabitatBuilder,

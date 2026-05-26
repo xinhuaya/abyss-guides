@@ -134,6 +134,10 @@ const powerCellCopy: Record<string, PowerCellCopy> = {
     readNextTitle: 'Read next',
     related: [
       { href: Routes.Subnautica2Tadpole, label: 'Tadpole Vehicle Guide' },
+      {
+        href: Routes.Subnautica2VehicleFabricator,
+        label: 'Vehicle Fabricator Guide',
+      },
       { href: Routes.Subnautica2BasicBattery, label: 'Basic Battery Guide' },
       {
         href: Routes.Subnautica2AdvancedBattery,
@@ -252,6 +256,10 @@ const powerCellCopy: Record<string, PowerCellCopy> = {
     readNextTitle: '继续阅读',
     related: [
       { href: Routes.Subnautica2Tadpole, label: 'Tadpole 载具指南' },
+      {
+        href: Routes.Subnautica2VehicleFabricator,
+        label: 'Vehicle Fabricator 指南',
+      },
       { href: Routes.Subnautica2BasicBattery, label: 'Basic Battery 指南' },
       {
         href: Routes.Subnautica2AdvancedBattery,

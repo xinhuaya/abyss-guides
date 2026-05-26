@@ -130,6 +130,10 @@ const baseCopy: Record<string, BaseCopy> = {
         href: Routes.Subnautica2HabitatBuilder,
         label: 'Habitat Builder Guide',
       },
+      {
+        href: Routes.Subnautica2VehicleFabricator,
+        label: 'Vehicle Fabricator Guide',
+      },
       { href: Routes.Subnautica2Map, label: 'Map and Biomes' },
       {
         href: Routes.Subnautica2ScannerStation,
@@ -237,6 +241,10 @@ const baseCopy: Record<string, BaseCopy> = {
     readNextTitle: '继续阅读',
     related: [
       { href: Routes.Subnautica2Map, label: '地图与生态区' },
+      {
+        href: Routes.Subnautica2VehicleFabricator,
+        label: 'Vehicle Fabricator 指南',
+      },
       { href: Routes.Subnautica2ScannerStation, label: 'Scanner Station 指南' },
       {
         href: Routes.Subnautica2BatteryTerminal,

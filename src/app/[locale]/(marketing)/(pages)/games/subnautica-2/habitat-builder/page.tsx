@@ -130,6 +130,10 @@ const habitatBuilderCopy: Record<string, HabitatBuilderCopy> = {
     readNextTitle: 'Read next',
     related: [
       { href: Routes.Subnautica2BaseBuilding, label: 'Base Building Guide' },
+      {
+        href: Routes.Subnautica2VehicleFabricator,
+        label: 'Vehicle Fabricator Guide',
+      },
       { href: Routes.Subnautica2BasicBattery, label: 'Basic Battery Guide' },
       {
         href: Routes.Subnautica2BatteryTerminal,
@@ -245,6 +249,10 @@ const habitatBuilderCopy: Record<string, HabitatBuilderCopy> = {
     readNextTitle: '继续阅读',
     related: [
       { href: Routes.Subnautica2BaseBuilding, label: '基地建造指南' },
+      {
+        href: Routes.Subnautica2VehicleFabricator,
+        label: 'Vehicle Fabricator 指南',
+      },
       { href: Routes.Subnautica2BasicBattery, label: 'Basic Battery 指南' },
       {
         href: Routes.Subnautica2BatteryTerminal,

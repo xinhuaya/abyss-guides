@@ -167,6 +167,10 @@ const craftingCopy: Record<string, CraftingCopy> = {
         label: 'Advanced Battery Guide',
       },
       { href: Routes.Subnautica2PowerCell, label: 'Power Cell Guide' },
+      {
+        href: Routes.Subnautica2VehicleFabricator,
+        label: 'Vehicle Fabricator Guide',
+      },
       { href: Routes.Subnautica2BasicBattery, label: 'Basic Battery Guide' },
       {
         href: Routes.Subnautica2AcidicRaionPouch,
@@ -330,6 +334,10 @@ const craftingCopy: Record<string, CraftingCopy> = {
       },
       { href: Routes.Subnautica2PowerCell, label: 'Power Cell Guide' },
       {
+        href: Routes.Subnautica2VehicleFabricator,
+        label: 'Vehicle Fabricator Guide',
+      },
+      {
         href: Routes.Subnautica2AcidicRaionPouch,
         label: 'Acidic Raion Pouch Guide',
       },
@@ -463,6 +471,10 @@ const craftingCopy: Record<string, CraftingCopy> = {
         label: 'Advanced Battery Guide',
       },
       { href: Routes.Subnautica2PowerCell, label: 'Power Cell Guide' },
+      {
+        href: Routes.Subnautica2VehicleFabricator,
+        label: 'Vehicle Fabricator Guide',
+      },
       { href: Routes.Subnautica2Silver, label: 'Silver' },
     ],
     sourcesTitle: 'Источники',
@@ -575,6 +587,10 @@ const craftingCopy: Record<string, CraftingCopy> = {
         label: 'Advanced Battery Guide',
       },
       { href: Routes.Subnautica2PowerCell, label: 'Power Cell Guide' },
+      {
+        href: Routes.Subnautica2VehicleFabricator,
+        label: 'Vehicle Fabricator Guide',
+      },
       { href: Routes.Subnautica2Silver, label: 'Silver finden' },
     ],
     sourcesTitle: 'Quellen',
@@ -696,6 +712,10 @@ const craftingCopy: Record<string, CraftingCopy> = {
         label: 'Advanced Battery Guide',
       },
       { href: Routes.Subnautica2PowerCell, label: 'Power Cell Guide' },
+      {
+        href: Routes.Subnautica2VehicleFabricator,
+        label: 'Vehicle Fabricator Guide',
+      },
       { href: Routes.Subnautica2Silver, label: 'Où trouver Silver' },
     ],
     sourcesTitle: 'Sources',
@@ -808,6 +828,10 @@ const craftingCopy: Record<string, CraftingCopy> = {
         label: 'Advanced Battery Guide',
       },
       { href: Routes.Subnautica2PowerCell, label: 'Power Cell Guide' },
+      {
+        href: Routes.Subnautica2VehicleFabricator,
+        label: 'Vehicle Fabricator Guide',
+      },
       { href: Routes.Subnautica2Silver, label: 'Onde encontrar Silver' },
     ],
     sourcesTitle: 'Fontes',
@@ -920,6 +944,10 @@ const craftingCopy: Record<string, CraftingCopy> = {
         label: 'Advanced Battery Guide',
       },
       { href: Routes.Subnautica2PowerCell, label: 'Power Cell Guide' },
+      {
+        href: Routes.Subnautica2VehicleFabricator,
+        label: 'Vehicle Fabricator Guide',
+      },
       { href: Routes.Subnautica2Silver, label: 'Dónde encontrar Silver' },
     ],
     sourcesTitle: 'Fuentes',
@@ -1032,6 +1060,10 @@ const craftingCopy: Record<string, CraftingCopy> = {
         label: 'Advanced Battery Guide',
       },
       { href: Routes.Subnautica2PowerCell, label: 'Power Cell Guide' },
+      {
+        href: Routes.Subnautica2VehicleFabricator,
+        label: 'Vehicle Fabricator Guide',
+      },
       { href: Routes.Subnautica2Silver, label: 'Silver 위치' },
     ],
     sourcesTitle: '출처 메모',
@@ -1144,6 +1176,10 @@ const craftingCopy: Record<string, CraftingCopy> = {
         label: 'Advanced Battery Guide',
       },
       { href: Routes.Subnautica2PowerCell, label: 'Power Cell Guide' },
+      {
+        href: Routes.Subnautica2VehicleFabricator,
+        label: 'Vehicle Fabricator Guide',
+      },
       { href: Routes.Subnautica2Silver, label: 'Silver の場所' },
     ],
     sourcesTitle: '出典メモ',
