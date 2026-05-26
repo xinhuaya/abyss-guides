@@ -138,6 +138,7 @@ const saltCopy: Record<string, SaltCopy> = {
     related: [
       { href: Routes.Subnautica2Tadpole, label: 'Tadpole Vehicle Guide' },
       { href: Routes.Subnautica2StrongAcid, label: 'Strong Acid Guide' },
+      { href: Routes.Subnautica2PowerCell, label: 'Power Cell Guide' },
       { href: Routes.Subnautica2BasicBattery, label: 'Basic Battery Guide' },
       { href: Routes.Subnautica2Quartz, label: 'Quartz Location Guide' },
       { href: Routes.Subnautica2Lithium, label: 'Lithium Location Guide' },
@@ -246,6 +247,7 @@ const saltCopy: Record<string, SaltCopy> = {
     related: [
       { href: Routes.Subnautica2Tadpole, label: 'Tadpole 载具指南' },
       { href: Routes.Subnautica2StrongAcid, label: 'Strong Acid 指南' },
+      { href: Routes.Subnautica2PowerCell, label: 'Power Cell 指南' },
       { href: Routes.Subnautica2BasicBattery, label: 'Basic Battery 指南' },
       { href: Routes.Subnautica2Quartz, label: 'Quartz 位置指南' },
       { href: Routes.Subnautica2Lithium, label: 'Lithium 位置指南' },

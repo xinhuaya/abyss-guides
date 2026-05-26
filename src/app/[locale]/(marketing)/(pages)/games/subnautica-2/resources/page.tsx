@@ -142,6 +142,7 @@ const resourcesCopy: Record<string, ResourcesCopy> = {
         href: Routes.Subnautica2AdvancedBattery,
         label: 'Advanced Battery Guide',
       },
+      { href: Routes.Subnautica2PowerCell, label: 'Power Cell Guide' },
       {
         href: Routes.Subnautica2AcidicRaionPouch,
         label: 'Acidic Raion Pouch Guide',
@@ -325,6 +326,7 @@ const resourcesCopy: Record<string, ResourcesCopy> = {
       { href: Routes.Subnautica2Beginner, label: '新手路线' },
       { href: Routes.Subnautica2Copper, label: 'Copper 位置' },
       { href: Routes.Subnautica2Titanium, label: 'Titanium 位置指南' },
+      { href: Routes.Subnautica2PowerCell, label: 'Power Cell 指南' },
       {
         href: Routes.Subnautica2AcidicRaionPouch,
         label: 'Acidic Raion Pouch Guide',

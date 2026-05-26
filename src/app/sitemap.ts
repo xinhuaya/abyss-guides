@@ -40,6 +40,7 @@ const staticRoutes = [
   Routes.Subnautica2ImprovedFins,
   Routes.Subnautica2Wakemaker,
   Routes.Subnautica2AdvancedBattery,
+  Routes.Subnautica2PowerCell,
   Routes.Subnautica2Rebreather,
   Routes.Subnautica2ScannerStation,
   Routes.Subnautica2Beacon,

@@ -110,6 +110,12 @@ const copyByLocale: Record<'en' | 'zh', HubCopy> = {
           'Karakorum fragment route, Data Box unlock, Conduit Crystal, Strong Acid, Silver Ingot, 200 energy, and charger rotation.',
       },
       {
+        href: Routes.Subnautica2PowerCell,
+        title: 'Power Cell',
+        description:
+          'Basic Battery x2, Strong Acid, Salt, Fabricator crafting, Tadpole use, and vehicle power planning.',
+      },
+      {
         href: Routes.Subnautica2AcidicRaionPouch,
         title: 'Acidic Raion Pouch',
         description:
@@ -543,6 +549,12 @@ const copyByLocale: Record<'en' | 'zh', HubCopy> = {
         title: 'Advanced Battery 指南',
         description:
           'Karakorum 碎片路线、Data Box 解锁、Conduit Crystal、Strong Acid、Silver Ingot、200 能量和充电轮换。',
+      },
+      {
+        href: Routes.Subnautica2PowerCell,
+        title: 'Power Cell 指南',
+        description:
+          'Basic Battery x2、Strong Acid、Salt、Fabricator 制作、Tadpole 用途和载具供电规划。',
       },
       {
         href: Routes.Subnautica2HabitatBuilder,

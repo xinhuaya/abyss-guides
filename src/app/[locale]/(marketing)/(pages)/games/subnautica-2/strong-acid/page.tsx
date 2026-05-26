@@ -52,6 +52,7 @@ export default function StrongAcidGuidePage() {
         { href: Routes.Subnautica2Gold, label: 'Gold Location Guide' },
         { href: Routes.Subnautica2FiberMesh, label: 'Fiber Mesh Guide' },
         { href: Routes.Subnautica2Tadpole, label: 'Tadpole Vehicle' },
+        { href: Routes.Subnautica2PowerCell, label: 'Power Cell Guide' },
         {
           href: Routes.Subnautica2AdvancedBattery,
           label: 'Advanced Battery Guide',

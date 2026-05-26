@@ -40,6 +40,7 @@ export default function TadpoleGuidePage() {
         },
         { href: Routes.Subnautica2EchoLocation, label: 'Echo Location Guide' },
         { href: Routes.Subnautica2RepairTool, label: 'Repair Tool Guide' },
+        { href: Routes.Subnautica2PowerCell, label: 'Power Cell Guide' },
         {
           href: Routes.Subnautica2ModificationStation,
           label: 'Modification Station Guide',
