@@ -248,6 +248,12 @@ const copyByLocale: Record<'en' | 'zh', HubCopy> = {
           'Angel Comb route, Bloom clearing, Sonic Resonator prep, oxygen kit, and hot-biome access planning.',
       },
       {
+        href: Routes.Subnautica2AngelComb,
+        title: 'Angel Comb',
+        description:
+          'Bloom Biofilm clearing order, northwest search pocket, Sonic Resonator prep, and Heat Tolerance route safety.',
+      },
+      {
         href: Routes.Subnautica2Salt,
         title: 'Salt',
         description:
@@ -601,6 +607,12 @@ const copyByLocale: Record<'en' | 'zh', HubCopy> = {
         title: 'Heat Tolerance 指南',
         description:
           'Angel Comb 路线、Bloom 清理、Sonic Resonator 准备、氧气装备和热区入口规划。',
+      },
+      {
+        href: Routes.Subnautica2AngelComb,
+        title: 'Angel Comb 指南',
+        description:
+          'Bloom Biofilm 清理顺序、西北搜索区域、Sonic Resonator 准备和 Heat Tolerance 路线安全。',
       },
       {
         href: Routes.Subnautica2Salt,

@@ -136,6 +136,7 @@ const heatToleranceCopy: Record<string, HeatToleranceCopy> = {
     ],
     readNextTitle: 'Read next',
     related: [
+      { href: Routes.Subnautica2AngelComb, label: 'Angel Comb Guide' },
       {
         href: Routes.Subnautica2SonicResonator,
         label: 'Sonic Resonator Guide',
@@ -248,6 +249,7 @@ const heatToleranceCopy: Record<string, HeatToleranceCopy> = {
     ],
     readNextTitle: '继续阅读',
     related: [
+      { href: Routes.Subnautica2AngelComb, label: 'Angel Comb 指南' },
       { href: Routes.Subnautica2SonicResonator, label: 'Sonic Resonator 指南' },
       { href: Routes.Subnautica2AirTank, label: '气瓶和氧气指南' },
       { href: Routes.Subnautica2Wakemaker, label: 'Wakemaker 指南' },

@@ -134,6 +134,7 @@ const biolabCopy: Record<string, BiolabCopy> = {
     readNextTitle: 'Read next',
     related: [
       { href: Routes.Subnautica2HeatTolerance, label: 'Heat Tolerance Guide' },
+      { href: Routes.Subnautica2AngelComb, label: 'Angel Comb Guide' },
       { href: Routes.Subnautica2MildAcid, label: 'Mild Acid Guide' },
       { href: Routes.Subnautica2EchoLocation, label: 'Echo Location Guide' },
       { href: Routes.Subnautica2Processor, label: 'Processor Guide' },
@@ -253,6 +254,7 @@ const biolabCopy: Record<string, BiolabCopy> = {
     readNextTitle: '继续阅读',
     related: [
       { href: Routes.Subnautica2HeatTolerance, label: 'Heat Tolerance Guide' },
+      { href: Routes.Subnautica2AngelComb, label: 'Angel Comb Guide' },
       { href: Routes.Subnautica2MildAcid, label: 'Mild Acid 指南' },
       { href: Routes.Subnautica2EchoLocation, label: 'Echo Location 指南' },
       { href: Routes.Subnautica2Processor, label: 'Processor 指南' },
@@ -366,6 +368,7 @@ const biolabCopy: Record<string, BiolabCopy> = {
     readNextTitle: '次に読む',
     related: [
       { href: Routes.Subnautica2HeatTolerance, label: 'Heat Tolerance Guide' },
+      { href: Routes.Subnautica2AngelComb, label: 'Angel Comb Guide' },
       { href: Routes.Subnautica2MildAcid, label: 'Mild Acid Guide' },
       { href: Routes.Subnautica2EchoLocation, label: 'Echo Location Guide' },
       { href: Routes.Subnautica2Processor, label: 'Processor Guide' },
