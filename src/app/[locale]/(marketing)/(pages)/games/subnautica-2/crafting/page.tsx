@@ -177,6 +177,10 @@ const craftingCopy: Record<string, CraftingCopy> = {
         href: Routes.Subnautica2KarakorumPowerPlant,
         label: 'Karakorum Power Plant Route',
       },
+      {
+        href: Routes.Subnautica2PowerPlantObservatory,
+        label: 'Power Plant Observatory Guide',
+      },
       { href: Routes.Subnautica2PowerCell, label: 'Power Cell Guide' },
       {
         href: Routes.Subnautica2EntangledPowerCell,
@@ -360,6 +364,10 @@ const craftingCopy: Record<string, CraftingCopy> = {
         href: Routes.Subnautica2KarakorumPowerPlant,
         label: 'Karakorum Power Plant Route',
       },
+      {
+        href: Routes.Subnautica2PowerPlantObservatory,
+        label: 'Power Plant Observatory Guide',
+      },
       { href: Routes.Subnautica2PowerCell, label: 'Power Cell Guide' },
       {
         href: Routes.Subnautica2EntangledPowerCell,
@@ -516,6 +524,10 @@ const craftingCopy: Record<string, CraftingCopy> = {
         href: Routes.Subnautica2KarakorumPowerPlant,
         label: 'Karakorum Power Plant Route',
       },
+      {
+        href: Routes.Subnautica2PowerPlantObservatory,
+        label: 'Power Plant Observatory Guide',
+      },
       { href: Routes.Subnautica2PowerCell, label: 'Power Cell Guide' },
       {
         href: Routes.Subnautica2EntangledPowerCell,
@@ -640,6 +652,10 @@ const craftingCopy: Record<string, CraftingCopy> = {
       {
         href: Routes.Subnautica2KarakorumPowerPlant,
         label: 'Karakorum Power Plant Route',
+      },
+      {
+        href: Routes.Subnautica2PowerPlantObservatory,
+        label: 'Power Plant Observatory Guide',
       },
       { href: Routes.Subnautica2PowerCell, label: 'Power Cell Guide' },
       {
@@ -775,6 +791,10 @@ const craftingCopy: Record<string, CraftingCopy> = {
         href: Routes.Subnautica2KarakorumPowerPlant,
         label: 'Karakorum Power Plant Route',
       },
+      {
+        href: Routes.Subnautica2PowerPlantObservatory,
+        label: 'Power Plant Observatory Guide',
+      },
       { href: Routes.Subnautica2PowerCell, label: 'Power Cell Guide' },
       {
         href: Routes.Subnautica2EntangledPowerCell,
@@ -899,6 +919,10 @@ const craftingCopy: Record<string, CraftingCopy> = {
       {
         href: Routes.Subnautica2KarakorumPowerPlant,
         label: 'Karakorum Power Plant Route',
+      },
+      {
+        href: Routes.Subnautica2PowerPlantObservatory,
+        label: 'Power Plant Observatory Guide',
       },
       { href: Routes.Subnautica2PowerCell, label: 'Power Cell Guide' },
       {
@@ -1025,6 +1049,10 @@ const craftingCopy: Record<string, CraftingCopy> = {
         href: Routes.Subnautica2KarakorumPowerPlant,
         label: 'Karakorum Power Plant Route',
       },
+      {
+        href: Routes.Subnautica2PowerPlantObservatory,
+        label: 'Power Plant Observatory Guide',
+      },
       { href: Routes.Subnautica2PowerCell, label: 'Power Cell Guide' },
       {
         href: Routes.Subnautica2EntangledPowerCell,
@@ -1150,6 +1178,10 @@ const craftingCopy: Record<string, CraftingCopy> = {
         href: Routes.Subnautica2KarakorumPowerPlant,
         label: 'Karakorum Power Plant Route',
       },
+      {
+        href: Routes.Subnautica2PowerPlantObservatory,
+        label: 'Power Plant Observatory Guide',
+      },
       { href: Routes.Subnautica2PowerCell, label: 'Power Cell Guide' },
       {
         href: Routes.Subnautica2EntangledPowerCell,
@@ -1274,6 +1306,10 @@ const craftingCopy: Record<string, CraftingCopy> = {
       {
         href: Routes.Subnautica2KarakorumPowerPlant,
         label: 'Karakorum Power Plant Route',
+      },
+      {
+        href: Routes.Subnautica2PowerPlantObservatory,
+        label: 'Power Plant Observatory Guide',
       },
       { href: Routes.Subnautica2PowerCell, label: 'Power Cell Guide' },
       {

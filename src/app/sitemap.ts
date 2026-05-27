@@ -45,6 +45,7 @@ const staticRoutes = [
   Routes.Subnautica2Wakemaker,
   Routes.Subnautica2AdvancedBattery,
   Routes.Subnautica2KarakorumPowerPlant,
+  Routes.Subnautica2PowerPlantObservatory,
   Routes.Subnautica2PowerCell,
   Routes.Subnautica2VehicleFabricator,
   Routes.Subnautica2TadpoleDock,

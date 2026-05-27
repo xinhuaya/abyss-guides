@@ -122,6 +122,12 @@ const copyByLocale: Record<'en' | 'zh', HubCopy> = {
           'Deep-route checklist for Advanced Battery scans, Entangled Power Cell leads, Observatory access, Conduit Crystal marking, and oxygen planning.',
       },
       {
+        href: Routes.Subnautica2PowerPlantObservatory,
+        title: 'Power Plant Observatory',
+        description:
+          'Repair the Karakorum turbine, pack Titanium Ingots, Mangalloy Ingots, Strontium, and finish the generator controls.',
+      },
+      {
         href: Routes.Subnautica2PowerCell,
         title: 'Power Cell',
         description:
@@ -645,6 +651,12 @@ const copyByLocale: Record<'en' | 'zh', HubCopy> = {
         title: 'Karakorum Power Plant 路线',
         description:
           'Advanced Battery 扫描、Entangled Power Cell 线索、Observatory、Conduit Crystal 标点和氧气规划。',
+      },
+      {
+        href: Routes.Subnautica2PowerPlantObservatory,
+        title: 'Power Plant Observatory 指南',
+        description:
+          '修复 Karakorum turbine，准备 Titanium Ingots、Mangalloy Ingots、Strontium，并完成控制室步骤。',
       },
       {
         href: Routes.Subnautica2PowerCell,

@@ -175,6 +175,10 @@ const karakorumPowerPlantCopy: Record<string, KarakorumPowerPlantCopy> = {
         href: Routes.Subnautica2ConduitCrystal,
         label: 'Conduit Crystal Guide',
       },
+      {
+        href: Routes.Subnautica2PowerPlantObservatory,
+        label: 'Power Plant Observatory Guide',
+      },
       { href: Routes.Subnautica2StrongAcid, label: 'Strong Acid Guide' },
       { href: Routes.Subnautica2NecroleiCyst, label: 'Necrolei Cyst Guide' },
       { href: Routes.Subnautica2Troilite, label: 'Troilite Location Guide' },
@@ -312,6 +316,10 @@ const karakorumPowerPlantCopy: Record<string, KarakorumPowerPlantCopy> = {
       {
         href: Routes.Subnautica2ConduitCrystal,
         label: 'Conduit Crystal 指南',
+      },
+      {
+        href: Routes.Subnautica2PowerPlantObservatory,
+        label: 'Power Plant Observatory 指南',
       },
       { href: Routes.Subnautica2StrongAcid, label: 'Strong Acid 指南' },
       { href: Routes.Subnautica2NecroleiCyst, label: 'Necrolei Cyst 指南' },

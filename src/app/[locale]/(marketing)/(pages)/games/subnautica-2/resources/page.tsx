@@ -147,6 +147,10 @@ const resourcesCopy: Record<string, ResourcesCopy> = {
         href: Routes.Subnautica2KarakorumPowerPlant,
         label: 'Karakorum Power Plant Route',
       },
+      {
+        href: Routes.Subnautica2PowerPlantObservatory,
+        label: 'Power Plant Observatory Guide',
+      },
       { href: Routes.Subnautica2PowerCell, label: 'Power Cell Guide' },
       {
         href: Routes.Subnautica2VehicleFabricator,
