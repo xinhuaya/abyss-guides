@@ -1,6 +1,7 @@
 import Container from '@/components/layout/container';
 import { LocaleLink } from '@/i18n/navigation';
 import { constructMetadata } from '@/lib/metadata';
+import { getBaseUrl, getUrlWithLocale } from '@/lib/urls';
 import { Routes } from '@/routes';
 import {
   AlertTriangleIcon,
@@ -22,7 +23,7 @@ export async function generateMetadata({
   return constructMetadata({
     title: 'Where to Find Troilite in Subnautica 2 - Rare Material Guide',
     description:
-      'Find Troilite in Subnautica 2 with late-game route notes, Mangalloy use cases, Metal Farm warnings, and Hotfix 2 caveats.',
+      'Find Troilite in Subnautica 2 with late-game route notes, Entangled Power Cell planning, Mangalloy use cases, Metal Farm warnings, and Hotfix 2 caveats.',
     locale,
     pathname: Routes.Subnautica2Troilite,
   });
@@ -45,6 +46,10 @@ const routeSteps = [
     title: 'Scan and mark what you can',
     body: 'If you reach the Metal Farm area, prioritize scanning valuable structures and noting the route. The best guide value comes from repeatability.',
   },
+  {
+    title: 'Keep the Entangled Power Cell route separate',
+    body: 'Entangled Power Cell currently lists Troilite alongside Conduit Crystal, Strong Acid, and Gold Ingot. Save one tagged Troilite before converting the rest into Mangalloy.',
+  },
 ];
 
 const dangerRows = [
@@ -61,6 +66,10 @@ const dangerRows = [
     'Launch-week reports describe Troilite as rare enough that careless crafting can hurt progression.',
   ],
   [
+    'Power crafting',
+    'Entangled Power Cell planning can compete with Mangalloy and Metal Farm use.',
+  ],
+  [
     'Patch drift',
     'Unknown Worlds added more Troilite resource areas in Hotfix 2, so older scarcity notes may need rechecking.',
   ],
@@ -68,14 +77,82 @@ const dangerRows = [
 
 const rules = [
   'Keep at least one Troilite available for Metal Farm use before converting everything into Mangalloy Ingots.',
+  'Keep a second tagged Troilite if Entangled Power Cell is already unlocked or close.',
   'Do not publish exact coordinates unless checked in the current build.',
   'Pair this route with the Crafting guide so players understand why Troilite matters.',
   'Recheck this page after every resource-flow patch or major Early Access update.',
 ];
 
-export default function TroiliteGuidePage() {
+const faqs = [
+  {
+    title: 'Where do you find Troilite in Subnautica 2?',
+    body: 'Current reporting points toward the deep late-route region northeast of the Alien Ruins Research Base, near green-pool and Metal Farm routes. Treat exact coordinates as patch-sensitive.',
+  },
+  {
+    title: 'What is Troilite used for?',
+    body: 'Troilite is tied to Mangalloy planning, Metal Farm duplication setup, and the Entangled Power Cell recipe in current public data.',
+  },
+  {
+    title: 'Should you turn Troilite into Mangalloy right away?',
+    body: 'Usually no. Keep at least one Troilite for Metal Farm use, and keep another if Entangled Power Cell is part of your next power route.',
+  },
+  {
+    title: 'Did Hotfix 2 change Troilite?',
+    body: 'Unknown Worlds said Hotfix 2 added more Troilite resource areas in the late-game region, so launch-week scarcity notes should be rechecked after patches.',
+  },
+];
+
+export default async function TroiliteGuidePage({
+  params,
+}: {
+  params: Promise<{ locale: Locale }>;
+}) {
+  const { locale } = await params;
+  const baseUrl = getBaseUrl().replace(/\/$/, '');
+  const pageUrl = getUrlWithLocale(Routes.Subnautica2Troilite, locale).replace(
+    /\/$/,
+    ''
+  );
+  const jsonLd = [
+    {
+      '@context': 'https://schema.org',
+      '@type': 'Article',
+      headline: 'Where to Find Troilite in Subnautica 2',
+      description:
+        'Late-route Troilite notes for Metal Farm, Mangalloy, Entangled Power Cell, and Hotfix 2 patch changes.',
+      url: pageUrl,
+      datePublished: '2026-05-24',
+      dateModified: '2026-05-27',
+      inLanguage: locale,
+      author: {
+        '@type': 'Organization',
+        name: 'Abyss Guides',
+        url: baseUrl,
+      },
+      publisher: {
+        '@type': 'Organization',
+        name: 'Abyss Guides',
+        url: baseUrl,
+      },
+      mainEntityOfPage: pageUrl,
+    },
+    {
+      '@context': 'https://schema.org',
+      '@type': 'FAQPage',
+      mainEntity: faqs.map((faq) => ({
+        '@type': 'Question',
+        name: faq.title,
+        acceptedAnswer: {
+          '@type': 'Answer',
+          text: faq.body,
+        },
+      })),
+    },
+  ];
+
   return (
     <main className="min-h-screen bg-[#031314] text-[#dff8f0]">
+      <script type="application/ld+json">{JSON.stringify(jsonLd)}</script>
       <section className="relative overflow-hidden border-b border-cyan-200/10">
         <div
           aria-hidden="true"
@@ -119,7 +196,8 @@ export default function TroiliteGuidePage() {
                 Current Troilite reporting points players toward the deep
                 late-game region northeast of the Alien Ruins Research Base, in
                 a green-pool area connected to Metal Farms. Save at least one
-                Troilite for Metal Farm duplication before converting your stock
+                Troilite for Metal Farm duplication and one more if Entangled
+                Power Cell is your next power craft before converting the rest
                 into Mangalloy Ingots.
               </p>
             </section>
@@ -182,8 +260,26 @@ export default function TroiliteGuidePage() {
                 crafting aggressively. PC Gamer reports that Metal Farms can
                 duplicate a metal only after you insert one of that metal first,
                 which makes one saved Troilite more valuable than one rushed
-                Mangalloy craft.
+                Mangalloy craft. If Entangled Power Cell is already unlocked,
+                tag a second Troilite for that recipe too.
               </p>
+            </section>
+
+            <section>
+              <h2 className="text-3xl font-semibold text-[#effffb]">FAQ</h2>
+              <div className="mt-5 grid gap-4">
+                {faqs.map((faq) => (
+                  <section
+                    key={faq.title}
+                    className="border border-cyan-200/12 bg-[#071f23] p-5"
+                  >
+                    <h3 className="font-semibold text-[#78ead7]">
+                      {faq.title}
+                    </h3>
+                    <p className="mt-3 leading-7 text-[#abc8c3]">{faq.body}</p>
+                  </section>
+                ))}
+              </div>
             </section>
 
             <section>
@@ -244,6 +340,18 @@ export default function TroiliteGuidePage() {
                 </LocaleLink>
                 <LocaleLink
                   className="text-[#78ead7] hover:underline"
+                  href={Routes.Subnautica2ConduitCrystal}
+                >
+                  Conduit Crystal Guide
+                </LocaleLink>
+                <LocaleLink
+                  className="text-[#78ead7] hover:underline"
+                  href={Routes.Subnautica2KarakorumPowerPlant}
+                >
+                  Karakorum Power Plant Route
+                </LocaleLink>
+                <LocaleLink
+                  className="text-[#78ead7] hover:underline"
                   href={Routes.Subnautica2TroiliteSoftlock}
                 >
                   Troilite Softlock Fix
@@ -274,9 +382,9 @@ export default function TroiliteGuidePage() {
                 Source note
               </h2>
               <p className="mt-3 text-sm leading-6 text-[#abc8c3]">
-                Checked May 24, 2026 against Unknown Worlds Hotfix 2 and current
-                Troilite route reporting. Recheck after every major Early Access
-                patch.
+                Checked May 27, 2026 against Unknown Worlds Hotfix 2, current
+                Troilite route reporting, and Entangled Power Cell recipe data.
+                Recheck after every major Early Access patch.
               </p>
               <div className="mt-4 grid gap-2 text-sm">
                 <a
@@ -294,6 +402,14 @@ export default function TroiliteGuidePage() {
                   target="_blank"
                 >
                   PC Gamer Troilite route
+                </a>
+                <a
+                  className="text-[#78ead7] hover:underline"
+                  href="https://subnautica2.gg/blueprints/entangled-power-cell"
+                  rel="noreferrer"
+                  target="_blank"
+                >
+                  Subnautica2.gg Entangled Power Cell
                 </a>
               </div>
             </section>
