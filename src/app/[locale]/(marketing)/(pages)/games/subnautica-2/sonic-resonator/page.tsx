@@ -16,7 +16,7 @@ type SonicCopy = ResourceGuideCopy & {
 };
 
 const PUBLISHED_AT = '2026-05-24';
-const UPDATED_AT = '2026-05-24';
+const UPDATED_AT = '2026-05-27';
 
 const sharedSources = [
   {
@@ -30,6 +30,14 @@ const sharedSources = [
   {
     href: 'https://www.pcgamer.com/games/survival-crafting/subnautica-2-feedback-resonator-scan-locations/',
     label: 'PC Gamer Feedback Resonator guide',
+  },
+  {
+    href: 'https://games.gg/news/subnautica-2-sonic-resonator/',
+    label: 'GAMES.GG Sonic Resonator explainer',
+  },
+  {
+    href: 'https://games.gg/subnautica-2/guides/subnautica-2-how-to-get-the-feedback-resonator/',
+    label: 'GAMES.GG Feedback Resonator guide',
   },
 ];
 
@@ -47,7 +55,7 @@ const sonicCopy: Record<string, SonicCopy> = {
       'The Sonic Resonator is the point where mining stops being only a hand-tool habit. It opens large ore nodes, clears route blockers, and becomes the base tool for the Feedback Resonator upgrade later.',
     quickLabel: 'Quick answer',
     quickAnswer:
-      'Scan the Sonic Resonator fragments once your Scanner, oxygen rhythm, and basic route confidence are in place. Treat it as a mining and route-clearing tool first, not as a late-game weapon. After you build it, use it on large ore nodes and route blockers, then keep it ready because Feedback Resonator later upgrades from this same tool.',
+      'Scan two Sonic Resonator fragments once your Scanner, oxygen rhythm, and return route are steady. Treat it as a mining and Bloom Biofilm clearing tool, not as a full answer to every infected growth. If a route says Armored Canker, mature Angel Comb, or long-range clearing, that is usually the later Feedback Resonator upgrade.',
     contentsLabel: 'Contents',
     routeTitle: 'Sonic Resonator route plan',
     routeSteps: [
@@ -61,11 +69,15 @@ const sonicCopy: Record<string, SonicCopy> = {
       },
       {
         title: 'Use it on large ore and blockers',
-        body: 'After crafting, the practical use is simple: aim at the large node or blocking growth, fire, and collect what the normal hand tools could not reach. Do not waste a long dive proving it works on every object in the area.',
+        body: 'After crafting, the practical use is simple: aim at the large node, Bloom Biofilm, or blocking growth, fire, and collect what the normal hand tools could not reach. Do not waste a long dive proving it works on every object in the area.',
       },
       {
         title: 'Connect it to the upgrade chain',
-        body: 'The Sonic Resonator is also the base tool for Feedback Resonator. If you are heading toward Alien Ruins, Metal Farms, or Conduit Crystal routes, keep the tool repaired, powered, and easy to find.',
+        body: 'The Sonic Resonator is also the base tool for Feedback Resonator. PC Gamer and GAMES.GG both treat Feedback Resonator as the ranged upgrade you need once normal Sonic hits its limit around armored Bloom routes.',
+      },
+      {
+        title: 'Do not confuse Biofilm with Cankers',
+        body: 'Normal Sonic Resonator can help with early Bloom Biofilm routes. Armored Bloom Cankers and long-range clearing are the point where players usually need the Feedback Resonator instead.',
       },
     ],
     tableTitle: 'What to prepare before scanning',
@@ -89,7 +101,7 @@ const sonicCopy: Record<string, SonicCopy> = {
       ],
       [
         'Feedback Resonator plan',
-        'Once this tool exists, the later ranged upgrade becomes a natural next page in progression.',
+        'Once this tool exists, the later ranged upgrade becomes the natural answer for Armored Cankers and deeper Bloom routes.',
       ],
     ],
     visualTitle: 'Tool use card',
@@ -109,6 +121,11 @@ const sonicCopy: Record<string, SonicCopy> = {
         value: 'Upgrade base',
         note: 'Keep it ready for the Feedback Resonator chain.',
       },
+      {
+        label: 'Limit',
+        value: 'Armored',
+        note: 'Armored Bloom routes usually mean Feedback Resonator, not plain Sonic.',
+      },
     ],
     cautionTitle: 'Do not make this tool your excuse to overextend',
     cautionBody:
@@ -126,6 +143,10 @@ const sonicCopy: Record<string, SonicCopy> = {
       {
         title: 'Is Sonic Resonator needed for Feedback Resonator?',
         body: 'Yes. Feedback Resonator is an upgrade path built from the Sonic Resonator, so this tool is part of the later Alien Ruins chain.',
+      },
+      {
+        title: 'Why is Sonic Resonator not clearing an Angel Comb route?',
+        body: 'You may be dealing with an Armored Bloom Canker or later infection blocker. Current Feedback Resonator guides describe the upgraded tool as the ranged answer for those routes.',
       },
       {
         title: 'What should I do after crafting it?',
@@ -157,7 +178,7 @@ const sonicCopy: Record<string, SonicCopy> = {
     ],
     sourcesTitle: 'Source note',
     sourceBody:
-      'Checked May 24, 2026 against current PC Gamer and GamesRadar reporting. Subnautica 2 is in Early Access, so fragment routes, tool behavior, and upgrade materials should be rechecked after patches.',
+      'Checked May 27, 2026 against current PC Gamer, GamesRadar, and GAMES.GG reporting. Subnautica 2 is in Early Access, so fragment routes, tool behavior, and upgrade materials should be rechecked after patches.',
     cardKicker: 'Mining tool card',
     cardBody:
       'Fragment scanning, large ore use, route-blocker clearing, inventory prep, and Feedback Resonator upgrade planning.',
@@ -400,6 +421,181 @@ const sonicCopy: Record<string, SonicCopy> = {
     cardStatusLabel: 'Status',
     cardStatusValue: 'Early Access',
   },
+};
+
+sonicCopy.zh = {
+  ...sonicCopy.en,
+  metadata: {
+    title:
+      'Subnautica 2 Sonic Resonator 指南 - 挖矿、Bloom Biofilm 和 Feedback 前置',
+    description:
+      'Subnautica 2 中文 Sonic Resonator 指南：碎片扫描、挖大矿、清 Bloom Biofilm、什么时候升级 Feedback Resonator，以及为什么普通 Sonic 清不了装甲感染点。',
+  },
+  eyebrow: 'Subnautica 2 挖矿工具',
+  title: 'Subnautica 2 Sonic Resonator 指南',
+  description:
+    'Sonic Resonator 是你从小工具挖矿进入大矿节点和路线清障的节点。它很好用，但不是万能钥匙；遇到装甲感染点时，通常要准备后续的 Feedback Resonator。',
+  quickLabel: '快速结论',
+  quickAnswer:
+    'Scanner、氧气节奏和回程路线都稳定后，再去扫 2 个 Sonic Resonator 碎片。先把它当成挖大矿和清 Bloom Biofilm 的工具，不要当武器。路线写到 Armored Canker、成熟 Angel Comb 或远程清理时，通常就该升级 Feedback Resonator 了。',
+  contentsLabel: '目录',
+  routeTitle: 'Sonic Resonator 路线规划',
+  routeSteps: [
+    {
+      title: '先带好普通 Scanner',
+      body: '这个工具从碎片扫描开始。如果 Scanner 电量、氧气余量和回程地标都不稳，先处理这些基础问题。',
+    },
+    {
+      title: '按挖矿路线走，不要慌着乱游',
+      body: 'PC Gamer 和 GamesRadar 都把 Sonic Resonator 放在大矿节点和未知挖矿提示的语境里。先围绕扫描规划路线，做出来以后再从近处开始测试。',
+    },
+    {
+      title: '用它处理大矿和 Bloom Biofilm',
+      body: '制作完成后，对准大矿节点、Bloom Biofilm 或挡路生长物发射，再收集普通工具够不到的东西。不要在一次长潜里到处试每个物体。',
+    },
+    {
+      title: '把它接到升级链里',
+      body: 'Sonic Resonator 也是 Feedback Resonator 的前置工具。PC Gamer 和 GAMES.GG 都把 Feedback Resonator 写成普通 Sonic 到达上限后的远程升级。',
+    },
+    {
+      title: '别把 Biofilm 和 Canker 混在一起',
+      body: '普通 Sonic 可以处理早期 Bloom Biofilm。Armored Bloom Cankers 或需要远程清理的感染路线，通常要换成 Feedback Resonator。',
+    },
+  ],
+  tableTitle: '扫描前准备',
+  tableHeaders: ['准备项', '原因'],
+  tableRows: [
+    ['Scanner 和电量余量', '扫碎片时工具没电，会让整趟路线很难受。'],
+    ['氧气缓冲', '大矿节点附近最容易让人盯着墙看太久。'],
+    ['背包空间', '这趟目标是挖矿，背包塞满杂物就亏了。'],
+    ['Beacon 或清楚地标', '如果这条路线以后还要回头跑，最好留下记号。'],
+    [
+      'Feedback Resonator 计划',
+      '普通 Sonic 到达上限后，远程升级链就可以顺着往后做。',
+    ],
+  ],
+  visualTitle: '工具使用卡',
+  visualItems: [
+    {
+      label: '出发前',
+      value: '扫描路线',
+      note: '氧气循环稳定后，再去找碎片更舒服。',
+    },
+    {
+      label: '第一次用',
+      value: '大矿节点',
+      note: '先在明确的挖矿提示上测试。',
+    },
+    {
+      label: '后续',
+      value: 'Feedback',
+      note: '装甲感染路线通常需要升级。',
+    },
+  ],
+  cautionTitle: '别因为有了新工具就过度深入',
+  cautionBody:
+    'Sonic Resonator 会让新材料变得可采，也正因为这样，它很容易把你拉进不该久留的路线。挖到目标、看一眼氧气，然后回家。好奇心可以留到下一趟。',
+  faqTitle: '常见问题',
+  faqs: [
+    {
+      title: 'Subnautica 2 Sonic Resonator 有什么用？',
+      body: '它主要用来处理大矿节点、Bloom Biofilm，以及部分普通早期工具没法处理的路线阻挡物。',
+    },
+    {
+      title: 'Sonic Resonator 要不要很早就冲？',
+      body: '不建议。先把 Scanner、氧气升级和稳定回程路线做好，能安全反复挖矿以后再拿它更划算。',
+    },
+    {
+      title: 'Feedback Resonator 需要 Sonic Resonator 吗？',
+      body: '需要。Feedback Resonator 是从 Sonic Resonator 升级来的，所以 Sonic 是后续 Alien Ruins 工具链的一部分。',
+    },
+    {
+      title: '为什么 Sonic Resonator 清不了 Angel Comb 路线？',
+      body: '你可能遇到的是 Armored Bloom Canker 或后期感染阻挡。当前 Feedback Resonator 攻略把升级工具写成这类路线的远程答案。',
+    },
+  ],
+  readNextTitle: '继续看',
+  related: [
+    { href: Routes.Subnautica2HeatTolerance, label: 'Heat Tolerance Guide' },
+    { href: Routes.Subnautica2AngelComb, label: 'Angel Comb Guide' },
+    { href: Routes.Subnautica2BloomBiofilm, label: 'Bloom Biofilm Guide' },
+    { href: Routes.Subnautica2Celestine, label: 'Celestine 指南' },
+    {
+      href: Routes.Subnautica2ConduitCrystal,
+      label: 'Conduit Crystal 指南',
+    },
+    { href: Routes.Subnautica2Strontium, label: 'Strontium 指南' },
+    {
+      href: Routes.Subnautica2FeedbackResonator,
+      label: 'Feedback Resonator 指南',
+    },
+    {
+      href: Routes.Subnautica2ModificationStation,
+      label: 'Modification Station 指南',
+    },
+    { href: Routes.Subnautica2MetalFarm, label: 'Metal Farm 指南' },
+  ],
+  sourcesTitle: '来源说明',
+  sourceBody:
+    '2026 年 5 月 27 日核对 PC Gamer、GamesRadar 和 GAMES.GG 的当前资料。Subnautica 2 仍在抢先体验，碎片路线、工具行为和升级材料后续可能调整。',
+  cardKicker: '挖矿工具卡',
+  cardBody:
+    '整理碎片扫描、大矿节点、Bloom Biofilm 清理、装甲感染点限制、背包准备和 Feedback Resonator 前置。',
+  cardTypeLabel: '类型',
+  cardTypeValue: '工具指南',
+  cardVerifiedLabel: '核对时间',
+  cardStatusLabel: '状态',
+  cardStatusValue: '抢先体验',
+};
+
+sonicCopy.ja = {
+  ...sonicCopy.en,
+  metadata: {
+    title:
+      'Subnautica 2 Sonic Resonator ガイド - 採掘、Bloom Biofilm、Feedback前提',
+    description:
+      'Subnautica 2のSonic Resonatorガイド。フラグメント、巨大鉱石、Bloom Biofilm、Feedback Resonatorへのアップグレードを整理します。',
+  },
+  title: 'Subnautica 2 Sonic Resonator ガイド',
+  description:
+    'Sonic Resonatorは巨大鉱石とBloom Biofilmのための重要ツールです。ただし装甲化した感染ルートでは、後のFeedback Resonatorが必要になることがあります。',
+  quickLabel: '要点',
+  quickAnswer:
+    'Scanner、酸素、帰り道が安定してからSonic Resonatorのフラグメントを2個スキャンします。まずは巨大鉱石とBloom Biofilm用のツールとして使い、Armored Cankerや遠距離処理が必要な場面ではFeedback Resonatorを準備します。',
+  routeSteps: [
+    {
+      title: 'Scannerを先に整える',
+      body: 'フラグメントスキャンが入口です。電池と酸素に余裕を持たせます。',
+    },
+    {
+      title: '巨大鉱石で試す',
+      body: 'まず近場の大きな鉱石ノードで使い、深いルートへ持ち込む前に感覚をつかみます。',
+    },
+    {
+      title: 'Bloom Biofilmに使う',
+      body: '早いBloomルートの清理に役立ちますが、装甲化したCankerにはFeedback Resonatorが必要になることがあります。',
+    },
+    {
+      title: 'Feedback Resonatorへつなげる',
+      body: 'Feedback ResonatorはSonic Resonatorから進むアップグレードです。',
+    },
+  ],
+  faqs: [
+    {
+      title: 'Sonic Resonatorは何に使う？',
+      body: '巨大鉱石、Bloom Biofilm、一部のルートブロッカーに使います。',
+    },
+    {
+      title: 'Feedback Resonatorに必要？',
+      body: 'はい。Feedback ResonatorはSonic Resonatorから進むアップグレードです。',
+    },
+    {
+      title: 'Angel Combで効かないのはなぜ？',
+      body: 'Armored Bloom Cankerなど、Feedback Resonatorが必要な対象かもしれません。',
+    },
+  ],
+  sourceBody:
+    '2026年5月27日にPC Gamer、GamesRadar、GAMES.GGを確認しました。Early Access中はツール挙動やルートが変わる可能性があります。',
 };
 
 const fallbackLocaleAliases = {
