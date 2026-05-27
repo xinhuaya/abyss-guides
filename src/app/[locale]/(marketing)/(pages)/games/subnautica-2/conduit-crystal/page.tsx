@@ -151,6 +151,10 @@ const conduitCopy: Record<string, ConduitCopy> = {
         href: Routes.Subnautica2EntangledPowerCell,
         label: 'Entangled Power Cell Guide',
       },
+      {
+        href: Routes.Subnautica2KarakorumPowerPlant,
+        label: 'Karakorum Power Plant Route',
+      },
       { href: Routes.Subnautica2Strontium, label: 'Strontium Guide' },
       { href: Routes.Subnautica2Celestine, label: 'Celestine Guide' },
       {
@@ -281,6 +285,10 @@ const conduitCopy: Record<string, ConduitCopy> = {
       {
         href: Routes.Subnautica2EntangledPowerCell,
         label: 'Entangled Power Cell 指南',
+      },
+      {
+        href: Routes.Subnautica2KarakorumPowerPlant,
+        label: 'Karakorum Power Plant 路线',
       },
       { href: Routes.Subnautica2Strontium, label: 'Strontium 指南' },
       { href: Routes.Subnautica2Celestine, label: 'Celestine 指南' },

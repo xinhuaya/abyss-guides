@@ -138,6 +138,10 @@ const advancedBatteryCopy: Record<string, AdvancedBatteryCopy> = {
         href: Routes.Subnautica2BatteryTerminal,
         label: 'Battery Terminal Guide',
       },
+      {
+        href: Routes.Subnautica2KarakorumPowerPlant,
+        label: 'Karakorum Power Plant Route',
+      },
       { href: Routes.Subnautica2BasicBattery, label: 'Basic Battery Guide' },
       {
         href: Routes.Subnautica2ConduitCrystal,
@@ -261,6 +265,10 @@ const advancedBatteryCopy: Record<string, AdvancedBatteryCopy> = {
       {
         href: Routes.Subnautica2BatteryTerminal,
         label: 'Battery Terminal 指南',
+      },
+      {
+        href: Routes.Subnautica2KarakorumPowerPlant,
+        label: 'Karakorum Power Plant 路线',
       },
       { href: Routes.Subnautica2BasicBattery, label: 'Basic Battery 指南' },
       { href: Routes.Subnautica2ConduitCrystal, label: 'Conduit Crystal 指南' },

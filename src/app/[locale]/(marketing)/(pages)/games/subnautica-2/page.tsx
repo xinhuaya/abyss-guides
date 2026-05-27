@@ -116,6 +116,12 @@ const copyByLocale: Record<'en' | 'zh', HubCopy> = {
           'Karakorum fragment route, Data Box unlock, Conduit Crystal, Strong Acid, Silver Ingot, 200 energy, and charger rotation.',
       },
       {
+        href: Routes.Subnautica2KarakorumPowerPlant,
+        title: 'Karakorum Power Plant',
+        description:
+          'Deep-route checklist for Advanced Battery scans, Entangled Power Cell leads, Observatory access, Conduit Crystal marking, and oxygen planning.',
+      },
+      {
         href: Routes.Subnautica2PowerCell,
         title: 'Power Cell',
         description:
@@ -633,6 +639,12 @@ const copyByLocale: Record<'en' | 'zh', HubCopy> = {
         title: 'Advanced Battery 指南',
         description:
           'Karakorum 碎片路线、Data Box 解锁、Conduit Crystal、Strong Acid、Silver Ingot、200 能量和充电轮换。',
+      },
+      {
+        href: Routes.Subnautica2KarakorumPowerPlant,
+        title: 'Karakorum Power Plant 路线',
+        description:
+          'Advanced Battery 扫描、Entangled Power Cell 线索、Observatory、Conduit Crystal 标点和氧气规划。',
       },
       {
         href: Routes.Subnautica2PowerCell,

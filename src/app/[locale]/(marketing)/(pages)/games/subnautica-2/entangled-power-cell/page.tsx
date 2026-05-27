@@ -161,6 +161,10 @@ const entangledPowerCellCopy: Record<string, EntangledPowerCellCopy> = {
         href: Routes.Subnautica2AdvancedBattery,
         label: 'Advanced Battery Guide',
       },
+      {
+        href: Routes.Subnautica2KarakorumPowerPlant,
+        label: 'Karakorum Power Plant Route',
+      },
       { href: Routes.Subnautica2Resources, label: 'Resources Guide' },
       { href: Routes.Subnautica2Crafting, label: 'Crafting Guide' },
     ],
@@ -279,6 +283,10 @@ const entangledPowerCellCopy: Record<string, EntangledPowerCellCopy> = {
       {
         href: Routes.Subnautica2AdvancedBattery,
         label: 'Advanced Battery 指南',
+      },
+      {
+        href: Routes.Subnautica2KarakorumPowerPlant,
+        label: 'Karakorum Power Plant 路线',
       },
       { href: Routes.Subnautica2Resources, label: '资源指南' },
       { href: Routes.Subnautica2Crafting, label: '制作指南' },
