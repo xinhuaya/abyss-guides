@@ -15,6 +15,9 @@ type ScannerCopy = ResourceGuideCopy & {
   };
 };
 
+const PUBLISHED_AT = '2026-05-23';
+const UPDATED_AT = '2026-05-27';
+
 const sharedSources = [
   {
     href: 'https://www.pcgamer.com/games/survival-crafting/subnautica-2-bioscanner-location/',
@@ -40,10 +43,10 @@ const scannerCopy: Record<string, ScannerCopy> = {
     eyebrow: 'Subnautica 2 blueprint route',
     title: 'Subnautica 2 Scanner and Bioscanner Guide',
     description:
-      'The Scanner is easy to underestimate because it does not look dramatic. Then you miss one fragment, lose the blueprint, and realize the tool was the route all along.',
+      'The Scanner is easy to underestimate because it does not look dramatic. Then you miss one fragment, lose the blueprint, and realize the tool was the route all along. The Bioscanner comes later and turns creature scans into Biomod progress.',
     quickLabel: 'Quick answer',
     quickAnswer:
-      'Make and carry the Scanner early. Scan fragments, stations, alien-route objects, and anything that looks like it belongs in a recipe chain before filling your inventory with loose loot. Later, the Bioscanner upgrade lets marine-life scans feed Biomod progression, so treat it as a mid-game upgrade, not a first-five-minutes task.',
+      'Make and carry the Scanner early. Scan fragments, stations, alien-route objects, and anything that looks like it belongs in a recipe chain before filling your inventory with loose loot. PC Gamer places the Bioscanner in Cicada wreckage about 500m southeast of the Alien Ruins Research Outpost, around bearing 130, and notes that earlier lifeform scans do not count retroactively.',
     contentsLabel: 'Contents',
     routeTitle: 'Scanner priority route',
     routeSteps: [
@@ -57,7 +60,11 @@ const scannerCopy: Record<string, ScannerCopy> = {
       },
       {
         title: 'Separate blueprint scans from Biomods',
-        body: 'The regular Scanner pushes tools, stations, and vehicle progress. Bioscanner is later, and PC Gamer reports it lets marine-life scans unlock extra Biomods.',
+        body: 'The regular Scanner pushes tools, stations, and vehicle progress. Bioscanner is later, and PC Gamer reports it lets marine-life scans unlock extra Biomods. Re-scan important lifeforms after getting it because old scans are not credited backward.',
+      },
+      {
+        title: 'Do not rush the Cicada wreck unprepared',
+        body: 'The Bioscanner lead sits far enough from the Alien Ruins Research Outpost that oxygen and landmarks matter. Put a Beacon or route note on the outpost side before swimming southeast.',
       },
       {
         title: 'Use oxygen planning for slow scans',
@@ -103,7 +110,7 @@ const scannerCopy: Record<string, ScannerCopy> = {
       ],
       [
         'Marine life',
-        'With Bioscanner, lifeform scans can contribute to Biomod progression.',
+        'With Bioscanner, lifeform scans can contribute to Biomod progression, but earlier scans may need to be repeated.',
       ],
     ],
     cautionTitle: 'Scanning is not optional',
@@ -117,7 +124,11 @@ const scannerCopy: Record<string, ScannerCopy> = {
       },
       {
         title: 'What does the Bioscanner do?',
-        body: 'Current reporting says the Bioscanner upgrade lets you scan marine life to unlock additional Biomods.',
+        body: 'Current reporting says the Bioscanner upgrade lets you scan marine life to unlock additional Biomods. PC Gamer also warns that old lifeform scans do not retroactively count.',
+      },
+      {
+        title: 'Where should I look for the Bioscanner?',
+        body: 'PC Gamer places it in Cicada wreckage roughly 500m southeast of the Alien Ruins Research Outpost, around bearing 130.',
       },
       {
         title: 'Do I need more oxygen for scan routes?',
@@ -154,7 +165,7 @@ const scannerCopy: Record<string, ScannerCopy> = {
     ],
     sourcesTitle: 'Source note',
     sourceBody:
-      'Checked May 23, 2026 against current Bioscanner, Biomod, and beginner-route reporting. Early Access unlocks can still change.',
+      'Checked May 27, 2026 against current Bioscanner, Biomod, and beginner-route reporting. Early Access unlocks can still change.',
     cardKicker: 'Scanner field card',
     cardBody:
       'Blueprint order, oxygen-safe scans, Bioscanner timing, and Biomod route notes.',
@@ -990,6 +1001,170 @@ const scannerCopy: Record<string, ScannerCopy> = {
   },
 };
 
+scannerCopy.zh = {
+  ...scannerCopy.zh,
+  metadata: {
+    title: 'Subnautica 2 Scanner 和 Bioscanner 指南 - 蓝图扫描顺序',
+    description:
+      'Subnautica 2 中文 Scanner 指南：蓝图扫描优先级、Bioscanner 位置、Cicada 残骸路线、Biomod 扫描规则和氧气准备。',
+  },
+  eyebrow: 'Subnautica 2 蓝图路线',
+  title: 'Subnautica 2 Scanner 和 Bioscanner 指南',
+  description:
+    'Scanner 不是“有空再带”的工具。少扫一个碎片，后面常常就要多跑一趟。Bioscanner 则是中期分水岭，它把生物扫描接到 Biomod 进度上。',
+  quickLabel: '快速结论',
+  quickAnswer:
+    '前期先做普通 Scanner，遇到碎片、工作站、外星路线物件和看起来像配方链的东西都先扫。Bioscanner 在更后面，PC Gamer 把位置指向 Alien Ruins Research Outpost 东南约 500m、bearing 130 左右的 Cicada 残骸，并提醒旧的生物扫描不会自动补算。',
+  routeTitle: '扫描优先级路线',
+  routeSteps: [
+    {
+      title: '长路线前先做 Scanner',
+      body: 'Scanner 依赖早期电池和电子材料链。没带它出门，看到有用碎片也只能记位置，下次再跑。',
+    },
+    {
+      title: '先扫描，再捡材料',
+      body: '残骸、工作站和外星结构附近，先扫。散装材料可以再找，漏掉的蓝图进度会拖慢后面的路线。',
+    },
+    {
+      title: '普通扫描和 Biomod 扫描分开看',
+      body: '普通 Scanner 推进工具、站点和载具；Bioscanner 用于生命体扫描和 Biomods。拿到 Bioscanner 后，重要生物需要重新扫一遍。',
+    },
+    {
+      title: '去 Cicada 残骸前先做氧气计划',
+      body: 'Bioscanner 线索离 Alien Ruins Research Outpost 有一段距离。建议先在 outpost 一侧放 Beacon 或写路线笔记，再往东南游。',
+    },
+  ],
+  visualTitle: '扫描优先级卡',
+  visualItems: [
+    {
+      label: '先扫',
+      value: '碎片',
+      note: '工具、工作站、载具会直接改变路线。',
+    },
+    {
+      label: '再扫',
+      value: '系统',
+      note: '外星物件和生产站常常接到下一步制作链。',
+    },
+    {
+      label: '后期',
+      value: 'Biomods',
+      note: '拿到 Bioscanner 后再集中补生命体扫描。',
+    },
+  ],
+  tableTitle: '优先扫描什么',
+  tableHeaders: ['目标', '为什么重要'],
+  tableRows: [
+    ['工具碎片', '先解锁能缩短路线的工具。'],
+    ['工作站', '加工和生产系统会改变你能做什么。'],
+    ['载具碎片', '把移动方式从纯游泳推到载具路线。'],
+    ['外星路线物件', '经常指向剧情或升级路径。'],
+    ['海洋生物', '有 Bioscanner 后，生命体扫描会进入 Biomod 进度。'],
+  ],
+  cautionTitle: '别把扫描留到“下次再说”',
+  cautionBody:
+    'Subnautica 2 的很多卡点不是缺材料，而是漏扫。看到碎片、站点、外星科技或新生物，先扫，再处理背包。',
+  faqs: [
+    {
+      title: 'Subnautica 2 先扫什么？',
+      body: '先扫能解锁工具、基地系统、载具路线和路线延长升级的碎片或工作站。',
+    },
+    {
+      title: 'Bioscanner 在哪里？',
+      body: 'PC Gamer 把它放在 Alien Ruins Research Outpost 东南约 500m、bearing 130 左右的 Cicada 残骸。',
+    },
+    {
+      title: '旧的生物扫描会算进 Biomods 吗？',
+      body: '当前报道说不会。拿到 Bioscanner 后，重要生命体最好重新扫一遍。',
+    },
+  ],
+  related: [
+    {
+      href: Routes.Subnautica2BioscannerBiomods,
+      label: 'Bioscanner 和 Biomods',
+    },
+    { href: Routes.Subnautica2Biolab, label: 'Biolab 指南' },
+    { href: Routes.Subnautica2ScannerStation, label: 'Scanner Station 指南' },
+    { href: Routes.Subnautica2BasicBattery, label: 'Basic Battery 指南' },
+    { href: Routes.Subnautica2OxygenDepth, label: '氧气和下潜深度' },
+    { href: Routes.Subnautica2AirTank, label: '气瓶和氧气' },
+    { href: Routes.Subnautica2Beginner, label: '新手路线' },
+  ],
+  sourceBody:
+    '2026 年 5 月 27 日核对 PC Gamer 的 Bioscanner、Biomods 和新手路线报道。抢先体验阶段的解锁顺序和残骸细节可能变化。',
+  cardBody:
+    '普通 Scanner 的蓝图顺序、Bioscanner 残骸线索、旧扫描不补算提醒，以及 Biomod 路线衔接。',
+};
+
+scannerCopy.ja = {
+  ...scannerCopy.ja,
+  metadata: {
+    title: 'Subnautica 2 Scanner and Bioscanner Guide - Blueprint Priority',
+    description:
+      'Subnautica 2 Scanner guide covering blueprint priority, Bioscanner location, Cicada wreck route, Biomod scan rules, and oxygen planning.',
+  },
+  description:
+    'The Scanner is easy to forget until one missed fragment costs another trip. Bioscanner comes later, and it makes lifeform scans part of the Biomod route.',
+  quickAnswer:
+    'Build the regular Scanner early and scan fragments, stations, alien-route objects, and recipe-chain clues before looting. PC Gamer places the Bioscanner in Cicada wreckage about 500m southeast of the Alien Ruins Research Outpost, around bearing 130, and reports that older lifeform scans do not count retroactively.',
+  routeSteps: [
+    {
+      title: 'Make the Scanner before long routes',
+      body: 'If you leave base without it, useful fragments turn into a second trip.',
+    },
+    {
+      title: 'Scan before looting',
+      body: 'At wrecks, stations, and alien structures, scan first. Materials can wait.',
+    },
+    {
+      title: 'Separate Scanner and Bioscanner jobs',
+      body: 'Regular Scanner moves tools, stations, and vehicles forward. Bioscanner handles lifeform scans for Biomods, and important lifeforms may need to be scanned again.',
+    },
+    {
+      title: 'Plan oxygen before the Cicada wreck',
+      body: 'The route from the Alien Ruins Research Outpost is long enough that a Beacon, air plan, or clear landmark chain helps.',
+    },
+  ],
+  tableRows: [
+    ['Tool fragments', 'They unlock gear that shortens later routes.'],
+    ['Stations', 'Production systems change what you can craft.'],
+    ['Vehicle fragments', 'They move you beyond pure swimming routes.'],
+    [
+      'Alien-route objects',
+      'They often point to the next story or upgrade path.',
+    ],
+    ['Marine life', 'With Bioscanner, lifeform scans feed Biomod progress.'],
+  ],
+  faqs: [
+    {
+      title: 'What should I scan first in Subnautica 2?',
+      body: 'Start with fragments and stations that unlock tools, base systems, vehicles, or route-extending upgrades.',
+    },
+    {
+      title: 'Where is the Bioscanner?',
+      body: 'PC Gamer places it in Cicada wreckage about 500m southeast of the Alien Ruins Research Outpost, around bearing 130.',
+    },
+    {
+      title: 'Do old lifeform scans count for Biomods?',
+      body: 'Current reporting says no, so re-scan key lifeforms after getting the Bioscanner.',
+    },
+  ],
+  related: [
+    {
+      href: Routes.Subnautica2BioscannerBiomods,
+      label: 'Bioscanner and Biomods',
+    },
+    { href: Routes.Subnautica2Biolab, label: 'Biolab Guide' },
+    { href: Routes.Subnautica2ScannerStation, label: 'Scanner Station Guide' },
+    { href: Routes.Subnautica2BasicBattery, label: 'Basic Battery Guide' },
+    { href: Routes.Subnautica2OxygenDepth, label: 'Oxygen and Depth Guide' },
+    { href: Routes.Subnautica2AirTank, label: 'Air Tank and O2' },
+    { href: Routes.Subnautica2Beginner, label: 'Beginner Route' },
+  ],
+  sourceBody:
+    'Checked May 27, 2026 against PC Gamer Bioscanner, Biomod, and beginner-route reporting. Early Access unlocks can still change.',
+};
+
 function getCopy(locale: Locale): ScannerCopy {
   return scannerCopy[locale] ?? scannerCopy.en;
 }
@@ -1020,7 +1195,11 @@ export default async function ScannerGuidePage({
 
   return (
     <LocalizedResourceGuidePage
-      copy={copy}
+      copy={{
+        ...copy,
+        publishedAt: PUBLISHED_AT,
+        updatedAt: UPDATED_AT,
+      }}
       icon={ScanLineIcon}
       locale={locale}
       pathname={Routes.Subnautica2Scanner}

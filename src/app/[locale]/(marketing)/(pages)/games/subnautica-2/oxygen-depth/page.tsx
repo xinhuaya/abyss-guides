@@ -16,7 +16,7 @@ type OxygenDepthCopy = ResourceGuideCopy & {
 };
 
 const PUBLISHED_AT = '2026-05-24';
-const UPDATED_AT = '2026-05-24';
+const UPDATED_AT = '2026-05-27';
 
 const sharedSources = [
   {
@@ -51,7 +51,7 @@ const oxygenDepthCopy: Record<string, OxygenDepthCopy> = {
       'Depth is not only a number. It is oxygen, visibility, panic distance, and whether you can explain the way home after one bad turn.',
     quickLabel: 'Quick answer',
     quickAnswer:
-      'Do not push a deeper route just because you reached the entrance once. Use environmental oxygen, carry Air Bladders, upgrade to the Standard Air Tank when Silver allows it, and turn back when the route has two unknowns at the same time: low oxygen plus poor landmarks, hostile pressure, or a cave you have not mapped.',
+      'Do not push a deeper route just because you reached the entrance once. Use environmental oxygen, carry Air Bladders, upgrade to the Standard Air Tank when Silver allows it, and turn back when the route has two unknowns at the same time: low oxygen plus poor landmarks, hostile pressure, or a cave you have not mapped. Scanner and Bioscanner routes are especially bad places to gamble, because scanning makes you stop moving.',
     contentsLabel: 'Contents',
     routeTitle: 'How to judge a deeper dive',
     routeSteps: [
@@ -61,7 +61,7 @@ const oxygenDepthCopy: Record<string, OxygenDepthCopy> = {
       },
       {
         title: 'Use temporary oxygen on scouting trips',
-        body: 'Oxygen Tunics, Bloom Sap funnels, cave air pockets, and Air Bladders are route tools. Use them to learn the area before spending materials on a longer plan.',
+        body: 'Oxygen Tunics, Bloom Sap funnels, cave air pockets, and Air Bladders are route tools. Use them to learn the area before spending materials on a longer plan or committing to a long scan route.',
       },
       {
         title: 'Upgrade when Silver stops blocking you',
@@ -70,6 +70,10 @@ const oxygenDepthCopy: Record<string, OxygenDepthCopy> = {
       {
         title: 'Treat depth as a checklist',
         body: 'A deeper route needs enough O2, a landmark chain, empty inventory slots, one backup air source, and a reason to be there. Curiosity alone is how long swims turn ugly.',
+      },
+      {
+        title: 'Separate scouting from collecting',
+        body: 'If the goal is a new biome, wreck, or Bioscanner lead, take notes first and collect on the second trip. A full inventory makes every oxygen mistake more annoying.',
       },
     ],
     tableTitle: 'Depth readiness checks',
@@ -94,6 +98,10 @@ const oxygenDepthCopy: Record<string, OxygenDepthCopy> = {
       [
         'Is the goal patch-sensitive?',
         'Check current notes before trusting old resource or biome advice.',
+      ],
+      [
+        'Will I need to scan?',
+        'Leave more O2 than usual because scanning locks you in place.',
       ],
     ],
     visualTitle: 'Dive decision card',
@@ -141,6 +149,15 @@ const oxygenDepthCopy: Record<string, OxygenDepthCopy> = {
       { href: Routes.Subnautica2AirTank, label: 'Air Tank and O2' },
       { href: Routes.Subnautica2Rebreather, label: 'Rebreather Guide' },
       { href: Routes.Subnautica2Wakemaker, label: 'Wakemaker Guide' },
+      { href: Routes.Subnautica2Scanner, label: 'Scanner Guide' },
+      {
+        href: Routes.Subnautica2BioscannerBiomods,
+        label: 'Bioscanner and Biomods',
+      },
+      {
+        href: Routes.Subnautica2TadpoleDepthModule,
+        label: 'Tadpole Depth Module',
+      },
       { href: Routes.Subnautica2Silver, label: 'Silver Location' },
       { href: Routes.Subnautica2Lithium, label: 'Lithium Location Guide' },
       { href: Routes.Subnautica2Biomes, label: 'Biomes Guide' },
@@ -149,7 +166,7 @@ const oxygenDepthCopy: Record<string, OxygenDepthCopy> = {
     ],
     sourcesTitle: 'Source note',
     sourceBody:
-      'Checked May 24, 2026 against current O2 reporting, beginner-route guidance, the official Steam page, and the Early Access roadmap. Exact route difficulty can change as Subnautica 2 patches land.',
+      'Checked May 27, 2026 against current O2 reporting, beginner-route guidance, the official Steam page, and the Early Access roadmap. Exact route difficulty can change as Subnautica 2 patches land.',
     cardKicker: 'Depth check card',
     cardBody:
       'A practical dive-readiness guide for oxygen upgrades, scouting trips, cave returns, and knowing when to leave.',
@@ -362,6 +379,165 @@ const oxygenDepthCopy: Record<string, OxygenDepthCopy> = {
     cardStatusLabel: '状態',
     cardStatusValue: 'Early Access',
   },
+};
+
+oxygenDepthCopy.zh = {
+  ...oxygenDepthCopy.zh,
+  metadata: {
+    title: 'Subnautica 2 氧气和下潜深度指南 - 什么时候继续，什么时候回头',
+    description:
+      'Subnautica 2 中文氧气和深度指南：O2 规划、Air Bladder、Standard Air Tank、扫描路线、Bioscanner、洞穴返程和安全回头规则。',
+  },
+  eyebrow: 'Subnautica 2 深潜规划',
+  title: 'Subnautica 2 氧气和下潜深度指南',
+  description:
+    '深度不是一个数字。它还包括氧气、视野、路线记忆、背包空间，以及你能不能在慌的时候找到回家的方向。',
+  quickLabel: '快速结论',
+  quickAnswer:
+    '不要因为“到过入口一次”就硬闯更深路线。先利用环境氧气，带 Air Bladder，Silver 够了就做 Standard Air Tank。只要低氧气和另一个风险同时出现，比如地标不清、敌对生物、没走过的洞穴，或者需要停下来扫描，就该回头。',
+  routeTitle: '怎么判断能不能继续下潜',
+  routeSteps: [
+    {
+      title: '先想回程，再想奖励',
+      body: '追扫描、残骸或稀有材料前，先问自己怎么回来。如果路线只在完全不出错时才安全，那它还没准备好。',
+    },
+    {
+      title: '侦察时先用临时氧气',
+      body: 'Oxygen Tunic、Bloom Sap funnel、洞穴空气口和 Air Bladder 都是路线工具。先用它们熟悉区域，再决定要不要做长线投入。',
+    },
+    {
+      title: 'Silver 不再卡住时升级气瓶',
+      body: 'Standard Air Tank 会明显改变洞穴和扫描路线的手感。如果卡点是 Silver，先解决 Silver 路线，不要拿初始氧气硬拼。',
+    },
+    {
+      title: '扫描路线要多留氧气',
+      body: 'Scanner 和 Bioscanner 都会让你停在原地。去残骸、洞穴或生命体扫描点时，回头线要比普通采集路线更早。',
+    },
+  ],
+  tableTitle: '深潜前检查表',
+  tableHeaders: ['问题', '安全答案'],
+  tableRows: [
+    ['我能说清楚怎么回来吗？', '有起点地标、中途提示和返程提示。'],
+    ['我有备用氧气吗？', '有 Air Bladder，或者知道下一个环境氧气点在哪里。'],
+    ['这是洞穴或残骸路线吗？', '比开放水域更早回头，封闭路线转错弯代价更高。'],
+    ['背包快满了吗？', '先回家。满背包会让深潜收益变低。'],
+    ['需要扫描吗？', '比采集路线多留 O2，因为扫描时你不能移动。'],
+  ],
+  visualTitle: '下潜判断卡',
+  visualItems: [
+    { label: '绿色', value: '复跑', note: '路线熟、地标清楚、氧气有余量。' },
+    { label: '黄色', value: '侦察', note: '只有一个未知点，且返程计划清楚。' },
+    {
+      label: '红色',
+      value: '回头',
+      note: '低氧气加低能见度、洞穴岔路或没有备用氧气。',
+    },
+  ],
+  cautionTitle: '贪深度比回头更浪费时间',
+  cautionBody:
+    '很多好的 Subnautica 2 路线，其实是提前结束的。带着一条清楚笔记安全回家，比慌忙游半天、背包没空间、还忘了洞口在哪里要强得多。',
+  faqs: [
+    {
+      title: 'Subnautica 2 什么时候可以下潜更深？',
+      body: '当你有更稳的氧气、能说清路线、带了备用氧气，并且有明确目标，比如扫描、材料或基地中转点检查时。',
+    },
+    {
+      title: '扫描路线为什么更危险？',
+      body: '扫描会让你停下来，洞穴或残骸里这几秒很贵。去扫描前最好有 Air Bladder、气瓶升级或环境氧气点。',
+    },
+    {
+      title: 'Standard Air Tank 值得优先做吗？',
+      body: '值得。只要 Silver、Titanium 和 Rubber 够，它会让早期洞穴、残骸和扫描路线稳定很多。',
+    },
+  ],
+  related: [
+    { href: Routes.Subnautica2AirTank, label: '气瓶和氧气' },
+    { href: Routes.Subnautica2Rebreather, label: 'Rebreather 指南' },
+    { href: Routes.Subnautica2Scanner, label: 'Scanner 指南' },
+    {
+      href: Routes.Subnautica2BioscannerBiomods,
+      label: 'Bioscanner 和 Biomods',
+    },
+    {
+      href: Routes.Subnautica2TadpoleDepthModule,
+      label: 'Tadpole Depth Module',
+    },
+    { href: Routes.Subnautica2Silver, label: 'Silver 位置' },
+    { href: Routes.Subnautica2Map, label: '地图和路线' },
+    { href: Routes.Subnautica2Beginner, label: '新手路线' },
+  ],
+  sourceBody:
+    '2026 年 5 月 27 日核对当前 O2 攻略、入门路线资料、Steam 官方页面和抢先体验路线图。Subnautica 2 后续补丁可能改变具体路线难度。',
+  cardBody:
+    '给氧气升级、扫描路线、侦察潜水、洞穴返程和判断何时回头用的实用路线指南。',
+};
+
+oxygenDepthCopy.ja = {
+  ...oxygenDepthCopy.ja,
+  metadata: {
+    title: 'Subnautica 2 Oxygen and Depth Guide - When to Dive Deeper',
+    description:
+      'Subnautica 2 oxygen and depth guide covering O2 planning, Air Bladders, Standard Air Tank, scan routes, Bioscanner, cave returns, and turn-back rules.',
+  },
+  description:
+    'Depth is not just a number. It is oxygen, visibility, route memory, inventory space, and whether you can still find the way home under pressure.',
+  quickAnswer:
+    'Do not push deeper just because you reached an entrance once. Use environmental oxygen, carry Air Bladders, build the Standard Air Tank when Silver allows it, and leave when low O2 appears with another problem: bad landmarks, hostile pressure, an unmapped cave, or a scan that forces you to stop.',
+  routeSteps: [
+    {
+      title: 'Check the return before the reward',
+      body: 'Before chasing a scan, wreck, or rare material, ask how you will get home. If the plan only works perfectly, it is not ready.',
+    },
+    {
+      title: 'Use temporary oxygen while scouting',
+      body: 'Oxygen Tunics, Bloom Sap funnels, air pockets, and Air Bladders are scouting tools before a longer route.',
+    },
+    {
+      title: 'Upgrade when Silver allows it',
+      body: 'Standard Air Tank makes cave and scan routes feel far less brittle.',
+    },
+    {
+      title: 'Leave extra O2 for scans',
+      body: 'Scanner and Bioscanner routes make you stop moving, so turn back earlier than you would on a simple material run.',
+    },
+  ],
+  tableRows: [
+    [
+      'Can I describe the way back?',
+      'Yes, with a start landmark, midpoint cue, and return cue.',
+    ],
+    [
+      'Do I have backup oxygen?',
+      'Carry an Air Bladder or know the next oxygen reset.',
+    ],
+    ['Is this a cave or wreck?', 'Leave earlier than in open water.'],
+    [
+      'Is my inventory nearly full?',
+      'Go home first; full bags make deep routes worse.',
+    ],
+    [
+      'Will I need to scan?',
+      'Leave more O2 than usual because scanning locks you in place.',
+    ],
+  ],
+  related: [
+    { href: Routes.Subnautica2AirTank, label: 'Air Tank and O2' },
+    { href: Routes.Subnautica2Rebreather, label: 'Rebreather Guide' },
+    { href: Routes.Subnautica2Scanner, label: 'Scanner Guide' },
+    {
+      href: Routes.Subnautica2BioscannerBiomods,
+      label: 'Bioscanner and Biomods',
+    },
+    {
+      href: Routes.Subnautica2TadpoleDepthModule,
+      label: 'Tadpole Depth Module',
+    },
+    { href: Routes.Subnautica2Silver, label: 'Silver Location' },
+    { href: Routes.Subnautica2Map, label: 'Map and Routes' },
+    { href: Routes.Subnautica2Beginner, label: 'Beginner Route' },
+  ],
+  sourceBody:
+    'Checked May 27, 2026 against current O2 reporting, beginner-route guidance, the official Steam page, and the Early Access roadmap.',
 };
 
 const fallbackLocaleAliases = {

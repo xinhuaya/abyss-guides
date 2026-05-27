@@ -16,7 +16,7 @@ type BiolabCopy = ResourceGuideCopy & {
 };
 
 const PUBLISHED_AT = '2026-05-25';
-const UPDATED_AT = '2026-05-25';
+const UPDATED_AT = '2026-05-27';
 
 const sharedSources = [
   {
@@ -51,13 +51,13 @@ const biolabCopy: Record<string, BiolabCopy> = {
       'Biolab is where creature scans stop being trivia and start becoming loadout choices. Build one at base once you can spare Mild Acid, then use it as the place where Biomods, Adaptations, and route planning meet.',
     quickLabel: 'Quick answer',
     quickAnswer:
-      'Current blueprint data lists Biolab as a Builder Tool / Habitat Builder station that costs Titanium x3, Copper Wire x1, and Mild Acid x1. Console Pulse points to the Welcome Center southeast of the Life Pod, around bearing 150, as a quick early Biolab lead. GameSpot notes that once your base is running, you can build your own Biolab to manage Biomods.',
+      'Current blueprint data lists Biolab as a Builder Tool / Habitat Builder station that costs Titanium x3, Copper Wire x1, and Mild Acid x1. Console Pulse points to the Welcome Center southeast of the Life Pod, around bearing 150, as a quick early Biolab lead. Treat that first station as a test bench, then build your own near storage once the Bioscanner/Biomod route starts to matter.',
     contentsLabel: 'Contents',
     routeTitle: 'Biolab unlock and build plan',
     routeSteps: [
       {
         title: 'Visit the Welcome Center first',
-        body: 'Console Pulse reports the closest Biolab inside the Welcome Center southeast of the Life Pod, near bearing 150. Bring a Scanner and enough air to check the room properly.',
+        body: 'Console Pulse reports the closest Biolab inside the Welcome Center southeast of the Life Pod, near bearing 150. Bring a Scanner, one clean oxygen plan, and a spare battery if your route has already been messy.',
       },
       {
         title: 'Power the existing station if needed',
@@ -65,11 +65,11 @@ const biolabCopy: Record<string, BiolabCopy> = {
       },
       {
         title: 'Build your own once base storage exists',
-        body: 'The recipe is small but not free: Titanium x3, Copper Wire x1, and Mild Acid x1. Put it near your scanner, chemicals, and upgrade storage.',
+        body: 'The recipe is small but not free: Titanium x3, Copper Wire x1, and Mild Acid x1. Put it near your scanner, chemicals, and upgrade storage so Biomod swaps happen before you leave base.',
       },
       {
         title: 'Treat Biomods as route tools',
-        body: 'Wand describes the Biolab as the place to inject and remove Biomods. Do not swap them randomly; match the active and passive slots to the next dive.',
+        body: 'Wand describes the Biolab as the place to inject and remove Biomods. Do not swap them randomly; match active and passive slots to the next dive, especially if the plan includes lifeform scans, heat checks, or deep-resource pickups.',
       },
       {
         title: 'Keep Mild Acid in reserve',
@@ -90,6 +90,10 @@ const biolabCopy: Record<string, BiolabCopy> = {
       ['Titanium x3', 'The largest direct input in the build recipe.'],
       ['Copper Wire x1', 'Reserve wire before spending Copper on batteries.'],
       ['Mild Acid x1', 'Craft it from the Acidic Raion Pouch chain first.'],
+      [
+        'Bioscanner handoff',
+        'Use the Biolab after marine-life scans start feeding Biomod choices.',
+      ],
     ],
     visualTitle: 'Biomod loop',
     visualItems: [
@@ -124,7 +128,7 @@ const biolabCopy: Record<string, BiolabCopy> = {
       },
       {
         title: 'What does Biolab do?',
-        body: 'Current databank text says the Biolab injects and removes Biomods, which modify your Adaptations.',
+        body: 'Current databank text says the Biolab injects and removes Biomods, which modify your Adaptations. In practice, it is the station you check before a planned dive.',
       },
       {
         title: 'Should I build Biolab before Processor?',
@@ -137,6 +141,10 @@ const biolabCopy: Record<string, BiolabCopy> = {
       { href: Routes.Subnautica2AngelComb, label: 'Angel Comb Guide' },
       { href: Routes.Subnautica2BloomBiofilm, label: 'Bloom Biofilm Guide' },
       { href: Routes.Subnautica2MildAcid, label: 'Mild Acid Guide' },
+      {
+        href: Routes.Subnautica2AcidicRaionPouch,
+        label: 'Acidic Raion Pouch Guide',
+      },
       { href: Routes.Subnautica2EchoLocation, label: 'Echo Location Guide' },
       { href: Routes.Subnautica2Processor, label: 'Processor Guide' },
       {
@@ -148,12 +156,13 @@ const biolabCopy: Record<string, BiolabCopy> = {
         label: 'Habitat Builder Guide',
       },
       { href: Routes.Subnautica2CopperWire, label: 'Copper Wire Guide' },
+      { href: Routes.Subnautica2OxygenDepth, label: 'Oxygen and Depth Guide' },
       { href: Routes.Subnautica2BaseBuilding, label: 'Base Building Guide' },
       { href: Routes.Subnautica2Crafting, label: 'Crafting Guide' },
     ],
     sourcesTitle: 'Source note',
     sourceBody:
-      'Checked May 25, 2026 against Subnautica2.gg, Wand, Console Pulse, and GameSpot. Subnautica 2 is in Early Access, so Welcome Center details, power behavior, and Biomod rules should be rechecked after patches.',
+      'Checked May 27, 2026 against Subnautica2.gg, Wand, Console Pulse, and GameSpot. Subnautica 2 is in Early Access, so Welcome Center details, power behavior, and Biomod rules should be rechecked after patches.',
     cardKicker: 'Biomod card',
     cardBody:
       'Welcome Center lead, power note, Titanium, Copper Wire, Mild Acid, and Biomod planning.',
@@ -399,6 +408,161 @@ const biolabCopy: Record<string, BiolabCopy> = {
     cardStatusLabel: 'Status',
     cardStatusValue: 'Early Access',
   },
+};
+
+biolabCopy.zh = {
+  ...biolabCopy.zh,
+  metadata: {
+    title: 'Subnautica 2 Biolab 指南 - Welcome Center 路线、配方和 Biomods',
+    description:
+      'Subnautica 2 中文 Biolab 指南：Welcome Center 路线、Basic Battery 供电、Titanium、Copper Wire、Mild Acid 配方，以及 Bioscanner 后的 Biomod 管理。',
+  },
+  eyebrow: 'Subnautica 2 Biomod 设备',
+  title: 'Subnautica 2 Biolab 指南',
+  description:
+    'Biolab 不是随手放在基地里的装饰台。它真正有用的时候，是你已经开始用 Bioscanner 扫生物、准备按下一趟路线调整 Biomods。',
+  quickLabel: '快速结论',
+  quickAnswer:
+    '当前蓝图资料把 Biolab 列为 Habitat Builder 可建造设备，配方是 Titanium x3、Copper Wire x1、Mild Acid x1。Console Pulse 给出的早期线索在 Life Pod 东南方向、bearing 150 左右的 Welcome Center。先用那里现成的 Biolab 熟悉 Biomods，等 Mild Acid 不紧张后再在基地里建自己的。',
+  routeTitle: 'Biolab 解锁和建造路线',
+  routeSteps: [
+    {
+      title: '先去 Welcome Center',
+      body: '目标在 Life Pod 东南方向，约 bearing 150。带 Scanner，也给自己留一条稳的回程路线，别把这趟做成缺氧硬闯。',
+    },
+    {
+      title: '设备不亮就看墙上的电池口',
+      body: '攻略提到 Biolab 附近有 Basic Battery 供电口。遇到没反应的站点，先检查供电，再判断是不是路线走错。',
+    },
+    {
+      title: '基地稳定后再自建',
+      body: 'Titanium x3、Copper Wire x1、Mild Acid x1 看着不多，但 Mild Acid 前期很宝贵。把 Biolab 放在扫描、化学材料和升级箱旁边，出门前就能调好 Biomods。',
+    },
+    {
+      title: '按路线选 Biomods',
+      body: '下一趟如果是生命体扫描、热区、深处资源或长距离返回，Biomod 选择都不一样。别在基地随手乱换，按任务换。',
+    },
+  ],
+  tableTitle: 'Biolab 检查表',
+  tableHeaders: ['项目', '怎么确认'],
+  tableRows: [
+    ['Welcome Center', 'Life Pod 东南方向，约 bearing 150。'],
+    ['供电', '现成 Biolab 可能需要 Basic Battery。'],
+    ['配方', 'Titanium x3、Copper Wire x1、Mild Acid x1。'],
+    ['Mild Acid', '先走 Acidic Raion Pouch 链，别把第一份酸随便花掉。'],
+    [
+      'Bioscanner 衔接',
+      '生命体扫描开始影响 Biomods 后，Biolab 价值会明显上来。',
+    ],
+  ],
+  visualTitle: 'Biomod 路线循环',
+  visualItems: [
+    { label: '找', value: 'Welcome Center', note: '先用现成设备摸清规则。' },
+    {
+      label: '建',
+      value: 'Biolab',
+      note: 'Titanium、Copper Wire、Mild Acid。',
+    },
+    { label: '调', value: 'Biomods', note: '按下一趟潜水路线换。' },
+  ],
+  cautionTitle: '不要把 Biomods 当装饰品',
+  cautionBody:
+    'Biolab 的价值在于改变下一趟下水的容错。出门前先看目标：找资源、扫生物、进危险区，还是跑长线。目标不同，Biomods 就应该不同。',
+  faqs: [
+    {
+      title: 'Subnautica 2 第一个 Biolab 在哪里？',
+      body: '目前可用线索指向 Life Pod 东南方向、bearing 150 左右的 Welcome Center。',
+    },
+    {
+      title: 'Biolab 配方是什么？',
+      body: '当前蓝图资料列出 Titanium x3、Copper Wire x1、Mild Acid x1。',
+    },
+    {
+      title: 'Biolab 和 Bioscanner 有什么关系？',
+      body: 'Bioscanner 让生命体扫描进入 Biomod 路线，Biolab 则是注入、移除和调整 Biomods 的地方。',
+    },
+    {
+      title: 'Biolab 要比 Processor 更早做吗？',
+      body: '如果只有一份 Mild Acid，先看下一步目标。要调 Biomods 就做 Biolab；要推进加工链，就优先 Processor。',
+    },
+  ],
+  related: [
+    {
+      href: Routes.Subnautica2BioscannerBiomods,
+      label: 'Bioscanner 和 Biomods',
+    },
+    { href: Routes.Subnautica2MildAcid, label: 'Mild Acid 指南' },
+    {
+      href: Routes.Subnautica2AcidicRaionPouch,
+      label: 'Acidic Raion Pouch 指南',
+    },
+    { href: Routes.Subnautica2Processor, label: 'Processor 指南' },
+    { href: Routes.Subnautica2OxygenDepth, label: '氧气和下潜深度' },
+    { href: Routes.Subnautica2HabitatBuilder, label: 'Habitat Builder 指南' },
+    { href: Routes.Subnautica2CopperWire, label: 'Copper Wire 指南' },
+  ],
+  sourceBody:
+    '2026 年 5 月 27 日核对 Subnautica2.gg、Wand、Console Pulse 和 GameSpot。Subnautica 2 仍在抢先体验，Welcome Center 细节、供电行为和 Biomod 规则后续可能调整。',
+  cardBody:
+    'Welcome Center 线索、Basic Battery 供电、Titanium、Copper Wire、Mild Acid 和 Biomod 路线规划。',
+};
+
+biolabCopy.ja = {
+  ...biolabCopy.ja,
+  metadata: {
+    title: 'Subnautica 2 Biolab Guide - Welcome Center route and Biomods',
+    description:
+      'Subnautica 2 Biolab guide for the Welcome Center route, Basic Battery socket, Titanium, Copper Wire, Mild Acid, and Biomod planning after Bioscanner scans.',
+  },
+  description:
+    'Biolab is not just another base station. It starts to matter when Bioscanner scans are feeding Biomod choices and you need to tune the next dive before leaving base.',
+  quickAnswer:
+    'Current blueprint data lists Biolab as a Habitat Builder station costing Titanium x3, Copper Wire x1, and Mild Acid x1. Console Pulse points to the Welcome Center southeast of the Life Pod, around bearing 150, for the early station. Use that one first, then build your own once Mild Acid is not blocking a more urgent route.',
+  routeSteps: [
+    {
+      title: 'Check the Welcome Center first',
+      body: 'Head southeast from the Life Pod, around bearing 150. Bring the Scanner and enough oxygen to look around without rushing.',
+    },
+    {
+      title: 'Check the battery socket',
+      body: 'If the existing station is dark, look for the Basic Battery socket before assuming the route is wrong.',
+    },
+    {
+      title: 'Build your own after storage is stable',
+      body: 'The recipe is Titanium x3, Copper Wire x1, and Mild Acid x1. Keep it near scan notes, chemical storage, and upgrade materials.',
+    },
+    {
+      title: 'Pick Biomods for the route',
+      body: 'A scan route, heat route, deep-resource route, and long return route do not want the same Biomod setup.',
+    },
+  ],
+  tableRows: [
+    ['Welcome Center', 'Southeast of the Life Pod, around bearing 150.'],
+    ['Power', 'The existing station may need a Basic Battery.'],
+    ['Recipe', 'Titanium x3, Copper Wire x1, Mild Acid x1.'],
+    ['Mild Acid', 'Plan around the Acidic Raion Pouch chain first.'],
+    [
+      'Bioscanner handoff',
+      'Use Biolab when lifeform scans start shaping Biomods.',
+    ],
+  ],
+  related: [
+    {
+      href: Routes.Subnautica2BioscannerBiomods,
+      label: 'Bioscanner and Biomods',
+    },
+    { href: Routes.Subnautica2MildAcid, label: 'Mild Acid Guide' },
+    {
+      href: Routes.Subnautica2AcidicRaionPouch,
+      label: 'Acidic Raion Pouch Guide',
+    },
+    { href: Routes.Subnautica2Processor, label: 'Processor Guide' },
+    { href: Routes.Subnautica2OxygenDepth, label: 'Oxygen and Depth Guide' },
+    { href: Routes.Subnautica2HabitatBuilder, label: 'Habitat Builder Guide' },
+    { href: Routes.Subnautica2CopperWire, label: 'Copper Wire Guide' },
+  ],
+  sourceBody:
+    'Checked May 27, 2026 against Subnautica2.gg, Wand, Console Pulse, and GameSpot. Early Access details can change after patches.',
 };
 
 const fallbackCopy = biolabCopy.en;
