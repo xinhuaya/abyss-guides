@@ -16,7 +16,7 @@ type BasicFinsCopy = ResourceGuideCopy & {
 };
 
 const PUBLISHED_AT = '2026-05-26';
-const UPDATED_AT = '2026-05-26';
+const UPDATED_AT = '2026-05-27';
 
 const sharedSources = [
   {
@@ -51,7 +51,7 @@ const basicFinsCopy: Record<string, BasicFinsCopy> = {
       'Basic Fins are the first upgrade that makes the ocean feel less like a chore. Craft them before long material runs, because every extra second of swim speed pays you back all night.',
     quickLabel: 'Quick answer',
     quickAnswer:
-      'Dexerto lists Basic Fins as feet-slot equipment with a small speed boost, crafted at the Fabricator from Rubber x2 and Fiber x2. All Things How matches the 2 Rubber + 2 Fiber recipe and breaks the raw chain down to 4 Lucifer Rotsac and 4 Fibrous Pulp. GameWith instead lists Rubber x2 and Fiber Mesh x2, while also saying the recipe is available from the start and later upgrades into Improved Fins with Basic Fins, Fiber Mesh, and Conduit Crystal. Because sources differ on Fiber versus Fiber Mesh, check the Fabricator in your current save before farming the second ingredient.',
+      'Dexerto lists Basic Fins as feet-slot equipment with a small speed boost, crafted at the Fabricator from Rubber x2 and Fiber x2. All Things How matches the 2 Rubber + 2 Fiber recipe and breaks the raw chain down to 4 Lucifer Rotsac and 4 Fibrous Pulp. GameWith instead lists Rubber x2 and Fiber Mesh x2, while also saying the recipe is available from the start and later upgrades into Improved Fins with Basic Fins, Fiber Mesh, and Conduit Crystal. Check your Fabricator first, then pair the fins with Air Tank, Wakemaker, and Repair Tool prep before longer swims.',
     contentsLabel: 'Contents',
     routeTitle: 'Basic Fins route plan',
     routeSteps: [
@@ -72,6 +72,10 @@ const basicFinsCopy: Record<string, BasicFinsCopy> = {
         body: 'The speed bump is small, but it touches every later swim. Make Basic Fins before Silver, Quartz, Rubber refills, or long wreck loops.',
       },
       {
+        title: 'Pair speed with oxygen, not confidence',
+        body: 'Fins help you cover water faster, but they do not make a bad oxygen plan safe. Treat them as part of the same kit as Air Tank, Wakemaker, Scanner, and a clean return marker.',
+      },
+      {
         title: 'Keep the old pair for Improved Fins',
         body: 'GameWith says Basic Fins can later upgrade into Improved Fins with Fiber Mesh and Conduit Crystal. Do not trash the first pair just because a better option appears.',
       },
@@ -87,6 +91,10 @@ const basicFinsCopy: Record<string, BasicFinsCopy> = {
       ],
       ['Use', 'Feet-slot fins with a small swim speed boost.'],
       ['Upgrade', 'GameWith lists Basic Fins as part of Improved Fins.'],
+      [
+        'Route kit',
+        'Pair with Air Tank, Wakemaker, Scanner, and Repair Tool planning.',
+      ],
     ],
     visualTitle: 'First swim kit',
     visualItems: [
@@ -135,6 +143,8 @@ const basicFinsCopy: Record<string, BasicFinsCopy> = {
       { href: Routes.Subnautica2FiberMesh, label: 'Fiber Mesh Guide' },
       { href: Routes.Subnautica2AirTank, label: 'Air Tank and O2 Guide' },
       { href: Routes.Subnautica2Wakemaker, label: 'Wakemaker Guide' },
+      { href: Routes.Subnautica2RepairTool, label: 'Repair Tool Guide' },
+      { href: Routes.Subnautica2Scanner, label: 'Scanner Guide' },
       {
         href: Routes.Subnautica2ConduitCrystal,
         label: 'Conduit Crystal Guide',
@@ -144,7 +154,7 @@ const basicFinsCopy: Record<string, BasicFinsCopy> = {
     ],
     sourcesTitle: 'Source note',
     sourceBody:
-      'Checked May 26, 2026 against Dexerto, All Things How, GameWith, and Subnautica2.gg. Early Access recipes and unlock rules can change, and current sources disagree on Fiber versus Fiber Mesh, so the guide tells players to verify the Fabricator before farming.',
+      'Checked May 27, 2026 against Dexerto, All Things How, GameWith, and Subnautica2.gg. Early Access recipes and unlock rules can change, and current sources disagree on Fiber versus Fiber Mesh, so the guide tells players to verify the Fabricator before farming.',
     cardKicker: 'Movement card',
     cardBody:
       'Rubber x2, Fiber or Fiber Mesh check, Fabricator crafting, first swim-speed boost, early oxygen routing, and Improved Fins planning.',
@@ -251,13 +261,15 @@ const basicFinsCopy: Record<string, BasicFinsCopy> = {
       { href: Routes.Subnautica2FiberMesh, label: 'Fiber Mesh 指南' },
       { href: Routes.Subnautica2AirTank, label: '气瓶和氧气指南' },
       { href: Routes.Subnautica2Wakemaker, label: 'Wakemaker 指南' },
+      { href: Routes.Subnautica2RepairTool, label: 'Repair Tool 指南' },
+      { href: Routes.Subnautica2Scanner, label: 'Scanner 指南' },
       { href: Routes.Subnautica2ConduitCrystal, label: 'Conduit Crystal 指南' },
       { href: Routes.Subnautica2Resources, label: '资源指南' },
       { href: Routes.Subnautica2Crafting, label: '制作指南' },
     ],
     sourcesTitle: '来源说明',
     sourceBody:
-      '2026 年 5 月 26 日核对 Dexerto、All Things How、GameWith 和 Subnautica2.gg。抢先体验阶段配方和解锁规则可能变化，而且当前来源在 Fiber / Fiber Mesh 上不完全一致，所以页面提醒玩家采集前先确认 Fabricator。',
+      '2026 年 5 月 27 日核对 Dexerto、All Things How、GameWith 和 Subnautica2.gg。抢先体验阶段配方和解锁规则可能变化，而且当前来源在 Fiber / Fiber Mesh 上不完全一致，所以页面提醒玩家采集前先确认 Fabricator。',
     cardKicker: '移动卡片',
     cardBody:
       'Rubber x2、Fiber 或 Fiber Mesh 检查、Fabricator 制作、第一件游速升级、前期氧气路线和 Improved Fins 规划。',

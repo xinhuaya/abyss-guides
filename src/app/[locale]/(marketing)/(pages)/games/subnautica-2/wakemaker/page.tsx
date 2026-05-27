@@ -16,7 +16,7 @@ type WakemakerCopy = ResourceGuideCopy & {
 };
 
 const PUBLISHED_AT = '2026-05-25';
-const UPDATED_AT = '2026-05-25';
+const UPDATED_AT = '2026-05-27';
 
 const sharedSources = [
   {
@@ -47,7 +47,7 @@ const wakemakerCopy: Record<string, WakemakerCopy> = {
       'The Wakemaker is the first movement upgrade that changes how the early ocean feels. It is not just speed. It is safer oxygen margins, faster loot loops, and less time staring at the surface line.',
     quickLabel: 'Quick answer',
     quickAnswer:
-      'Current PC Gamer reporting says Wakemaker fragments can be scanned around the safe shallows near Life Pod 1, with additional fragments in the Lily Pads. Subnautica2Hub lists the recipe as Titanium x1, Copper Wire x1, Basic Battery x1, and Fiber Mesh x1, with four scans required to unlock it.',
+      'Current PC Gamer reporting says Wakemaker fragments can be scanned around the safe shallows near Life Pod 1, with additional fragments in the Lily Pads. Subnautica2Hub lists the recipe as Titanium x1, Copper Wire x1, Basic Battery x1, and Fiber Mesh x1, with four scans required to unlock it. It belongs in the same early movement kit as Basic Fins, Air Tank, Scanner, and a charged tool battery.',
     contentsLabel: 'Contents',
     routeTitle: 'Wakemaker unlock route',
     routeSteps: [
@@ -71,6 +71,10 @@ const wakemakerCopy: Record<string, WakemakerCopy> = {
         title: 'Craft it before repeated errands',
         body: 'The Wakemaker pays for itself when you are shuttling between scan targets, resource runs, and oxygen-safe routes. If you are about to do several trips, make it now.',
       },
+      {
+        title: 'Recharge before the next fragment sweep',
+        body: 'Wakemaker helps the swim, but Scanner and Repair Tool still need batteries. Once Battery Terminal is available, rotate weak batteries before chasing Lily Pads or deeper backup fragments.',
+      },
     ],
     tableTitle: 'Wakemaker checklist',
     tableHeaders: ['Need', 'What to confirm'],
@@ -83,6 +87,10 @@ const wakemakerCopy: Record<string, WakemakerCopy> = {
       [
         'Fiber Mesh x1',
         'Plan the plant run before returning to the Fabricator.',
+      ],
+      [
+        'Charged tools',
+        'Scanner, Repair Tool, and Wakemaker planning share battery pressure.',
       ],
     ],
     visualTitle: 'Early swim route',
@@ -140,6 +148,11 @@ const wakemakerCopy: Record<string, WakemakerCopy> = {
       { href: Routes.Subnautica2Rubber, label: 'Rubber Recipe Guide' },
       { href: Routes.Subnautica2BasicFins, label: 'Basic Fins Guide' },
       { href: Routes.Subnautica2ImprovedFins, label: 'Improved Fins Guide' },
+      { href: Routes.Subnautica2RepairTool, label: 'Repair Tool Guide' },
+      {
+        href: Routes.Subnautica2BatteryTerminal,
+        label: 'Battery Terminal Guide',
+      },
       { href: Routes.Subnautica2AirTank, label: 'Air Tank Guide' },
       { href: Routes.Subnautica2OxygenDepth, label: 'Oxygen and Depth Guide' },
       { href: Routes.Subnautica2Scanner, label: 'Scanner Guide' },
@@ -148,7 +161,7 @@ const wakemakerCopy: Record<string, WakemakerCopy> = {
     ],
     sourcesTitle: 'Source note',
     sourceBody:
-      'Checked May 25, 2026 against PC Gamer and Subnautica2Hub. Early Access fragment placement and scan counts can change, so recheck this route after major patches.',
+      'Checked May 27, 2026 against PC Gamer and Subnautica2Hub. Early Access fragment placement and scan counts can change, so recheck this route after major patches.',
     cardKicker: 'Mobility card',
     cardBody:
       'Fragment route, four-scan unlock note, Fabricator recipe, Fiber Mesh reminder, and early oxygen-route timing.',
@@ -259,6 +272,12 @@ const wakemakerCopy: Record<string, WakemakerCopy> = {
       { href: Routes.Subnautica2FiberMesh, label: 'Fiber Mesh 指南' },
       { href: Routes.Subnautica2Rubber, label: 'Rubber 配方指南' },
       { href: Routes.Subnautica2BasicFins, label: 'Basic Fins 指南' },
+      { href: Routes.Subnautica2ImprovedFins, label: 'Improved Fins 指南' },
+      { href: Routes.Subnautica2RepairTool, label: 'Repair Tool 指南' },
+      {
+        href: Routes.Subnautica2BatteryTerminal,
+        label: 'Battery Terminal 指南',
+      },
       { href: Routes.Subnautica2AirTank, label: 'Air Tank 指南' },
       { href: Routes.Subnautica2OxygenDepth, label: '氧气与深度指南' },
       { href: Routes.Subnautica2Scanner, label: 'Scanner 指南' },
@@ -267,7 +286,7 @@ const wakemakerCopy: Record<string, WakemakerCopy> = {
     ],
     sourcesTitle: '来源说明',
     sourceBody:
-      '2026 年 5 月 25 日核对 PC Gamer 与 Subnautica2Hub。抢先体验阶段的碎片位置和扫描次数可能随补丁变化，重要更新后需要重新核对。',
+      '2026 年 5 月 27 日核对 PC Gamer 与 Subnautica2Hub。抢先体验阶段的碎片位置和扫描次数可能随补丁变化，重要更新后需要重新核对。',
     cardKicker: '移动工具卡',
     cardBody:
       '碎片路线、4 次扫描解锁、Fabricator 配方、Fiber Mesh 提醒和前期氧气路线时机。',

@@ -16,7 +16,7 @@ type ImprovedFinsCopy = ResourceGuideCopy & {
 };
 
 const PUBLISHED_AT = '2026-05-26';
-const UPDATED_AT = '2026-05-26';
+const UPDATED_AT = '2026-05-27';
 
 const sharedSources = [
   {
@@ -51,7 +51,7 @@ const improvedFinsCopy: Record<string, ImprovedFinsCopy> = {
       'Improved Fins are not a starter errand. Treat them like a mid-game movement upgrade: bring the Tadpole, keep a Repair Tool handy, scan the discarded fins, then craft once you have the crystal chain ready.',
     quickLabel: 'Quick answer',
     quickAnswer:
-      'Dexerto lists Improved Fins as feet-slot equipment crafted at the Fabricator from Basic Fins x1, Fiber Mesh x1, and Conduit Crystal x2, with a data card / scan unlock. GamesRadar+ says the blueprint comes from scanning three discarded pairs near the Alien Ruins route after mid-game story progress, and warns about Tadpole depth, Needlers, and needing a Rebreather for the area. Subnautica2.gg also labels Improved Fins as fins crafted through a Fabrication Station.',
+      'Dexerto lists Improved Fins as feet-slot equipment crafted at the Fabricator from Basic Fins x1, Fiber Mesh x1, and Conduit Crystal x2, with a data card / scan unlock. GamesRadar+ says the blueprint comes from scanning three discarded pairs near the Alien Ruins route after mid-game story progress, and warns about Tadpole depth, Needlers, and needing a Rebreather for the area. Treat this as a Tadpole route: bring Repair Tool, Battery Terminal charged batteries, and enough oxygen to scan calmly.',
     contentsLabel: 'Contents',
     routeTitle: 'Improved Fins route plan',
     routeSteps: [
@@ -62,6 +62,10 @@ const improvedFinsCopy: Record<string, ImprovedFinsCopy> = {
       {
         title: 'Bring the right kit before leaving the Tadpole',
         body: 'The route asks you to leave the vehicle around deep water while Needlers are nearby. Bring a Rebreather, a repaired Tadpole, a Repair Tool, and enough oxygen margin to scan without panic.',
+      },
+      {
+        title: 'Charge tools before the scan loop',
+        body: 'Improved Fins runs often stack Scanner, Repair Tool, and route-marker use in the same trip. Put weak batteries through the Battery Terminal before you leave, and keep one fresh Basic Battery in the locker.',
       },
       {
         title: 'Scan the discarded fins, then check the recipe',
@@ -83,6 +87,7 @@ const improvedFinsCopy: Record<string, ImprovedFinsCopy> = {
       ['Recipe', 'Basic Fins x1, Fiber Mesh x1, Conduit Crystal x2.'],
       ['Station', 'Fabricator equipment craft.'],
       ['Safety', 'Tadpole, Rebreather, Repair Tool, and oxygen margin.'],
+      ['Power prep', 'Charge Scanner and Repair Tool before the route.'],
       ['Timing', 'Mid-game route after Alien Ruins access.'],
     ],
     visualTitle: 'Upgrade stack',
@@ -135,6 +140,11 @@ const improvedFinsCopy: Record<string, ImprovedFinsCopy> = {
         label: 'Conduit Crystal Guide',
       },
       { href: Routes.Subnautica2Rebreather, label: 'Rebreather Guide' },
+      { href: Routes.Subnautica2RepairTool, label: 'Repair Tool Guide' },
+      {
+        href: Routes.Subnautica2BatteryTerminal,
+        label: 'Battery Terminal Guide',
+      },
       { href: Routes.Subnautica2Tadpole, label: 'Tadpole Vehicle Guide' },
       {
         href: Routes.Subnautica2TadpoleDepthModule,
@@ -144,7 +154,7 @@ const improvedFinsCopy: Record<string, ImprovedFinsCopy> = {
     ],
     sourcesTitle: 'Source note',
     sourceBody:
-      'Checked May 26, 2026 against Dexerto, GamesRadar+, Subnautica2.gg, and Dexerto Conduit Crystal data. Early Access routes can change, so the page separates confirmed recipe items from the scan route and tells players to verify the Fabricator after unlocking the blueprint.',
+      'Checked May 27, 2026 against Dexerto, GamesRadar+, Subnautica2.gg, and Dexerto Conduit Crystal data. Early Access routes can change, so the page separates confirmed recipe items from the scan route and tells players to verify the Fabricator after unlocking the blueprint.',
     cardKicker: 'Movement card',
     cardBody:
       'Scan unlock, Basic Fins x1, Fiber Mesh x1, Conduit Crystal x2, Fabricator crafting, Tadpole safety, Rebreather prep, and mid-game route planning.',
@@ -248,13 +258,18 @@ const improvedFinsCopy: Record<string, ImprovedFinsCopy> = {
       { href: Routes.Subnautica2FiberMesh, label: 'Fiber Mesh 指南' },
       { href: Routes.Subnautica2ConduitCrystal, label: 'Conduit Crystal 指南' },
       { href: Routes.Subnautica2Rebreather, label: 'Rebreather 指南' },
+      { href: Routes.Subnautica2RepairTool, label: 'Repair Tool 指南' },
+      {
+        href: Routes.Subnautica2BatteryTerminal,
+        label: 'Battery Terminal 指南',
+      },
       { href: Routes.Subnautica2Tadpole, label: 'Tadpole 载具指南' },
       { href: Routes.Subnautica2TadpoleDepthModule, label: 'Tadpole 深度模块' },
       { href: Routes.Subnautica2Resources, label: '资源指南' },
     ],
     sourcesTitle: '来源说明',
     sourceBody:
-      '2026 年 5 月 26 日核对 Dexerto、GamesRadar+、Subnautica2.gg 和 Dexerto Conduit Crystal 资料。抢先体验路线可能变化，所以页面把配方材料和扫描路线分开写，并提醒玩家解锁后再确认 Fabricator。',
+      '2026 年 5 月 27 日核对 Dexerto、GamesRadar+、Subnautica2.gg 和 Dexerto Conduit Crystal 资料。抢先体验路线可能变化，所以页面把配方材料和扫描路线分开写，并提醒玩家解锁后再确认 Fabricator。',
     cardKicker: '移动卡片',
     cardBody:
       '扫描解锁、Basic Fins x1、Fiber Mesh x1、Conduit Crystal x2、Fabricator 制作、Tadpole 安全、Rebreather 准备和中期路线规划。',
