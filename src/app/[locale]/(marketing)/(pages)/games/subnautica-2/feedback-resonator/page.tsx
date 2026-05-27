@@ -178,6 +178,7 @@ const feedbackCopy: Record<string, FeedbackCopy> = {
       },
       { href: Routes.Subnautica2EnameledGlass, label: 'Enameled Glass Guide' },
       { href: Routes.Subnautica2Strontium, label: 'Strontium Guide' },
+      { href: Routes.Subnautica2Celestine, label: 'Celestine Guide' },
       { href: Routes.Subnautica2AxumVision, label: 'Axum Vision Guide' },
       { href: Routes.Subnautica2AngelComb, label: 'Angel Comb Guide' },
       {
@@ -334,6 +335,7 @@ const feedbackCopy: Record<string, FeedbackCopy> = {
       },
       { href: Routes.Subnautica2EnameledGlass, label: 'Enameled Glass 指南' },
       { href: Routes.Subnautica2Strontium, label: 'Strontium 指南' },
+      { href: Routes.Subnautica2Celestine, label: 'Celestine 指南' },
       { href: Routes.Subnautica2AxumVision, label: 'Axum Vision 指南' },
       { href: Routes.Subnautica2AngelComb, label: 'Angel Comb 指南' },
       {
@@ -486,6 +488,7 @@ const feedbackCopy: Record<string, FeedbackCopy> = {
       },
       { href: Routes.Subnautica2EnameledGlass, label: 'Enameled Glass Guide' },
       { href: Routes.Subnautica2Strontium, label: 'Strontium Guide' },
+      { href: Routes.Subnautica2Celestine, label: 'Celestine Guide' },
       { href: Routes.Subnautica2AxumVision, label: 'Axum Vision Guide' },
       { href: Routes.Subnautica2AngelComb, label: 'Angel Comb Guide' },
       { href: Routes.Subnautica2Tadpole, label: 'Tadpole Guide' },
