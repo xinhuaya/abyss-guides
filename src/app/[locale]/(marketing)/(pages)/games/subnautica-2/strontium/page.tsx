@@ -16,7 +16,7 @@ type StrontiumCopy = ResourceGuideCopy & {
 };
 
 const PUBLISHED_AT = '2026-05-25';
-const UPDATED_AT = '2026-05-25';
+const UPDATED_AT = '2026-05-27';
 
 const sharedSources = [
   {
@@ -30,6 +30,14 @@ const sharedSources = [
   {
     href: 'https://allthings.how/how-to-make-strontium-in-subnautica-2/',
     label: 'All Things How Strontium guide',
+  },
+  {
+    href: 'https://allthings.how/subnautica-2-upgrading-the-sonic-resonator-to-the-feedback-resonator/',
+    label: 'All Things How Feedback Resonator recipe guide',
+  },
+  {
+    href: 'https://subnautica2.gg/blueprints/strontium',
+    label: 'Subnautica2.gg Strontium blueprint',
   },
 ];
 
@@ -47,7 +55,7 @@ const strontiumCopy: Record<string, StrontiumCopy> = {
       'Strontium is not something you usually find sitting in a starter cave. It is the processed version of a deeper material route: find Celestine near the Alien Ruins, mine it with the Sonic Resonator, then refine it back at base.',
     quickLabel: 'Quick answer',
     quickAnswer:
-      'Make Strontium by processing Celestine. Current reporting gives the working recipe as 2 Celestine into 1 Strontium in the Processor. The hard part is the Celestine run: bring the Tadpole, Sonic Resonator, oxygen margin, and a clear way back from the Alien Ruins depth route.',
+      'Make Strontium by processing Celestine. Current reporting gives the working recipe as 2 Celestine into 1 Strontium in the Processor. Feedback Resonator currently needs 2x Strontium, so plan on at least 4 Celestine for that upgrade before you count spare stock.',
     contentsLabel: 'Contents',
     routeTitle: 'Strontium route plan',
     routeSteps: [
@@ -65,7 +73,7 @@ const strontiumCopy: Record<string, StrontiumCopy> = {
       },
       {
         title: 'Save it for actual upgrades',
-        body: 'PC Gamer lists Strontium as part of the Feedback Resonator upgrade path. It also shows up in later defensive and vehicle module planning, so do not burn the first batch on experiments.',
+        body: 'PC Gamer lists Strontium as part of the Feedback Resonator upgrade path, and All Things How says to process enough for at least two units. Treat 2x Strontium as reserved until that craft is done.',
       },
       {
         title: 'Mark the return route',
@@ -90,7 +98,7 @@ const strontiumCopy: Record<string, StrontiumCopy> = {
       ],
       [
         'Upgrade priority',
-        'Feedback Resonator and later modules can ask for Strontium, so spend it deliberately.',
+        'Feedback Resonator currently needs 2x Strontium, which means at least 4x Celestine before extra stock.',
       ],
     ],
     visualTitle: 'Refining card',
@@ -107,8 +115,8 @@ const strontiumCopy: Record<string, StrontiumCopy> = {
       },
       {
         label: 'Spend',
-        value: 'Upgrades',
-        note: 'Keep the first batch for Feedback Resonator and module work.',
+        value: '2x',
+        note: 'Keep the first two Strontium for Feedback Resonator.',
       },
     ],
     cautionTitle: 'Do not confuse the ore with the refined material',
@@ -130,7 +138,11 @@ const strontiumCopy: Record<string, StrontiumCopy> = {
       },
       {
         title: 'What is Strontium used for?',
-        body: 'It is used in advanced upgrade planning. PC Gamer lists it in the Feedback Resonator craft, and current guides also tie it to later defensive or vehicle module work.',
+        body: 'It is used in advanced upgrade planning. Current Feedback Resonator guides list 2x Strontium in that craft, alongside Enameled Glass and Conduit Crystal.',
+      },
+      {
+        title: 'How much Celestine should I bring back for Feedback Resonator?',
+        body: 'At minimum, bring 4x Celestine if you only need the 2x Strontium for Feedback Resonator. Bring extra if you still need Celestine for Modification Station or Tadpole upgrades.',
       },
     ],
     readNextTitle: 'Read next',
@@ -157,7 +169,7 @@ const strontiumCopy: Record<string, StrontiumCopy> = {
     ],
     sourcesTitle: 'Source note',
     sourceBody:
-      'Checked May 25, 2026 against current PC Gamer and All Things How reporting. Subnautica 2 is in Early Access, so Celestine routes, Processor timing, and upgrade recipes should be rechecked after patches.',
+      'Checked May 27, 2026 against current PC Gamer, All Things How, and Subnautica2.gg reporting. Subnautica 2 is in Early Access, so Celestine routes, Processor timing, and upgrade recipes should be rechecked after patches.',
     cardKicker: 'Refined material card',
     cardBody:
       'Celestine route, Sonic Resonator mining, Processor conversion, Tadpole depth prep, and upgrade spending.',
@@ -399,6 +411,197 @@ const strontiumCopy: Record<string, StrontiumCopy> = {
     cardStatusLabel: 'Status',
     cardStatusValue: 'Early Access',
   },
+};
+
+strontiumCopy.zh = {
+  ...strontiumCopy.en,
+  metadata: {
+    title:
+      'Subnautica 2 Strontium 指南 - Celestine 路线、Processor 配方和升级用途',
+    description:
+      'Subnautica 2 中文 Strontium 指南：Celestine 在哪里刷、Sonic Resonator 怎么采、Processor 怎么加工，以及 Feedback Resonator 需要多少。',
+  },
+  eyebrow: 'Subnautica 2 精炼材料',
+  title: 'Subnautica 2 Strontium 指南',
+  description:
+    'Strontium 不是开局洞穴里随手捡的材料。它是 Celestine 的加工产物：先去 Alien Ruins 附近深水路线采 Celestine，再带回基地用 Processor 精炼。',
+  quickLabel: '快速结论',
+  quickAnswer:
+    'Strontium 通过加工 Celestine 获得。当前资料给出的配方是：在 Processor 里放入 2 个 Celestine，产出 1 个 Strontium。Feedback Resonator 目前需要 2 个 Strontium，也就是至少 4 个 Celestine，别把第一批随手花掉。',
+  contentsLabel: '目录',
+  routeTitle: 'Strontium 路线规划',
+  routeSteps: [
+    {
+      title: '把 Celestine 当成真正卡点',
+      body: 'PC Gamer 把 Celestine 放在 Alien Ruins 生物群系附近的较深区域。如果你还不能稳定到那里，知道 Strontium 配方也没什么用。',
+    },
+    {
+      title: '带上 Sonic Resonator',
+      body: '大的 Celestine 节点需要 Sonic Resonator。不要只带手持工具就跑深水，这种失误很容易把一趟路线变成叹气时间。',
+    },
+    {
+      title: '回基地用 Processor 加工',
+      body: 'All Things How 报道的配方是 2 个 Celestine 加工成 1 个 Strontium，地点是基地里的 Processor。如果机器不动，先查电力、数量，以及是不是用错工作站。',
+    },
+    {
+      title: '先给 Feedback Resonator 留两个',
+      body: 'PC Gamer 和 All Things How 的 Feedback Resonator 配方都把 Strontium 放进升级链。先预留 2 个 Strontium，再考虑后续防御或载具模块。',
+    },
+    {
+      title: '记下回头路线',
+      body: '只要你跑通一条 Celestine 线，Strontium 就从硬卡点变成可重复生产。放 Beacon 或记地标，第二趟会轻松很多。',
+    },
+  ],
+  tableTitle: 'Strontium 检查表',
+  tableHeaders: ['需要什么', '为什么重要'],
+  tableRows: [
+    [
+      'Celestine',
+      'Strontium 的原料。Feedback Resonator 至少要 4 个 Celestine 才够加工出 2 个 Strontium。',
+    ],
+    ['Sonic Resonator', '大节点需要它来打碎，不然找到矿也采不下来。'],
+    ['Processor', '把 Celestine 转成 Strontium 的基地设备。'],
+    [
+      'Tadpole 深度规划',
+      'Celestine 区域接近载具深度和氧气规划开始吃紧的位置。',
+    ],
+    [
+      '升级优先级',
+      'Feedback Resonator 和后续模块会用到 Strontium，别随便消耗第一批。',
+    ],
+  ],
+  visualTitle: '精炼流程卡',
+  visualItems: [
+    {
+      label: '采集',
+      value: 'Celestine',
+      note: '跑 Alien Ruins 路线时带好 Sonic Resonator。',
+    },
+    {
+      label: '加工',
+      value: '2 换 1',
+      note: '用 Processor，不是 Fabricator 或别的工作站。',
+    },
+    {
+      label: '预留',
+      value: '2x',
+      note: '第一批优先留给 Feedback Resonator。',
+    },
+  ],
+  cautionTitle: '别把原矿和精炼材料搞混',
+  cautionBody:
+    '如果配方要 Strontium，背包里只有 Celestine 不够。先采矿，回基地加工，再去 Modification Station。步骤不复杂，但少做这一步最容易白跑一趟。',
+  faqTitle: '常见问题',
+  faqs: [
+    {
+      title: 'Subnautica 2 Strontium 怎么做？',
+      body: '当前资料显示，在 Processor 里放入 2 个 Celestine，可以得到 1 个 Strontium。',
+    },
+    {
+      title: 'Celestine 在哪里找？',
+      body: '去 Alien Ruins 生物群系附近的较深区域。PC Gamer 提到 Alien Ruins research base 东南方向、较深岩石和 Needler 巡逻附近有一条不错的路线。',
+    },
+    {
+      title: '需要 Sonic Resonator 吗？',
+      body: '需要。大的 Celestine 节点要用 Sonic Resonator 打开，出发前先确认工具带好了。',
+    },
+    {
+      title: 'Feedback Resonator 要几个 Strontium？',
+      body: '当前 Feedback Resonator 配方写的是 2 个 Strontium，也就是至少 4 个 Celestine 的加工量。',
+    },
+  ],
+  readNextTitle: '继续看',
+  related: [
+    { href: Routes.Subnautica2Celestine, label: 'Celestine 指南' },
+    { href: Routes.Subnautica2SonicResonator, label: 'Sonic Resonator 指南' },
+    {
+      href: Routes.Subnautica2FeedbackResonator,
+      label: 'Feedback Resonator 指南',
+    },
+    {
+      href: Routes.Subnautica2ConduitCrystal,
+      label: 'Conduit Crystal 指南',
+    },
+    {
+      href: Routes.Subnautica2ModificationStation,
+      label: 'Modification Station 指南',
+    },
+    { href: Routes.Subnautica2Tadpole, label: 'Tadpole 载具指南' },
+    { href: Routes.Subnautica2Resources, label: '资源指南' },
+  ],
+  sourcesTitle: '来源说明',
+  sourceBody:
+    '2026 年 5 月 27 日核对 PC Gamer、All Things How 和 Subnautica2.gg 的当前资料。Subnautica 2 仍在抢先体验，Celestine 路线、Processor 行为和升级配方后续可能会调整。',
+  cardKicker: '精炼材料卡',
+  cardBody:
+    '整理 Celestine 路线、Sonic Resonator 采矿、Processor 精炼、Feedback Resonator 预留数量、Tadpole 深度准备和升级消耗。',
+  cardTypeLabel: '类型',
+  cardTypeValue: '材料指南',
+  cardVerifiedLabel: '核对时间',
+  cardStatusLabel: '状态',
+  cardStatusValue: '抢先体验',
+};
+
+strontiumCopy.ja = {
+  ...strontiumCopy.en,
+  metadata: {
+    title:
+      'Subnautica 2 Strontium ガイド - Celestine、Processor、Feedback Resonator',
+    description:
+      'Subnautica 2のStrontiumガイド。Celestine採掘、Sonic Resonator、Processor変換、Feedback Resonator用の必要数を整理します。',
+  },
+  title: 'Subnautica 2 Strontium ガイド',
+  description:
+    'Strontiumは拾う素材ではなく、CelestineをProcessorで加工して作る素材です。Alien Ruins周辺の深いルートを安全に回れる準備をしてから集めます。',
+  quickLabel: '要点',
+  quickAnswer:
+    '現在の情報では、ProcessorでCelestine 2個をStrontium 1個に変換します。Feedback ResonatorにはStrontiumが2個必要なので、最低でもCelestineを4個分集めておきます。',
+  routeTitle: 'Strontium ルート',
+  routeSteps: [
+    {
+      title: 'Celestineを本当のボトルネックとして見る',
+      body: 'CelestineはAlien Ruins周辺の深いエリアで探します。そこへ安定して行けないなら、まずルート作りが先です。',
+    },
+    {
+      title: 'Sonic Resonatorを持つ',
+      body: '大きなCelestineノードにはSonic Resonatorが必要です。',
+    },
+    {
+      title: 'Processorで加工する',
+      body: 'Celestineを持ち帰り、基地のProcessorでStrontiumにします。',
+    },
+    {
+      title: 'Feedback Resonator用に2個残す',
+      body: '現在のFeedback ResonatorレシピではStrontiumが2個必要です。',
+    },
+  ],
+  tableRows: [
+    ['Celestine', 'Strontiumの原料。Feedback Resonator用なら最低4個必要です。'],
+    ['Sonic Resonator', '大きなノードを採掘するために必要です。'],
+    ['Processor', 'CelestineをStrontiumに変換します。'],
+    ['Reserve', '最初の2個はFeedback Resonator用に残します。'],
+  ],
+  visualItems: [
+    { label: 'Mine', value: 'Celestine', note: 'Alien Ruins周辺で集めます。' },
+    { label: 'Process', value: '2 to 1', note: 'Processorで変換します。' },
+    { label: 'Reserve', value: '2x', note: 'Feedback Resonator用に残します。' },
+  ],
+  faqs: [
+    {
+      title: 'Strontiumはどう作る？',
+      body: 'Celestine 2個をProcessorに入れるとStrontium 1個になります。',
+    },
+    {
+      title: 'Feedback Resonatorには何個必要？',
+      body: '現在のレシピではStrontiumが2個必要です。',
+    },
+    {
+      title: 'Sonic Resonatorは必要？',
+      body: '大きなCelestineノードを採るなら必要です。',
+    },
+  ],
+  sourceBody:
+    '2026年5月27日にPC Gamer、All Things How、Subnautica2.ggを確認しました。Early Access中はルートやレシピが変わる可能性があります。',
 };
 
 const fallbackLocaleAliases = {
