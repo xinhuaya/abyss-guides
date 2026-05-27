@@ -16,7 +16,7 @@ type EnameledGlassCopy = ResourceGuideCopy & {
 };
 
 const PUBLISHED_AT = '2026-05-25';
-const UPDATED_AT = '2026-05-25';
+const UPDATED_AT = '2026-05-27';
 
 const sharedSources = [
   {
@@ -30,6 +30,10 @@ const sharedSources = [
   {
     href: 'https://unknownworlds.com/en/news/subnautica-2-early-access-roadmap',
     label: 'Unknown Worlds Early Access roadmap',
+  },
+  {
+    href: 'https://www.pcgamer.com/games/survival-crafting/subnautica-2-feedback-resonator-scan-locations/',
+    label: 'PC Gamer Feedback Resonator recipe note',
   },
 ];
 
@@ -47,7 +51,7 @@ const enameledGlassCopy: Record<string, EnameledGlassCopy> = {
       'Enameled Glass is not a mystery material once the chain clicks: make the glass, solve Creature Enamel, then craft only when the next upgrade actually asks for it. The mistake is burning route time before you know which part of the chain is missing.',
     quickLabel: 'Quick answer',
     quickAnswer:
-      'Current guides point to Enameled Glass as a recipe chain built around Glass and Creature Enamel. Get the ordinary glass side ready first, then run the Needler Mango route for Creature Enamel. Do not craft every piece immediately; keep the ingredients grouped until a vehicle, base, or advanced recipe needs the finished material.',
+      'Current guides point to Enameled Glass as Glass plus Creature Enamel at the Fabricator. Get the quartz / glass side ready first, then run the Alien Ruins Creature Enamel route. Feedback Resonator currently asks for 2x Enameled Glass, so keep two pieces marked for that upgrade before you spend them elsewhere.',
     contentsLabel: 'Contents',
     routeTitle: 'Enameled Glass craft plan',
     routeSteps: [
@@ -66,6 +70,10 @@ const enameledGlassCopy: Record<string, EnameledGlassCopy> = {
       {
         title: 'Craft only against a real recipe',
         body: 'Enameled Glass is tempting to make the moment you can. Hold raw ingredients unless the next blueprint specifically needs the finished material. Early Access recipes can move, and storage is cheaper than regret.',
+      },
+      {
+        title: 'Reserve two for Feedback Resonator',
+        body: 'PC Gamer lists Feedback Resonator as a Modification Station upgrade that uses 2x Enameled Glass. If you are building the Sonic Resonator upgrade path, label those two pieces before you spend them on vehicle comfort.',
       },
       {
         title: 'Store it with upgrade materials',
@@ -92,6 +100,10 @@ const enameledGlassCopy: Record<string, EnameledGlassCopy> = {
         'Make Enameled Glass when a known recipe asks for it, not because the station allows it.',
       ],
       [
+        'Feedback reserve',
+        'Hold 2x Enameled Glass with Sonic Resonator, Conduit Crystal, and Strontium if Feedback Resonator is your next craft.',
+      ],
+      [
         'Storage label',
         'Group it with later upgrade materials so the next craft check is fast.',
       ],
@@ -112,6 +124,11 @@ const enameledGlassCopy: Record<string, EnameledGlassCopy> = {
         label: 'Craft',
         value: 'Upgrade',
         note: 'Use the finished glass only when a blueprint needs it.',
+      },
+      {
+        label: 'Reserve',
+        value: '2x',
+        note: 'Feedback Resonator currently needs two finished pieces.',
       },
     ],
     cautionTitle: 'Do not pre-craft your whole stock',
@@ -135,6 +152,10 @@ const enameledGlassCopy: Record<string, EnameledGlassCopy> = {
         title: 'Should I craft Enameled Glass early?',
         body: 'Only if a known recipe needs it. Otherwise, store the raw ingredients together so they can still serve other recipes if the upgrade chain changes.',
       },
+      {
+        title: 'How many Enameled Glass do I need for Feedback Resonator?',
+        body: 'Current PC Gamer reporting lists 2x Enameled Glass for Feedback Resonator, alongside Sonic Resonator, Conduit Crystal, and Strontium.',
+      },
     ],
     readNextTitle: 'Read next',
     related: [
@@ -154,11 +175,15 @@ const enameledGlassCopy: Record<string, EnameledGlassCopy> = {
         href: Routes.Subnautica2ConduitCrystal,
         label: 'Conduit Crystal Guide',
       },
+      {
+        href: Routes.Subnautica2FeedbackResonator,
+        label: 'Feedback Resonator Guide',
+      },
       { href: Routes.Subnautica2Resources, label: 'Resources Guide' },
     ],
     sourcesTitle: 'Source note',
     sourceBody:
-      'Checked May 25, 2026 against current GamesRadar Enameled Glass reporting, PC Gamer Creature Enamel reporting, and the official Early Access roadmap. Recipes and upgrade use can change during Early Access patches.',
+      'Checked May 27, 2026 against current GamesRadar Enameled Glass reporting, PC Gamer Creature Enamel and Feedback Resonator reporting, and the official Early Access roadmap. Recipes and upgrade use can change during Early Access patches.',
     cardKicker: 'Craft chain card',
     cardBody:
       'Glass prep, Creature Enamel route, Needler Mango risk, craft timing, and upgrade-material storage.',
@@ -181,7 +206,7 @@ const enameledGlassCopy: Record<string, EnameledGlassCopy> = {
       'Enameled Glass 真正麻烦的地方不是名字，而是材料链。普通 Glass 是安静的基地准备，Creature Enamel 才是要跑危险路线的部分。先分清缺哪一段，再决定要不要下深水。',
     quickLabel: '快速结论',
     quickAnswer:
-      '当前攻略把 Enameled Glass 指向 Glass + Creature Enamel 这条材料链。先把普通 Glass 一侧准备好，再去 Needler Mango 路线拿 Creature Enamel。不要一有材料就全做成成品，等载具、基地或高级配方真的需要时再制作。',
+      '当前攻略把 Enameled Glass 指向 Fabricator 里的 Glass + Creature Enamel。先把 Quartz / Glass 一侧准备好，再去 Alien Ruins 一带跑 Creature Enamel。Feedback Resonator 目前需要 2 个 Enameled Glass，所以如果你正在做 Sonic Resonator 升级线，先把这两个成品单独留出来。',
     contentsLabel: '目录',
     routeTitle: 'Enameled Glass 制作规划',
     routeSteps: [
@@ -202,6 +227,10 @@ const enameledGlassCopy: Record<string, EnameledGlassCopy> = {
         body: '能做 Enameled Glass 不代表马上要做。除非下一个蓝图明确需要成品，否则先把原料放一起。抢先体验阶段配方可能调整，原料比成品更灵活。',
       },
       {
+        title: '给 Feedback Resonator 预留两个',
+        body: 'PC Gamer 把 Feedback Resonator 写成 Modification Station 升级，并列出 2 个 Enameled Glass。你要是准备走 Sonic Resonator 的后续升级，就先把这两个放到同一个箱子里。',
+      },
+      {
         title: '和升级材料放在同一组',
         body: '把 Enameled Glass 和 Strontium、Conduit Crystal、Power Cell、载具升级材料放在一起。下一次查配方时，你会更快看出真正缺什么。',
       },
@@ -218,6 +247,10 @@ const enameledGlassCopy: Record<string, EnameledGlassCopy> = {
       [
         '制作时机',
         '看到明确配方需求再做成 Enameled Glass，不要为了整齐提前全做。',
+      ],
+      [
+        'Feedback 预留',
+        '如果下一步是 Feedback Resonator，把 2 个 Enameled Glass 和 Sonic Resonator、Conduit Crystal、Strontium 放一起。',
       ],
       ['仓库存放', '和后续升级材料放一起，查下一步材料会快很多。'],
     ],
@@ -237,6 +270,11 @@ const enameledGlassCopy: Record<string, EnameledGlassCopy> = {
         label: '制作',
         value: 'Upgrade',
         note: '蓝图真的需要时再做成品。',
+      },
+      {
+        label: '预留',
+        value: '2x',
+        note: 'Feedback Resonator 目前需要两个成品。',
       },
     ],
     cautionTitle: '别把所有原料提前做成成品',
@@ -260,6 +298,10 @@ const enameledGlassCopy: Record<string, EnameledGlassCopy> = {
         title: '要不要提前大量制作 Enameled Glass？',
         body: '不建议。除非明确知道下一项升级需要它，否则原料状态更灵活。',
       },
+      {
+        title: 'Feedback Resonator 要几个 Enameled Glass？',
+        body: 'PC Gamer 当前写的是 2 个 Enameled Glass，同时还需要 Sonic Resonator、Conduit Crystal 和 Strontium。',
+      },
     ],
     readNextTitle: '继续阅读',
     related: [
@@ -279,11 +321,15 @@ const enameledGlassCopy: Record<string, EnameledGlassCopy> = {
         href: Routes.Subnautica2ConduitCrystal,
         label: 'Conduit Crystal 指南',
       },
+      {
+        href: Routes.Subnautica2FeedbackResonator,
+        label: 'Feedback Resonator 指南',
+      },
       { href: Routes.Subnautica2Resources, label: '资源指南' },
     ],
     sourcesTitle: '来源说明',
     sourceBody:
-      '2026 年 5 月 25 日根据 GamesRadar 的 Enameled Glass 当前资料、PC Gamer 的 Creature Enamel 资料，以及官方 Early Access 路线图整理。抢先体验阶段配方和升级用途可能变化。',
+      '2026 年 5 月 27 日根据 GamesRadar 的 Enameled Glass 当前资料、PC Gamer 的 Creature Enamel 和 Feedback Resonator 资料，以及官方 Early Access 路线图整理。抢先体验阶段配方和升级用途可能变化。',
     cardKicker: '制作链卡',
     cardBody:
       '普通 Glass 准备、Creature Enamel 路线、Needler Mango 风险、制作时机和升级材料存放。',
@@ -412,6 +458,130 @@ const enameledGlassCopy: Record<string, EnameledGlassCopy> = {
     cardStatusLabel: '状態',
     cardStatusValue: 'Early Access',
   },
+};
+
+enameledGlassCopy.ja = {
+  metadata: {
+    title:
+      'Subnautica 2 Enameled Glass ガイド - レシピ、Creature Enamel、Feedback Resonator準備',
+    description:
+      'Subnautica 2のEnameled Glassガイド。Glass、Creature Enamel、Needler Mangoルート、Feedback Resonator用の2個確保、作るタイミングを整理します。',
+  },
+  eyebrow: 'Subnautica 2 加工素材',
+  title: 'Subnautica 2 Enameled Glass ガイド',
+  description:
+    'Enameled Glassは、仕組みが見えるとかなり単純です。Glassを用意し、Creature Enamelのルートを片づけ、必要なアップグレードが出たときだけ完成品にします。',
+  quickLabel: '要点',
+  quickAnswer:
+    '現在のガイドでは、Enameled GlassはFabricatorでGlassとCreature Enamelから作る素材です。まずQuartz / Glass側をそろえ、Alien Ruins周辺でCreature Enamelを取りに行きます。Feedback Resonatorを作るなら、Enameled Glassを2個先に確保しておくと楽です。',
+  contentsLabel: '目次',
+  routeTitle: 'Enameled Glass 作成計画',
+  routeSteps: [
+    {
+      title: '安全な素材と危険な素材を分ける',
+      body: 'Glass側は基地で準備しやすい素材です。Creature Enamelが危険なルート側なので、先に安全な半分を終わらせます。',
+    },
+    {
+      title: 'Creature Enamelが本当の足止めか見る',
+      body: 'PC GamerはCreature EnamelをNeedler Mangoと結びつけています。足りないのが本当にCreature Enamelなのか確認してから深場へ行きます。',
+    },
+    {
+      title: 'Needler Mangoは寄り道しない',
+      body: 'Tadpoleを用意し、出口を向けて停め、素材を取ったら戻ります。横の鉱石を追うのは二回目で十分です。',
+    },
+    {
+      title: 'Feedback Resonator用に2個残す',
+      body: 'PC Gamerの現在のレシピではFeedback ResonatorにEnameled Glassが2個必要です。Sonic Resonatorの強化を進めるなら、この2個は別枠で保管します。',
+    },
+    {
+      title: '必要なレシピが出てから作る',
+      body: '作れるからといって全部を完成品にする必要はありません。Early Accessではレシピ変更もあり得るので、原料のまま置くほうが柔軟です。',
+    },
+  ],
+  tableTitle: '素材チェック',
+  tableHeaders: ['手順', '確認すること'],
+  tableRows: [
+    ['Glass側', '危険ルートへ行く前に、普通のGlass素材を用意します。'],
+    ['Creature Enamel', 'Needler Mangoルートが本当の不足点か確認します。'],
+    ['Tadpole', '深度、修理、脱出方向を準備します。'],
+    ['Feedback reserve', 'Feedback Resonator用にEnameled Glassを2個残します。'],
+    ['保管', '後半アップグレード素材とまとめて置きます。'],
+  ],
+  visualTitle: '素材チェーン',
+  visualItems: [
+    {
+      label: '基地',
+      value: 'Glass',
+      note: '安全な素材側を先に終わらせます。',
+    },
+    {
+      label: 'ルート',
+      value: 'Enamel',
+      note: 'Creature EnamelはNeedler Mangoルートです。',
+    },
+    {
+      label: '確保',
+      value: '2x',
+      note: 'Feedback Resonator用に2個残します。',
+    },
+  ],
+  cautionTitle: '完成品を作りすぎない',
+  cautionBody:
+    'Enameled Glassは便利そうに見えますが、原料のままのほうが使い回しやすいです。次のレシピを確認してから作りましょう。',
+  faqTitle: 'FAQ',
+  faqs: [
+    {
+      title: 'Enameled Glassはどう作る？',
+      body: '現在の情報ではGlassとCreature Enamelの素材チェーンです。Glass側を用意し、Needler MangoルートでCreature Enamelを取ります。',
+    },
+    {
+      title: '一番詰まりやすい素材は？',
+      body: 'Creature Enamelです。Needlerがいる危険ルートへ行く必要があります。',
+    },
+    {
+      title: 'Feedback Resonatorには何個必要？',
+      body: 'PC Gamerの現在のレシピでは、Enameled Glassが2個必要です。',
+    },
+    {
+      title: '早めに作っておくべき？',
+      body: '必要なレシピが出るまでは、原料のまま保管するほうが柔軟です。',
+    },
+  ],
+  readNextTitle: '次に読む',
+  related: [
+    { href: Routes.Subnautica2Glass, label: 'Glass Recipe Guide' },
+    {
+      href: Routes.Subnautica2CreatureEnamel,
+      label: 'Creature Enamel ガイド',
+    },
+    { href: Routes.Subnautica2Tadpole, label: 'Tadpole ガイド' },
+    {
+      href: Routes.Subnautica2TadpoleDepthModule,
+      label: 'Tadpole Depth Module ガイド',
+    },
+    { href: Routes.Subnautica2Crafting, label: 'クラフトガイド' },
+    { href: Routes.Subnautica2Strontium, label: 'Strontium ガイド' },
+    {
+      href: Routes.Subnautica2ConduitCrystal,
+      label: 'Conduit Crystal ガイド',
+    },
+    {
+      href: Routes.Subnautica2FeedbackResonator,
+      label: 'Feedback Resonator ガイド',
+    },
+    { href: Routes.Subnautica2Resources, label: 'Resources ガイド' },
+  ],
+  sourcesTitle: 'ソース',
+  sourceBody:
+    '2026年5月27日にGamesRadarのEnameled Glass情報、PC GamerのCreature EnamelとFeedback Resonator情報、公式Early Accessロードマップを確認しました。Early Access中はレシピや用途が変わる可能性があります。',
+  cardKicker: 'クラフトチェーン',
+  cardBody:
+    'Glass、Creature Enamel、Needler Mango、Feedback Resonator用の2個確保、作成タイミング、アップグレード素材の保管。',
+  cardTypeLabel: '種類',
+  cardTypeValue: 'クラフトガイド',
+  cardVerifiedLabel: '確認日',
+  cardStatusLabel: '状態',
+  cardStatusValue: 'Early Access',
 };
 
 const fallbackLocaleAliases = {
