@@ -128,6 +128,12 @@ const copyByLocale: Record<'en' | 'zh', HubCopy> = {
           'Repair the Karakorum turbine, pack Titanium Ingots, Mangalloy Ingots, Strontium, and finish the generator controls.',
       },
       {
+        href: Routes.Subnautica2AxumVision,
+        title: 'Axum Vision',
+        description:
+          'Second Angel Comb route, Feedback Resonator prep, Bloom Nodes, glyph reading, and Power Plant control screens.',
+      },
+      {
         href: Routes.Subnautica2PowerCell,
         title: 'Power Cell',
         description:
@@ -657,6 +663,12 @@ const copyByLocale: Record<'en' | 'zh', HubCopy> = {
         title: 'Power Plant Observatory 指南',
         description:
           '修复 Karakorum turbine，准备 Titanium Ingots、Mangalloy Ingots、Strontium，并完成控制室步骤。',
+      },
+      {
+        href: Routes.Subnautica2AxumVision,
+        title: 'Axum Vision 指南',
+        description:
+          '第二个 Angel Comb、Feedback Resonator、Bloom Nodes、glyph 读取和 Power Plant 控制屏幕。',
       },
       {
         href: Routes.Subnautica2PowerCell,

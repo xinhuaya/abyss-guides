@@ -64,6 +64,7 @@ export enum Routes {
   Subnautica2AdvancedWiringKit = '/games/subnautica-2/advanced-wiring-kit',
   Subnautica2BioscannerBiomods = '/games/subnautica-2/bioscanner-biomods',
   Subnautica2SonicResonator = '/games/subnautica-2/sonic-resonator',
+  Subnautica2AxumVision = '/games/subnautica-2/axum-vision',
   Subnautica2ConduitCrystal = '/games/subnautica-2/conduit-crystal',
   Subnautica2HeatTolerance = '/games/subnautica-2/heat-tolerance',
   Subnautica2AngelComb = '/games/subnautica-2/angel-comb',

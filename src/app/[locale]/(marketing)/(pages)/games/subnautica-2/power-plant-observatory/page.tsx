@@ -154,6 +154,7 @@ const powerPlantObservatoryCopy: Record<string, PowerPlantObservatoryCopy> = {
         href: Routes.Subnautica2KarakorumPowerPlant,
         label: 'Karakorum Power Plant Route',
       },
+      { href: Routes.Subnautica2AxumVision, label: 'Axum Vision Guide' },
       { href: Routes.Subnautica2AngelComb, label: 'Angel Comb Guide' },
       {
         href: Routes.Subnautica2FeedbackResonator,
@@ -300,6 +301,7 @@ const powerPlantObservatoryCopy: Record<string, PowerPlantObservatoryCopy> = {
         href: Routes.Subnautica2KarakorumPowerPlant,
         label: 'Karakorum Power Plant 路线',
       },
+      { href: Routes.Subnautica2AxumVision, label: 'Axum Vision 指南' },
       { href: Routes.Subnautica2AngelComb, label: 'Angel Comb 指南' },
       {
         href: Routes.Subnautica2FeedbackResonator,

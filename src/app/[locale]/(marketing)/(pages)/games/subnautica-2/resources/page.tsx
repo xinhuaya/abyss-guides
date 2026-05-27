@@ -151,6 +151,7 @@ const resourcesCopy: Record<string, ResourcesCopy> = {
         href: Routes.Subnautica2PowerPlantObservatory,
         label: 'Power Plant Observatory Guide',
       },
+      { href: Routes.Subnautica2AxumVision, label: 'Axum Vision Guide' },
       { href: Routes.Subnautica2PowerCell, label: 'Power Cell Guide' },
       {
         href: Routes.Subnautica2VehicleFabricator,
