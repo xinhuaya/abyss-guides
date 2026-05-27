@@ -16,7 +16,7 @@ type TadpoleDepthModuleCopy = ResourceGuideCopy & {
 };
 
 const PUBLISHED_AT = '2026-05-25';
-const UPDATED_AT = '2026-05-25';
+const UPDATED_AT = '2026-05-27';
 
 const sharedSources = [
   {
@@ -57,7 +57,7 @@ const tadpoleDepthModuleCopy: Record<string, TadpoleDepthModuleCopy> = {
     routeSteps: [
       {
         title: 'Build the support chain first',
-        body: 'Before chasing the module, make sure the Tadpole exists, the Modification Station is handled, and you have a clean way to repair and power the vehicle. A depth upgrade does not help if the route home is already falling apart.',
+        body: 'Before chasing the module, make sure the Tadpole exists, the Modification Station is handled, and you have a clean way to repair and power the vehicle. Bring the oxygen plan too; the scan route is not the place to discover that your return habits are sloppy.',
       },
       {
         title: 'Treat Alien Ruins as the scan zone',
@@ -144,6 +144,9 @@ const tadpoleDepthModuleCopy: Record<string, TadpoleDepthModuleCopy> = {
     related: [
       { href: Routes.Subnautica2ImprovedFins, label: 'Improved Fins Guide' },
       { href: Routes.Subnautica2Tadpole, label: 'Tadpole Vehicle Guide' },
+      { href: Routes.Subnautica2AirTank, label: 'Air Tank and O2' },
+      { href: Routes.Subnautica2OxygenDepth, label: 'Oxygen and Depth Guide' },
+      { href: Routes.Subnautica2Scanner, label: 'Scanner Guide' },
       {
         href: Routes.Subnautica2EnameledGlass,
         label: 'Enameled Glass Guide',
@@ -162,7 +165,7 @@ const tadpoleDepthModuleCopy: Record<string, TadpoleDepthModuleCopy> = {
     ],
     sourcesTitle: 'Source note',
     sourceBody:
-      'Checked May 25, 2026 against current GameSpot Tadpole upgrade reporting, PC Gamer Feedback Resonator and Celestine reporting, and GamesRadar Enameled Glass reporting. Early Access module recipes, depth limits, and scan placement may change after patches.',
+      'Checked May 27, 2026 against current GameSpot Tadpole upgrade reporting, PC Gamer Feedback Resonator and Celestine reporting, and GamesRadar Enameled Glass reporting. Early Access module recipes, depth limits, and scan placement may change after patches.',
     cardKicker: 'Depth upgrade card',
     cardBody:
       'Mk.1 scan route, Alien Ruins Needler risk, Celestine, Enameled Glass, System Chip, and deeper route planning.',
@@ -419,6 +422,78 @@ const tadpoleDepthModuleCopy: Record<string, TadpoleDepthModuleCopy> = {
     cardStatusLabel: '状態',
     cardStatusValue: 'Early Access',
   },
+};
+
+tadpoleDepthModuleCopy.zh = {
+  ...tadpoleDepthModuleCopy.zh,
+  routeSteps: [
+    {
+      title: '先把支撑链做好',
+      body: '别刚造出 Tadpole 就急着冲深水。先确认 Modification Station、维修、供电、氧气和返程路线都能撑住。深度升级不是用来掩盖糟糕准备的。',
+    },
+    {
+      title: '把 Alien Ruins 当扫描区',
+      body: '当前资料把 Mk.1 扫描路线指向更深的 Alien Ruins 区域，尤其是 Alien Ruins Research Base 东南方向、Needler nest 下方洞穴一带。用地标和 Beacon 记录入口。',
+    },
+    {
+      title: '扫描按快进快出处理',
+      body: 'Tadpole 车头朝出口停好，扫描碎片，完成就走。Needler 会惩罚慢慢整理背包的人。',
+    },
+    {
+      title: '回基地解决配方链',
+      body: '当前资料把 Celestine、Enameled Glass、System Chip 放进 Mk.1 制作链。也就是说，这个升级会吃到前面的矿物、Creature Enamel 和电子元件准备。',
+    },
+  ],
+  related: [
+    { href: Routes.Subnautica2AirTank, label: '气瓶和氧气' },
+    { href: Routes.Subnautica2OxygenDepth, label: '氧气和下潜深度' },
+    { href: Routes.Subnautica2Scanner, label: 'Scanner 指南' },
+    { href: Routes.Subnautica2Tadpole, label: 'Tadpole 载具指南' },
+    { href: Routes.Subnautica2EnameledGlass, label: 'Enameled Glass 指南' },
+    { href: Routes.Subnautica2Celestine, label: 'Celestine 指南' },
+    {
+      href: Routes.Subnautica2FeedbackResonator,
+      label: 'Feedback Resonator 指南',
+    },
+  ],
+  sourceBody:
+    '2026 年 5 月 27 日根据 GameSpot 的 Tadpole 升级资料、PC Gamer 的 Feedback Resonator 和 Celestine 资料，以及 GamesRadar 的 Enameled Glass 资料整理。抢先体验阶段模块配方、深度上限和扫描位置都可能随补丁变化。',
+};
+
+tadpoleDepthModuleCopy.ja = {
+  ...tadpoleDepthModuleCopy.ja,
+  routeSteps: [
+    {
+      title: 'Build the support chain first',
+      body: 'Before chasing the module, make sure Tadpole, Modification Station, repair, power, oxygen, and the return route are ready.',
+    },
+    {
+      title: 'Treat Alien Ruins as the scan zone',
+      body: 'Current reporting points the Mk.1 scan route toward deeper Alien Ruins, including the Needler nest route southeast of the Alien Ruins Research Base.',
+    },
+    {
+      title: 'Scan and leave',
+      body: 'Park facing out, scan the fragments, and leave. Needlers punish slow inventory checks.',
+    },
+    {
+      title: 'Solve the recipe chain at base',
+      body: 'Celestine, Enameled Glass, and System Chip pull this upgrade back into earlier mineral, enamel, and electronics routes.',
+    },
+  ],
+  related: [
+    { href: Routes.Subnautica2AirTank, label: 'Air Tank and O2' },
+    { href: Routes.Subnautica2OxygenDepth, label: 'Oxygen and Depth Guide' },
+    { href: Routes.Subnautica2Scanner, label: 'Scanner Guide' },
+    { href: Routes.Subnautica2Tadpole, label: 'Tadpole Vehicle Guide' },
+    { href: Routes.Subnautica2EnameledGlass, label: 'Enameled Glass Guide' },
+    { href: Routes.Subnautica2Celestine, label: 'Celestine Guide' },
+    {
+      href: Routes.Subnautica2FeedbackResonator,
+      label: 'Feedback Resonator Guide',
+    },
+  ],
+  sourceBody:
+    'Checked May 27, 2026 against current GameSpot Tadpole upgrade reporting, PC Gamer Feedback Resonator and Celestine reporting, and GamesRadar Enameled Glass reporting.',
 };
 
 const fallbackLocaleAliases = {
