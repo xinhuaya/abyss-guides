@@ -16,7 +16,7 @@ type AngelCombCopy = ResourceGuideCopy & {
 };
 
 const PUBLISHED_AT = '2026-05-26';
-const UPDATED_AT = '2026-05-26';
+const UPDATED_AT = '2026-05-27';
 
 const sharedSources = [
   {
@@ -34,6 +34,10 @@ const sharedSources = [
   {
     href: 'https://gamewith.net/subnautica-2/75820',
     label: 'GameWith mid-game progression guide',
+  },
+  {
+    href: 'https://www.pcgamer.com/games/survival-crafting/subnautica-2-feedback-resonator-scan-locations/',
+    label: 'PC Gamer Feedback Resonator guide',
   },
 ];
 
@@ -138,6 +142,10 @@ const angelCombCopy: Record<string, AngelCombCopy> = {
       {
         href: Routes.Subnautica2SonicResonator,
         label: 'Sonic Resonator Guide',
+      },
+      {
+        href: Routes.Subnautica2FeedbackResonator,
+        label: 'Feedback Resonator Guide',
       },
       { href: Routes.Subnautica2AirTank, label: 'Air Tank and O2 Guide' },
       { href: Routes.Subnautica2Wakemaker, label: 'Wakemaker Guide' },
@@ -277,6 +285,130 @@ const angelCombCopy: Record<string, AngelCombCopy> = {
     cardStatusLabel: '状态',
     cardStatusValue: '抢先体验',
   },
+};
+
+angelCombCopy.zh = {
+  metadata: {
+    title:
+      'Subnautica 2 Angel Comb 指南 - Bloom Biofilm、Heat Tolerance 和 Sonic Resonator',
+    description:
+      'Subnautica 2 中文 Angel Comb 指南：整理 Bloom Biofilm 清理、Sonic Resonator 准备、Heat Tolerance 解锁、氧气安全和热区推进。',
+  },
+  eyebrow: 'Subnautica 2 Angel Comb 路线',
+  title: 'Subnautica 2 Angel Comb 指南',
+  description:
+    'Angel Comb 不是普通采集点。如果核心打不开，通常不是你没点准，而是周围 Bloom 路线还没清干净。带好工具和氧气，把它当成一次小型洞穴任务来做。',
+  quickLabel: '快速结论',
+  quickAnswer:
+    'PC Gamer 说第一处 Angel Comb 位于 Lifepod 西北约 200m、方位约 300 度，清理 viral blooms 后可获得 Heat Tolerance。GamesRadar+ 给出的范围很接近：Lifepod 西北约 190-200m、方位约 285 度。GAMES.GG 把热屏障路线描述成两处小 Bloom 加一处中央 Angel Comb，并说明你需要 Sonic Resonator 才能推进 Bloom 清理。建议带更高氧气容量、Air Bladder、医疗包，以及干扰或位移手段。',
+  contentsLabel: '目录',
+  routeTitle: 'Angel Comb 清理规划',
+  routeSteps: [
+    {
+      title: '把方位当成搜索片区',
+      body: 'PC Gamer 写约 200m 西北、方位 300；GamesRadar+ 写约 190-200m 西北、方位 285。两个说法很接近，足够圈出同一片搜索区域，不要为了一个数字来回校准。',
+    },
+    {
+      title: '先清小 Bloom',
+      body: 'GAMES.GG 把路线描述为小 Bloom 感染点连接中央 Angel Comb。大结构打不开时，先退出来找周围的卫星 Bloom，不要一直撞同一个核心。',
+    },
+    {
+      title: '出发前带 Sonic Resonator',
+      body: '当前攻略都把 Bloom 清理和 Sonic Resonator 绑在一起。如果你看到感染点却没法推进，先回去把工具做好。',
+    },
+    {
+      title: 'Feedback Resonator 是后续升级',
+      body: '如果你已经准备去 Axum Vision 或更深的 Bloom Canker 路线，先把 Feedback Resonator 做出来会更舒服。它不是第一次 Angel Comb 的硬门槛，但能让后续清理更稳。',
+    },
+    {
+      title: '按洞穴路线预留氧气',
+      body: '这里有房间、折返和敌对生物压力。Standard Air Tank 加 Air Bladder 会比用开局氧气硬穿舒服很多。',
+    },
+    {
+      title: '拿到 Heat Tolerance 后稳稳撤出',
+      body: '第一处 Angel Comb 的重点是 Heat Tolerance。解锁后不要立刻把同一趟变成热区大采购，除非血量、氧气和路线记忆都还很稳。',
+    },
+  ],
+  tableTitle: 'Angel Comb 检查表',
+  tableHeaders: ['需要准备', '为什么'],
+  tableRows: [
+    ['Sonic Resonator', '当前 Bloom 清理攻略都指向它。'],
+    ['Standard Air Tank', '洞穴房间和折返需要更多氧气余量。'],
+    ['Air Bladder', '路线乱掉时很好用的紧急脱离工具。'],
+    ['医疗包', '敌对生物会慢慢磨血。'],
+    ['路线标记', '西北洞穴第一次好找，第二次可能就烦了。'],
+  ],
+  visualTitle: 'Bloom 路线卡',
+  visualItems: [
+    {
+      label: '搜索',
+      value: '西北',
+      note: 'Lifepod 外约 190-200m。',
+    },
+    {
+      label: '清理',
+      value: 'Bloom',
+      note: '先小点，后中央 Angel Comb。',
+    },
+    {
+      label: '奖励',
+      value: 'Heat',
+      note: '解锁 Heat Tolerance。',
+    },
+  ],
+  cautionTitle: '打不开时别一直推核心',
+  cautionBody:
+    '最常见的问题是盯着中央 Angel Comb，以为游戏卡住了。当前攻略指向周围连接的 Bloom 点。先把外圈路线清掉，再回核心。',
+  faqTitle: '常见问题',
+  faqs: [
+    {
+      title: 'Subnautica 2 第一处 Angel Comb 在哪里？',
+      body: '当前攻略把它放在 Lifepod 西北，约 190-200m，方位大约 285 到 300 度。',
+    },
+    {
+      title: '为什么 Angel Comb 打不开？',
+      body: '通常是因为 Bloom 感染还没清完。先清理连接的小 Bloom 点，再回中央 Angel Comb。',
+    },
+    {
+      title: 'Bloom Biofilm 需要什么工具？',
+      body: '当前攻略指向 Sonic Resonator。开路线前先带上它。',
+    },
+    {
+      title: '第一处 Angel Comb 给什么？',
+      body: 'PC Gamer 和 GamesRadar+ 都把第一处 Angel Comb 路线和 Heat Tolerance Adaptation 联系在一起，它会打开更安全的热区路线。',
+    },
+  ],
+  readNextTitle: '继续阅读',
+  related: [
+    { href: Routes.Subnautica2BloomBiofilm, label: 'Bloom Biofilm 指南' },
+    { href: Routes.Subnautica2HeatTolerance, label: 'Heat Tolerance 指南' },
+    { href: Routes.Subnautica2SonicResonator, label: 'Sonic Resonator 指南' },
+    {
+      href: Routes.Subnautica2FeedbackResonator,
+      label: 'Feedback Resonator 指南',
+    },
+    { href: Routes.Subnautica2AirTank, label: '气瓶和氧气指南' },
+    { href: Routes.Subnautica2Wakemaker, label: 'Wakemaker 指南' },
+    { href: Routes.Subnautica2Biolab, label: 'Biolab 和 Biomods' },
+    {
+      href: Routes.Subnautica2BioscannerBiomods,
+      label: 'Bioscanner 和 Biomods',
+    },
+    { href: Routes.Subnautica2AxumVision, label: 'Axum Vision 指南' },
+    { href: Routes.Subnautica2Gold, label: 'Gold 位置指南' },
+    { href: Routes.Subnautica2Sulfur, label: 'Sulfur 指南' },
+  ],
+  sourcesTitle: '来源说明',
+  sourceBody:
+    '2026 年 5 月 27 日核对 PC Gamer、GamesRadar+、GAMES.GG 和 GameWith。抢先体验阶段路线地形和 Bloom 清理步骤可能变化，所以页面把方位写成搜索区域，并重点提醒工具和氧气准备。',
+  cardKicker: 'Angel Comb 卡片',
+  cardBody:
+    '西北搜索区域、Bloom Biofilm 清理顺序、Sonic Resonator 准备、Feedback Resonator 后续升级、氧气余量、Heat Tolerance 解锁和热区后续路线。',
+  cardTypeLabel: '类型',
+  cardTypeValue: '路线指南',
+  cardVerifiedLabel: '核对',
+  cardStatusLabel: '状态',
+  cardStatusValue: '抢先体验',
 };
 
 const fallbackCopy = angelCombCopy.en;
