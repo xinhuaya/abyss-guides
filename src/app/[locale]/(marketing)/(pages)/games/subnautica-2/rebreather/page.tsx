@@ -16,9 +16,13 @@ type RebreatherCopy = ResourceGuideCopy & {
 };
 
 const PUBLISHED_AT = '2026-05-26';
-const UPDATED_AT = '2026-05-26';
+const UPDATED_AT = '2026-05-27';
 
 const sharedSources = [
+  {
+    href: 'https://www.pcgamer.com/games/survival-crafting/subnautica-2-o2-oxygen-air-tank/',
+    label: 'PC Gamer O2 and Rebreather guide',
+  },
   {
     href: 'https://www.gamespot.com/gallery/subnautica-2-early-access-guide/2900-6555/',
     label: 'GameSpot Subnautica 2 Early Access guide',
@@ -51,7 +55,7 @@ const rebreatherCopy: Record<string, RebreatherCopy> = {
       'The Rebreather is the upgrade you craft when depth starts wasting oxygen faster than your route plan can keep up. It is not a magic air tank, but it makes deeper errands feel much less punishing.',
     quickLabel: 'Quick answer',
     quickAnswer:
-      'Current GameSpot reporting points to the Rebreather as an early Blueprint Analyzer unlock. The Subnautica 2 Wiki lists the recipe as System Chip x1 and Fiber Mesh x1, while other guide tables describe the same chain through Wiring Kit and Fiber Mesh. Treat the exact menu text as patch-sensitive and confirm it in your save before farming.',
+      'Current GameSpot reporting points to the Rebreather as an early Blueprint Analyzer unlock, while PC Gamer explains that it reduces the oxygen drain from deeper dives instead of increasing the tank itself. PC Gamer lists the craft as System Chip x1 and Fiber Mesh x2. Some database pages have used different Fiber Mesh wording, so confirm the exact menu text in your save before farming.',
     contentsLabel: 'Contents',
     routeTitle: 'Rebreather craft plan',
     routeSteps: [
@@ -60,12 +64,16 @@ const rebreatherCopy: Record<string, RebreatherCopy> = {
         body: 'GameSpot calls the Rebreather one of the early unlocks from the Blueprint Analyzer. If it is not visible, keep feeding the analyzer and do not waste the trip on parts yet.',
       },
       {
+        title: 'Know what it actually fixes',
+        body: 'The Rebreather is not a bigger air tank. Use it when depth penalties are eating oxygen too fast, then pair it with Air Tank upgrades for longer routes.',
+      },
+      {
         title: 'Trace the electronics chain',
         body: 'System Chip pulls you back through Wiring Kit, and Wiring Kit usually means Silver pressure. If Silver is scarce, make sure the Rebreather is the next actual blocker before spending it.',
       },
       {
-        title: 'Bring Fiber Mesh into the same run',
-        body: 'Mobalytics and current recipe notes connect Fiber Mesh to the Rebreather chain. Fold it into a Wakemaker or creepvine route so you are not making a plant-only return trip.',
+        title: 'Bring two Fiber Mesh into the plan',
+        body: 'PC Gamer lists two Fiber Mesh for Rebreather. Fiber Mesh is cheap only when the plant and Strong Acid chain is already staged, so do not leave it as a last-minute errand.',
       },
       {
         title: 'Craft it for depth, not short swims',
@@ -81,7 +89,7 @@ const rebreatherCopy: Record<string, RebreatherCopy> = {
     tableRows: [
       ['Unlock', 'GameSpot reports Blueprint Analyzer access.'],
       ['System Chip x1', 'Subnautica 2 Wiki currently lists it in the recipe.'],
-      ['Fiber Mesh x1', 'Plant material chain tied to Rebreather prep.'],
+      ['Fiber Mesh x2', 'PC Gamer lists two pieces for Rebreather prep.'],
       ['Wiring Kit', 'Appears through System Chip or guide-table wording.'],
       ['Use case', 'Best when depth is draining oxygen too fast.'],
     ],
@@ -114,11 +122,11 @@ const rebreatherCopy: Record<string, RebreatherCopy> = {
       },
       {
         title: 'What is the Rebreather recipe?',
-        body: 'The Subnautica 2 Wiki currently lists System Chip x1 and Fiber Mesh x1. Some guide tables describe the chain through Wiring Kit and Fiber Mesh, so check your in-game menu.',
+        body: 'PC Gamer currently lists System Chip x1 and Fiber Mesh x2. Some database pages have used different Fiber Mesh wording, so check your in-game menu before farming.',
       },
       {
         title: 'When should you craft the Rebreather?',
-        body: 'Craft it when deeper routes are eating oxygen too fast. For shallow loops, Air Tank upgrades and cleaner pathing may solve more.',
+        body: 'Craft it when deeper routes are draining oxygen too fast. For shallow loops, Air Tank upgrades and cleaner pathing may solve more.',
       },
       {
         title: 'Does the Rebreather replace oxygen upgrades?',
@@ -133,12 +141,14 @@ const rebreatherCopy: Record<string, RebreatherCopy> = {
       { href: Routes.Subnautica2SystemChip, label: 'System Chip Guide' },
       { href: Routes.Subnautica2WiringKit, label: 'Wiring Kit Guide' },
       { href: Routes.Subnautica2FiberMesh, label: 'Fiber Mesh Guide' },
+      { href: Routes.Subnautica2StrongAcid, label: 'Strong Acid Guide' },
+      { href: Routes.Subnautica2Processor, label: 'Processor Guide' },
       { href: Routes.Subnautica2Wakemaker, label: 'Wakemaker Guide' },
       { href: Routes.Subnautica2Crafting, label: 'Crafting Guide' },
     ],
     sourcesTitle: 'Source note',
     sourceBody:
-      'Checked May 26, 2026 against GameSpot, Subnautica 2 Wiki, Mobalytics, and Serenes Forest. Early Access recipe text and unlock wording can change, so this page treats the exact menu wording as something to verify in-game.',
+      'Checked May 27, 2026 against PC Gamer, GameSpot, Subnautica 2 Wiki, Mobalytics, and Serenes Forest. Early Access recipe text and unlock wording can change, so this page treats the exact menu wording as something to verify in-game.',
     cardKicker: 'Breathing gear card',
     cardBody:
       'Blueprint Analyzer unlock, System Chip, Fiber Mesh, Wiring Kit chain, and deep-route oxygen timing.',
@@ -261,7 +271,79 @@ const rebreatherCopy: Record<string, RebreatherCopy> = {
 
 const fallbackCopy = rebreatherCopy.en;
 
+rebreatherCopy.zh = {
+  ...rebreatherCopy.zh,
+  quickAnswer:
+    'GameSpot 当前把 Rebreather 写成前期 Blueprint Analyzer 解锁；PC Gamer 说明它不是增加氧气上限，而是减少深潜时的氧气消耗。PC Gamer 当前配方是 System Chip x1 和 Fiber Mesh x2。部分资料库对 Fiber Mesh 数量写法不同，正式刷材料前先看你存档里的菜单。',
+  routeSteps: [
+    {
+      title: '先解锁，再刷材料',
+      body: 'GameSpot 把 Rebreather 归到前期 Blueprint Analyzer 解锁里。如果菜单里还看不到，先推进 analyzer，不要急着为它刷一堆材料。',
+    },
+    {
+      title: '先弄清它解决什么问题',
+      body: 'Rebreather 不是更大的气瓶。它适合深度开始明显吃氧气的时候，再和 Air Tank 升级一起用，路线会稳很多。',
+    },
+    {
+      title: '倒查电子材料链',
+      body: 'System Chip 会把你带回 Wiring Kit，而 Wiring Kit 通常会卡 Silver。Silver 紧张时，先确认 Rebreather 真的是下一步瓶颈。',
+    },
+    {
+      title: '把两份 Fiber Mesh 放进计划',
+      body: 'PC Gamer 当前列的是 Fiber Mesh x2。Fiber Mesh 便宜，但前提是植物和 Strong Acid 链已经准备好，不要临出门才发现少材料。',
+    },
+  ],
+  tableRows: [
+    ['解锁', 'GameSpot 报道为 Blueprint Analyzer 解锁。'],
+    ['System Chip x1', '电子材料链会回到 Wiring Kit 和 Silver。'],
+    ['Fiber Mesh x2', 'PC Gamer 当前列出两份。'],
+    ['Wiring Kit', '通过 System Chip 材料链出现。'],
+    ['使用场景', '最适合深度惩罚明显拖慢氧气路线时。'],
+  ],
+  faqs: [
+    {
+      title: 'Subnautica 2 Rebreather 怎么解锁？',
+      body: 'GameSpot 报道它属于前期 Blueprint Analyzer 解锁。如果还没有，先继续推进 analyzer。',
+    },
+    {
+      title: 'Rebreather 配方是什么？',
+      body: 'PC Gamer 当前列的是 System Chip x1 和 Fiber Mesh x2。抢先体验阶段配方可能调整，要以你的游戏菜单为准。',
+    },
+    {
+      title: 'Rebreather 会增加氧气上限吗？',
+      body: '不会。它主要减少深潜氧气消耗；想增加总 O2，还是要看 Air Tank 路线。',
+    },
+  ],
+  related: [
+    { href: Routes.Subnautica2OxygenDepth, label: '氧气与深度指南' },
+    { href: Routes.Subnautica2AirTank, label: '气瓶和氧气' },
+    { href: Routes.Subnautica2SystemChip, label: 'System Chip 指南' },
+    { href: Routes.Subnautica2WiringKit, label: 'Wiring Kit 指南' },
+    { href: Routes.Subnautica2FiberMesh, label: 'Fiber Mesh 指南' },
+    { href: Routes.Subnautica2StrongAcid, label: 'Strong Acid 指南' },
+    { href: Routes.Subnautica2Processor, label: 'Processor 指南' },
+    { href: Routes.Subnautica2Crafting, label: '制作指南' },
+  ],
+  sourceBody:
+    '2026 年 5 月 27 日核对 PC Gamer、GameSpot、Subnautica 2 Wiki、Mobalytics 和 Serenes Forest。抢先体验阶段配方和解锁文字可能调整，所以页面提醒玩家以游戏内菜单为准。',
+};
+
+rebreatherCopy.ja = {
+  ...fallbackCopy,
+  metadata: {
+    title: 'Subnautica 2 Rebreather Guide',
+    description:
+      'Guide for Rebreather unlock, System Chip, Fiber Mesh x2, Wiring Kit, oxygen depth planning, and deep-route timing.',
+  },
+  sourceBody:
+    'Checked May 27, 2026 against PC Gamer, GameSpot, Subnautica 2 Wiki, Mobalytics, and Serenes Forest. Early Access recipe text and unlock wording can change.',
+};
+
 for (const locale of ['ja', 'de', 'fr', 'pt-BR', 'es-419', 'ko', 'ru']) {
+  if (rebreatherCopy[locale]) {
+    continue;
+  }
+
   rebreatherCopy[locale] = {
     ...fallbackCopy,
     metadata: {

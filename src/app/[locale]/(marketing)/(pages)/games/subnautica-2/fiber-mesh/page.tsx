@@ -16,9 +16,13 @@ type FiberMeshCopy = ResourceGuideCopy & {
 };
 
 const PUBLISHED_AT = '2026-05-26';
-const UPDATED_AT = '2026-05-26';
+const UPDATED_AT = '2026-05-27';
 
 const sharedSources = [
+  {
+    href: 'https://www.pcgamer.com/games/survival-crafting/subnautica-2-o2-oxygen-air-tank/',
+    label: 'PC Gamer O2 and Rebreather guide',
+  },
   {
     href: 'https://allthings.how/fiber-mesh-in-subnautica-2-recipe-and-crafting-steps/',
     label: 'All Things How Fiber Mesh recipe',
@@ -51,7 +55,7 @@ const fiberMeshCopy: Record<string, FiberMeshCopy> = {
       'Fiber Mesh looks like a small plant errand until it blocks a tool you actually want. Grab it before you head home from a creepvine run, because returning for one missing mesh feels worse than the recipe deserves.',
     quickLabel: 'Quick answer',
     quickAnswer:
-      'Current All Things How, Mobalytics, and Dexerto guides point players toward Creepvine material for Fiber Mesh, with current recipe wording commonly listing Creepvine Seed Cluster and Creepvine Sample at the Fabricator. Subnautica2Hub also lists Fiber Mesh as part of the Wakemaker recipe.',
+      'Current All Things How, Mobalytics, and Dexerto guides point players toward Creepvine material for Fiber Mesh, with current recipe wording commonly listing Creepvine Seed Cluster and Creepvine Sample at the Fabricator. PC Gamer also lists Fiber Mesh x2 in the Rebreather recipe and points the chain through Strong Acid, while Subnautica2Hub lists Fiber Mesh as part of the Wakemaker recipe.',
     contentsLabel: 'Contents',
     routeTitle: 'Fiber Mesh gathering plan',
     routeSteps: [
@@ -66,6 +70,10 @@ const fiberMeshCopy: Record<string, FiberMeshCopy> = {
       {
         title: 'Craft it at the Fabricator',
         body: 'Treat Fiber Mesh as a processed material, not a raw plant. Once the Fabricator recipe is available, convert the plant inputs before you reorganize storage.',
+      },
+      {
+        title: 'Keep two for Rebreather',
+        body: 'PC Gamer lists two Fiber Mesh for Rebreather. If deep routes are next, hold two finished pieces before spending plant materials on comfort crafts.',
       },
       {
         title: 'Reserve one for the Wakemaker',
@@ -85,6 +93,11 @@ const fiberMeshCopy: Record<string, FiberMeshCopy> = {
       ],
       ['Tool', 'Bring a cutter if your save asks for Creepvine Sample.'],
       ['Station', 'Current guides point to Fabricator crafting.'],
+      ['Rebreather', 'PC Gamer lists Fiber Mesh x2 in the craft.'],
+      [
+        'Strong Acid',
+        'Current Rebreather reporting points the mesh chain through it.',
+      ],
       ['Wakemaker', 'Subnautica2Hub lists Fiber Mesh in the recipe.'],
       ['Storage', 'Keep one spare mesh or plant set before leaving the biome.'],
     ],
@@ -117,7 +130,7 @@ const fiberMeshCopy: Record<string, FiberMeshCopy> = {
       },
       {
         title: 'What is Fiber Mesh used for?',
-        body: 'Subnautica2Hub currently lists Fiber Mesh in the Wakemaker recipe, and several guides connect it to early equipment planning such as mobility and breathing upgrades.',
+        body: 'Subnautica2Hub currently lists Fiber Mesh in the Wakemaker recipe, and PC Gamer lists Fiber Mesh x2 for Rebreather. Several guides connect it to early mobility and breathing upgrades.',
       },
       {
         title: 'Where should you look for Fiber Mesh ingredients?',
@@ -135,6 +148,9 @@ const fiberMeshCopy: Record<string, FiberMeshCopy> = {
       { href: Routes.Subnautica2Rubber, label: 'Rubber Recipe Guide' },
       { href: Routes.Subnautica2Wakemaker, label: 'Wakemaker Guide' },
       { href: Routes.Subnautica2Rebreather, label: 'Rebreather Guide' },
+      { href: Routes.Subnautica2StrongAcid, label: 'Strong Acid Guide' },
+      { href: Routes.Subnautica2Processor, label: 'Processor Guide' },
+      { href: Routes.Subnautica2SystemChip, label: 'System Chip Guide' },
       { href: Routes.Subnautica2BasicBattery, label: 'Basic Battery Guide' },
       { href: Routes.Subnautica2AirTank, label: 'Air Tank and O2' },
       { href: Routes.Subnautica2OxygenDepth, label: 'Oxygen and Depth Guide' },
@@ -144,7 +160,7 @@ const fiberMeshCopy: Record<string, FiberMeshCopy> = {
     ],
     sourcesTitle: 'Source note',
     sourceBody:
-      'Checked May 26, 2026 against All Things How, Mobalytics, Dexerto, and Subnautica2Hub. Early Access recipe text can change, so the page tells players to confirm the exact Fabricator inputs in their save.',
+      'Checked May 27, 2026 against PC Gamer, All Things How, Mobalytics, Dexerto, and Subnautica2Hub. Early Access recipe text can change, so the page tells players to confirm the exact Fabricator inputs in their save.',
     cardKicker: 'Plant material card',
     cardBody:
       'Creepvine gathering, Fabricator recipe check, Wakemaker use, and storage timing for early plant materials.',
@@ -269,7 +285,65 @@ const fiberMeshCopy: Record<string, FiberMeshCopy> = {
 
 const fallbackCopy = fiberMeshCopy.en;
 
+fiberMeshCopy.zh = {
+  ...fiberMeshCopy.zh,
+  quickAnswer:
+    'All Things How、Mobalytics 和 Dexerto 当前都把 Fiber Mesh 指向 Creepvine 材料，常见写法是用 Creepvine Seed Cluster 和 Creepvine Sample 在 Fabricator 制作。PC Gamer 还把 Fiber Mesh x2 列进 Rebreather 配方，并把材料链接到 Strong Acid；Subnautica2Hub 则把 Fiber Mesh 列在 Wakemaker 配方里。',
+  routeSteps: [
+    {
+      title: '如果需要样本，先带好切割工具',
+      body: '不同攻略对 Creepvine Seed Cluster 和 Creepvine Sample 的写法不完全一样。先看你的 Fabricator 配方，再决定这趟要带什么工具。',
+    },
+    {
+      title: '一趟 creepvine 路线多办几件事',
+      body: 'Seed cluster 和 sample 往往在前期植物路线附近。把电池、润滑剂、Fiber Mesh 的需求一起看，别分三趟游。',
+    },
+    {
+      title: '回 Fabricator 再加工',
+      body: 'Fiber Mesh 是加工材料，不是原始植物。配方可用后，先转成 mesh，再整理箱子。',
+    },
+    {
+      title: '给 Rebreather 留两份',
+      body: 'PC Gamer 当前把 Rebreather 配方写成 Fiber Mesh x2。如果深潜装备是下一步，先别把植物材料全花在别的舒适道具上。',
+    },
+  ],
+  tableRows: [
+    ['Creepvine 路线', 'Seed cluster 和 sample 都是要检查的植物链。'],
+    ['工具', '如果你的配方需要 Creepvine Sample，先带切割工具。'],
+    ['Fabricator', '当前攻略都指向在 Fabricator 加工。'],
+    ['Rebreather', 'PC Gamer 当前列出 Fiber Mesh x2。'],
+    ['Strong Acid', '当前 Rebreather 报道把 mesh 链接到 Strong Acid。'],
+    ['Wakemaker', 'Subnautica2Hub 把 Fiber Mesh 列进配方。'],
+  ],
+  related: [
+    { href: Routes.Subnautica2Rebreather, label: 'Rebreather 指南' },
+    { href: Routes.Subnautica2StrongAcid, label: 'Strong Acid 指南' },
+    { href: Routes.Subnautica2Processor, label: 'Processor 指南' },
+    { href: Routes.Subnautica2SystemChip, label: 'System Chip 指南' },
+    { href: Routes.Subnautica2Wakemaker, label: 'Wakemaker 指南' },
+    { href: Routes.Subnautica2AirTank, label: '气瓶和氧气' },
+    { href: Routes.Subnautica2OxygenDepth, label: '氧气与深度指南' },
+  ],
+  sourceBody:
+    '2026 年 5 月 27 日核对 PC Gamer、All Things How、Mobalytics、Dexerto 和 Subnautica2Hub。抢先体验阶段配方文本可能调整，所以页面提醒玩家以自己存档里的 Fabricator 输入为准。',
+};
+
+fiberMeshCopy.ja = {
+  ...fallbackCopy,
+  metadata: {
+    title: 'Subnautica 2 Fiber Mesh Guide',
+    description:
+      'Guide for Fiber Mesh, Creepvine material, Fabricator crafting, Rebreather x2 prep, Strong Acid chain, Wakemaker prep, and early equipment planning.',
+  },
+  sourceBody:
+    'Checked May 27, 2026 against PC Gamer, All Things How, Mobalytics, Dexerto, and Subnautica2Hub. Early Access recipe text can change.',
+};
+
 for (const locale of ['ja', 'de', 'fr', 'pt-BR', 'es-419', 'ko', 'ru']) {
+  if (fiberMeshCopy[locale]) {
+    continue;
+  }
+
   fiberMeshCopy[locale] = {
     ...fallbackCopy,
     metadata: {

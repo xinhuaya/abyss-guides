@@ -16,9 +16,13 @@ type SystemChipCopy = ResourceGuideCopy & {
 };
 
 const PUBLISHED_AT = '2026-05-25';
-const UPDATED_AT = '2026-05-25';
+const UPDATED_AT = '2026-05-27';
 
 const sharedSources = [
+  {
+    href: 'https://www.pcgamer.com/games/survival-crafting/subnautica-2-o2-oxygen-air-tank/',
+    label: 'PC Gamer O2 and Rebreather guide',
+  },
   {
     href: 'https://www.dexerto.com/wikis/subnautica-2/resources/system-chip/',
     label: 'Dexerto System Chip database',
@@ -51,7 +55,7 @@ const systemChipCopy: Record<string, SystemChipCopy> = {
       'System Chips are small enough to forget and important enough to stall half your plan. Treat them as an electronics checkpoint: Silver first, Quartz second, then decide which upgrade actually deserves the chip.',
     quickLabel: 'Quick answer',
     quickAnswer:
-      'Current guides list System Chip as a crafted electronics part made from Wiring Kit and Quartz. The real bottleneck is usually Silver for the Wiring Kit, not the chip itself. Make one when a known recipe asks for it, such as Rebreather, Scanner Station, Tadpole, Engine Efficiency, or Tadpole Depth Module Mk.1.',
+      'Current guides list System Chip as a crafted electronics part made from Wiring Kit and Quartz. PC Gamer currently lists one System Chip in the Rebreather recipe, and GameSpot/PC Gamer upgrade reporting also connects the chip to Tadpole and depth-module planning. The real bottleneck is usually Silver for the Wiring Kit, not the chip itself.',
     contentsLabel: 'Contents',
     routeTitle: 'System Chip craft plan',
     routeSteps: [
@@ -69,7 +73,7 @@ const systemChipCopy: Record<string, SystemChipCopy> = {
       },
       {
         title: 'Pair it with depth planning',
-        body: 'The Tadpole Depth Module Mk.1 chain includes System Chip in current reporting. That makes this tiny part a gate between ordinary vehicle travel and safer deep routes.',
+        body: 'Rebreather and Tadpole Depth Module Mk.1 both pull System Chip into deeper-route planning. That makes this tiny part a gate between ordinary travel and safer deep routes.',
       },
       {
         title: 'Leave a spare if Silver is comfortable',
@@ -92,6 +96,7 @@ const systemChipCopy: Record<string, SystemChipCopy> = {
         'Recipe target',
         'Craft only when Rebreather, Scanner Station, Tadpole, or a module asks for it.',
       ],
+      ['Rebreather', 'PC Gamer currently lists System Chip x1 in the craft.'],
       [
         'Depth Module plan',
         'Mk.1 uses System Chip in current Tadpole upgrade reporting.',
@@ -140,6 +145,7 @@ const systemChipCopy: Record<string, SystemChipCopy> = {
     readNextTitle: 'Read next',
     related: [
       { href: Routes.Subnautica2Rebreather, label: 'Rebreather Guide' },
+      { href: Routes.Subnautica2FiberMesh, label: 'Fiber Mesh Guide' },
       {
         href: Routes.Subnautica2ScannerStation,
         label: 'Scanner Station Guide',
@@ -170,7 +176,7 @@ const systemChipCopy: Record<string, SystemChipCopy> = {
     ],
     sourcesTitle: 'Source note',
     sourceBody:
-      'Checked May 25, 2026 against current Dexerto and Subnautica2.gg System Chip data, plus PC Gamer Silver and Tadpole coverage. Recipe use can change during Early Access patches.',
+      'Checked May 27, 2026 against current PC Gamer, Dexerto, and Subnautica2.gg System Chip data, plus PC Gamer Silver and Tadpole coverage. Recipe use can change during Early Access patches.',
     cardKicker: 'Electronics card',
     cardBody:
       'Wiring Kit, Quartz, Silver prep, Rebreather, Scanner Station, Tadpole, and Depth Module planning.',
@@ -443,6 +449,31 @@ const systemChipCopy: Record<string, SystemChipCopy> = {
     cardStatusLabel: '状態',
     cardStatusValue: 'Early Access',
   },
+};
+
+systemChipCopy.zh = {
+  ...systemChipCopy.zh,
+  quickAnswer:
+    '当前攻略把 System Chip 写成 Wiring Kit + Quartz。PC Gamer 当前把 System Chip x1 列进 Rebreather 配方，Tadpole 和深度模块路线也会吃到它。真正容易卡的通常不是芯片本身，而是 Wiring Kit 需要的 Silver。',
+  related: [
+    { href: Routes.Subnautica2Rebreather, label: 'Rebreather 指南' },
+    { href: Routes.Subnautica2FiberMesh, label: 'Fiber Mesh 指南' },
+    { href: Routes.Subnautica2WiringKit, label: 'Wiring Kit 指南' },
+    { href: Routes.Subnautica2Quartz, label: 'Quartz 位置指南' },
+    { href: Routes.Subnautica2Silver, label: 'Silver 位置' },
+    {
+      href: Routes.Subnautica2TadpoleDepthModule,
+      label: 'Tadpole Depth Module 指南',
+    },
+  ],
+  sourceBody:
+    '2026 年 5 月 27 日核对 PC Gamer、Dexerto、Subnautica2.gg 的 System Chip 资料，以及 PC Gamer 的 Silver 和 Tadpole 报道。抢先体验阶段用途可能随补丁变化。',
+};
+
+systemChipCopy.ja = {
+  ...systemChipCopy.en,
+  sourceBody:
+    'Checked May 27, 2026 against current PC Gamer, Dexerto, and Subnautica2.gg System Chip data, plus PC Gamer Silver and Tadpole coverage.',
 };
 
 const fallbackLocaleAliases = {

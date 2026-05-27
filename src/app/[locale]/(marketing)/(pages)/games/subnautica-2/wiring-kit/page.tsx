@@ -16,9 +16,13 @@ type WiringKitCopy = ResourceGuideCopy & {
 };
 
 const PUBLISHED_AT = '2026-05-25';
-const UPDATED_AT = '2026-05-25';
+const UPDATED_AT = '2026-05-27';
 
 const sharedSources = [
+  {
+    href: 'https://www.pcgamer.com/games/survival-crafting/subnautica-2-o2-oxygen-air-tank/',
+    label: 'PC Gamer O2 and Rebreather guide',
+  },
   {
     href: 'https://subnautica2.gg/blueprints/wiring-kit',
     label: 'Subnautica2.gg Wiring Kit blueprint',
@@ -47,7 +51,7 @@ const wiringKitCopy: Record<string, WiringKitCopy> = {
       'Wiring Kit is the small electronics part that makes Silver and Copper prep matter. Get the ingredients ready, then craft it only when the next blueprint asks for one.',
     quickLabel: 'Quick answer',
     quickAnswer:
-      'Current blueprint data lists Wiring Kit as Silver plus Copper Wire. The usual blocker is Silver, while Copper Wire is the easy piece to forget at base. Make Wiring Kit for named recipes such as System Chip and later electronics or upgrade chains, but leave some Silver raw until you know the next craft.',
+      'Current blueprint data lists Wiring Kit as Silver plus Copper Wire. The usual blocker is Silver, while Copper Wire is the easy piece to forget at base. PC Gamer currently routes Rebreather through System Chip, and System Chip routes back to Wiring Kit, so this small part now matters for deep-diving equipment too.',
     contentsLabel: 'Contents',
     routeTitle: 'Wiring Kit craft plan',
     routeSteps: [
@@ -65,7 +69,7 @@ const wiringKitCopy: Record<string, WiringKitCopy> = {
       },
       {
         title: 'Check the System Chip chain',
-        body: 'System Chip currently sits right after Wiring Kit in the electronics chain. If a Rebreather, Scanner Station, Tadpole, or depth module plan is stuck, trace the chain back here.',
+        body: 'System Chip currently sits right after Wiring Kit in the electronics chain. If a Rebreather, Scanner Station, Tadpole, or depth module plan is stuck, trace the chain back here before blaming the final upgrade.',
       },
       {
         title: 'Leave a raw Silver reserve',
@@ -85,7 +89,7 @@ const wiringKitCopy: Record<string, WiringKitCopy> = {
       ],
       [
         'System Chip',
-        'The next electronics step, usually paired with Quartz in current guides.',
+        'The next electronics step, usually paired with Quartz in current guides and used by Rebreather.',
       ],
       [
         'Upgrade target',
@@ -144,6 +148,7 @@ const wiringKitCopy: Record<string, WiringKitCopy> = {
       { href: Routes.Subnautica2Copper, label: 'Copper Location' },
       { href: Routes.Subnautica2Rebreather, label: 'Rebreather Guide' },
       { href: Routes.Subnautica2SystemChip, label: 'System Chip Guide' },
+      { href: Routes.Subnautica2FiberMesh, label: 'Fiber Mesh Guide' },
       {
         href: Routes.Subnautica2AdvancedWiringKit,
         label: 'Advanced Wiring Kit Guide',
@@ -157,7 +162,7 @@ const wiringKitCopy: Record<string, WiringKitCopy> = {
     ],
     sourcesTitle: 'Source note',
     sourceBody:
-      'Checked May 25, 2026 against current Subnautica2.gg and Dexerto Wiring Kit data, plus PC Gamer Silver route coverage. Early Access recipes and uses can change after patches.',
+      'Checked May 27, 2026 against current PC Gamer, Subnautica2.gg, and Dexerto Wiring Kit data, plus PC Gamer Silver route coverage. Early Access recipes and uses can change after patches.',
     cardKicker: 'Electronics card',
     cardBody:
       'Silver, Copper Wire, System Chip prep, electronics storage, and upgrade timing.',
@@ -409,6 +414,31 @@ const wiringKitCopy: Record<string, WiringKitCopy> = {
     cardStatusLabel: '状態',
     cardStatusValue: 'Early Access',
   },
+};
+
+wiringKitCopy.zh = {
+  ...wiringKitCopy.zh,
+  quickAnswer:
+    '当前蓝图数据把 Wiring Kit 写成 Silver + Copper Wire。真正容易卡住的通常是 Silver。PC Gamer 当前把 Rebreather 路线接到 System Chip，而 System Chip 又会倒回 Wiring Kit，所以这个小零件也会影响深潜装备。',
+  related: [
+    { href: Routes.Subnautica2SystemChip, label: 'System Chip 指南' },
+    { href: Routes.Subnautica2Rebreather, label: 'Rebreather 指南' },
+    { href: Routes.Subnautica2FiberMesh, label: 'Fiber Mesh 指南' },
+    { href: Routes.Subnautica2CopperWire, label: 'Copper Wire 指南' },
+    { href: Routes.Subnautica2Silver, label: 'Silver 位置' },
+    {
+      href: Routes.Subnautica2TadpoleDepthModule,
+      label: 'Tadpole Depth Module 指南',
+    },
+  ],
+  sourceBody:
+    '2026 年 5 月 27 日核对 PC Gamer、Subnautica2.gg、Dexerto 的 Wiring Kit 资料，以及 PC Gamer 的 Silver 路线报道。抢先体验阶段配方和用途可能调整。',
+};
+
+wiringKitCopy.ja = {
+  ...wiringKitCopy.en,
+  sourceBody:
+    'Checked May 27, 2026 against current PC Gamer, Subnautica2.gg, and Dexerto Wiring Kit data, plus PC Gamer Silver route coverage.',
 };
 
 const fallbackLocaleAliases = {
