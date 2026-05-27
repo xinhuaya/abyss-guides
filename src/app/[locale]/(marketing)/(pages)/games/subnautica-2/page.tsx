@@ -152,6 +152,12 @@ const copyByLocale: Record<'en' | 'zh', HubCopy> = {
           'Coral Gardens harvest lead, Basic Battery use, Mild Acid use, and current map-data caveat.',
       },
       {
+        href: Routes.Subnautica2NecroleiCyst,
+        title: 'Necrolei Cyst',
+        description:
+          'Old Habitat route, Stilt Orb harvest, Processor recipe, and Strong Acid planning.',
+      },
+      {
         href: Routes.Subnautica2MildAcid,
         title: 'Mild Acid',
         description:
@@ -852,6 +858,12 @@ const copyByLocale: Record<'en' | 'zh', HubCopy> = {
         title: 'Advanced Wiring Kit',
         description:
           'Wiring Kit、Gold、Sulfur、制作站写法、Dedicated Core、Heat Resistance Chip 和 Scout Ray 规划。',
+      },
+      {
+        href: Routes.Subnautica2NecroleiCyst,
+        title: 'Necrolei Cyst',
+        description:
+          'Old Habitat 路线、Stilt Orb 采集、Processor 配方和 Strong Acid 规划。',
       },
       {
         href: Routes.Subnautica2MildAcid,

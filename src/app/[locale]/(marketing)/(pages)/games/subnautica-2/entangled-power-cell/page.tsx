@@ -153,6 +153,7 @@ const entangledPowerCellCopy: Record<string, EntangledPowerCellCopy> = {
         label: 'Conduit Crystal Guide',
       },
       { href: Routes.Subnautica2StrongAcid, label: 'Strong Acid Guide' },
+      { href: Routes.Subnautica2NecroleiCyst, label: 'Necrolei Cyst Guide' },
       { href: Routes.Subnautica2GoldIngot, label: 'Gold Ingot Guide' },
       { href: Routes.Subnautica2Troilite, label: 'Troilite Location Guide' },
       { href: Routes.Subnautica2PowerCell, label: 'Power Cell Guide' },
@@ -271,6 +272,7 @@ const entangledPowerCellCopy: Record<string, EntangledPowerCellCopy> = {
     related: [
       { href: Routes.Subnautica2ConduitCrystal, label: 'Conduit Crystal 指南' },
       { href: Routes.Subnautica2StrongAcid, label: 'Strong Acid 指南' },
+      { href: Routes.Subnautica2NecroleiCyst, label: 'Necrolei Cyst 指南' },
       { href: Routes.Subnautica2GoldIngot, label: 'Gold Ingot 指南' },
       { href: Routes.Subnautica2Troilite, label: 'Troilite 位置指南' },
       { href: Routes.Subnautica2PowerCell, label: 'Power Cell 指南' },
