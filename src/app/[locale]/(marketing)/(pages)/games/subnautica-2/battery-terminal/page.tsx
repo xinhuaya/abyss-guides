@@ -275,6 +275,11 @@ const batteryTerminalCopy: Record<string, BatteryTerminalCopy> = {
       { href: Routes.Subnautica2Scanner, label: 'Scanner 指南' },
       { href: Routes.Subnautica2AirTank, label: '气瓶和氧气指南' },
       { href: Routes.Subnautica2Wakemaker, label: 'Wakemaker 指南' },
+      { href: Routes.Subnautica2PowerCell, label: 'Power Cell 指南' },
+      {
+        href: Routes.Subnautica2EntangledPowerCell,
+        label: 'Entangled Power Cell 指南',
+      },
       { href: Routes.Subnautica2Resources, label: '资源指南' },
     ],
     sourcesTitle: '来源说明',

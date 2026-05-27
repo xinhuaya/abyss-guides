@@ -276,6 +276,18 @@ const repairToolCopy: Record<string, RepairToolCopy> = {
       { href: Routes.Subnautica2TitaniumIngot, label: 'Titanium Ingot 指南' },
       { href: Routes.Subnautica2Beacon, label: 'Beacon 指南' },
       { href: Routes.Subnautica2BaseBuilding, label: '基地建设指南' },
+      {
+        href: Routes.Subnautica2BatteryTerminal,
+        label: 'Battery Terminal 指南',
+      },
+      {
+        href: Routes.Subnautica2KarakorumPowerPlant,
+        label: 'Karakorum Power Plant 指南',
+      },
+      {
+        href: Routes.Subnautica2PowerPlantObservatory,
+        label: 'Power Plant Observatory 指南',
+      },
       { href: Routes.Subnautica2Crafting, label: '制作指南' },
     ],
     sourcesTitle: '来源说明',
