@@ -314,6 +314,12 @@ const copyByLocale: Record<'en' | 'zh', HubCopy> = {
           'Gold x3, Processor crafting, raw Gold reserve, Entangled Power Cell, and Fabrication Station planning.',
       },
       {
+        href: Routes.Subnautica2EntangledPowerCell,
+        title: 'Entangled Power Cell',
+        description:
+          'Conduit Crystal, Strong Acid, Gold Ingot, Troilite, fragment scans, and late power planning.',
+      },
+      {
         href: Routes.Subnautica2HeatTolerance,
         title: 'Heat Tolerance',
         description:
@@ -757,6 +763,12 @@ const copyByLocale: Record<'en' | 'zh', HubCopy> = {
         title: 'Gold Ingot',
         description:
           'Gold x3、Processor 加工、原始 Gold 储备、Entangled Power Cell 和 Fabrication Station 规划。',
+      },
+      {
+        href: Routes.Subnautica2EntangledPowerCell,
+        title: 'Entangled Power Cell',
+        description:
+          'Conduit Crystal、Strong Acid、Gold Ingot、Troilite、碎片扫描和后期供电规划。',
       },
       {
         href: Routes.Subnautica2HeatTolerance,

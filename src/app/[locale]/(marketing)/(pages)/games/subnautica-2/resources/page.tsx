@@ -194,6 +194,10 @@ const resourcesCopy: Record<string, ResourcesCopy> = {
       },
       { href: Routes.Subnautica2Gold, label: 'Gold Location Guide' },
       { href: Routes.Subnautica2GoldIngot, label: 'Gold Ingot Guide' },
+      {
+        href: Routes.Subnautica2EntangledPowerCell,
+        label: 'Entangled Power Cell Guide',
+      },
       { href: Routes.Subnautica2HeatTolerance, label: 'Heat Tolerance Guide' },
       { href: Routes.Subnautica2AngelComb, label: 'Angel Comb Guide' },
       { href: Routes.Subnautica2BloomBiofilm, label: 'Bloom Biofilm Guide' },
@@ -388,6 +392,10 @@ const resourcesCopy: Record<string, ResourcesCopy> = {
       },
       { href: Routes.Subnautica2Gold, label: 'Gold Location Guide' },
       { href: Routes.Subnautica2GoldIngot, label: 'Gold Ingot 指南' },
+      {
+        href: Routes.Subnautica2EntangledPowerCell,
+        label: 'Entangled Power Cell 指南',
+      },
       { href: Routes.Subnautica2HeatTolerance, label: 'Heat Tolerance Guide' },
       { href: Routes.Subnautica2AngelComb, label: 'Angel Comb Guide' },
       { href: Routes.Subnautica2BloomBiofilm, label: 'Bloom Biofilm Guide' },

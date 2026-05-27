@@ -148,6 +148,10 @@ const powerCellCopy: Record<string, PowerCellCopy> = {
         label: 'Battery Terminal Guide',
       },
       { href: Routes.Subnautica2StrongAcid, label: 'Strong Acid Guide' },
+      {
+        href: Routes.Subnautica2EntangledPowerCell,
+        label: 'Entangled Power Cell Guide',
+      },
       { href: Routes.Subnautica2Salt, label: 'Salt Location Guide' },
       { href: Routes.Subnautica2Processor, label: 'Processor Guide' },
       { href: Routes.Subnautica2Resources, label: 'Resources Guide' },
@@ -270,6 +274,10 @@ const powerCellCopy: Record<string, PowerCellCopy> = {
         label: 'Battery Terminal 指南',
       },
       { href: Routes.Subnautica2StrongAcid, label: 'Strong Acid 指南' },
+      {
+        href: Routes.Subnautica2EntangledPowerCell,
+        label: 'Entangled Power Cell 指南',
+      },
       { href: Routes.Subnautica2Salt, label: 'Salt 位置指南' },
       { href: Routes.Subnautica2Processor, label: 'Processor 指南' },
       { href: Routes.Subnautica2Resources, label: '资源指南' },

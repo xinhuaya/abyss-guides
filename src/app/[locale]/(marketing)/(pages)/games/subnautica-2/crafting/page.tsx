@@ -175,6 +175,10 @@ const craftingCopy: Record<string, CraftingCopy> = {
       },
       { href: Routes.Subnautica2PowerCell, label: 'Power Cell Guide' },
       {
+        href: Routes.Subnautica2EntangledPowerCell,
+        label: 'Entangled Power Cell Guide',
+      },
+      {
         href: Routes.Subnautica2VehicleFabricator,
         label: 'Vehicle Fabricator Guide',
       },
@@ -348,6 +352,10 @@ const craftingCopy: Record<string, CraftingCopy> = {
       },
       { href: Routes.Subnautica2PowerCell, label: 'Power Cell Guide' },
       {
+        href: Routes.Subnautica2EntangledPowerCell,
+        label: 'Entangled Power Cell Guide',
+      },
+      {
         href: Routes.Subnautica2VehicleFabricator,
         label: 'Vehicle Fabricator Guide',
       },
@@ -494,6 +502,10 @@ const craftingCopy: Record<string, CraftingCopy> = {
       },
       { href: Routes.Subnautica2PowerCell, label: 'Power Cell Guide' },
       {
+        href: Routes.Subnautica2EntangledPowerCell,
+        label: 'Entangled Power Cell Guide',
+      },
+      {
         href: Routes.Subnautica2VehicleFabricator,
         label: 'Vehicle Fabricator Guide',
       },
@@ -610,6 +622,10 @@ const craftingCopy: Record<string, CraftingCopy> = {
         label: 'Advanced Battery Guide',
       },
       { href: Routes.Subnautica2PowerCell, label: 'Power Cell Guide' },
+      {
+        href: Routes.Subnautica2EntangledPowerCell,
+        label: 'Entangled Power Cell Guide',
+      },
       {
         href: Routes.Subnautica2VehicleFabricator,
         label: 'Vehicle Fabricator Guide',
@@ -737,6 +753,10 @@ const craftingCopy: Record<string, CraftingCopy> = {
       },
       { href: Routes.Subnautica2PowerCell, label: 'Power Cell Guide' },
       {
+        href: Routes.Subnautica2EntangledPowerCell,
+        label: 'Entangled Power Cell Guide',
+      },
+      {
         href: Routes.Subnautica2VehicleFabricator,
         label: 'Vehicle Fabricator Guide',
       },
@@ -853,6 +873,10 @@ const craftingCopy: Record<string, CraftingCopy> = {
         label: 'Advanced Battery Guide',
       },
       { href: Routes.Subnautica2PowerCell, label: 'Power Cell Guide' },
+      {
+        href: Routes.Subnautica2EntangledPowerCell,
+        label: 'Entangled Power Cell Guide',
+      },
       {
         href: Routes.Subnautica2VehicleFabricator,
         label: 'Vehicle Fabricator Guide',
@@ -971,6 +995,10 @@ const craftingCopy: Record<string, CraftingCopy> = {
       },
       { href: Routes.Subnautica2PowerCell, label: 'Power Cell Guide' },
       {
+        href: Routes.Subnautica2EntangledPowerCell,
+        label: 'Entangled Power Cell Guide',
+      },
+      {
         href: Routes.Subnautica2VehicleFabricator,
         label: 'Vehicle Fabricator Guide',
       },
@@ -1088,6 +1116,10 @@ const craftingCopy: Record<string, CraftingCopy> = {
       },
       { href: Routes.Subnautica2PowerCell, label: 'Power Cell Guide' },
       {
+        href: Routes.Subnautica2EntangledPowerCell,
+        label: 'Entangled Power Cell Guide',
+      },
+      {
         href: Routes.Subnautica2VehicleFabricator,
         label: 'Vehicle Fabricator Guide',
       },
@@ -1204,6 +1236,10 @@ const craftingCopy: Record<string, CraftingCopy> = {
         label: 'Advanced Battery Guide',
       },
       { href: Routes.Subnautica2PowerCell, label: 'Power Cell Guide' },
+      {
+        href: Routes.Subnautica2EntangledPowerCell,
+        label: 'Entangled Power Cell Guide',
+      },
       {
         href: Routes.Subnautica2VehicleFabricator,
         label: 'Vehicle Fabricator Guide',

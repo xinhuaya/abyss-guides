@@ -238,6 +238,12 @@ export default function TroiliteGuidePage() {
                 </LocaleLink>
                 <LocaleLink
                   className="text-[#78ead7] hover:underline"
+                  href={Routes.Subnautica2EntangledPowerCell}
+                >
+                  Entangled Power Cell Guide
+                </LocaleLink>
+                <LocaleLink
+                  className="text-[#78ead7] hover:underline"
                   href={Routes.Subnautica2TroiliteSoftlock}
                 >
                   Troilite Softlock Fix

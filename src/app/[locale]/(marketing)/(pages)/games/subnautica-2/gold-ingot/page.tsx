@@ -135,6 +135,10 @@ const goldIngotCopy: Record<string, GoldIngotCopy> = {
     readNextTitle: 'Read next',
     related: [
       { href: Routes.Subnautica2Gold, label: 'Gold Location Guide' },
+      {
+        href: Routes.Subnautica2EntangledPowerCell,
+        label: 'Entangled Power Cell Guide',
+      },
       { href: Routes.Subnautica2Processor, label: 'Processor Guide' },
       { href: Routes.Subnautica2SystemChip, label: 'System Chip Guide' },
       { href: Routes.Subnautica2HeatTolerance, label: 'Heat Tolerance Guide' },
@@ -249,6 +253,10 @@ const goldIngotCopy: Record<string, GoldIngotCopy> = {
     readNextTitle: '继续阅读',
     related: [
       { href: Routes.Subnautica2Gold, label: 'Gold 位置指南' },
+      {
+        href: Routes.Subnautica2EntangledPowerCell,
+        label: 'Entangled Power Cell 指南',
+      },
       { href: Routes.Subnautica2Processor, label: 'Processor 指南' },
       { href: Routes.Subnautica2SystemChip, label: 'System Chip 指南' },
       { href: Routes.Subnautica2HeatTolerance, label: 'Heat Tolerance 指南' },
