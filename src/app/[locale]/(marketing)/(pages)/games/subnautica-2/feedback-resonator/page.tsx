@@ -16,7 +16,7 @@ type FeedbackCopy = ResourceGuideCopy & {
 };
 
 const PUBLISHED_AT = '2026-05-24';
-const UPDATED_AT = '2026-05-24';
+const UPDATED_AT = '2026-05-27';
 
 const sharedSources = [
   {
@@ -31,45 +31,61 @@ const sharedSources = [
     href: 'https://www.pcgamer.com/games/survival-crafting/subnautica-2-conduit-crystal-location/',
     label: 'PC Gamer Conduit Crystal guide',
   },
+  {
+    href: 'https://subnautica2.guide/wikis/feedback-resonator',
+    label: 'Subnautica 2 Guide Feedback Resonator wiki',
+  },
+  {
+    href: 'https://subnautica2.guide/wikis/axum-vision',
+    label: 'Subnautica 2 Guide Axum Vision wiki',
+  },
+  {
+    href: 'https://www.pcgamer.com/games/survival-crafting/subnautica-2-angel-comb-heat-tolerance-adaptation/',
+    label: 'PC Gamer Angel Comb and Axum Vision guide',
+  },
 ];
 
 const feedbackCopy: Record<string, FeedbackCopy> = {
   en: {
     metadata: {
       title:
-        'Subnautica 2 Feedback Resonator Guide - Scan Route, Crafting, and Angel Comb Use',
+        'Subnautica 2 Feedback Resonator Guide - Fragments, Recipe, and Axum Vision Use',
       description:
-        'A practical Subnautica 2 Feedback Resonator guide covering the Sonic Resonator base tool, scan route, Modification Station craft, Conduit Crystal prep, and Angel Comb use.',
+        'A practical Subnautica 2 Feedback Resonator guide covering two fragment scans, Sonic Resonator, 2 Enameled Glass, 2 Conduit Crystal, 2 Strontium, Modification Station crafting, Bloom Cankers, and Axum Vision.',
     },
     eyebrow: 'Subnautica 2 tool upgrade',
     title: 'Subnautica 2 Feedback Resonator Guide',
     description:
-      'The Feedback Resonator is not just a stronger mining tool. It changes the Sonic Resonator into a ranged upgrade, which matters once Alien Ruins routes start asking you to clear hostile growths without swimming into them.',
+      'Feedback Resonator is the upgrade that makes the Sonic Resonator useful at a distance. That sounds small until the Alien Ruins route starts throwing Bloom Cankers at you that close up when you swim too near.',
     quickLabel: 'Quick answer',
     quickAnswer:
-      'Get the Sonic Resonator first, then scan two Feedback Resonator fragments later in the Alien Ruins and Metal Farms route. Build the upgrade at a Modification Station with your Sonic Resonator, Enameled Glass, Conduit Crystal, and Strontium. Bring a Tadpole Depth Module, repairs, healing, and enough patience to leave if the green-pool route gets messy.',
+      'Get the Sonic Resonator first, then scan two Feedback Resonator fragments in the glowing green abyssal pool / Metal Farms route northeast of the Alien Ruins Research Base. PC Gamer places that run roughly 870m at bearing 75 from the Research Base and around 450m deep, so bring the Tadpole Depth Module, Repair Tool, healing, and a real exit plan. Current recipe data lists Sonic Resonator x1, Enameled Glass x2, Conduit Crystal x2, and Strontium x2 at the Modification Station. You need the upgrade for ranged Bloom Canker clearing on the Axum Vision Angel Comb route.',
     contentsLabel: 'Contents',
     routeTitle: 'Feedback Resonator route plan',
     routeSteps: [
       {
         title: 'Start with the Sonic Resonator',
-        body: 'The Feedback Resonator is an upgrade, so the basic Sonic Resonator has to exist first. Use it to break large ore nodes, clear Bloom Biofilm, and make the deeper material loop less painful.',
+        body: 'Feedback Resonator modifies the Sonic Resonator. If the base tool is not built yet, this route is premature. Use the Sonic Resonator for ore, Bloom Biofilm, and Conduit Crystal prep before you spend time hunting the upgrade.',
       },
       {
-        title: 'Do not rush the deep route',
-        body: 'Current guide reporting puts Feedback Resonator progress after vehicle and Alien Ruins milestones. If your Tadpole depth, oxygen margin, or repair planning is shaky, fix that before chasing the scan.',
+        title: 'Treat the scan as a 450m job',
+        body: 'PC Gamer puts the two fragment scans in the glowing green pool and Metal Farms area northeast of the Alien Ruins Research Base, around the upper edge of Tadpole Depth Module comfort. If the vehicle depth warning is still part of your life, wait.',
       },
       {
-        title: 'Scan the two upgrade fragments',
-        body: 'PC Gamer reports two scans in the green abyssal pool and Metal Farms area northeast of the Alien Ruins route, so treat this as a late-route scan mission rather than a casual loot swim.',
+        title: 'Scan two fragments, then leave cleanly',
+        body: 'Subnautica 2 Guide also lists two scans for the blueprint, with known fragments around wreck, mine, and Karakorum Metal Farms routes. Mark what you find. This is a bad area to keep wandering after the blueprint unlocks.',
       },
       {
         title: 'Craft it at the Modification Station',
-        body: 'The reported craft uses the Sonic Resonator plus Enameled Glass, Conduit Crystal, and Strontium. Build the Modification Station before you make the deep trip feel urgent, or the materials will sit in storage while you backtrack.',
+        body: 'Current data agrees on Sonic Resonator x1, Enameled Glass x2, Conduit Crystal x2, and Strontium x2. PC Gamer also notes that the Modification Station blueprint can be found inside the Alien Ruins Research Base if you still need the station.',
       },
       {
-        title: 'Use range, not bravery',
-        body: 'The point of the upgrade is distance. If an Angel Comb or viral growth closes when you approach, stand off, aim calmly, and let the projectile do the work.',
+        title: 'Use range on Bloom Cankers',
+        body: 'Subnautica 2 Guide describes the tool as firing a blast projectile with longer range, and PC Gamer ties that directly to viral flowers that close when you approach. Do not force a close swim. Back up and shoot.',
+      },
+      {
+        title: 'Use it immediately for Axum Vision',
+        body: 'Axum Vision depends on clearing Bloom Cankers around three Bloom Nodes and the central Angel Comb. Once the upgrade is built, the next useful route is not random mining. It is the Angel Comb chain that unlocks Karakorum Power Plant consoles.',
       },
     ],
     tableTitle: 'Before you leave base',
@@ -77,7 +93,7 @@ const feedbackCopy: Record<string, FeedbackCopy> = {
     tableRows: [
       [
         'Sonic Resonator',
-        'Required for the upgrade and still useful for ore, biofilm, and Conduit Crystal harvesting.',
+        'Required as the base tool, and still useful for ore, biofilm, and Conduit Crystal harvesting.',
       ],
       [
         'Tadpole Depth Module',
@@ -88,52 +104,65 @@ const feedbackCopy: Record<string, FeedbackCopy> = {
         'The green-pool area is hostile enough that one bad bite can turn a scan trip into a salvage trip.',
       ],
       [
-        'Modification Station',
-        'Needed to craft the upgrade once the blueprint and materials are ready.',
+        'Two fragment scans',
+        'Unlocks the blueprint before the expensive craft matters.',
       ],
       [
-        'Conduit Crystal plan',
-        'Grab crystals around Alien Ruins ledges while you are already running this route.',
+        '2 Enameled Glass',
+        'Fabricator material using Glass and Creature Enamel.',
+      ],
+      [
+        '2 Conduit Crystal',
+        'Found around deeper Alien Ruins / Power Plant routes.',
+      ],
+      ['2 Strontium', 'Processed material tied to Celestine planning.'],
+      [
+        'Modification Station',
+        'Needed for the Prototype Tool Modification craft.',
       ],
     ],
     visualTitle: 'Route card',
     visualItems: [
       {
         label: 'Tool',
-        value: 'Sonic first',
-        note: 'Mine, clear biofilm, then turn it into the ranged version.',
+        value: 'Sonic',
+        note: 'Base tool first, ranged upgrade second.',
       },
       {
-        label: 'Route',
-        value: 'Ruins to pools',
-        note: 'Treat Metal Farms as a planned dive with an exit line.',
+        label: 'Depth',
+        value: '450m',
+        note: 'Green pool and Metal Farms route needs depth planning.',
       },
       {
         label: 'Use',
-        value: 'Ranged clear',
-        note: 'Back up before firing at the growths that punish close swims.',
+        value: 'Axum',
+        note: 'Clears Bloom Cankers for the Axum Vision route.',
       },
     ],
     cautionTitle: 'This is a late-route tool, not a flex item',
     cautionBody:
-      'The route has predators, depth pressure, and several tempting side objectives. Pick one job for the trip: scan the fragments, grab Conduit Crystal, or scout Metal Farms. Trying to do everything at once is how you lose the vehicle, the loot, and your temper.',
+      'The scan route sits near predators, deep structures, Metal Farms, and Conduit Crystal temptation. Pick one main job before leaving base. If the blueprint unlocks, go home and build the upgrade instead of turning the return trip into a sightseeing tour.',
     faqTitle: 'FAQ',
     faqs: [
       {
         title: 'How do you unlock the Feedback Resonator in Subnautica 2?',
-        body: 'Current guides report that you need two Feedback Resonator scans, then craft the upgrade at a Modification Station.',
+        body: 'Scan two Feedback Resonator fragments, then craft the upgrade at a Modification Station. PC Gamer points to the green abyssal pool / Metal Farms route northeast of the Alien Ruins Research Base.',
       },
       {
         title: 'Do I need the Sonic Resonator first?',
         body: 'Yes. The Feedback Resonator is a modification of the Sonic Resonator, and the Sonic tool is also useful for gathering some of the materials around the route.',
       },
       {
-        title: 'Where is the Feedback Resonator route?',
-        body: 'PC Gamer places the route around the green abyssal pools and Metal Farms northeast of the Alien Ruins path, near deep alien structures and hostile patrols.',
+        title: 'What is the Feedback Resonator recipe?',
+        body: 'Current public data lists Sonic Resonator x1, Enameled Glass x2, Conduit Crystal x2, and Strontium x2 at the Modification Station.',
       },
       {
         title: 'What does the Feedback Resonator do?',
-        body: 'It turns the Sonic Resonator into a ranged tool, which lets you clear growths from safer distance instead of swimming right into them.',
+        body: 'It turns the Sonic Resonator into a ranged tool. Subnautica 2 Guide says its projectile can destroy armored Viral Bloom Cankers from a safer distance.',
+      },
+      {
+        title: 'Why do you need it for Axum Vision?',
+        body: 'The later Angel Comb route asks you to destroy Bloom Cankers around Bloom Nodes. Those growths punish close approaches, so Feedback Resonator range is the clean answer.',
       },
     ],
     readNextTitle: 'Read next',
@@ -147,7 +176,18 @@ const feedbackCopy: Record<string, FeedbackCopy> = {
         href: Routes.Subnautica2ConduitCrystal,
         label: 'Conduit Crystal Guide',
       },
+      { href: Routes.Subnautica2EnameledGlass, label: 'Enameled Glass Guide' },
       { href: Routes.Subnautica2Strontium, label: 'Strontium Guide' },
+      { href: Routes.Subnautica2AxumVision, label: 'Axum Vision Guide' },
+      { href: Routes.Subnautica2AngelComb, label: 'Angel Comb Guide' },
+      {
+        href: Routes.Subnautica2PowerPlantObservatory,
+        label: 'Power Plant Observatory Guide',
+      },
+      {
+        href: Routes.Subnautica2ModificationStation,
+        label: 'Modification Station Guide',
+      },
       { href: Routes.Subnautica2Tadpole, label: 'Tadpole Vehicle Guide' },
       {
         href: Routes.Subnautica2TadpoleDepthModule,
@@ -163,10 +203,10 @@ const feedbackCopy: Record<string, FeedbackCopy> = {
     ],
     sourcesTitle: 'Source note',
     sourceBody:
-      'Checked May 24, 2026 against current PC Gamer reporting. Subnautica 2 is in Early Access, so route markers, material costs, and upgrade behavior should be rechecked after patches.',
+      'Checked May 27, 2026 against PC Gamer and Subnautica 2 Guide. Subnautica 2 is in Early Access, so fragment positions, recipe counts, projectile behavior, and Bloom Canker requirements should be rechecked after patches.',
     cardKicker: 'Tool upgrade card',
     cardBody:
-      'Sonic Resonator base tool, two scan route, Modification Station craft, Conduit Crystal prep, and safe ranged use.',
+      'Sonic Resonator base tool, two fragment scans, 2 Enameled Glass, 2 Conduit Crystal, 2 Strontium, Modification Station craft, Bloom Canker clearing, and Axum Vision use.',
     cardTypeLabel: 'Type',
     cardTypeValue: 'Tool upgrade',
     cardVerifiedLabel: 'Checked',
@@ -175,39 +215,44 @@ const feedbackCopy: Record<string, FeedbackCopy> = {
   },
   zh: {
     metadata: {
-      title: 'Subnautica 2 Feedback Resonator 指南 - 扫描路线、制作材料和用途',
+      title:
+        'Subnautica 2 Feedback Resonator 指南 - 碎片、配方和 Axum Vision 用法',
       description:
-        'Subnautica 2 中文 Feedback Resonator 指南：先做 Sonic Resonator，怎么跑 Alien Ruins 和 Metal Farms 扫描路线，制作需要什么，以及什么时候用远程清理。',
+        'Subnautica 2 中文 Feedback Resonator 指南：两个碎片扫描、Sonic Resonator、Enameled Glass x2、Conduit Crystal x2、Strontium x2、Modification Station、Bloom Cankers 和 Axum Vision。',
     },
     eyebrow: 'Subnautica 2 工具升级',
     title: 'Subnautica 2 Feedback Resonator 指南',
     description:
-      'Feedback Resonator 不是单纯“伤害更高”的矿枪。它把 Sonic Resonator 变成远程工具，真正有价值的地方，是你开始处理外星遗迹路线里那些不能贴脸碰的生长物时。',
+      'Feedback Resonator 的价值不是“伤害更高”。它把 Sonic Resonator 变成远程工具。等你开始清 Alien Ruins 里的 Bloom Cankers，就会明白为什么贴脸处理不是好主意。',
     quickLabel: '快速结论',
     quickAnswer:
-      '先拿 Sonic Resonator，再去 Alien Ruins 和 Metal Farms 这一条深水路线扫两个 Feedback Resonator 碎片。蓝图解锁后，在 Modification Station 里用 Sonic Resonator、Enameled Glass、Conduit Crystal 和 Strontium 制作。出发前带 Tadpole Depth Module、Repair Tool、回血物品，并且给自己留好撤退路线。',
+      '先拿 Sonic Resonator，再去 Alien Ruins Research Base 东北方向的绿色深池 / Metal Farms 路线扫描两个 Feedback Resonator 碎片。PC Gamer 把这趟路线写成从 Research Base 出发约 870m、方位约 75 度、深度约 450m，所以要带 Tadpole Depth Module、Repair Tool、回血物品和明确的撤退线。当前配方是 Modification Station 制作：Sonic Resonator x1、Enameled Glass x2、Conduit Crystal x2、Strontium x2。它后面会用于 Axum Vision 路线，远距离清 Bloom Cankers。',
     contentsLabel: '目录',
     routeTitle: 'Feedback Resonator 路线规划',
     routeSteps: [
       {
         title: '先把 Sonic Resonator 做出来',
-        body: 'Feedback Resonator 是升级件，不是从零制作的新工具。Sonic Resonator 先用来敲大矿、清 Bloom Biofilm，也会让后面跑深水材料舒服很多。',
+        body: 'Feedback Resonator 是 Sonic Resonator 的升级件。基础工具没做出来之前，这条路线还太早。先用 Sonic Resonator 敲矿、清 Bloom Biofilm，并准备 Conduit Crystal 路线。',
       },
       {
-        title: '不要太早冲深水路线',
-        body: '当前资料把 Feedback Resonator 放在载具和外星遗迹之后。如果 Tadpole 深度、氧气余量、Repair Tool 都还没准备好，先别硬跑。',
+        title: '把扫描当成 450m 深潜任务',
+        body: 'PC Gamer 把两个碎片放在 Alien Ruins Research Base 东北方向的绿色深池和 Metal Farms 一带，深度接近 Tadpole Depth Module 的上限。如果载具深度还没解决，先别硬跑。',
       },
       {
-        title: '扫描两个升级碎片',
-        body: 'PC Gamer 把两个扫描点放在 Alien Ruins 路线东北方向的绿色深水池和 Metal Farms 区域，所以这趟更像一次中后期任务，不是顺手捡材料。',
+        title: '扫两个碎片，解锁就回家',
+        body: 'Subnautica 2 Guide 也列出需要两个扫描，并把已知碎片放在 wreck、mine 和 Karakorum Metal Farms 路线附近。扫到蓝图就标点撤离，不要在这个区域漫无目的转圈。',
       },
       {
         title: '回基地用 Modification Station 制作',
-        body: '当前报道的配方需要 Sonic Resonator、Enameled Glass、Conduit Crystal 和 Strontium。建议先把 Modification Station 准备好，不然扫完蓝图还得来回补设施。',
+        body: '当前资料一致指向 Sonic Resonator x1、Enameled Glass x2、Conduit Crystal x2、Strontium x2。PC Gamer 还提到，如果你还没解锁 Modification Station，可以去 Alien Ruins Research Base 找蓝图。',
       },
       {
-        title: '靠距离解决问题',
-        body: '这个升级最重要的是“远程”。遇到靠近就闭合或惩罚贴脸的外星生长物时，退一步，瞄稳，再开火。',
+        title: '用距离打 Bloom Cankers',
+        body: 'Subnautica 2 Guide 把它描述成发射更远的 blast projectile；PC Gamer 也把它和靠近就闭合的 viral flowers 联系在一起。不要贴脸硬打，后退再射。',
+      },
+      {
+        title: '下一步直接接 Axum Vision',
+        body: 'Axum Vision 需要清理三个 Bloom Nodes 和中心 Angel Comb 的 Bloom Cankers。Feedback Resonator 做好后，最有价值的后续不是乱挖矿，而是推进 Karakorum Power Plant 控制台链路。',
       },
     ],
     tableTitle: '出门前检查',
@@ -215,14 +260,18 @@ const feedbackCopy: Record<string, FeedbackCopy> = {
     tableRows: [
       [
         'Sonic Resonator',
-        '升级本体，也能用来挖大矿、清障和采 Conduit Crystal。',
+        '升级本体，也能用来挖大矿、清障和规划 Conduit Crystal。',
       ],
       ['Tadpole Depth Module', '这条路线深度压力高，普通载具准备会很吃力。'],
       [
         'Repair Tool 和回血',
         '绿色池子附近危险多，扫碎片时可能需要离开 Tadpole。',
       ],
-      ['Modification Station', '蓝图和材料都有了以后，制作升级需要它。'],
+      ['两个碎片扫描', '先解锁蓝图，再考虑昂贵制作。'],
+      ['Enameled Glass x2', '由 Glass 和 Creature Enamel 进入这条材料链。'],
+      ['Conduit Crystal x2', '深区 Alien Ruins / Power Plant 路线材料。'],
+      ['Strontium x2', '和 Celestine 加工规划绑在一起。'],
+      ['Modification Station', 'Prototype Tool Modification 需要它。'],
       [
         'Conduit Crystal 路线',
         '跑 Alien Ruins 时顺手规划晶体采集，减少后面重复下潜。',
@@ -232,40 +281,44 @@ const feedbackCopy: Record<string, FeedbackCopy> = {
     visualItems: [
       {
         label: '工具',
-        value: '先 Sonic',
-        note: '先能挖矿和清障，再升级成远程版本。',
+        value: 'Sonic',
+        note: '基础工具在前，远程升级在后。',
       },
       {
-        label: '路线',
-        value: '遗迹到绿池',
-        note: '把 Metal Farms 当成一趟有撤退线的深潜任务。',
+        label: '深度',
+        value: '450m',
+        note: '绿色深池和 Metal Farms 需要深度规划。',
       },
       {
         label: '用途',
-        value: '远程清理',
-        note: '别贴脸硬冲，保持距离才是这个升级的意义。',
+        value: 'Axum',
+        note: '为 Axum Vision 路线清 Bloom Cankers。',
       },
     ],
     cautionTitle: '这不是炫耀用的道具',
     cautionBody:
-      '这条路线有深度压力、敌对生物和一堆容易让人分心的顺路目标。一趟最好只定一个主要任务：扫碎片、拿 Conduit Crystal，或者侦察 Metal Farms。全都想做，最容易把载具和背包一起丢在深水里。',
+      '这条扫描路线旁边有敌对生物、深区建筑、Metal Farms 和 Conduit Crystal，很容易让人分心。一趟只定一个主目标。蓝图一解锁就回去做升级，别把返程变成观光路线。',
     faqTitle: '常见问题',
     faqs: [
       {
         title: 'Subnautica 2 Feedback Resonator 怎么解锁？',
-        body: '当前攻略显示需要扫描两个 Feedback Resonator 碎片，然后在 Modification Station 制作升级。',
+        body: '扫描两个 Feedback Resonator 碎片，然后在 Modification Station 制作升级。PC Gamer 把路线指向 Alien Ruins Research Base 东北方向的绿色深池 / Metal Farms 区域。',
       },
       {
         title: '必须先有 Sonic Resonator 吗？',
         body: '需要。Feedback Resonator 是 Sonic Resonator 的升级，而且 Sonic 工具本身也会用于挖矿和采集部分路线材料。',
       },
       {
-        title: 'Feedback Resonator 在哪里找？',
-        body: 'PC Gamer 把路线放在 Alien Ruins 东北方向的绿色深水池和 Metal Farms 区域，附近有外星结构和危险巡逻。',
+        title: 'Feedback Resonator 配方是什么？',
+        body: '当前公开资料列出 Sonic Resonator x1、Enameled Glass x2、Conduit Crystal x2、Strontium x2，在 Modification Station 制作。',
       },
       {
         title: 'Feedback Resonator 有什么用？',
-        body: '它让 Sonic Resonator 具备远程发射能力，可以更安全地清理一些不适合贴近处理的外星生长物。',
+        body: '它让 Sonic Resonator 具备远程发射能力。Subnautica 2 Guide 写到它可以从更安全距离破坏 armored Viral Bloom Cankers。',
+      },
+      {
+        title: '为什么 Axum Vision 需要它？',
+        body: '后期 Angel Comb 路线要清三个 Bloom Nodes 周围的 Bloom Cankers，这些生长物不适合贴脸打，所以 Feedback Resonator 的远程能力很关键。',
       },
     ],
     readNextTitle: '继续看',
@@ -279,7 +332,18 @@ const feedbackCopy: Record<string, FeedbackCopy> = {
         href: Routes.Subnautica2ConduitCrystal,
         label: 'Conduit Crystal 指南',
       },
+      { href: Routes.Subnautica2EnameledGlass, label: 'Enameled Glass 指南' },
       { href: Routes.Subnautica2Strontium, label: 'Strontium 指南' },
+      { href: Routes.Subnautica2AxumVision, label: 'Axum Vision 指南' },
+      { href: Routes.Subnautica2AngelComb, label: 'Angel Comb 指南' },
+      {
+        href: Routes.Subnautica2PowerPlantObservatory,
+        label: 'Power Plant Observatory 指南',
+      },
+      {
+        href: Routes.Subnautica2ModificationStation,
+        label: 'Modification Station 指南',
+      },
       { href: Routes.Subnautica2Tadpole, label: 'Tadpole 载具指南' },
       {
         href: Routes.Subnautica2TadpoleDepthModule,
@@ -295,10 +359,10 @@ const feedbackCopy: Record<string, FeedbackCopy> = {
     ],
     sourcesTitle: '来源说明',
     sourceBody:
-      '2026 年 5 月 24 日核对 PC Gamer 的当前报道。Subnautica 2 仍在抢先体验，路线、材料和升级效果后续补丁可能会调整。',
+      '2026 年 5 月 27 日核对 PC Gamer 和 Subnautica 2 Guide。Subnautica 2 仍处于抢先体验阶段，碎片位置、配方数量、projectile 行为和 Bloom Canker 要求都可能随补丁变化。',
     cardKicker: '工具升级卡',
     cardBody:
-      '整理 Sonic Resonator 前置、两个扫描点、Modification Station 制作、Conduit Crystal 准备和远程清理用法。',
+      '整理 Sonic Resonator 前置、两个碎片扫描、Enameled Glass x2、Conduit Crystal x2、Strontium x2、Modification Station、Bloom Cankers 和 Axum Vision 用法。',
     cardTypeLabel: '类型',
     cardTypeValue: '工具升级',
     cardVerifiedLabel: '核对时间',
@@ -318,7 +382,7 @@ const feedbackCopy: Record<string, FeedbackCopy> = {
       'Feedback Resonator is a ranged upgrade for the Sonic Resonator. It matters once Alien Ruins routes ask you to clear growths without swimming right into them.',
     quickLabel: 'Quick answer',
     quickAnswer:
-      'Make the Sonic Resonator first, then scan two Feedback Resonator fragments on the Alien Ruins and Metal Farms route. Craft it at a Modification Station with Sonic Resonator, Enameled Glass, Conduit Crystal, and Strontium.',
+      'Make the Sonic Resonator first, then scan two Feedback Resonator fragments on the green-pool / Metal Farms route northeast of the Alien Ruins Research Base. Craft it at a Modification Station with Sonic Resonator x1, Enameled Glass x2, Conduit Crystal x2, and Strontium x2. The upgrade is the ranged answer for Bloom Cankers on the Axum Vision route.',
     contentsLabel: 'Contents',
     routeTitle: 'Feedback Resonator route plan',
     routeSteps: [
@@ -332,11 +396,15 @@ const feedbackCopy: Record<string, FeedbackCopy> = {
       },
       {
         title: 'Scan two fragments',
-        body: 'Current reports point players toward the green pool and Metal Farms side of the Alien Ruins route.',
+        body: 'Current reports point players toward the green pool and Metal Farms side of the Alien Ruins route, around late-depth Tadpole travel.',
       },
       {
         title: 'Craft at Modification Station',
-        body: 'Prepare the station before the scan trip so the upgrade does not stall in storage.',
+        body: 'Prepare Sonic Resonator x1, Enameled Glass x2, Conduit Crystal x2, and Strontium x2 so the upgrade does not stall in storage.',
+      },
+      {
+        title: 'Use it for Axum Vision',
+        body: 'The later Angel Comb asks you to clear Bloom Cankers at range. This is where the upgrade earns its keep.',
       },
       {
         title: 'Use distance',
@@ -353,6 +421,9 @@ const feedbackCopy: Record<string, FeedbackCopy> = {
       ['Tadpole Depth Module', 'The route reaches uncomfortable depth.'],
       ['Repairs and healing', 'The scan area can punish sloppy exits.'],
       ['Modification Station', 'Needed to craft the tool modification.'],
+      ['2 Enameled Glass', 'Part of the current Modification Station recipe.'],
+      ['2 Conduit Crystal', 'Deep-route ingredient near Alien Ruins planning.'],
+      ['2 Strontium', 'Processed material tied to Celestine planning.'],
       [
         'Conduit Crystal plan',
         'Worth gathering while you are already near Alien Ruins.',
@@ -397,6 +468,10 @@ const feedbackCopy: Record<string, FeedbackCopy> = {
         title: 'What is it for?',
         body: 'It gives Sonic Resonator a ranged projectile for safer clearing.',
       },
+      {
+        title: 'Why does Axum Vision need it?',
+        body: 'The later Angel Comb route uses Bloom Cankers that are safer to clear from range.',
+      },
     ],
     readNextTitle: 'Read next',
     related: [
@@ -409,7 +484,10 @@ const feedbackCopy: Record<string, FeedbackCopy> = {
         href: Routes.Subnautica2ConduitCrystal,
         label: 'Conduit Crystal Guide',
       },
+      { href: Routes.Subnautica2EnameledGlass, label: 'Enameled Glass Guide' },
       { href: Routes.Subnautica2Strontium, label: 'Strontium Guide' },
+      { href: Routes.Subnautica2AxumVision, label: 'Axum Vision Guide' },
+      { href: Routes.Subnautica2AngelComb, label: 'Angel Comb Guide' },
       { href: Routes.Subnautica2Tadpole, label: 'Tadpole Guide' },
       {
         href: Routes.Subnautica2TadpoleDepthModule,
