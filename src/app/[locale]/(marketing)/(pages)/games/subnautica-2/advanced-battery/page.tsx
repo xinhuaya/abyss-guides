@@ -16,7 +16,7 @@ type AdvancedBatteryCopy = ResourceGuideCopy & {
 };
 
 const PUBLISHED_AT = '2026-05-26';
-const UPDATED_AT = '2026-05-26';
+const UPDATED_AT = '2026-05-27';
 
 const sharedSources = [
   {
@@ -47,7 +47,7 @@ const advancedBatteryCopy: Record<string, AdvancedBatteryCopy> = {
       'Advanced Battery is the point where handheld tools stop feeling hungry every few minutes. The catch is that the recipe pulls from deeper routes, so it is worth planning as a small expedition instead of a casual Fabricator craft.',
     quickLabel: 'Quick answer',
     quickAnswer:
-      'All Things How says Advanced Battery stores 200 energy and points the blueprint route to the Karakorum Power Plant area, where you scan two fragments. Subnautica2.gg lists two unlock paths: scan 2 Advanced Battery fragments or open a Data Box. Current blueprint pages list the Fabricator recipe as Conduit Crystal x1, Strong Acid x1, and Silver Ingot x1. Build Battery Terminal first if you already have a base, then rotate Advanced Batteries through it instead of crafting replacements.',
+      'All Things How says Advanced Battery stores 200 energy and points the blueprint route to the Karakorum Power Plant area, where you scan two fragments. Subnautica2.gg lists two unlock paths: scan 2 Advanced Battery fragments or open a Data Box. Current blueprint pages list the Fabricator recipe as Conduit Crystal x1, Strong Acid x1, and Silver Ingot x1. Build Battery Terminal first if you already have a base, then rotate Advanced Batteries through it instead of crafting replacements. Keep Entangled Power Cell materials separate, because that route adds Gold Ingot and Troilite pressure.',
     contentsLabel: 'Contents',
     routeTitle: 'Advanced Battery route',
     routeSteps: [
@@ -71,6 +71,10 @@ const advancedBatteryCopy: Record<string, AdvancedBatteryCopy> = {
         title: 'Use Battery Terminal to make it pay off',
         body: 'A 200-energy battery is much better when you can recharge it. Keep Advanced Batteries in the tools you use on long routes, then cycle drained ones through the Battery Terminal back at base.',
       },
+      {
+        title: 'Do not confuse it with Entangled Power Cell',
+        body: 'Advanced Battery is the tool-upgrade battery. Entangled Power Cell is a later power craft with Gold Ingot and Troilite in the mix. Keep the two routes beside each other, not on top of each other.',
+      },
     ],
     tableTitle: 'Advanced Battery checklist',
     tableHeaders: ['Need', 'Why it matters'],
@@ -89,6 +93,10 @@ const advancedBatteryCopy: Record<string, AdvancedBatteryCopy> = {
       [
         'Battery Terminal',
         'Makes the 200-energy battery reusable instead of disposable.',
+      ],
+      [
+        'Entangled split',
+        'Do not spend Gold Ingot or Troilite here; those belong to the Entangled Power Cell route.',
       ],
     ],
     visualTitle: 'Power upgrade card',
@@ -155,12 +163,16 @@ const advancedBatteryCopy: Record<string, AdvancedBatteryCopy> = {
       { href: Routes.Subnautica2AirTank, label: 'Air Tank and O2 Guide' },
       { href: Routes.Subnautica2Tadpole, label: 'Tadpole Vehicle Guide' },
       { href: Routes.Subnautica2PowerCell, label: 'Power Cell Guide' },
+      {
+        href: Routes.Subnautica2EntangledPowerCell,
+        label: 'Entangled Power Cell Guide',
+      },
       { href: Routes.Subnautica2Resources, label: 'Resources Guide' },
       { href: Routes.Subnautica2Crafting, label: 'Crafting Guide' },
     ],
     sourcesTitle: 'Source note',
     sourceBody:
-      'Checked May 26, 2026 against All Things How, Subnautica2.gg, and Subnautica2Hub. Subnautica 2 is still in Early Access, so fragment routes, Data Box placement, recipes, and energy values should be rechecked after patches.',
+      'Checked May 27, 2026 against All Things How, Subnautica2.gg, and Subnautica2Hub. Subnautica 2 is still in Early Access, so fragment routes, Data Box placement, recipes, and energy values should be rechecked after patches.',
     cardKicker: 'Battery upgrade card',
     cardBody:
       'Karakorum fragment route, Data Box unlock, Conduit Crystal, Strong Acid, Silver Ingot, 200 energy, and Battery Terminal rotation.',
@@ -299,7 +311,62 @@ const advancedBatteryCopy: Record<string, AdvancedBatteryCopy> = {
 
 const fallbackCopy = advancedBatteryCopy.en;
 
+advancedBatteryCopy.zh = {
+  ...advancedBatteryCopy.zh,
+  quickAnswer:
+    'All Things How 写到 Advanced Battery 有 200 energy，并把碎片路线指向 Karakorum Power Plant 区域，需要扫描两个碎片。Subnautica2.gg 当前列出两种解锁方式：扫描 2 个 Advanced Battery 碎片，或打开 Data Box。当前蓝图页面写的 Fabricator 配方是 Conduit Crystal x1、Strong Acid x1、Silver Ingot x1。如果你已经有基地，先做 Battery Terminal，再把 Advanced Battery 拿来轮换充电，价值会高很多。Entangled Power Cell 的材料要分开存，因为那条路线还会吃 Gold Ingot 和 Troilite。',
+  routeSteps: [
+    ...advancedBatteryCopy.zh.routeSteps,
+    {
+      title: '别和 Entangled Power Cell 混在一起',
+      body: 'Advanced Battery 是手持工具的高级电池。Entangled Power Cell 是更后面的供电材料，会吃 Gold Ingot 和 Troilite。两条路线可以相邻收纳，但不要混成一箱。',
+    },
+  ],
+  tableRows: [
+    ...advancedBatteryCopy.zh.tableRows,
+    [
+      'Entangled 分流',
+      'Gold Ingot 和 Troilite 不属于 Advanced Battery，留给 Entangled Power Cell。',
+    ],
+  ],
+  related: [
+    { href: Routes.Subnautica2BatteryTerminal, label: 'Battery Terminal 指南' },
+    {
+      href: Routes.Subnautica2KarakorumPowerPlant,
+      label: 'Karakorum Power Plant 路线',
+    },
+    { href: Routes.Subnautica2BasicBattery, label: 'Basic Battery 指南' },
+    { href: Routes.Subnautica2PowerCell, label: 'Power Cell 指南' },
+    {
+      href: Routes.Subnautica2EntangledPowerCell,
+      label: 'Entangled Power Cell 指南',
+    },
+    { href: Routes.Subnautica2ConduitCrystal, label: 'Conduit Crystal 指南' },
+    { href: Routes.Subnautica2StrongAcid, label: 'Strong Acid 指南' },
+    { href: Routes.Subnautica2SilverIngot, label: 'Silver Ingot 指南' },
+    { href: Routes.Subnautica2Rebreather, label: 'Rebreather 指南' },
+    { href: Routes.Subnautica2Crafting, label: '制作指南' },
+  ],
+  sourceBody:
+    '2026 年 5 月 27 日核对 All Things How、Subnautica2.gg 和 Subnautica2Hub。Subnautica 2 仍处于抢先体验阶段，碎片路线、Data Box 位置、配方和能量数值都可能随补丁调整。',
+};
+
+advancedBatteryCopy.ja = {
+  ...fallbackCopy,
+  metadata: {
+    title: 'Subnautica 2 Advanced Battery Guide',
+    description:
+      'Guide for Advanced Battery fragments, Karakorum Power Plant, Data Box unlocks, Conduit Crystal, Strong Acid, Silver Ingot, 200 energy, Entangled Power Cell split, and battery charging.',
+  },
+  sourceBody:
+    'Checked May 27, 2026 against All Things How, Subnautica2.gg, and Subnautica2Hub. Early Access fragment routes, Data Box placement, recipes, and energy values can change.',
+};
+
 for (const locale of ['ja', 'de', 'fr', 'pt-BR', 'es-419', 'ko', 'ru']) {
+  if (advancedBatteryCopy[locale]) {
+    continue;
+  }
+
   advancedBatteryCopy[locale] = {
     ...fallbackCopy,
     metadata: {

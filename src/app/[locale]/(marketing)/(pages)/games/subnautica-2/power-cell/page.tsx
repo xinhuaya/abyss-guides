@@ -16,7 +16,7 @@ type PowerCellCopy = ResourceGuideCopy & {
 };
 
 const PUBLISHED_AT = '2026-05-26';
-const UPDATED_AT = '2026-05-26';
+const UPDATED_AT = '2026-05-27';
 
 const sharedSources = [
   {
@@ -47,7 +47,7 @@ const powerCellCopy: Record<string, PowerCellCopy> = {
       'Power Cell is the small part that makes the Tadpole plan suddenly feel expensive. It looks like a battery upgrade, but really it is a test of whether your Basic Battery, Strong Acid, and Salt routes are under control.',
     quickLabel: 'Quick answer',
     quickAnswer:
-      'Current Subnautica2.gg and Subnautica2Hub blueprint pages list Power Cell as a Fabricator craft using Basic Battery x2, Strong Acid x1, and Salt x1. PC Gamer notes that Power Cell is part of the Tadpole craft, so treat it as a vehicle milestone rather than a spare battery. Make the batteries first, confirm Strong Acid, keep one Salt aside, then craft the cell when the Tadpole plan is ready.',
+      'Current Subnautica2.gg and Subnautica2Hub blueprint pages list Power Cell as a Fabricator craft using Basic Battery x2, Strong Acid x1, and Salt x1. PC Gamer notes that Power Cell is part of the Tadpole craft, so treat it as a vehicle milestone rather than a spare battery. Make the batteries first, confirm Strong Acid, keep one Salt aside, then craft the cell when the Tadpole plan is ready. If you are already chasing Advanced Battery or Entangled Power Cell, keep those rare-material routes separate.',
     contentsLabel: 'Contents',
     routeTitle: 'Power Cell route',
     routeSteps: [
@@ -71,6 +71,10 @@ const powerCellCopy: Record<string, PowerCellCopy> = {
         title: 'Plan charging before long trips',
         body: 'Once vehicles and advanced batteries enter the picture, power stops being a one-item problem. A Battery Terminal and cleaner battery storage make the whole vehicle loop less annoying.',
       },
+      {
+        title: 'Separate normal power from rare power',
+        body: 'Power Cell is a Tadpole bridge. Advanced Battery and Entangled Power Cell pull from deeper materials like Conduit Crystal, Silver Ingot, Gold Ingot, and Troilite, so do not merge those lockers unless the recipe is already visible.',
+      },
     ],
     tableTitle: 'Power Cell checklist',
     tableHeaders: ['Need', 'Why it matters'],
@@ -90,6 +94,10 @@ const powerCellCopy: Record<string, PowerCellCopy> = {
         'Battery storage',
         'Keeps tool batteries and vehicle parts from fighting for the same pile.',
       ],
+      [
+        'Advanced split',
+        'Keep Advanced Battery and Entangled Power Cell materials in their own route.',
+      ],
     ],
     visualTitle: 'Vehicle power card',
     visualItems: [
@@ -106,7 +114,7 @@ const powerCellCopy: Record<string, PowerCellCopy> = {
       {
         label: 'Use',
         value: 'Tadpole',
-        note: 'Save it for vehicle progress.',
+        note: 'Save it for vehicle progress before rare power crafts.',
       },
     ],
     cautionTitle: 'Do not turn your last tool batteries into a Power Cell',
@@ -147,12 +155,12 @@ const powerCellCopy: Record<string, PowerCellCopy> = {
         href: Routes.Subnautica2BatteryTerminal,
         label: 'Battery Terminal Guide',
       },
-      { href: Routes.Subnautica2StrongAcid, label: 'Strong Acid Guide' },
-      { href: Routes.Subnautica2NecroleiCyst, label: 'Necrolei Cyst Guide' },
       {
         href: Routes.Subnautica2EntangledPowerCell,
         label: 'Entangled Power Cell Guide',
       },
+      { href: Routes.Subnautica2StrongAcid, label: 'Strong Acid Guide' },
+      { href: Routes.Subnautica2NecroleiCyst, label: 'Necrolei Cyst Guide' },
       { href: Routes.Subnautica2Salt, label: 'Salt Location Guide' },
       { href: Routes.Subnautica2Processor, label: 'Processor Guide' },
       { href: Routes.Subnautica2Resources, label: 'Resources Guide' },
@@ -160,7 +168,7 @@ const powerCellCopy: Record<string, PowerCellCopy> = {
     ],
     sourcesTitle: 'Source note',
     sourceBody:
-      'Checked May 26, 2026 against Subnautica2.gg, Subnautica2Hub, and PC Gamer. Subnautica 2 is in Early Access, so recipe costs and vehicle requirements should be rechecked after patches.',
+      'Checked May 27, 2026 against Subnautica2.gg, Subnautica2Hub, and PC Gamer. Subnautica 2 is in Early Access, so recipe costs, battery routes, and vehicle requirements should be rechecked after patches.',
     cardKicker: 'Power card',
     cardBody:
       'Basic Battery x2, Strong Acid x1, Salt x1, Fabricator craft, Tadpole use, and battery storage planning.',
@@ -301,7 +309,63 @@ const powerCellCopy: Record<string, PowerCellCopy> = {
 
 const fallbackCopy = powerCellCopy.en;
 
+powerCellCopy.zh = {
+  ...powerCellCopy.zh,
+  quickAnswer:
+    'Subnautica2.gg 和 Subnautica2Hub 当前把 Power Cell 写成 Fabricator 制作，配方是 Basic Battery x2、Strong Acid x1、Salt x1。PC Gamer 提到 Power Cell 是 Tadpole 制作链的一部分，所以别把它当普通备用电池。先做两块 Basic Battery，确认 Strong Acid，留一块 Salt，等 Tadpole 其他环节接近完成时再合成。如果你已经在做 Advanced Battery 或 Entangled Power Cell，把那些稀有材料路线单独放，不要混进普通 Power Cell 箱子。',
+  routeSteps: [
+    ...powerCellCopy.zh.routeSteps,
+    {
+      title: '普通供电和稀有供电分开放',
+      body: 'Power Cell 主要是 Tadpole 桥梁。Advanced Battery 和 Entangled Power Cell 会拉到 Conduit Crystal、Silver Ingot、Gold Ingot、Troilite 这些更深的材料，除非配方已经亮出来，否则别把它们和普通 Power Cell 材料混在一起。',
+    },
+  ],
+  tableRows: [
+    ...powerCellCopy.zh.tableRows,
+    [
+      '高级供电分流',
+      'Advanced Battery 和 Entangled Power Cell 的材料单独走路线。',
+    ],
+  ],
+  related: [
+    { href: Routes.Subnautica2Tadpole, label: 'Tadpole 载具指南' },
+    {
+      href: Routes.Subnautica2VehicleFabricator,
+      label: 'Vehicle Fabricator 指南',
+    },
+    { href: Routes.Subnautica2BasicBattery, label: 'Basic Battery 指南' },
+    { href: Routes.Subnautica2AdvancedBattery, label: 'Advanced Battery 指南' },
+    {
+      href: Routes.Subnautica2EntangledPowerCell,
+      label: 'Entangled Power Cell 指南',
+    },
+    { href: Routes.Subnautica2BatteryTerminal, label: 'Battery Terminal 指南' },
+    { href: Routes.Subnautica2StrongAcid, label: 'Strong Acid 指南' },
+    { href: Routes.Subnautica2NecroleiCyst, label: 'Necrolei Cyst 指南' },
+    { href: Routes.Subnautica2Salt, label: 'Salt 位置指南' },
+    { href: Routes.Subnautica2Processor, label: 'Processor 指南' },
+    { href: Routes.Subnautica2Crafting, label: '制作指南' },
+  ],
+  sourceBody:
+    '2026 年 5 月 27 日核对 Subnautica2.gg、Subnautica2Hub 和 PC Gamer。Subnautica 2 仍在抢先体验阶段，配方消耗、电池路线和载具需求都可能随补丁调整。',
+};
+
+powerCellCopy.ja = {
+  ...fallbackCopy,
+  metadata: {
+    title: 'Subnautica 2 Power Cell Guide',
+    description:
+      'Guide for Power Cell recipe, Basic Battery, Strong Acid, Salt, Fabricator crafting, Tadpole use, Advanced Battery split, and vehicle power planning.',
+  },
+  sourceBody:
+    'Checked May 27, 2026 against Subnautica2.gg, Subnautica2Hub, and PC Gamer. Early Access recipe costs, battery routes, and vehicle requirements can change.',
+};
+
 for (const locale of ['ja', 'de', 'fr', 'pt-BR', 'es-419', 'ko', 'ru']) {
+  if (powerCellCopy[locale]) {
+    continue;
+  }
+
   powerCellCopy[locale] = {
     ...fallbackCopy,
     metadata: {

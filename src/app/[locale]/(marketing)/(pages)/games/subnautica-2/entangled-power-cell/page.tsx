@@ -83,6 +83,10 @@ const entangledPowerCellCopy: Record<string, EntangledPowerCellCopy> = {
         title: 'Craft for a visible power goal',
         body: 'Because listed uses are still patch-sensitive, leave Conduit Crystal, Strong Acid, Gold Ingot, and Troilite separate until a vehicle, charger, or base-power plan clearly asks for the cell.',
       },
+      {
+        title: 'Keep it apart from Advanced Battery',
+        body: 'Advanced Battery is usually the better first upgrade for handheld tools. Entangled Power Cell belongs in the late-power locker, beside Troilite and Gold Ingot, not in the same pile as charger rotation parts.',
+      },
     ],
     tableTitle: 'Entangled Power Cell checklist',
     tableHeaders: ['Need', 'What to confirm'],
@@ -104,6 +108,10 @@ const entangledPowerCellCopy: Record<string, EntangledPowerCellCopy> = {
       [
         'Use case',
         'Patch-sensitive. Craft when a clear power goal is waiting.',
+      ],
+      [
+        'Battery split',
+        'Keep it separate from Advanced Battery and normal Power Cell materials.',
       ],
     ],
     visualTitle: 'Advanced power card',
@@ -160,6 +168,10 @@ const entangledPowerCellCopy: Record<string, EntangledPowerCellCopy> = {
       {
         href: Routes.Subnautica2AdvancedBattery,
         label: 'Advanced Battery Guide',
+      },
+      {
+        href: Routes.Subnautica2BatteryTerminal,
+        label: 'Battery Terminal Guide',
       },
       {
         href: Routes.Subnautica2KarakorumPowerPlant,
@@ -307,7 +319,55 @@ const entangledPowerCellCopy: Record<string, EntangledPowerCellCopy> = {
 
 const fallbackCopy = entangledPowerCellCopy.en;
 
+entangledPowerCellCopy.zh = {
+  ...entangledPowerCellCopy.zh,
+  quickAnswer:
+    '当前公开资料基本一致：Entangled Power Cell 使用 Conduit Crystal x1、Strong Acid x1、Gold Ingot x1、Troilite x1，在 Fabricator 或 Fabrication Station 制作。Wikily 把它标成扫描解锁，并显示当前不再进入其他配方；Subnautica 2 Guide 和 Nerdschalk 则把碎片路线指向 Karakorum Power Plant 或 alien structure 附近。把它当成后期供电准备，和 Advanced Battery、普通 Power Cell 的材料分开存，补丁后再回 PDA 复查。',
+  routeSteps: [
+    ...entangledPowerCellCopy.zh.routeSteps,
+    {
+      title: '和 Advanced Battery 分开规划',
+      body: 'Advanced Battery 更像手持工具的第一轮供电升级。Entangled Power Cell 应该放进后期供电箱，和 Troilite、Gold Ingot 这些材料在一起，不要和普通充电轮换材料混成一堆。',
+    },
+  ],
+  tableRows: [
+    ...entangledPowerCellCopy.zh.tableRows,
+    ['电池分流', '和 Advanced Battery、普通 Power Cell 的材料分开收纳。'],
+  ],
+  related: [
+    { href: Routes.Subnautica2ConduitCrystal, label: 'Conduit Crystal 指南' },
+    { href: Routes.Subnautica2StrongAcid, label: 'Strong Acid 指南' },
+    { href: Routes.Subnautica2GoldIngot, label: 'Gold Ingot 指南' },
+    { href: Routes.Subnautica2Troilite, label: 'Troilite 位置指南' },
+    { href: Routes.Subnautica2PowerCell, label: 'Power Cell 指南' },
+    { href: Routes.Subnautica2AdvancedBattery, label: 'Advanced Battery 指南' },
+    { href: Routes.Subnautica2BatteryTerminal, label: 'Battery Terminal 指南' },
+    {
+      href: Routes.Subnautica2KarakorumPowerPlant,
+      label: 'Karakorum Power Plant 路线',
+    },
+    { href: Routes.Subnautica2Crafting, label: '制作指南' },
+  ],
+  sourceBody:
+    '2026 年 5 月 27 日核对 Subnautica2.gg、Subnautica 2 Guide、Wikily、Nerdschalk 和 PC Gamer。Subnautica 2 仍处于抢先体验阶段，碎片数量、制作台名称和用途列表都可能随补丁变化。',
+};
+
+entangledPowerCellCopy.ja = {
+  ...fallbackCopy,
+  metadata: {
+    title: 'Subnautica 2 Entangled Power Cell Guide',
+    description:
+      'Guide for Entangled Power Cell recipe, fragment scans, Conduit Crystal, Strong Acid, Gold Ingot, Troilite, Advanced Battery split, and late-route power planning.',
+  },
+  sourceBody:
+    'Checked May 27, 2026 against Subnautica2.gg, Subnautica 2 Guide, Wikily, Nerdschalk, and PC Gamer. Early Access scan counts, station wording, and listed uses can change.',
+};
+
 for (const locale of ['ja', 'de', 'fr', 'pt-BR', 'es-419', 'ko', 'ru']) {
+  if (entangledPowerCellCopy[locale]) {
+    continue;
+  }
+
   entangledPowerCellCopy[locale] = {
     ...fallbackCopy,
     metadata: {
