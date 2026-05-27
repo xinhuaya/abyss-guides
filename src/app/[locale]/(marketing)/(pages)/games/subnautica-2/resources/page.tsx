@@ -207,6 +207,10 @@ const resourcesCopy: Record<string, ResourcesCopy> = {
       { href: Routes.Subnautica2WiringKit, label: 'Wiring Kit Guide' },
       { href: Routes.Subnautica2SystemChip, label: 'System Chip Guide' },
       {
+        href: Routes.Subnautica2AdvancedWiringKit,
+        label: 'Advanced Wiring Kit Guide',
+      },
+      {
         href: Routes.Subnautica2BioscannerBiomods,
         label: 'Bioscanner and Biomods',
       },
@@ -393,6 +397,10 @@ const resourcesCopy: Record<string, ResourcesCopy> = {
       { href: Routes.Subnautica2Rubber, label: 'Rubber 配方指南' },
       { href: Routes.Subnautica2BasicFins, label: 'Basic Fins 指南' },
       { href: Routes.Subnautica2Scanner, label: 'Scanner 攻略' },
+      {
+        href: Routes.Subnautica2AdvancedWiringKit,
+        label: 'Advanced Wiring Kit 指南',
+      },
     ],
     sourcesTitle: '来源说明',
     sourceBody:

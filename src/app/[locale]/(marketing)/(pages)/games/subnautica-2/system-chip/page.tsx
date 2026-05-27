@@ -145,6 +145,10 @@ const systemChipCopy: Record<string, SystemChipCopy> = {
         label: 'Scanner Station Guide',
       },
       { href: Routes.Subnautica2WiringKit, label: 'Wiring Kit Guide' },
+      {
+        href: Routes.Subnautica2AdvancedWiringKit,
+        label: 'Advanced Wiring Kit Guide',
+      },
       { href: Routes.Subnautica2Quartz, label: 'Quartz Location Guide' },
       { href: Routes.Subnautica2Gold, label: 'Gold Location Guide' },
       { href: Routes.Subnautica2Silver, label: 'Silver Location' },
@@ -271,6 +275,10 @@ const systemChipCopy: Record<string, SystemChipCopy> = {
       { href: Routes.Subnautica2Rebreather, label: 'Rebreather 指南' },
       { href: Routes.Subnautica2ScannerStation, label: 'Scanner Station 指南' },
       { href: Routes.Subnautica2WiringKit, label: 'Wiring Kit 指南' },
+      {
+        href: Routes.Subnautica2AdvancedWiringKit,
+        label: 'Advanced Wiring Kit 指南',
+      },
       { href: Routes.Subnautica2Quartz, label: 'Quartz Location Guide' },
       { href: Routes.Subnautica2Gold, label: 'Gold Location Guide' },
       { href: Routes.Subnautica2Silver, label: 'Silver 位置' },
@@ -400,6 +408,10 @@ const systemChipCopy: Record<string, SystemChipCopy> = {
         label: 'Scanner Station Guide',
       },
       { href: Routes.Subnautica2WiringKit, label: 'Wiring Kit ガイド' },
+      {
+        href: Routes.Subnautica2AdvancedWiringKit,
+        label: 'Advanced Wiring Kit Guide',
+      },
       { href: Routes.Subnautica2Quartz, label: 'Quartz Location Guide' },
       { href: Routes.Subnautica2Gold, label: 'Gold Location Guide' },
       { href: Routes.Subnautica2Silver, label: 'Silver の場所' },

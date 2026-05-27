@@ -65,6 +65,7 @@ const staticRoutes = [
   Routes.Subnautica2Scanner,
   Routes.Subnautica2SystemChip,
   Routes.Subnautica2WiringKit,
+  Routes.Subnautica2AdvancedWiringKit,
   Routes.Subnautica2BioscannerBiomods,
   Routes.Subnautica2SonicResonator,
   Routes.Subnautica2ConduitCrystal,

@@ -143,6 +143,10 @@ const goldCopy: Record<string, GoldCopy> = {
       },
       { href: Routes.Subnautica2SystemChip, label: 'System Chip Guide' },
       { href: Routes.Subnautica2StrongAcid, label: 'Strong Acid Guide' },
+      {
+        href: Routes.Subnautica2AdvancedWiringKit,
+        label: 'Advanced Wiring Kit Guide',
+      },
       { href: Routes.Subnautica2GoldIngot, label: 'Gold Ingot Guide' },
       { href: Routes.Subnautica2BaseBuilding, label: 'Base Building Guide' },
       { href: Routes.Subnautica2Sulfur, label: 'Sulfur Location Guide' },
@@ -262,6 +266,10 @@ const goldCopy: Record<string, GoldCopy> = {
       { href: Routes.Subnautica2SonicResonator, label: 'Sonic Resonator 指南' },
       { href: Routes.Subnautica2SystemChip, label: 'System Chip 指南' },
       { href: Routes.Subnautica2StrongAcid, label: 'Strong Acid 指南' },
+      {
+        href: Routes.Subnautica2AdvancedWiringKit,
+        label: 'Advanced Wiring Kit 指南',
+      },
       { href: Routes.Subnautica2GoldIngot, label: 'Gold Ingot 指南' },
       { href: Routes.Subnautica2BaseBuilding, label: '基地建造指南' },
       { href: Routes.Subnautica2Sulfur, label: 'Sulfur 位置指南' },

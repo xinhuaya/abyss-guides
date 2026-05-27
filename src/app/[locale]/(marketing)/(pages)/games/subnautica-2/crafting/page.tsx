@@ -206,6 +206,10 @@ const craftingCopy: Record<string, CraftingCopy> = {
       { href: Routes.Subnautica2SilverIngot, label: 'Silver Ingot Guide' },
       { href: Routes.Subnautica2WiringKit, label: 'Wiring Kit Guide' },
       { href: Routes.Subnautica2SystemChip, label: 'System Chip Guide' },
+      {
+        href: Routes.Subnautica2AdvancedWiringKit,
+        label: 'Advanced Wiring Kit Guide',
+      },
       { href: Routes.Subnautica2EnameledGlass, label: 'Enameled Glass Guide' },
       {
         href: Routes.Subnautica2CreatureEnamel,
@@ -368,6 +372,10 @@ const craftingCopy: Record<string, CraftingCopy> = {
       { href: Routes.Subnautica2Silver, label: 'Silver 位置' },
       { href: Routes.Subnautica2SilverIngot, label: 'Silver Ingot 指南' },
       { href: Routes.Subnautica2CopperIngot, label: 'Copper Ingot 指南' },
+      {
+        href: Routes.Subnautica2AdvancedWiringKit,
+        label: 'Advanced Wiring Kit 指南',
+      },
     ],
     sourcesTitle: '来源说明',
     sourceBody:

@@ -392,6 +392,12 @@ const copyByLocale: Record<'en' | 'zh', HubCopy> = {
           'Silver, Copper Wire, electronics storage, System Chip prep, and upgrade-material timing.',
       },
       {
+        href: Routes.Subnautica2AdvancedWiringKit,
+        title: 'Advanced Wiring Kit',
+        description:
+          'Wiring Kit, Gold, Sulfur, station wording, Dedicated Core, Heat Resistance Chip, and Scout Ray planning.',
+      },
+      {
         href: Routes.Subnautica2SonicResonator,
         title: 'Sonic Resonator',
         description:
@@ -822,6 +828,12 @@ const copyByLocale: Record<'en' | 'zh', HubCopy> = {
         title: 'Wiring Kit 指南',
         description:
           'Silver、Copper Wire、电子材料收纳、System Chip 前置和升级材料时机。',
+      },
+      {
+        href: Routes.Subnautica2AdvancedWiringKit,
+        title: 'Advanced Wiring Kit',
+        description:
+          'Wiring Kit、Gold、Sulfur、制作站写法、Dedicated Core、Heat Resistance Chip 和 Scout Ray 规划。',
       },
       {
         href: Routes.Subnautica2MildAcid,

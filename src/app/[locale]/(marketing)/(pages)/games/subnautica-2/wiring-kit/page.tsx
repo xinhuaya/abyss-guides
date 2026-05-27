@@ -144,6 +144,10 @@ const wiringKitCopy: Record<string, WiringKitCopy> = {
       { href: Routes.Subnautica2Copper, label: 'Copper Location' },
       { href: Routes.Subnautica2Rebreather, label: 'Rebreather Guide' },
       { href: Routes.Subnautica2SystemChip, label: 'System Chip Guide' },
+      {
+        href: Routes.Subnautica2AdvancedWiringKit,
+        label: 'Advanced Wiring Kit Guide',
+      },
       { href: Routes.Subnautica2Crafting, label: 'Crafting Guide' },
       { href: Routes.Subnautica2Resources, label: 'Resources Guide' },
       {
@@ -261,6 +265,10 @@ const wiringKitCopy: Record<string, WiringKitCopy> = {
       { href: Routes.Subnautica2Copper, label: 'Copper 位置' },
       { href: Routes.Subnautica2Rebreather, label: 'Rebreather 指南' },
       { href: Routes.Subnautica2SystemChip, label: 'System Chip 指南' },
+      {
+        href: Routes.Subnautica2AdvancedWiringKit,
+        label: 'Advanced Wiring Kit 指南',
+      },
       { href: Routes.Subnautica2Crafting, label: '制作指南' },
       { href: Routes.Subnautica2Resources, label: '资源指南' },
       {
@@ -378,6 +386,10 @@ const wiringKitCopy: Record<string, WiringKitCopy> = {
       { href: Routes.Subnautica2Copper, label: 'Copper の場所' },
       { href: Routes.Subnautica2Rebreather, label: 'Rebreather Guide' },
       { href: Routes.Subnautica2SystemChip, label: 'System Chip ガイド' },
+      {
+        href: Routes.Subnautica2AdvancedWiringKit,
+        label: 'Advanced Wiring Kit Guide',
+      },
       { href: Routes.Subnautica2Crafting, label: 'クラフトガイド' },
       { href: Routes.Subnautica2Resources, label: 'リソースガイド' },
       {
