@@ -16,7 +16,7 @@ type ConduitCopy = ResourceGuideCopy & {
 };
 
 const PUBLISHED_AT = '2026-05-25';
-const UPDATED_AT = '2026-05-25';
+const UPDATED_AT = '2026-05-27';
 
 const sharedSources = [
   {
@@ -26,6 +26,10 @@ const sharedSources = [
   {
     href: 'https://www.gamesradar.com/games/survival/subnautica-2-conduit-crystals/',
     label: 'GamesRadar Conduit Crystal guide',
+  },
+  {
+    href: 'https://www.pcgamer.com/games/survival-crafting/subnautica-2-feedback-resonator-scan-locations/',
+    label: 'PC Gamer Feedback Resonator recipe note',
   },
 ];
 
@@ -43,7 +47,7 @@ const conduitCopy: Record<string, ConduitCopy> = {
       'Conduit Crystal is one of those materials that feels invisible until a tool upgrade asks for it. The trick is not spotting the crystal once. It is reaching the Alien Ruins route with the right vehicle depth, mining tool, and exit plan.',
     quickLabel: 'Quick answer',
     quickAnswer:
-      'Look for Conduit Crystal around the Alien Ruins and Alien Power Plant region, especially ledges and cliffs below the safer early-game depth range. Bring the Tadpole Depth Module and Sonic Resonator. Mine only what you need for the Bioscanner and Feedback Resonator chain, then leave before the route turns into a rescue story.',
+      'Look for Conduit Crystal around the Alien Ruins and Alien Power Plant region, especially ledges and cliffs below the safer early-game depth range. Bring the Tadpole Depth Module and Sonic Resonator. Feedback Resonator currently asks for 2x Conduit Crystal, so mine a small upgrade stock and leave before the route turns into a rescue story.',
     contentsLabel: 'Contents',
     routeTitle: 'Conduit Crystal route plan',
     routeSteps: [
@@ -61,7 +65,7 @@ const conduitCopy: Record<string, ConduitCopy> = {
       },
       {
         title: 'Grab enough, not everything',
-        body: 'Current reporting ties Conduit Crystal to tool upgrades such as Bioscanner and Feedback Resonator. A small stock is useful, but this is not a material you need to hoard on the first trip.',
+        body: 'Current reporting ties Conduit Crystal to tool upgrades such as Bioscanner and Feedback Resonator. Set aside 2x for Feedback Resonator, then add a small buffer for Bioscanner work. This is not a material you need to hoard on the first trip.',
       },
       {
         title: 'Pair the trip with nearby rare materials',
@@ -106,8 +110,8 @@ const conduitCopy: Record<string, ConduitCopy> = {
       },
       {
         label: 'Use',
-        value: 'Upgrades',
-        note: 'Save crystals for Bioscanner and Feedback Resonator work.',
+        value: '2x+',
+        note: 'Reserve two crystals for Feedback Resonator, then keep a small Bioscanner buffer.',
       },
     ],
     cautionTitle: 'The crystal is not worth losing the route',
@@ -129,7 +133,7 @@ const conduitCopy: Record<string, ConduitCopy> = {
       },
       {
         title: 'What is Conduit Crystal used for?',
-        body: 'Current reporting links it to upgrades such as Bioscanner and Feedback Resonator, so it sits in the tool upgrade chain rather than the early base-building loop.',
+        body: 'Current reporting links it to upgrades such as Bioscanner and Feedback Resonator. PC Gamer lists 2x Conduit Crystal in the Feedback Resonator recipe.',
       },
     ],
     readNextTitle: 'Read next',
@@ -170,7 +174,7 @@ const conduitCopy: Record<string, ConduitCopy> = {
     ],
     sourcesTitle: 'Source note',
     sourceBody:
-      'Checked May 25, 2026 against current PC Gamer and GamesRadar reporting. Subnautica 2 is in Early Access, so route depth, resource placement, and upgrade recipes should be rechecked after patches.',
+      'Checked May 27, 2026 against current PC Gamer and GamesRadar reporting, including the Feedback Resonator recipe note. Subnautica 2 is in Early Access, so route depth, resource placement, and upgrade recipes should be rechecked after patches.',
     cardKicker: 'Crystal route card',
     cardBody:
       'Alien Ruins route, Tadpole depth prep, Sonic Resonator mining, nearby rare materials, and upgrade use planning.',
@@ -434,6 +438,212 @@ const conduitCopy: Record<string, ConduitCopy> = {
     cardStatusLabel: 'Status',
     cardStatusValue: 'Early Access',
   },
+};
+
+conduitCopy.zh = {
+  ...conduitCopy.en,
+  metadata: {
+    title: 'Subnautica 2 Conduit Crystal 指南 - 位置、深度和升级用途',
+    description:
+      'Subnautica 2 中文 Conduit Crystal 指南：Alien Ruins 路线、Tadpole Depth Module、Sonic Resonator 采集，以及 Feedback Resonator 所需数量。',
+  },
+  eyebrow: 'Subnautica 2 升级材料',
+  title: 'Subnautica 2 Conduit Crystal 指南',
+  description:
+    'Conduit Crystal 常常不是找不到，而是你太早去了。把 Tadpole 深度、Sonic Resonator 和回程路线准备好，再去 Alien Ruins 一带会稳很多。',
+  quickLabel: '快速结论',
+  quickAnswer:
+    '去 Alien Ruins 和 Alien Power Plant 附近找 Conduit Crystal，重点看深水 ledges、cliffs 和 Angel Comb 附近路线。出发前带 Tadpole Depth Module 和 Sonic Resonator。Feedback Resonator 目前需要 2 个 Conduit Crystal，所以先留出一小组升级库存，再回家。',
+  contentsLabel: '目录',
+  routeTitle: 'Conduit Crystal 路线规划',
+  routeSteps: [
+    {
+      title: 'Tadpole 没准备好就别去',
+      body: 'GamesRadar 和 PC Gamer 都把这条路线写成深度门槛内容。Tadpole 还不能稳定下潜时，搜晶体会变得很乱。',
+    },
+    {
+      title: '用 Alien Ruins 当锚点',
+      body: '当前资料把 Conduit Crystal 放在 Alien Ruins、Alien Power Plant、Angel Comb 和周围 ledges 一带。选一个地标，沿岩壁上下找，比在海底平面盲扫更省时间。',
+    },
+    {
+      title: '用 Sonic Resonator 采集',
+      body: 'PC Gamer 提到节点需要用 Sonic Resonator 打开。看到晶体却敲不下来时，先检查工具，不要急着换路线。',
+    },
+    {
+      title: '给 Feedback Resonator 留两个',
+      body: 'PC Gamer 当前列出的 Feedback Resonator 配方里需要 2 个 Conduit Crystal。第一趟先满足工具升级链，再考虑多囤。',
+    },
+    {
+      title: '顺手记下附近稀有材料',
+      body: 'GamesRadar 提到 Celestine、Atacamite 和 Troilite 也在这片后期路线附近。不要一趟全捡，但可以记位置，下一趟少绕路。',
+    },
+  ],
+  tableTitle: '出发前检查',
+  tableHeaders: ['带什么', '为什么'],
+  tableRows: [
+    ['Tadpole Depth Module', '晶体区域超过前期舒适深度。'],
+    ['Sonic Resonator', '找到节点后需要它来采集。'],
+    ['Beacon 或路线标记', '外星结构显眼，但转两圈后仍然容易迷路。'],
+    ['氧气备用方案', '有些晶体在 ledges 周围，可能要短时间离开 Tadpole。'],
+    ['背包空位', '这趟目标是升级材料，不是把背包塞满杂物。'],
+  ],
+  visualTitle: '晶体路线卡',
+  visualItems: [
+    {
+      label: '门槛',
+      value: '深度',
+      note: 'Tadpole 装好深度模块后再下去。',
+    },
+    {
+      label: '工具',
+      value: 'Sonic',
+      note: '找到晶体节点后，用 Sonic Resonator 打开。',
+    },
+    {
+      label: '用途',
+      value: '2x+',
+      note: '优先给 Feedback Resonator 留两个。',
+    },
+  ],
+  cautionTitle: '不要为了一个晶体丢掉整条路线',
+  cautionBody:
+    '如果附近敌对生物太多，先走。Conduit Crystal 可以下次再拿，载具和路线节奏丢了更麻烦。标记位置，补好氧气和修理，再回来让第二趟变无聊。',
+  faqTitle: '常见问题',
+  faqs: [
+    {
+      title: 'Subnautica 2 Conduit Crystal 在哪里找？',
+      body: '主要看 Alien Ruins 和 Alien Power Plant 一带，尤其是深处 ledges、岩壁、Angel Comb 和通往绿色池子的路线附近。',
+    },
+    {
+      title: 'Conduit Crystal 用什么工具采？',
+      body: '用 Sonic Resonator。如果节点打不开，先确认工具是不是带对了。',
+    },
+    {
+      title: '需要 Tadpole Depth Module 吗？',
+      body: '建议必须带。当前攻略都把它放在深水路线里，没有深度模块会非常不稳。',
+    },
+    {
+      title: 'Feedback Resonator 要几个 Conduit Crystal？',
+      body: 'PC Gamer 当前列出的 Feedback Resonator 配方里需要 2 个 Conduit Crystal。',
+    },
+  ],
+  readNextTitle: '继续看',
+  related: [
+    { href: Routes.Subnautica2ImprovedFins, label: 'Improved Fins Guide' },
+    { href: Routes.Subnautica2SonicResonator, label: 'Sonic Resonator 指南' },
+    {
+      href: Routes.Subnautica2FeedbackResonator,
+      label: 'Feedback Resonator 指南',
+    },
+    {
+      href: Routes.Subnautica2AdvancedBattery,
+      label: 'Advanced Battery Guide',
+    },
+    {
+      href: Routes.Subnautica2EntangledPowerCell,
+      label: 'Entangled Power Cell 指南',
+    },
+    {
+      href: Routes.Subnautica2KarakorumPowerPlant,
+      label: 'Karakorum Power Plant 路线',
+    },
+    { href: Routes.Subnautica2Strontium, label: 'Strontium 指南' },
+    { href: Routes.Subnautica2Celestine, label: 'Celestine 指南' },
+    {
+      href: Routes.Subnautica2BioscannerBiomods,
+      label: 'Bioscanner 和 Biomods',
+    },
+    { href: Routes.Subnautica2MetalFarm, label: 'Metal Farm 指南' },
+    { href: Routes.Subnautica2Biomes, label: '生物群系指南' },
+  ],
+  sourcesTitle: '来源说明',
+  sourceBody:
+    '2026 年 5 月 27 日核对 PC Gamer 和 GamesRadar 当前资料，并补充 Feedback Resonator 配方信息。Subnautica 2 仍在抢先体验，路线深度、资源点和配方后续可能随补丁调整。',
+  cardKicker: '晶体路线卡',
+  cardBody:
+    '整理 Alien Ruins 路线、Tadpole 深度准备、Sonic Resonator 采集、Feedback Resonator 预留数量、附近稀有材料和升级用途。',
+  cardTypeLabel: '类型',
+  cardTypeValue: '资源指南',
+  cardVerifiedLabel: '核对时间',
+  cardStatusLabel: '状态',
+  cardStatusValue: '抢先体验',
+};
+
+conduitCopy.ja = {
+  ...conduitCopy.en,
+  metadata: {
+    title:
+      'Subnautica 2 Conduit Crystal ガイド - 場所、深度、Feedback Resonator準備',
+    description:
+      'Subnautica 2のConduit Crystalガイド。Alien Ruinsルート、Tadpole Depth Module、Sonic Resonator採掘、Feedback Resonator用の2個確保を整理します。',
+  },
+  title: 'Subnautica 2 Conduit Crystal ガイド',
+  description:
+    'Conduit Crystalは、早すぎるタイミングで探すと面倒な素材です。Tadpoleの深度、Sonic Resonator、帰り道を整えてからAlien Ruins周辺へ向かいます。',
+  quickLabel: '要点',
+  quickAnswer:
+    'Alien Ruins、Alien Power Plant、Angel Comb周辺の深いledgeや崖を探します。Tadpole Depth ModuleとSonic Resonatorを持参してください。Feedback Resonatorには現在2個のConduit Crystalが必要です。',
+  routeTitle: 'Conduit Crystal ルート',
+  routeSteps: [
+    {
+      title: 'Tadpoleの深度を先に整える',
+      body: 'この素材は深度で苦しくなりやすいルートです。Depth Moduleなしで行くと、探索より帰還が問題になります。',
+    },
+    {
+      title: 'Alien Ruinsを目印にする',
+      body: 'Alien Ruins、Alien Power Plant、Angel Comb周辺のledgeや崖を上下に探します。',
+    },
+    {
+      title: 'Sonic Resonatorで採掘する',
+      body: 'ノードを見つけても壊せない場合は、ルートではなくツールを確認します。',
+    },
+    {
+      title: '2個をFeedback Resonator用に残す',
+      body: '現在のPC Gamerのレシピ情報では、Feedback ResonatorにConduit Crystalが2個必要です。',
+    },
+  ],
+  visualItems: [
+    { label: 'Depth', value: 'Module', note: 'Tadpoleの深度を確保します。' },
+    { label: 'Tool', value: 'Sonic', note: 'Sonic Resonatorで採掘します。' },
+    {
+      label: 'Reserve',
+      value: '2x',
+      note: 'Feedback Resonator用に2個残します。',
+    },
+  ],
+  faqs: [
+    {
+      title: 'Conduit Crystalはどこ？',
+      body: 'Alien Ruins、Alien Power Plant、Angel Comb周辺の深いledgeや崖で探します。',
+    },
+    {
+      title: 'どのツールで採掘する？',
+      body: 'Sonic Resonatorを使います。',
+    },
+    {
+      title: 'Feedback Resonatorには何個必要？',
+      body: '現在のPC Gamer情報では2個必要です。',
+    },
+  ],
+  related: [
+    { href: Routes.Subnautica2SonicResonator, label: 'Sonic Resonator Guide' },
+    {
+      href: Routes.Subnautica2FeedbackResonator,
+      label: 'Feedback Resonator Guide',
+    },
+    {
+      href: Routes.Subnautica2KarakorumPowerPlant,
+      label: 'Karakorum Power Plant Route',
+    },
+    { href: Routes.Subnautica2Strontium, label: 'Strontium Guide' },
+    { href: Routes.Subnautica2Celestine, label: 'Celestine Guide' },
+    {
+      href: Routes.Subnautica2BioscannerBiomods,
+      label: 'Bioscanner and Biomods',
+    },
+  ],
+  sourceBody:
+    '2026年5月27日にPC GamerとGamesRadarの情報を確認しました。Early Access中は位置やレシピが変わる可能性があります。',
 };
 
 const fallbackLocaleAliases = {
