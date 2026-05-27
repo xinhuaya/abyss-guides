@@ -16,7 +16,7 @@ type CelestineCopy = ResourceGuideCopy & {
 };
 
 const PUBLISHED_AT = '2026-05-25';
-const UPDATED_AT = '2026-05-25';
+const UPDATED_AT = '2026-05-27';
 
 const sharedSources = [
   {
@@ -30,6 +30,14 @@ const sharedSources = [
   {
     href: 'https://allthings.how/where-to-find-celestine-in-subnautica-2/',
     label: 'All Things How Celestine guide',
+  },
+  {
+    href: 'https://games.gg/subnautica-2/guides/subnautica-2-how-to-get-strontium/',
+    label: 'GAMES.GG Strontium guide',
+  },
+  {
+    href: 'https://subnautica2.gg/blueprints/strontium',
+    label: 'Subnautica2.gg Strontium blueprint',
   },
 ];
 
@@ -47,7 +55,7 @@ const celestineCopy: Record<string, CelestineCopy> = {
       'Celestine is the rock you need before Strontium becomes a real plan. It lives on deeper Alien Ruins routes, so the route is less about spotting a blue vein and more about arriving with the right tool and leaving cleanly.',
     quickLabel: 'Quick answer',
     quickAnswer:
-      'Look for Celestine around the deeper Alien Ruins biome, including rocky walls and routes near Needler patrols. Bring the Tadpole, enough depth margin, and the Sonic Resonator for large nodes. Mine Celestine first, then process it into Strontium back at base when an upgrade asks for the refined material.',
+      'Look for Celestine around the deeper Alien Ruins biome, including rocky walls and routes near Needler patrols. Bring the Tadpole, enough depth margin, and the Sonic Resonator for large nodes. Feedback Resonator currently needs 2x Strontium, which means at least 4x Celestine before you count any extra stock.',
     contentsLabel: 'Contents',
     routeTitle: 'Celestine route plan',
     routeSteps: [
@@ -69,7 +77,7 @@ const celestineCopy: Record<string, CelestineCopy> = {
       },
       {
         title: 'Process later, not in the water',
-        body: 'Celestine is the raw material. Strontium is made later at the Processor, so keep the two names separate when checking upgrade recipes.',
+        body: 'Celestine is the raw material. Strontium is made later at the Processor, so keep the two names separate when checking upgrade recipes. For Feedback Resonator alone, reserve 4x Celestine for 2x Strontium.',
       },
     ],
     tableTitle: 'Before the Celestine run',
@@ -93,7 +101,7 @@ const celestineCopy: Record<string, CelestineCopy> = {
       ],
       [
         'Processor plan',
-        'Celestine becomes Strontium only after base processing.',
+        'Celestine becomes Strontium only after base processing; 4x Celestine covers the Feedback Resonator Strontium requirement.',
       ],
     ],
     visualTitle: 'Mining card',
@@ -110,8 +118,8 @@ const celestineCopy: Record<string, CelestineCopy> = {
       },
       {
         label: 'Refine',
-        value: 'Strontium',
-        note: 'Bring Celestine home before processing.',
+        value: '4x -> 2x',
+        note: 'Four Celestine makes the two Strontium needed for Feedback Resonator.',
       },
     ],
     cautionTitle: 'Do not turn a mining trip into a tour',
@@ -135,6 +143,10 @@ const celestineCopy: Record<string, CelestineCopy> = {
         title: 'Is Celestine the same as Strontium?',
         body: 'No. Celestine is the raw mineral. Strontium is the processed material made from Celestine at base.',
       },
+      {
+        title: 'How much Celestine do I need for Feedback Resonator?',
+        body: 'At minimum, bring back 4x Celestine so the Processor can make 2x Strontium. Bring extra if you still need Celestine for Modification Station or Tadpole upgrades.',
+      },
     ],
     readNextTitle: 'Read next',
     related: [
@@ -151,12 +163,20 @@ const celestineCopy: Record<string, CelestineCopy> = {
         href: Routes.Subnautica2ConduitCrystal,
         label: 'Conduit Crystal Guide',
       },
+      {
+        href: Routes.Subnautica2FeedbackResonator,
+        label: 'Feedback Resonator Guide',
+      },
+      {
+        href: Routes.Subnautica2ModificationStation,
+        label: 'Modification Station Guide',
+      },
       { href: Routes.Subnautica2Biomes, label: 'Biomes Guide' },
       { href: Routes.Subnautica2Resources, label: 'Resources Guide' },
     ],
     sourcesTitle: 'Source note',
     sourceBody:
-      'Checked May 25, 2026 against current PC Gamer, GamesRadar, and All Things How reporting. Subnautica 2 is in Early Access, so Celestine routes, hostile patrols, and processing recipes should be rechecked after patches.',
+      'Checked May 27, 2026 against current PC Gamer, GamesRadar, All Things How, GAMES.GG, and Subnautica2.gg reporting. Subnautica 2 is in Early Access, so Celestine routes, hostile patrols, and processing recipes should be rechecked after patches.',
     cardKicker: 'Deep mineral card',
     cardBody:
       'Alien Ruins route, blue vein search pattern, Sonic Resonator mining, Needler risk, and Strontium processing.',
@@ -384,6 +404,203 @@ const celestineCopy: Record<string, CelestineCopy> = {
     cardStatusLabel: 'Status',
     cardStatusValue: 'Early Access',
   },
+};
+
+celestineCopy.zh = {
+  ...celestineCopy.en,
+  metadata: {
+    title:
+      'Subnautica 2 Celestine 指南 - 位置、Sonic Resonator 和 Strontium 路线',
+    description:
+      'Subnautica 2 中文 Celestine 指南：Alien Ruins 深水路线、Needler 风险、Sonic Resonator 采集、Tadpole 准备，以及加工 Strontium 和 Feedback Resonator 的关系。',
+  },
+  eyebrow: 'Subnautica 2 深水矿物',
+  title: 'Subnautica 2 Celestine 指南',
+  description:
+    'Celestine 是 Strontium 之前真正要解决的矿。它不在舒服的前期浅水区，而在 Alien Ruins 附近的深水路线里。重点不是只看见一条蓝色矿脉，而是带对工具，安全挖完，再顺利回家。',
+  quickLabel: '快速结论',
+  quickAnswer:
+    '去 Alien Ruins 生物群系较深区域找 Celestine，重点看岩壁、洞壁、低处 ledges，以及 Needler 巡逻附近的路线。出发前准备 Tadpole、足够深度余量和 Sonic Resonator。Feedback Resonator 目前需要 2 个 Strontium，也就是至少 4 个 Celestine，别把多出来的原矿随手花掉。',
+  contentsLabel: '目录',
+  routeTitle: 'Celestine 路线规划',
+  routeSteps: [
+    {
+      title: '用 Alien Ruins 当路线锚点',
+      body: 'PC Gamer 把玩家指向 Alien Ruins 生物群系，并提到 Alien Ruins Research Base 东南方向的路线。用基地、岩壁和外星结构当参照，不要在开阔水域里盲目扫图。',
+    },
+    {
+      title: '多看低处岩壁',
+      body: '当前攻略把 Celestine 描述成深水岩石和洞壁上的蓝色矿脉。只盯着海底平面看，很容易错过。',
+    },
+    {
+      title: '带上 Sonic Resonator',
+      body: '大的 Celestine 节点需要 Sonic Resonator。看到矿却采不下来时，通常不是路线错了，而是工具没带对。',
+    },
+    {
+      title: '注意 Needler 巡逻',
+      body: '多篇当前攻略都提醒 Celestine 好路线附近有 Needler。停 Tadpole 时给自己留好离开角度，挖完就走，不要在车旁边慢慢数背包。',
+    },
+    {
+      title: '回基地后再加工',
+      body: 'Celestine 是原矿，Strontium 是后面用 Processor 加工出来的材料。Feedback Resonator 至少预留 4 个 Celestine，加工成 2 个 Strontium。',
+    },
+  ],
+  tableTitle: 'Celestine 出发前检查',
+  tableHeaders: ['检查项', '为什么重要'],
+  tableRows: [
+    [
+      'Tadpole 深度余量',
+      '好用的矿点在前期舒适深度之外，载具要能稳稳跑完整条路线。',
+    ],
+    ['Sonic Resonator', '大 Celestine 节点需要它，出发前就确认带上。'],
+    ['Repair 和回血', 'Needler 会把贪心采矿变成坏车加游泳回家。'],
+    ['Beacon 或地标记录', '稳定可重复的路线，比偶然找到一条蓝矿更重要。'],
+    [
+      'Processor 计划',
+      '4 个 Celestine 可以加工成 Feedback Resonator 需要的 2 个 Strontium。',
+    ],
+  ],
+  visualTitle: '采矿卡',
+  visualItems: [
+    {
+      label: '寻找',
+      value: '蓝色矿脉',
+      note: '多看 Alien Ruins 附近的低处岩壁，不要只扫平地。',
+    },
+    {
+      label: '采集',
+      value: 'Sonic',
+      note: '大矿点用 Sonic Resonator 打开。',
+    },
+    {
+      label: '加工',
+      value: '4 -> 2',
+      note: '4 个 Celestine 够做 2 个 Strontium。',
+    },
+  ],
+  cautionTitle: '别把采矿路线变成观光路线',
+  cautionBody:
+    'Celestine 附近经常还有别的诱人材料。以后有用，但第一趟容易害人分心。先挖蓝矿，记下路上看到的东西，带着完整的 Tadpole 回家。',
+  faqTitle: '常见问题',
+  faqs: [
+    {
+      title: 'Subnautica 2 Celestine 在哪里找？',
+      body: '当前攻略指向 Alien Ruins 生物群系较深区域，包括 Alien Ruins Research Base 东南方向、岩壁和低处洞壁。',
+    },
+    {
+      title: 'Celestine 长什么样？',
+      body: '它通常像岩壁上的蓝色矿脉。深水光线会让它不那么显眼，靠近 cliff 和 ledge 时要放慢一点。',
+    },
+    {
+      title: 'Celestine 需要 Sonic Resonator 吗？',
+      body: '大的矿点需要。跑深水路线前先把 Sonic Resonator 带上。',
+    },
+    {
+      title: 'Feedback Resonator 要多少 Celestine？',
+      body: 'Feedback Resonator 需要 2 个 Strontium。按 2 Celestine 加工 1 Strontium 算，至少要带回 4 个 Celestine。',
+    },
+  ],
+  readNextTitle: '继续看',
+  related: [
+    { href: Routes.Subnautica2Strontium, label: 'Strontium 指南' },
+    { href: Routes.Subnautica2SonicResonator, label: 'Sonic Resonator 指南' },
+    {
+      href: Routes.Subnautica2ConduitCrystal,
+      label: 'Conduit Crystal 指南',
+    },
+    {
+      href: Routes.Subnautica2FeedbackResonator,
+      label: 'Feedback Resonator 指南',
+    },
+    {
+      href: Routes.Subnautica2ModificationStation,
+      label: 'Modification Station 指南',
+    },
+    { href: Routes.Subnautica2Biomes, label: '生物群系指南' },
+    { href: Routes.Subnautica2Resources, label: '资源指南' },
+  ],
+  sourcesTitle: '来源说明',
+  sourceBody:
+    '2026 年 5 月 27 日核对 PC Gamer、GamesRadar、All Things How、GAMES.GG 和 Subnautica2.gg 的当前资料。Subnautica 2 仍在抢先体验，Celestine 路线、敌对生物和加工配方后续可能会调整。',
+  cardKicker: '深水矿物卡',
+  cardBody:
+    '整理 Alien Ruins 路线、蓝色矿脉查找、Sonic Resonator 采矿、Needler 风险、Strontium 加工和 Feedback Resonator 换算。',
+  cardTypeLabel: '类型',
+  cardTypeValue: '资源指南',
+  cardVerifiedLabel: '核对时间',
+  cardStatusLabel: '状态',
+  cardStatusValue: '抢先体验',
+};
+
+celestineCopy.ja = {
+  ...celestineCopy.en,
+  metadata: {
+    title: 'Subnautica 2 Celestine ガイド - 場所、Sonic Resonator、Strontium',
+    description:
+      'Subnautica 2のCelestineガイド。Alien Ruins深部、Needler、Sonic Resonator採掘、Strontium加工、Feedback Resonator用の必要数を整理します。',
+  },
+  title: 'Subnautica 2 Celestine ガイド',
+  description:
+    'CelestineはStrontiumの原料です。Alien Ruins周辺の深いルートで探し、Sonic Resonatorで採掘してから基地で加工します。',
+  quickLabel: '要点',
+  quickAnswer:
+    'Alien Ruins周辺の深い岩壁、ledge、NeedlerのいるルートでCelestineを探します。大きなノードにはSonic Resonatorが必要です。Feedback Resonator用にはStrontiumが2個必要なので、最低4個のCelestineを持ち帰ります。',
+  routeSteps: [
+    {
+      title: 'Alien Ruinsを目印にする',
+      body: 'Research Base、崖、Alien構造物を目印にして、開けた水域をむやみに探さないようにします。',
+    },
+    {
+      title: '低い岩壁を見る',
+      body: 'Celestineは青い鉱脈として岩壁や洞窟の壁に出ます。',
+    },
+    {
+      title: 'Sonic Resonatorを持つ',
+      body: '大きなCelestineノードにはSonic Resonatorが必要です。',
+    },
+    {
+      title: '4個をFeedback Resonator用に残す',
+      body: '4個のCelestineをProcessorで2個のStrontiumにできます。',
+    },
+  ],
+  tableRows: [
+    ['Tadpole depth', '深いルートを安全に戻るために必要です。'],
+    ['Sonic Resonator', '大きなノードを採掘します。'],
+    ['Repair kit', 'Needlerの事故に備えます。'],
+    [
+      'Processor plan',
+      '4 Celestine -> 2 StrontiumでFeedback Resonator分です。',
+    ],
+  ],
+  visualItems: [
+    {
+      label: 'Find',
+      value: 'Blue vein',
+      note: 'Alien Ruins周辺の岩壁を探します。',
+    },
+    { label: 'Mine', value: 'Sonic', note: 'Sonic Resonatorで採掘します。' },
+    {
+      label: 'Refine',
+      value: '4 -> 2',
+      note: 'Feedback Resonator用のStrontiumにします。',
+    },
+  ],
+  faqs: [
+    {
+      title: 'Celestineはどこ？',
+      body: 'Alien Ruins周辺の深い岩壁やledgeで探します。',
+    },
+    {
+      title: 'Sonic Resonatorは必要？',
+      body: '大きなCelestineノードには必要です。',
+    },
+    {
+      title: 'Feedback Resonator用には何個必要？',
+      body: 'Strontium 2個分として、最低4個のCelestineが必要です。',
+    },
+  ],
+  sourceBody:
+    '2026年5月27日にPC Gamer、GamesRadar、All Things How、GAMES.GG、Subnautica2.ggを確認しました。Early Access中はルートやレシピが変わる可能性があります。',
 };
 
 const fallbackLocaleAliases = {
