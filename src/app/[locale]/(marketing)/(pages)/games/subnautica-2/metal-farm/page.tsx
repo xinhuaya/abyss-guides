@@ -1,6 +1,7 @@
 import Container from '@/components/layout/container';
 import { LocaleLink } from '@/i18n/navigation';
 import { constructMetadata } from '@/lib/metadata';
+import { getBaseUrl, getUrlWithLocale } from '@/lib/urls';
 import { Routes } from '@/routes';
 import {
   AlertTriangleIcon,
@@ -45,6 +46,10 @@ const unlockSteps = [
     title: 'Build near existing power',
     body: 'Metal Farms appear to need serious power support, so place the first one near linked power infrastructure instead of far from your base network.',
   },
+  {
+    title: 'Pick the first metal before you build',
+    body: 'Troilite is usually the best first candidate because it competes with Mangalloy and Entangled Power Cell planning. Do not arrive at the machine with no input ready.',
+  },
 ];
 
 const buildRows = [
@@ -74,9 +79,76 @@ const workflow = [
   'Repeat once power and storage are stable.',
 ];
 
-export default function MetalFarmGuidePage() {
+const faqs = [
+  {
+    title: 'How do you unlock Metal Farm in Subnautica 2?',
+    body: 'Current PC Gamer reporting places Metal Farm scans in the deep green-pool area northeast of the Alien Ruins Research Base and says three scans unlock the blueprint.',
+  },
+  {
+    title: 'What does Metal Farm cost to build?',
+    body: 'Current reporting ties the build chain to Mangalloy Ingot and Axum Bacterial Culture. Because Early Access recipes can change, confirm the build menu before spending rare materials.',
+  },
+  {
+    title: 'What should you duplicate first with Metal Farm?',
+    body: 'Troilite is the strongest first candidate because it is rare and competes with Mangalloy and Entangled Power Cell crafting.',
+  },
+  {
+    title: 'Do Metal Farms need power?',
+    body: 'Yes. Build the first farm near stable power support so the production loop does not starve the rest of your base.',
+  },
+];
+
+export default async function MetalFarmGuidePage({
+  params,
+}: {
+  params: Promise<{ locale: Locale }>;
+}) {
+  const { locale } = await params;
+  const baseUrl = getBaseUrl().replace(/\/$/, '');
+  const pageUrl = getUrlWithLocale(Routes.Subnautica2MetalFarm, locale).replace(
+    /\/$/,
+    ''
+  );
+  const jsonLd = [
+    {
+      '@context': 'https://schema.org',
+      '@type': 'Article',
+      headline: 'Subnautica 2 Metal Farm Guide',
+      description:
+        'Metal Farm scan, build, power, and production notes for Troilite, Mangalloy Ingot, Axum Bacterial Culture, and Sonic Resonator.',
+      url: pageUrl,
+      datePublished: '2026-05-24',
+      dateModified: '2026-05-27',
+      inLanguage: locale,
+      author: {
+        '@type': 'Organization',
+        name: 'Abyss Guides',
+        url: baseUrl,
+      },
+      publisher: {
+        '@type': 'Organization',
+        name: 'Abyss Guides',
+        url: baseUrl,
+      },
+      mainEntityOfPage: pageUrl,
+    },
+    {
+      '@context': 'https://schema.org',
+      '@type': 'FAQPage',
+      mainEntity: faqs.map((faq) => ({
+        '@type': 'Question',
+        name: faq.title,
+        acceptedAnswer: {
+          '@type': 'Answer',
+          text: faq.body,
+        },
+      })),
+    },
+  ];
+
   return (
     <main className="min-h-screen bg-[#031314] text-[#dff8f0]">
+      <script type="application/ld+json">{JSON.stringify(jsonLd)}</script>
       <section className="relative overflow-hidden border-b border-cyan-200/10">
         <div
           aria-hidden="true"
@@ -121,6 +193,8 @@ export default function MetalFarmGuidePage() {
                 Alien Ruins Research Base, then build one with a Mangalloy Ingot
                 and Axum Bacterial Culture. Once powered, insert a metal such as
                 Troilite and break the produced node after the timer completes.
+                Save the first successful loop for materials that block multiple
+                recipes, not common ore.
               </p>
             </section>
 
@@ -202,6 +276,23 @@ export default function MetalFarmGuidePage() {
                 oxygen margin to abandon the scan if the route goes bad.
               </p>
             </section>
+
+            <section>
+              <h2 className="text-3xl font-semibold text-[#effffb]">FAQ</h2>
+              <div className="mt-5 grid gap-4">
+                {faqs.map((faq) => (
+                  <section
+                    key={faq.title}
+                    className="border border-cyan-200/12 bg-[#071f23] p-5"
+                  >
+                    <h3 className="font-semibold text-[#78ead7]">
+                      {faq.title}
+                    </h3>
+                    <p className="mt-3 leading-7 text-[#abc8c3]">{faq.body}</p>
+                  </section>
+                ))}
+              </div>
+            </section>
           </article>
 
           <aside className="space-y-5 lg:sticky lg:top-24 lg:self-start">
@@ -258,6 +349,18 @@ export default function MetalFarmGuidePage() {
                 >
                   Atacamite Location
                 </LocaleLink>
+                <LocaleLink
+                  className="text-[#78ead7] hover:underline"
+                  href={Routes.Subnautica2EntangledPowerCell}
+                >
+                  Entangled Power Cell Guide
+                </LocaleLink>
+                <LocaleLink
+                  className="text-[#78ead7] hover:underline"
+                  href={Routes.Subnautica2KarakorumPowerPlant}
+                >
+                  Karakorum Power Plant Route
+                </LocaleLink>
               </div>
             </section>
 
@@ -266,9 +369,10 @@ export default function MetalFarmGuidePage() {
                 Source note
               </h2>
               <p className="mt-3 text-sm leading-6 text-[#abc8c3]">
-                Checked May 24, 2026 against current PC Gamer Metal Farm
-                reporting. Recheck blueprint and ingredient requirements after
-                patches.
+                Checked May 27, 2026 against current PC Gamer Metal Farm
+                reporting, Troilite route notes, and Entangled Power Cell
+                material data. Recheck blueprint and ingredient requirements
+                after patches.
               </p>
               <a
                 className="mt-4 inline-flex text-sm text-[#78ead7] hover:underline"

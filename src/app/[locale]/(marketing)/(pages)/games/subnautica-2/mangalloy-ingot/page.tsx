@@ -1,6 +1,7 @@
 import Container from '@/components/layout/container';
 import { LocaleLink } from '@/i18n/navigation';
 import { constructMetadata } from '@/lib/metadata';
+import { getBaseUrl, getUrlWithLocale } from '@/lib/urls';
 import { Routes } from '@/routes';
 import {
   AlertTriangleIcon,
@@ -53,6 +54,10 @@ const uses = [
     body: 'Current reporting ties multiple Mangalloy Ingots to Alien Power Plant repair, so it is risky to treat the material as optional.',
   },
   {
+    title: 'Protect Entangled Power Cell materials',
+    body: 'Troilite also appears in the Entangled Power Cell recipe, so Mangalloy should not eat your whole Troilite stock unless the next power craft is already covered.',
+  },
+  {
     title: 'Connect resource pages',
     body: 'Mangalloy is a useful hub page because it links players from Troilite and Atacamite into crafting and production-system guides.',
   },
@@ -60,14 +65,82 @@ const uses = [
 
 const rules = [
   'Do not craft Mangalloy until you know whether you need the raw Troilite for a Metal Farm.',
+  'Hold one extra Troilite if Entangled Power Cell is already unlocked or close.',
   'Keep a separate storage label for rare metals so co-op teammates do not spend progression materials by accident.',
   'Verify recipe counts again after every Early Access crafting patch.',
   'Treat Mangalloy as a chain, not a single item: gather raw inputs, process basic ingots, then craft.',
 ];
 
-export default function MangalloyGuidePage() {
+const faqs = [
+  {
+    title: 'How do you make Mangalloy Ingot in Subnautica 2?',
+    body: 'Current reporting describes Mangalloy Ingot as a processed material made from Troilite, Atacamite, and Titanium Ingot. Check your in-game recipe before spending rare materials.',
+  },
+  {
+    title: 'What is Mangalloy Ingot used for?',
+    body: 'Mangalloy gates Metal Farm construction and later alien-system repair planning in current public guides.',
+  },
+  {
+    title: 'Should you spend your first Troilite on Mangalloy?',
+    body: 'Usually not immediately. Save one Troilite for Metal Farm duplication planning, and save another if Entangled Power Cell is part of your next power route.',
+  },
+  {
+    title: 'Why does Mangalloy need a separate storage box?',
+    body: 'Its inputs overlap with rare-metal production and power crafting. Keeping them labeled prevents accidental co-op spending and wasted deep-route dives.',
+  },
+];
+
+export default async function MangalloyGuidePage({
+  params,
+}: {
+  params: Promise<{ locale: Locale }>;
+}) {
+  const { locale } = await params;
+  const baseUrl = getBaseUrl().replace(/\/$/, '');
+  const pageUrl = getUrlWithLocale(Routes.Subnautica2Mangalloy, locale).replace(
+    /\/$/,
+    ''
+  );
+  const jsonLd = [
+    {
+      '@context': 'https://schema.org',
+      '@type': 'Article',
+      headline: 'How to Make Mangalloy Ingots in Subnautica 2',
+      description:
+        'Mangalloy Ingot recipe chain notes for Troilite, Atacamite, Titanium Ingot, Metal Farm, and Entangled Power Cell planning.',
+      url: pageUrl,
+      datePublished: '2026-05-24',
+      dateModified: '2026-05-27',
+      inLanguage: locale,
+      author: {
+        '@type': 'Organization',
+        name: 'Abyss Guides',
+        url: baseUrl,
+      },
+      publisher: {
+        '@type': 'Organization',
+        name: 'Abyss Guides',
+        url: baseUrl,
+      },
+      mainEntityOfPage: pageUrl,
+    },
+    {
+      '@context': 'https://schema.org',
+      '@type': 'FAQPage',
+      mainEntity: faqs.map((faq) => ({
+        '@type': 'Question',
+        name: faq.title,
+        acceptedAnswer: {
+          '@type': 'Answer',
+          text: faq.body,
+        },
+      })),
+    },
+  ];
+
   return (
     <main className="min-h-screen bg-[#031314] text-[#dff8f0]">
+      <script type="application/ld+json">{JSON.stringify(jsonLd)}</script>
       <section className="relative overflow-hidden border-b border-cyan-200/10">
         <div
           aria-hidden="true"
@@ -111,7 +184,9 @@ export default function MangalloyGuidePage() {
                 Current reporting lists Mangalloy Ingot as a processed material
                 made from Troilite, Atacamite, and a Titanium Ingot. Its biggest
                 early value is that it gates Metal Farm construction and later
-                power-plant progression.
+                power-plant progression. Do not spend the Troilite side of the
+                recipe until Metal Farm and Entangled Power Cell needs are
+                clear.
               </p>
             </section>
 
@@ -191,6 +266,23 @@ export default function MangalloyGuidePage() {
                 ))}
               </ul>
             </section>
+
+            <section>
+              <h2 className="text-3xl font-semibold text-[#effffb]">FAQ</h2>
+              <div className="mt-5 grid gap-4">
+                {faqs.map((faq) => (
+                  <section
+                    key={faq.title}
+                    className="border border-cyan-200/12 bg-[#071f23] p-5"
+                  >
+                    <h3 className="font-semibold text-[#78ead7]">
+                      {faq.title}
+                    </h3>
+                    <p className="mt-3 leading-7 text-[#abc8c3]">{faq.body}</p>
+                  </section>
+                ))}
+              </div>
+            </section>
           </article>
 
           <aside className="space-y-5 lg:sticky lg:top-24 lg:self-start">
@@ -229,6 +321,18 @@ export default function MangalloyGuidePage() {
                 >
                   Metal Farm Guide
                 </LocaleLink>
+                <LocaleLink
+                  className="text-[#78ead7] hover:underline"
+                  href={Routes.Subnautica2EntangledPowerCell}
+                >
+                  Entangled Power Cell Guide
+                </LocaleLink>
+                <LocaleLink
+                  className="text-[#78ead7] hover:underline"
+                  href={Routes.Subnautica2KarakorumPowerPlant}
+                >
+                  Karakorum Power Plant Route
+                </LocaleLink>
               </div>
             </section>
 
@@ -237,8 +341,9 @@ export default function MangalloyGuidePage() {
                 Source note
               </h2>
               <p className="mt-3 text-sm leading-6 text-[#abc8c3]">
-                Checked May 24, 2026 against current PC Gamer reporting on Metal
-                Farms and Atacamite. Recipe data is patch-sensitive.
+                Checked May 27, 2026 against current PC Gamer reporting on Metal
+                Farms and Atacamite, plus Entangled Power Cell recipe data.
+                Recipe data is patch-sensitive.
               </p>
               <div className="mt-4 grid gap-2 text-sm">
                 <a
@@ -256,6 +361,14 @@ export default function MangalloyGuidePage() {
                   target="_blank"
                 >
                   PC Gamer Atacamite guide
+                </a>
+                <a
+                  className="text-[#78ead7] hover:underline"
+                  href="https://subnautica2.gg/blueprints/entangled-power-cell"
+                  rel="noreferrer"
+                  target="_blank"
+                >
+                  Subnautica2.gg Entangled Power Cell
                 </a>
               </div>
             </section>

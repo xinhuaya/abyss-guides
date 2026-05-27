@@ -1,6 +1,7 @@
 import Container from '@/components/layout/container';
 import { LocaleLink } from '@/i18n/navigation';
 import { constructMetadata } from '@/lib/metadata';
+import { getBaseUrl, getUrlWithLocale } from '@/lib/urls';
 import { Routes } from '@/routes';
 import {
   AlertTriangleIcon,
@@ -22,7 +23,7 @@ export async function generateMetadata({
   return constructMetadata({
     title: 'Where to Find Atacamite in Subnautica 2 - Alien Ruins Route',
     description:
-      'Find Atacamite in Subnautica 2 with Alien Ruins route notes, Mangalloy Ingot uses, depth requirements, and Early Access caveats.',
+      'Find Atacamite in Subnautica 2 with Alien Ruins route notes, Mangalloy Ingot uses, Metal Farm planning, depth requirements, and Early Access caveats.',
     locale,
     pathname: Routes.Subnautica2Atacamite,
   });
@@ -45,6 +46,10 @@ const routeNotes = [
     title: 'Do not leave with only one sample',
     body: 'Atacamite feeds Mangalloy Ingots, Metal Farm planning, and later power-plant progression, so gather a buffer when the route is safe.',
   },
+  {
+    title: 'Pair it with Troilite planning',
+    body: 'Mangalloy asks you to think about Atacamite and Troilite together. If you find Atacamite first, mark the route and check whether the Troilite trip is already on your next dive list.',
+  },
 ];
 
 const useRows = [
@@ -66,9 +71,76 @@ const useRows = [
   ],
 ];
 
-export default function AtacamiteGuidePage() {
+const faqs = [
+  {
+    title: 'Where do you find Atacamite in Subnautica 2?',
+    body: 'Current route reporting points toward lower-depth Alien Ruins areas. PC Gamer describes a cluster east-northeast of the Alien Ruins Research Base, near alien dwellings and quartz nodes.',
+  },
+  {
+    title: 'What do you need before farming Atacamite?',
+    body: 'Bring the Tadpole Depth Module, Sonic Resonator, oxygen margin, and a way to mark the route. Treat it as a deeper mining trip, not a quick swim.',
+  },
+  {
+    title: 'What is Atacamite used for?',
+    body: 'Atacamite is one of the rare inputs reported for Mangalloy Ingot crafting, which then connects to Metal Farms and later alien-system work.',
+  },
+  {
+    title: 'Should you farm extra Atacamite?',
+    body: 'Yes, if the route is safe. Mangalloy and Metal Farm planning can use more than a single sample, and returning to the same deep route repeatedly wastes time.',
+  },
+];
+
+export default async function AtacamiteGuidePage({
+  params,
+}: {
+  params: Promise<{ locale: Locale }>;
+}) {
+  const { locale } = await params;
+  const baseUrl = getBaseUrl().replace(/\/$/, '');
+  const pageUrl = getUrlWithLocale(Routes.Subnautica2Atacamite, locale).replace(
+    /\/$/,
+    ''
+  );
+  const jsonLd = [
+    {
+      '@context': 'https://schema.org',
+      '@type': 'Article',
+      headline: 'Where to Find Atacamite in Subnautica 2',
+      description:
+        'Atacamite route notes for Alien Ruins, Mangalloy Ingot, Metal Farm, and deep mining prep.',
+      url: pageUrl,
+      datePublished: '2026-05-23',
+      dateModified: '2026-05-27',
+      inLanguage: locale,
+      author: {
+        '@type': 'Organization',
+        name: 'Abyss Guides',
+        url: baseUrl,
+      },
+      publisher: {
+        '@type': 'Organization',
+        name: 'Abyss Guides',
+        url: baseUrl,
+      },
+      mainEntityOfPage: pageUrl,
+    },
+    {
+      '@context': 'https://schema.org',
+      '@type': 'FAQPage',
+      mainEntity: faqs.map((faq) => ({
+        '@type': 'Question',
+        name: faq.title,
+        acceptedAnswer: {
+          '@type': 'Answer',
+          text: faq.body,
+        },
+      })),
+    },
+  ];
+
   return (
     <main className="min-h-screen bg-[#031314] text-[#dff8f0]">
+      <script type="application/ld+json">{JSON.stringify(jsonLd)}</script>
       <section className="relative overflow-hidden border-b border-cyan-200/10">
         <div
           aria-hidden="true"
@@ -112,7 +184,8 @@ export default function AtacamiteGuidePage() {
                 Look for Atacamite around lower-depth Alien Ruins routes after
                 you have the Tadpole Depth Module. PC Gamer reports a strong
                 cluster east-northeast of the Alien Ruins Research Base, near
-                alien dwellings and quartz nodes.
+                alien dwellings and quartz nodes. Save it for Mangalloy before
+                you treat it like spare mineral stock.
               </p>
             </section>
 
@@ -177,6 +250,23 @@ export default function AtacamiteGuidePage() {
                 it.
               </p>
             </section>
+
+            <section>
+              <h2 className="text-3xl font-semibold text-[#effffb]">FAQ</h2>
+              <div className="mt-5 grid gap-4">
+                {faqs.map((faq) => (
+                  <section
+                    key={faq.title}
+                    className="border border-cyan-200/12 bg-[#071f23] p-5"
+                  >
+                    <h3 className="font-semibold text-[#78ead7]">
+                      {faq.title}
+                    </h3>
+                    <p className="mt-3 leading-7 text-[#abc8c3]">{faq.body}</p>
+                  </section>
+                ))}
+              </div>
+            </section>
           </article>
 
           <aside className="space-y-5 lg:sticky lg:top-24 lg:self-start">
@@ -199,6 +289,18 @@ export default function AtacamiteGuidePage() {
                 </LocaleLink>
                 <LocaleLink
                   className="text-[#78ead7] hover:underline"
+                  href={Routes.Subnautica2ConduitCrystal}
+                >
+                  Conduit Crystal Guide
+                </LocaleLink>
+                <LocaleLink
+                  className="text-[#78ead7] hover:underline"
+                  href={Routes.Subnautica2KarakorumPowerPlant}
+                >
+                  Karakorum Power Plant Route
+                </LocaleLink>
+                <LocaleLink
+                  className="text-[#78ead7] hover:underline"
                   href={Routes.Subnautica2MetalFarm}
                 >
                   Metal Farm Guide
@@ -211,7 +313,8 @@ export default function AtacamiteGuidePage() {
                 Source note
               </h2>
               <p className="mt-3 text-sm leading-6 text-[#abc8c3]">
-                Checked May 23, 2026 against current Atacamite route reporting.
+                Checked May 27, 2026 against current Atacamite route reporting,
+                Mangalloy planning notes, and nearby deep-route material pages.
                 Recheck after Subnautica 2 resource patches.
               </p>
               <a
