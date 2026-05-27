@@ -16,7 +16,7 @@ type MildAcidCopy = ResourceGuideCopy & {
 };
 
 const PUBLISHED_AT = '2026-05-25';
-const UPDATED_AT = '2026-05-25';
+const UPDATED_AT = '2026-05-27';
 
 const sharedSources = [
   {
@@ -43,10 +43,10 @@ const mildAcidCopy: Record<string, MildAcidCopy> = {
     eyebrow: 'Subnautica 2 chemical material',
     title: 'Subnautica 2 Mild Acid Guide',
     description:
-      'Mild Acid is where the pouch route stops being just a battery errand. Once you need Biolab, Processor, or Echo Location, the little Acidic Raion Pouch loop turns into a real crafting bottleneck.',
+      'Mild Acid is where the pouch route stops being just a battery errand. Once you need Biolab, Processor, Echo Location, or the Strong Acid chain, the little Acidic Raion Pouch loop turns into a real crafting bottleneck.',
     quickLabel: 'Quick answer',
     quickAnswer:
-      'Current Subnautica2.gg and Subnautica2Hub blueprint data list Mild Acid as unlocked by default and crafted at the Fabricator with Acidic Raion Pouch x2 and Copper x1. Dexerto also lists a Processor route that uses Acidic Raion Pouch x2. Current use lists connect Mild Acid to Biolab, Processor, and Echo Location, so keep extra pouches if those upgrades are next.',
+      'Current Subnautica2.gg and Subnautica2Hub blueprint data list Mild Acid as unlocked by default and crafted at the Fabricator with Acidic Raion Pouch x2 and Copper x1. Dexerto also lists a Processor route that uses Acidic Raion Pouch x2. Current use lists connect Mild Acid to Biolab, Processor, and Echo Location, and the Processor then opens the Strong Acid route, so keep extra pouches if chemistry is next.',
     contentsLabel: 'Contents',
     routeTitle: 'Mild Acid crafting plan',
     routeSteps: [
@@ -68,7 +68,7 @@ const mildAcidCopy: Record<string, MildAcidCopy> = {
       },
       {
         title: 'Store it near upgrade crafting',
-        body: 'Biolab, Processor, and Echo Location sit around different build and upgrade loops. A labeled chemical locker saves a lot of "where did I put that acid" time.',
+        body: 'Biolab, Processor, and Echo Location sit around different build and upgrade loops. Once the Processor exists, it also points you toward Strong Acid and later oxygen or vehicle prep. A labeled chemical locker saves a lot of "where did I put that acid" time.',
       },
     ],
     tableTitle: 'Mild Acid checklist',
@@ -86,6 +86,10 @@ const mildAcidCopy: Record<string, MildAcidCopy> = {
       [
         'Used in',
         'Current public data connects Mild Acid to Biolab, Processor, and Echo Location.',
+      ],
+      [
+        'Next chain',
+        'Processor opens Strong Acid, which can affect Power Cell and Rebreather planning.',
       ],
       [
         'Patch check',
@@ -107,7 +111,7 @@ const mildAcidCopy: Record<string, MildAcidCopy> = {
       {
         label: 'Spend',
         value: 'Upgrades',
-        note: 'Biolab, Processor, Echo Location.',
+        note: 'Biolab, Processor, Echo Location, then Strong Acid.',
       },
     ],
     cautionTitle: 'Do not spend every pouch on batteries',
@@ -125,7 +129,7 @@ const mildAcidCopy: Record<string, MildAcidCopy> = {
       },
       {
         title: 'What is Mild Acid used for?',
-        body: 'Current public data connects Mild Acid to Biolab, Processor, and Echo Location recipes.',
+        body: 'Current public data connects Mild Acid to Biolab, Processor, and Echo Location recipes. Processor then becomes the bridge into Strong Acid, so the pouch route keeps mattering after the first base stations.',
       },
       {
         title: 'Do you need to scan Mild Acid?',
@@ -143,13 +147,15 @@ const mildAcidCopy: Record<string, MildAcidCopy> = {
       { href: Routes.Subnautica2EchoLocation, label: 'Echo Location Guide' },
       { href: Routes.Subnautica2BasicBattery, label: 'Basic Battery Guide' },
       { href: Routes.Subnautica2Copper, label: 'Copper Location' },
+      { href: Routes.Subnautica2FiberMesh, label: 'Fiber Mesh Guide' },
+      { href: Routes.Subnautica2Rebreather, label: 'Rebreather Guide' },
       { href: Routes.Subnautica2Crafting, label: 'Crafting Guide' },
       { href: Routes.Subnautica2Resources, label: 'Resources Guide' },
       { href: Routes.Subnautica2StrongAcid, label: 'Strong Acid Guide' },
     ],
     sourcesTitle: 'Source note',
     sourceBody:
-      'Checked May 25, 2026 against Subnautica2.gg, Subnautica2Hub, and Dexerto Mild Acid pages. Public Early Access datasets do not fully agree on station routes, so this page separates the agreed Fabricator recipe from the Processor route.',
+      'Checked May 27, 2026 against Subnautica2.gg, Subnautica2Hub, and Dexerto Mild Acid pages. Public Early Access datasets do not fully agree on station routes, so this page separates the agreed Fabricator recipe from the Processor route.',
     cardKicker: 'Chemical card',
     cardBody:
       'Acidic Raion Pouch, Copper, Fabricator recipe, Processor route, Biolab and Echo Location uses.',
@@ -397,6 +403,53 @@ const mildAcidCopy: Record<string, MildAcidCopy> = {
     cardStatusLabel: '状態',
     cardStatusValue: 'Early Access',
   },
+};
+
+mildAcidCopy.zh = {
+  ...mildAcidCopy.zh,
+  quickAnswer:
+    'Subnautica2.gg 和 Subnautica2Hub 当前把 Mild Acid 写成默认解锁，在 Fabricator 用 Acidic Raion Pouch x2 和 Copper x1 制作。Dexerto 也列了 Processor 路线，材料是 Acidic Raion Pouch x2。Mild Acid 会接到 Biolab、Processor 和 Echo Location；Processor 做出来后又会通向 Strong Acid，所以后面要做化学链时，pouch 不要全做成电池。',
+  routeSteps: [
+    ...mildAcidCopy.zh.routeSteps.slice(0, 4),
+    {
+      title: '单独放化学材料箱',
+      body: 'Biolab、Processor、Echo Location 会把你带到不同制作路线。Processor 解锁后还会接 Strong Acid，后面可能影响 Power Cell、Fiber Mesh 和 Rebreather 规划。Mild Acid 单独收纳，后面会少翻箱子。',
+    },
+  ],
+  tableRows: [
+    ...mildAcidCopy.zh.tableRows,
+    [
+      '下一条链',
+      'Processor 会接到 Strong Acid，再影响 Power Cell 和 Rebreather 规划。',
+    ],
+  ],
+  related: [
+    {
+      href: Routes.Subnautica2AcidicRaionPouch,
+      label: 'Acidic Raion Pouch 指南',
+    },
+    { href: Routes.Subnautica2Processor, label: 'Processor 指南' },
+    { href: Routes.Subnautica2Biolab, label: 'Biolab 指南' },
+    { href: Routes.Subnautica2EchoLocation, label: 'Echo Location 指南' },
+    { href: Routes.Subnautica2StrongAcid, label: 'Strong Acid 指南' },
+    { href: Routes.Subnautica2FiberMesh, label: 'Fiber Mesh 指南' },
+    { href: Routes.Subnautica2Rebreather, label: 'Rebreather 指南' },
+    { href: Routes.Subnautica2BasicBattery, label: 'Basic Battery 指南' },
+    { href: Routes.Subnautica2Crafting, label: '制作指南' },
+  ],
+  sourceBody:
+    '2026 年 5 月 27 日核对 Subnautica2.gg、Subnautica2Hub 和 Dexerto 的 Mild Acid 页面。当前公开抢先体验数据对制作站路线并不完全一致，所以页面把共识 Fabricator 配方和 Processor 路线分开写。',
+};
+
+mildAcidCopy.ja = {
+  ...mildAcidCopy.en,
+  metadata: {
+    title: 'Subnautica 2 Mild Acid Guide',
+    description:
+      'Guide for Mild Acid recipe, Acidic Raion Pouch, Copper, Fabricator, Processor route, Strong Acid bridge, and uses.',
+  },
+  sourceBody:
+    'Checked May 27, 2026 against Subnautica2.gg, Subnautica2Hub, and Dexerto Mild Acid pages. Public Early Access station-route data does not fully agree.',
 };
 
 const fallbackLocaleAliases = {

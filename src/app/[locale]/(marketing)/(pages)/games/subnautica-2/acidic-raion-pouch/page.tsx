@@ -16,7 +16,7 @@ type AcidicRaionPouchCopy = ResourceGuideCopy & {
 };
 
 const PUBLISHED_AT = '2026-05-25';
-const UPDATED_AT = '2026-05-25';
+const UPDATED_AT = '2026-05-27';
 
 const sharedSources = [
   {
@@ -44,10 +44,10 @@ const acidicRaionPouchCopy: Record<string, AcidicRaionPouchCopy> = {
     eyebrow: 'Subnautica 2 battery material',
     title: 'Subnautica 2 Acidic Raion Pouch Guide',
     description:
-      'Acidic Raion Pouch is the part that makes the early battery route feel less obvious than it should. Copper is easy to remember. This pouch is the thing you forget, then the Scanner waits.',
+      'Acidic Raion Pouch is the part that makes the early battery route feel less obvious than it should. Copper is easy to remember. This pouch is the thing you forget, then the Scanner, Mild Acid, and Processor plans wait.',
     quickLabel: 'Quick answer',
     quickAnswer:
-      'Current Subnautica2Hub data lists Acidic Raion Pouch as a harvest raw resource found in Coral Gardens. Current item data connects it to Basic Battery x1, Mild Acid x2 at the Fabricator, and Mild Acid x2 at a Processor. The same data does not provide stable spawn coordinates yet, so treat exact pouch routes as patch-sensitive until the map data fills in.',
+      'Current Subnautica2Hub data lists Acidic Raion Pouch as a harvest raw resource found in Coral Gardens. Current item data connects it to Basic Battery x1, Mild Acid x2 at the Fabricator, and Mild Acid x2 at a Processor. That Mild Acid route leads into Biolab, Processor, and Strong Acid planning. The same data does not provide stable spawn coordinates yet, so treat exact pouch routes as patch-sensitive until the map data fills in.',
     contentsLabel: 'Contents',
     routeTitle: 'Acidic Raion Pouch route',
     routeSteps: [
@@ -65,7 +65,7 @@ const acidicRaionPouchCopy: Record<string, AcidicRaionPouchCopy> = {
       },
       {
         title: 'Save extra pouches for Mild Acid',
-        body: 'Current data also lists Mild Acid at both Fabricator and Processor routes using Acidic Raion Pouch x2. Do not turn every pouch into batteries if chemical crafting is next.',
+        body: 'Current data also lists Mild Acid at both Fabricator and Processor routes using Acidic Raion Pouch x2. Do not turn every pouch into batteries if Biolab, Processor, Strong Acid, or deeper equipment crafting is next.',
       },
       {
         title: 'Write down the room, not just the biome',
@@ -79,6 +79,10 @@ const acidicRaionPouchCopy: Record<string, AcidicRaionPouchCopy> = {
       ['Obtain method', 'Harvest, not a default loose mineral pickup.'],
       ['Basic Battery', 'Uses Acidic Raion Pouch x1 with Copper x2.'],
       ['Mild Acid', 'Current data lists Acidic Raion Pouch x2.'],
+      [
+        'Follow-up crafts',
+        'Mild Acid points toward Biolab, Processor, and later Strong Acid planning.',
+      ],
       [
         'Map confidence',
         'Public data currently has no stable spawn-coordinate list.',
@@ -113,7 +117,7 @@ const acidicRaionPouchCopy: Record<string, AcidicRaionPouchCopy> = {
       },
       {
         title: 'What is Acidic Raion Pouch used for?',
-        body: 'Current data lists it for Basic Battery, Mild Acid at the Fabricator, and Mild Acid at a Processor.',
+        body: 'Current data lists it for Basic Battery, Mild Acid at the Fabricator, and Mild Acid at a Processor. Mild Acid then gates Biolab, Processor, and the Strong Acid route.',
       },
       {
         title: 'How many Acidic Raion Pouches does Basic Battery need?',
@@ -128,6 +132,9 @@ const acidicRaionPouchCopy: Record<string, AcidicRaionPouchCopy> = {
     related: [
       { href: Routes.Subnautica2BasicBattery, label: 'Basic Battery Guide' },
       { href: Routes.Subnautica2MildAcid, label: 'Mild Acid Guide' },
+      { href: Routes.Subnautica2Processor, label: 'Processor Guide' },
+      { href: Routes.Subnautica2Biolab, label: 'Biolab Guide' },
+      { href: Routes.Subnautica2StrongAcid, label: 'Strong Acid Guide' },
       { href: Routes.Subnautica2Copper, label: 'Copper Location' },
       { href: Routes.Subnautica2Scanner, label: 'Scanner Guide' },
       { href: Routes.Subnautica2Resources, label: 'Resources Guide' },
@@ -136,7 +143,7 @@ const acidicRaionPouchCopy: Record<string, AcidicRaionPouchCopy> = {
     ],
     sourcesTitle: 'Source note',
     sourceBody:
-      'Checked May 25, 2026 against Subnautica2.gg item and Acid Raion databank pages plus Subnautica2Hub resource data. Exact spawns, harvest behavior, and crafting uses can change during Early Access patches.',
+      'Checked May 27, 2026 against Subnautica2.gg item and Acid Raion databank pages plus Subnautica2Hub resource data. Exact spawns, harvest behavior, and crafting uses can change during Early Access patches.',
     cardKicker: 'Harvest card',
     cardBody:
       'Coral Gardens lead, harvest notes, Basic Battery use, Mild Acid use, and map-data caveat.',
@@ -362,6 +369,50 @@ const acidicRaionPouchCopy: Record<string, AcidicRaionPouchCopy> = {
     cardStatusLabel: '状態',
     cardStatusValue: 'Early Access',
   },
+};
+
+acidicRaionPouchCopy.zh = {
+  ...acidicRaionPouchCopy.zh,
+  quickAnswer:
+    'Subnautica2Hub 当前把 Acidic Raion Pouch 写成可 harvest 的 raw resource，地点线索是 Coral Gardens。当前物品数据把它用于 Basic Battery x1、Fabricator 里的 Mild Acid x2，以及 Processor 里的 Mild Acid x2。Mild Acid 又会接到 Biolab、Processor 和 Strong Acid，所以这不是只给早期电池用的一次性材料。公开数据暂时没有稳定坐标列表，具体路线要按补丁后数据重新核对。',
+  routeSteps: [
+    ...acidicRaionPouchCopy.zh.routeSteps.slice(0, 3),
+    {
+      title: '多出来的留给 Mild Acid',
+      body: '当前资料把 Acidic Raion Pouch x2 写进 Mild Acid 的 Fabricator 和 Processor 路线。后面要做 Biolab、Processor、Strong Acid 或深潜装备时，别把所有 pouch 都做成电池。',
+    },
+    {
+      title: '记房间路线，不只记生物群系',
+      body: '在坐标数据更完整之前，自己记一条路线更有用：入口、深度、附近地标、怎么回去。只记 Coral Gardens，很容易下一趟又迷路。',
+    },
+  ],
+  tableRows: [
+    ...acidicRaionPouchCopy.zh.tableRows,
+    ['后续制作', 'Mild Acid 会接到 Biolab、Processor 和 Strong Acid。'],
+  ],
+  related: [
+    { href: Routes.Subnautica2BasicBattery, label: 'Basic Battery 指南' },
+    { href: Routes.Subnautica2MildAcid, label: 'Mild Acid 指南' },
+    { href: Routes.Subnautica2Processor, label: 'Processor 指南' },
+    { href: Routes.Subnautica2Biolab, label: 'Biolab 指南' },
+    { href: Routes.Subnautica2StrongAcid, label: 'Strong Acid 指南' },
+    { href: Routes.Subnautica2Copper, label: 'Copper 位置' },
+    { href: Routes.Subnautica2Scanner, label: 'Scanner 指南' },
+    { href: Routes.Subnautica2Crafting, label: '制作指南' },
+  ],
+  sourceBody:
+    '2026 年 5 月 27 日核对 Subnautica2.gg 的物品页、Acid Raion databank，以及 Subnautica2Hub 的资源页。抢先体验期间，刷新位置、采集方式和用途都可能随补丁变化。',
+};
+
+acidicRaionPouchCopy.ja = {
+  ...acidicRaionPouchCopy.en,
+  metadata: {
+    title: 'Subnautica 2 Acidic Raion Pouch Guide',
+    description:
+      'Guide for Acidic Raion Pouch location, Coral Gardens, harvest route, Basic Battery, Mild Acid, Processor, and Strong Acid planning.',
+  },
+  sourceBody:
+    'Checked May 27, 2026 against Subnautica2.gg item and Acid Raion databank pages plus Subnautica2Hub resource data. Early Access spawn and crafting data can change.',
 };
 
 const fallbackLocaleAliases = {

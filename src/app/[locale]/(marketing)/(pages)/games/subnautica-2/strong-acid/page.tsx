@@ -15,7 +15,7 @@ export async function generateMetadata({
   return constructMetadata({
     title: 'How to Get Strong Acid in Subnautica 2 - Necrolei Cyst Route',
     description:
-      'Craft Strong Acid in Subnautica 2 with Necrolei Cyst route notes, Processor unlocks, Power Cell planning, and Tadpole prep.',
+      'Craft Strong Acid in Subnautica 2 with Necrolei Cyst route notes, Processor unlocks, Fiber Mesh and Rebreather planning, Power Cell use, and Tadpole prep.',
     locale,
     pathname: Routes.Subnautica2StrongAcid,
   });
@@ -26,9 +26,9 @@ export default function StrongAcidGuidePage() {
     <LinkedGuidePage
       caution={{
         title: 'Strong Acid is a vehicle-chain material',
-        body: 'Do not treat Necrolei Cysts as random plants. Strong Acid feeds Power Cell crafting, which means it can directly block Tadpole progress.',
+        body: 'Do not treat Necrolei Cysts as random plants. Strong Acid feeds Power Cell planning and now sits close to the Fiber Mesh and Rebreather prep route too.',
       }}
-      description="Strong Acid is one of the first materials that forces you to connect exploration, processing, and vehicle planning. It starts with Necrolei Cysts and a Processor."
+      description="Strong Acid is one of the first materials that forces you to connect exploration, processing, oxygen prep, and vehicle planning. It starts with Necrolei Cysts and a Processor, then quickly affects what you can build next."
       eyebrow="Necrolei Cyst crafting route"
       faqs={[
         {
@@ -39,12 +39,12 @@ export default function StrongAcidGuidePage() {
         {
           question: 'Why do you need Strong Acid?',
           answer:
-            'Strong Acid is used for Power Cell crafting, which is part of getting the Tadpole vehicle running.',
+            'Strong Acid is used for Power Cell crafting, which is part of getting the Tadpole vehicle running. Current route planning also connects it to Fiber Mesh and Rebreather prep through the broader chemistry chain.',
         },
       ]}
       icon={FlaskConicalIcon}
       pathname={Routes.Subnautica2StrongAcid}
-      quickAnswer="To get Strong Acid, gather Necrolei Cysts around the Old Habitat route and craft them at the Processor. PC Gamer notes that Strong Acid is key for Power Cells, which are needed for the Tadpole."
+      quickAnswer="To get Strong Acid, gather Necrolei Cysts around the Old Habitat route and craft them at the Processor. PC Gamer notes that Strong Acid is key for Power Cells, which are needed for the Tadpole. Keep a small reserve if your next route also includes Fiber Mesh or Rebreather prep."
       related={[
         { href: Routes.Subnautica2NecroleiCyst, label: 'Necrolei Cyst Guide' },
         { href: Routes.Subnautica2Processor, label: 'Processor Guide' },
@@ -52,6 +52,7 @@ export default function StrongAcidGuidePage() {
         { href: Routes.Subnautica2Sulfur, label: 'Sulfur Location Guide' },
         { href: Routes.Subnautica2Gold, label: 'Gold Location Guide' },
         { href: Routes.Subnautica2FiberMesh, label: 'Fiber Mesh Guide' },
+        { href: Routes.Subnautica2Rebreather, label: 'Rebreather Guide' },
         { href: Routes.Subnautica2Tadpole, label: 'Tadpole Vehicle' },
         { href: Routes.Subnautica2PowerCell, label: 'Power Cell Guide' },
         {
@@ -79,6 +80,10 @@ export default function StrongAcidGuidePage() {
           body: 'Strong Acid matters because it feeds Power Cell crafting. If your next milestone is Tadpole, do not spend the chain carelessly.',
         },
         {
+          title: 'Check the oxygen route before you spend it',
+          body: 'Recent Rebreather and Fiber Mesh notes pull this material chain into deep-route planning. If you are about to push below your comfortable oxygen range, keep enough chemistry stock to finish the breathing kit instead of burning everything on vehicle parts.',
+        },
+        {
           title: 'Return with a buffer',
           body: 'If the route is safe, gather more than the minimum. Vehicle chains often need extra attempts, repairs, or backup power planning.',
         },
@@ -92,6 +97,10 @@ export default function StrongAcidGuidePage() {
           href: 'https://www.gamesradar.com/games/survival/subnautica-2-necrolei-cysts/',
           label: 'GamesRadar Necrolei Cyst guide',
         },
+        {
+          href: 'https://www.pcgamer.com/games/survival-crafting/subnautica-2-rebreather-how-to-get/',
+          label: 'PC Gamer Rebreather guide',
+        },
       ]}
       table={{
         headers: ['Material or station', 'Role'],
@@ -99,6 +108,10 @@ export default function StrongAcidGuidePage() {
           ['Necrolei Cyst', 'Key gathered ingredient for Strong Acid.'],
           ['Processor', 'Station used to craft Strong Acid.'],
           ['Strong Acid', 'Processing material used in Power Cell crafting.'],
+          [
+            'Fiber Mesh / Rebreather',
+            'Deep-route prep that can compete for the same chemistry plan.',
+          ],
           ['Power Cell', 'Vehicle-chain item connected to Tadpole progress.'],
         ],
         title: 'Strong Acid crafting chain',

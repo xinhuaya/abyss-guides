@@ -16,7 +16,7 @@ type ProcessorCopy = ResourceGuideCopy & {
 };
 
 const PUBLISHED_AT = '2026-05-25';
-const UPDATED_AT = '2026-05-25';
+const UPDATED_AT = '2026-05-27';
 
 const sharedSources = [
   {
@@ -44,10 +44,10 @@ const processorCopy: Record<string, ProcessorCopy> = {
     eyebrow: 'Subnautica 2 production station',
     title: 'Subnautica 2 Processor Guide',
     description:
-      'Processor is the station that turns a base into a workshop. Once it is built, materials like Strong Acid, Strontium, ingots, and advanced chains stop being guesses and start becoming planned batches.',
+      'Processor is the station that turns a base into a workshop. Once it is built, materials like Strong Acid, Strontium, ingots, Fiber Mesh prep, and advanced chains stop being guesses and start becoming planned batches.',
     quickLabel: 'Quick answer',
     quickAnswer:
-      'Current Subnautica2.gg and Subnautica2Hub data list Processor as a scan-unlocked interior facility built with Titanium x2, Mild Acid x1, and Copper Wire x1. Subnautica2.gg shows verified scan locations, while PC Gamer points players toward the Old Habitat north of the Life Pod during the black-box route. Build it with the Habitat Builder/Builder Tool after the scan unlock lands.',
+      'Current Subnautica2.gg and Subnautica2Hub data list Processor as a scan-unlocked interior facility built with Titanium x2, Mild Acid x1, and Copper Wire x1. Subnautica2.gg shows verified scan locations, while PC Gamer points players toward the Old Habitat north of the Life Pod during the black-box route. Build it with the Habitat Builder/Builder Tool, then use it to keep Strong Acid, Strontium, and later Rebreather prep organized.',
     contentsLabel: 'Contents',
     routeTitle: 'Processor unlock plan',
     routeSteps: [
@@ -69,7 +69,7 @@ const processorCopy: Record<string, ProcessorCopy> = {
       },
       {
         title: 'Batch expensive conversions',
-        body: 'Do not feed rare materials one by one without a goal. Check whether the next craft needs Strong Acid, Strontium, Titanium Ingots, or another processed output before spending the input pile.',
+        body: 'Do not feed rare materials one by one without a goal. Check whether the next craft needs Strong Acid, Strontium, Titanium Ingots, Fiber Mesh-linked gear, or another processed output before spending the input pile.',
       },
     ],
     tableTitle: 'Processor checklist',
@@ -92,6 +92,10 @@ const processorCopy: Record<string, ProcessorCopy> = {
         'Copper Wire x1',
         'Reserve wire instead of spending every Copper stack.',
       ],
+      [
+        'Output plan',
+        'Decide whether the next batch is for Strong Acid, ingots, or deep-route equipment.',
+      ],
     ],
     visualTitle: 'Processing chain',
     visualItems: [
@@ -108,7 +112,7 @@ const processorCopy: Record<string, ProcessorCopy> = {
       {
         label: 'Convert',
         value: 'Materials',
-        note: 'Strong Acid, Strontium, ingots, and later chains.',
+        note: 'Strong Acid, Strontium, ingots, and later oxygen chains.',
       },
     ],
     cautionTitle: 'Do not build the station before the material route is ready',
@@ -154,6 +158,8 @@ const processorCopy: Record<string, ProcessorCopy> = {
         label: 'Habitat Builder Guide',
       },
       { href: Routes.Subnautica2StrongAcid, label: 'Strong Acid Guide' },
+      { href: Routes.Subnautica2FiberMesh, label: 'Fiber Mesh Guide' },
+      { href: Routes.Subnautica2Rebreather, label: 'Rebreather Guide' },
       { href: Routes.Subnautica2NecroleiCyst, label: 'Necrolei Cyst Guide' },
       { href: Routes.Subnautica2PowerCell, label: 'Power Cell Guide' },
       { href: Routes.Subnautica2SilverIngot, label: 'Silver Ingot Guide' },
@@ -162,7 +168,7 @@ const processorCopy: Record<string, ProcessorCopy> = {
     ],
     sourcesTitle: 'Source note',
     sourceBody:
-      'Checked May 25, 2026 against Subnautica2.gg, Subnautica2Hub, and PC Gamer. Subnautica 2 is in Early Access, so scan locations, station names, and recipe counts should be rechecked after patches.',
+      'Checked May 27, 2026 against Subnautica2.gg, Subnautica2Hub, and PC Gamer. Subnautica 2 is in Early Access, so scan locations, station names, output chains, and recipe counts should be rechecked after patches.',
     cardKicker: 'Station card',
     cardBody:
       'Scan unlock, Old Habitat lead, Titanium, Mild Acid, Copper Wire, and processing-chain priorities.',
@@ -414,6 +420,50 @@ const processorCopy: Record<string, ProcessorCopy> = {
 };
 
 const fallbackCopy = processorCopy.en;
+
+processorCopy.zh = {
+  ...processorCopy.zh,
+  quickAnswer:
+    'Subnautica2.gg 和 Subnautica2Hub 当前都把 Processor 写成扫描解锁的室内设施，建造材料是 Titanium x2、Mild Acid x1、Copper Wire x1。Subnautica2.gg 有已验证扫描点，PC Gamer 则把 Old Habitat 写成黑匣子路线里的实用线索。解锁后用 Habitat Builder/Builder Tool 建造，再用它整理 Strong Acid、Strontium 和后续深潜装备材料。',
+  routeSteps: [
+    ...processorCopy.zh.routeSteps.slice(0, 4),
+    {
+      title: '稀有材料按批次加工',
+      body: '不要看到按钮亮了就把材料全塞进去。先确认下一步到底是 Strong Acid、Strontium、Titanium Ingot，还是 Rebreather 这类深潜装备链，再决定这一批怎么花。',
+    },
+  ],
+  tableRows: [
+    ...processorCopy.zh.tableRows,
+    ['产出规划', '先决定这一批材料服务 Strong Acid、锭类，还是深潜装备。'],
+  ],
+  related: [
+    { href: Routes.Subnautica2MildAcid, label: 'Mild Acid 指南' },
+    { href: Routes.Subnautica2Biolab, label: 'Biolab 指南' },
+    {
+      href: Routes.Subnautica2AcidicRaionPouch,
+      label: 'Acidic Raion Pouch 指南',
+    },
+    { href: Routes.Subnautica2StrongAcid, label: 'Strong Acid 指南' },
+    { href: Routes.Subnautica2FiberMesh, label: 'Fiber Mesh 指南' },
+    { href: Routes.Subnautica2Rebreather, label: 'Rebreather 指南' },
+    { href: Routes.Subnautica2NecroleiCyst, label: 'Necrolei Cyst 指南' },
+    { href: Routes.Subnautica2PowerCell, label: 'Power Cell 指南' },
+    { href: Routes.Subnautica2Crafting, label: '制作指南' },
+  ],
+  sourceBody:
+    '2026 年 5 月 27 日核对 Subnautica2.gg、Subnautica2Hub 和 PC Gamer。Subnautica 2 仍在抢先体验阶段，扫描点、设备名称、产出链和配方数量都可能随补丁调整。',
+};
+
+processorCopy.ja = {
+  ...fallbackCopy,
+  metadata: {
+    title: 'Subnautica 2 Processor Guide',
+    description:
+      'Guide for Processor scan unlock, Titanium, Mild Acid, Copper Wire, Old Habitat route, Strong Acid, Fiber Mesh, and Rebreather prep.',
+  },
+  sourceBody:
+    'Checked May 27, 2026 against Subnautica2.gg, Subnautica2Hub, and PC Gamer. Early Access scan routes, station names, output chains, and recipe counts can change.',
+};
 
 for (const locale of ['de', 'fr', 'pt-BR', 'es-419', 'ko', 'ru']) {
   processorCopy[locale] = {
