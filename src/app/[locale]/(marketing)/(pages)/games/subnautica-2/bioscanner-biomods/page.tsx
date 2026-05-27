@@ -158,6 +158,11 @@ const bioscannerCopy: Record<string, BioscannerCopy> = {
         href: Routes.Subnautica2FeedbackResonator,
         label: 'Feedback Resonator Guide',
       },
+      {
+        href: Routes.Subnautica2ConduitCrystal,
+        label: 'Conduit Crystal Guide',
+      },
+      { href: Routes.Subnautica2Celestine, label: 'Celestine Guide' },
       { href: Routes.Subnautica2OxygenDepth, label: 'Oxygen and Depth' },
       { href: Routes.Subnautica2Biomes, label: 'Biomes Guide' },
       {
