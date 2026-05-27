@@ -16,7 +16,7 @@ type BasicBatteryCopy = ResourceGuideCopy & {
 };
 
 const PUBLISHED_AT = '2026-05-25';
-const UPDATED_AT = '2026-05-25';
+const UPDATED_AT = '2026-05-27';
 
 const sharedSources = [
   {
@@ -43,7 +43,7 @@ const basicBatteryCopy: Record<string, BasicBatteryCopy> = {
       'Basic Battery looks small, but it quietly decides whether your first hour feels smooth or constantly interrupted. Make the first one early, then stop before you turn every Copper piece into spare power.',
     quickLabel: 'Quick answer',
     quickAnswer:
-      'Current blueprint data lists Basic Battery as unlocked by default. Craft it at the Fabricator with Copper x2 and Acidic Raion Pouch x1. Subnautica2Hub lists it at 100 energy, and current blueprint data connects it to early tools such as Scanner, Flashlight, Repair Tool, Lightstick, Power Cell, and Habitat Builder.',
+      'Current blueprint data lists Basic Battery as unlocked by default. Craft it at the Fabricator with Copper x2 and Acidic Raion Pouch x1. Subnautica2Hub lists it at 100 energy, and the battery feeds early tools plus the first Power Cell chain. Once Advanced Battery and Battery Terminal are online, stop treating Basic Batteries as throwaway items.',
     contentsLabel: 'Contents',
     routeTitle: 'Basic Battery route',
     routeSteps: [
@@ -62,6 +62,10 @@ const basicBatteryCopy: Record<string, BasicBatteryCopy> = {
       {
         title: 'Do not overcraft batteries',
         body: 'Copper also feeds Copper Wire and several early electronics. Make the battery you need for the next tool, then leave enough Copper for Scanner, Habitat Builder, and wiring work.',
+      },
+      {
+        title: 'Split tool power from vehicle power',
+        body: 'Two Basic Batteries can become a Power Cell, but that is a different plan from keeping Scanner and Repair Tool alive. Keep a small note on the locker so vehicle crafting does not steal every charged tool battery.',
       },
       {
         title: 'Label the power locker',
@@ -85,6 +89,10 @@ const basicBatteryCopy: Record<string, BasicBatteryCopy> = {
         'Tool queue',
         'Scanner, Flashlight, Repair Tool, Habitat Builder, and more pull from battery planning.',
       ],
+      [
+        'Upgrade split',
+        'Power Cell uses Basic Batteries; Advanced Battery should move into the Battery Terminal rotation once unlocked.',
+      ],
     ],
     visualTitle: 'Power chain',
     visualItems: [
@@ -102,6 +110,11 @@ const basicBatteryCopy: Record<string, BasicBatteryCopy> = {
         label: 'Reserve',
         value: 'Copper',
         note: 'Do not starve Copper Wire and builder recipes.',
+      },
+      {
+        label: 'Upgrade',
+        value: 'Cells',
+        note: 'Separate tool batteries from Power Cell crafts.',
       },
     ],
     cautionTitle: 'Batteries can quietly eat your whole Copper stack',
@@ -123,7 +136,7 @@ const basicBatteryCopy: Record<string, BasicBatteryCopy> = {
       },
       {
         title: 'Which early tools use Basic Battery planning?',
-        body: 'Current data connects Basic Battery to Scanner, Flashlight, Repair Tool, Lightstick, Power Cell, and Habitat Builder planning.',
+        body: 'Current data connects Basic Battery to Scanner, Flashlight, Repair Tool, Lightstick, Power Cell, and Habitat Builder planning. In practice, treat it as both a tool battery and an ingredient for the first vehicle power chain.',
       },
     ],
     readNextTitle: 'Read next',
@@ -156,7 +169,7 @@ const basicBatteryCopy: Record<string, BasicBatteryCopy> = {
     ],
     sourcesTitle: 'Source note',
     sourceBody:
-      'Checked May 25, 2026 against Subnautica2.gg and Subnautica2Hub Basic Battery blueprint data. Recipe costs, output stats, and used-in lists can change during Early Access patches.',
+      'Checked May 27, 2026 against Subnautica2.gg and Subnautica2Hub Basic Battery blueprint data. Recipe costs, output stats, and used-in lists can change during Early Access patches.',
     cardKicker: 'Battery card',
     cardBody:
       'Default unlock, Copper x2, Acidic Raion Pouch x1, 100 energy, and early tool order.',
@@ -281,7 +294,7 @@ const basicBatteryCopy: Record<string, BasicBatteryCopy> = {
     ],
     sourcesTitle: '来源说明',
     sourceBody:
-      '2026 年 5 月 25 日核对 Subnautica2.gg 和 Subnautica2Hub 的 Basic Battery 蓝图数据。抢先体验期间，配方消耗、能量数值和用途列表都可能随补丁调整。',
+      '2026 年 5 月 27 日核对 Subnautica2.gg 和 Subnautica2Hub 的 Basic Battery 蓝图数据。抢先体验期间，配方消耗、能量数值和用途列表都可能随补丁调整。',
     cardKicker: '电池卡片',
     cardBody:
       '默认解锁、Copper x2、Acidic Raion Pouch x1、100 energy 和早期工具顺序。',
@@ -410,7 +423,7 @@ const basicBatteryCopy: Record<string, BasicBatteryCopy> = {
     ],
     sourcesTitle: 'ソースメモ',
     sourceBody:
-      '2026年5月25日に Subnautica2.gg と Subnautica2Hub の Basic Battery 情報を確認しました。Early Access 中はレシピ、出力、用途リストが変わる可能性があります。',
+      '2026年5月27日に Subnautica2.gg と Subnautica2Hub の Basic Battery 情報を確認しました。Early Access 中はレシピ、出力、用途リストが変わる可能性があります。',
     cardKicker: 'Battery card',
     cardBody:
       '初期解放、Copper x2、Acidic Raion Pouch x1、100 energy、序盤ツール順。',

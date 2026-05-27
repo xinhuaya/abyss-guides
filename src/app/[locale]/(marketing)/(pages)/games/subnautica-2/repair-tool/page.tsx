@@ -16,7 +16,7 @@ type RepairToolCopy = ResourceGuideCopy & {
 };
 
 const PUBLISHED_AT = '2026-05-26';
-const UPDATED_AT = '2026-05-26';
+const UPDATED_AT = '2026-05-27';
 
 const sharedSources = [
   {
@@ -51,7 +51,7 @@ const repairToolCopy: Record<string, RepairToolCopy> = {
       'Repair Tool is the boring-looking item you only miss after something breaks. Build it before your first long Tadpole route or serious base stretch.',
     quickLabel: 'Quick answer',
     quickAnswer:
-      'Current Subnautica2.gg and Subnautica2Hub data list Repair Tool as a scan-unlocked tool crafted at the Fabrication Station / Fabricator with Titanium Ingot, Wiring Kit, Basic Battery, and Sulfur. PC Gamer currently reports 2 Titanium Ingots while the database pages list 1, so check your PDA before the final craft. Subnautica2.gg maps 11 scan locations and says the unlock needs 3 Repair Tool scans.',
+      'Current Subnautica2.gg and Subnautica2Hub data list Repair Tool as a scan-unlocked tool crafted at the Fabrication Station / Fabricator with Titanium Ingot, Wiring Kit, Basic Battery, and Sulfur. PC Gamer currently reports 2 Titanium Ingots while the database pages list 1, so check your PDA before the final craft. Build it before the Tadpole, Karakorum, or deeper power routes start turning small damage into lost time.',
     contentsLabel: 'Contents',
     routeTitle: 'Repair Tool unlock and craft plan',
     routeSteps: [
@@ -72,6 +72,10 @@ const repairToolCopy: Record<string, RepairToolCopy> = {
         body: 'The tool repairs bases and systems as well as vehicles. If you are expanding rooms or power infrastructure, store a charged battery and spare sulfur near the Fabricator.',
       },
       {
+        title: 'Pair it with your charger habit',
+        body: 'A Repair Tool with a dead Basic Battery is just locker clutter. Once Battery Terminal is built, keep one charged battery beside the tool and rotate the weak one through the terminal before a long route.',
+      },
+      {
         title: 'Check the Fabricator after every patch',
         body: 'Early Access data moves. If the recipe on your save differs from the public pages, trust the PDA and update the locker labels around the real recipe.',
       },
@@ -89,6 +93,10 @@ const repairToolCopy: Record<string, RepairToolCopy> = {
       [
         'Basic Battery x1',
         'Keep one tool battery out of your flashlight pile.',
+      ],
+      [
+        'Battery Terminal',
+        'Recharge the tool battery before Tadpole, Karakorum, and base power routes.',
       ],
       ['Sulfur x1', 'Reserve it; do not spend every piece on other recipes.'],
     ],
@@ -108,6 +116,11 @@ const repairToolCopy: Record<string, RepairToolCopy> = {
         label: 'Carry',
         value: 'Routes',
         note: 'Vehicle and base repair safety.',
+      },
+      {
+        label: 'Recharge',
+        value: 'Before trips',
+        note: 'Rotate the weak battery through the terminal.',
       },
     ],
     cautionTitle: 'Do not wait until the Tadpole is smoking',
@@ -129,7 +142,7 @@ const repairToolCopy: Record<string, RepairToolCopy> = {
       },
       {
         title: 'Should you craft Repair Tool before Tadpole routes?',
-        body: 'Yes. It is one of the safer prep items before repeated vehicle trips, especially when you are learning routes with predators, tight caves, or low power margin.',
+        body: 'Yes. It is one of the safer prep items before repeated vehicle trips, especially when you are learning routes with predators, tight caves, low power margin, or new power-plant objectives.',
       },
     ],
     readNextTitle: 'Read next',
@@ -141,11 +154,23 @@ const repairToolCopy: Record<string, RepairToolCopy> = {
       { href: Routes.Subnautica2TitaniumIngot, label: 'Titanium Ingot Guide' },
       { href: Routes.Subnautica2Beacon, label: 'Beacon Guide' },
       { href: Routes.Subnautica2BaseBuilding, label: 'Base Building Guide' },
+      {
+        href: Routes.Subnautica2BatteryTerminal,
+        label: 'Battery Terminal Guide',
+      },
+      {
+        href: Routes.Subnautica2KarakorumPowerPlant,
+        label: 'Karakorum Power Plant Guide',
+      },
+      {
+        href: Routes.Subnautica2PowerPlantObservatory,
+        label: 'Power Plant Observatory Guide',
+      },
       { href: Routes.Subnautica2Crafting, label: 'Crafting Guide' },
     ],
     sourcesTitle: 'Source note',
     sourceBody:
-      'Checked May 26, 2026 against Subnautica2.gg, Subnautica2Hub, GamesRadar, and PC Gamer. Current public pages agree on scan unlock, Sulfur use, and vehicle/base repair use; Titanium Ingot count differs between database pages and PC Gamer, so check your PDA after patches.',
+      'Checked May 27, 2026 against Subnautica2.gg, Subnautica2Hub, GamesRadar, and PC Gamer. Current public pages agree on scan unlock, Sulfur use, and vehicle/base repair use; Titanium Ingot count differs between database pages and PC Gamer, so check your PDA after patches.',
     cardKicker: 'Repair card',
     cardBody:
       'Scan unlock, Fabricator recipe, Titanium Ingot, Wiring Kit, Basic Battery, Sulfur, Tadpole repairs, and base repair timing.',
@@ -255,7 +280,7 @@ const repairToolCopy: Record<string, RepairToolCopy> = {
     ],
     sourcesTitle: '来源说明',
     sourceBody:
-      '2026 年 5 月 26 日核对 Subnautica2.gg、Subnautica2Hub、GamesRadar 和 PC Gamer。当前公开资料在扫描解锁、Sulfur 用途和载具/基地维修上基本一致；Titanium Ingot 数量在数据库页和 PC Gamer 之间有出入，更新后请以 PDA 为准。',
+      '2026 年 5 月 27 日核对 Subnautica2.gg、Subnautica2Hub、GamesRadar 和 PC Gamer。当前公开资料在扫描解锁、Sulfur 用途和载具/基地维修上基本一致；Titanium Ingot 数量在数据库页和 PC Gamer 之间有出入，更新后请以 PDA 为准。',
     cardKicker: '维修工具卡',
     cardBody:
       '扫描解锁、Fabricator 配方、Titanium Ingot、Wiring Kit、Basic Battery、Sulfur、Tadpole 维修和基地维修时机。',

@@ -16,7 +16,7 @@ type BatteryTerminalCopy = ResourceGuideCopy & {
 };
 
 const PUBLISHED_AT = '2026-05-26';
-const UPDATED_AT = '2026-05-26';
+const UPDATED_AT = '2026-05-27';
 
 const sharedSources = [
   {
@@ -47,7 +47,7 @@ const batteryTerminalCopy: Record<string, BatteryTerminalCopy> = {
       'Battery Terminal is the moment your base stops eating fresh Copper every time a tool runs dry. Scan it, build it on a powered wall, and your early kit starts feeling much less disposable.',
     quickLabel: 'Quick answer',
     quickAnswer:
-      'GAMES.GG places Battery Terminal fragments inside the Old Habitat area, roughly 380 meters north of the Lifepod, and says you scan two fragments to unlock the blueprint. Current blueprint pages list the build as a Habitat Builder deployable using Titanium x2, Quartz x2, and Copper Wire x1. GAMES.GG says the terminal can charge up to six Basic or Advanced Batteries at once. Build it only after your base has steady power, because charging dead batteries is not free.',
+      'GAMES.GG places Battery Terminal fragments inside the Old Habitat area, roughly 380 meters north of the Lifepod, and says you scan two fragments to unlock the blueprint. Current blueprint pages list the build as a Habitat Builder deployable using Titanium x2, Quartz x2, and Copper Wire x1. GAMES.GG says the terminal can charge up to six Basic or Advanced Batteries at once. Use it for tool batteries; Power Cells and vehicle charging are a separate plan.',
     contentsLabel: 'Contents',
     routeTitle: 'Battery Terminal route',
     routeSteps: [
@@ -71,6 +71,10 @@ const batteryTerminalCopy: Record<string, BatteryTerminalCopy> = {
         title: 'Use it as a rotation shelf',
         body: 'Keep one working battery in each tool and rotate drained batteries through the terminal. Do not craft new Basic Batteries every time the Scanner or Repair Tool gets tired.',
       },
+      {
+        title: 'Keep vehicle cells out of the charger plan',
+        body: 'Battery Terminal is for Basic and Advanced Batteries. If you are building Power Cells for the Tadpole or later power projects, keep those ingredients in a different box so the charger habit does not blur the count.',
+      },
     ],
     tableTitle: 'Battery Terminal checklist',
     tableHeaders: ['Need', 'Why it matters'],
@@ -87,6 +91,10 @@ const batteryTerminalCopy: Record<string, BatteryTerminalCopy> = {
       [
         'Powered base',
         'A charger without power is just a wall decoration with ambition.',
+      ],
+      [
+        'Separate cell box',
+        'Keep Power Cell materials apart from tool batteries.',
       ],
     ],
     visualTitle: 'Power loop',
@@ -126,7 +134,7 @@ const batteryTerminalCopy: Record<string, BatteryTerminalCopy> = {
       },
       {
         title: 'Is Battery Terminal worth building early?',
-        body: 'Yes, once you have a powered base. It saves Copper by letting you recharge used tool batteries instead of crafting new Basic Batteries too often.',
+        body: 'Yes, once you have a powered base. It saves Copper by letting you recharge used tool batteries instead of crafting new Basic Batteries too often. Just keep Power Cell crafting in a separate storage box.',
       },
     ],
     readNextTitle: 'Read next',
@@ -146,11 +154,16 @@ const batteryTerminalCopy: Record<string, BatteryTerminalCopy> = {
       { href: Routes.Subnautica2Scanner, label: 'Scanner Guide' },
       { href: Routes.Subnautica2AirTank, label: 'Air Tank and O2 Guide' },
       { href: Routes.Subnautica2Wakemaker, label: 'Wakemaker Guide' },
+      { href: Routes.Subnautica2PowerCell, label: 'Power Cell Guide' },
+      {
+        href: Routes.Subnautica2EntangledPowerCell,
+        label: 'Entangled Power Cell Guide',
+      },
       { href: Routes.Subnautica2Resources, label: 'Resources Guide' },
     ],
     sourcesTitle: 'Source note',
     sourceBody:
-      'Checked May 26, 2026 against GAMES.GG, Subnautica2.gg, and Subnautica2Hub. Early Access fragment locations, recipes, and capacity labels can change, so the page avoids overclaiming exact coordinates and keeps the Old Habitat route as the practical search area.',
+      'Checked May 27, 2026 against GAMES.GG, Subnautica2.gg, and Subnautica2Hub. Early Access fragment locations, recipes, and capacity labels can change, so the page avoids overclaiming exact coordinates and keeps the Old Habitat route as the practical search area.',
     cardKicker: 'Battery card',
     cardBody:
       'Old Habitat fragment sweep, two-scan unlock, Habitat Builder placement, Titanium, Quartz, Copper Wire, battery rotation, and base power safety.',
@@ -266,7 +279,7 @@ const batteryTerminalCopy: Record<string, BatteryTerminalCopy> = {
     ],
     sourcesTitle: '来源说明',
     sourceBody:
-      '2026 年 5 月 26 日核对 GAMES.GG、Subnautica2.gg 和 Subnautica2Hub。抢先体验阶段碎片位置、配方和容量描述都可能调整，所以页面把重点放在 Old Habitat 搜索路线和当前可验证信息上，不硬写可疑精确坐标。',
+      '2026 年 5 月 27 日核对 GAMES.GG、Subnautica2.gg 和 Subnautica2Hub。抢先体验阶段碎片位置、配方和容量描述都可能调整，所以页面把重点放在 Old Habitat 搜索路线和当前可验证信息上，不硬写可疑精确坐标。',
     cardKicker: '电池卡片',
     cardBody:
       'Old Habitat 碎片路线、两个碎片解锁、Habitat Builder 放置、Titanium、Quartz、Copper Wire、电池轮换与基地供电安全。',
