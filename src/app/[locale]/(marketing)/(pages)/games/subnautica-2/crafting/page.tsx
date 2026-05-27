@@ -191,6 +191,7 @@ const craftingCopy: Record<string, CraftingCopy> = {
       },
       { href: Routes.Subnautica2MildAcid, label: 'Mild Acid Guide' },
       { href: Routes.Subnautica2Processor, label: 'Processor Guide' },
+      { href: Routes.Subnautica2Fabricator, label: 'Fabricator Guide' },
       { href: Routes.Subnautica2Biolab, label: 'Biolab Guide' },
       { href: Routes.Subnautica2EchoLocation, label: 'Echo Location Guide' },
       {
@@ -367,6 +368,7 @@ const craftingCopy: Record<string, CraftingCopy> = {
       },
       { href: Routes.Subnautica2MildAcid, label: 'Mild Acid Guide' },
       { href: Routes.Subnautica2Processor, label: 'Processor Guide' },
+      { href: Routes.Subnautica2Fabricator, label: 'Fabricator Guide' },
       { href: Routes.Subnautica2Biolab, label: 'Biolab Guide' },
       { href: Routes.Subnautica2EchoLocation, label: 'Echo Location Guide' },
       {

@@ -164,6 +164,12 @@ const copyByLocale: Record<'en' | 'zh', HubCopy> = {
           'Scan unlock, Old Habitat lead, Titanium, Mild Acid, Copper Wire, and processing chains.',
       },
       {
+        href: Routes.Subnautica2Fabricator,
+        title: 'Fabricator',
+        description:
+          'Fully functional Fabricator upgrade, Titanium, Copper, Quartz, Habitat Builder placement, and base crafting setup.',
+      },
+      {
         href: Routes.Subnautica2Biolab,
         title: 'Biolab',
         description:
@@ -858,6 +864,12 @@ const copyByLocale: Record<'en' | 'zh', HubCopy> = {
         title: 'Processor Guide',
         description:
           'Scan unlock, Old Habitat lead, Titanium, Mild Acid, Copper Wire, and processing chains.',
+      },
+      {
+        href: Routes.Subnautica2Fabricator,
+        title: 'Fabricator 指南',
+        description:
+          'Fully functional Fabricator、Titanium、Copper、Quartz、Habitat Builder 摆放和基地制作动线。',
       },
       {
         href: Routes.Subnautica2Biolab,

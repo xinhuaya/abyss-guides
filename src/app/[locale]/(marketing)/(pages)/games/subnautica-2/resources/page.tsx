@@ -156,6 +156,7 @@ const resourcesCopy: Record<string, ResourcesCopy> = {
       },
       { href: Routes.Subnautica2MildAcid, label: 'Mild Acid Guide' },
       { href: Routes.Subnautica2Processor, label: 'Processor Guide' },
+      { href: Routes.Subnautica2Fabricator, label: 'Fabricator Guide' },
       { href: Routes.Subnautica2Biolab, label: 'Biolab Guide' },
       { href: Routes.Subnautica2EchoLocation, label: 'Echo Location Guide' },
       {
@@ -362,6 +363,7 @@ const resourcesCopy: Record<string, ResourcesCopy> = {
       },
       { href: Routes.Subnautica2MildAcid, label: 'Mild Acid Guide' },
       { href: Routes.Subnautica2Processor, label: 'Processor Guide' },
+      { href: Routes.Subnautica2Fabricator, label: 'Fabricator 指南' },
       { href: Routes.Subnautica2Biolab, label: 'Biolab Guide' },
       { href: Routes.Subnautica2EchoLocation, label: 'Echo Location Guide' },
       {
