@@ -16,7 +16,7 @@ type CraftingCopy = ResourceGuideCopy & {
 };
 
 const PUBLISHED_AT = '2026-05-23';
-const UPDATED_AT = '2026-05-28';
+const UPDATED_AT = '2026-05-29';
 
 const sharedSources = [
   {
@@ -51,6 +51,28 @@ const craftingCopy: Record<string, CraftingCopy> = {
     quickLabel: 'Quick answer',
     quickAnswer:
       'Prioritize recipes that increase survival time, scanning progress, storage, power, and route access. Treat rare materials as strategic inputs, especially around Mangalloy-style chains and Metal Farm setup. Subnautica 2 is Early Access, so recipe counts should be rechecked after patches.',
+    fieldNotesTitle: 'Field notes for better crafting order',
+    fieldNotes: [
+      {
+        title: 'Craft routes, not just items',
+        body: 'A good craft should make the next route safer, shorter, or more repeatable. If it does none of those, it can probably wait.',
+      },
+      {
+        title: 'Keep raw and processed materials apart',
+        body: 'Most mistakes come from compressing rare or useful raw materials too early. Separate raw ore, ingots, electronics, and route kits.',
+      },
+      {
+        title: 'Patch notes can change priorities',
+        body: 'Early Access recipes and resource availability shift. When a patch changes Silver or Troilite, crafting priorities around those chains should be rechecked.',
+      },
+    ],
+    routeChecklistTitle: 'Before a crafting session',
+    routeChecklist: [
+      'Name the next route the craft unlocks.',
+      'Protect raw materials before making ingots or processed parts.',
+      'Batch related crafts near storage and chargers.',
+      'Recheck recipe counts after major hotfixes.',
+    ],
     contentsLabel: 'Contents',
     routeTitle: 'Crafting order that actually helps',
     routeSteps: [
@@ -259,6 +281,28 @@ const craftingCopy: Record<string, CraftingCopy> = {
     quickLabel: '快速答案',
     quickAnswer:
       '优先制作能增加生存时间、扫描进度、储物、供电和路线能力的东西。稀有材料不要当普通零件用，尤其是 Mangalloy 这类加工链和 Metal Farm 相关内容。Subnautica 2 仍是抢先体验，配方数量要随补丁复查。',
+    fieldNotesTitle: '更好制作顺序笔记',
+    fieldNotes: [
+      {
+        title: '制作的是路线，不只是物品',
+        body: '好配方应该让下一条路线更安全、更短或更容易重复。如果它做不到这些，大概率可以等等。',
+      },
+      {
+        title: '原料和加工件分开',
+        body: '多数失误来自太早压缩稀有或有用原料。原矿、ingot、电子材料和路线装备最好分开收。',
+      },
+      {
+        title: '补丁会改变优先级',
+        body: '抢先体验阶段配方和资源可获得性会变。Silver 或 Troilite 这类资源被调整后，相关制作优先级也要复查。',
+      },
+    ],
+    routeChecklistTitle: '开始制作前',
+    routeChecklist: [
+      '先说清楚这个制作会解锁哪条路线。',
+      '做 ingot 或加工件前保护原材料。',
+      '相关配方尽量在储物和充电设备旁边批量处理。',
+      '大补丁后重新核对配方数量。',
+    ],
     contentsLabel: '目录',
     routeTitle: '真正有用的制作顺序',
     routeSteps: [

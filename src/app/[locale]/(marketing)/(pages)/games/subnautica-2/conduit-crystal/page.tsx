@@ -16,7 +16,7 @@ type ConduitCopy = ResourceGuideCopy & {
 };
 
 const PUBLISHED_AT = '2026-05-25';
-const UPDATED_AT = '2026-05-27';
+const UPDATED_AT = '2026-05-29';
 
 const sharedSources = [
   {
@@ -48,6 +48,28 @@ const conduitCopy: Record<string, ConduitCopy> = {
     quickLabel: 'Quick answer',
     quickAnswer:
       'Look for Conduit Crystal around the Alien Ruins and Alien Power Plant region, especially ledges and cliffs below the safer early-game depth range. Bring the Tadpole Depth Module and Sonic Resonator. Feedback Resonator currently asks for 2x Conduit Crystal, so mine a small upgrade stock and leave before the route turns into a rescue story.',
+    fieldNotesTitle: 'Field notes for Conduit Crystal',
+    fieldNotes: [
+      {
+        title: 'This is not an early crystal run',
+        body: 'Conduit Crystal lives in the kind of route where depth, cliffs, and return lines matter. If your Tadpole setup is shaky, prepare that first.',
+      },
+      {
+        title: 'Mine for the next module',
+        body: 'Feedback Resonator and other upgrades can ask for crystals, but that does not mean you need a full locker. Take the target count and a small spare.',
+      },
+      {
+        title: 'Leave while the route is clean',
+        body: 'The best rare-material run ends before the oxygen and repair margins feel dramatic. Mark the node and come back later instead of forcing a perfect haul.',
+      },
+    ],
+    routeChecklistTitle: 'Before mining Conduit Crystal',
+    routeChecklist: [
+      'Bring Tadpole Depth Module, Sonic Resonator, and a clear exit marker.',
+      'Count crystals for Feedback Resonator before entering deep ledges.',
+      'Avoid turning the first run into bulk storage.',
+      'Beacon the route if the node sits near Alien Power Plant terrain.',
+    ],
     contentsLabel: 'Contents',
     routeTitle: 'Conduit Crystal route plan',
     routeSteps: [
@@ -198,6 +220,28 @@ const conduitCopy: Record<string, ConduitCopy> = {
     quickLabel: '快速结论',
     quickAnswer:
       '去 Alien Ruins 和 Alien Power Plant 附近找 Conduit Crystal，重点看深水区域的 ledges、cliffs 和 Angel Comb 附近路线。出发前带 Tadpole Depth Module 和 Sonic Resonator。拿够 Bioscanner、Feedback Resonator 这类升级链会用到的数量就回家，不要把一趟采集变成救援任务。',
+    fieldNotesTitle: 'Conduit Crystal 路线笔记',
+    fieldNotes: [
+      {
+        title: '这不是前期水晶路线',
+        body: 'Conduit Crystal 出现在深度、岩壁和回程都很重要的路线里。如果 Tadpole 配置还不稳，先把载具准备好。',
+      },
+      {
+        title: '按下一个模块采',
+        body: 'Feedback Resonator 等升级会需要 crystal，但这不代表要塞满一箱。按目标数量拿，再多带一点备用就够。',
+      },
+      {
+        title: '路线干净时就离开',
+        body: '稀有材料路线最好的结尾，是氧气和维修余量还没变得刺激。标好矿点，下次再来，不要硬追完美满载。',
+      },
+    ],
+    routeChecklistTitle: '采 Conduit Crystal 前',
+    routeChecklist: [
+      '带 Tadpole Depth Module、Sonic Resonator 和清楚出口标记。',
+      '进深水 ledges 前先数 Feedback Resonator 需要几块。',
+      '第一趟不要强行变成批量囤货。',
+      '如果矿点靠近 Alien Power Plant 地形，放 Beacon 记录路线。',
+    ],
     contentsLabel: '目录',
     routeTitle: 'Conduit Crystal 路线规划',
     routeSteps: [

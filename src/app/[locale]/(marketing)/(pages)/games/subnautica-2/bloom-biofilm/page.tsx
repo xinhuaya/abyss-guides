@@ -16,7 +16,7 @@ type BloomBiofilmCopy = ResourceGuideCopy & {
 };
 
 const PUBLISHED_AT = '2026-05-26';
-const UPDATED_AT = '2026-05-26';
+const UPDATED_AT = '2026-05-29';
 
 const sharedSources = [
   {
@@ -52,6 +52,28 @@ const bloomBiofilmCopy: Record<string, BloomBiofilmCopy> = {
     quickLabel: 'Quick answer',
     quickAnswer:
       'PC Gamer says Bloom Biofilm is removed with the Sonic Resonator: equip it, hold the charge input until the reticle meter fills, then release while aiming at the obstruction. GamesRadar+ says Bloom Cankers around the first sick Angel Comb also need Sonic Resonator, while later Angel Combs require the Feedback Resonator upgrade. GAMES.GG describes Bloom Infestations as purple-rooted, hostile zones that must be cleared to unlock Adaptations, and All Things How notes that Bloom biofilm, cankers, sap, and parasites all respond to the Sonic Resonator instead of normal tools.',
+    fieldNotesTitle: 'Field notes for Bloom clearing',
+    fieldNotes: [
+      {
+        title: 'Charge before you panic',
+        body: 'The tool needs a full charge before release. Half-clicking at a blockage makes the route feel broken when the problem is just timing.',
+      },
+      {
+        title: 'Know when Sonic is not enough',
+        body: 'Early Bloom Biofilm and Cankers use Sonic Resonator, but later routes can ask for Feedback Resonator. If a mature Angel Comb refuses to cooperate, check the upgrade chain.',
+      },
+      {
+        title: 'Clear only with an exit plan',
+        body: 'Bloom zones combine obstruction, hostile movement, and oxygen pressure. Mark the return line before staring at the purple roots.',
+      },
+    ],
+    routeChecklistTitle: 'Before clearing Bloom Biofilm',
+    routeChecklist: [
+      'Bring Sonic Resonator and enough battery for repeated charged shots.',
+      'Hold the charge until the reticle meter fills before releasing.',
+      'Check whether the route needs Feedback Resonator instead.',
+      'Set a return marker before clearing infection routes.',
+    ],
     contentsLabel: 'Contents',
     routeTitle: 'Bloom Biofilm removal plan',
     routeSteps: [
@@ -180,6 +202,28 @@ const bloomBiofilmCopy: Record<string, BloomBiofilmCopy> = {
     quickLabel: '快速结论',
     quickAnswer:
       'PC Gamer 说 Bloom Biofilm 要用 Sonic Resonator 清理：装备工具，按住蓄力直到准星两侧能量条充满，然后瞄准阻挡物释放。GamesRadar+ 说第一处生病 Angel Comb 周围的 Bloom Cankers 也需要 Sonic Resonator，后续 Angel Combs 则会需要 Feedback Resonator 升级。GAMES.GG 把 Bloom Infestations 描述为紫色根系和敌对小鱼组成的危险区域，需要清掉才能解锁 Adaptations。All Things How 也提到 Bloom biofilm、cankers、sap 和 parasites 都不是普通工具能处理的，核心答案是 Sonic Resonator。',
+    fieldNotesTitle: 'Bloom 清理笔记',
+    fieldNotes: [
+      {
+        title: '先蓄满，再释放',
+        body: '这个工具需要蓄满再打。半蓄力乱点会让路线看起来像坏了，其实只是操作时机不对。',
+      },
+      {
+        title: '知道什么时候 Sonic 不够',
+        body: '早期 Bloom Biofilm 和 Cankers 用 Sonic Resonator，但后续路线可能要 Feedback Resonator。成熟 Angel Comb 不配合时，先查升级链。',
+      },
+      {
+        title: '清之前先想好怎么走',
+        body: 'Bloom 区域同时有阻挡、敌对移动和氧气压力。盯着紫色根系前，先标回程线。',
+      },
+    ],
+    routeChecklistTitle: '清 Bloom Biofilm 前',
+    routeChecklist: [
+      '带 Sonic Resonator，并确保电量够多次蓄力。',
+      '蓄到准星能量条满，再瞄准释放。',
+      '确认当前路线是不是已经需要 Feedback Resonator。',
+      '清感染路线前先放回程标记。',
+    ],
     contentsLabel: '目录',
     routeTitle: 'Bloom Biofilm 清理规划',
     routeSteps: [

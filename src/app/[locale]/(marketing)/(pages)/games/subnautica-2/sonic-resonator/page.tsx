@@ -16,7 +16,7 @@ type SonicCopy = ResourceGuideCopy & {
 };
 
 const PUBLISHED_AT = '2026-05-24';
-const UPDATED_AT = '2026-05-27';
+const UPDATED_AT = '2026-05-29';
 
 const sharedSources = [
   {
@@ -56,6 +56,28 @@ const sonicCopy: Record<string, SonicCopy> = {
     quickLabel: 'Quick answer',
     quickAnswer:
       'Scan two Sonic Resonator fragments once your Scanner, oxygen rhythm, and return route are steady. Treat it as a mining and Bloom Biofilm clearing tool, not as a full answer to every infected growth. If a route says Armored Canker, mature Angel Comb, or long-range clearing, that is usually the later Feedback Resonator upgrade.',
+    fieldNotesTitle: 'Field notes for Sonic Resonator',
+    fieldNotes: [
+      {
+        title: 'It turns routes into mining routes',
+        body: 'Once Sonic Resonator is built, large deposits become worth planning around. Revisit Lead, Quartz, Lithium, and deeper resource notes with the tool in mind.',
+      },
+      {
+        title: 'It is not the final Bloom answer',
+        body: 'Sonic clears early Bloom Biofilm work, but later mature routes can require Feedback Resonator. Do not assume a blocked Angel Comb means the game is bugged.',
+      },
+      {
+        title: 'Test close before going deep',
+        body: 'Practice charged shots on a nearby deposit or obstruction. The input timing is easier to learn when oxygen is boring.',
+      },
+    ],
+    routeChecklistTitle: 'Before using Sonic Resonator',
+    routeChecklist: [
+      'Scan both fragments and confirm the recipe is complete.',
+      'Practice charged shots before deep or infected routes.',
+      'Revisit large resource deposits after the tool is built.',
+      'Check Feedback Resonator requirements if Sonic stops working on later growths.',
+    ],
     contentsLabel: 'Contents',
     routeTitle: 'Sonic Resonator route plan',
     routeSteps: [
@@ -201,6 +223,28 @@ const sonicCopy: Record<string, SonicCopy> = {
     quickLabel: '快速结论',
     quickAnswer:
       '等 Scanner、氧气节奏和回程路线都比较稳以后，再去扫 Sonic Resonator 碎片。先把它当成挖大矿和清路障的工具，不要当武器。做出来以后，先在近一点的大矿节点测试，再把它接到 Feedback Resonator、Conduit Crystal 和 Metal Farm 这条后续路线里。',
+    fieldNotesTitle: 'Sonic Resonator 使用笔记',
+    fieldNotes: [
+      {
+        title: '它会把路线变成采矿路线',
+        body: 'Sonic Resonator 做出来后，大矿点才真正值得规划。Lead、Quartz、Lithium 和更深资源都要重新按这个工具看一遍。',
+      },
+      {
+        title: '它不是最终 Bloom 答案',
+        body: 'Sonic 能处理早期 Bloom Biofilm，但后续成熟路线可能要 Feedback Resonator。Angel Comb 卡住时，别第一反应就以为 bug。',
+      },
+      {
+        title: '先在近处练蓄力',
+        body: '找近一点的大矿或路障练蓄力释放。氧气不紧张时，操作时机更容易学会。',
+      },
+    ],
+    routeChecklistTitle: '使用 Sonic Resonator 前',
+    routeChecklist: [
+      '扫齐两个碎片，并确认配方完成。',
+      '深水或感染路线前，先练好蓄力释放。',
+      '工具到手后重新检查大矿点路线。',
+      '如果后期 growth 无法处理，改查 Feedback Resonator 需求。',
+    ],
     contentsLabel: '目录',
     routeTitle: 'Sonic Resonator 路线规划',
     routeSteps: [

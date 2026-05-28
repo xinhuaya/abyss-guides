@@ -16,7 +16,7 @@ type CreatureEnamelCopy = ResourceGuideCopy & {
 };
 
 const PUBLISHED_AT = '2026-05-25';
-const UPDATED_AT = '2026-05-25';
+const UPDATED_AT = '2026-05-29';
 
 const sharedSources = [
   {
@@ -48,6 +48,28 @@ const creatureEnamelCopy: Record<string, CreatureEnamelCopy> = {
     quickLabel: 'Quick answer',
     quickAnswer:
       'Look for Needler Mango around Alien Ruins routes where Needlers patrol. Bring the Tadpole, repair supplies, a clear exit line, and the Bioscanner if you still need creature-related progress. Treat Creature Enamel as a risky route material for Enameled Glass and later upgrades, not as something to casually collect on a first deep dive.',
+    fieldNotesTitle: 'Field notes for Creature Enamel',
+    fieldNotes: [
+      {
+        title: 'The patrol is part of the material cost',
+        body: 'Creature Enamel is not difficult because the recipe is long. It is difficult because Needler territory adds risk to every pickup and scan.',
+      },
+      {
+        title: 'Go for a target count',
+        body: 'If Enameled Glass is the next craft, count the pieces before leaving base. Wandering for “some enamel” is how the route gets too long.',
+      },
+      {
+        title: 'Scan only when the vehicle is safe',
+        body: 'Bioscanner progress is useful, but do not park the Tadpole in a bad spot just to scan one more creature.',
+      },
+    ],
+    routeChecklistTitle: 'Before collecting Creature Enamel',
+    routeChecklist: [
+      'Bring Tadpole safety, Repair Tool, healing, and a clear exit line.',
+      'Count Enameled Glass needs before entering Needler routes.',
+      'Use Bioscanner only when vehicle position is safe.',
+      'Leave after the target count instead of chasing extra patrols.',
+    ],
     contentsLabel: 'Contents',
     routeTitle: 'Creature Enamel route plan',
     routeSteps: [
@@ -178,6 +200,28 @@ const creatureEnamelCopy: Record<string, CreatureEnamelCopy> = {
     quickLabel: '快速结论',
     quickAnswer:
       'Creature Enamel 目前和 Needler Mango 相关，重点去 Alien Ruins 一带、Needler 巡逻附近找。出发前准备 Tadpole、Repair Tool、回血物品、空背包格子，以及清楚的撤离方向。如果还缺 Bioscanner 进度，可以顺路扫生物，但不要为了多扫一个目标把车停在危险位置。',
+    fieldNotesTitle: 'Creature Enamel 路线笔记',
+    fieldNotes: [
+      {
+        title: '巡逻本身就是材料成本',
+        body: 'Creature Enamel 难点不在配方长，而在 Needler 区域会让每次拾取和扫描都带风险。',
+      },
+      {
+        title: '按目标数量去拿',
+        body: '如果下一步是 Enameled Glass，出门前先数清需要几块。只是想着“多拿点 enamel”，路线很容易拖长。',
+      },
+      {
+        title: '载具安全时再扫描',
+        body: 'Bioscanner 进度有用，但不要为了多扫一个生物，把 Tadpole 停在危险位置。',
+      },
+    ],
+    routeChecklistTitle: '收集 Creature Enamel 前',
+    routeChecklist: [
+      '带 Tadpole 安全方案、Repair Tool、回血物品和明确出口。',
+      '进入 Needler 路线前先数 Enameled Glass 需求。',
+      '只有载具位置安全时再顺手用 Bioscanner。',
+      '达到目标数量后离开，不要继续追巡逻区额外材料。',
+    ],
     contentsLabel: '目录',
     routeTitle: 'Creature Enamel 路线规划',
     routeSteps: [

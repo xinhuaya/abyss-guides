@@ -16,7 +16,7 @@ type ModificationStationCopy = ResourceGuideCopy & {
 };
 
 const PUBLISHED_AT = '2026-05-25';
-const UPDATED_AT = '2026-05-27';
+const UPDATED_AT = '2026-05-29';
 
 const sharedSources = [
   {
@@ -60,6 +60,28 @@ const modificationStationCopy: Record<string, ModificationStationCopy> = {
     quickLabel: 'Quick answer',
     quickAnswer:
       'Current blueprint data lists Modification Station as a Builder Tool interior facility made with Titanium x2, Celestine x2, and Copper x2. You can unlock it by scanning the station or finding the right Data Box / Recipe Data Card, depending on the route and save state. PC Gamer places a reliable station in the Alien Ruins Research Base after the Tadpole Pens section.',
+    fieldNotesTitle: 'Field notes for Modification Station',
+    fieldNotes: [
+      {
+        title: 'The station is only the bench',
+        body: 'Building it does not unlock every module by itself. Missing recipes usually mean a separate scan, data card, or story step is still unfinished.',
+      },
+      {
+        title: 'Celestine is the real build cost',
+        body: 'Titanium and Copper are ordinary base materials. Celestine ties the station to deeper routes, so stage that before blaming the unlock.',
+      },
+      {
+        title: 'Put it beside module storage',
+        body: 'Depth, echo, resonator, Bioscanner, and power upgrades all point back here. A nearby labeled locker keeps the upgrade tree readable.',
+      },
+    ],
+    routeChecklistTitle: 'Before building Modification Station',
+    routeChecklist: [
+      'Check both scan and Data Box / Recipe Data Card unlock paths.',
+      'Prepare Titanium x2, Celestine x2, and Copper x2.',
+      'Place the station beside module and rare-material storage.',
+      'If a module is missing, chase that module unlock separately.',
+    ],
     contentsLabel: 'Contents',
     routeTitle: 'Modification Station unlock plan',
     routeSteps: [
@@ -321,6 +343,28 @@ modificationStationCopy.zh = {
   quickLabel: '快速结论',
   quickAnswer:
     '当前蓝图资料把 Modification Station 写成 Builder Tool 室内设施，材料是 Titanium x2、Celestine x2、Copper x2。解锁方式可能是扫描工作站，也可能是 Data Box / Recipe Data Card，取决于你走的路线和存档状态。PC Gamer 给出的稳定路线是在 Tadpole Pens 后前往 Alien Ruins Research Base。',
+  fieldNotesTitle: 'Modification Station 笔记',
+  fieldNotes: [
+    {
+      title: '工作站只是工作台',
+      body: '建好它不代表所有模块都会自动出现。缺配方时，通常是单独扫描、Data Card 或剧情步骤还没完成。',
+    },
+    {
+      title: '真正成本是 Celestine',
+      body: 'Titanium 和 Copper 都是常规基地材料，Celestine 才把这个工作站和深水路线绑在一起。先把它准备好，再排查解锁问题。',
+    },
+    {
+      title: '放在模块材料旁边',
+      body: '深度、Echo、Resonator、Bioscanner 和电力升级都会回到这里。旁边放有标签的模块箱，升级树会清楚很多。',
+    },
+  ],
+  routeChecklistTitle: '建 Modification Station 前',
+  routeChecklist: [
+    '扫描和 Data Box / Recipe Data Card 两条解锁路都要检查。',
+    '准备 Titanium x2、Celestine x2、Copper x2。',
+    '工作站放在模块和稀有材料箱旁边。',
+    '某个模块不显示时，继续追那个模块自己的解锁。',
+  ],
   contentsLabel: '目录',
   routeTitle: 'Modification Station 解锁规划',
   routeSteps: [

@@ -16,7 +16,7 @@ type BiomesCopy = ResourceGuideCopy & {
 };
 
 const PUBLISHED_AT = '2026-05-24';
-const UPDATED_AT = '2026-05-28';
+const UPDATED_AT = '2026-05-29';
 
 const sharedSources = [
   {
@@ -52,6 +52,28 @@ const biomesCopy: Record<string, BiomesCopy> = {
     quickLabel: 'Quick answer',
     quickAnswer:
       'Treat Subnautica 2 biomes as route zones: starter safety, scan routes, wreck routes, base candidates, and late rare-material runs. Keep exact names and borders flexible until official notes or repeated in-game checks confirm them.',
+    fieldNotesTitle: 'Field notes for reading biomes',
+    fieldNotes: [
+      {
+        title: 'Think in routes first',
+        body: 'Biome names are useful, but players survive by knowing what a zone does: safe loops, scan targets, wrecks, base sites, or rare-material pressure.',
+      },
+      {
+        title: 'Borders are fuzzy in practice',
+        body: 'Early Access naming can drift, and terrain rarely draws a clean line. Use landmarks, depth feel, and repeatable routes before arguing about exact biome edges.',
+      },
+      {
+        title: 'Write down what the zone unlocks',
+        body: 'A good biome note says what it gives you next. If a zone only has a pretty name, it is not helping the route plan yet.',
+      },
+    ],
+    routeChecklistTitle: 'Biome note habit',
+    routeChecklist: [
+      'Classify each zone by safety, scans, resources, or base value.',
+      'Mark depth and nearby landmarks instead of relying only on names.',
+      'Update notes after patches that change resource placement.',
+      'Link each biome note to the next route it unlocks.',
+    ],
     contentsLabel: 'Contents',
     routeTitle: 'Biome route order',
     routeSteps: [
@@ -189,6 +211,28 @@ const biomesCopy: Record<string, BiomesCopy> = {
     quickLabel: '快速结论',
     quickAnswer:
       '先把 Subnautica 2 的生物群系当作路线区域来理解：新手安全圈、扫描路线、残骸路线、基地候选点、后期稀有材料路线。具体名称、边界和资源簇，在官方说明或多次实测前都要保持弹性。',
+    fieldNotesTitle: '理解生物群系的笔记',
+    fieldNotes: [
+      {
+        title: '先按路线理解',
+        body: '生物群系名字有用，但真正影响生存的是它能做什么：安全循环、扫描目标、残骸、基地位置，还是稀有材料压力。',
+      },
+      {
+        title: '边界通常没那么清楚',
+        body: '抢先体验阶段名称可能变化，地形也不会画出干净边界。先记地标、深度感觉和可重复路线，再讨论边界。',
+      },
+      {
+        title: '写清它解锁什么',
+        body: '好的 biome 笔记应该告诉你下一步能做什么。如果只有好听名字，还不能帮助路线规划。',
+      },
+    ],
+    routeChecklistTitle: '生物群系笔记习惯',
+    routeChecklist: [
+      '按安全、扫描、资源或基地价值给区域分类。',
+      '记录深度和地标，不只依赖名称。',
+      '资源点被补丁调整后及时更新笔记。',
+      '每个区域笔记都要链接到下一条可执行路线。',
+    ],
     contentsLabel: '目录',
     routeTitle: '生物群系路线顺序',
     routeSteps: [

@@ -16,7 +16,7 @@ type TadpoleDockCopy = ResourceGuideCopy & {
 };
 
 const PUBLISHED_AT = '2026-05-26';
-const UPDATED_AT = '2026-05-28';
+const UPDATED_AT = '2026-05-29';
 
 const sharedSources = [
   {
@@ -48,6 +48,28 @@ const tadpoleDockCopy: Record<string, TadpoleDockCopy> = {
     quickLabel: 'Quick answer',
     quickAnswer:
       'Current Dexerto data lists Tadpole Dock as a Builder Tool construct using Titanium Ingot x2, Silver Ingot x1, and Copper Wire x2. AllThingsHow shows the dock as a Moonpool add-on, and PC Gamer warns that the Moonpool setup needs space below the base because the dock extends downward. Build the Moonpool in open water first, reserve Copper Wire before base pieces eat it, then place the Tadpole Dock where the vehicle can enter without clipping terrain or base parts.',
+    fieldNotesTitle: 'Field notes for docking without regret',
+    fieldNotes: [
+      {
+        title: 'Space below matters',
+        body: 'A Moonpool that looks fine from inside can still be awkward underneath. Check terrain, kelp, and base pieces before placing the dock.',
+      },
+      {
+        title: 'Ingots should have a destination',
+        body: 'Titanium and Silver Ingots are expensive early. Do not craft them until Moonpool placement and dock direction are decided.',
+      },
+      {
+        title: 'Test the entry line',
+        body: 'The dock is only useful if the Tadpole can enter calmly. Swim the approach once before committing the final placement.',
+      },
+    ],
+    routeChecklistTitle: 'Before placing Tadpole Dock',
+    routeChecklist: [
+      'Confirm Moonpool has open water below and around the entry side.',
+      'Reserve Titanium Ingot x2, Silver Ingot x1, and Copper Wire x2.',
+      'Keep Copper Wire from being spent on unrelated base parts.',
+      'Test the Tadpole approach line before finalizing placement.',
+    ],
     contentsLabel: 'Contents',
     routeTitle: 'Tadpole Dock placement route',
     routeSteps: [
@@ -180,6 +202,28 @@ const tadpoleDockCopy: Record<string, TadpoleDockCopy> = {
     quickLabel: '快速结论',
     quickAnswer:
       'Dexerto 当前数据把 Tadpole Dock 写成 Builder Tool 建造，材料是 Titanium Ingot x2、Silver Ingot x1、Copper Wire x2。AllThingsHow 把它放在 Moonpool 附属设置里，PC Gamer 也提醒 Moonpool 下方要有空间，因为 Dock 会向下延伸。先在开阔水域摆 Moonpool，再把 Tadpole Dock 放在载具能顺畅进出的方向。',
+    fieldNotesTitle: '不后悔的停靠笔记',
+    fieldNotes: [
+      {
+        title: '下方空间很重要',
+        body: 'Moonpool 从里面看没问题，不代表下面好用。放 dock 前先看地形、植物和基地部件有没有挡路。',
+      },
+      {
+        title: 'Ingot 要有明确去处',
+        body: 'Titanium 和 Silver Ingot 前期都不便宜。Moonpool 位置和 dock 方向没定前，不要急着加工。',
+      },
+      {
+        title: '先测试进出路线',
+        body: 'Tadpole 能平稳进出，Dock 才真正有用。最终放置前，先游一遍载具接近路线。',
+      },
+    ],
+    routeChecklistTitle: '放 Tadpole Dock 前',
+    routeChecklist: [
+      '确认 Moonpool 下方和入口方向有开阔水域。',
+      '预留 Titanium Ingot x2、Silver Ingot x1、Copper Wire x2。',
+      '别让 Copper Wire 被无关基地部件花掉。',
+      '最终放置前测试 Tadpole 进出路线。',
+    ],
     contentsLabel: '目录',
     routeTitle: 'Tadpole Dock 摆放路线',
     routeSteps: [

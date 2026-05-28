@@ -16,7 +16,7 @@ type BaseLocationsCopy = ResourceGuideCopy & {
 };
 
 const PUBLISHED_AT = '2026-05-23';
-const UPDATED_AT = '2026-05-28';
+const UPDATED_AT = '2026-05-29';
 
 const sharedSources = [
   {
@@ -47,6 +47,28 @@ const baseLocationsCopy: Record<string, BaseLocationsCopy> = {
     quickLabel: 'Quick answer',
     quickAnswer:
       'Start with a practical base near the Lifepod and early resource loop. Add a second staging base only when a route proves worth repeating, such as Old Habitat objectives, Cicada Wreck trips, or later rare-material routes. Mark candidates with Beacons before spending big materials.',
+    fieldNotesTitle: 'Field notes for base placement',
+    fieldNotes: [
+      {
+        title: 'First base should reduce chores',
+        body: 'Do not chase a dramatic view for the first build. Put it where Titanium, Quartz, Copper, oxygen, and early scans stop wasting your time.',
+      },
+      {
+        title: 'Second bases need a job',
+        body: 'A staging base is worth it only when a route repeats: wreck trips, Old Habitat objectives, rare materials, or vehicle charging. Otherwise it becomes another half-stocked room.',
+      },
+      {
+        title: 'Beacon before building',
+        body: 'Mark a candidate, run the route twice, and only then spend big materials. If the second trip already feels annoying, the base location is wrong.',
+      },
+    ],
+    routeChecklistTitle: 'Before choosing a base spot',
+    routeChecklist: [
+      'Check early resource loops before judging the view.',
+      'Confirm room below the base for Moonpool and Tadpole Dock plans.',
+      'Place Beacons on candidates before hauling materials.',
+      'Build staging bases only for routes you repeat often.',
+    ],
     contentsLabel: 'Contents',
     routeTitle: 'Best base location types',
     routeSteps: [
@@ -168,6 +190,28 @@ const baseLocationsCopy: Record<string, BaseLocationsCopy> = {
     quickLabel: '快速答案',
     quickAnswer:
       '第一座基地优先建在 Lifepod 和前期资源循环附近。只有当某条路线值得反复跑时，再加第二个中转点，比如 Old Habitat 目标、Cicada Wreck 路线或后期稀有材料路线。氧气、供电、储物和载具没稳定前，不要太早往深处建大基地。',
+    fieldNotesTitle: '基地选址笔记',
+    fieldNotes: [
+      {
+        title: '第一座基地要减少杂活',
+        body: '开局不要先追求很帅的景观。它应该放在 Titanium、Quartz、Copper、氧气和早期扫描都能少跑的位置。',
+      },
+      {
+        title: '第二基地必须有任务',
+        body: '中转基地只有在路线会反复跑时才值得，比如残骸、Old Habitat、稀有材料或载具充电。否则只是另一个半空房间。',
+      },
+      {
+        title: '先放 Beacon 再建',
+        body: '候选位置先标出来，跑两次路线，再决定要不要搬材料。如果第二趟已经觉得烦，这个位置就不适合。',
+      },
+    ],
+    routeChecklistTitle: '选基地位置前',
+    routeChecklist: [
+      '先看前期资源循环，不要只看风景。',
+      '确认基地下方是否够 Moonpool 和 Tadpole Dock 使用。',
+      '搬材料前先用 Beacon 标候选点。',
+      '只有反复跑的路线才值得建中转基地。',
+    ],
     contentsLabel: '目录',
     routeTitle: '适合建基地的位置类型',
     routeSteps: [
