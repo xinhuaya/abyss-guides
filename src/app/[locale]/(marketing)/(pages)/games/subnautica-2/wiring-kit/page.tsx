@@ -16,7 +16,7 @@ type WiringKitCopy = ResourceGuideCopy & {
 };
 
 const PUBLISHED_AT = '2026-05-25';
-const UPDATED_AT = '2026-05-27';
+const UPDATED_AT = '2026-05-28';
 
 const sharedSources = [
   {
@@ -52,6 +52,28 @@ const wiringKitCopy: Record<string, WiringKitCopy> = {
     quickLabel: 'Quick answer',
     quickAnswer:
       'Current blueprint data lists Wiring Kit as Silver plus Copper Wire. The usual blocker is Silver, while Copper Wire is the easy piece to forget at base. PC Gamer currently routes Rebreather through System Chip, and System Chip routes back to Wiring Kit, so this small part now matters for deep-diving equipment too.',
+    fieldNotesTitle: 'Field notes for Wiring Kit runs',
+    fieldNotes: [
+      {
+        title: 'Treat it as a Silver route, not a desk craft',
+        body: 'The Fabricator click is the easy part. The trip is really about making Silver repeatable enough that one Wiring Kit does not empty your upgrade plan.',
+      },
+      {
+        title: 'Leave Copper Wire visible',
+        body: 'Copper Wire is basic, which is exactly why it disappears into the wrong locker. Keep two coils in the electronics box before you start batch crafting.',
+      },
+      {
+        title: 'Stop one step before the chip',
+        body: 'If the next blueprint asks for Wiring Kit directly, a finished System Chip will not help. Hold the kit until the target recipe is on screen.',
+      },
+    ],
+    routeChecklistTitle: 'Before making a Wiring Kit',
+    routeChecklist: [
+      'Check whether the next recipe wants Wiring Kit or System Chip.',
+      'Keep at least a small raw Silver reserve.',
+      'Store Copper Wire with electronics, not with general Copper.',
+      'Craft in small batches until your Silver loop is comfortable.',
+    ],
     contentsLabel: 'Contents',
     routeTitle: 'Wiring Kit craft plan',
     routeSteps: [
@@ -418,6 +440,28 @@ const wiringKitCopy: Record<string, WiringKitCopy> = {
 
 wiringKitCopy.zh = {
   ...wiringKitCopy.zh,
+  fieldNotesTitle: 'Wiring Kit 路线笔记',
+  fieldNotes: [
+    {
+      title: '把它当成 Silver 路线',
+      body: '点 Fabricator 很简单，真正麻烦的是 Silver 是否稳定。一个 Wiring Kit 不应该把你后面几个升级全掏空。',
+    },
+    {
+      title: 'Copper Wire 要放在看得见的位置',
+      body: 'Copper Wire 太基础了，所以最容易被塞进普通材料箱。开始批量制作前，电子材料箱里最好先留两卷。',
+    },
+    {
+      title: '先停在 Wiring Kit 这一步',
+      body: '如果下一个配方直接要 Wiring Kit，成品 System Chip 反而不灵活。等目标配方显示出来，再决定要不要继续加工。',
+    },
+  ],
+  routeChecklistTitle: '制作前检查',
+  routeChecklist: [
+    '确认下一个配方要 Wiring Kit 还是 System Chip。',
+    '至少留一点未加工 Silver。',
+    'Copper Wire 放电子材料箱，不要混在普通 Copper 里。',
+    'Silver 路线稳定前，只小批量制作。',
+  ],
   quickAnswer:
     '当前蓝图数据把 Wiring Kit 写成 Silver + Copper Wire。真正容易卡住的通常是 Silver。PC Gamer 当前把 Rebreather 路线接到 System Chip，而 System Chip 又会倒回 Wiring Kit，所以这个小零件也会影响深潜装备。',
   related: [

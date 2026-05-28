@@ -30,6 +30,21 @@ export default function StrongAcidGuidePage() {
       }}
       description="Strong Acid is one of the first materials that forces you to connect exploration, processing, oxygen prep, and vehicle planning. It starts with Necrolei Cysts and a Processor, then quickly affects what you can build next."
       eyebrow="Necrolei Cyst crafting route"
+      fieldNotes={[
+        {
+          title: 'Treat cysts as chemistry stock',
+          body: 'Necrolei Cysts are easy to mentally file as another plant pickup. Once Strong Acid appears, they belong in the same plan as Power Cells, Processor use, and deep-route prep.',
+        },
+        {
+          title: 'Do not craft acid without a next recipe',
+          body: 'Strong Acid is useful, but raw cysts and Processor access are more flexible. Craft it when Power Cell, Tadpole, or a breathing-route item is the visible target.',
+        },
+        {
+          title: 'Return from Old Habitat with a margin',
+          body: 'The Old Habitat route already asks for attention and oxygen. If the path is safe, gather a little more than the minimum so one mistake does not force the same swim again.',
+        },
+      ]}
+      fieldNotesTitle="Field notes for Strong Acid runs"
       faqs={[
         {
           question: 'How do you craft Strong Acid in Subnautica 2?',
@@ -67,6 +82,13 @@ export default function StrongAcidGuidePage() {
         { href: Routes.Subnautica2TitaniumIngot, label: 'Titanium Ingot' },
         { href: Routes.Subnautica2Crafting, label: 'Crafting Guide' },
       ]}
+      routeChecklist={[
+        'Scan or build the Processor before counting Strong Acid as available.',
+        'Mark the Necrolei Cyst route near Old Habitat.',
+        'Reserve Strong Acid for Power Cell or deep-route gear before comfort crafts.',
+        'Keep enough oxygen margin to leave the cyst route cleanly.',
+      ]}
+      routeChecklistTitle="Before crafting Strong Acid"
       sections={[
         {
           title: 'Unlock the Processor route',

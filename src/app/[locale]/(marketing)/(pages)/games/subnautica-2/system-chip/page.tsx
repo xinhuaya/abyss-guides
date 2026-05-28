@@ -16,7 +16,7 @@ type SystemChipCopy = ResourceGuideCopy & {
 };
 
 const PUBLISHED_AT = '2026-05-25';
-const UPDATED_AT = '2026-05-27';
+const UPDATED_AT = '2026-05-28';
 
 const sharedSources = [
   {
@@ -56,6 +56,28 @@ const systemChipCopy: Record<string, SystemChipCopy> = {
     quickLabel: 'Quick answer',
     quickAnswer:
       'Current guides list System Chip as a crafted electronics part made from Wiring Kit and Quartz. PC Gamer currently lists one System Chip in the Rebreather recipe, and GameSpot/PC Gamer upgrade reporting also connects the chip to Tadpole and depth-module planning. The real bottleneck is usually Silver for the Wiring Kit, not the chip itself.',
+    fieldNotesTitle: 'Field notes for chip bottlenecks',
+    fieldNotes: [
+      {
+        title: 'Do the Silver math before you swim out',
+        body: 'A System Chip sounds like one recipe, but it starts with the Wiring Kit count. If two upgrades both ask for chips, write down the Silver first so the trip has a real target.',
+      },
+      {
+        title: 'Keep the chip as a gate marker',
+        body: 'When Rebreather, Scanner Station, Tadpole, or a depth module is next, the System Chip tells you the route has moved from casual gathering into electronics planning.',
+      },
+      {
+        title: 'Store Quartz with electronics for now',
+        body: 'Quartz feels like glass stock, but on chip days it belongs beside Silver and Copper Wire. That one small storage habit cuts a surprising amount of backtracking.',
+      },
+    ],
+    routeChecklistTitle: 'Before crafting the chip',
+    routeChecklist: [
+      'Confirm the exact recipe that needs the System Chip.',
+      'Reserve the Wiring Kit instead of spending every Silver piece.',
+      'Put Quartz, Silver, Copper Wire, and finished chips in one electronics locker.',
+      'Keep one spare only after the Silver route feels repeatable.',
+    ],
     contentsLabel: 'Contents',
     routeTitle: 'System Chip craft plan',
     routeSteps: [
@@ -453,6 +475,28 @@ const systemChipCopy: Record<string, SystemChipCopy> = {
 
 systemChipCopy.zh = {
   ...systemChipCopy.zh,
+  fieldNotesTitle: 'System Chip 卡点笔记',
+  fieldNotes: [
+    {
+      title: '出门前先算 Silver',
+      body: 'System Chip 看起来只是一个小零件，但真正要准备的是 Wiring Kit 背后的 Silver。如果两个升级都要芯片，先把 Silver 数量写清楚再出门。',
+    },
+    {
+      title: '把芯片当成进度门槛',
+      body: '当 Rebreather、Scanner Station、Tadpole 或深度模块开始要 System Chip 时，就说明路线已经从随手捡材料变成电子材料规划了。',
+    },
+    {
+      title: 'Quartz 先放进电子材料箱',
+      body: 'Quartz 很容易被塞进玻璃材料箱。做芯片这几天，把它和 Silver、Copper Wire 放在一起，会少跑很多冤枉路。',
+    },
+  ],
+  routeChecklistTitle: '制作前检查',
+  routeChecklist: [
+    '先确认是哪一个配方需要 System Chip。',
+    '保留 Wiring Kit，不要把 Silver 全部提前花掉。',
+    'Quartz、Silver、Copper Wire 和成品芯片放在同一个电子材料箱。',
+    '只有 Silver 路线稳定后，才留一个备用芯片。',
+  ],
   quickAnswer:
     '当前攻略把 System Chip 写成 Wiring Kit + Quartz。PC Gamer 当前把 System Chip x1 列进 Rebreather 配方，Tadpole 和深度模块路线也会吃到它。真正容易卡的通常不是芯片本身，而是 Wiring Kit 需要的 Silver。',
   related: [

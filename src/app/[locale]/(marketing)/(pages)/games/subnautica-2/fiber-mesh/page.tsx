@@ -16,7 +16,7 @@ type FiberMeshCopy = ResourceGuideCopy & {
 };
 
 const PUBLISHED_AT = '2026-05-26';
-const UPDATED_AT = '2026-05-27';
+const UPDATED_AT = '2026-05-28';
 
 const sharedSources = [
   {
@@ -56,6 +56,28 @@ const fiberMeshCopy: Record<string, FiberMeshCopy> = {
     quickLabel: 'Quick answer',
     quickAnswer:
       'Current All Things How, Mobalytics, and Dexerto guides point players toward Creepvine material for Fiber Mesh, with current recipe wording commonly listing Creepvine Seed Cluster and Creepvine Sample at the Fabricator. PC Gamer also lists Fiber Mesh x2 in the Rebreather recipe and points the chain through Strong Acid, while Subnautica2Hub lists Fiber Mesh as part of the Wakemaker recipe.',
+    fieldNotesTitle: 'Field notes for Fiber Mesh prep',
+    fieldNotes: [
+      {
+        title: 'Do not make it a last-minute errand',
+        body: 'Fiber Mesh is cheap until it is the only thing between you and the Rebreather. Add it to the creepvine trip instead of treating it like an afterthought.',
+      },
+      {
+        title: 'Check the plant wording in your save',
+        body: 'Public guides describe the creepvine inputs a little differently. Let the Fabricator recipe in your save decide whether you need clusters, samples, or both.',
+      },
+      {
+        title: 'Keep plant stock separate from food stock',
+        body: 'A tiny creepvine bin makes later tool and oxygen recipes faster. Mixed organic storage is how useful material gets eaten by the wrong plan.',
+      },
+    ],
+    routeChecklistTitle: 'Before leaving the creepvine route',
+    routeChecklist: [
+      'Open the Fabricator recipe and note the exact plant input.',
+      'Bring the cutting tool if samples are required.',
+      'Reserve two Fiber Mesh if Rebreather is next.',
+      'Keep one spare plant set for Wakemaker or later tool crafts.',
+    ],
     contentsLabel: 'Contents',
     routeTitle: 'Fiber Mesh gathering plan',
     routeSteps: [
@@ -287,6 +309,28 @@ const fallbackCopy = fiberMeshCopy.en;
 
 fiberMeshCopy.zh = {
   ...fiberMeshCopy.zh,
+  fieldNotesTitle: 'Fiber Mesh 准备笔记',
+  fieldNotes: [
+    {
+      title: '不要把它拖到最后一趟',
+      body: 'Fiber Mesh 本身不难，难的是 Rebreather 只差它时又要折返。跑 creepvine 路线时顺手处理，比临时补材料舒服很多。',
+    },
+    {
+      title: '以存档里的配方文字为准',
+      body: '公开攻略对 creepvine 输入的写法不完全一致。你的 Fabricator 要 seed cluster、sample，还是两者都要，直接按游戏内配方来。',
+    },
+    {
+      title: '植物材料别和食物材料混放',
+      body: '给 creepvine 单独留一个小箱子，后面的工具和氧气装备会快很多。混在一起时，材料最容易被别的计划消耗掉。',
+    },
+  ],
+  routeChecklistTitle: '离开 creepvine 路线前',
+  routeChecklist: [
+    '打开 Fabricator，确认它要哪种植物输入。',
+    '如果需要 sample，先带好切割工具。',
+    'Rebreather 是下一步时，先留两份 Fiber Mesh。',
+    '给 Wakemaker 或后续工具留一组备用植物材料。',
+  ],
   quickAnswer:
     'All Things How、Mobalytics 和 Dexerto 当前都把 Fiber Mesh 指向 Creepvine 材料，常见写法是用 Creepvine Seed Cluster 和 Creepvine Sample 在 Fabricator 制作。PC Gamer 还把 Fiber Mesh x2 列进 Rebreather 配方，并把材料链接到 Strong Acid；Subnautica2Hub 则把 Fiber Mesh 列在 Wakemaker 配方里。',
   routeSteps: [
