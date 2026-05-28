@@ -34,6 +34,28 @@ export default function TadpoleGuidePage() {
       pathname={Routes.Subnautica2Tadpole}
       publishedAt="2026-05-23"
       quickAnswer="Unlock the Tadpole by scanning Tadpole fragments, then craft it through the vehicle-building chain. GameSpot reports that the blueprint requires at least three Tadpole Fragment scans, while PC Gamer emphasizes Power Cell prep and vehicle support."
+      fieldNotesTitle="Field notes before the first Tadpole trip"
+      fieldNotes={[
+        {
+          title: 'The vehicle is not a license to get lost',
+          body: 'The first Tadpole makes the map feel smaller, which is exactly when players start overreaching. Run one known route first before using it for a deep scouting trip.',
+        },
+        {
+          title: 'Power Cell planning comes before range',
+          body: 'A vehicle with weak power planning turns into a stranded landmark. Sort the Power Cell chain and carry a repair plan before treating the Tadpole as your new home.',
+        },
+        {
+          title: 'Park it where the return is obvious',
+          body: 'A bad parking spot wastes the time the vehicle was supposed to save. Use a Beacon, a clean Moonpool route, or a clear terrain cue before leaving it behind.',
+        },
+      ]}
+      routeChecklistTitle="Tadpole check"
+      routeChecklist={[
+        'Fragment scans are complete before material hauling.',
+        'Vehicle Fabricator and Moonpool support are ready.',
+        'Power Cell and repair planning are not afterthoughts.',
+        'First trip follows a known route, not a blind deep push.',
+      ]}
       related={[
         {
           href: Routes.Subnautica2EngineEfficiency,

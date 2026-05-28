@@ -48,6 +48,28 @@ const dockFixCopy: Record<string, DockFixCopy> = {
     quickLabel: 'Quick answer',
     quickAnswer:
       'If Subnautica 2 says insufficient space to dock, move the Moonpool or Tadpole Dock to deeper, more open water. Shacknews points the fix toward clearing space around the docking area, while PC Gamer and AllThingsHow both treat the Moonpool, Tadpole Dock, and Vehicle Fabricator as a connected vehicle-bay setup. Do not keep rotating the preview in a cramped spot. Rebuild the bay where the Tadpole has a clean approach, enough room underneath, and a Beacon marker you can actually find again.',
+    fieldNotesTitle: 'Field notes for fixing the bay',
+    fieldNotes: [
+      {
+        title: 'Rotation is not always the fix',
+        body: 'If the same spot fails five times, it probably needs more water, not more patience. Move the bay before the base grows around a bad choice.',
+      },
+      {
+        title: 'Test from the Tadpole side',
+        body: 'A dock can look valid from the builder view and still be awful to enter. Swim or pilot the approach line before calling the placement done.',
+      },
+      {
+        title: 'Fix it before adding storage',
+        body: 'Lockers, power, and extra rooms make a bad bay harder to undo. Clear docking first, decorate later.',
+      },
+    ],
+    routeChecklistTitle: 'Dock fix check',
+    routeChecklist: [
+      'Moonpool has open water below.',
+      'Tadpole can approach without a sharp turn.',
+      'Dock and Fabricator do not block each other.',
+      'Beacon marks the replacement bay before rebuilding.',
+    ],
     contentsLabel: 'Contents',
     routeTitle: 'Docking fix route',
     routeSteps: [
@@ -175,6 +197,28 @@ const dockFixCopy: Record<string, DockFixCopy> = {
     quickLabel: '快速结论',
     quickAnswer:
       '如果 Subnautica 2 提示 insufficient space to dock，优先把 Moonpool 或 Tadpole Dock 移到更深、更开阔的水域。Shacknews 的修复思路是清理停靠区域空间；PC Gamer 和 AllThingsHow 都把 Moonpool、Tadpole Dock、Vehicle Fabricator 当成一整套载具区来处理。不要在狭窄位置一直转预览，重建到 Tadpole 能顺畅进出、下方也有空间的位置更快。',
+    fieldNotesTitle: '停靠修复笔记',
+    fieldNotes: [
+      {
+        title: '不是每次都靠旋转解决',
+        body: '同一个位置失败五次，大概率缺的不是耐心，而是水域空间。趁基地还没围起来，早点搬。',
+      },
+      {
+        title: '从 Tadpole 进出方向测试',
+        body: '建造视角看起来能放，不代表载具真的好进。摆完先按进出路线游一遍，或者实际开一遍。',
+      },
+      {
+        title: '先修停靠，再加储物',
+        body: '柜子、供电和额外房间会让错误载具舱更难拆。先把停靠修好，再装饰。',
+      },
+    ],
+    routeChecklistTitle: 'Dock 修复检查',
+    routeChecklist: [
+      'Moonpool 下方有开阔水域。',
+      'Tadpole 进舱不需要急转弯。',
+      'Dock 和 Fabricator 不互相挡路。',
+      '重建前已经用 Beacon 标好新载具舱。',
+    ],
     contentsLabel: '目录',
     routeTitle: 'Docking 修复路线',
     routeSteps: [

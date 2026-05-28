@@ -16,7 +16,7 @@ type OxygenDepthCopy = ResourceGuideCopy & {
 };
 
 const PUBLISHED_AT = '2026-05-24';
-const UPDATED_AT = '2026-05-27';
+const UPDATED_AT = '2026-05-28';
 
 const sharedSources = [
   {
@@ -52,6 +52,28 @@ const oxygenDepthCopy: Record<string, OxygenDepthCopy> = {
     quickLabel: 'Quick answer',
     quickAnswer:
       'Do not push a deeper route just because you reached the entrance once. Use environmental oxygen, carry Air Bladders, upgrade to the Standard Air Tank when Silver allows it, and turn back when the route has two unknowns at the same time: low oxygen plus poor landmarks, hostile pressure, or a cave you have not mapped. Scanner and Bioscanner routes are especially bad places to gamble, because scanning makes you stop moving.',
+    fieldNotesTitle: 'Field notes for deeper dives',
+    fieldNotes: [
+      {
+        title: 'One entrance does not make a route',
+        body: 'Reaching a cave mouth once only proves you found it. A route starts when you can return, leave, and explain the landmarks without panic.',
+      },
+      {
+        title: 'Scanning spends oxygen twice',
+        body: 'You lose time while scanning, then lose more time turning yourself back toward the exit. Add that cost before chasing fragments in deep water.',
+      },
+      {
+        title: 'Leave with a note, not a story',
+        body: 'If the dive gets messy, go home with one clear note: the turn-back cue, the missing upgrade, or the landmark you need next time.',
+      },
+    ],
+    routeChecklistTitle: 'Depth check',
+    routeChecklist: [
+      'Return landmarks are clear before the reward route.',
+      'One backup oxygen source is packed or known.',
+      'Scan time is counted as oxygen cost.',
+      'Low O2 plus one extra unknown means turn back.',
+    ],
     contentsLabel: 'Contents',
     routeTitle: 'How to judge a deeper dive',
     routeSteps: [
@@ -189,6 +211,28 @@ const oxygenDepthCopy: Record<string, OxygenDepthCopy> = {
     quickLabel: '快速结论',
     quickAnswer:
       '不要因为“到过入口一次”就硬闯更深路线。先利用环境氧气，背包带 Air Bladder，Silver 够了就尽快升级 Standard Air Tank。只要低氧气和另一个未知风险同时出现，比如地标不清、敌对生物压力、没走过的洞穴，就该回头。',
+    fieldNotesTitle: '深潜路线笔记',
+    fieldNotes: [
+      {
+        title: '到过入口不等于路线成立',
+        body: '游到洞口一次，只能说明你找到了它。能稳定回来、能安全离开、能说清楚地标，才算路线。',
+      },
+      {
+        title: '扫描会花两次氧气',
+        body: '你扫描时会停住，扫完还要重新找出口方向。深水追碎片前，要把这段时间算进去。',
+      },
+      {
+        title: '狼狈时带一条笔记回家',
+        body: '如果这趟开始乱了，就别硬撑。带一条清楚笔记回家：回头信号、缺的升级，或者下次要认的地标。',
+      },
+    ],
+    routeChecklistTitle: '深潜检查',
+    routeChecklist: [
+      '追奖励前，返程地标已经清楚。',
+      '有一个备用氧气来源，或者知道补氧点。',
+      '扫描停留时间已经算进氧气成本。',
+      '低氧气加一个额外未知风险，就回头。',
+    ],
     contentsLabel: '目录',
     routeTitle: '怎么判断能不能继续下潜',
     routeSteps: [
@@ -395,6 +439,28 @@ oxygenDepthCopy.zh = {
   quickLabel: '快速结论',
   quickAnswer:
     '不要因为“到过入口一次”就硬闯更深路线。先利用环境氧气，带 Air Bladder，Silver 够了就做 Standard Air Tank。只要低氧气和另一个风险同时出现，比如地标不清、敌对生物、没走过的洞穴，或者需要停下来扫描，就该回头。',
+  fieldNotesTitle: '深潜路线笔记',
+  fieldNotes: [
+    {
+      title: '到过入口不等于路线成立',
+      body: '游到洞口一次，只能说明你找到了它。能稳定回来、能安全离开、能说清楚地标，才算路线。',
+    },
+    {
+      title: '扫描会花两次氧气',
+      body: '你扫描时会停住，扫完还要重新找出口方向。深水追碎片前，要把这段时间算进去。',
+    },
+    {
+      title: '狼狈时带一条笔记回家',
+      body: '如果这趟开始乱了，就别硬撑。带一条清楚笔记回家：回头信号、缺的升级，或者下次要认的地标。',
+    },
+  ],
+  routeChecklistTitle: '深潜检查',
+  routeChecklist: [
+    '追奖励前，返程地标已经清楚。',
+    '有一个备用氧气来源，或者知道补氧点。',
+    '扫描停留时间已经算进氧气成本。',
+    '低氧气加一个额外未知风险，就回头。',
+  ],
   routeTitle: '怎么判断能不能继续下潜',
   routeSteps: [
     {

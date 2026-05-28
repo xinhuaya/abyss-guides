@@ -48,6 +48,28 @@ const vehicleFabricatorCopy: Record<string, VehicleFabricatorCopy> = {
     quickLabel: 'Quick answer',
     quickAnswer:
       'Current Subnautica2.gg data lists Vehicle Fabricator as a Builder Tool construct using Titanium Ingot x2, Copper Ingot x1, and Glass x2. PC Gamer and AllThingsHow both point players toward a Moonpool-based setup: build enough base space, place the Moonpool, attach the Tadpole Dock, then use the Vehicle Fabricator for the Tadpole chain. Treat the recipe as patch-sensitive and check your PDA after updates. In practice, mark the vehicle bay with a Beacon and stock Glass before you craft the final Power Cell.',
+    fieldNotesTitle: 'Field notes for vehicle crafting',
+    fieldNotes: [
+      {
+        title: 'Build the bay before the shopping list',
+        body: 'Materials are not the hard part if the bay is cramped. Confirm Moonpool and dock space first, then haul ingots and Glass to a place that can actually use them.',
+      },
+      {
+        title: 'Glass is the annoying quiet cost',
+        body: 'Players remember ingots because they sound expensive. The run often stalls on Glass or Quartz because it felt too ordinary to stock ahead of time.',
+      },
+      {
+        title: 'Treat the Fabricator as a route hub',
+        body: 'Once it is placed, this corner of the base becomes the start of vehicle runs, repair checks, Power Cell swaps, and upgrade planning. Keep it readable.',
+      },
+    ],
+    routeChecklistTitle: 'Fabricator check',
+    routeChecklist: [
+      'Moonpool and Tadpole Dock have real clearance.',
+      'Titanium Ingot, Copper Ingot, and Glass are staged together.',
+      'Beacon marks the vehicle bay before material hauling.',
+      'Power Cell is saved for Tadpole progress, not random storage.',
+    ],
     contentsLabel: 'Contents',
     routeTitle: 'Vehicle Fabricator route',
     routeSteps: [
@@ -192,6 +214,28 @@ const vehicleFabricatorCopy: Record<string, VehicleFabricatorCopy> = {
     quickLabel: '快速结论',
     quickAnswer:
       'Subnautica2.gg 当前数据把 Vehicle Fabricator 写成 Builder Tool 建造，材料是 Titanium Ingot x2、Copper Ingot x1、Glass x2。PC Gamer 和 AllThingsHow 都把玩家引向 Moonpool 体系：先留足基地空间，摆 Moonpool，接 Tadpole Dock，再用 Vehicle Fabricator 推 Tadpole 链。抢先体验配方会变，更新后请以 PDA 为准。',
+    fieldNotesTitle: '载具制作笔记',
+    fieldNotes: [
+      {
+        title: '先确认载具舱，再搬材料',
+        body: '真正麻烦的往往不是材料，而是 Moonpool 和 Dock 太挤。先确认空间能用，再把锭和 Glass 搬过去。',
+      },
+      {
+        title: 'Glass 经常偷偷卡人',
+        body: '大家会记得 ingot，因为听起来贵。真正停工时，常常是 Glass 或 Quartz 没提前备好。',
+      },
+      {
+        title: '把 Fabricator 当成路线中心',
+        body: '它放下以后，这个角落就是载具出发、修理检查、Power Cell 更换和升级规划的起点。别把它塞到看不懂的位置。',
+      },
+    ],
+    routeChecklistTitle: 'Fabricator 检查',
+    routeChecklist: [
+      'Moonpool 和 Tadpole Dock 的空间真的够。',
+      'Titanium Ingot、Copper Ingot 和 Glass 放在一起。',
+      '搬材料前已经用 Beacon 标好载具舱。',
+      'Power Cell 留给 Tadpole 进度，不当普通备件乱放。',
+    ],
     contentsLabel: '目录',
     routeTitle: 'Vehicle Fabricator 路线',
     routeSteps: [
