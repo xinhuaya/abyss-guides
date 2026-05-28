@@ -373,14 +373,150 @@ fiberMeshCopy.zh = {
 };
 
 fiberMeshCopy.ja = {
-  ...fallbackCopy,
   metadata: {
-    title: 'Subnautica 2 Fiber Mesh Guide',
+    title:
+      'Subnautica 2 Fiber Mesh ガイド - Creepvine素材、用途、作るタイミング',
     description:
-      'Guide for Fiber Mesh, Creepvine material, Fabricator crafting, Rebreather x2 prep, Strong Acid chain, Wakemaker prep, and early equipment planning.',
+      'Subnautica 2のFiber Meshガイド。Creepvine素材、Fabricator制作、Rebreather x2準備、Wakemaker用途、序盤装備の素材管理を整理します。',
   },
+  eyebrow: 'Subnautica 2 植物素材',
+  title: 'Subnautica 2 Fiber Mesh ガイド',
+  description:
+    'Fiber Meshは小さな植物素材に見えますが、RebreatherやWakemakerの前で急に足りなくなりがちです。creepvineルートへ行く時に一緒に用意しておくと、あとから1個だけ取りに戻る手間を減らせます。',
+  quickLabel: '要点',
+  quickAnswer:
+    'All Things How、Mobalytics、DexertoはいずれもFiber MeshをCreepvine素材のルートに結びつけています。現在の説明では、Creepvine Seed ClusterやCreepvine SampleをFabricatorで加工する流れとして扱われることが多いです。PC GamerはRebreather素材としてFiber Mesh x2を挙げ、Subnautica2HubはWakemakerレシピにもFiber Meshを掲載しています。',
+  fieldNotesTitle: 'Fiber Mesh準備メモ',
+  fieldNotes: [
+    {
+      title: '最後の寄り道にしない',
+      body: 'Fiber Meshは簡単な素材ですが、Rebreather直前に足りないと面倒です。creepvineへ行く時に一緒に片付けておくと、戻りの往復を減らせます。',
+    },
+    {
+      title: '自分のセーブの植物表記を見る',
+      body: '公開ガイドではCreepvine Seed ClusterとCreepvine Sampleの書き方に少し差があります。必要な素材はFabricatorに表示されるレシピを基準にしましょう。',
+    },
+    {
+      title: '植物素材は食料と分ける',
+      body: '小さなcreepvine用ロッカーを作ると、後の工具や酸素装備が楽になります。有機素材を混ぜると、必要な素材が別の用途に消えがちです。',
+    },
+  ],
+  routeChecklistTitle: 'creepvineルートを離れる前に',
+  routeChecklist: [
+    'Fabricatorで必要な植物素材を確認した。',
+    'Sampleが必要なら切れる道具を持っている。',
+    'Rebreatherが次ならFiber Meshを2つ確保する。',
+    'Wakemakerや後の工具用に予備を1セット残す。',
+  ],
+  contentsLabel: '目次',
+  routeTitle: 'Fiber Mesh収集計画',
+  routeSteps: [
+    {
+      title: 'Sampleが必要なら道具を持つ',
+      body: 'ガイドによってCreepvine Seed ClusterとCreepvine Sampleの扱いが少し違います。1種類だけ拾えばよい前提にせず、セーブ内のレシピを見てから出発します。',
+    },
+    {
+      title: 'creepvineルートで複数の用事を済ませる',
+      body: 'Seed ClusterとSampleは序盤の植物ルートにまとまりやすい素材です。電池、潤滑剤、Fiber Meshの予定を一緒に確認し、別々の往復にしないようにします。',
+    },
+    {
+      title: 'Fabricatorで加工する',
+      body: 'Fiber Meshは生の植物ではなく加工素材です。レシピが使えるようになったら、保管を整理する前にFabricatorでmeshへ変換しておきます。',
+    },
+    {
+      title: 'Rebreather用に2つ残す',
+      body: 'PC GamerはRebreather素材としてFiber Mesh x2を掲載しています。深いルートが次なら、快適装備に植物素材を使う前に2つ確保しましょう。',
+    },
+    {
+      title: 'Wakemaker用にも1つ見る',
+      body: 'Subnautica2HubはWakemakerレシピにFiber Meshを掲載しています。移動装備が次の目標なら、拠点の雑多な箱に埋もれないよう別に置きます。',
+    },
+    {
+      title: '小さな植物箱を作る',
+      body: 'Fiber Meshそのものは高価ではありませんが、2回目の往復は時間を食います。creepvine素材を少し残す箱があると、後の酸素装備や工具レシピにすぐ対応できます。',
+    },
+  ],
+  tableTitle: 'Fiber Mesh チェックリスト',
+  tableHeaders: ['必要なもの', '確認すること'],
+  tableRows: [
+    ['Creepvineルート', 'Seed ClusterとSampleを両方確認する植物ルートです。'],
+    [
+      '道具',
+      'セーブ内レシピがCreepvine Sampleを求めるなら切れる道具を持ちます。',
+    ],
+    ['Fabricator', '現在のガイドはFabricatorでの加工を示しています。'],
+    ['Rebreather', 'PC GamerはFiber Mesh x2を素材として掲載しています。'],
+    [
+      'Wakemaker',
+      'Subnautica2HubはWakemakerレシピにもFiber Meshを掲載しています。',
+    ],
+    ['保管', 'バイオームを離れる前に予備のmeshか植物素材を少し残します。'],
+  ],
+  visualTitle: '植物から装備への流れ',
+  visualItems: [
+    {
+      label: '集める',
+      value: 'Creepvine',
+      note: '帰る前にSeed ClusterとSampleを確認。',
+    },
+    {
+      label: '作る',
+      value: 'Fiber Mesh',
+      note: 'レシピが見えたらFabricatorで加工します。',
+    },
+    {
+      label: '使う',
+      value: 'Wakemaker',
+      note: '移動装備が次なら1つ残します。',
+    },
+  ],
+  cautionTitle: 'Subnautica 1の記憶だけで動かない',
+  cautionBody:
+    'Early Accessではレシピ文言が変わる可能性があり、ガイドごとに植物入力の書き方も完全には一致しません。Fabricatorのレシピを見て、自分のセーブが要求する素材を集めましょう。',
+  faqTitle: 'FAQ',
+  faqs: [
+    {
+      title: 'Fiber Meshはどう作りますか？',
+      body: '現在のガイドはFabricatorとCreepvine素材を示しており、Creepvine Seed ClusterやCreepvine Sampleを確認する流れとして扱われています。',
+    },
+    {
+      title: 'Fiber Meshは何に使いますか？',
+      body: 'Subnautica2HubはWakemakerレシピにFiber Meshを掲載し、PC GamerはRebreather素材としてFiber Mesh x2を掲載しています。序盤の移動と呼吸装備に関わる素材です。',
+    },
+    {
+      title: '素材はどこで探しますか？',
+      body: 'まずcreepvineルートを見ます。Sampleが必要な場合に備えて、切れる道具を持っていくと戻り直しを避けられます。',
+    },
+    {
+      title: '多めに作るべきですか？',
+      body: '予備を1つ持つのは安心です。大量に作る必要は薄いですが、パッチや新レシピで需要が変わる可能性はあります。',
+    },
+  ],
+  readNextTitle: '次に読む',
+  related: [
+    { href: Routes.Subnautica2BasicFins, label: 'Basic Fins ガイド' },
+    { href: Routes.Subnautica2ImprovedFins, label: 'Improved Fins ガイド' },
+    { href: Routes.Subnautica2Rubber, label: 'Rubber レシピガイド' },
+    { href: Routes.Subnautica2Wakemaker, label: 'Wakemaker ガイド' },
+    { href: Routes.Subnautica2Rebreather, label: 'Rebreather ガイド' },
+    { href: Routes.Subnautica2StrongAcid, label: 'Strong Acid ガイド' },
+    { href: Routes.Subnautica2Processor, label: 'Processor ガイド' },
+    { href: Routes.Subnautica2SystemChip, label: 'System Chip ガイド' },
+    { href: Routes.Subnautica2AirTank, label: 'Air TankとO2' },
+    { href: Routes.Subnautica2OxygenDepth, label: '酸素と深度ガイド' },
+    { href: Routes.Subnautica2Crafting, label: 'クラフトガイド' },
+  ],
+  sourcesTitle: '出典メモ',
   sourceBody:
-    'Checked May 27, 2026 against PC Gamer, All Things How, Mobalytics, Dexerto, and Subnautica2Hub. Early Access recipe text can change.',
+    '2026年5月27日にPC Gamer、All Things How、Mobalytics、Dexerto、Subnautica2Hubで確認。Early Access中はレシピ文言が変わる可能性があるため、Fabricatorに表示される入力を基準にしてください。',
+  cardKicker: '植物素材カード',
+  cardBody:
+    'Creepvine収集、Fabricatorレシピ確認、RebreatherとWakemakerの用途、序盤植物素材の保管タイミング。',
+  cardTypeLabel: '種類',
+  cardTypeValue: '素材ガイド',
+  cardVerifiedLabel: '確認日',
+  cardStatusLabel: '状態',
+  cardStatusValue: 'Early Access',
 };
 
 for (const locale of ['ja', 'de', 'fr', 'pt-BR', 'es-419', 'ko', 'ru']) {
