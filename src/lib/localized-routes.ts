@@ -733,9 +733,7 @@ const localizedRoutes: Partial<Record<Locale, ReadonlySet<string>>> = {
   ]),
 };
 
-const englishOnlyUntilTranslated = new Set<string>([
-  Routes.Subnautica2MetalFarm,
-]);
+const englishOnlyUntilTranslated = new Set<string>();
 
 export function normalizeRoutePath(
   pathname: string | undefined = Routes.Root

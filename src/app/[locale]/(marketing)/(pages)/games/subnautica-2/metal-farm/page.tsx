@@ -16,17 +16,99 @@ import type { Locale } from 'next-intl';
 const PUBLISHED_AT = '2026-05-24';
 const UPDATED_AT = '2026-05-29';
 
+const zhUnlockSteps = [
+  {
+    title: '先到 Alien Ruins 路线',
+    body: '当前报道把 Metal Farm 扫描点放在 Alien Ruins Research Base 东北方向的深层绿色水池区域。出发前准备 Tadpole Depth Module。',
+  },
+  {
+    title: '扫描多个 Metal Farm',
+    body: 'PC Gamer 报道称需要三次扫描才能解锁蓝图。贴近地形、慢慢推进，活着离开比一次跑完更重要。',
+  },
+  {
+    title: '顺手拿建造材料',
+    body: '同一条路线也可能拿到 Troilite 和 Axum Bacterial Culture，它们都和 Metal Farm 建造有关。',
+  },
+  {
+    title: '建在已有电力附近',
+    body: 'Metal Farm 看起来需要稳定电力支持，所以第一台最好放在电力网络附近，而不是离基地太远。',
+  },
+  {
+    title: '建造前先选第一种金属',
+    body: 'Troilite 通常是最好的第一候选，因为它会和 Mangalloy、Entangled Power Cell 抢材料。不要空手站在机器前才开始想。',
+  },
+];
+
+const zhBuildRows = [
+  [
+    'Mangalloy Ingot',
+    '当前报道把它列为建造材料之一，连接 Troilite、Atacamite 和 Titanium Ingot 规划。',
+  ],
+  [
+    'Axum Bacterial Culture',
+    '当前报道把它列为建造材料之一，来源也和这条后期路线有关。',
+  ],
+  ['电力支持', '具体消耗可能会变，先多准备电力，再把它当成稳定生产设备。'],
+  ['Sonic Resonator', '计时完成后，需要用它打碎产出的矿石节点。'],
+];
+
+const zhWorkflow = [
+  '打开 Metal Farm 储存格。',
+  '放入你想复制的金属，早期最值得测试的通常是 Troilite。',
+  '等待生产计时。',
+  '用 Sonic Resonator 打碎产出的矿石节点。',
+  '电力和储存稳定后再重复。',
+];
+
+const zhFieldNotes = [
+  {
+    title: '第一台建在你能随手照看的地方',
+    body: 'Metal Farm 不只是机器，它会改变你的电力和储存习惯。第一台放近一点，生产、电力或背包不舒服时你能马上发现。',
+  },
+  {
+    title: '复制瓶颈材料，不复制舒服材料',
+    body: 'Titanium 看起来永远有用，但第一批生产循环应该给会卡多个配方的稀有输入。Troilite 通常是更干净的第一轮测试。',
+  },
+  {
+    title: '保留一份干净样本',
+    body: '实验前，把一块 Troilite 或 Atacamite 原样放在标记好的柜子里。这个小备份能避免很多后期路线白跑。',
+  },
+];
+
+const zhFaqs = [
+  {
+    title: 'Subnautica 2 怎么解锁 Metal Farm？',
+    body: '当前 PC Gamer 报道把 Metal Farm 扫描点放在 Alien Ruins Research Base 东北方向的深层绿色水池区域，并称三次扫描可解锁蓝图。',
+  },
+  {
+    title: 'Metal Farm 建造需要什么？',
+    body: '当前报道把建造链和 Mangalloy Ingot、Axum Bacterial Culture 联系在一起。Early Access 配方会变，花稀有材料前先确认建造菜单。',
+  },
+  {
+    title: 'Metal Farm 第一种复制什么最好？',
+    body: 'Troilite 是最强的第一候选，因为它稀有，而且会和 Mangalloy、Entangled Power Cell 制作竞争。',
+  },
+  {
+    title: 'Metal Farm 需要电力吗？',
+    body: '需要。第一台最好建在稳定电力旁边，别让生产循环把整个基地拖没电。',
+  },
+];
+
 export async function generateMetadata({
   params,
 }: {
   params: Promise<{ locale: Locale }>;
 }): Promise<Metadata | undefined> {
   const { locale } = await params;
+  const isZh = locale === 'zh';
 
   return constructMetadata({
-    title: 'Subnautica 2 Metal Farm Guide - Scan Location, Build Cost, and Use',
-    description:
-      'Unlock and use Metal Farms in Subnautica 2 with scan location notes, build cost, power planning, Troilite duplication, and safety warnings.',
+    title: isZh
+      ? 'Subnautica 2 Metal Farm 指南 - 扫描位置、建造材料和用法'
+      : 'Subnautica 2 Metal Farm Guide - Scan Location, Build Cost, and Use',
+    description: isZh
+      ? 'Subnautica 2 Metal Farm 解锁和使用攻略：扫描位置、建造材料、电力规划、Troilite 复制和安全注意点。'
+      : 'Unlock and use Metal Farms in Subnautica 2 with scan location notes, build cost, power planning, Troilite duplication, and safety warnings.',
     locale,
     pathname: Routes.Subnautica2MetalFarm,
   });
@@ -122,6 +204,106 @@ export default async function MetalFarmGuidePage({
   params: Promise<{ locale: Locale }>;
 }) {
   const { locale } = await params;
+  const isZh = locale === 'zh';
+  const activeUnlockSteps = isZh ? zhUnlockSteps : unlockSteps;
+  const activeBuildRows = isZh ? zhBuildRows : buildRows;
+  const activeWorkflow = isZh ? zhWorkflow : workflow;
+  const activeFieldNotes = isZh ? zhFieldNotes : fieldNotes;
+  const activeFaqs = isZh ? zhFaqs : faqs;
+  const pageCopy = isZh
+    ? {
+        articleDescription:
+          'Metal Farm 扫描、建造、电力和生产说明，覆盖 Troilite、Mangalloy Ingot、Axum Bacterial Culture 和 Sonic Resonator。',
+        breadcrumbName: 'Subnautica 2 Metal Farm 指南',
+        eyebrow: '稀有金属生产系统',
+        title: 'Subnautica 2 Metal Farm 指南',
+        description:
+          'Metal Farm 能把稀有材料从瓶颈变成可重复生产流程，但前提是你安全解锁、正确供电，并选对第一种复制金属。',
+        quickLabel: '快速答案',
+        quickAnswer:
+          '在 Alien Ruins Research Base 东北方向的深层绿色水池区域扫描 Metal Farm，然后用 Mangalloy Ingot 和 Axum Bacterial Culture 建造。供电后放入 Troilite 这类金属，计时结束后打碎产出的矿石节点。第一轮循环优先复制会卡多个配方的稀有材料，不要浪费在普通矿上。',
+        unlockTitle: '怎么解锁 Metal Farm',
+        requirementsTitle: '建造材料和支持条件',
+        requirementHeader: '需求',
+        planningHeader: '规划建议',
+        workflowTitle: '生产流程',
+        warningTitle: '安全提醒',
+        warningBody:
+          '报道中的扫描路线很深，也有掠食者和大型威胁。带维修、治疗和足够氧气余量；路线变糟时，放弃扫描比硬撑更好。',
+        fieldNotesTitle: '实用笔记',
+        faqTitle: '常见问题',
+        readNextTitle: '继续看',
+        related: [
+          ['Conduit Crystal 指南', Routes.Subnautica2ConduitCrystal],
+          ['Sonic Resonator 指南', Routes.Subnautica2SonicResonator],
+          ['Feedback Resonator 指南', Routes.Subnautica2FeedbackResonator],
+          ['Mangalloy Ingot 指南', Routes.Subnautica2Mangalloy],
+          ['Troilite 获取路线', Routes.Subnautica2Troilite],
+          ['Mineralized Clinker 指南', Routes.Subnautica2MineralizedClinker],
+          ['Troilite 卡进度修复', Routes.Subnautica2TroiliteSoftlock],
+          ['Atacamite 获取路线', Routes.Subnautica2Atacamite],
+          ['Entangled Power Cell 指南', Routes.Subnautica2EntangledPowerCell],
+          ['Karakorum Power Plant 路线', Routes.Subnautica2KarakorumPowerPlant],
+        ],
+        sourceTitle: '来源说明',
+        sourceBody:
+          '2026 年 5 月 29 日复查：对照当前 PC Gamer Metal Farm 报道、Troilite 路线笔记和 Entangled Power Cell 材料资料。蓝图和材料需求在补丁后需要重新核对。',
+        sourceLabel: 'PC Gamer Metal Farm 指南',
+        basePlanningTitle: '基地规划',
+        basePlanningBody:
+          '第一台建在电力旁边。会拖垮基地供电的稀有材料机器，不算真正的生产计划。',
+        firstMetalTitle: '第一种金属',
+        firstMetalBody:
+          'Troilite 是最强的第一候选，因为它稀有、影响进度，也会进入 Mangalloy 制作链。',
+      }
+    : {
+        articleDescription:
+          'Metal Farm scan, build, power, and production notes for Troilite, Mangalloy Ingot, Axum Bacterial Culture, and Sonic Resonator.',
+        breadcrumbName: 'Subnautica 2 Metal Farm Guide',
+        eyebrow: 'Rare-metal production system',
+        title: 'Subnautica 2 Metal Farm Guide',
+        description:
+          'Metal Farms are the kind of system that can turn rare materials from a bottleneck into a repeatable production loop, but only if you unlock and power them safely.',
+        quickLabel: 'Quick answer',
+        quickAnswer:
+          'Scan Metal Farms in the deep green-pool area northeast of the Alien Ruins Research Base, then build one with a Mangalloy Ingot and Axum Bacterial Culture. Once powered, insert a metal such as Troilite and break the produced node after the timer completes. Save the first successful loop for materials that block multiple recipes, not common ore.',
+        unlockTitle: 'How to unlock the Metal Farm',
+        requirementsTitle: 'Build requirements and support',
+        requirementHeader: 'Requirement',
+        planningHeader: 'Planning note',
+        workflowTitle: 'Production workflow',
+        warningTitle: 'Safety warning',
+        warningBody:
+          'The reported scan route is deep and dangerous, with predators and a major threat nearby. Bring repairs, healing, and enough oxygen margin to abandon the scan if the route goes bad.',
+        fieldNotesTitle: 'Field notes',
+        faqTitle: 'FAQ',
+        readNextTitle: 'Read next',
+        related: [
+          ['Conduit Crystal Guide', Routes.Subnautica2ConduitCrystal],
+          ['Sonic Resonator Guide', Routes.Subnautica2SonicResonator],
+          ['Feedback Resonator Guide', Routes.Subnautica2FeedbackResonator],
+          ['Mangalloy Ingot Guide', Routes.Subnautica2Mangalloy],
+          ['Troilite Location', Routes.Subnautica2Troilite],
+          ['Mineralized Clinker Guide', Routes.Subnautica2MineralizedClinker],
+          ['Troilite Softlock Fix', Routes.Subnautica2TroiliteSoftlock],
+          ['Atacamite Location', Routes.Subnautica2Atacamite],
+          ['Entangled Power Cell Guide', Routes.Subnautica2EntangledPowerCell],
+          [
+            'Karakorum Power Plant Route',
+            Routes.Subnautica2KarakorumPowerPlant,
+          ],
+        ],
+        sourceTitle: 'Source note',
+        sourceBody:
+          'Checked May 29, 2026 against current PC Gamer Metal Farm reporting, Troilite route notes, and Entangled Power Cell material data. Recheck blueprint and ingredient requirements after patches.',
+        sourceLabel: 'PC Gamer Metal Farm guide',
+        basePlanningTitle: 'Base planning',
+        basePlanningBody:
+          'Build the first farm near power. A rare-material machine that starves your base is not a production plan.',
+        firstMetalTitle: 'Best first metal',
+        firstMetalBody:
+          'Troilite is the strongest first candidate because it is rare, progression-relevant, and used in Mangalloy crafting.',
+      };
   const baseUrl = getBaseUrl().replace(/\/$/, '');
   const pageUrl = getUrlWithLocale(Routes.Subnautica2MetalFarm, locale).replace(
     /\/$/,
@@ -135,9 +317,8 @@ export default async function MetalFarmGuidePage({
     {
       '@context': 'https://schema.org',
       '@type': 'Article',
-      headline: 'Subnautica 2 Metal Farm Guide',
-      description:
-        'Metal Farm scan, build, power, and production notes for Troilite, Mangalloy Ingot, Axum Bacterial Culture, and Sonic Resonator.',
+      headline: pageCopy.title,
+      description: pageCopy.articleDescription,
       url: pageUrl,
       datePublished: PUBLISHED_AT,
       dateModified: UPDATED_AT,
@@ -173,7 +354,7 @@ export default async function MetalFarmGuidePage({
         {
           '@type': 'ListItem',
           position: 3,
-          name: 'Subnautica 2 Metal Farm Guide',
+          name: pageCopy.breadcrumbName,
           item: pageUrl,
         },
       ],
@@ -181,7 +362,7 @@ export default async function MetalFarmGuidePage({
     {
       '@context': 'https://schema.org',
       '@type': 'FAQPage',
-      mainEntity: faqs.map((faq) => ({
+      mainEntity: activeFaqs.map((faq) => ({
         '@type': 'Question',
         name: faq.title,
         acceptedAnswer: {
@@ -213,15 +394,13 @@ export default async function MetalFarmGuidePage({
           <div className="max-w-4xl">
             <div className="mb-6 inline-flex items-center gap-2 border border-cyan-200/20 bg-cyan-300/10 px-3 py-1 text-sm font-medium text-cyan-100">
               <FactoryIcon className="size-4" />
-              Rare-metal production system
+              {pageCopy.eyebrow}
             </div>
             <h1 className="text-balance text-4xl font-semibold leading-tight text-[#e8fff9] md:text-6xl">
-              Subnautica 2 Metal Farm Guide
+              {pageCopy.title}
             </h1>
             <p className="mt-6 max-w-3xl text-lg leading-8 text-[#a9c9c3]">
-              Metal Farms are the kind of system that can turn rare materials
-              from a bottleneck into a repeatable production loop, but only if
-              you unlock and power them safely.
+              {pageCopy.description}
             </p>
           </div>
         </Container>
@@ -232,24 +411,19 @@ export default async function MetalFarmGuidePage({
           <article className="space-y-8">
             <section className="border border-cyan-200/15 bg-[#082226] p-6">
               <p className="text-sm font-semibold uppercase tracking-[0.18em] text-[#f08b4f]">
-                Quick answer
+                {pageCopy.quickLabel}
               </p>
               <p className="mt-4 text-lg leading-8 text-[#d7eee8]">
-                Scan Metal Farms in the deep green-pool area northeast of the
-                Alien Ruins Research Base, then build one with a Mangalloy Ingot
-                and Axum Bacterial Culture. Once powered, insert a metal such as
-                Troilite and break the produced node after the timer completes.
-                Save the first successful loop for materials that block multiple
-                recipes, not common ore.
+                {pageCopy.quickAnswer}
               </p>
             </section>
 
             <section>
               <h2 className="text-3xl font-semibold text-[#effffb]">
-                How to unlock the Metal Farm
+                {pageCopy.unlockTitle}
               </h2>
               <div className="mt-5 grid gap-4">
-                {unlockSteps.map((step) => (
+                {activeUnlockSteps.map((step) => (
                   <section
                     key={step.title}
                     className="border border-cyan-200/12 bg-[#071f23] p-5"
@@ -266,18 +440,22 @@ export default async function MetalFarmGuidePage({
 
             <section>
               <h2 className="text-3xl font-semibold text-[#effffb]">
-                Build requirements and support
+                {pageCopy.requirementsTitle}
               </h2>
               <div className="mt-5 overflow-hidden border border-cyan-200/12">
                 <table className="w-full border-collapse bg-[#071f23] text-left text-sm">
                   <thead className="bg-[#0b2d33] text-[#dff8f0]">
                     <tr>
-                      <th className="p-4 font-semibold">Requirement</th>
-                      <th className="p-4 font-semibold">Planning note</th>
+                      <th className="p-4 font-semibold">
+                        {pageCopy.requirementHeader}
+                      </th>
+                      <th className="p-4 font-semibold">
+                        {pageCopy.planningHeader}
+                      </th>
                     </tr>
                   </thead>
                   <tbody>
-                    {buildRows.map(([item, note]) => (
+                    {activeBuildRows.map(([item, note]) => (
                       <tr key={item} className="border-t border-cyan-200/10">
                         <td className="p-4 align-top font-medium text-[#78ead7]">
                           {item}
@@ -292,10 +470,10 @@ export default async function MetalFarmGuidePage({
 
             <section>
               <h2 className="text-3xl font-semibold text-[#effffb]">
-                Production workflow
+                {pageCopy.workflowTitle}
               </h2>
               <ol className="mt-5 grid gap-3">
-                {workflow.map((step, index) => (
+                {activeWorkflow.map((step, index) => (
                   <li
                     key={step}
                     className="flex gap-3 border border-cyan-200/12 bg-[#071f23] p-4 text-sm leading-6 text-[#d1e8e2]"
@@ -313,22 +491,20 @@ export default async function MetalFarmGuidePage({
               <div className="flex items-center gap-3">
                 <AlertTriangleIcon className="size-6 text-[#f08b4f]" />
                 <h2 className="text-3xl font-semibold text-[#effffb]">
-                  Safety warning
+                  {pageCopy.warningTitle}
                 </h2>
               </div>
               <p className="mt-4 leading-8 text-[#abc8c3]">
-                The reported scan route is deep and dangerous, with predators
-                and a major threat nearby. Bring repairs, healing, and enough
-                oxygen margin to abandon the scan if the route goes bad.
+                {pageCopy.warningBody}
               </p>
             </section>
 
             <section>
               <h2 className="text-3xl font-semibold text-[#effffb]">
-                Field notes
+                {pageCopy.fieldNotesTitle}
               </h2>
               <div className="mt-5 grid gap-4">
-                {fieldNotes.map((note) => (
+                {activeFieldNotes.map((note) => (
                   <section
                     key={note.title}
                     className="border border-cyan-200/12 bg-[#071f23] p-5"
@@ -343,9 +519,11 @@ export default async function MetalFarmGuidePage({
             </section>
 
             <section>
-              <h2 className="text-3xl font-semibold text-[#effffb]">FAQ</h2>
+              <h2 className="text-3xl font-semibold text-[#effffb]">
+                {pageCopy.faqTitle}
+              </h2>
               <div className="mt-5 grid gap-4">
-                {faqs.map((faq) => (
+                {activeFaqs.map((faq) => (
                   <section
                     key={faq.title}
                     className="border border-cyan-200/12 bg-[#071f23] p-5"
@@ -363,81 +541,27 @@ export default async function MetalFarmGuidePage({
           <aside className="space-y-5 lg:sticky lg:top-24 lg:self-start">
             <section className="border border-cyan-200/12 bg-[#071f23] p-5">
               <h2 className="text-lg font-semibold text-[#effffb]">
-                Read next
+                {pageCopy.readNextTitle}
               </h2>
               <div className="mt-4 grid gap-3 text-sm">
-                <LocaleLink
-                  className="text-[#78ead7] hover:underline"
-                  href={Routes.Subnautica2ConduitCrystal}
-                >
-                  Conduit Crystal Guide
-                </LocaleLink>
-                <LocaleLink
-                  className="text-[#78ead7] hover:underline"
-                  href={Routes.Subnautica2SonicResonator}
-                >
-                  Sonic Resonator Guide
-                </LocaleLink>
-                <LocaleLink
-                  className="text-[#78ead7] hover:underline"
-                  href={Routes.Subnautica2FeedbackResonator}
-                >
-                  Feedback Resonator Guide
-                </LocaleLink>
-                <LocaleLink
-                  className="text-[#78ead7] hover:underline"
-                  href={Routes.Subnautica2Mangalloy}
-                >
-                  Mangalloy Ingot Guide
-                </LocaleLink>
-                <LocaleLink
-                  className="text-[#78ead7] hover:underline"
-                  href={Routes.Subnautica2Troilite}
-                >
-                  Troilite Location
-                </LocaleLink>
-                <LocaleLink
-                  className="text-[#78ead7] hover:underline"
-                  href={Routes.Subnautica2MineralizedClinker}
-                >
-                  Mineralized Clinker Guide
-                </LocaleLink>
-                <LocaleLink
-                  className="text-[#78ead7] hover:underline"
-                  href={Routes.Subnautica2TroiliteSoftlock}
-                >
-                  Troilite Softlock Fix
-                </LocaleLink>
-                <LocaleLink
-                  className="text-[#78ead7] hover:underline"
-                  href={Routes.Subnautica2Atacamite}
-                >
-                  Atacamite Location
-                </LocaleLink>
-                <LocaleLink
-                  className="text-[#78ead7] hover:underline"
-                  href={Routes.Subnautica2EntangledPowerCell}
-                >
-                  Entangled Power Cell Guide
-                </LocaleLink>
-                <LocaleLink
-                  className="text-[#78ead7] hover:underline"
-                  href={Routes.Subnautica2KarakorumPowerPlant}
-                >
-                  Karakorum Power Plant Route
-                </LocaleLink>
+                {pageCopy.related.map(([label, href]) => (
+                  <LocaleLink
+                    className="text-[#78ead7] hover:underline"
+                    href={href}
+                    key={href}
+                  >
+                    {label}
+                  </LocaleLink>
+                ))}
               </div>
             </section>
 
             <section className="border border-cyan-200/12 bg-[#071f23] p-5">
               <h2 className="text-lg font-semibold text-[#effffb]">
-                Source note
+                {pageCopy.sourceTitle}
               </h2>
               <p className="mt-3 text-sm leading-6 text-[#abc8c3]">
-                Checked May 28, 2026 against current PC Gamer Metal Farm
-                reporting, Troilite route notes, and Entangled Power Cell
-                material data. Recheck blueprint and ingredient requirements
-                after patches.
+                {pageCopy.sourceBody}
               </p>
               <a
                 className="mt-4 inline-flex text-sm text-[#78ead7] hover:underline"
@@ -445,29 +569,27 @@ export default async function MetalFarmGuidePage({
                 rel="noreferrer"
                 target="_blank"
               >
-                PC Gamer Metal Farm guide
+                {pageCopy.sourceLabel}
               </a>
             </section>
 
             <section className="border border-cyan-200/12 bg-[#071f23] p-5">
               <BatteryChargingIcon className="mb-4 size-6 text-[#f08b4f]" />
               <h2 className="text-lg font-semibold text-[#effffb]">
-                Base planning
+                {pageCopy.basePlanningTitle}
               </h2>
               <p className="mt-3 text-sm leading-6 text-[#abc8c3]">
-                Build the first farm near power. A rare-material machine that
-                starves your base is not a production plan.
+                {pageCopy.basePlanningBody}
               </p>
             </section>
 
             <section className="border border-cyan-200/12 bg-[#071f23] p-5">
               <RadarIcon className="mb-4 size-6 text-[#f08b4f]" />
               <h2 className="text-lg font-semibold text-[#effffb]">
-                Best first metal
+                {pageCopy.firstMetalTitle}
               </h2>
               <p className="mt-3 text-sm leading-6 text-[#abc8c3]">
-                Troilite is the strongest first candidate because it is rare,
-                progression-relevant, and used in Mangalloy crafting.
+                {pageCopy.firstMetalBody}
               </p>
             </section>
           </aside>
