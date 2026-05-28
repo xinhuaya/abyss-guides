@@ -16,7 +16,7 @@ type CopperIngotCopy = ResourceGuideCopy & {
 };
 
 const PUBLISHED_AT = '2026-05-26';
-const UPDATED_AT = '2026-05-26';
+const UPDATED_AT = '2026-05-28';
 
 const sharedSources = [
   {
@@ -48,6 +48,28 @@ const copperIngotCopy: Record<string, CopperIngotCopy> = {
     quickLabel: 'Quick answer',
     quickAnswer:
       'Current Subnautica2.gg and Dexerto pages list Copper Ingot as a Processor craft made from Copper x3, and GamesRadar also reports the 3x Copper ingot recipe. Vehicle Fabricator currently uses Copper Ingot x1, so keep at least one planned batch for the Tadpole vehicle chain without draining every raw Copper stack.',
+    fieldNotesTitle: 'Field notes for Copper Ingot timing',
+    fieldNotes: [
+      {
+        title: 'Do not process your battery route',
+        body: 'Copper Ingot feels tidy, but raw Copper still feeds batteries, wire, and early tools. Keep the ordinary route funded before compressing it.',
+      },
+      {
+        title: 'Make ingots only for visible chains',
+        body: 'Processed Copper is less flexible. Wait until a station, alloy, or upgrade recipe actually asks for it.',
+      },
+      {
+        title: 'Count wire before ingot',
+        body: 'If Copper Wire is still shaky, Copper Ingot can wait. Most early stalls hurt more on the wire side than the ingot side.',
+      },
+    ],
+    routeChecklistTitle: 'Before making Copper Ingot',
+    routeChecklist: [
+      'Basic Battery and Copper Wire needs are covered.',
+      'Processor route is ready.',
+      'The target recipe asks for Copper Ingot directly.',
+      'Raw Copper reserve remains in a separate locker.',
+    ],
     contentsLabel: 'Contents',
     routeTitle: 'Copper Ingot planning route',
     routeSteps: [
@@ -160,6 +182,28 @@ const copperIngotCopy: Record<string, CopperIngotCopy> = {
     quickLabel: '快速结论',
     quickAnswer:
       'Subnautica2.gg 和 Dexerto 当前都把 Copper Ingot 写成 Processor 配方，材料是 Copper x3；GamesRadar 的 ingot 指南也写到 3x Copper。Vehicle Fabricator 当前需要 Copper Ingot x1，所以如果你在推 Tadpole 载具链，先留一批 Copper 做 ingot，但别把所有原矿都加工掉。',
+    fieldNotesTitle: 'Copper Ingot 时机笔记',
+    fieldNotes: [
+      {
+        title: '不要把电池路线加工掉',
+        body: 'Copper Ingot 看起来整齐，但 raw Copper 还要做电池、wire 和早期工具。先保证普通路线够用，再压成 ingot。',
+      },
+      {
+        title: '只为明确链条做 ingot',
+        body: '加工后的 Copper 没有散装材料灵活。等工作站、合金或升级配方直接要它时再做。',
+      },
+      {
+        title: '先算 wire，再算 ingot',
+        body: 'Copper Wire 还不稳定时，Copper Ingot 可以等。前期真正疼的通常是 wire，不是 ingot。',
+      },
+    ],
+    routeChecklistTitle: '制作 Copper Ingot 前',
+    routeChecklist: [
+      'Basic Battery 和 Copper Wire 需求已经覆盖。',
+      'Processor 路线已经准备好。',
+      '目标配方直接要求 Copper Ingot。',
+      'Raw Copper 仍然单独留有储备。',
+    ],
     contentsLabel: '目录',
     routeTitle: 'Copper Ingot 规划路线',
     routeSteps: [

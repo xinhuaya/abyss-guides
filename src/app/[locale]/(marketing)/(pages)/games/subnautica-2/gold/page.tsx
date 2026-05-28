@@ -16,7 +16,7 @@ type GoldCopy = ResourceGuideCopy & {
 };
 
 const PUBLISHED_AT = '2026-05-26';
-const UPDATED_AT = '2026-05-26';
+const UPDATED_AT = '2026-05-28';
 
 const sharedSources = [
   {
@@ -52,6 +52,28 @@ const goldCopy: Record<string, GoldCopy> = {
     quickLabel: 'Quick answer',
     quickAnswer:
       'PC Gamer reports Gold in the volcanic vent region east of the Lifepod, especially around rocks near the crashed colony ship roughly 450 meters east. You need Heat Tolerance before safely farming the area, and Sonic Resonator helps with larger nodes. Dexerto points to the Cicada Wreck area as a dense farming spot, while Subnautica2Hub lists Gold in Coral Gardens and Observatory Ruins down to 500m and ties it to Advanced Wiring Kit, Strong Acid, Gold Ingot, Silver conversion, and Thermal Plant recipes.',
+    fieldNotesTitle: 'Field notes for Gold routing',
+    fieldNotes: [
+      {
+        title: 'Gold has too many jobs',
+        body: 'Electronics, power, and advanced kits all reach for Gold. Treat the first few pieces like route currency, not generic treasure.',
+      },
+      {
+        title: 'Do not spend it before the next station is known',
+        body: 'A random Gold craft can block Advanced Wiring Kit, ingots, or power chains. Write down the next recipe before you touch the stack.',
+      },
+      {
+        title: 'Keep hot-zone trips focused',
+        body: 'Gold routes often happen when you are already pushing heat or depth. Go in for one job and leave with enough oxygen margin.',
+      },
+    ],
+    routeChecklistTitle: 'Before spending Gold',
+    routeChecklist: [
+      'Advanced Wiring Kit demand is checked.',
+      'Gold Ingot demand is checked separately.',
+      'Power-chain recipes are not waiting on the same piece.',
+      'At least one raw Gold stays reserved if the route is not repeatable.',
+    ],
     contentsLabel: 'Contents',
     routeTitle: 'Gold route plan',
     routeSteps: [
@@ -178,6 +200,28 @@ const goldCopy: Record<string, GoldCopy> = {
     quickLabel: '快速结论',
     quickAnswer:
       'PC Gamer 报道 Gold 位于 Lifepod 东方的火山热泉区域，尤其是 Lifepod 正东约 450 米、坠毁殖民船附近的岩石上。安全采集前需要 Heat Tolerance，较大的节点用 Sonic Resonator 更合适。Dexerto 指向 Cicada Wreck 附近的高密度采集点；Subnautica2Hub 则把 Gold 列在 Coral Gardens 和 Observatory Ruins，深度可到 500m，并关联 Advanced Wiring Kit、Strong Acid、Gold Ingot、Silver 转换和 Thermal Plant 配方。',
+    fieldNotesTitle: 'Gold 路线笔记',
+    fieldNotes: [
+      {
+        title: 'Gold 要做的事太多',
+        body: '电子、电力和高级 kit 都会抢 Gold。前几块 Gold 更像路线货币，不是普通宝贝。',
+      },
+      {
+        title: '不知道下个工作站前先别花',
+        body: '随手花一块 Gold，可能卡住 Advanced Wiring Kit、ingot 或电力链。动用库存前，先写清下个配方。',
+      },
+      {
+        title: '热区路线要专注',
+        body: 'Gold 路线经常伴随热区或深度压力。进去只做一个目标，留够氧气再离开。',
+      },
+    ],
+    routeChecklistTitle: '花 Gold 前',
+    routeChecklist: [
+      'Advanced Wiring Kit 需求已经检查。',
+      'Gold Ingot 需求单独检查。',
+      '电力链配方没有等同一块 Gold。',
+      '路线还不能稳定重复时，至少留一块 raw Gold。',
+    ],
     contentsLabel: '目录',
     routeTitle: 'Gold 路线规划',
     routeSteps: [

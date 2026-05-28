@@ -16,7 +16,7 @@ type SulfurCopy = ResourceGuideCopy & {
 };
 
 const PUBLISHED_AT = '2026-05-26';
-const UPDATED_AT = '2026-05-26';
+const UPDATED_AT = '2026-05-28';
 
 const sharedSources = [
   {
@@ -52,6 +52,28 @@ const sulfurCopy: Record<string, SulfurCopy> = {
     quickLabel: 'Quick answer',
     quickAnswer:
       'PC Gamer reports an early sulfur spot about 120 degrees southeast of the Lifepod, roughly 200 meters away and around 25 meters deep, near Coral Crabs and past the Welcome Centre. Small pieces can be grabbed by hand there, while larger deposits need the Sonic Resonator. Subnautica2Hub lists Sulfur in Coral Gardens and Observatory Ruins at 0-450m, and Subnautica2.gg lists it as used in 4 recipes.',
+    fieldNotesTitle: 'Field notes for Sulfur spending',
+    fieldNotes: [
+      {
+        title: 'Sulfur is small until it blocks safety',
+        body: 'Repair Tool, Strong Acid fallback, and Advanced Wiring Kit can all pull from the same little stock. Spend it after the safety route is handled.',
+      },
+      {
+        title: 'Keep repair ahead of upgrades',
+        body: 'An upgrade can wait longer than a damaged vehicle or tool route. If Repair Tool is not stable, Sulfur should stay boring.',
+      },
+      {
+        title: 'Do not use fallback acid by habit',
+        body: 'Sulfur plus Gold can make Strong Acid in some routes, but Necrolei Cyst is usually cleaner. Save the fallback for when the cyst route is inconvenient.',
+      },
+    ],
+    routeChecklistTitle: 'Before spending Sulfur',
+    routeChecklist: [
+      'Repair Tool needs are covered.',
+      'Advanced Wiring Kit target is visible.',
+      'Strong Acid fallback is truly needed.',
+      'At least one spare Sulfur remains if the route is unsafe.',
+    ],
     contentsLabel: 'Contents',
     routeTitle: 'First sulfur route',
     routeSteps: [
@@ -178,6 +200,28 @@ const sulfurCopy: Record<string, SulfurCopy> = {
     quickLabel: '快速结论',
     quickAnswer:
       'PC Gamer 报道的早期 Sulfur 点在 Lifepod 东南约 120 度方向，距离大约 200m，深度约 25m，靠近 Coral Crabs，并且在 Welcome Centre 之后。那里有小块 Sulfur 可以手捡，大块矿点当前需要 Sonic Resonator。Subnautica2Hub 把 Sulfur 区域列为 Coral Gardens 和 Observatory Ruins，深度 0-450m；Subnautica2.gg 当前写它用于 4 个配方。',
+    fieldNotesTitle: 'Sulfur 使用笔记',
+    fieldNotes: [
+      {
+        title: 'Sulfur 小，但会卡安全线',
+        body: 'Repair Tool、Strong Acid 备用路线和 Advanced Wiring Kit 都可能吃同一小堆 Sulfur。安全路线处理好后再花。',
+      },
+      {
+        title: '修理优先于升级',
+        body: '升级可以晚一点，但坏掉的载具和工具路线不行。如果 Repair Tool 还不稳定，Sulfur 先别乱动。',
+      },
+      {
+        title: '不要习惯性用备用酸路线',
+        body: 'Sulfur 加 Gold 有时能做 Strong Acid，但 Necrolei Cyst 通常更干净。只有 cyst 路线不方便时再用备用方案。',
+      },
+    ],
+    routeChecklistTitle: '花 Sulfur 前',
+    routeChecklist: [
+      'Repair Tool 需求已经覆盖。',
+      'Advanced Wiring Kit 目标已经显示。',
+      'Strong Acid 备用路线确实需要。',
+      '路线不安全时，至少留一个 Sulfur 备用。',
+    ],
     contentsLabel: '目录',
     routeTitle: '第一块 Sulfur 路线',
     routeSteps: [

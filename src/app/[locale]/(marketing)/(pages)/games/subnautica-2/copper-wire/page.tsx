@@ -48,6 +48,28 @@ const copperWireCopy: Record<string, CopperWireCopy> = {
     quickLabel: 'Quick answer',
     quickAnswer:
       'Current blueprint data lists Copper Wire as unlocked by default and crafted at the Fabrication Station from 2 Copper. Keep a few wires ready for Wiring Kit, Habitat Builder, Processor, Battery Terminal, Scanner Station, Tadpole Dock, and base pieces, but do not convert every Copper stack before your battery and tool plan is settled.',
+    fieldNotesTitle: 'Field notes for wire pressure',
+    fieldNotes: [
+      {
+        title: 'Copper Wire is where Copper stops being simple',
+        body: 'The recipe is easy, but the decision is not. Every wire is also two batteries, a tool delay, or a base part you cannot craft yet.',
+      },
+      {
+        title: 'Keep wire next to Silver',
+        body: 'Wiring Kit planning gets smoother when Copper Wire and Silver live together. If they sit in different lockers, you will keep misreading the real blocker.',
+      },
+      {
+        title: 'Batch for one project at a time',
+        body: 'Make wire for Processor, Habitat Builder, or Scanner Station as separate batches. A single mixed pile turns into bad accounting fast.',
+      },
+    ],
+    routeChecklistTitle: 'Before converting Copper to wire',
+    routeChecklist: [
+      'Battery needs are covered first.',
+      'The next electronics recipe is visible.',
+      'Silver and Quartz are checked if System Chip is next.',
+      'Raw Copper reserve stays separate from finished wire.',
+    ],
     contentsLabel: 'Contents',
     routeTitle: 'Copper Wire craft plan',
     routeSteps: [
@@ -189,6 +211,28 @@ const copperWireCopy: Record<string, CopperWireCopy> = {
     quickLabel: '快速结论',
     quickAnswer:
       '当前蓝图数据把 Copper Wire 写成默认解锁，在 Fabrication Station 用 2 Copper 制作。建议留几卷给 Wiring Kit、Habitat Builder、Processor、Battery Terminal、Tadpole Dock 和基地部件；在电池和工具路线没理清前，不要把所有 Copper 都一次性花掉。',
+    fieldNotesTitle: 'Copper Wire 压力笔记',
+    fieldNotes: [
+      {
+        title: 'Copper Wire 是 Copper 变复杂的地方',
+        body: '配方很简单，但决策不简单。每一卷 wire 都等于两块电池、一个工具延后，或者一个暂时做不了的基地零件。',
+      },
+      {
+        title: 'Wire 和 Silver 放一起',
+        body: 'Wiring Kit 规划时，Copper Wire 和 Silver 放在一起会顺很多。分开放时，你很容易误判真正卡点。',
+      },
+      {
+        title: '按一个项目一批做',
+        body: 'Processor、Habitat Builder、Scanner Station 需要的 wire 分批算。全部混成一堆，很快就会算乱。',
+      },
+    ],
+    routeChecklistTitle: 'Copper 转 wire 前',
+    routeChecklist: [
+      '电池需求已经先覆盖。',
+      '下一个电子配方已经显示出来。',
+      '如果要做 System Chip，Silver 和 Quartz 已经检查。',
+      'Raw Copper 和成品 wire 分开放。',
+    ],
     contentsLabel: '目录',
     routeTitle: 'Copper Wire 制作规划',
     routeSteps: [

@@ -52,6 +52,28 @@ const saltCopy: Record<string, SaltCopy> = {
     quickLabel: 'Quick answer',
     quickAnswer:
       'PC Gamer reports the easiest early Salt spot as a cave roughly 200 meters southeast of the Lifepod, near Chap Black Box, past the Welcome Center and down by two pillars with a giant Coral Crab nearby. The cave holds two Salt pieces that respawn over time. Dexerto also points to the same Chap Blackbox cave and a bulk Dead Coral Biome route south-southeast of the Lifepod. Subnautica2Hub lists Salt in Coral Gardens at 0-400m, with Salt Crystals and Sonic Resonator deposits, and connects it to Power Cell, Glass from Salt, food, water, and Power Storage recipes. If you mark only one material route early, make it this one or your Tadpole and Glass plan will keep nagging you.',
+    fieldNotesTitle: 'Field notes for Salt reserves',
+    fieldNotes: [
+      {
+        title: 'Salt is cheap until the Power Cell is waiting',
+        body: 'Food and water habits make Salt feel disposable. Then Power Cell asks for one and the Tadpole plan stalls over the easiest material on the list.',
+      },
+      {
+        title: 'Keep one piece out of the kitchen pile',
+        body: 'A tiny vehicle reserve solves most Salt mistakes. Put one piece with batteries and Strong Acid instead of the general survival box.',
+      },
+      {
+        title: 'Do not farm it as a main trip',
+        body: 'Salt is best collected as a tagalong item on safer shallow routes. Dedicated Salt trips are usually a sign the storage split failed.',
+      },
+    ],
+    routeChecklistTitle: 'Before spending Salt',
+    routeChecklist: [
+      'One piece is reserved for Power Cell.',
+      'Food and water stock does not touch the vehicle reserve.',
+      'Battery and Strong Acid materials are staged nearby.',
+      'Salt route is paired with another shallow errand.',
+    ],
     contentsLabel: 'Contents',
     routeTitle: 'Salt route plan',
     routeSteps: [
@@ -177,6 +199,28 @@ const saltCopy: Record<string, SaltCopy> = {
     quickLabel: '快速结论',
     quickAnswer:
       'PC Gamer 报道最容易的早期 Salt 点在 Lifepod 东南约 200 米、Chap Black Box 附近的小洞穴；路线会经过 Welcome Center，往下到两根石柱和一只巨大 Coral Crab 附近。洞里有两块 Salt，并且会随时间刷新。Dexerto 也指向 Chap Blackbox 洞穴，并补充 Lifepod 南偏东的 Dead Coral Biome 批量路线。Subnautica2Hub 把 Salt 列在 Coral Gardens，深度 0-400m，采集方式包含 Salt Crystal 和 Sonic Resonator 矿点，并关联 Power Cell、Glass from Salt、食物、水和 Power Storage 配方。前期如果只标一个材料点，就先标这个洞穴，后面 Tadpole 和 Glass 都会回头找它。',
+    fieldNotesTitle: 'Salt 储备笔记',
+    fieldNotes: [
+      {
+        title: 'Salt 便宜，直到 Power Cell 等它',
+        body: '做食物和水时，Salt 很容易被当成随便花的材料。等 Power Cell 只差一块 Salt，Tadpole 计划就会被最简单的材料卡住。',
+      },
+      {
+        title: '厨房堆外单独留一块',
+        body: '给载具路线留一小份 Salt 储备，能避免大多数错误。把一块 Salt 放在电池和 Strong Acid 旁边。',
+      },
+      {
+        title: '不要专门为 Salt 跑大路线',
+        body: 'Salt 最适合在浅水安全路线顺手带回。专门跑 Salt，通常说明收纳分区已经出问题了。',
+      },
+    ],
+    routeChecklistTitle: '花 Salt 前',
+    routeChecklist: [
+      'Power Cell 已经单独预留一块 Salt。',
+      '食物和水材料不碰载具储备。',
+      '电池和 Strong Acid 材料放在附近。',
+      'Salt 路线和另一个浅水任务一起做。',
+    ],
     contentsLabel: '目录',
     routeTitle: 'Salt 路线规划',
     routeSteps: [
