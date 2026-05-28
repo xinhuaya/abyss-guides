@@ -383,7 +383,7 @@ export function LinkedGuidePage({
                 Source note
               </h2>
               <p className="mt-3 text-sm leading-6 text-[#abc8c3]">
-                Checked May 23, 2026 against current Subnautica 2 reporting.
+                Checked {checkedAt} against current Subnautica 2 reporting.
                 Early Access details can change after patches.
               </p>
               <div className="mt-4 grid gap-2 text-sm">
