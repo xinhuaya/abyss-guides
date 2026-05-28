@@ -11,6 +11,16 @@ type HubLink = {
   description: string;
 };
 
+type HubCluster = {
+  title: string;
+  description: string;
+  links: Array<{
+    href: Routes;
+    label: string;
+    note: string;
+  }>;
+};
+
 type HubCopy = {
   metadata: {
     title: string;
@@ -23,6 +33,9 @@ type HubCopy = {
   priorityEyebrow: string;
   priorityTitle: string;
   priorityResources: HubLink[];
+  routeClustersEyebrow: string;
+  routeClustersTitle: string;
+  routeClusters: HubCluster[];
   patchEyebrow: string;
   patchTitle: string;
   patchBody: string;
@@ -536,6 +549,145 @@ const copyByLocale: Record<'en' | 'zh', HubCopy> = {
           'Blueprint scans, power planning, and rare-metal duplication workflow.',
       },
     ],
+    routeClustersEyebrow: 'Route clusters',
+    routeClustersTitle: 'Follow one job, then open the next page',
+    routeClusters: [
+      {
+        title: 'First safe hour',
+        description:
+          'For players who just left the Lifepod and need oxygen, movement, and one repeatable material loop before pushing farther.',
+        links: [
+          {
+            href: Routes.Subnautica2Beginner,
+            label: 'Beginner Guide',
+            note: 'sets the first-session order',
+          },
+          {
+            href: Routes.Subnautica2AirTank,
+            label: 'Air Tank',
+            note: 'adds breathing room',
+          },
+          {
+            href: Routes.Subnautica2BasicFins,
+            label: 'Basic Fins',
+            note: 'makes early routes less painful',
+          },
+          {
+            href: Routes.Subnautica2Scanner,
+            label: 'Scanner',
+            note: 'turns guesses into unlocks',
+          },
+        ],
+      },
+      {
+        title: 'Hotfix 2 checks',
+        description:
+          'Use this cluster when old launch-week advice says Silver or Troilite only comes from a narrow, punishing route.',
+        links: [
+          {
+            href: Routes.Subnautica2Hotfix2,
+            label: 'Hotfix 2',
+            note: 'official change summary',
+          },
+          {
+            href: Routes.Subnautica2SilverAfterHotfix2,
+            label: 'Silver after Hotfix 2',
+            note: 'early-resource recheck',
+          },
+          {
+            href: Routes.Subnautica2TroiliteAfterHotfix2,
+            label: 'Troilite after Hotfix 2',
+            note: 'late-route recheck',
+          },
+          {
+            href: Routes.Subnautica2TroiliteSoftlock,
+            label: 'Troilite softlock',
+            note: 'recovery before restarting',
+          },
+        ],
+      },
+      {
+        title: 'Vehicle and base power',
+        description:
+          'Once the starter loop is stable, move into the Tadpole, dock clearance, Power Cell planning, and battery rotation.',
+        links: [
+          {
+            href: Routes.Subnautica2Tadpole,
+            label: 'Tadpole',
+            note: 'vehicle route anchor',
+          },
+          {
+            href: Routes.Subnautica2PowerCell,
+            label: 'Power Cell',
+            note: 'vehicle energy plan',
+          },
+          {
+            href: Routes.Subnautica2TadpoleDock,
+            label: 'Tadpole Dock',
+            note: 'Moonpool clearance check',
+          },
+          {
+            href: Routes.Subnautica2BatteryTerminal,
+            label: 'Battery Terminal',
+            note: 'keeps tools charged',
+          },
+        ],
+      },
+      {
+        title: 'Alien Ruins chain',
+        description:
+          'For later routes, keep rare metals, biomods, and Power Plant steps together so one missed scan does not waste a long dive.',
+        links: [
+          {
+            href: Routes.Subnautica2AngelComb,
+            label: 'Angel Comb',
+            note: 'first key organism route',
+          },
+          {
+            href: Routes.Subnautica2FeedbackResonator,
+            label: 'Feedback Resonator',
+            note: 'biomod progression step',
+          },
+          {
+            href: Routes.Subnautica2KarakorumPowerPlant,
+            label: 'Karakorum Power Plant',
+            note: 'deep-route checklist',
+          },
+          {
+            href: Routes.Subnautica2AxumVision,
+            label: 'Axum Vision',
+            note: 'glyph-reading payoff',
+          },
+        ],
+      },
+      {
+        title: 'Base-building material loop',
+        description:
+          'This is the practical storage-and-building path for players who want a useful base, not a decorative one first.',
+        links: [
+          {
+            href: Routes.Subnautica2BaseBuilding,
+            label: 'Base Building',
+            note: 'what to build first',
+          },
+          {
+            href: Routes.Subnautica2BestBaseLocations,
+            label: 'Best Base Locations',
+            note: 'where to settle',
+          },
+          {
+            href: Routes.Subnautica2Titanium,
+            label: 'Titanium',
+            note: 'stock without overfilling',
+          },
+          {
+            href: Routes.Subnautica2Glass,
+            label: 'Glass',
+            note: 'windows and upgrades',
+          },
+        ],
+      },
+    ],
     patchEyebrow: 'Hotfix 2 tracker',
     patchTitle: 'Patch-sensitive pages to recheck first',
     patchBody:
@@ -1008,6 +1160,145 @@ const copyByLocale: Record<'en' | 'zh', HubCopy> = {
         description: '扫描、供电、建造和稀有金属复制流程。',
       },
     ],
+    routeClustersEyebrow: '路线簇',
+    routeClustersTitle: '先按一个目标走，再打开下一篇',
+    routeClusters: [
+      {
+        title: '开局第一个安全小时',
+        description:
+          '给刚离开 Lifepod 的玩家用：先把氧气、移动速度和一条可重复材料路线稳住，再往外推。',
+        links: [
+          {
+            href: Routes.Subnautica2Beginner,
+            label: '新手指南',
+            note: '先定第一局顺序',
+          },
+          {
+            href: Routes.Subnautica2AirTank,
+            label: 'Air Tank',
+            note: '给下潜留余量',
+          },
+          {
+            href: Routes.Subnautica2BasicFins,
+            label: 'Basic Fins',
+            note: '让早期跑路轻松一点',
+          },
+          {
+            href: Routes.Subnautica2Scanner,
+            label: 'Scanner',
+            note: '用扫描替代瞎猜',
+          },
+        ],
+      },
+      {
+        title: 'Hotfix 2 复查',
+        description:
+          '遇到首发周攻略说银或 Troilite 只有一条很折磨的路线时，先从这一组重新核对。',
+        links: [
+          {
+            href: Routes.Subnautica2Hotfix2,
+            label: 'Hotfix 2',
+            note: '官方改动整理',
+          },
+          {
+            href: Routes.Subnautica2SilverAfterHotfix2,
+            label: 'Hotfix 2 后银',
+            note: '前期资源重新检查',
+          },
+          {
+            href: Routes.Subnautica2TroiliteAfterHotfix2,
+            label: 'Hotfix 2 后 Troilite',
+            note: '后期路线重新检查',
+          },
+          {
+            href: Routes.Subnautica2TroiliteSoftlock,
+            label: 'Troilite 软锁',
+            note: '重开前先看补救',
+          },
+        ],
+      },
+      {
+        title: '载具和基地供电',
+        description:
+          '开局循环稳定后，再做 Tadpole、Dock 空间、Power Cell 和电池轮换，不要一口气乱造。',
+        links: [
+          {
+            href: Routes.Subnautica2Tadpole,
+            label: 'Tadpole',
+            note: '载具路线起点',
+          },
+          {
+            href: Routes.Subnautica2PowerCell,
+            label: 'Power Cell',
+            note: '载具电力规划',
+          },
+          {
+            href: Routes.Subnautica2TadpoleDock,
+            label: 'Tadpole Dock',
+            note: '检查 Moonpool 空间',
+          },
+          {
+            href: Routes.Subnautica2BatteryTerminal,
+            label: 'Battery Terminal',
+            note: '让工具不断电',
+          },
+        ],
+      },
+      {
+        title: '外星遗迹进度链',
+        description:
+          '后期路线要把稀有金属、Biomod 和 Power Plant 步骤放在一起看，少漏一个扫描点。',
+        links: [
+          {
+            href: Routes.Subnautica2AngelComb,
+            label: 'Angel Comb',
+            note: '第一条关键生物路线',
+          },
+          {
+            href: Routes.Subnautica2FeedbackResonator,
+            label: 'Feedback Resonator',
+            note: 'Biomod 进度节点',
+          },
+          {
+            href: Routes.Subnautica2KarakorumPowerPlant,
+            label: 'Karakorum Power Plant',
+            note: '深层路线清单',
+          },
+          {
+            href: Routes.Subnautica2AxumVision,
+            label: 'Axum Vision',
+            note: '读符文后的收益',
+          },
+        ],
+      },
+      {
+        title: '基地建造材料循环',
+        description:
+          '这组给想先做实用基地的玩家：先仓库、供电和位置，再慢慢考虑好看。',
+        links: [
+          {
+            href: Routes.Subnautica2BaseBuilding,
+            label: '基地建造',
+            note: '先造什么',
+          },
+          {
+            href: Routes.Subnautica2BestBaseLocations,
+            label: '最佳建家位置',
+            note: '在哪里落脚',
+          },
+          {
+            href: Routes.Subnautica2Titanium,
+            label: 'Titanium',
+            note: '囤货但别爆仓',
+          },
+          {
+            href: Routes.Subnautica2Glass,
+            label: 'Glass',
+            note: '窗户和升级材料',
+          },
+        ],
+      },
+    ],
     patchEyebrow: 'Hotfix 2 更新追踪',
     patchTitle: '先复查这些补丁相关页面',
     patchBody:
@@ -1457,6 +1748,46 @@ export default async function Subnautica2HubPage({
                   {item.description}
                 </p>
               </LocaleLink>
+            ))}
+          </div>
+        </section>
+
+        <section className="mt-12 border border-cyan-200/12 bg-[#041b20] p-6">
+          <p className="text-sm font-semibold uppercase tracking-[0.18em] text-[#bf6f45]">
+            {copy.routeClustersEyebrow}
+          </p>
+          <h2 className="mt-3 text-2xl font-semibold text-[#effffb]">
+            {copy.routeClustersTitle}
+          </h2>
+          <div className="mt-6 grid gap-4 lg:grid-cols-2">
+            {copy.routeClusters.map((cluster) => (
+              <article
+                key={cluster.title}
+                className="border border-cyan-200/12 bg-[#071f23] p-5"
+              >
+                <h3 className="text-xl font-semibold text-[#78ead7]">
+                  {cluster.title}
+                </h3>
+                <p className="mt-3 text-sm leading-6 text-[#abc8c3]">
+                  {cluster.description}
+                </p>
+                <div className="mt-5 grid gap-2 sm:grid-cols-2">
+                  {cluster.links.map((link) => (
+                    <LocaleLink
+                      key={`${cluster.title}-${link.label}`}
+                      href={link.href}
+                      className="border border-cyan-200/10 bg-cyan-300/5 p-3 transition hover:-translate-y-0.5 hover:border-cyan-200/35"
+                    >
+                      <span className="block text-sm font-semibold text-[#effffb]">
+                        {link.label}
+                      </span>
+                      <span className="mt-1 block text-xs leading-5 text-[#9fbdb6]">
+                        {link.note}
+                      </span>
+                    </LocaleLink>
+                  ))}
+                </div>
+              </article>
             ))}
           </div>
         </section>
