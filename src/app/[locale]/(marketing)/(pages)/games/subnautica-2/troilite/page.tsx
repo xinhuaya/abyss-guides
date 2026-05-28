@@ -14,7 +14,7 @@ import type { Metadata } from 'next';
 import type { Locale } from 'next-intl';
 
 const PUBLISHED_AT = '2026-05-24';
-const UPDATED_AT = '2026-05-28';
+const UPDATED_AT = '2026-05-29';
 
 export async function generateMetadata({
   params,
@@ -131,6 +131,10 @@ export default async function TroiliteGuidePage({
     /\/$/,
     ''
   );
+  const hubUrl = getUrlWithLocale(Routes.Subnautica2, locale).replace(
+    /\/$/,
+    ''
+  );
   const jsonLd = [
     {
       '@context': 'https://schema.org',
@@ -153,6 +157,30 @@ export default async function TroiliteGuidePage({
         url: baseUrl,
       },
       mainEntityOfPage: pageUrl,
+    },
+    {
+      '@context': 'https://schema.org',
+      '@type': 'BreadcrumbList',
+      itemListElement: [
+        {
+          '@type': 'ListItem',
+          position: 1,
+          name: 'Abyss Guides',
+          item: baseUrl,
+        },
+        {
+          '@type': 'ListItem',
+          position: 2,
+          name: 'Subnautica 2',
+          item: hubUrl,
+        },
+        {
+          '@type': 'ListItem',
+          position: 3,
+          name: 'Where to Find Troilite in Subnautica 2',
+          item: pageUrl,
+        },
+      ],
     },
     {
       '@context': 'https://schema.org',
