@@ -16,7 +16,7 @@ type PowerPlantObservatoryCopy = ResourceGuideCopy & {
 };
 
 const PUBLISHED_AT = '2026-05-27';
-const UPDATED_AT = '2026-05-27';
+const UPDATED_AT = '2026-05-29';
 
 const sharedSources = [
   {
@@ -52,6 +52,28 @@ const powerPlantObservatoryCopy: Record<string, PowerPlantObservatoryCopy> = {
     quickLabel: 'Quick answer',
     quickAnswer:
       'To open the Observatory, current guides say you must clear the Alien Ruins Angel Comb for Axum Vision, scan the damaged turbine with the Bioscanner, repair it with the Habitat Builder, then restart the Power Plant from the generator controls. PC Gamer and Subnautica 2 Guide list the repair cost as 10 Titanium Ingots, 10 Mangalloy Ingots, and 10 Strontium. PC Gamer breaks the raw processing burden down to 60 Titanium, 20 Celestine, 10 Atacamite, and 10 Troilite, so bring a haul plan before you leave base.',
+    fieldNotesTitle: 'Field notes for the Observatory push',
+    fieldNotes: [
+      {
+        title: 'The repair is a logistics problem',
+        body: 'The hard part is not understanding the steps. It is moving a large processed-material stack without forgetting the scan, the builder, or the restart controls.',
+      },
+      {
+        title: 'Do not start hauling before Axum Vision',
+        body: 'If the glyphs and screens are still unreadable, the repair pile is premature. Finish the adaptation route first so the Power Plant trip has a clear ending.',
+      },
+      {
+        title: 'Stage processed materials by type',
+        body: 'Titanium Ingots, Mangalloy Ingots, and Strontium should sit in a named repair box. Mixing raw and processed pieces makes the final count feel worse.',
+      },
+    ],
+    routeChecklistTitle: 'Before repairing the Power Plant',
+    routeChecklist: [
+      'Unlock Axum Vision before hauling repair materials.',
+      'Bring Bioscanner, Habitat Builder, route markers, and vehicle safety.',
+      'Stage 10 Titanium Ingots, 10 Mangalloy Ingots, and 10 Strontium.',
+      'Restart from generator controls before leaving for the Observatory.',
+    ],
     contentsLabel: 'Contents',
     routeTitle: 'Power Plant repair route',
     routeSteps: [
@@ -211,6 +233,28 @@ const powerPlantObservatoryCopy: Record<string, PowerPlantObservatoryCopy> = {
     quickLabel: '快速结论',
     quickAnswer:
       '要打开 Observatory，当前攻略的流程是：先清掉 Alien Ruins 的 Angel Comb，拿到 Axum Vision；用 Bioscanner 扫描损坏的 turbine；用 Habitat Builder 修复；再通过 generator controls 重启 Power Plant。PC Gamer 和 Subnautica 2 Guide 都列出修复成本：10 Titanium Ingots、10 Mangalloy Ingots、10 Strontium。PC Gamer 把原材料压力拆成 60 Titanium、20 Celestine、10 Atacamite、10 Troilite，所以出发前一定要有运输计划。',
+    fieldNotesTitle: '推进 Observatory 的笔记',
+    fieldNotes: [
+      {
+        title: '修复本质是物流问题',
+        body: '难点不是看懂步骤，而是带着一大堆加工材料，还不能忘 Bioscanner、Habitat Builder 和重启控制台。',
+      },
+      {
+        title: 'Axum Vision 前别急着搬货',
+        body: '如果 glyph 和屏幕还读不了，修复材料堆就是过早准备。先完成适应路线，让 Power Plant 这趟有明确终点。',
+      },
+      {
+        title: '加工材料按类型摆好',
+        body: 'Titanium Ingots、Mangalloy Ingots 和 Strontium 应该放进有名字的修复箱。原料和成品混放，会让最终计数更痛苦。',
+      },
+    ],
+    routeChecklistTitle: '修复 Power Plant 前',
+    routeChecklist: [
+      '运输修复材料前，先解锁 Axum Vision。',
+      '带 Bioscanner、Habitat Builder、路线标记和载具安全方案。',
+      '准备 10 Titanium Ingots、10 Mangalloy Ingots、10 Strontium。',
+      '离开去 Observatory 前，先从 generator controls 完成重启。',
+    ],
     contentsLabel: '目录',
     routeTitle: 'Power Plant 修复路线',
     routeSteps: [

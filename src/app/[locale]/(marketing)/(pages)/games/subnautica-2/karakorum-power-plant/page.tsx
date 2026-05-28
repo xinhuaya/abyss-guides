@@ -16,7 +16,7 @@ type KarakorumPowerPlantCopy = ResourceGuideCopy & {
 };
 
 const PUBLISHED_AT = '2026-05-27';
-const UPDATED_AT = '2026-05-27';
+const UPDATED_AT = '2026-05-29';
 
 const sharedSources = [
   {
@@ -60,6 +60,28 @@ const karakorumPowerPlantCopy: Record<string, KarakorumPowerPlantCopy> = {
     quickLabel: 'Quick answer',
     quickAnswer:
       'Current sources point to Karakorum Power Plant as a deep route for Advanced Battery fragments, with All Things How listing two Advanced Battery scans in the area and Subnautica2.gg listing either two scans or a Data Box. Subnautica 2 Guide places Entangled Power Cell near the Karakorum Power Plant, while PC Gamer covers repairing the Power Plant and entering the Observatory. GamesRadar puts Conduit Crystal below the Alien Power Plant region, often below 300m, so bring depth, oxygen, and a clean exit plan.',
+    fieldNotesTitle: 'Field notes for Karakorum runs',
+    fieldNotes: [
+      {
+        title: 'This is a route cluster',
+        body: 'Advanced Battery, Entangled Power Cell, Conduit Crystal, and Observatory progress all point near the same deep region. Plan a loop, not a single pickup.',
+      },
+      {
+        title: 'Depth prep decides the trip',
+        body: 'The materials are not the only gate. If your Tadpole depth, oxygen, or return markers are weak, the same route becomes much more expensive.',
+      },
+      {
+        title: 'Separate scan goals from haul goals',
+        body: 'Scanning fragments and hauling repair materials are different trips. Mixing both without storage and power planning can turn one clean route into two messy ones.',
+      },
+    ],
+    routeChecklistTitle: 'Before entering Karakorum',
+    routeChecklist: [
+      'Bring Tadpole depth, oxygen margin, Repair Tool, and route markers.',
+      'List whether this trip is for scans, Conduit Crystal, or Observatory prep.',
+      'Keep Advanced Battery and Entangled Power Cell materials separated.',
+      'Do not start repair hauling until Power Plant requirements are confirmed.',
+    ],
     contentsLabel: 'Contents',
     routeTitle: 'Karakorum route plan',
     routeSteps: [
@@ -221,6 +243,28 @@ const karakorumPowerPlantCopy: Record<string, KarakorumPowerPlantCopy> = {
     quickLabel: '快速结论',
     quickAnswer:
       '当前资料把 Karakorum Power Plant 指向 Advanced Battery 碎片路线：All Things How 写的是在这个区域扫描 2 个 Advanced Battery 碎片，Subnautica2.gg 还列出 Data Box 作为另一条解锁路。Subnautica 2 Guide 把 Entangled Power Cell 放在 Karakorum Power Plant 附近，PC Gamer 则有 Power Plant 修复并进入 Observatory 的路线。GamesRadar 把 Conduit Crystal 放在 Alien Power Plant 下方更深的位置，很多点在 300m 以下，所以先准备深度、氧气和回程路线。',
+    fieldNotesTitle: 'Karakorum 路线笔记',
+    fieldNotes: [
+      {
+        title: '这里是一组路线，不是单点采集',
+        body: 'Advanced Battery、Entangled Power Cell、Conduit Crystal 和 Observatory 进度都指向这片深区。先规划一条 loop，不要只想着捡一个东西。',
+      },
+      {
+        title: '深度准备决定成本',
+        body: '材料不是唯一门槛。如果 Tadpole 深度、氧气或回程标记不稳，同一条路线会贵很多。',
+      },
+      {
+        title: '扫描目标和运输目标分开',
+        body: '扫碎片和运输修复材料是两种任务。没有仓储和电力规划时硬混在一起，很容易把一条干净路线拆成两条乱路线。',
+      },
+    ],
+    routeChecklistTitle: '进入 Karakorum 前',
+    routeChecklist: [
+      '准备 Tadpole 深度、氧气余量、Repair Tool 和路线标记。',
+      '写清这趟是扫碎片、采 Conduit Crystal，还是准备 Observatory。',
+      'Advanced Battery 和 Entangled Power Cell 材料分开放。',
+      '确认 Power Plant 需求前，不要开始大量运输修复材料。',
+    ],
     contentsLabel: '目录',
     routeTitle: 'Karakorum 路线规划',
     routeSteps: [

@@ -16,7 +16,7 @@ type BiolabCopy = ResourceGuideCopy & {
 };
 
 const PUBLISHED_AT = '2026-05-25';
-const UPDATED_AT = '2026-05-27';
+const UPDATED_AT = '2026-05-29';
 
 const sharedSources = [
   {
@@ -52,6 +52,28 @@ const biolabCopy: Record<string, BiolabCopy> = {
     quickLabel: 'Quick answer',
     quickAnswer:
       'Current blueprint data lists Biolab as a Builder Tool / Habitat Builder station that costs Titanium x3, Copper Wire x1, and Mild Acid x1. Console Pulse points to the Welcome Center southeast of the Life Pod, around bearing 150, as a quick early Biolab lead. Treat that first station as a test bench, then build your own near storage once the Bioscanner/Biomod route starts to matter.',
+    fieldNotesTitle: 'Field notes for the first Biolab',
+    fieldNotes: [
+      {
+        title: 'Do not build it in the wrong corner',
+        body: 'Biolab becomes useful when scans, Biomods, and stored biological parts are nearby. A random wall far from storage turns it into another forgotten station.',
+      },
+      {
+        title: 'The Welcome Center is a lead, not a home',
+        body: 'Use the early route to learn the station and confirm the loop. Once your base is stable, place your own Biolab where your scan and material habits already happen.',
+      },
+      {
+        title: 'Mild Acid is the small blocker',
+        body: 'Titanium and Copper Wire are normal base costs. Mild Acid is the ingredient that tends to send you back out, so stage it before opening the builder menu.',
+      },
+    ],
+    routeChecklistTitle: 'Before placing Biolab',
+    routeChecklist: [
+      'Confirm Habitat Builder placement is available.',
+      'Prepare Titanium x3, Copper Wire x1, and Mild Acid x1.',
+      'Place Biolab near biological storage and Bioscanner planning.',
+      'Use the Welcome Center lead to understand the station before relocating.',
+    ],
     contentsLabel: 'Contents',
     routeTitle: 'Biolab unlock and build plan',
     routeSteps: [
@@ -185,6 +207,28 @@ const biolabCopy: Record<string, BiolabCopy> = {
     quickLabel: '快速结论',
     quickAnswer:
       '当前蓝图资料把 Biolab 写成 Builder Tool / Habitat Builder 建造的设备，材料是 Titanium x3、Copper Wire x1、Mild Acid x1。Console Pulse 把早期线索指向 Life Pod 东南方向、bearing 150 附近的 Welcome Center。GameSpot 也提到基地稳定后可以自己建 Biolab 来管理 Biomods。',
+    fieldNotesTitle: '第一台 Biolab 笔记',
+    fieldNotes: [
+      {
+        title: '别放在错误角落',
+        body: 'Biolab 有用，是因为扫描、Biomod 和生物材料都能在附近处理。随便塞在远离储物的墙上，很快就会变成被遗忘的设备。',
+      },
+      {
+        title: 'Welcome Center 是线索，不是家',
+        body: '早期路线适合用来认识工作站和确认流程。基地稳定后，把自己的 Biolab 放在扫描和材料习惯已经发生的位置。',
+      },
+      {
+        title: 'Mild Acid 是小卡点',
+        body: 'Titanium 和 Copper Wire 都是常规基地成本，Mild Acid 才更容易让你重新出门。打开 builder 菜单前先把它备好。',
+      },
+    ],
+    routeChecklistTitle: '放置 Biolab 前',
+    routeChecklist: [
+      '先确认 Habitat Builder 已经可以放室内设备。',
+      '准备 Titanium x3、Copper Wire x1、Mild Acid x1。',
+      'Biolab 放在生物材料储物和 Bioscanner 规划旁边。',
+      '先用 Welcome Center 线索理解工作站，再决定基地摆放。',
+    ],
     contentsLabel: '目录',
     routeTitle: 'Biolab 解锁和建造规划',
     routeSteps: [

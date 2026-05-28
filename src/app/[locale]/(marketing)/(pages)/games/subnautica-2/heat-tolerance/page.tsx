@@ -16,7 +16,7 @@ type HeatToleranceCopy = ResourceGuideCopy & {
 };
 
 const PUBLISHED_AT = '2026-05-26';
-const UPDATED_AT = '2026-05-26';
+const UPDATED_AT = '2026-05-29';
 
 const sharedSources = [
   {
@@ -52,6 +52,28 @@ const heatToleranceCopy: Record<string, HeatToleranceCopy> = {
     quickLabel: 'Quick answer',
     quickAnswer:
       'GamesRadar+ places the Heat Tolerance Adaptation inside an infected Angel Comb roughly 190-200m northwest of the Lifepod at about bearing 285. PC Gamer describes the first Angel Comb as about 200m northwest, around bearing 300, and says it grants Heat Tolerance after clearing viral blooms. GAMES.GG says you need to clear three Bloom infestations before the Angel Comb becomes accessible and notes the adaptation helps you pass the heat barrier into the hot biome. Bring Sonic Resonator, better oxygen, medical kits, and a distraction option.',
+    fieldNotesTitle: 'Field notes for the heat gate',
+    fieldNotes: [
+      {
+        title: 'Use bearings to find the neighborhood',
+        body: 'The reported bearings are close but not identical. Use them to reach the northwest biome, then follow infection, Bloom sites, and terrain instead of staring at degrees.',
+      },
+      {
+        title: 'Heat Tolerance is the reward, not the route',
+        body: 'The work is clearing Bloom infestations safely. The adaptation comes after the area is stable enough for the central Angel Comb interaction.',
+      },
+      {
+        title: 'Bring recovery, not just tools',
+        body: 'Sonic Resonator matters, but so do medical kits, oxygen margin, and a way out. The route gets messy when players prepare only for the object they need to hit.',
+      },
+    ],
+    routeChecklistTitle: 'Before chasing Heat Tolerance',
+    routeChecklist: [
+      'Bring Sonic Resonator, Air Bladder, stronger oxygen, and medical kits.',
+      'Use northwest bearing only until Bloom clues take over.',
+      'Clear the connected Bloom infestations before the central comb.',
+      'Confirm the heat-barrier adaptation before leaving.',
+    ],
     contentsLabel: 'Contents',
     routeTitle: 'Heat Tolerance route plan',
     routeSteps: [
@@ -175,6 +197,28 @@ const heatToleranceCopy: Record<string, HeatToleranceCopy> = {
     quickLabel: '快速结论',
     quickAnswer:
       'GamesRadar+ 把 Heat Tolerance Adaptation 放在 Lifepod 西北约 190-200m、方位约 285 度的感染 Angel Comb 中。PC Gamer 描述的第一处 Angel Comb 也在 Lifepod 西北约 200m、方位约 300 度，并说明清理 viral blooms 后会获得 Heat Tolerance。GAMES.GG 说你需要先清理三处 Bloom infestations，中央 Angel Comb 才能进入。出发前带 Sonic Resonator、更多氧气、医疗包和干扰或位移手段。',
+    fieldNotesTitle: '热区门槛笔记',
+    fieldNotes: [
+      {
+        title: '方位是找区域用的',
+        body: '资料里的方位接近但不完全一样。用它们找到西北区域后，就该看感染痕迹、Bloom 点和地形，而不是死盯角度。',
+      },
+      {
+        title: 'Heat Tolerance 是奖励，不是路线本身',
+        body: '真正的工作是安全清理 Bloom infestations。中央 Angel Comb 能互动时，说明周围路线已经稳定下来。',
+      },
+      {
+        title: '带恢复手段，不只带工具',
+        body: 'Sonic Resonator 很重要，但医疗包、氧气余量和撤退线也一样重要。只准备敲目标的工具，很容易在路线上乱掉。',
+      },
+    ],
+    routeChecklistTitle: '追 Heat Tolerance 前',
+    routeChecklist: [
+      '带 Sonic Resonator、Air Bladder、更高氧气容量和医疗包。',
+      '西北方位只用来进区域，后面跟 Bloom 线索走。',
+      '先清连接的 Bloom infestations，再回中央 Angel Comb。',
+      '离开前确认热屏障适应能力已经获得。',
+    ],
     contentsLabel: '目录',
     routeTitle: 'Heat Tolerance 路线规划',
     routeSteps: [

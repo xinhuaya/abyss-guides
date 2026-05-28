@@ -16,7 +16,7 @@ type AxumVisionCopy = ResourceGuideCopy & {
 };
 
 const PUBLISHED_AT = '2026-05-27';
-const UPDATED_AT = '2026-05-27';
+const UPDATED_AT = '2026-05-29';
 
 const sharedSources = [
   {
@@ -56,6 +56,28 @@ const axumVisionCopy: Record<string, AxumVisionCopy> = {
     quickLabel: 'Quick answer',
     quickAnswer:
       'Axum Vision comes from cleansing the later Angel Comb in the Alien Ruins / Karakorum area. Current sources agree that you need Feedback Resonator to destroy Bloom Cankers from a distance, and PC Gamer also calls out Tadpole Depth Module because the route drops below 250m. Subnautica 2 Guide lists three Bloom Nodes around the Angel Comb: a western node near Observatory Island Caves around 190m, a southern node southwest around 300m, and an eastern node near Karakorum / Metal Farms around 300m. Once cleared, Axum Vision lets you read Axum glyphs and use the Karakorum Power Plant control screens.',
+    fieldNotesTitle: 'Field notes for Axum Vision',
+    fieldNotes: [
+      {
+        title: 'This is a multi-stop route',
+        body: 'Axum Vision is not one flower and done. Treat the three Bloom Nodes as a loop that returns to the central Angel Comb, then to Karakorum controls.',
+      },
+      {
+        title: 'Feedback Resonator changes the risk',
+        body: 'The route expects ranged Bloom Canker clearing. If you try to brute-force it with close movement, the oxygen and panic cost climb fast.',
+      },
+      {
+        title: 'Use the unlock immediately',
+        body: 'The point of Axum Vision is reading glyphs and control screens. After the adaptation, go back to the Power Plant path while the route is still fresh.',
+      },
+    ],
+    routeChecklistTitle: 'Before starting Axum Vision',
+    routeChecklist: [
+      'Bring Feedback Resonator, Tadpole Depth Module, Rebreather, and markers.',
+      'Clear western, southern, and eastern Bloom Nodes before returning central.',
+      'Watch water-color changes as progress clues, not exact completion proof.',
+      'Return to Karakorum Power Plant controls after the adaptation unlocks.',
+    ],
     contentsLabel: 'Contents',
     routeTitle: 'Axum Vision route plan',
     routeSteps: [
@@ -217,6 +239,28 @@ const axumVisionCopy: Record<string, AxumVisionCopy> = {
     quickLabel: '快速结论',
     quickAnswer:
       'Axum Vision 来自 Alien Ruins / Karakorum 区域后期的 Angel Comb。当前资料基本一致：你需要 Feedback Resonator 远距离破坏 Bloom Cankers；PC Gamer 还强调 Tadpole Depth Module，因为路线会下到 250m 以下。Subnautica 2 Guide 列出 Angel Comb 周围三个 Bloom Nodes：西侧节点在 Observatory Island Caves 附近约 190m 深，南侧节点在西南约 300m 深，东侧节点靠近 Karakorum / Metal Farms，约 300m 深。清理完成后，Axum Vision 可以让你读取 Axum glyphs，并看懂 Karakorum Power Plant 控制室的 polarized screens。',
+    fieldNotesTitle: 'Axum Vision 路线笔记',
+    fieldNotes: [
+      {
+        title: '这是一条多点路线',
+        body: 'Axum Vision 不是清一朵花就结束。三个 Bloom Node 要当成一个回到中央 Angel Comb、再接 Karakorum 控制室的路线环。',
+      },
+      {
+        title: 'Feedback Resonator 会改变风险',
+        body: '这条路线默认你能远距离清 Bloom Canker。如果硬靠近身位移，氧气压力和慌乱成本都会上升。',
+      },
+      {
+        title: '拿到后立刻使用',
+        body: 'Axum Vision 的价值是读 glyph 和控制屏。适应能力到手后趁路线还记得，直接回 Power Plant 方向推进。',
+      },
+    ],
+    routeChecklistTitle: '开始 Axum Vision 前',
+    routeChecklist: [
+      '带 Feedback Resonator、Tadpole Depth Module、Rebreather 和路线标记。',
+      '先清西、南、东三个 Bloom Node，再回中央。',
+      '水色变化可以当进度线索，但不要当唯一完成证明。',
+      '适应能力解锁后回 Karakorum Power Plant 控制室推进。',
+    ],
     contentsLabel: '目录',
     routeTitle: 'Axum Vision 路线规划',
     routeSteps: [
