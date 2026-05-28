@@ -16,7 +16,7 @@ type SilverPatchCopy = ResourceGuideCopy & {
 };
 
 const PUBLISHED_AT = '2026-05-24';
-const UPDATED_AT = '2026-05-28';
+const UPDATED_AT = '2026-05-29';
 
 const sharedSources = [
   {
@@ -52,6 +52,28 @@ const silverPatchCopy: Record<string, SilverPatchCopy> = {
     quickLabel: 'Quick answer',
     quickAnswer:
       'Yes, Silver changed in Hotfix 2. Unknown Worlds says the patch added more Silver resource areas in the early-game region. That means old “Silver is almost impossible to find” advice is stale, but it does not mean every cave or recipe changed.',
+    fieldNotesTitle: 'Field notes for rechecking Silver',
+    fieldNotes: [
+      {
+        title: 'Old complaints are not useless',
+        body: 'Pre-hotfix Silver complaints still tell you where players got stuck. The difference is that you should now recheck nearby early areas before accepting the old bottleneck.',
+      },
+      {
+        title: 'Routes beat rumor',
+        body: 'The official note says more areas, not exact coordinates. Mark the new reliable path in your own save instead of chasing one copied spot from an older guide.',
+      },
+      {
+        title: 'Raw Silver still matters',
+        body: 'More spawns do not make Silver disposable. Wiring Kit, Advanced Battery, Silver Ingot, and electronics still compete for the same metal.',
+      },
+    ],
+    routeChecklistTitle: 'Before farming Silver again',
+    routeChecklist: [
+      'Confirm your game is on Hotfix 2 or later.',
+      'Recheck early-game resource areas before following pre-hotfix routes.',
+      'Keep raw Silver separate from Silver Ingot plans.',
+      'Drop a Beacon once your save reveals a repeatable route.',
+    ],
     contentsLabel: 'Contents',
     routeTitle: 'How to recheck Silver after Hotfix 2',
     routeSteps: [
@@ -169,6 +191,28 @@ const silverPatchCopy: Record<string, SilverPatchCopy> = {
     quickLabel: '快速结论',
     quickAnswer:
       'Hotfix 2 确实改了银。Unknown Worlds 明确说补丁增加了前期区域的银资源点。所以“银几乎找不到”的旧说法已经不够准，但这不代表每个洞穴或配方都变了。',
+    fieldNotesTitle: '重新找 Silver 的笔记',
+    fieldNotes: [
+      {
+        title: '旧抱怨不是完全没用',
+        body: '补丁前玩家卡 Silver 的反馈仍然能告诉你哪里曾经容易断货。区别是现在要先重新查附近前期区域，不要直接接受旧瓶颈。',
+      },
+      {
+        title: '路线比传闻更可靠',
+        body: '官方只说增加了区域，没有给精确坐标。找到你存档里稳定路线后放 Beacon，比追一条旧攻略点位更稳。',
+      },
+      {
+        title: '原 Silver 仍然重要',
+        body: '刷新点变多不代表 Silver 可以乱花。Wiring Kit、Advanced Battery、Silver Ingot 和电子材料仍然会抢它。',
+      },
+    ],
+    routeChecklistTitle: '重新刷 Silver 前',
+    routeChecklist: [
+      '先确认游戏版本已经是 Hotfix 2 或更新。',
+      '跟旧路线前，重新检查前期资源区域。',
+      '原 Silver 和 Silver Ingot 计划分开放。',
+      '一旦找到稳定路线，立刻放 Beacon。',
+    ],
     contentsLabel: '目录',
     routeTitle: 'Hotfix 2 后怎么重新核对银路线',
     routeSteps: [

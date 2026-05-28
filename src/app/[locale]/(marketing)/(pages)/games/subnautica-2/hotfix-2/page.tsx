@@ -16,7 +16,7 @@ type HotfixCopy = ResourceGuideCopy & {
 };
 
 const PUBLISHED_AT = '2026-05-24';
-const UPDATED_AT = '2026-05-28';
+const UPDATED_AT = '2026-05-29';
 
 const sharedSources = [
   {
@@ -52,6 +52,28 @@ const hotfixCopy: Record<string, HotfixCopy> = {
     quickLabel: 'Quick answer',
     quickAnswer:
       'Hotfix 2 adds more Silver resource areas in the early-game region, adds more Troilite resource areas in the late-game region, reduces some Hammerhead attacks, fixes a "breathe forever" oxygen bug, improves Epic performance, and addresses several crashes and multiplayer issues. Silver and rare-material guides should be rechecked after this patch.',
+    fieldNotesTitle: 'Field notes after Hotfix 2',
+    fieldNotes: [
+      {
+        title: 'Resource advice aged overnight',
+        body: 'The Silver and Troilite changes are small on paper but big for search intent. Any route written before the patch should be treated as a clue, not a final answer.',
+      },
+      {
+        title: 'Do not overread the patch note',
+        body: 'More resource areas does not mean every old spot moved or every recipe changed. Recheck routes before rewriting your whole base plan.',
+      },
+      {
+        title: 'Bug fixes change habits too',
+        body: 'The oxygen and multiplayer fixes can make old workaround advice stale. If a guide tells players to rely on a bug, it now needs a practical replacement.',
+      },
+    ],
+    routeChecklistTitle: 'After installing Hotfix 2',
+    routeChecklist: [
+      'Recheck early Silver advice before farming old bottleneck routes.',
+      'Treat late Troilite reports as updated but still route-dependent.',
+      'Stop relying on the old oxygen bug for deep errands.',
+      'Retest multiplayer and Tadpole issues before blaming the save.',
+    ],
     contentsLabel: 'Contents',
     routeTitle: 'What changed in Hotfix 2',
     routeSteps: [
@@ -177,6 +199,28 @@ const hotfixCopy: Record<string, HotfixCopy> = {
     quickLabel: '快速结论',
     quickAnswer:
       'Hotfix 2 增加了前期区域的银资源点，也增加了后期区域的 Troilite 资源点；同时降低部分 Hammerhead 攻击异常，修复“无限呼吸”氧气 bug，改善 Epic 版本性能，并处理多项崩溃和联机问题。银和稀有材料相关攻略都应该按这个版本重新核对。',
+    fieldNotesTitle: 'Hotfix 2 后的现场笔记',
+    fieldNotes: [
+      {
+        title: '资源建议会一夜过时',
+        body: 'Silver 和 Troilite 的变化看起来不长，但对玩家搜索很关键。补丁前写的路线先当线索，不要当最终答案。',
+      },
+      {
+        title: '不要过度解读补丁',
+        body: '更多资源区域不等于旧点全没了，也不等于配方全部改了。先重新核对路线，再改基地规划。',
+      },
+      {
+        title: 'Bug 修复也会改变习惯',
+        body: '氧气和联机修复会让旧 workaround 过时。如果攻略让玩家靠 bug 解决问题，现在就应该换成正常路线。',
+      },
+    ],
+    routeChecklistTitle: '安装 Hotfix 2 后',
+    routeChecklist: [
+      '刷旧银路线前，先重新核对前期 Silver 建议。',
+      'Troilite 报告可以更新参考，但仍然要按后期路线判断。',
+      '深潜任务不要再依赖旧氧气 bug。',
+      '联机和 Tadpole 问题先复测，再判断是不是存档问题。',
+    ],
     contentsLabel: '目录',
     routeTitle: 'Hotfix 2 改了什么',
     routeSteps: [

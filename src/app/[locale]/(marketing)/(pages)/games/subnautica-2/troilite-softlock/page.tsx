@@ -16,7 +16,7 @@ type TroiliteSoftlockCopy = ResourceGuideCopy & {
 };
 
 const PUBLISHED_AT = '2026-05-24';
-const UPDATED_AT = '2026-05-28';
+const UPDATED_AT = '2026-05-29';
 
 const sharedSources = [
   {
@@ -52,6 +52,28 @@ const troiliteSoftlockCopy: Record<string, TroiliteSoftlockCopy> = {
     quickLabel: 'Quick answer',
     quickAnswer:
       'You are probably not permanently stuck after Hotfix 2, because Unknown Worlds says more Troilite resource areas were added in the late-game region. Still, stop spending Troilite, check Mineralized Clinker route notes, and save the next sample until you know whether Metal Farm or Mangalloy needs it first.',
+    fieldNotesTitle: 'Field notes before calling it a softlock',
+    fieldNotes: [
+      {
+        title: 'Stop spending first',
+        body: 'The worst move is to find one new sample and immediately spend it on the wrong branch. Freeze Troilite spending until the blocked recipe is written down.',
+      },
+      {
+        title: 'Separate bug fear from route uncertainty',
+        body: 'Hotfix 2 added more late-game Troilite areas, so a missing sample is more likely a route problem than a permanent save problem. Check the route calmly.',
+      },
+      {
+        title: 'Make the next find traceable',
+        body: 'When you find a sample, mark the route, note the nearby terrain, and keep the sample in a named locker. Future-you will not remember the canyon by vibes.',
+      },
+    ],
+    routeChecklistTitle: 'Softlock triage',
+    routeChecklist: [
+      'Write down the exact recipe currently blocking progress.',
+      'Stop spending Troilite and Mangalloy-adjacent materials.',
+      'Recheck Mineralized Clinker and late-game Troilite routes after Hotfix 2.',
+      'Beacon the next sample route before leaving the area.',
+    ],
     contentsLabel: 'Contents',
     routeTitle: 'What to do before you panic',
     routeSteps: [
@@ -176,6 +198,28 @@ const troiliteSoftlockCopy: Record<string, TroiliteSoftlockCopy> = {
     quickLabel: '快速结论',
     quickAnswer:
       'Hotfix 2 官方说明里提到后期区域增加了更多 Troilite 资源点，所以大概率不是永久软锁。但你应该立刻停止继续花 Troilite，重新检查 Mineralized Clinker 路线，并把下一块样本先留着，等确认 Metal Farm 或 Mangalloy 哪边更需要。',
+    fieldNotesTitle: '判断软锁前的笔记',
+    fieldNotes: [
+      {
+        title: '第一步是停止花材料',
+        body: '最糟糕的是刚找到一块新样本，就马上花到错误分支上。先冻结 Troilite 消耗，把卡住的配方写清楚。',
+      },
+      {
+        title: '把 bug 恐慌和路线不确定分开',
+        body: 'Hotfix 2 已经增加后期 Troilite 区域，所以缺样本更可能是路线问题，不一定是永久坏档。',
+      },
+      {
+        title: '下一次找到要能复现',
+        body: '找到样本后放 Beacon，记下附近地形，再把样本放进有名字的箱子。别指望以后只靠感觉记住那条沟。',
+      },
+    ],
+    routeChecklistTitle: '软锁排查清单',
+    routeChecklist: [
+      '写下当前到底是哪一个配方卡住进度。',
+      '暂停花 Troilite 和 Mangalloy 相关材料。',
+      '按 Hotfix 2 后路线重新检查 Mineralized Clinker 和后期 Troilite。',
+      '离开区域前给下一块样本路线放 Beacon。',
+    ],
     contentsLabel: '目录',
     routeTitle: '慌之前先做这几步',
     routeSteps: [

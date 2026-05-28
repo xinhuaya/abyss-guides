@@ -16,7 +16,7 @@ type TroilitePatchCopy = ResourceGuideCopy & {
 };
 
 const PUBLISHED_AT = '2026-05-24';
-const UPDATED_AT = '2026-05-28';
+const UPDATED_AT = '2026-05-29';
 
 const sharedSources = [
   {
@@ -52,6 +52,28 @@ const troilitePatchCopy: Record<string, TroilitePatchCopy> = {
     quickLabel: 'Quick answer',
     quickAnswer:
       'Hotfix 2 adds more Troilite resource areas in the late-game region. Troilite still comes from Mineralized Clinker deposits and still belongs in a prepared late-route run, not a casual early dive.',
+    fieldNotesTitle: 'Field notes for new Troilite routes',
+    fieldNotes: [
+      {
+        title: 'More areas does not mean easy areas',
+        body: 'The patch helps with availability, but Troilite is still late-game work. Bring the same respect you would bring to any route tied to Mineralized Clinker.',
+      },
+      {
+        title: 'Search by region logic',
+        body: 'Use the hotfix note to widen the late-game search, not to wander randomly. Terrain, depth, and route landmarks still matter.',
+      },
+      {
+        title: 'Protect the next sample',
+        body: 'If you were previously softlocked, do not spend the first new Troilite sample casually. Save it until the blocked recipe is confirmed.',
+      },
+    ],
+    routeChecklistTitle: 'Before chasing new Troilite',
+    routeChecklist: [
+      'Confirm Hotfix 2 is installed before relying on new-area advice.',
+      'Treat Mineralized Clinker as the main route clue.',
+      'Bring Beacon markers and write down the approach once found.',
+      'Reserve the first sample for the recipe that was blocking progress.',
+    ],
     contentsLabel: 'Contents',
     routeTitle: 'How to read the Troilite change',
     routeSteps: [
@@ -173,6 +195,28 @@ const troilitePatchCopy: Record<string, TroilitePatchCopy> = {
     quickLabel: '快速结论',
     quickAnswer:
       'Hotfix 2 增加了后期区域的 Troilite 资源点。Troilite 仍然和 Mineralized Clinker 矿点相关，也仍然适合准备好工具、路线和背包空间之后再去跑。',
+    fieldNotesTitle: '新 Troilite 路线笔记',
+    fieldNotes: [
+      {
+        title: '更多区域不等于轻松区域',
+        body: '补丁改善的是可获得性，但 Troilite 仍然是后期路线。只要和 Mineralized Clinker 相关，就要按严肃路线准备。',
+      },
+      {
+        title: '按区域逻辑搜索',
+        body: 'Hotfix 说明适合用来扩大后期搜索范围，不适合无头乱游。地形、深度和路线地标仍然重要。',
+      },
+      {
+        title: '保护下一块样本',
+        body: '如果你之前疑似软锁，第一块新 Troilite 不要随便花。先确认到底是哪条配方卡住。',
+      },
+    ],
+    routeChecklistTitle: '追新 Troilite 前',
+    routeChecklist: [
+      '确认已安装 Hotfix 2，再参考新区域建议。',
+      '把 Mineralized Clinker 当主要路线线索。',
+      '带 Beacon，找到后记录进入方式。',
+      '第一块样本先留给之前卡进度的配方。',
+    ],
     contentsLabel: '目录',
     routeTitle: '怎么理解 Troilite 这次变化',
     routeSteps: [

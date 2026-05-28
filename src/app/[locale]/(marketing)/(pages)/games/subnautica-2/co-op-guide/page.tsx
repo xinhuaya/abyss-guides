@@ -16,7 +16,7 @@ type CoopCopy = ResourceGuideCopy & {
 };
 
 const PUBLISHED_AT = '2026-05-23';
-const UPDATED_AT = '2026-05-28';
+const UPDATED_AT = '2026-05-29';
 
 const sharedSources = [
   {
@@ -43,6 +43,28 @@ const coopCopy: Record<string, CoopCopy> = {
     quickLabel: 'Quick answer',
     quickAnswer:
       'Subnautica 2 supports online co-op for small teams, with official listings pointing to 2-4 player co-op and cross-platform multiplayer. Before starting, agree on the host, voice chat, storage rules, route names, and what the team is crafting next.',
+    fieldNotesTitle: 'Field notes for calmer co-op',
+    fieldNotes: [
+      {
+        title: 'The host is a production decision',
+        body: 'Pick the player with the most stable connection and the most consistent schedule. A co-op save is only fun if people can actually get back into it.',
+      },
+      {
+        title: 'Name routes out loud',
+        body: 'Northwest Silver, first Angel Comb, and Tadpole route are better names than “over there.” Shared labels prevent half the team from swimming to the wrong landmark.',
+      },
+      {
+        title: 'Storage rules save friendships',
+        body: 'Use separate boxes for raw ore, processed parts, power, and route gear. The first argument in survival co-op is usually “who used the last one?”',
+      },
+    ],
+    routeChecklistTitle: 'Before starting co-op',
+    routeChecklist: [
+      'Choose the host and voice chat before creating the save.',
+      'Agree on locker labels and what materials are protected.',
+      'Name routes and Beacon colors before splitting up.',
+      'Set one shared crafting target before everyone starts their own errand.',
+    ],
     contentsLabel: 'Contents',
     routeTitle: 'Co-op setup checklist',
     routeSteps: [
@@ -168,6 +190,28 @@ const coopCopy: Record<string, CoopCopy> = {
     quickLabel: '快速答案',
     quickAnswer:
       'Subnautica 2 官方页面显示支持小队在线合作，Xbox 标注 2-4 人在线合作，Steam 也写了 4 人合作和跨平台多人。开局前先约好谁开房、怎么语音、仓库怎么分、路线怎么命名、下一件队伍目标做什么。',
+    fieldNotesTitle: '更舒服的联机笔记',
+    fieldNotes: [
+      {
+        title: '房主是很实际的决定',
+        body: '选网络稳定、作息也稳定的人开档。联机存档好不好玩，很大程度取决于大家能不能顺利回到同一个进度。',
+      },
+      {
+        title: '路线名字要说出口',
+        body: '“西北 Silver”“第一处 Angel Comb”“Tadpole 路线”比“那边”好太多。大家用同一套名字，才不会一半队友游错方向。',
+      },
+      {
+        title: '仓库规则能少吵架',
+        body: '原矿、加工件、电力材料和路线装备分箱。生存联机最常见的争执，往往就是“最后一个是谁用掉的”。',
+      },
+    ],
+    routeChecklistTitle: '联机开局前',
+    routeChecklist: [
+      '建档前先确定房主和语音方式。',
+      '约好箱子标签，以及哪些材料不能随便花。',
+      '分头行动前统一路线名和 Beacon 颜色。',
+      '每次出门前定一个共同制作目标。',
+    ],
     contentsLabel: '目录',
     routeTitle: '联机开局检查表',
     routeSteps: [
