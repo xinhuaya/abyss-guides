@@ -737,7 +737,6 @@ const englishOnlyUntilTranslated = new Set<string>([
   Routes.Subnautica2Atacamite,
   Routes.Subnautica2Mangalloy,
   Routes.Subnautica2MetalFarm,
-  Routes.Subnautica2Troilite,
 ]);
 
 export function normalizeRoutePath(
