@@ -32,6 +32,7 @@ export default function TitaniumIngotGuidePage() {
       eyebrow="Processor material chain"
       icon={BoxesIcon}
       pathname={Routes.Subnautica2TitaniumIngot}
+      publishedAt="2026-05-23"
       quickAnswer="Make Titanium Ingots by processing Titanium once the Processor is available. PC Gamer ties Titanium Ingots into later crafting chains, including Mangalloy Ingot production, so stockpile raw Titanium before converting it."
       related={[
         { href: Routes.Subnautica2Titanium, label: 'Titanium Location Guide' },
@@ -103,6 +104,8 @@ export default function TitaniumIngotGuidePage() {
         },
       ]}
       title="How to Make Titanium Ingots in Subnautica 2"
+      updatedAt="2026-05-28"
+      checkedAt="May 28, 2026"
     />
   );
 }

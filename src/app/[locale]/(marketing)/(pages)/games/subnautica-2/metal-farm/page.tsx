@@ -13,6 +13,9 @@ import {
 import type { Metadata } from 'next';
 import type { Locale } from 'next-intl';
 
+const PUBLISHED_AT = '2026-05-24';
+const UPDATED_AT = '2026-05-28';
+
 export async function generateMetadata({
   params,
 }: {
@@ -117,8 +120,8 @@ export default async function MetalFarmGuidePage({
       description:
         'Metal Farm scan, build, power, and production notes for Troilite, Mangalloy Ingot, Axum Bacterial Culture, and Sonic Resonator.',
       url: pageUrl,
-      datePublished: '2026-05-24',
-      dateModified: '2026-05-27',
+      datePublished: PUBLISHED_AT,
+      dateModified: UPDATED_AT,
       inLanguage: locale,
       author: {
         '@type': 'Organization',
@@ -369,7 +372,7 @@ export default async function MetalFarmGuidePage({
                 Source note
               </h2>
               <p className="mt-3 text-sm leading-6 text-[#abc8c3]">
-                Checked May 27, 2026 against current PC Gamer Metal Farm
+                Checked May 28, 2026 against current PC Gamer Metal Farm
                 reporting, Troilite route notes, and Entangled Power Cell
                 material data. Recheck blueprint and ingredient requirements
                 after patches.

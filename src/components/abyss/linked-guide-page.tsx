@@ -42,6 +42,9 @@ type LinkedGuidePageProps = {
     href: string;
     label: string;
   }>;
+  publishedAt?: string;
+  updatedAt?: string;
+  checkedAt?: string;
   faqs?: Array<{
     question: string;
     answer: string;
@@ -60,6 +63,9 @@ export function LinkedGuidePage({
   caution,
   related,
   sources,
+  publishedAt = '2026-05-23',
+  updatedAt = '2026-05-23',
+  checkedAt = 'May 23, 2026',
   faqs,
 }: LinkedGuidePageProps) {
   const baseUrl = getBaseUrl().replace(/\/$/, '');
@@ -80,8 +86,8 @@ export function LinkedGuidePage({
       headline: title,
       description,
       url: pageUrl,
-      datePublished: '2026-05-23',
-      dateModified: '2026-05-23',
+      datePublished: publishedAt,
+      dateModified: updatedAt,
       author: {
         '@type': 'Organization',
         name: 'Abyss Guides',
@@ -196,7 +202,7 @@ export function LinkedGuidePage({
                 </div>
                 <div className="flex items-center justify-between border border-cyan-200/10 bg-cyan-300/5 px-3 py-2">
                   <span>Verified</span>
-                  <span className="text-[#f08b4f]">May 23, 2026</span>
+                  <span className="text-[#f08b4f]">{checkedAt}</span>
                 </div>
                 <div className="flex items-center justify-between border border-cyan-200/10 bg-cyan-300/5 px-3 py-2">
                   <span>Status</span>

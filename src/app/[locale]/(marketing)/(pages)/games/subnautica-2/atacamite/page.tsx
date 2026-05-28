@@ -13,6 +13,9 @@ import {
 import type { Metadata } from 'next';
 import type { Locale } from 'next-intl';
 
+const PUBLISHED_AT = '2026-05-23';
+const UPDATED_AT = '2026-05-28';
+
 export async function generateMetadata({
   params,
 }: {
@@ -109,8 +112,8 @@ export default async function AtacamiteGuidePage({
       description:
         'Atacamite route notes for Alien Ruins, Mangalloy Ingot, Metal Farm, and deep mining prep.',
       url: pageUrl,
-      datePublished: '2026-05-23',
-      dateModified: '2026-05-27',
+      datePublished: PUBLISHED_AT,
+      dateModified: UPDATED_AT,
       inLanguage: locale,
       author: {
         '@type': 'Organization',
@@ -313,7 +316,7 @@ export default async function AtacamiteGuidePage({
                 Source note
               </h2>
               <p className="mt-3 text-sm leading-6 text-[#abc8c3]">
-                Checked May 27, 2026 against current Atacamite route reporting,
+                Checked May 28, 2026 against current Atacamite route reporting,
                 Mangalloy planning notes, and nearby deep-route material pages.
                 Recheck after Subnautica 2 resource patches.
               </p>

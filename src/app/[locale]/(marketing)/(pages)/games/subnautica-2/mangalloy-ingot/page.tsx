@@ -13,6 +13,9 @@ import {
 import type { Metadata } from 'next';
 import type { Locale } from 'next-intl';
 
+const PUBLISHED_AT = '2026-05-24';
+const UPDATED_AT = '2026-05-28';
+
 export async function generateMetadata({
   params,
 }: {
@@ -109,8 +112,8 @@ export default async function MangalloyGuidePage({
       description:
         'Mangalloy Ingot recipe chain notes for Troilite, Atacamite, Titanium Ingot, Metal Farm, and Entangled Power Cell planning.',
       url: pageUrl,
-      datePublished: '2026-05-24',
-      dateModified: '2026-05-27',
+      datePublished: PUBLISHED_AT,
+      dateModified: UPDATED_AT,
       inLanguage: locale,
       author: {
         '@type': 'Organization',
@@ -341,7 +344,7 @@ export default async function MangalloyGuidePage({
                 Source note
               </h2>
               <p className="mt-3 text-sm leading-6 text-[#abc8c3]">
-                Checked May 27, 2026 against current PC Gamer reporting on Metal
+                Checked May 28, 2026 against current PC Gamer reporting on Metal
                 Farms and Atacamite, plus Entangled Power Cell recipe data.
                 Recipe data is patch-sensitive.
               </p>

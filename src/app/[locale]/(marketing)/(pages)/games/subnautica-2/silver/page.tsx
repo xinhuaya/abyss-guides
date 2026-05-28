@@ -53,6 +53,9 @@ type SilverCopy = {
   routeMindsetBody: string;
 };
 
+const PUBLISHED_AT = '2026-05-23';
+const UPDATED_AT = '2026-05-28';
+
 const silverCopy: Record<string, SilverCopy> = {
   en: {
     metadata: {
@@ -146,7 +149,7 @@ const silverCopy: Record<string, SilverCopy> = {
     ],
     sourceTitle: 'Source note',
     sourceBody:
-      'Checked May 23, 2026 against Unknown Worlds Hotfix 2 and current Silver route reporting. Early Access locations can change.',
+      'Checked May 28, 2026 against Unknown Worlds Hotfix 2 and current Silver route reporting. Early Access locations can change.',
     routeMindsetTitle: 'Route mindset',
     routeMindsetBody:
       'Treat Silver like a repeatable errand, not a lucky discovery. Once you can describe the cave entrance clearly, the material stops blocking every recipe chain.',
@@ -236,7 +239,7 @@ const silverCopy: Record<string, SilverCopy> = {
     ],
     sourceTitle: '来源说明',
     sourceBody:
-      '2026 年 5 月 23 日核对 Unknown Worlds Hotfix 2 和当前银路线报道。抢先体验阶段的地点可能继续变化。',
+      '2026 年 5 月 28 日核对 Unknown Worlds Hotfix 2 和当前银路线报道。抢先体验阶段的地点可能继续变化。',
     routeMindsetTitle: '路线思路',
     routeMindsetBody:
       '把银当成一条固定跑腿路线，不要当成碰运气。你能清楚描述洞口以后，银就不太会继续卡住制作链。',
@@ -330,7 +333,7 @@ const silverCopy: Record<string, SilverCopy> = {
     ],
     sourceTitle: 'Источники',
     sourceBody:
-      'Проверено 23 мая 2026 по Unknown Worlds Hotfix 2 и актуальным гайдам. Early Access может менять локации.',
+      'Проверено 28 мая 2026 по Unknown Worlds Hotfix 2 и актуальным гайдам. Early Access может менять локации.',
     routeMindsetTitle: 'Как думать о маршруте',
     routeMindsetBody:
       'Silver лучше воспринимать как повторяемый маршрут. Когда вы можете объяснить вход в пещеру, ресурс перестает быть лотереей.',
@@ -424,7 +427,7 @@ const silverCopy: Record<string, SilverCopy> = {
     ],
     sourceTitle: 'Quellenhinweis',
     sourceBody:
-      'Geprüft am 23. Mai 2026 mit Unknown Worlds Hotfix 2 und aktuellen Silver-Routen. Early Access kann Orte ändern.',
+      'Geprüft am 28. Mai 2026 mit Unknown Worlds Hotfix 2 und aktuellen Silver-Routen. Early Access kann Orte ändern.',
     routeMindsetTitle: 'Routen-Denken',
     routeMindsetBody:
       'Behandle Silver wie eine feste Erledigung, nicht wie Glück. Sobald du den Höhleneingang beschreiben kannst, wird es berechenbar.',
@@ -518,7 +521,7 @@ const silverCopy: Record<string, SilverCopy> = {
     ],
     sourceTitle: 'Sources',
     sourceBody:
-      'Vérifié le 23 mai 2026 avec Unknown Worlds Hotfix 2 et les routes Silver actuelles. Les lieux peuvent changer en Early Access.',
+      'Vérifié le 28 mai 2026 avec Unknown Worlds Hotfix 2 et les routes Silver actuelles. Les lieux peuvent changer en Early Access.',
     routeMindsetTitle: 'Logique de route',
     routeMindsetBody:
       "Traitez Silver comme une course que vous pouvez refaire. Quand l'entrée de grotte est claire, le matériau arrête de bloquer tout le craft.",
@@ -612,7 +615,7 @@ const silverCopy: Record<string, SilverCopy> = {
     ],
     sourceTitle: 'Fontes',
     sourceBody:
-      'Verificado em 23 de maio de 2026 com Unknown Worlds Hotfix 2 e rotas atuais de Silver. Locais podem mudar no Early Access.',
+      'Verificado em 28 de maio de 2026 com Unknown Worlds Hotfix 2 e rotas atuais de Silver. Locais podem mudar no Early Access.',
     routeMindsetTitle: 'Mentalidade da rota',
     routeMindsetBody:
       'Trate Silver como uma viagem repetível, não como sorte. Quando você sabe explicar a entrada da caverna, o material deixa de travar tudo.',
@@ -706,7 +709,7 @@ const silverCopy: Record<string, SilverCopy> = {
     ],
     sourceTitle: 'Fuentes',
     sourceBody:
-      'Verificado el 23 de mayo de 2026 con Unknown Worlds Hotfix 2 y rutas actuales de Silver. Las ubicaciones pueden cambiar en Early Access.',
+      'Verificado el 28 de mayo de 2026 con Unknown Worlds Hotfix 2 y rutas actuales de Silver. Las ubicaciones pueden cambiar en Early Access.',
     routeMindsetTitle: 'Mentalidad de ruta',
     routeMindsetBody:
       'Piensa en Silver como una vuelta repetible, no como suerte. Cuando puedes describir la entrada de la cueva, deja de bloquear tus recetas.',
@@ -797,7 +800,7 @@ const silverCopy: Record<string, SilverCopy> = {
     ],
     sourceTitle: '출처 메모',
     sourceBody:
-      '2026년 5월 23일 Unknown Worlds Hotfix 2와 현재 Silver 루트 보도를 기준으로 확인했습니다. Early Access 위치는 바뀔 수 있습니다.',
+      '2026년 5월 28일 Unknown Worlds Hotfix 2와 현재 Silver 루트 보도를 기준으로 확인했습니다. Early Access 위치는 바뀔 수 있습니다.',
     routeMindsetTitle: '루트 생각법',
     routeMindsetBody:
       'Silver를 운이 아니라 반복 가능한 심부름으로 보세요. 동굴 입구를 설명할 수 있으면 제작 체인을 덜 막습니다.',
@@ -888,7 +891,7 @@ const silverCopy: Record<string, SilverCopy> = {
     ],
     sourceTitle: '出典メモ',
     sourceBody:
-      '2026年5月23日に Unknown Worlds Hotfix 2 と現在の Silver ルート記事を確認。Early Access の位置情報は変わる可能性があります。',
+      '2026年5月28日に Unknown Worlds Hotfix 2 と現在の Silver ルート記事を確認。Early Access の位置情報は変わる可能性があります。',
     routeMindsetTitle: 'ルートの考え方',
     routeMindsetBody:
       'Silver は偶然ではなく、繰り返せるルートとして考えると楽になります。洞窟入口を説明できるようになると、制作が止まりにくくなります。',
@@ -952,8 +955,8 @@ export default async function SilverGuidePage({
       headline: copy.title,
       description: copy.metadata.description,
       url: pageUrl,
-      datePublished: '2026-05-23',
-      dateModified: '2026-05-23',
+      datePublished: PUBLISHED_AT,
+      dateModified: UPDATED_AT,
       inLanguage: locale,
       author: {
         '@type': 'Organization',

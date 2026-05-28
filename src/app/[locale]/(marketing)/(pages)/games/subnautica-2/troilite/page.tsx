@@ -13,6 +13,9 @@ import {
 import type { Metadata } from 'next';
 import type { Locale } from 'next-intl';
 
+const PUBLISHED_AT = '2026-05-24';
+const UPDATED_AT = '2026-05-28';
+
 export async function generateMetadata({
   params,
 }: {
@@ -121,8 +124,8 @@ export default async function TroiliteGuidePage({
       description:
         'Late-route Troilite notes for Metal Farm, Mangalloy, Entangled Power Cell, and Hotfix 2 patch changes.',
       url: pageUrl,
-      datePublished: '2026-05-24',
-      dateModified: '2026-05-27',
+      datePublished: PUBLISHED_AT,
+      dateModified: UPDATED_AT,
       inLanguage: locale,
       author: {
         '@type': 'Organization',
@@ -382,7 +385,7 @@ export default async function TroiliteGuidePage({
                 Source note
               </h2>
               <p className="mt-3 text-sm leading-6 text-[#abc8c3]">
-                Checked May 27, 2026 against Unknown Worlds Hotfix 2, current
+                Checked May 28, 2026 against Unknown Worlds Hotfix 2, current
                 Troilite route reporting, and Entangled Power Cell recipe data.
                 Recheck after every major Early Access patch.
               </p>

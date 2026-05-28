@@ -15,6 +15,9 @@ type CopperCopy = ResourceGuideCopy & {
   };
 };
 
+const PUBLISHED_AT = '2026-05-23';
+const UPDATED_AT = '2026-05-28';
+
 const sharedSources = [
   {
     href: 'https://games.gg/subnautica-2/guides/subnautica-2-where-to-find-copper/',
@@ -115,7 +118,7 @@ const copperCopy: Record<string, CopperCopy> = {
     ],
     sourcesTitle: 'Source note',
     sourceBody:
-      'Checked May 23, 2026 against current Copper route reporting. Early Access resource density and recipes can change.',
+      'Checked May 28, 2026 against current Copper route reporting. Early Access resource density and recipes can change.',
     cardKicker: 'Abyss field card',
     cardBody:
       'Short loops, cave checks, battery priorities, and patch-aware spending.',
@@ -203,7 +206,7 @@ const copperCopy: Record<string, CopperCopy> = {
     ],
     sourcesTitle: '来源说明',
     sourceBody:
-      '2026 年 5 月 23 日核对当前铜路线报道。抢先体验阶段的资源密度和配方可能变化。',
+      '2026 年 5 月 28 日核对当前铜路线报道。抢先体验阶段的资源密度和配方可能变化。',
     cardKicker: 'Abyss 路线卡',
     cardBody: '短循环、洞穴检查、电池优先级，以及抢先体验阶段的花费提醒。',
     cardTypeLabel: '类型',
@@ -289,7 +292,7 @@ const copperCopy: Record<string, CopperCopy> = {
     ],
     sourcesTitle: 'Источники',
     sourceBody:
-      'Проверено 23 мая 2026 по текущим маршрутам Copper. Early Access может менять плотность ресурсов и рецепты.',
+      'Проверено 28 мая 2026 по текущим маршрутам Copper. Early Access может менять плотность ресурсов и рецепты.',
     cardKicker: 'Abyss field card',
     cardBody:
       'Короткие круги, пещеры, батареи и осторожные траты в Early Access.',
@@ -379,7 +382,7 @@ const copperCopy: Record<string, CopperCopy> = {
     ],
     sourcesTitle: 'Quellenhinweis',
     sourceBody:
-      'Geprüft am 23. Mai 2026 mit aktuellen Copper-Routen. Resource-Dichte und Rezepte können sich in Early Access ändern.',
+      'Geprüft am 28. Mai 2026 mit aktuellen Copper-Routen. Resource-Dichte und Rezepte können sich in Early Access ändern.',
     cardKicker: 'Abyss field card',
     cardBody:
       'Kurze Loops, Höhlenchecks, Batterien und vorsichtige Early-Access-Ausgaben.',
@@ -469,7 +472,7 @@ const copperCopy: Record<string, CopperCopy> = {
     ],
     sourcesTitle: 'Sources',
     sourceBody:
-      'Vérifié le 23 mai 2026 avec les routes Copper actuelles. Densité de ressources et recettes peuvent changer en Early Access.',
+      'Vérifié le 28 mai 2026 avec les routes Copper actuelles. Densité de ressources et recettes peuvent changer en Early Access.',
     cardKicker: 'Abyss field card',
     cardBody:
       'Boucles courtes, grottes, batteries et dépenses prudentes en Early Access.',
@@ -559,7 +562,7 @@ const copperCopy: Record<string, CopperCopy> = {
     ],
     sourcesTitle: 'Fontes',
     sourceBody:
-      'Verificado em 23 de maio de 2026 com rotas atuais de Copper. Densidade de recursos e receitas podem mudar no Early Access.',
+      'Verificado em 28 de maio de 2026 com rotas atuais de Copper. Densidade de recursos e receitas podem mudar no Early Access.',
     cardKicker: 'Abyss field card',
     cardBody:
       'Voltas curtas, cavernas, baterias e gastos cuidadosos no Early Access.',
@@ -649,7 +652,7 @@ const copperCopy: Record<string, CopperCopy> = {
     ],
     sourcesTitle: 'Fuentes',
     sourceBody:
-      'Verificado el 23 de mayo de 2026 con rutas actuales de Copper. La densidad de recursos y recetas puede cambiar en Early Access.',
+      'Verificado el 28 de mayo de 2026 con rutas actuales de Copper. La densidad de recursos y recetas puede cambiar en Early Access.',
     cardKicker: 'Abyss field card',
     cardBody:
       'Vueltas cortas, cuevas, baterías y gastos prudentes en Early Access.',
@@ -730,7 +733,7 @@ const copperCopy: Record<string, CopperCopy> = {
     ],
     sourcesTitle: '출처 메모',
     sourceBody:
-      '2026년 5월 23일 현재 Copper 루트 보도를 기준으로 확인했습니다. Early Access에서는 자원 밀도와 레시피가 바뀔 수 있습니다.',
+      '2026년 5월 28일 현재 Copper 루트 보도를 기준으로 확인했습니다. Early Access에서는 자원 밀도와 레시피가 바뀔 수 있습니다.',
     cardKicker: 'Abyss field card',
     cardBody: '짧은 루트, 동굴 확인, 배터리 우선순위, Early Access 소비 주의.',
     cardTypeLabel: '유형',
@@ -813,7 +816,7 @@ const copperCopy: Record<string, CopperCopy> = {
     ],
     sourcesTitle: '出典メモ',
     sourceBody:
-      '2026年5月23日に現在の Copper ルート記事を確認。Early Access では資源密度やレシピが変わる可能性があります。',
+      '2026年5月28日に現在の Copper ルート記事を確認。Early Access では資源密度やレシピが変わる可能性があります。',
     cardKicker: 'Abyss field card',
     cardBody: '短い周回、洞窟確認、Battery 優先度、Early Access の消費注意。',
     cardTypeLabel: '種類',
@@ -854,7 +857,7 @@ export default async function CopperGuidePage({
 
   return (
     <LocalizedResourceGuidePage
-      copy={copy}
+      copy={{ ...copy, publishedAt: PUBLISHED_AT, updatedAt: UPDATED_AT }}
       icon={ZapIcon}
       locale={locale}
       pathname={Routes.Subnautica2Copper}
