@@ -16,7 +16,7 @@ type MildAcidCopy = ResourceGuideCopy & {
 };
 
 const PUBLISHED_AT = '2026-05-25';
-const UPDATED_AT = '2026-05-27';
+const UPDATED_AT = '2026-05-28';
 
 const sharedSources = [
   {
@@ -47,6 +47,28 @@ const mildAcidCopy: Record<string, MildAcidCopy> = {
     quickLabel: 'Quick answer',
     quickAnswer:
       'Current Subnautica2.gg and Subnautica2Hub blueprint data list Mild Acid as unlocked by default and crafted at the Fabricator with Acidic Raion Pouch x2 and Copper x1. Dexerto also lists a Processor route that uses Acidic Raion Pouch x2. Current use lists connect Mild Acid to Biolab, Processor, and Echo Location, and the Processor then opens the Strong Acid route, so keep extra pouches if chemistry is next.',
+    fieldNotesTitle: 'Field notes for Mild Acid batches',
+    fieldNotes: [
+      {
+        title: 'The pouch route is the real cost',
+        body: 'Copper is easy to blame because you see it everywhere. The slow part is usually going back for two pouches after you already decided to craft acid.',
+      },
+      {
+        title: 'Make acid in useful pairs',
+        body: 'One Mild Acid solves one button press. Two or three pieces make Processor, Biolab, and Echo Location planning feel less like a chain of interruptions.',
+      },
+      {
+        title: 'Do not move all pouch stock away from batteries',
+        body: 'Mild Acid is important, but Basic Battery still feeds tools and Power Cell. Keep a small pouch split before chemistry takes the whole pile.',
+      },
+    ],
+    routeChecklistTitle: 'Before crafting Mild Acid',
+    routeChecklist: [
+      'Acidic Raion Pouch count is enough for both batteries and acid.',
+      'Copper reserve still covers Copper Wire and tool needs.',
+      'Processor or Biolab target is visible before batch crafting.',
+      'Finished acid is stored in a labeled chemistry locker.',
+    ],
     contentsLabel: 'Contents',
     routeTitle: 'Mild Acid crafting plan',
     routeSteps: [
@@ -407,6 +429,28 @@ const mildAcidCopy: Record<string, MildAcidCopy> = {
 
 mildAcidCopy.zh = {
   ...mildAcidCopy.zh,
+  fieldNotesTitle: 'Mild Acid 批量制作笔记',
+  fieldNotes: [
+    {
+      title: '真正慢的是 pouch 路线',
+      body: 'Copper 很显眼，所以容易被误以为是卡点。实际最慢的常常是决定做 acid 后，又发现还要回去拿两份 pouch。',
+    },
+    {
+      title: '一次做出有用数量',
+      body: '一份 Mild Acid 只能解决一个按钮。两三份会让 Processor、Biolab 和 Echo Location 规划少很多中断。',
+    },
+    {
+      title: '别把 pouch 全从电池线拿走',
+      body: 'Mild Acid 很重要，但 Basic Battery 还要喂工具和 Power Cell。化学材料吃掉整堆 pouch 前，先留一点给电力线。',
+    },
+  ],
+  routeChecklistTitle: '制作 Mild Acid 前',
+  routeChecklist: [
+    'Acidic Raion Pouch 数量同时覆盖电池和 acid 需求。',
+    'Copper 储备仍然够 Copper Wire 和工具使用。',
+    'Processor 或 Biolab 目标已经明确，再批量制作。',
+    '成品 acid 放进标好的化学材料箱。',
+  ],
   quickAnswer:
     'Subnautica2.gg 和 Subnautica2Hub 当前把 Mild Acid 写成默认解锁，在 Fabricator 用 Acidic Raion Pouch x2 和 Copper x1 制作。Dexerto 也列了 Processor 路线，材料是 Acidic Raion Pouch x2。Mild Acid 会接到 Biolab、Processor 和 Echo Location；Processor 做出来后又会通向 Strong Acid，所以后面要做化学链时，pouch 不要全做成电池。',
   routeSteps: [

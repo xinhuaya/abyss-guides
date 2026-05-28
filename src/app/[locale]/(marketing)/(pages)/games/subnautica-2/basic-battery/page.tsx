@@ -16,7 +16,7 @@ type BasicBatteryCopy = ResourceGuideCopy & {
 };
 
 const PUBLISHED_AT = '2026-05-25';
-const UPDATED_AT = '2026-05-27';
+const UPDATED_AT = '2026-05-28';
 
 const sharedSources = [
   {
@@ -44,6 +44,28 @@ const basicBatteryCopy: Record<string, BasicBatteryCopy> = {
     quickLabel: 'Quick answer',
     quickAnswer:
       'Current blueprint data lists Basic Battery as unlocked by default. Craft it at the Fabricator with Copper x2 and Acidic Raion Pouch x1. Subnautica2Hub lists it at 100 energy, and the battery feeds early tools plus the first Power Cell chain. Once Advanced Battery and Battery Terminal are online, stop treating Basic Batteries as throwaway items.',
+    fieldNotesTitle: 'Field notes for early power',
+    fieldNotes: [
+      {
+        title: 'Make the first battery on purpose',
+        body: 'The first battery is not a spare part. It is what turns Scanner, Repair Tool, and early build routes from errands into a plan.',
+      },
+      {
+        title: 'Copper disappears faster than it looks',
+        body: 'Two Copper per battery is not scary until Copper Wire and builder recipes start asking for the same pile. Keep a small raw Copper reserve beside the power locker.',
+      },
+      {
+        title: 'Do not feed tool batteries into the vehicle chain',
+        body: 'Power Cell needs Basic Batteries, but stealing from Scanner or Repair Tool creates a worse problem. Make fresh batteries for vehicle work when possible.',
+      },
+    ],
+    routeChecklistTitle: 'Before crafting extra batteries',
+    routeChecklist: [
+      'Scanner and Repair Tool have working power first.',
+      'Copper Wire recipes still have raw Copper available.',
+      'Acidic Raion Pouch route is marked for repeat trips.',
+      'Vehicle batteries are separated from tool batteries.',
+    ],
     contentsLabel: 'Contents',
     routeTitle: 'Basic Battery route',
     routeSteps: [
@@ -192,6 +214,28 @@ const basicBatteryCopy: Record<string, BasicBatteryCopy> = {
     quickLabel: '快速结论',
     quickAnswer:
       '当前蓝图数据把 Basic Battery 写成默认解锁，在 Fabricator 用 Copper x2 和 Acidic Raion Pouch x1 制作。Subnautica2Hub 当前写的是 100 energy。它会牵扯到 Scanner、Flashlight、Repair Tool、Lightstick、Power Cell 和 Habitat Builder 等早期工具链。',
+    fieldNotesTitle: '早期电力笔记',
+    fieldNotes: [
+      {
+        title: '第一块电池要有目的地做',
+        body: '第一块 Basic Battery 不是备用零件，它会决定 Scanner、Repair Tool 和早期建造路线能不能顺起来。',
+      },
+      {
+        title: 'Copper 消耗比想象快',
+        body: '一块电池要两个 Copper，看起来不多，但 Copper Wire 和建造配方也会抢同一堆材料。电力箱旁边最好留一点 raw Copper。',
+      },
+      {
+        title: '不要把工具电池喂给载具链',
+        body: 'Power Cell 会吃 Basic Battery，但从 Scanner 或 Repair Tool 里拆电池会制造新问题。载具用电池尽量重新做。',
+      },
+    ],
+    routeChecklistTitle: '多做电池前检查',
+    routeChecklist: [
+      'Scanner 和 Repair Tool 先有可用电力。',
+      'Copper Wire 配方仍然留有 raw Copper。',
+      'Acidic Raion Pouch 路线已经能重复跑。',
+      '载具电池和工具电池分开放。',
+    ],
     contentsLabel: '目录',
     routeTitle: 'Basic Battery 路线',
     routeSteps: [

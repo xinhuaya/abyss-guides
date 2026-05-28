@@ -16,7 +16,7 @@ type AcidicRaionPouchCopy = ResourceGuideCopy & {
 };
 
 const PUBLISHED_AT = '2026-05-25';
-const UPDATED_AT = '2026-05-27';
+const UPDATED_AT = '2026-05-28';
 
 const sharedSources = [
   {
@@ -48,6 +48,28 @@ const acidicRaionPouchCopy: Record<string, AcidicRaionPouchCopy> = {
     quickLabel: 'Quick answer',
     quickAnswer:
       'Current Subnautica2Hub data lists Acidic Raion Pouch as a harvest raw resource found in Coral Gardens. Current item data connects it to Basic Battery x1, Mild Acid x2 at the Fabricator, and Mild Acid x2 at a Processor. That Mild Acid route leads into Biolab, Processor, and Strong Acid planning. The same data does not provide stable spawn coordinates yet, so treat exact pouch routes as patch-sensitive until the map data fills in.',
+    fieldNotesTitle: 'Field notes for pouch runs',
+    fieldNotes: [
+      {
+        title: 'Do not mix it with food errands',
+        body: 'Acidic Raion Pouch feels like a casual organic pickup, but it feeds power and acid chains. Treat the trip like material farming, not a snack run.',
+      },
+      {
+        title: 'Count in twos after the first tool',
+        body: 'One pouch gets an early battery moving. Mild Acid asks for pairs, so chemistry planning gets cleaner if you start counting pouches two at a time.',
+      },
+      {
+        title: 'Keep one route note',
+        body: 'A tiny note near the base or map page is enough: direction, landmark, and return cue. It saves more time than another blind swim later.',
+      },
+    ],
+    routeChecklistTitle: 'Before leaving the pouch route',
+    routeChecklist: [
+      'One pouch is reserved for the next Basic Battery if needed.',
+      'Two-pouch groups are reserved for Mild Acid.',
+      'Copper needs are checked before battery crafting.',
+      'The route has a landmark you can repeat.',
+    ],
     contentsLabel: 'Contents',
     routeTitle: 'Acidic Raion Pouch route',
     routeSteps: [
@@ -166,6 +188,28 @@ const acidicRaionPouchCopy: Record<string, AcidicRaionPouchCopy> = {
     quickLabel: '快速结论',
     quickAnswer:
       'Subnautica2Hub 当前把 Acidic Raion Pouch 写成可 harvest 的 raw resource，地点线索是 Coral Gardens。当前物品数据把它用于 Basic Battery x1、Fabricator 里的 Mild Acid x2，以及 Processor 里的 Mild Acid x2。公开数据暂时没有稳定坐标列表，所以具体路线要按补丁后数据重新核对。',
+    fieldNotesTitle: 'Acidic Raion Pouch 路线笔记',
+    fieldNotes: [
+      {
+        title: '别和食物路线混在一起',
+        body: 'Acidic Raion Pouch 看起来像随手捡的有机材料，但它会进入电池和酸液链。把这趟当材料路线，不要当觅食路线。',
+      },
+      {
+        title: '第一个工具之后按两个一组算',
+        body: '一份 pouch 可以推进早期电池；Mild Acid 会按两份消耗。开始做化学材料后，按两个一组规划会清楚很多。',
+      },
+      {
+        title: '留一个路线记号',
+        body: '基地旁或地图页写一句方向、地标、回程提示就够了。比之后再盲游一趟省时间。',
+      },
+    ],
+    routeChecklistTitle: '离开 pouch 路线前',
+    routeChecklist: [
+      '如果要做 Basic Battery，先留一份 pouch。',
+      'Mild Acid 需求按两份 pouch 一组预留。',
+      '制作电池前确认 Copper 够不够。',
+      '路线有一个下次能复现的地标。',
+    ],
     contentsLabel: '目录',
     routeTitle: 'Acidic Raion Pouch 路线',
     routeSteps: [

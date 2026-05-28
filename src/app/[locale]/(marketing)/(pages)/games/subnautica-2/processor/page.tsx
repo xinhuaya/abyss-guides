@@ -16,7 +16,7 @@ type ProcessorCopy = ResourceGuideCopy & {
 };
 
 const PUBLISHED_AT = '2026-05-25';
-const UPDATED_AT = '2026-05-27';
+const UPDATED_AT = '2026-05-28';
 
 const sharedSources = [
   {
@@ -48,6 +48,28 @@ const processorCopy: Record<string, ProcessorCopy> = {
     quickLabel: 'Quick answer',
     quickAnswer:
       'Current Subnautica2.gg and Subnautica2Hub data list Processor as a scan-unlocked interior facility built with Titanium x2, Mild Acid x1, and Copper Wire x1. Subnautica2.gg shows verified scan locations, while PC Gamer points players toward the Old Habitat north of the Life Pod during the black-box route. Build it with the Habitat Builder/Builder Tool, then use it to keep Strong Acid, Strontium, and later Rebreather prep organized.',
+    fieldNotesTitle: 'Field notes for the first Processor',
+    fieldNotes: [
+      {
+        title: 'Build it where counting is easy',
+        body: 'The Processor is less useful when it sits far from storage. Put it near chemicals, ingots, and vehicle materials so every conversion has a visible cost.',
+      },
+      {
+        title: 'Do not process rare inputs one at a time',
+        body: 'A new station invites button pressing. Resist that. Check the next craft, then convert only the batch that serves that craft.',
+      },
+      {
+        title: 'Treat Mild Acid as the station tax',
+        body: 'Titanium is routine and Copper Wire is manageable. Mild Acid is the part that proves your pouch route is ready.',
+      },
+    ],
+    routeChecklistTitle: 'Before building Processor',
+    routeChecklist: [
+      'Scan route is complete and return path is known.',
+      'Titanium, Mild Acid, and Copper Wire are staged together.',
+      'A chemical locker is placed beside the station.',
+      'First output target is chosen before processing starts.',
+    ],
     contentsLabel: 'Contents',
     routeTitle: 'Processor unlock plan',
     routeSteps: [
@@ -423,6 +445,28 @@ const fallbackCopy = processorCopy.en;
 
 processorCopy.zh = {
   ...processorCopy.zh,
+  fieldNotesTitle: '第一台 Processor 笔记',
+  fieldNotes: [
+    {
+      title: '放在方便算材料的位置',
+      body: 'Processor 离箱子太远就很难用好。把它放在化学材料、ingot 和载具材料旁边，每次加工的成本才看得见。',
+    },
+    {
+      title: '稀有输入别一份一份乱加工',
+      body: '新工作站很容易让人想一直点按钮。先看下一个配方，再只加工服务这个配方的一批材料。',
+    },
+    {
+      title: 'Mild Acid 是建站税',
+      body: 'Titanium 常见，Copper Wire 也能补。真正证明你准备好的是 Mild Acid，也就是 pouch 路线是否稳定。',
+    },
+  ],
+  routeChecklistTitle: '建 Processor 前',
+  routeChecklist: [
+    '扫描路线已完成，回程方向清楚。',
+    'Titanium、Mild Acid、Copper Wire 已放在一起。',
+    '化学材料箱放在工作站旁边。',
+    '加工前已经选好第一个输出目标。',
+  ],
   quickAnswer:
     'Subnautica2.gg 和 Subnautica2Hub 当前都把 Processor 写成扫描解锁的室内设施，建造材料是 Titanium x2、Mild Acid x1、Copper Wire x1。Subnautica2.gg 有已验证扫描点，PC Gamer 则把 Old Habitat 写成黑匣子路线里的实用线索。解锁后用 Habitat Builder/Builder Tool 建造，再用它整理 Strong Acid、Strontium 和后续深潜装备材料。',
   routeSteps: [

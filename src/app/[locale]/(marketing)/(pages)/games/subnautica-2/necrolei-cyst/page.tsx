@@ -16,7 +16,7 @@ type NecroleiCystCopy = ResourceGuideCopy & {
 };
 
 const PUBLISHED_AT = '2026-05-27';
-const UPDATED_AT = '2026-05-27';
+const UPDATED_AT = '2026-05-28';
 
 const sharedSources = [
   {
@@ -52,6 +52,28 @@ const necroleiCystCopy: Record<string, NecroleiCystCopy> = {
     quickLabel: 'Quick answer',
     quickAnswer:
       'Current PC Gamer, GamesRadar, GAMES.GG, and AllThings.How reporting points Necrolei Cysts to the jelly or neon coral forest north to northwest of the Life Pod, near the Old Habitat route. Look for Stilt Orbs with flower-like cysts on top and cut them with the Survival Multitool or Multitool. The main Strong Acid route uses Necrolei Cyst x2 at the Processor for Strong Acid x1, while sulfur plus gold is the more expensive fallback.',
+    fieldNotesTitle: 'Field notes for cyst farming',
+    fieldNotes: [
+      {
+        title: 'Harvest in pairs',
+        body: 'One cyst is almost useful, which is the worst kind of useful. Strong Acid wants pairs, so leave only after the count divides cleanly.',
+      },
+      {
+        title: 'Treat Old Habitat as the anchor',
+        body: 'The cysts sit around the route zone, not in a neat chest at the landmark. Use Old Habitat to orient yourself, then look for Stilt Orbs nearby.',
+      },
+      {
+        title: 'Cut, count, leave',
+        body: 'The route can tempt you into sightseeing. Get the cysts, count the acid bottles they become, and leave before oxygen turns the trip sloppy.',
+      },
+    ],
+    routeChecklistTitle: 'Before leaving the cyst route',
+    routeChecklist: [
+      'Cyst count is even, preferably four or more.',
+      'Processor is ready before the materials are called done.',
+      'Strong Acid, Power Cell, and Rebreather needs are counted together.',
+      'Sulfur and Gold fallback is saved for emergencies.',
+    ],
     contentsLabel: 'Contents',
     routeTitle: 'Necrolei Cyst route',
     routeSteps: [
@@ -178,6 +200,28 @@ const necroleiCystCopy: Record<string, NecroleiCystCopy> = {
     quickLabel: '快速结论',
     quickAnswer:
       '当前 PC Gamer、GamesRadar、GAMES.GG 和 AllThings.How 的资料都把 Necrolei Cyst 指向 Life Pod 北侧到西北侧的 jelly / neon coral forest，也就是 Old Habitat 路线附近。找 Stilt Orb 顶部像花一样的 cyst，用 Survival Multitool 或 Multitool 切下来。Strong Acid 主路线是在 Processor 里用 Necrolei Cyst x2 做 Strong Acid x1；Sulfur + Gold 是更贵的备用路线。',
+    fieldNotesTitle: 'Necrolei Cyst 采集笔记',
+    fieldNotes: [
+      {
+        title: '按成对数量采',
+        body: '一个 cyst 看起来快够了，但 Strong Acid 要两个一组。离开前先确认数量能整齐换成 acid。',
+      },
+      {
+        title: 'Old Habitat 是方向锚点',
+        body: 'Cyst 不会像箱子一样摆在地标旁。用 Old Habitat 定方向，再在附近找 Stilt Orb。',
+      },
+      {
+        title: '切下、数清、回家',
+        body: '这条路线很容易顺手探索过头。先拿 cyst，算清能做几瓶 Strong Acid，然后在氧气节奏变乱前离开。',
+      },
+    ],
+    routeChecklistTitle: '离开 cyst 路线前',
+    routeChecklist: [
+      'Cyst 数量是偶数，最好四个以上。',
+      'Processor 已经准备好，再把材料算作可用。',
+      'Strong Acid、Power Cell、Rebreather 的需求一起算。',
+      'Sulfur 和 Gold 备用路线只留给特殊情况。',
+    ],
     contentsLabel: '目录',
     routeTitle: 'Necrolei Cyst 路线',
     routeSteps: [
