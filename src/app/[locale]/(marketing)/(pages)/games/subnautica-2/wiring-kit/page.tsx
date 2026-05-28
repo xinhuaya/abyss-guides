@@ -480,9 +480,147 @@ wiringKitCopy.zh = {
 };
 
 wiringKitCopy.ja = {
-  ...wiringKitCopy.en,
+  metadata: {
+    title:
+      'Subnautica 2 Wiring Kit ガイド - Silver、Copper Wire、System Chip 用途',
+    description:
+      'Subnautica 2のWiring Kitガイド。SilverとCopper Wireの準備、System Chipへのつなぎ方、電子素材の保管、作るタイミングを整理します。',
+  },
+  eyebrow: 'Subnautica 2 電子素材',
+  title: 'Subnautica 2 Wiring Kit ガイド',
+  description:
+    'Wiring Kitは小さな電子部品ですが、Silver集め、Copper Wire、System Chipを全部つなぐ大事な中継点です。作れるからすぐ作るのではなく、次の設計図が何を求めているかを見てから使うと素材が詰まりにくくなります。',
+  quickLabel: '要点',
+  quickAnswer:
+    '現在のブループリント情報では、Wiring KitはSilverとCopper Wireで作ります。詰まりやすいのはSilver側です。PC Gamerの現行ガイドではRebreatherがSystem Chipにつながり、System ChipはWiring Kitに戻るため、この小さな部品が深い潜水装備にも関わってきます。',
+  fieldNotesTitle: 'Wiring Kit集めのメモ',
+  fieldNotes: [
+    {
+      title: '机上クラフトではなくSilverルートとして見る',
+      body: 'Fabricatorで押すだけなら簡単です。問題は、1個のWiring Kitを作ったあとも次のアップグレード分のSilverが残るかどうかです。',
+    },
+    {
+      title: 'Copper Wireを見える場所に置く',
+      body: 'Copper Wireは基本素材に見えるので、普通のCopper箱に紛れがちです。電子素材箱に2本ほど置いておくと、Wiring Kit作成の確認がかなり楽になります。',
+    },
+    {
+      title: 'System Chipに進める前に一度止める',
+      body: '次の設計図がWiring Kitそのものを求めているなら、完成済みのSystem Chipは役に立ちません。目標レシピを画面で見てから、もう一段加工するか決めましょう。',
+    },
+  ],
+  routeChecklistTitle: '作る前の確認',
+  routeChecklist: [
+    '次のレシピがWiring Kitを求めているのか、System Chipを求めているのか確認した。',
+    '未加工のSilverを少し残している。',
+    'Copper Wireを電子素材箱に置き、普通のCopperと分けている。',
+    'Silverルートが安定するまでは小ロットで作る。',
+  ],
+  contentsLabel: '目次',
+  routeTitle: 'Wiring Kit作成プラン',
+  routeSteps: [
+    {
+      title: 'まずSilverルートを安定させる',
+      body: 'Wiring Kitで止まる時は、たいていSilver不足です。Old Habitat周辺の洞窟ルートや、自分が繰り返し走れるSilverルートを先に固めましょう。',
+    },
+    {
+      title: 'Copper WireをSilverの近くに保管する',
+      body: 'Copper Wireは基本素材の延長に見えますが、Wiring Kitでは電子素材側です。Silver、Quartz、チップ類と同じロッカーに入れておくと確認が速くなります。',
+    },
+    {
+      title: '名前のあるレシピに合わせて作る',
+      body: 'Wiring Kitは便利ですが、SilverとCopper Wireのままの方が使い道は広いです。System Chip、ステーション、ツール、乗り物アップグレードが本当に必要になってから作りましょう。',
+    },
+    {
+      title: 'System Chipの鎖を確認する',
+      body: '今の情報では、System ChipはWiring Kitの次に来る電子部品です。Rebreather、Scanner Station、Tadpole、深度モジュール計画が止まったら、このWiring Kitまで戻って確認します。',
+    },
+    {
+      title: 'Silverを少し残しておく',
+      body: 'Silverが安定してからなら予備のWiring Kitは便利です。それまでは未加工のSilverを数個残す方が、Early Access中のレシピ変更にも対応しやすいです。',
+    },
+  ],
+  tableTitle: 'Wiring Kit チェックリスト',
+  tableHeaders: ['項目', '確認すること'],
+  tableRows: [
+    ['Silver', '序盤のWiring KitとSystem Chipで一番詰まりやすい素材です。'],
+    ['Copper Wire', 'Copperから作り、電子素材箱の近くに保管します。'],
+    [
+      'System Chip',
+      '次の電子部品。現在のガイドではQuartzと一緒に確認する場面が多いです。',
+    ],
+    [
+      '目標レシピ',
+      '素材を全部完成品にする前に、次の設計図が何を求めているか見ます。',
+    ],
+    [
+      '保管場所',
+      'Silver、Copper Wire、Wiring Kit、Quartzを同じ箱にまとめます。',
+    ],
+  ],
+  visualTitle: '電子素材チェーン',
+  visualItems: [
+    {
+      label: '採集',
+      value: 'Silver',
+      note: 'まず繰り返せるSilverルートを作ります。',
+    },
+    {
+      label: '配線',
+      value: 'Copper',
+      note: 'Copper Wireを電子素材として保管します。',
+    },
+    {
+      label: '加工',
+      value: 'Chip',
+      note: 'Wiring KitをSystem Chipや明確なアップグレードに使います。',
+    },
+  ],
+  cautionTitle: 'Silverを全部加工しない',
+  cautionBody:
+    'Wiring Kitを並べると片付いた気分になりますが、完成品は使い道が限られます。次のレシピを見るまでは、SilverとCopper Wireを少し残しておきましょう。',
+  faqTitle: 'FAQ',
+  faqs: [
+    {
+      title: 'Subnautica 2でWiring Kitはどう作る？',
+      body: '現在のブループリント情報では、SilverとCopper Wireで作ります。作れない時はSilverルートと、CopperをCopper Wireへ加工済みかを確認してください。',
+    },
+    {
+      title: 'Wiring Kitは何に使う？',
+      body: '電子素材チェーン、とくにSystem Chipに使います。そこからツール、ステーション、Tadpole準備、深度関連アップグレードにつながる場合があります。',
+    },
+    {
+      title: '序盤から大量に作るべき？',
+      body: '大量には作らない方が安全です。Silverが安定したら予備を1個。序盤はSilverとCopper Wireのまま残す方が柔軟です。',
+    },
+    {
+      title: 'System Chipが作れない時は？',
+      body: 'System ChipはWiring Kitに戻り、Wiring KitはSilverに戻ります。Silver、Copper Wire、Wiring Kit、System Chipの順で確認しましょう。',
+    },
+  ],
+  readNextTitle: '次に読む',
+  related: [
+    { href: Routes.Subnautica2SystemChip, label: 'System Chip ガイド' },
+    { href: Routes.Subnautica2Rebreather, label: 'Rebreather ガイド' },
+    { href: Routes.Subnautica2FiberMesh, label: 'Fiber Mesh ガイド' },
+    { href: Routes.Subnautica2CopperWire, label: 'Copper Wire ガイド' },
+    { href: Routes.Subnautica2Silver, label: 'Silverの場所' },
+    { href: Routes.Subnautica2Quartz, label: 'Quartzの場所' },
+    {
+      href: Routes.Subnautica2TadpoleDepthModule,
+      label: 'Tadpole Depth Module ガイド',
+    },
+  ],
+  sourcesTitle: 'ソースメモ',
   sourceBody:
-    'Checked May 27, 2026 against current PC Gamer, Subnautica2.gg, and Dexerto Wiring Kit data, plus PC Gamer Silver route coverage.',
+    '2026年5月27日にPC Gamer、Subnautica2.gg、DexertoのWiring Kit情報と、PC GamerのSilverルート情報を確認しました。Early Access中はレシピや用途が変わる可能性があります。',
+  cardKicker: '電子素材カード',
+  cardBody:
+    'Silver、Copper Wire、System Chip準備、素材保管、アップグレード前の判断。',
+  cardTypeLabel: '種類',
+  cardTypeValue: 'クラフト素材',
+  cardVerifiedLabel: '確認日',
+  cardStatusLabel: '状態',
+  cardStatusValue: 'Early Access',
 };
 
 const fallbackLocaleAliases = {

@@ -778,7 +778,6 @@ const zhOnlyRoutes = [
   Routes.Subnautica2Troilite,
   Routes.Subnautica2VehicleFabricator,
   Routes.Subnautica2Wakemaker,
-  Routes.Subnautica2WiringKit,
 ] as const;
 
 const zhJaRoutes = [
@@ -790,6 +789,7 @@ const zhJaRoutes = [
   Routes.Subnautica2PowerCell,
   Routes.Subnautica2Rebreather,
   Routes.Subnautica2SystemChip,
+  Routes.Subnautica2WiringKit,
 ] as const;
 
 function createLocaleSet(locales: Locale[]): ReadonlySet<Locale> {
