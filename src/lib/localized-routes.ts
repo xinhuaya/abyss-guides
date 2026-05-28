@@ -733,7 +733,12 @@ const localizedRoutes: Partial<Record<Locale, ReadonlySet<string>>> = {
   ]),
 };
 
-const englishOnlyUntilTranslated = new Set<string>();
+const routeLocaleOverrides = new Map<string, ReadonlySet<Locale>>([
+  [Routes.Subnautica2Atacamite, new Set<Locale>([routing.defaultLocale, 'zh'])],
+  [Routes.Subnautica2Mangalloy, new Set<Locale>([routing.defaultLocale, 'zh'])],
+  [Routes.Subnautica2MetalFarm, new Set<Locale>([routing.defaultLocale, 'zh'])],
+  [Routes.Subnautica2Troilite, new Set<Locale>([routing.defaultLocale, 'zh'])],
+]);
 
 export function normalizeRoutePath(
   pathname: string | undefined = Routes.Root
@@ -758,8 +763,9 @@ export function isRouteReadyForLocale(
     return true;
   }
 
-  if (englishOnlyUntilTranslated.has(normalizedPath)) {
-    return false;
+  const localeOverride = routeLocaleOverrides.get(normalizedPath);
+  if (localeOverride) {
+    return localeOverride.has(locale);
   }
 
   const readyRoutes = localizedRoutes[locale];
