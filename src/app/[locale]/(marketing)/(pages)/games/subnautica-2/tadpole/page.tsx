@@ -339,14 +339,152 @@ const tadpoleCopy: Record<string, TadpoleCopy> = {
 };
 
 tadpoleCopy.ja = {
-  ...tadpoleCopy.en,
   metadata: {
-    title: 'Subnautica 2 Tadpole Guide',
+    title: 'Subnautica 2 Tadpole ガイド - 断片、Power Cell、修理、初回ルート',
     description:
-      'Guide for Tadpole fragments, vehicle crafting, Power Cell prep, repair safety, and upgrade planning.',
+      'Subnautica 2のTadpoleガイド。断片スキャン、Vehicle Fabricator、Power Cell、Repair Tool、Moonpool、初回運転ルートを整理します。',
   },
+  eyebrow: 'Subnautica 2 乗り物マイルストーン',
+  title: 'Subnautica 2 Tadpole ガイド',
+  description:
+    'Tadpoleを作ると、Subnautica 2の移動範囲が一気に広がります。ただし、電力、修理、帰り道の準備が甘いと、その広さがそのまま迷子や立ち往生につながります。',
+  quickLabel: '要点',
+  quickAnswer:
+    'Tadpoleは断片をスキャンしてブループリントを解除し、乗り物クラフトチェーンで作ります。GameSpotは少なくとも3個のTadpole Fragmentスキャンが必要と報じています。PC Gamerの現行ガイドでは、長距離に出る前のPower Cell、Strong Acid、予備電力、Repair Tool準備が重要です。',
+  fieldNotesTitle: '初回Tadpole前のメモ',
+  fieldNotes: [
+    {
+      title: '乗り物は迷子の許可証ではない',
+      body: '最初のTadpoleは地図を小さく感じさせます。だからこそ、いきなり深い偵察に使うより、まず知っているルートを一往復して挙動を覚えた方が安全です。',
+    },
+    {
+      title: '航続距離より先にPower Cell',
+      body: '電力計画が弱い乗り物は、遠くに置き去りにした目印になります。Basic Battery、Strong Acid、Saltの流れを先に片付けましょう。',
+    },
+    {
+      title: '戻りやすい場所に停める',
+      body: '悪い駐車場所は、乗り物で節約した時間をすぐ消します。Beacon、Moonpoolへの線、または分かりやすい地形を使って帰り道を残します。',
+    },
+  ],
+  routeChecklistTitle: 'Tadpoleチェック',
+  routeChecklist: [
+    '断片スキャンを終えてから素材運びに入る。',
+    'Vehicle FabricatorとMoonpool周りの導線を用意した。',
+    'Power CellとRepair Toolを後回しにしていない。',
+    '初回運転は知らない深場ではなく、分かっているルートで試す。',
+  ],
+  contentsLabel: '目次',
+  routeTitle: 'Tadpole解除と初回ルート',
+  routeSteps: [
+    {
+      title: 'まずTadpole Fragmentをスキャンする',
+      body: 'GameSpotは、ブループリント解除に少なくとも3個のTadpole Fragmentスキャンが必要と報じています。各断片探しは、荷物集めではなくスキャン優先の泳ぎとして扱いましょう。',
+    },
+    {
+      title: '乗り物クラフトチェーンをまとめる',
+      body: '最後の建造時に素材が5つのロッカーへ散っていると面倒です。Vehicle Fabricator、Moonpool支援、主な乗り物素材を同じ流れに置いておきます。',
+    },
+    {
+      title: '船体より先に電力を作る',
+      body: 'PC GamerはTadpole進行をPower Cell作成と結びつけています。Power CellはBasic Battery、Strong Acid、Saltへ戻るので、この鎖を先に解くと最後で詰まりません。',
+    },
+    {
+      title: '修理の安全策を持つ',
+      body: 'Tadpoleの価値は、一回だけ遠くへ行くことではなく、同じルートを安全に繰り返せることです。荒れた水域へ出す前にRepair Toolの準備を進めます。',
+    },
+    {
+      title: '初回運転は退屈なくらいでいい',
+      body: '最初の一走は、操作、駐車、電力消費、帰りの時間を覚えるためのものです。深いルートは、乗り物の癖が分かってからで十分です。',
+    },
+  ],
+  tableTitle: 'Tadpole進行チェックリスト',
+  tableHeaders: ['節目', 'なぜ大事か'],
+  tableRows: [
+    ['断片スキャン', 'Tadpoleのブループリントを解除します。'],
+    ['乗り物クラフトチェーン', '建造前に基地と制作設備の支援が必要です。'],
+    ['Power Cell準備', '乗り物進行は電力素材で止まりやすいです。'],
+    ['修理計画', '長距離ルートを片道旅行にしないための保険です。'],
+    [
+      'アップグレード計画',
+      '深度と便利モジュールが、より深いルートへ行く時期を決めます。',
+    ],
+  ],
+  visualTitle: '乗り物ルートカード',
+  visualItems: [
+    {
+      label: 'Scan',
+      value: '3+',
+      note: 'まず断片、素材集めはその後。',
+    },
+    {
+      label: 'Power',
+      value: 'Cell',
+      note: 'Strong Acidと予備電力が本当の門番です。',
+    },
+    {
+      label: 'Drive',
+      value: 'Safe',
+      note: '距離より修理、駐車、帰り道を優先します。',
+    },
+  ],
+  cautionTitle: '遠出の前に支援を作る',
+  cautionBody:
+    '乗り物は危険地帯へ速く行ける道具でもあります。Tadpoleを深場への通行証として扱う前に、修理、電力、帰り道を用意してください。',
+  faqTitle: 'FAQ',
+  faqs: [
+    {
+      title: 'Subnautica 2でTadpoleはどう解除する？',
+      body: 'Tadpole Fragmentをスキャンしてブループリントを解除し、乗り物クラフトチェーンで建造します。GameSpotは少なくとも3個のFragmentスキャンが必要と報じています。',
+    },
+    {
+      title: 'Tadpoleに乗る前に何を準備する？',
+      body: 'Power Cell素材、Repair Tool、分かりやすい帰り道を用意します。PC Gamerも予備電力と修理準備を長距離ルートの支えとして扱っています。',
+    },
+    {
+      title: 'なぜPower Cellで詰まりやすい？',
+      body: '現在のTadpoleルート情報では、車両クラフトがPower Cellにつながります。つまり断片を終えても、Basic Battery、Strong Acid、Saltで止まることがあります。',
+    },
+    {
+      title: '作ったらすぐ深場へ行っていい？',
+      body: 'おすすめしません。まず知っているルートで駐車、電力、戻り方を覚え、Repair Tool、Moonpool、アップグレードの支援を足してから深く進みましょう。',
+    },
+  ],
+  readNextTitle: '次に読む',
+  related: [
+    { href: Routes.Subnautica2PowerCell, label: 'Power Cell ガイド' },
+    { href: Routes.Subnautica2StrongAcid, label: 'Strong Acid ガイド' },
+    { href: Routes.Subnautica2RepairTool, label: 'Repair Tool ガイド' },
+    {
+      href: Routes.Subnautica2VehicleFabricator,
+      label: 'Vehicle Fabricator ガイド',
+    },
+    { href: Routes.Subnautica2Moonpool, label: 'Moonpool ガイド' },
+    { href: Routes.Subnautica2TadpoleDock, label: 'Tadpole Dock ガイド' },
+    {
+      href: Routes.Subnautica2TadpoleDepthModule,
+      label: 'Tadpole Depth Module ガイド',
+    },
+    {
+      href: Routes.Subnautica2EngineEfficiency,
+      label: 'Engine Efficiency ガイド',
+    },
+    { href: Routes.Subnautica2EchoLocation, label: 'Echo Location ガイド' },
+    { href: Routes.Subnautica2AirTank, label: 'Air TankとO2' },
+    { href: Routes.Subnautica2OxygenDepth, label: '酸素と深度ガイド' },
+    { href: Routes.Subnautica2Map, label: 'マップとバイオーム' },
+    { href: Routes.Subnautica2Crafting, label: 'クラフトガイド' },
+  ],
+  sourcesTitle: 'ソースメモ',
   sourceBody:
-    'Checked May 28, 2026 against GameSpot Tadpole upgrade reporting and PC Gamer Tadpole, Strong Acid, and Repair Tool coverage.',
+    '2026年5月28日にGameSpotのTadpoleアップグレード記事、PC GamerのTadpoleスキャン、Strong Acid、Repair Tool記事を確認しました。Subnautica 2はEarly Access中なので、スキャン数、素材チェーン、アップグレードルートはパッチ後に再確認してください。',
+  cardKicker: '乗り物マイルストーンカード',
+  cardBody:
+    '断片スキャン、Vehicle Fabricator、Power Cell、Repair Tool、Moonpool支援、初回ルート計画。',
+  cardTypeLabel: '種類',
+  cardTypeValue: '乗り物ガイド',
+  cardVerifiedLabel: '確認日',
+  cardStatusLabel: '状態',
+  cardStatusValue: 'Early Access',
 };
 
 const fallbackLocaleAliases = {
