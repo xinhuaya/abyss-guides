@@ -16,7 +16,7 @@ type GoldIngotCopy = ResourceGuideCopy & {
 };
 
 const PUBLISHED_AT = '2026-05-26';
-const UPDATED_AT = '2026-05-26';
+const UPDATED_AT = '2026-05-29';
 
 const sharedSources = [
   {
@@ -52,6 +52,28 @@ const goldIngotCopy: Record<string, GoldIngotCopy> = {
     quickLabel: 'Quick answer',
     quickAnswer:
       'Current Subnautica2.gg data lists Gold Ingot as a Processor craft that produces Gold Ingot x1 from Gold x3 after obtaining Gold. Wikily also lists Gold Ingot at the Processor with Gold x3, and GamesRadar reports the 3x Gold ingot recipe. Subnautica2.gg currently lists Entangled Power Cell and Fabrication Station as Gold Ingot uses, while PC Gamer notes raw Gold still matters for Advanced Wiring Kit, System Chip progress, and Thermal Plant planning.',
+    fieldNotesTitle: 'Field notes for Gold compression',
+    fieldNotes: [
+      {
+        title: 'Gold has a raw-material life first',
+        body: 'A Gold Ingot is useful, but raw Gold still feeds electronics and progression. If System Chip or Advanced Wiring Kit is next, do not compress the last clean stack.',
+      },
+      {
+        title: 'Craft ingots for named upgrades',
+        body: 'Entangled Power Cell and Fabrication Station are real reasons to make one. A vague “later” pile is how Gold disappears before the electronics bench is ready.',
+      },
+      {
+        title: 'Keep power parts together',
+        body: 'Once a Gold Ingot is made, store it with rare power materials instead of loose ore. That keeps the upgrade chain visible when you return from the next route.',
+      },
+    ],
+    routeChecklistTitle: 'Before making Gold Ingot',
+    routeChecklist: [
+      'Protect raw Gold for System Chip and Advanced Wiring Kit needs.',
+      'Make Gold Ingot only for a named power or station recipe.',
+      'Keep the finished ingot beside Entangled Power Cell materials.',
+      'Do not spend all Gold before checking Thermal Plant planning.',
+    ],
     contentsLabel: 'Contents',
     routeTitle: 'Gold Ingot planning route',
     routeSteps: [
@@ -170,6 +192,28 @@ const goldIngotCopy: Record<string, GoldIngotCopy> = {
     quickLabel: '快速结论',
     quickAnswer:
       'Subnautica2.gg 当前把 Gold Ingot 写成 Processor 配方：获得 Gold 后解锁，用 Gold x3 产出 Gold Ingot x1。Wikily 也列出 Processor + Gold x3，GamesRadar 的 ingot 总表同样写到 3x Gold。Subnautica2.gg 当前列出的用途是 Entangled Power Cell 和 Fabrication Station；PC Gamer 则提醒原始 Gold 还会进入 Advanced Wiring Kit、System Chip 推进和 Thermal Plant 规划。',
+    fieldNotesTitle: 'Gold 压 ingot 笔记',
+    fieldNotes: [
+      {
+        title: 'Gold 先有原材料用途',
+        body: 'Gold Ingot 有价值，但原 Gold 仍然会进电子材料和进度链。如果下一步是 System Chip 或 Advanced Wiring Kit，不要把最后一组干净库存压掉。',
+      },
+      {
+        title: '有明确升级再加工',
+        body: 'Entangled Power Cell 和 Fabrication Station 是明确理由。只是想着“以后会用”，很容易让 Gold 在电子材料准备好之前就消失。',
+      },
+      {
+        title: '成品放到电力材料旁边',
+        body: 'Gold Ingot 做出来后，放在稀有电力材料箱里，不要混进散矿。下一趟回来时，升级链会更清楚。',
+      },
+    ],
+    routeChecklistTitle: '制作 Gold Ingot 前',
+    routeChecklist: [
+      '先保护 System Chip 和 Advanced Wiring Kit 需要的原 Gold。',
+      '只有明确要做电力或工作站配方时，再压 Gold Ingot。',
+      '成品 ingot 放在 Entangled Power Cell 材料旁边。',
+      '花光 Gold 前检查 Thermal Plant 规划是否也要用。',
+    ],
     contentsLabel: '目录',
     routeTitle: 'Gold Ingot 规划路线',
     routeSteps: [

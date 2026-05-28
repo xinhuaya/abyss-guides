@@ -16,7 +16,7 @@ type CelestineCopy = ResourceGuideCopy & {
 };
 
 const PUBLISHED_AT = '2026-05-25';
-const UPDATED_AT = '2026-05-27';
+const UPDATED_AT = '2026-05-29';
 
 const sharedSources = [
   {
@@ -56,6 +56,28 @@ const celestineCopy: Record<string, CelestineCopy> = {
     quickLabel: 'Quick answer',
     quickAnswer:
       'Look for Celestine around the deeper Alien Ruins biome, including rocky walls and routes near Needler patrols. Bring the Tadpole, enough depth margin, and the Sonic Resonator for large nodes. Feedback Resonator currently needs 2x Strontium, which means at least 4x Celestine before you count any extra stock.',
+    fieldNotesTitle: 'Field notes for Celestine runs',
+    fieldNotes: [
+      {
+        title: 'The material is tied to danger, not rarity alone',
+        body: 'Celestine is memorable because the route asks for depth, Alien Ruins navigation, and Needler awareness. Bring the kit for the place, not just the recipe.',
+      },
+      {
+        title: 'Count Strontium before you leave',
+        body: 'If Feedback Resonator needs two Strontium, the Celestine count starts at four. Anything below that is a scouting trip, not the upgrade route.',
+      },
+      {
+        title: 'Use the Tadpole like a base camp',
+        body: 'Park where the return line is obvious, unload extra stock when you can, and avoid turning a material pickup into a maze problem.',
+      },
+    ],
+    routeChecklistTitle: 'Before farming Celestine',
+    routeChecklist: [
+      'Bring Tadpole, Sonic Resonator, oxygen margin, and repair safety.',
+      'Count at least four Celestine if Feedback Resonator is the goal.',
+      'Mark the exit before working near Needler patrols.',
+      'Process only the Strontium you need so spare Celestine stays flexible.',
+    ],
     contentsLabel: 'Contents',
     routeTitle: 'Celestine route plan',
     routeSteps: [
@@ -200,6 +222,28 @@ const celestineCopy: Record<string, CelestineCopy> = {
     quickLabel: '快速结论',
     quickAnswer:
       '去 Alien Ruins 生物群系较深区域找 Celestine，重点看岩壁、洞壁、低处 ledges，以及 Needler 巡逻附近的路线。出发前准备 Tadpole、足够的深度余量和 Sonic Resonator。先采 Celestine，回基地后再用 Processor 加工成 Strontium。',
+    fieldNotesTitle: 'Celestine 路线笔记',
+    fieldNotes: [
+      {
+        title: '难点不只是稀有',
+        body: 'Celestine 让人印象深，是因为路线会同时考深度、Alien Ruins 方向感和 Needler 安全。准备的是整条路线，不只是一个配方。',
+      },
+      {
+        title: '出发前先算 Strontium',
+        body: '如果 Feedback Resonator 要两个 Strontium，那么 Celestine 起步就是四个。低于这个数量，只能算侦查，不算升级路线完成。',
+      },
+      {
+        title: '把 Tadpole 当临时基地',
+        body: '停在回程明显的位置，能卸货就卸货，别让一次采集变成迷路问题。',
+      },
+    ],
+    routeChecklistTitle: '采 Celestine 前',
+    routeChecklist: [
+      '带 Tadpole、Sonic Resonator、氧气余量和维修方案。',
+      '如果目标是 Feedback Resonator，至少按 4 个 Celestine 计算。',
+      '靠近 Needler 巡逻路线前，先标好出口。',
+      '只加工需要的 Strontium，剩余 Celestine 保持灵活。',
+    ],
     contentsLabel: '目录',
     routeTitle: 'Celestine 路线规划',
     routeSteps: [

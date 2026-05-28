@@ -16,7 +16,7 @@ type ClinkerCopy = ResourceGuideCopy & {
 };
 
 const PUBLISHED_AT = '2026-05-24';
-const UPDATED_AT = '2026-05-28';
+const UPDATED_AT = '2026-05-29';
 
 const sharedSources = [
   {
@@ -52,6 +52,28 @@ const clinkerCopy: Record<string, ClinkerCopy> = {
     quickLabel: 'Quick answer',
     quickAnswer:
       'Mineralized Clinker is tied to Troilite collection in current route reporting. Treat it as a late-game route clue, not a new beginner resource. Hotfix 2 added more Troilite resource areas in the late-game region, but it did not publish a coordinate list.',
+    fieldNotesTitle: 'Field notes for clinker clues',
+    fieldNotes: [
+      {
+        title: 'Do not treat it like a starter node',
+        body: 'Mineralized Clinker belongs to the late-game Troilite conversation. If you are still solving early oxygen, power, or Tadpole basics, this is a bookmark, not a shopping list.',
+      },
+      {
+        title: 'Use it to frame the search area',
+        body: 'The useful part is the association: clinker, late-game region, Troilite routes. It narrows the kind of terrain you should inspect after Hotfix 2 without pretending exact coordinates exist.',
+      },
+      {
+        title: 'Record your own route once found',
+        body: 'Because official notes did not publish a coordinate list, player notes matter. Drop a Beacon and write down the approach, depth feel, and nearby landmarks.',
+      },
+    ],
+    routeChecklistTitle: 'Before chasing clinker routes',
+    routeChecklist: [
+      'Confirm you are working on late-game Troilite, not early resource prep.',
+      'Check Hotfix 2 context before relying on older route notes.',
+      'Bring Beacon markers and enough vehicle safety to record the route.',
+      'Treat player reports as clues until your save confirms the spawn area.',
+    ],
     contentsLabel: 'Contents',
     routeTitle: 'How to use Mineralized Clinker in a route',
     routeSteps: [
@@ -177,6 +199,28 @@ const clinkerCopy: Record<string, ClinkerCopy> = {
     quickLabel: '快速结论',
     quickAnswer:
       '当前路线报道把 Mineralized Clinker 和 Troilite 获取联系在一起。它应该按后期路线线索来理解，不是新手开局资源。Hotfix 2 增加了后期区域的 Troilite 资源点，但官方没有公开坐标清单。',
+    fieldNotesTitle: 'Mineralized Clinker 线索笔记',
+    fieldNotes: [
+      {
+        title: '别把它当新手资源点',
+        body: 'Mineralized Clinker 属于后期 Troilite 讨论。如果你还在解决氧气、电力或 Tadpole 基础，这页先收藏，不要立刻照着跑。',
+      },
+      {
+        title: '用它缩小搜索范围',
+        body: '真正有用的是关联：clinker、后期区域、Troilite 路线。它能帮你判断该看哪类地形，但不能假装官方已经给了精确坐标。',
+      },
+      {
+        title: '找到后记录自己的路线',
+        body: '官方没有公开坐标清单，所以玩家自己的笔记很重要。放 Beacon，记下进入方式、深度感觉和附近地标。',
+      },
+    ],
+    routeChecklistTitle: '追 clinker 路线前',
+    routeChecklist: [
+      '确认你正在做后期 Troilite，而不是早期资源准备。',
+      '依赖旧路线前，先核对 Hotfix 2 背景。',
+      '带 Beacon 和足够的载具安全余量，方便记录路线。',
+      '玩家报告先当线索，直到你的存档确认刷新区域。',
+    ],
     contentsLabel: '目录',
     routeTitle: '路线里怎么理解 Mineralized Clinker',
     routeSteps: [

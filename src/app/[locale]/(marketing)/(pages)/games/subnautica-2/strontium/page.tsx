@@ -16,7 +16,7 @@ type StrontiumCopy = ResourceGuideCopy & {
 };
 
 const PUBLISHED_AT = '2026-05-25';
-const UPDATED_AT = '2026-05-27';
+const UPDATED_AT = '2026-05-29';
 
 const sharedSources = [
   {
@@ -56,6 +56,28 @@ const strontiumCopy: Record<string, StrontiumCopy> = {
     quickLabel: 'Quick answer',
     quickAnswer:
       'Make Strontium by processing Celestine. Current reporting gives the working recipe as 2 Celestine into 1 Strontium in the Processor. Feedback Resonator currently needs 2x Strontium, so plan on at least 4 Celestine for that upgrade before you count spare stock.',
+    fieldNotesTitle: 'Field notes for Strontium planning',
+    fieldNotes: [
+      {
+        title: 'This is a conversion bottleneck',
+        body: 'Strontium is not the route; Celestine is. The Processor step only matters because it locks two raw pieces into one planned upgrade material.',
+      },
+      {
+        title: 'Do the math before processing',
+        body: 'Two Strontium means four Celestine. If you also want spare Celestine for later recipes, leave it raw until the next target is visible.',
+      },
+      {
+        title: 'Keep it with resonator parts',
+        body: 'Strontium is easy to misplace because it looks like a finished resource. Store it beside Feedback Resonator or module materials, not general minerals.',
+      },
+    ],
+    routeChecklistTitle: 'Before making Strontium',
+    routeChecklist: [
+      'Confirm Processor access and Celestine count.',
+      'Convert only the pieces needed for the next upgrade.',
+      'Reserve two Strontium if Feedback Resonator is the target.',
+      'Keep spare Celestine raw until another recipe demands conversion.',
+    ],
     contentsLabel: 'Contents',
     routeTitle: 'Strontium route plan',
     routeSteps: [
@@ -193,6 +215,28 @@ const strontiumCopy: Record<string, StrontiumCopy> = {
     quickLabel: '快速结论',
     quickAnswer:
       'Strontium 通过加工 Celestine 获得。当前资料给出的配方是：在 Processor 里放入 2 个 Celestine，产出 1 个 Strontium。真正麻烦的是 Celestine 路线，出发前准备 Tadpole、Sonic Resonator、氧气余量和清楚的回程路线。',
+    fieldNotesTitle: 'Strontium 规划笔记',
+    fieldNotes: [
+      {
+        title: '这是转换卡点',
+        body: 'Strontium 本身不是路线，Celestine 才是路线。Processor 这一步重要，是因为它会把两个原料锁成一个目标升级材料。',
+      },
+      {
+        title: '加工前先算清楚',
+        body: '两个 Strontium 就是四个 Celestine。如果你还想给后续配方留原 Celestine，先别全部加工。',
+      },
+      {
+        title: '和 resonator 材料放一起',
+        body: 'Strontium 很容易因为是成品资源而放错箱。把它放在 Feedback Resonator 或模块材料旁边，不要丢进普通矿物箱。',
+      },
+    ],
+    routeChecklistTitle: '制作 Strontium 前',
+    routeChecklist: [
+      '确认 Processor 可用，并数清 Celestine 数量。',
+      '只加工下一个升级需要的数量。',
+      '如果目标是 Feedback Resonator，先预留 2 个 Strontium。',
+      '其它 Celestine 保持原料状态，等配方明确后再转。',
+    ],
     contentsLabel: '目录',
     routeTitle: 'Strontium 路线规划',
     routeSteps: [

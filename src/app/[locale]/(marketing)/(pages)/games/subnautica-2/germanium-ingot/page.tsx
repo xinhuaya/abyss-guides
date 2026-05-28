@@ -16,7 +16,7 @@ type GermaniumIngotCopy = ResourceGuideCopy & {
 };
 
 const PUBLISHED_AT = '2026-05-26';
-const UPDATED_AT = '2026-05-26';
+const UPDATED_AT = '2026-05-29';
 
 const sharedSources = [
   {
@@ -52,6 +52,28 @@ const germaniumIngotCopy: Record<string, GermaniumIngotCopy> = {
     quickLabel: 'Quick answer',
     quickAnswer:
       'Current Wikily data lists two Processor recipes for Germanium Ingot: Lead x2 or Silver x2. GamesRadar also reports Germanium Ingot as 2x Silver or 2x Lead, and Subnautica2.gg lists Germanium Ingot as crafted from Lead or Silver at the Processor. Current listed uses include Axum Trashcan, Duplex Solar Panel, Heat Resistance Chip, and Power Storage, while PC Gamer notes Lead can be saved for Germanium Ingot production.',
+    fieldNotesTitle: 'Field notes for Germanium choices',
+    fieldNotes: [
+      {
+        title: 'Use the metal you can replace',
+        body: 'Germanium Ingot is flexible because Lead or Silver can work. Pick the input that is easiest for your current route, not the one sitting next to a more urgent recipe.',
+      },
+      {
+        title: 'Silver is often more painful to lose',
+        body: 'If Wiring Kit, Advanced Battery, or electronics are active, spend Lead first. Silver shortages ripple through more early tools.',
+      },
+      {
+        title: 'Power builds need a small reserve',
+        body: 'Duplex Solar Panel, Heat Resistance Chip, and Power Storage can all pull this chain later. Keep one planned ingot stack instead of rediscovering the recipe when you are already at the station.',
+      },
+    ],
+    routeChecklistTitle: 'Before crafting Germanium Ingot',
+    routeChecklist: [
+      'Choose Lead or Silver based on which route you can refill fastest.',
+      'Protect Silver if electronics or Advanced Battery work is next.',
+      'Craft through Processor only when the target power recipe is known.',
+      'Store finished ingots with solar, heat, or storage upgrade parts.',
+    ],
     contentsLabel: 'Contents',
     routeTitle: 'Germanium Ingot planning route',
     routeSteps: [
@@ -162,6 +184,28 @@ const germaniumIngotCopy: Record<string, GermaniumIngotCopy> = {
     quickLabel: '快速结论',
     quickAnswer:
       'Wikily 当前列出两个 Processor 配方：Lead x2 或 Silver x2。GamesRadar 也写到 Germanium Ingot 是 2x Silver 或 2x Lead；Subnautica2.gg 则把它列为由 Lead 或 Silver 在 Processor 制作。当前用途包括 Axum Trashcan、Duplex Solar Panel、Heat Resistance Chip 和 Power Storage；PC Gamer 也提到 Lead 可以留给 Germanium Ingot 生产。',
+    fieldNotesTitle: 'Germanium Ingot 选择笔记',
+    fieldNotes: [
+      {
+        title: '用更容易补的那种金属',
+        body: 'Germanium Ingot 灵活，是因为 Lead 或 Silver 都能做。不要只看箱子里哪个多，而要看当前哪条路线更容易补。',
+      },
+      {
+        title: 'Silver 往往更疼',
+        body: '如果 Wiring Kit、Advanced Battery 或电子材料正在推进，优先花 Lead。Silver 一缺，会牵连更多早期工具。',
+      },
+      {
+        title: '电力建设要留小库存',
+        body: 'Duplex Solar Panel、Heat Resistance Chip 和 Power Storage 后面都会拉到这条链。提前留一小组，比站在工作台前重新查配方舒服。',
+      },
+    ],
+    routeChecklistTitle: '制作 Germanium Ingot 前',
+    routeChecklist: [
+      '根据哪条路线更容易补货，选择 Lead 或 Silver。',
+      '如果下一步是电子材料或 Advanced Battery，先保护 Silver。',
+      '只有目标电力配方明确时，再通过 Processor 加工。',
+      '成品 ingot 放在太阳能、耐热或储能升级材料旁边。',
+    ],
     contentsLabel: '目录',
     routeTitle: 'Germanium Ingot 规划路线',
     routeSteps: [
