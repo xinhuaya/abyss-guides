@@ -1089,7 +1089,7 @@ const hubCopyOverrides: Record<string, Partial<HubCopy>> = {
     ],
     editorialTitle: 'Правило публикации',
     editorialBody:
-      'Локализованные страницы попадают в sitemap только после ручной подготовки. Непереведенные статьи остаются noindex.',
+      'Локализованные страницы попадают в sitemap только после ручной подготовки. Непереведенные статьи пока не становятся поисковыми входами.',
   },
   de: {
     metadata: {
@@ -1136,7 +1136,7 @@ const hubCopyOverrides: Record<string, Partial<HubCopy>> = {
     ],
     editorialTitle: 'SEO-Regel',
     editorialBody:
-      'Lokalisierte Seiten kommen erst in sitemap und hreflang, wenn sie wirklich uebersetzt sind. Unfertige Artikel bleiben noindex.',
+      'Lokalisierte Seiten kommen erst in sitemap und hreflang, wenn sie wirklich uebersetzt sind. Unfertige Artikel bleiben ausserhalb der Such-Einstiege.',
   },
   fr: {
     metadata: {
@@ -1182,7 +1182,7 @@ const hubCopyOverrides: Record<string, Partial<HubCopy>> = {
     ],
     editorialTitle: 'Regle SEO',
     editorialBody:
-      'Une page localisee entre dans le sitemap seulement quand elle est vraiment traduite. Les articles incomplets restent noindex.',
+      'Une page localisee entre dans le sitemap seulement quand elle est vraiment traduite. Les articles incomplets restent hors des entrees de recherche.',
   },
   'pt-BR': {
     metadata: {
@@ -1228,7 +1228,7 @@ const hubCopyOverrides: Record<string, Partial<HubCopy>> = {
     ],
     editorialTitle: 'Regra de SEO',
     editorialBody:
-      'Uma pagina localizada so entra no sitemap depois de traducao real. Artigos incompletos continuam noindex.',
+      'Uma pagina localizada so entra no sitemap depois de traducao real. Artigos incompletos ficam fora das entradas de busca.',
   },
   'es-419': {
     metadata: {
@@ -1274,7 +1274,7 @@ const hubCopyOverrides: Record<string, Partial<HubCopy>> = {
     ],
     editorialTitle: 'Regla SEO',
     editorialBody:
-      'Una pagina localizada entra al sitemap solo cuando esta traducida de verdad. Los articulos incompletos siguen con noindex.',
+      'Una pagina localizada entra al sitemap solo cuando esta traducida de verdad. Los articulos incompletos quedan fuera de las entradas de busqueda.',
   },
   ko: {
     metadata: {
@@ -1320,7 +1320,7 @@ const hubCopyOverrides: Record<string, Partial<HubCopy>> = {
     ],
     editorialTitle: 'SEO 규칙',
     editorialBody:
-      '현지화 페이지는 실제 번역이 끝난 뒤 sitemap에 넣습니다. 미완성 글은 noindex 상태로 둡니다.',
+      '현지화 페이지는 실제 번역이 끝난 뒤 sitemap에 넣습니다. 아직 다듬지 않은 글은 검색 진입점에서 제외합니다.',
   },
   ja: {
     metadata: {
@@ -1366,7 +1366,7 @@ const hubCopyOverrides: Record<string, Partial<HubCopy>> = {
     ],
     editorialTitle: 'SEO ルール',
     editorialBody:
-      'ローカライズ済みページだけを sitemap に入れます。未翻訳の記事は noindex のままにします。',
+      'ローカライズ済みページだけを sitemap に入れます。未翻訳の記事は検索入口から外しています。',
   },
 };
 
