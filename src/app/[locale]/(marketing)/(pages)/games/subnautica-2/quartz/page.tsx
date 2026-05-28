@@ -16,7 +16,7 @@ type QuartzCopy = ResourceGuideCopy & {
 };
 
 const PUBLISHED_AT = '2026-05-26';
-const UPDATED_AT = '2026-05-28';
+const UPDATED_AT = '2026-05-29';
 
 const sharedSources = [
   {
@@ -52,6 +52,28 @@ const quartzCopy: Record<string, QuartzCopy> = {
     quickLabel: 'Quick answer',
     quickAnswer:
       'PC Gamer reports that early Quartz appears as white crystal chunks on and inside orange-green coral domes, including under the Lifepod, with many domes northwest of the Lifepod. Hand pickups are enough for early Scanner and Glass work, medium crystals can be smashed with the Survival Multitool, and large Quartz deposits later need the Sonic Resonator. Subnautica2Hub lists Quartz in Coral Gardens and Observatory Ruins, while Subnautica2.gg lists it as used in 20 recipes and tied to Processor / glass crafting data. Save a marked Quartz route before you spend the lot on base windows.',
+    fieldNotesTitle: 'Field notes for Quartz hoarding',
+    fieldNotes: [
+      {
+        title: 'Quartz disappears quietly',
+        body: 'You rarely lose a run because Quartz is impossible to find. You lose time because Glass, Scanner Station, and electronics all pull from the same little pile while you are thinking about something else.',
+      },
+      {
+        title: 'Beacon the boring route',
+        body: 'The best early Quartz line is not dramatic. It is the coral dome route you can repeat half-awake without checking three maps. Mark that line before base windows start eating stock.',
+      },
+      {
+        title: 'Keep electronics Quartz separate',
+        body: 'A tiny side stack for System Chip, Wiring Kit follow-ups, and module work saves you from turning every crystal into Glass because the base looked bare.',
+      },
+    ],
+    routeChecklistTitle: 'Before spending Quartz',
+    routeChecklist: [
+      'Mark one repeatable coral dome route near or northwest of the Lifepod.',
+      'Split Quartz into Glass stock and electronics stock.',
+      'Do not start base window work until Scanner and core electronics are covered.',
+      'Save large-deposit farming for the Sonic Resonator route.',
+    ],
     contentsLabel: 'Contents',
     routeTitle: 'Quartz route plan',
     routeSteps: [
@@ -186,6 +208,28 @@ const quartzCopy: Record<string, QuartzCopy> = {
     quickLabel: '快速结论',
     quickAnswer:
       'PC Gamer 报道早期 Quartz 是白色水晶块，出现在橙绿色珊瑚穹顶上或里面，包括 Lifepod 下方；Lifepod 西北方向有很多这类穹顶。手捡足够支撑早期 Scanner 和 Glass，中等水晶可以用 Survival Multitool 打碎，大型 Quartz 矿点后期需要 Sonic Resonator。Subnautica2Hub 把 Quartz 区域列为 Coral Gardens 和 Observatory Ruins；Subnautica2.gg 当前写 Quartz 用于 20 个配方，并和 Processor / glass 制作资料相关。建议在做基地窗户前，先标出一条能反复补 Quartz 的路线。',
+    fieldNotesTitle: 'Quartz 囤货笔记',
+    fieldNotes: [
+      {
+        title: 'Quartz 是悄悄被用光的',
+        body: '它通常不是完全找不到，而是 Glass、Scanner Station 和电子材料一起从同一个小箱子里拿货。等你回头看，箱子已经空了。',
+      },
+      {
+        title: '给普通路线放 Beacon',
+        body: '早期最好用的 Quartz 路线不需要很帅。能稳定重复跑的珊瑚穹顶线最重要，趁基地窗户还没开始吃库存前先标出来。',
+      },
+      {
+        title: '电子材料单独留一小格',
+        body: '给 System Chip、Wiring Kit 后续材料和模块配方留一小堆 Quartz。这样基地看起来缺窗户时，也不会把关键电子材料全熔成 Glass。',
+      },
+    ],
+    routeChecklistTitle: '花 Quartz 前',
+    routeChecklist: [
+      '先标出 Lifepod 附近或西北方向一条可重复跑的珊瑚穹顶路线。',
+      'Quartz 分成 Glass 库存和电子材料库存。',
+      'Scanner 和核心电子材料没覆盖前，不要急着做大量基地窗户。',
+      '大型矿点等 Sonic Resonator 路线稳定后再批量处理。',
+    ],
     contentsLabel: '目录',
     routeTitle: 'Quartz 路线规划',
     routeSteps: [

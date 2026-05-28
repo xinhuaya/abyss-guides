@@ -16,7 +16,7 @@ type LeadCopy = ResourceGuideCopy & {
 };
 
 const PUBLISHED_AT = '2026-05-26';
-const UPDATED_AT = '2026-05-26';
+const UPDATED_AT = '2026-05-29';
 
 const sharedSources = [
   {
@@ -48,6 +48,28 @@ const leadCopy: Record<string, LeadCopy> = {
     quickLabel: 'Quick answer',
     quickAnswer:
       'PC Gamer reports an early Lead route in a ravine about 280 meters northeast of the Lifepod, around bearing 75 degrees. Ride the blue natural current down, stop near the colony platform construction and Tadpole fragment, then search the ravine sand for small Lead pieces or smaller breakable blocks. Subnautica2Hub lists Lead in Coral Gardens at 0-200m, with Lead Node breaks giving early pieces and Sonic Resonator deposits becoming the efficient farm. Current public data ties Lead to Sonic Resonator, Germanium from Lead, and Sugar of Saturn.',
+    fieldNotesTitle: 'Field notes for the first Lead pieces',
+    fieldNotes: [
+      {
+        title: 'The landmark matters more than the compass',
+        body: 'Bearing 75 degrees gets you close, but the colony platform and blue current are the real confirmation. If those are missing, stop correcting by tiny angles and reset from the Lifepod.',
+      },
+      {
+        title: 'Get the tool pieces, then upgrade the route',
+        body: 'The first Lead run is about unlocking better mining. Once Sonic Resonator is built, the same metal becomes less annoying because deposits beat slow sand checks.',
+      },
+      {
+        title: 'Do not overstay the ravine',
+        body: 'A small reserve is useful, but early Lead is not worth turning the first trip into a full backpack. Grab enough for the tool chain and one spare recipe, then leave cleanly.',
+      },
+    ],
+    routeChecklistTitle: 'Before leaving the Lead ravine',
+    routeChecklist: [
+      'Confirm the blue current and colony platform landmark before searching.',
+      'Pick up small sand pieces and breakable Lead blocks first.',
+      'Reserve Lead for Sonic Resonator before odd recipes.',
+      'Mark the ravine if you need Germanium or later deposits.',
+    ],
     contentsLabel: 'Contents',
     routeTitle: 'First Lead route',
     routeSteps: [
@@ -166,6 +188,28 @@ const leadCopy: Record<string, LeadCopy> = {
     quickLabel: '快速结论',
     quickAnswer:
       'PC Gamer 报道的前期 Lead 路线在 Lifepod 东北约 280 米的峡谷，方位大约 75 度。看到下方蓝色天然水流后顺着下去，在左侧殖民地平台施工点和 Tadpole 碎片附近停下，然后在峡谷沙地里找小块 Lead，或敲较小的矿块。Subnautica2Hub 把 Lead 列在 Coral Gardens，深度 0-200m；前期可以敲 Lead Node 拿少量 Lead，后面用 Sonic Resonator 采大矿点效率更高。当前公开资料把 Lead 和 Sonic Resonator、Germanium from Lead、Sugar of Saturn 关联起来。',
+    fieldNotesTitle: '第一批 Lead 现场笔记',
+    fieldNotes: [
+      {
+        title: '地标比方位更重要',
+        body: '75 度能把你带到大概区域，但蓝色水流和殖民地平台才是真正确认点。如果一直看不到这两个东西，别在原地微调角度，直接回 Lifepod 重新出发。',
+      },
+      {
+        title: '先拿工具材料，再升级路线',
+        body: '第一趟 Lead 的重点是把 Sonic Resonator 做出来。工具到手后，后续大矿点会比在沙地里慢慢找舒服很多。',
+      },
+      {
+        title: '别在峡谷里待太久',
+        body: '小库存有用，但前期 Lead 不值得第一趟就塞满背包。够 Sonic Resonator 和一两个备用配方后，干净离开更划算。',
+      },
+    ],
+    routeChecklistTitle: '离开 Lead 峡谷前',
+    routeChecklist: [
+      '确认蓝色水流和殖民地平台地标后再开始细找。',
+      '优先捡沙地小块和能敲开的 Lead 小矿块。',
+      'Lead 先留给 Sonic Resonator，再考虑零散配方。',
+      '如果后面还要 Germanium 或大矿点，给峡谷放一个标记。',
+    ],
     contentsLabel: '目录',
     routeTitle: '第一趟 Lead 路线',
     routeSteps: [

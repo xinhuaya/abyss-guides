@@ -16,7 +16,7 @@ type MetalSalvageCopy = ResourceGuideCopy & {
 };
 
 const PUBLISHED_AT = '2026-05-26';
-const UPDATED_AT = '2026-05-26';
+const UPDATED_AT = '2026-05-29';
 
 const sharedSources = [
   {
@@ -56,6 +56,28 @@ const metalSalvageCopy: Record<string, MetalSalvageCopy> = {
     quickLabel: 'Quick answer',
     quickAnswer:
       'Subnautica2Hub, Subnautica2.gg, Dexerto, and Subnautica 2 Wiki describe Metal Salvage as debris from a human habitat or vehicle that is easily converted into raw materials in a Fabricator. Subnautica2Hub lists it as a harvested material used as the ingredient for Salvaged Titanium, requiring one Metal Salvage per craft at the Fabricator. Dexerto Titanium guidance says Metal Salvage near wreck debris can be processed into Salvaged Titanium and yields four Titanium per piece. Subnautica 2 Wiki also lists Metal Salvage as an inventory pickup with buoyancy and mass stats.',
+    fieldNotesTitle: 'Field notes for salvage runs',
+    fieldNotes: [
+      {
+        title: 'Pick it up when the route is already paid for',
+        body: 'Metal Salvage is best when you are already at a wreck, scanning fragments, or checking old structures. A dedicated salvage trip feels slow; a spare backpack slot on an existing route feels free.',
+      },
+      {
+        title: 'Process it before it becomes clutter',
+        body: 'The item is useful because it turns into planned Titanium stock. If it sits in your bag or a random locker for three trips, it is not stock anymore. It is noise.',
+      },
+      {
+        title: 'Use salvage before base expansion',
+        body: 'A few processed pieces can cover lockers, hatches, and station placement without draining the loose Titanium pile you need for tools and repairs.',
+      },
+    ],
+    routeChecklistTitle: 'Before keeping Metal Salvage',
+    routeChecklist: [
+      'Leave one or two backpack slots open on wreck and fragment routes.',
+      'Process salvage at the Fabricator when you return to base.',
+      'Store processed Titanium near base-building materials.',
+      'Do not carry salvage into Silver, Quartz, or story-item routes unless you have space.',
+    ],
     contentsLabel: 'Contents',
     routeTitle: 'Metal Salvage route plan',
     routeSteps: [
@@ -173,6 +195,28 @@ const metalSalvageCopy: Record<string, MetalSalvageCopy> = {
     quickLabel: '快速结论',
     quickAnswer:
       'Subnautica2Hub、Subnautica2.gg、Dexerto 和 Subnautica 2 Wiki 都把 Metal Salvage 描述为来自人类舱室或载具的残骸，可以在 Fabricator 中轻松转成原材料。Subnautica2Hub 列出它是 Salvaged Titanium 的材料，在 Fabricator 中每次制作需要 1 个 Metal Salvage。Dexerto 的 Titanium 指南说明，沉船残骸附近的 Metal Salvage 可以加工成 Salvaged Titanium，每块给 4 个 Titanium。Subnautica 2 Wiki 还列出 Metal Salvage 是背包拾取物，并带有浮力和质量数据。',
+    fieldNotesTitle: 'Metal Salvage 路线笔记',
+    fieldNotes: [
+      {
+        title: '顺路捡最划算',
+        body: 'Metal Salvage 最适合在你本来就在查残骸、扫碎片、看旧设施时顺手拿。专门为了它出门会慢；已有路线里空一个背包格就很舒服。',
+      },
+      {
+        title: '回家就加工，别变成杂物',
+        body: '它的价值在于能变成计划内的 Titanium 库存。如果在背包或随机箱子里躺了好几趟，那就不是库存，而是干扰。',
+      },
+      {
+        title: '扩建基地前优先处理',
+        body: '几块加工后的 salvage 可以顶住储物箱、舱门和工作站摆放，不用把工具维修需要的原 Titanium 一次花光。',
+      },
+    ],
+    routeChecklistTitle: '留下 Metal Salvage 前',
+    routeChecklist: [
+      '残骸和碎片路线给背包留一两个格子。',
+      '回到基地后用 Fabricator 立刻加工。',
+      '加工后的 Titanium 放到基地建造材料旁边。',
+      '跑 Silver、Quartz 或剧情物品路线时，空间不够就别硬背 salvage。',
+    ],
     contentsLabel: '目录',
     routeTitle: 'Metal Salvage 路线规划',
     routeSteps: [

@@ -16,7 +16,7 @@ type TitaniumCopy = ResourceGuideCopy & {
 };
 
 const PUBLISHED_AT = '2026-05-26';
-const UPDATED_AT = '2026-05-26';
+const UPDATED_AT = '2026-05-29';
 
 const sharedSources = [
   {
@@ -48,6 +48,28 @@ const titaniumCopy: Record<string, TitaniumCopy> = {
     quickLabel: 'Quick answer',
     quickAnswer:
       'Subnautica2Hub lists Titanium in Coral Gardens, Observatory Ruins, and Sparse Plains at 0-350m, with hand-broken Titanium Nodes and higher-yield Titanium Deposits for Sonic Resonator. Dexerto says small Titanium nodes appear across the seabed from the start, Metal Salvage near wrecks can be processed into Salvaged Titanium for four Titanium per piece, and Scanner Station can track deposits around your base. Subnautica2.gg lists Titanium as crafted from Salvaged Titanium or through Processor / Fabrication Station data and used across a very large crafting list, including Titanium Ingot and habitat pieces.',
+    fieldNotesTitle: 'Field notes for Titanium stock',
+    fieldNotes: [
+      {
+        title: 'The shortage comes from confidence',
+        body: 'Titanium feels endless until you build lockers, hatches, stations, and a few ingots in the same evening. If the base plan is growing, assume your current stack is smaller than it looks.',
+      },
+      {
+        title: 'Salvage is the cleaner early refill',
+        body: 'When a wreck route offers Metal Salvage, take it home instead of passing it for another loose node. One processed piece can do more for the base than several scattered pickups.',
+      },
+      {
+        title: 'Raw Titanium deserves its own box',
+        body: 'Ingot chains are useful, but raw Titanium is what stops small base jobs from stalling. A labeled loose-stock box prevents accidental over-compression.',
+      },
+    ],
+    routeChecklistTitle: 'Before using Titanium',
+    routeChecklist: [
+      'Keep one raw Titanium box separate from Titanium Ingot stock.',
+      'Leave backpack slots open for Metal Salvage on wreck routes.',
+      'Use Sonic Resonator deposits once pebble picking starts feeling slow.',
+      'Check base parts before converting a large stack into ingots.',
+    ],
     contentsLabel: 'Contents',
     routeTitle: 'Titanium route plan',
     routeSteps: [
@@ -172,6 +194,28 @@ const titaniumCopy: Record<string, TitaniumCopy> = {
     quickLabel: '快速结论',
     quickAnswer:
       'Subnautica2Hub 把 Titanium 列在 Coral Gardens、Observatory Ruins 和 Sparse Plains，深度为 0-350m；采集方式包括手敲 Titanium Node，以及用 Sonic Resonator 处理收获更高的 Titanium Deposit。Dexerto 说小型 Titanium 节点开局就散在海床上，沉船附近的 Metal Salvage 也能加工成 Salvaged Titanium，每块给 4 个 Titanium；Scanner Station 还能追踪基地周围的矿点。Subnautica2.gg 列出 Titanium 可由 Salvaged Titanium 或 Processor / Fabrication Station 相关数据获得，并用于 Titanium Ingot 和大量基地部件。',
+    fieldNotesTitle: 'Titanium 库存笔记',
+    fieldNotes: [
+      {
+        title: '缺货通常来自太自信',
+        body: 'Titanium 看起来永远够用，直到你同一晚做储物箱、舱门、工作站和几个 ingot。只要基地计划在变大，就默认当前库存没有看起来那么多。',
+      },
+      {
+        title: 'Metal Salvage 是更干净的早期补货',
+        body: '残骸路线看到 Metal Salvage 时，别只顾着捡散节点。带回家加工，一块残骸通常比几次零散拾取更能救基地材料。',
+      },
+      {
+        title: '原 Titanium 应该单独放',
+        body: 'Ingot 链很有用，但真正让小型基地工程不卡住的是原 Titanium。单独放一个 loose stock 箱，可以避免一不小心全压成 ingot。',
+      },
+    ],
+    routeChecklistTitle: '花 Titanium 前',
+    routeChecklist: [
+      '原 Titanium 和 Titanium Ingot 库存分开放。',
+      '跑残骸路线时给 Metal Salvage 留背包格。',
+      '手捡开始变慢后，改用 Sonic Resonator 处理大矿点。',
+      '大批量压 ingot 前，先看基地部件还需要多少原 Titanium。',
+    ],
     contentsLabel: '目录',
     routeTitle: 'Titanium 路线规划',
     routeSteps: [

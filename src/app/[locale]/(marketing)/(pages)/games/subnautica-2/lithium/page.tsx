@@ -16,7 +16,7 @@ type LithiumCopy = ResourceGuideCopy & {
 };
 
 const PUBLISHED_AT = '2026-05-26';
-const UPDATED_AT = '2026-05-26';
+const UPDATED_AT = '2026-05-29';
 
 const sharedSources = [
   {
@@ -52,6 +52,28 @@ const lithiumCopy: Record<string, LithiumCopy> = {
     quickLabel: 'Quick answer',
     quickAnswer:
       'PC Gamer reports that the early reliable Lithium route is The Great Jaw southwest of the Lifepod, after you have Sonic Resonator and Standard Air Tank. One piece can be found near a ruined colony building before the jaw, then more Lithium sits inside the jaw structure and must be mined quickly with Sonic Resonator. Subnautica2Hub lists Lithium in Coral Gardens at 0-250m and tied to Sonic Resonator / Lithium Node harvesting. Public recipe pages disagree slightly on count, but Lithium is important for Plasteel Ingot and the High Capacity Air Tank chain.',
+    fieldNotesTitle: 'Field notes for The Great Jaw run',
+    fieldNotes: [
+      {
+        title: 'This is not the place to test oxygen math',
+        body: 'Lithium is early enough to tempt you, but the jaw route punishes messy prep. Bring the tank, movement kit, and a clear exit plan before mining inside the structure.',
+      },
+      {
+        title: 'Take the easy piece first',
+        body: 'The ruined building pickup matters because it gives progress without committing to the mouth. Grab that piece, check oxygen, then decide whether the inside run is still worth it.',
+      },
+      {
+        title: 'Mine once and leave with dignity',
+        body: 'The first Lithium trip does not need to become a perfect farm. Break the node, grab the drops, and get out before curiosity turns into a long swim with no air.',
+      },
+    ],
+    routeChecklistTitle: 'Before entering The Great Jaw',
+    routeChecklist: [
+      'Bring Sonic Resonator, Standard Air Tank, Basic Fins, and a charged tool battery.',
+      'Pick up the ruin-side Lithium before committing to the inside route.',
+      'Use nearby oxygen plants before mining inside the jaw.',
+      'Save bulk Lithium farming for safer routes after Heat Tolerance progress.',
+    ],
     contentsLabel: 'Contents',
     routeTitle: 'Lithium route plan',
     routeSteps: [
@@ -174,6 +196,28 @@ const lithiumCopy: Record<string, LithiumCopy> = {
     quickLabel: '快速结论',
     quickAnswer:
       'PC Gamer 报道的前期可靠 Lithium 路线是 Lifepod 西南方向的 The Great Jaw，建议先拿到 Sonic Resonator 和 Standard Air Tank。进入大嘴之前，废弃殖民地建筑附近能先拿到一块 Lithium；更多 Lithium 在 The Great Jaw 内部，需要用 Sonic Resonator 快速敲开。Subnautica2Hub 把 Lithium 列在 Coral Gardens，深度 0-250m，并和 Sonic Resonator / Lithium Node 采集关联。公开配方页在数量上略有出入，但 Lithium 对 Plasteel Ingot 和 High Capacity Air Tank 升级链很关键。',
+    fieldNotesTitle: 'The Great Jaw 路线笔记',
+    fieldNotes: [
+      {
+        title: '这里不适合临场算氧气',
+        body: 'Lithium 出现得不算特别晚，所以很容易让人想硬冲。但 The Great Jaw 会惩罚准备不充分的路线。先带好气瓶、移动工具和明确出口。',
+      },
+      {
+        title: '先拿外面的那一块',
+        body: '废弃建筑旁边那块 Lithium 很重要，因为它不用你立刻钻进大嘴内部。先拿它，确认氧气，再决定要不要继续进去。',
+      },
+      {
+        title: '第一趟别贪',
+        body: '第一次 Lithium 路线不需要完美刷满。敲开节点、拿掉掉落物、干净出来，比为了多看一眼把自己卡在没氧气的深处更好。',
+      },
+    ],
+    routeChecklistTitle: '进入 The Great Jaw 前',
+    routeChecklist: [
+      '带 Sonic Resonator、Standard Air Tank、Basic Fins 和有电的工具电池。',
+      '进入内部前先拿废墟旁边那块 Lithium。',
+      '进大嘴采矿前先利用附近氧气植物补满节奏。',
+      '等 Heat Tolerance 进度推进后，再考虑更安全的批量 Lithium 路线。',
+    ],
     contentsLabel: '目录',
     routeTitle: 'Lithium 路线规划',
     routeSteps: [
