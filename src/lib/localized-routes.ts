@@ -734,7 +734,6 @@ const localizedRoutes: Partial<Record<Locale, ReadonlySet<string>>> = {
 };
 
 const englishOnlyUntilTranslated = new Set<string>([
-  Routes.Subnautica2Atacamite,
   Routes.Subnautica2Mangalloy,
   Routes.Subnautica2MetalFarm,
 ]);
