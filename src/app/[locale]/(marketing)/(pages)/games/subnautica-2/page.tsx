@@ -1,6 +1,7 @@
 import Container from '@/components/layout/container';
 import { LocaleLink } from '@/i18n/navigation';
 import { constructMetadata } from '@/lib/metadata';
+import { getUrlWithLocale } from '@/lib/urls';
 import { Routes } from '@/routes';
 import type { Metadata } from 'next';
 import type { Locale } from 'next-intl';
@@ -1695,9 +1696,74 @@ export default async function Subnautica2HubPage({
 }) {
   const { locale } = await params;
   const copy = getHubCopy(locale);
+  const hubUrl = getUrlWithLocale(Routes.Subnautica2, locale);
+  const itemListLinks = [
+    ...copy.sections.map((item) => ({
+      href: item.href,
+      name: item.title,
+      description: item.description,
+    })),
+    ...copy.routeClusters.flatMap((cluster) =>
+      cluster.links.map((item) => ({
+        href: item.href,
+        name: item.label,
+        description: `${cluster.title}: ${item.note}`,
+      }))
+    ),
+  ];
+  const jsonLd = [
+    {
+      '@context': 'https://schema.org',
+      '@type': 'WebPage',
+      name: copy.metadata.title,
+      description: copy.metadata.description,
+      url: hubUrl,
+      inLanguage: locale,
+      isPartOf: {
+        '@type': 'WebSite',
+        name: 'Abyss Guides',
+        url: getUrlWithLocale(Routes.Root, locale),
+      },
+      about: {
+        '@type': 'VideoGame',
+        name: 'Subnautica 2',
+      },
+    },
+    {
+      '@context': 'https://schema.org',
+      '@type': 'BreadcrumbList',
+      itemListElement: [
+        {
+          '@type': 'ListItem',
+          position: 1,
+          name: 'Abyss Guides',
+          item: getUrlWithLocale(Routes.Root, locale),
+        },
+        {
+          '@type': 'ListItem',
+          position: 2,
+          name: 'Subnautica 2',
+          item: hubUrl,
+        },
+      ],
+    },
+    {
+      '@context': 'https://schema.org',
+      '@type': 'ItemList',
+      name: copy.routeClustersTitle,
+      itemListElement: itemListLinks.map((item, index) => ({
+        '@type': 'ListItem',
+        position: index + 1,
+        name: item.name,
+        description: item.description,
+        url: getUrlWithLocale(item.href, locale),
+      })),
+    },
+  ];
 
   return (
     <main className="bg-[#031314] text-[#dff8f0]">
+      <script type="application/ld+json">{JSON.stringify(jsonLd)}</script>
       <Container className="px-4 py-16 md:py-24">
         <div className="max-w-3xl">
           <p className="text-sm font-semibold uppercase tracking-[0.18em] text-[#bf6f45]">
