@@ -9,6 +9,8 @@ import { getBaseUrl } from '@/lib/urls';
 
 type Href = Parameters<typeof getLocalePathname>[0]['href'];
 
+const SUBNAUTICA_LAST_MODIFIED = new Date('2026-05-28');
+
 /**
  * static routes for sitemap, you may change the routes for your own
  */
@@ -125,6 +127,9 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
     ...staticRoutes.flatMap((route) => {
       return getReadyLocalesForPathname(String(route)).map((locale) => ({
         url: getUrl(route, locale),
+        lastModified: SUBNAUTICA_LAST_MODIFIED,
+        changeFrequency: getChangeFrequency(route),
+        priority: getPriority(route),
         alternates: {
           languages: generateHreflangUrls(route),
         },
@@ -138,4 +143,48 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
 function getUrl(href: Href, locale: Locale) {
   const pathname = getLocalePathname({ locale, href });
   return getBaseUrl() + pathname;
+}
+
+function getChangeFrequency(
+  route: (typeof staticRoutes)[number]
+): MetadataRoute.Sitemap[number]['changeFrequency'] {
+  if (
+    route === Routes.Root ||
+    route === Routes.Subnautica2 ||
+    route === Routes.Subnautica2Updates ||
+    route === Routes.Subnautica2Hotfix2
+  ) {
+    return 'daily';
+  }
+
+  if (String(route).startsWith('/games/subnautica-2')) {
+    return 'weekly';
+  }
+
+  return 'monthly';
+}
+
+function getPriority(route: (typeof staticRoutes)[number]) {
+  if (route === Routes.Root) {
+    return 1;
+  }
+
+  if (route === Routes.Subnautica2) {
+    return 0.95;
+  }
+
+  if (
+    route === Routes.Subnautica2Resources ||
+    route === Routes.Subnautica2Beginner ||
+    route === Routes.Subnautica2Crafting ||
+    route === Routes.Subnautica2Updates
+  ) {
+    return 0.9;
+  }
+
+  if (String(route).startsWith('/games/subnautica-2')) {
+    return 0.75;
+  }
+
+  return 0.35;
 }
