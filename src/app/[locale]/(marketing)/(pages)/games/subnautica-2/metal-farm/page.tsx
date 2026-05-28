@@ -335,7 +335,7 @@ export default async function MetalFarmGuidePage({
           <aside className="space-y-5 lg:sticky lg:top-24 lg:self-start">
             <section className="border border-cyan-200/12 bg-[#071f23] p-5">
               <h2 className="text-lg font-semibold text-[#effffb]">
-                Build chain
+                Read next
               </h2>
               <div className="mt-4 grid gap-3 text-sm">
                 <LocaleLink
