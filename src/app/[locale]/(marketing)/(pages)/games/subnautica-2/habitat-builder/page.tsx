@@ -387,6 +387,11 @@ const habitatBuilderCopy: Record<string, HabitatBuilderCopy> = {
     readNextTitle: '次に読む',
     related: [
       { href: Routes.Subnautica2BaseBuilding, label: 'Base Building ガイド' },
+      { href: Routes.Subnautica2Beacon, label: 'Beacon Guide' },
+      {
+        href: Routes.Subnautica2ScannerStation,
+        label: 'Scanner Station Guide',
+      },
       { href: Routes.Subnautica2BasicBattery, label: 'Basic Battery Guide' },
       {
         href: Routes.Subnautica2BatteryTerminal,

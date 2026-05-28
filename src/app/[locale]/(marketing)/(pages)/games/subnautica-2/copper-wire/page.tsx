@@ -392,6 +392,10 @@ const copperWireCopy: Record<string, CopperWireCopy> = {
       { href: Routes.Subnautica2Copper, label: 'Copper の場所' },
       { href: Routes.Subnautica2BasicBattery, label: 'Basic Battery Guide' },
       {
+        href: Routes.Subnautica2ScannerStation,
+        label: 'Scanner Station Guide',
+      },
+      {
         href: Routes.Subnautica2BatteryTerminal,
         label: 'Battery Terminal Guide',
       },
