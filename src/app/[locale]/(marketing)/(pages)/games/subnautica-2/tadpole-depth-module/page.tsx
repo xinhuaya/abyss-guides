@@ -412,7 +412,7 @@ const tadpoleDepthModuleCopy: Record<string, TadpoleDepthModuleCopy> = {
     ],
     sourcesTitle: 'ソースメモ',
     sourceBody:
-      '2026年5月25日に GameSpot の Tadpole アップグレード情報、PC Gamer の Feedback Resonator / Celestine 情報、GamesRadar の Enameled Glass 情報を確認しました。Early Access 中は素材、深度、スキャン位置が変わる可能性があります。',
+      '2026年5月27日に GameSpot の Tadpole アップグレード情報、PC Gamer の Feedback Resonator / Celestine 情報、GamesRadar の Enameled Glass 情報を確認しました。Early Access 中は素材、深度、スキャン位置が変わる可能性があります。',
     cardKicker: '深度アップグレードカード',
     cardBody:
       'Mk.1 スキャンルート、Alien Ruins の Needler リスク、Celestine、Enameled Glass、System Chip、深海ルート計画。',

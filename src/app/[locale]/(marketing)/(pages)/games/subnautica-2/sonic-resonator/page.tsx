@@ -297,7 +297,7 @@ const sonicCopy: Record<string, SonicCopy> = {
     ],
     sourcesTitle: '来源说明',
     sourceBody:
-      '2026 年 5 月 24 日核对 PC Gamer 和 GamesRadar 的当前报道。Subnautica 2 仍在抢先体验，碎片路线、工具效果和后续材料可能会随补丁调整。',
+      '2026 年 5 月 27 日核对 PC Gamer 和 GamesRadar 的当前报道。Subnautica 2 仍在抢先体验，碎片路线、工具效果和后续材料可能会随补丁调整。',
     cardKicker: '挖矿工具卡',
     cardBody:
       '整理碎片扫描、大矿节点、路线清障、背包准备和 Feedback Resonator 升级前置。',
@@ -411,7 +411,7 @@ const sonicCopy: Record<string, SonicCopy> = {
     ],
     sourcesTitle: 'Source note',
     sourceBody:
-      'Checked May 24, 2026 against current PC Gamer and GamesRadar reporting. Early Access details may change.',
+      'Checked May 27, 2026 against current PC Gamer and GamesRadar reporting. Early Access details may change.',
     cardKicker: 'Mining tool card',
     cardBody:
       'Fragment scans, large ore use, blockers, and Feedback Resonator prep.',

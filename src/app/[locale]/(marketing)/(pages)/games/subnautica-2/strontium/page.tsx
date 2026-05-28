@@ -292,7 +292,7 @@ const strontiumCopy: Record<string, StrontiumCopy> = {
     ],
     sourcesTitle: '来源说明',
     sourceBody:
-      '2026 年 5 月 25 日核对 PC Gamer 和 All Things How 的当前报道。Subnautica 2 仍在抢先体验，Celestine 路线、Processor 时间和升级配方后续可能会调整。',
+      '2026 年 5 月 27 日核对 PC Gamer 和 All Things How 的当前报道。Subnautica 2 仍在抢先体验，Celestine 路线、Processor 时间和升级配方后续可能会调整。',
     cardKicker: '精炼材料卡',
     cardBody:
       '整理 Celestine 路线、Sonic Resonator 采矿、Processor 精炼、Tadpole 深度准备和升级消耗。',
@@ -401,7 +401,7 @@ const strontiumCopy: Record<string, StrontiumCopy> = {
     ],
     sourcesTitle: 'Source note',
     sourceBody:
-      'Checked May 25, 2026 against current PC Gamer and All Things How reporting. Early Access details may change.',
+      'Checked May 27, 2026 against current PC Gamer and All Things How reporting. Early Access details may change.',
     cardKicker: 'Refined material card',
     cardBody:
       'Celestine mining, Sonic Resonator prep, Processor conversion, and upgrade spending.',

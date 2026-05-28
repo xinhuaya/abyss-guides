@@ -251,7 +251,7 @@ const acidicRaionPouchCopy: Record<string, AcidicRaionPouchCopy> = {
     ],
     sourcesTitle: '来源说明',
     sourceBody:
-      '2026 年 5 月 25 日核对 Subnautica2.gg 的物品页、Acid Raion databank，以及 Subnautica2Hub 的资源页。抢先体验期间，刷新位置、采集方式和用途都可能随补丁变化。',
+      '2026 年 5 月 27 日核对 Subnautica2.gg 的物品页、Acid Raion databank，以及 Subnautica2Hub 的资源页。抢先体验期间，刷新位置、采集方式和用途都可能随补丁变化。',
     cardKicker: '采集卡片',
     cardBody:
       'Coral Gardens 线索、采集说明、Basic Battery 用途、Mild Acid 用途和地图数据提醒。',
@@ -359,7 +359,7 @@ const acidicRaionPouchCopy: Record<string, AcidicRaionPouchCopy> = {
     ],
     sourcesTitle: 'ソースメモ',
     sourceBody:
-      '2026年5月25日に Subnautica2.gg の item、Acid Raion databank、Subnautica2Hub の resource 情報を確認しました。Early Access 中は spawn、harvest、crafting uses が変わる可能性があります。',
+      '2026年5月27日に Subnautica2.gg の item、Acid Raion databank、Subnautica2Hub の resource 情報を確認しました。Early Access 中は spawn、harvest、crafting uses が変わる可能性があります。',
     cardKicker: 'Harvest card',
     cardBody:
       'Coral Gardens、harvest、Basic Battery、Mild Acid、map data caveat。',

@@ -280,7 +280,7 @@ const biolabCopy: Record<string, BiolabCopy> = {
     ],
     sourcesTitle: '来源说明',
     sourceBody:
-      '2026 年 5 月 25 日核对 Subnautica2.gg、Wand、Console Pulse 和 GameSpot。Subnautica 2 仍在抢先体验，Welcome Center 细节、供电行为和 Biomod 规则后续可能调整。',
+      '2026 年 5 月 27 日核对 Subnautica2.gg、Wand、Console Pulse 和 GameSpot。Subnautica 2 仍在抢先体验，Welcome Center 细节、供电行为和 Biomod 规则后续可能调整。',
     cardKicker: 'Biomod 卡片',
     cardBody:
       'Welcome Center 线索、供电提醒、Titanium、Copper Wire、Mild Acid 和 Biomod 规划。',
@@ -398,7 +398,7 @@ const biolabCopy: Record<string, BiolabCopy> = {
     ],
     sourcesTitle: 'Source note',
     sourceBody:
-      'Checked May 25, 2026 against Subnautica2.gg, Wand, Console Pulse, and GameSpot. Early Access details can change after patches.',
+      'Checked May 27, 2026 against Subnautica2.gg, Wand, Console Pulse, and GameSpot. Early Access details can change after patches.',
     cardKicker: 'Biomod card',
     cardBody:
       'Welcome Center lead, power note, Titanium, Copper Wire, Mild Acid, and Biomod planning.',

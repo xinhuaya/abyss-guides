@@ -270,7 +270,7 @@ const scannerCopy: Record<string, ScannerCopy> = {
     ],
     sourcesTitle: '来源说明',
     sourceBody:
-      '2026 年 5 月 23 日核对当前 Bioscanner、Biomod 和新手路线报道。抢先体验阶段的解锁顺序可能变化。',
+      '2026 年 5 月 27 日核对当前 Bioscanner、Biomod 和新手路线报道。抢先体验阶段的解锁顺序可能变化。',
     cardKicker: 'Scanner 路线卡',
     cardBody: '蓝图顺序、安全扫描、Bioscanner 时机，以及 Biomod 路线提醒。',
     cardTypeLabel: '类型',
@@ -372,7 +372,7 @@ const scannerCopy: Record<string, ScannerCopy> = {
     ],
     sourcesTitle: 'Источники',
     sourceBody:
-      'Проверено 23 мая 2026 по текущим материалам Bioscanner, Biomods и beginner routes. Разблокировки Early Access могут меняться.',
+      'Проверено 27 мая 2026 по текущим материалам Bioscanner, Biomods и beginner routes. Разблокировки Early Access могут меняться.',
     cardKicker: 'Scanner field card',
     cardBody:
       'Порядок чертежей, безопасное сканирование, Bioscanner и Biomods.',
@@ -883,7 +883,7 @@ const scannerCopy: Record<string, ScannerCopy> = {
     ],
     sourcesTitle: '출처 메모',
     sourceBody:
-      '2026년 5월 23일 현재 Bioscanner, Biomods, 초반 루트 보도를 기준으로 확인했습니다. Early Access 해금 순서는 바뀔 수 있습니다.',
+      '2026년 5월 27일 현재 Bioscanner, Biomods, 초반 루트 보도를 기준으로 확인했습니다. Early Access 해금 순서는 바뀔 수 있습니다.',
     cardKicker: 'Scanner field card',
     cardBody: '설계도 순서, 안전한 스캔, Bioscanner 타이밍, Biomod 루트.',
     cardTypeLabel: '유형',
@@ -990,7 +990,7 @@ const scannerCopy: Record<string, ScannerCopy> = {
     ],
     sourcesTitle: '出典メモ',
     sourceBody:
-      '2026年5月23日に現在の Bioscanner、Biomods、序盤ルート記事を確認。Early Access の解放順は変わる可能性があります。',
+      '2026年5月27日に現在の Bioscanner、Biomods、序盤ルート記事を確認。Early Access の解放順は変わる可能性があります。',
     cardKicker: 'Scanner field card',
     cardBody: '設計図順、安全なスキャン、Bioscanner の時期、Biomod ルート。',
     cardTypeLabel: '種類',

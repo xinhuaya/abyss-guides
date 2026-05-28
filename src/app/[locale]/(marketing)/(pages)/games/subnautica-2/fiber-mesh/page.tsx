@@ -271,7 +271,7 @@ const fiberMeshCopy: Record<string, FiberMeshCopy> = {
     ],
     sourcesTitle: '来源说明',
     sourceBody:
-      '2026 年 5 月 26 日核对 All Things How、Mobalytics、Dexerto 和 Subnautica2Hub。抢先体验阶段配方文本可能调整，所以页面提醒玩家以自己存档里的 Fabricator 输入为准。',
+      '2026 年 5 月 27 日核对 All Things How、Mobalytics、Dexerto 和 Subnautica2Hub。抢先体验阶段配方文本可能调整，所以页面提醒玩家以自己存档里的 Fabricator 输入为准。',
     cardKicker: '植物材料卡',
     cardBody:
       'Creepvine 收集、Fabricator 配方检查、Wakemaker 用途，以及前期植物材料收纳时机。',

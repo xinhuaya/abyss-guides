@@ -295,7 +295,7 @@ const powerCellCopy: Record<string, PowerCellCopy> = {
     ],
     sourcesTitle: '来源说明',
     sourceBody:
-      '2026 年 5 月 26 日核对 Subnautica2.gg、Subnautica2Hub 和 PC Gamer。Subnautica 2 仍处于抢先体验阶段，配方消耗和载具需求可能随补丁调整。',
+      '2026 年 5 月 27 日核对 Subnautica2.gg、Subnautica2Hub 和 PC Gamer。Subnautica 2 仍处于抢先体验阶段，配方消耗和载具需求可能随补丁调整。',
     cardKicker: '供电卡片',
     cardBody:
       'Basic Battery x2、Strong Acid x1、Salt x1、Fabricator 制作、Tadpole 用途和电池储物规划。',

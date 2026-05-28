@@ -297,7 +297,7 @@ const advancedBatteryCopy: Record<string, AdvancedBatteryCopy> = {
     ],
     sourcesTitle: '来源说明',
     sourceBody:
-      '2026 年 5 月 26 日核对 All Things How、Subnautica2.gg 和 Subnautica2Hub。Subnautica 2 仍处于抢先体验阶段，碎片路线、Data Box 位置、配方和能量数值都可能随补丁调整。',
+      '2026 年 5 月 27 日核对 All Things How、Subnautica2.gg 和 Subnautica2Hub。Subnautica 2 仍处于抢先体验阶段，碎片路线、Data Box 位置、配方和能量数值都可能随补丁调整。',
     cardKicker: '电池升级卡',
     cardBody:
       'Karakorum 碎片路线、Data Box 解锁、Conduit Crystal、Strong Acid、Silver Ingot、200 能量和 Battery Terminal 轮换。',

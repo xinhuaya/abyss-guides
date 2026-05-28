@@ -506,7 +506,7 @@ const feedbackCopy: Record<string, FeedbackCopy> = {
     ],
     sourcesTitle: 'Source note',
     sourceBody:
-      'Checked May 24, 2026 against PC Gamer reporting. Early Access details may change.',
+      'Checked May 27, 2026 against PC Gamer reporting. Early Access details may change.',
     cardKicker: 'Tool upgrade card',
     cardBody:
       'Sonic Resonator prep, scan route, craft materials, and ranged clearing notes.',

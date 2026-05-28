@@ -305,7 +305,7 @@ const conduitCopy: Record<string, ConduitCopy> = {
     ],
     sourcesTitle: '来源说明',
     sourceBody:
-      '2026 年 5 月 25 日核对 PC Gamer 和 GamesRadar 的当前报道。Subnautica 2 仍在抢先体验，路线深度、资源点和配方后续可能随补丁调整。',
+      '2026 年 5 月 27 日核对 PC Gamer 和 GamesRadar 的当前报道。Subnautica 2 仍在抢先体验，路线深度、资源点和配方后续可能随补丁调整。',
     cardKicker: '晶体路线卡',
     cardBody:
       '整理 Alien Ruins 路线、Tadpole 深度准备、Sonic Resonator 采集、附近稀有材料和升级用途。',
@@ -428,7 +428,7 @@ const conduitCopy: Record<string, ConduitCopy> = {
     ],
     sourcesTitle: 'Source note',
     sourceBody:
-      'Checked May 25, 2026 against current PC Gamer and GamesRadar reporting. Early Access details may change.',
+      'Checked May 27, 2026 against current PC Gamer and GamesRadar reporting. Early Access details may change.',
     cardKicker: 'Crystal route card',
     cardBody:
       'Alien Ruins route, Tadpole depth, Sonic Resonator mining, and upgrade use planning.',

@@ -439,7 +439,7 @@ const systemChipCopy: Record<string, SystemChipCopy> = {
     ],
     sourcesTitle: 'ソースメモ',
     sourceBody:
-      '2026年5月25日に Dexerto と Subnautica2.gg の System Chip 情報、PC Gamer の Silver / Tadpole 情報を確認しました。Early Access 中は用途やレシピが変わる可能性があります。',
+      '2026年5月27日に Dexerto と Subnautica2.gg の System Chip 情報、PC Gamer の Silver / Tadpole 情報を確認しました。Early Access 中は用途やレシピが変わる可能性があります。',
     cardKicker: '電子素材カード',
     cardBody:
       'Wiring Kit、Quartz、Silver、Rebreather、Scanner Station、Tadpole、Depth Module の準備。',

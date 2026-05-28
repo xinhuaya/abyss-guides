@@ -283,7 +283,7 @@ const wiringKitCopy: Record<string, WiringKitCopy> = {
     ],
     sourcesTitle: '来源说明',
     sourceBody:
-      '2026 年 5 月 25 日核对 Subnautica2.gg 与 Dexerto 的 Wiring Kit 数据，以及 PC Gamer 的 Silver 路线资料。抢先体验期间，配方和用途可能随补丁调整。',
+      '2026 年 5 月 27 日核对 Subnautica2.gg 与 Dexerto 的 Wiring Kit 数据，以及 PC Gamer 的 Silver 路线资料。抢先体验期间，配方和用途可能随补丁调整。',
     cardKicker: '电子材料卡',
     cardBody:
       'Silver、Copper Wire、System Chip 前置、电子材料收纳和升级制作时机。',
@@ -404,7 +404,7 @@ const wiringKitCopy: Record<string, WiringKitCopy> = {
     ],
     sourcesTitle: 'ソースメモ',
     sourceBody:
-      '2026年5月25日に Subnautica2.gg と Dexerto の Wiring Kit 情報、PC Gamer の Silver ルート情報を確認しました。Early Access 中はレシピや用途が変わる可能性があります。',
+      '2026年5月27日に Subnautica2.gg と Dexerto の Wiring Kit 情報、PC Gamer の Silver ルート情報を確認しました。Early Access 中はレシピや用途が変わる可能性があります。',
     cardKicker: '電子素材カード',
     cardBody:
       'Silver、Copper Wire、System Chip 準備、素材保管、アップグレードのタイミング。',

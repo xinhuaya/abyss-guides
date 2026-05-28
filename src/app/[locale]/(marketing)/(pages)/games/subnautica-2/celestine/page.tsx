@@ -289,7 +289,7 @@ const celestineCopy: Record<string, CelestineCopy> = {
     ],
     sourcesTitle: '来源说明',
     sourceBody:
-      '2026 年 5 月 25 日核对 PC Gamer、GamesRadar 和 All Things How 的当前报道。Subnautica 2 仍在抢先体验，Celestine 路线、敌对生物和加工配方后续可能会调整。',
+      '2026 年 5 月 27 日核对 PC Gamer、GamesRadar 和 All Things How 的当前报道。Subnautica 2 仍在抢先体验，Celestine 路线、敌对生物和加工配方后续可能会调整。',
     cardKicker: '深水矿物卡',
     cardBody:
       '整理 Alien Ruins 路线、蓝色矿脉查找、Sonic Resonator 采矿、Needler 风险和 Strontium 加工。',
@@ -394,7 +394,7 @@ const celestineCopy: Record<string, CelestineCopy> = {
     ],
     sourcesTitle: 'Source note',
     sourceBody:
-      'Checked May 25, 2026 against current PC Gamer, GamesRadar, and All Things How reporting. Early Access details may change.',
+      'Checked May 27, 2026 against current PC Gamer, GamesRadar, and All Things How reporting. Early Access details may change.',
     cardKicker: 'Deep mineral card',
     cardBody:
       'Alien Ruins route, blue vein search, Sonic Resonator mining, Needler risk, and Strontium processing.',

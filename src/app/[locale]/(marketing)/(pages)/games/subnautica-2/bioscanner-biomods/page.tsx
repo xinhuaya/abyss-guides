@@ -283,7 +283,7 @@ const bioscannerCopy: Record<string, BioscannerCopy> = {
     ],
     sourcesTitle: '来源说明',
     sourceBody:
-      '2026 年 5 月 24 日核对当前 Bioscanner、Biomod、入门路线报道和官方抢先体验路线图。Subnautica 2 后续补丁可能改变升级细节。',
+      '2026 年 5 月 27 日核对当前 Bioscanner、Biomod、入门路线报道和官方抢先体验路线图。Subnautica 2 后续补丁可能改变升级细节。',
     cardKicker: '生物模组扫描卡',
     cardBody:
       '整理 Bioscanner 时机、生物扫描习惯、Biomod 优先级和按路线选升级的思路。',
@@ -392,7 +392,7 @@ const bioscannerCopy: Record<string, BioscannerCopy> = {
     ],
     sourcesTitle: '出典メモ',
     sourceBody:
-      '2026年5月24日に Bioscanner、Biomod、beginner route reporting と Early Access roadmap を確認。',
+      '2026年5月27日に Bioscanner、Biomod、beginner route reporting と Early Access roadmap を確認。',
     cardKicker: 'Biomod scan card',
     cardBody:
       'Bioscanner timing、lifeform scans、Biomod priority の route-first メモ。',

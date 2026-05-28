@@ -274,7 +274,7 @@ const mildAcidCopy: Record<string, MildAcidCopy> = {
     ],
     sourcesTitle: '来源说明',
     sourceBody:
-      '2026 年 5 月 25 日核对 Subnautica2.gg、Subnautica2Hub 和 Dexerto 的 Mild Acid 页面。当前公开抢先体验数据对制作站路线并不完全一致，所以页面把共识 Fabricator 配方和 Processor 路线分开写。',
+      '2026 年 5 月 27 日核对 Subnautica2.gg、Subnautica2Hub 和 Dexerto 的 Mild Acid 页面。当前公开抢先体验数据对制作站路线并不完全一致，所以页面把共识 Fabricator 配方和 Processor 路线分开写。',
     cardKicker: '化学卡片',
     cardBody:
       'Acidic Raion Pouch、Copper、Fabricator 配方、Processor 路线、Biolab 和 Echo Location 用途。',
@@ -393,7 +393,7 @@ const mildAcidCopy: Record<string, MildAcidCopy> = {
     ],
     sourcesTitle: 'ソースメモ',
     sourceBody:
-      '2026年5月25日に Subnautica2.gg、Subnautica2Hub、Dexerto の Mild Acid 情報を確認しました。Early Access の公開データは station route が一致しない部分があるため、Fabricator recipe と Processor route を分けて記載しています。',
+      '2026年5月27日に Subnautica2.gg、Subnautica2Hub、Dexerto の Mild Acid 情報を確認しました。Early Access の公開データは station route が一致しない部分があるため、Fabricator recipe と Processor route を分けて記載しています。',
     cardKicker: 'Chemical card',
     cardBody:
       'Acidic Raion Pouch、Copper、Fabricator recipe、Processor route、Biolab と Echo Location。',

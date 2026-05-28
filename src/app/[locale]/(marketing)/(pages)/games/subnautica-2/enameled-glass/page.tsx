@@ -448,7 +448,7 @@ const enameledGlassCopy: Record<string, EnameledGlassCopy> = {
     ],
     sourcesTitle: 'ソースメモ',
     sourceBody:
-      '2026年5月25日に GamesRadar の Enameled Glass 情報、PC Gamer の Creature Enamel 情報、公式 Early Access ロードマップを確認しました。Early Access 中はレシピや用途が変わる可能性があります。',
+      '2026年5月27日に GamesRadar の Enameled Glass 情報、PC Gamer の Creature Enamel 情報、公式 Early Access ロードマップを確認しました。Early Access 中はレシピや用途が変わる可能性があります。',
     cardKicker: 'クラフトチェーンカード',
     cardBody:
       'Glass、Creature Enamel、Needler Mango、作成タイミング、アップグレード素材の保管。',

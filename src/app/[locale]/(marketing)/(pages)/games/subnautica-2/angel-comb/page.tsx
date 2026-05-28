@@ -160,7 +160,7 @@ const angelCombCopy: Record<string, AngelCombCopy> = {
     ],
     sourcesTitle: 'Source note',
     sourceBody:
-      'Checked May 26, 2026 against PC Gamer, GamesRadar+, GAMES.GG, and GameWith. Early Access route geometry and Bloom-clearing steps can change, so the guide treats the bearing as a search pocket and focuses on tool and oxygen prep.',
+      'Checked May 27, 2026 against PC Gamer, GamesRadar+, GAMES.GG, and GameWith. Early Access route geometry and Bloom-clearing steps can change, so the guide treats the bearing as a search pocket and focuses on tool and oxygen prep.',
     cardKicker: 'Angel Comb card',
     cardBody:
       'Northwest search pocket, Bloom Biofilm clearing order, Sonic Resonator prep, oxygen margin, Heat Tolerance unlock, and hot-biome follow-up.',
@@ -275,7 +275,7 @@ const angelCombCopy: Record<string, AngelCombCopy> = {
     ],
     sourcesTitle: '来源说明',
     sourceBody:
-      '2026 年 5 月 26 日核对 PC Gamer、GamesRadar+、GAMES.GG 和 GameWith。抢先体验阶段路线地形和 Bloom 清理步骤可能变化，所以页面把方位写成搜索区域，并重点提醒工具和氧气准备。',
+      '2026 年 5 月 27 日核对 PC Gamer、GamesRadar+、GAMES.GG 和 GameWith。抢先体验阶段路线地形和 Bloom 清理步骤可能变化，所以页面把方位写成搜索区域，并重点提醒工具和氧气准备。',
     cardKicker: 'Angel Comb 卡片',
     cardBody:
       '西北搜索区域、Bloom Biofilm 清理顺序、Sonic Resonator 准备、氧气余量、Heat Tolerance 解锁和热区后续路线。',

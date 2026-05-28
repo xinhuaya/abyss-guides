@@ -261,7 +261,7 @@ const airTankCopy: Record<string, AirTankCopy> = {
     ],
     sourcesTitle: '来源说明',
     sourceBody:
-      '2026 年 5 月 23 日核对当前 O2 和新手路线报道。抢先体验阶段的配方和道具效果可能变化。',
+      '2026 年 5 月 27 日核对当前 O2 和新手路线报道。抢先体验阶段的配方和道具效果可能变化。',
     cardKicker: 'O2 路线卡',
     cardBody: '临时氧气、保命工具、气瓶升级时机，以及更安全的洞穴循环。',
     cardTypeLabel: '类型',
@@ -362,7 +362,7 @@ const airTankCopy: Record<string, AirTankCopy> = {
     ],
     sourcesTitle: 'Источники',
     sourceBody:
-      'Проверено 23 мая 2026 по текущим O2 и beginner-route материалам. Рецепты и полезность предметов могут меняться в Early Access.',
+      'Проверено 27 мая 2026 по текущим O2 и beginner-route материалам. Рецепты и полезность предметов могут меняться в Early Access.',
     cardKicker: 'O2 route card',
     cardBody:
       'Временный воздух, запасные инструменты, апгрейд баллона и безопасные пещерные круги.',
@@ -878,7 +878,7 @@ const airTankCopy: Record<string, AirTankCopy> = {
     ],
     sourcesTitle: '출처 메모',
     sourceBody:
-      '2026년 5월 23일 현재 O2와 초반 팁 보도를 기준으로 확인했습니다. Early Access에서는 레시피와 아이템 효율이 바뀔 수 있습니다.',
+      '2026년 5월 27일 현재 O2와 초반 팁 보도를 기준으로 확인했습니다. Early Access에서는 레시피와 아이템 효율이 바뀔 수 있습니다.',
     cardKicker: 'O2 route card',
     cardBody: '임시 산소, 비상 도구, 탱크 타이밍, 안전한 동굴 루프.',
     cardTypeLabel: '유형',
@@ -979,7 +979,7 @@ const airTankCopy: Record<string, AirTankCopy> = {
     ],
     sourcesTitle: '出典メモ',
     sourceBody:
-      '2026年5月23日に現在の O2 と初心者向け記事を確認。Early Access ではレシピやアイテム性能が変わる可能性があります。',
+      '2026年5月27日に現在の O2 と初心者向け記事を確認。Early Access ではレシピやアイテム性能が変わる可能性があります。',
     cardKicker: 'O2 route card',
     cardBody: '一時酸素、保険、タンク強化タイミング、安全な洞窟ループ。',
     cardTypeLabel: '種類',

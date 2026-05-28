@@ -284,7 +284,7 @@ const processorCopy: Record<string, ProcessorCopy> = {
     ],
     sourcesTitle: '来源说明',
     sourceBody:
-      '2026 年 5 月 25 日核对 Subnautica2.gg、Subnautica2Hub 和 PC Gamer。Subnautica 2 仍在抢先体验，扫描点、工作站名称和配方数量后续可能调整。',
+      '2026 年 5 月 27 日核对 Subnautica2.gg、Subnautica2Hub 和 PC Gamer。Subnautica 2 仍在抢先体验，扫描点、工作站名称和配方数量后续可能调整。',
     cardKicker: '设备卡片',
     cardBody:
       '扫描解锁、Old Habitat 线索、Titanium、Mild Acid、Copper Wire 和加工链优先级。',
@@ -407,7 +407,7 @@ const processorCopy: Record<string, ProcessorCopy> = {
     ],
     sourcesTitle: 'Source note',
     sourceBody:
-      'Checked May 25, 2026 against Subnautica2.gg, Subnautica2Hub, and PC Gamer. Early Access data can change after patches.',
+      'Checked May 27, 2026 against Subnautica2.gg, Subnautica2Hub, and PC Gamer. Early Access data can change after patches.',
     cardKicker: 'Station card',
     cardBody:
       'Scan unlock, Old Habitat lead, Titanium, Mild Acid, Copper Wire, and processing-chain priorities.',

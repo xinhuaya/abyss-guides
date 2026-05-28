@@ -257,7 +257,7 @@ const rebreatherCopy: Record<string, RebreatherCopy> = {
     ],
     sourcesTitle: '来源说明',
     sourceBody:
-      '2026 年 5 月 26 日核对 GameSpot、Subnautica 2 Wiki、Mobalytics 和 Serenes Forest。抢先体验阶段配方和解锁文字可能调整，所以页面提醒玩家以游戏内菜单为准。',
+      '2026 年 5 月 27 日核对 GameSpot、Subnautica 2 Wiki、Mobalytics 和 Serenes Forest。抢先体验阶段配方和解锁文字可能调整，所以页面提醒玩家以游戏内菜单为准。',
     cardKicker: '呼吸装备卡',
     cardBody:
       'Blueprint Analyzer 解锁、System Chip、Fiber Mesh、Wiring Kit 材料链和深水氧气路线时机。',

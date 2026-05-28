@@ -296,7 +296,7 @@ const modificationStationCopy: Record<string, ModificationStationCopy> = {
     ],
     sourcesTitle: '来源说明',
     sourceBody:
-      '2026 年 5 月 25 日核对 Subnautica2.gg、Wand、PC Gamer 和 KeenGamer。Subnautica 2 仍在抢先体验，地点数量、Data Box 行为和模块菜单后续可能调整。',
+      '2026 年 5 月 27 日核对 Subnautica2.gg、Wand、PC Gamer 和 KeenGamer。Subnautica 2 仍在抢先体验，地点数量、Data Box 行为和模块菜单后续可能调整。',
     cardKicker: '升级工作站卡',
     cardBody:
       '扫描/Data Box 解锁、Alien Ruins 路线、Titanium、Celestine、Copper 和模块制作用途。',

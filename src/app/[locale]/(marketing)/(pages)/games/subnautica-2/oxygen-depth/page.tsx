@@ -277,7 +277,7 @@ const oxygenDepthCopy: Record<string, OxygenDepthCopy> = {
     ],
     sourcesTitle: '来源说明',
     sourceBody:
-      '2026 年 5 月 24 日核对当前 O2 攻略、入门路线资料、Steam 官方页面和抢先体验路线图。Subnautica 2 后续补丁可能改变具体路线难度。',
+      '2026 年 5 月 27 日核对当前 O2 攻略、入门路线资料、Steam 官方页面和抢先体验路线图。Subnautica 2 后续补丁可能改变具体路线难度。',
     cardKicker: '深潜检查卡',
     cardBody: '给氧气升级、侦察潜水、洞穴返程和判断何时回头用的实用路线指南。',
     cardTypeLabel: '类型',
@@ -369,7 +369,7 @@ const oxygenDepthCopy: Record<string, OxygenDepthCopy> = {
     ],
     sourcesTitle: '出典メモ',
     sourceBody:
-      '2026年5月24日に O2 guide、beginner tips、Steam、Early Access roadmap を確認。',
+      '2026年5月27日に O2 guide、beginner tips、Steam、Early Access roadmap を確認。',
     cardKicker: 'Depth check card',
     cardBody:
       'oxygen upgrades、scouting、cave returns、turn-back rules のメモ。',
