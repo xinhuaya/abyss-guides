@@ -15,6 +15,9 @@ type CraftingCopy = ResourceGuideCopy & {
   };
 };
 
+const PUBLISHED_AT = '2026-05-23';
+const UPDATED_AT = '2026-05-28';
+
 const sharedSources = [
   {
     href: 'https://store.steampowered.com/app/1962700/Subnautica_2/',
@@ -233,7 +236,7 @@ const craftingCopy: Record<string, CraftingCopy> = {
     ],
     sourcesTitle: 'Source note',
     sourceBody:
-      'Checked May 23, 2026 against Steam Early Access and current PC Gamer reporting on Metal Farms, Atacamite, and Troilite. Treat exact recipe counts as patch-sensitive.',
+      'Checked May 28, 2026 against Steam Early Access and current PC Gamer reporting on Metal Farms, Atacamite, and Troilite. Treat exact recipe counts as patch-sensitive.',
     cardKicker: 'Recipe tracker card',
     cardBody:
       'A crafting route for Scanner unlocks, O2, storage, power, processed materials, and rare-sample safety.',
@@ -409,7 +412,7 @@ const craftingCopy: Record<string, CraftingCopy> = {
     ],
     sourcesTitle: '来源说明',
     sourceBody:
-      '2026 年 5 月 23 日核对 Steam 抢先体验页面，以及 PC Gamer 当前关于 Metal Farm、Atacamite、Troilite 的报道。精确配方数量需要随补丁复查。',
+      '2026 年 5 月 28 日核对 Steam 抢先体验页面，以及 PC Gamer 当前关于 Metal Farm、Atacamite、Troilite 的报道。精确配方数量需要随补丁复查。',
     cardKicker: '配方追踪卡',
     cardBody:
       '围绕 Scanner 解锁、O2、储物、供电、加工材料和稀有样本安全来安排制作顺序。',
@@ -545,7 +548,7 @@ const craftingCopy: Record<string, CraftingCopy> = {
     ],
     sourcesTitle: 'Источники',
     sourceBody:
-      'Проверено 23 мая 2026 по Steam Early Access и текущим материалам PC Gamer про Metal Farm, Atacamite и Troilite. Точные числа рецептов зависят от патчей.',
+      'Проверено 28 мая 2026 по Steam Early Access и текущим материалам PC Gamer про Metal Farm, Atacamite и Troilite. Точные числа рецептов зависят от патчей.',
     cardKicker: 'Recipe tracker card',
     cardBody:
       'Порядок крафта для Scanner, O2, хранения, питания, обработанных и редких материалов.',
@@ -675,7 +678,7 @@ const craftingCopy: Record<string, CraftingCopy> = {
     ],
     sourcesTitle: 'Quellen',
     sourceBody:
-      'Geprüft am 23. Mai 2026 mit Steam Early Access und PC Gamer zu Metal Farm, Atacamite und Troilite. Exakte Rezeptzahlen bleiben patch-sensitiv.',
+      'Geprüft am 28. Mai 2026 mit Steam Early Access und PC Gamer zu Metal Farm, Atacamite und Troilite. Exakte Rezeptzahlen bleiben patch-sensitiv.',
     cardKicker: 'Recipe tracker card',
     cardBody:
       'Crafting-Route für Scanner, O2, Lager, Strom, verarbeitete und seltene Materialien.',
@@ -814,7 +817,7 @@ const craftingCopy: Record<string, CraftingCopy> = {
     ],
     sourcesTitle: 'Sources',
     sourceBody:
-      'Vérifié le 23 mai 2026 avec Steam Early Access et PC Gamer sur Metal Farm, Atacamite et Troilite. Les chiffres exacts restent sensibles aux patchs.',
+      'Vérifié le 28 mai 2026 avec Steam Early Access et PC Gamer sur Metal Farm, Atacamite et Troilite. Les chiffres exacts restent sensibles aux patchs.',
     cardKicker: 'Recipe tracker card',
     cardBody:
       'Route crafting pour Scanner, O2, stockage, énergie, matériaux traités et rares.',
@@ -944,7 +947,7 @@ const craftingCopy: Record<string, CraftingCopy> = {
     ],
     sourcesTitle: 'Fontes',
     sourceBody:
-      'Verificado em 23 de maio de 2026 com Steam Early Access e PC Gamer sobre Metal Farm, Atacamite e Troilite. Números exatos de receita podem mudar com patches.',
+      'Verificado em 28 de maio de 2026 com Steam Early Access e PC Gamer sobre Metal Farm, Atacamite e Troilite. Números exatos de receita podem mudar com patches.',
     cardKicker: 'Recipe tracker card',
     cardBody:
       'Rota de crafting para Scanner, O2, armazenamento, energia, processados e materiais raros.',
@@ -1074,7 +1077,7 @@ const craftingCopy: Record<string, CraftingCopy> = {
     ],
     sourcesTitle: 'Fuentes',
     sourceBody:
-      'Verificado el 23 de mayo de 2026 con Steam Early Access y PC Gamer sobre Metal Farm, Atacamite y Troilite. Los números exactos pueden cambiar con parches.',
+      'Verificado el 28 de mayo de 2026 con Steam Early Access y PC Gamer sobre Metal Farm, Atacamite y Troilite. Los números exactos pueden cambiar con parches.',
     cardKicker: 'Recipe tracker card',
     cardBody:
       'Ruta de crafting para Scanner, O2, almacenamiento, energía, procesados y materiales raros.',
@@ -1204,7 +1207,7 @@ const craftingCopy: Record<string, CraftingCopy> = {
     ],
     sourcesTitle: '출처 메모',
     sourceBody:
-      '2026년 5월 23일 Steam Early Access 페이지와 PC Gamer의 Metal Farm, Atacamite, Troilite 보도를 확인했습니다. 정확한 레시피 수치는 패치 영향을 받을 수 있습니다.',
+      '2026년 5월 28일 Steam Early Access 페이지와 PC Gamer의 Metal Farm, Atacamite, Troilite 보도를 확인했습니다. 정확한 레시피 수치는 패치 영향을 받을 수 있습니다.',
     cardKicker: 'Recipe tracker card',
     cardBody:
       'Scanner, O2, 보관, 전력, 가공 재료, 희귀 샘플을 위한 제작 루트입니다.',
@@ -1334,7 +1337,7 @@ const craftingCopy: Record<string, CraftingCopy> = {
     ],
     sourcesTitle: '出典メモ',
     sourceBody:
-      '2026年5月23日に Steam Early Access ページと PC Gamer の Metal Farm、Atacamite、Troilite 記事を確認しました。正確なレシピ数はパッチで変わる可能性があります。',
+      '2026年5月28日に Steam Early Access ページと PC Gamer の Metal Farm、Atacamite、Troilite 記事を確認しました。正確なレシピ数はパッチで変わる可能性があります。',
     cardKicker: 'Recipe tracker card',
     cardBody:
       'Scanner、O2、保管、電力、加工素材、レア素材を整理する制作ルートです。',
@@ -1376,7 +1379,7 @@ export default async function CraftingGuidePage({
 
   return (
     <LocalizedResourceGuidePage
-      copy={copy}
+      copy={{ ...copy, publishedAt: PUBLISHED_AT, updatedAt: UPDATED_AT }}
       icon={WrenchIcon}
       locale={locale}
       pathname={Routes.Subnautica2Crafting}

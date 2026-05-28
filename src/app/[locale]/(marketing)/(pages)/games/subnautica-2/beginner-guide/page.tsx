@@ -15,6 +15,9 @@ type BeginnerCopy = ResourceGuideCopy & {
   };
 };
 
+const PUBLISHED_AT = '2026-05-23';
+const UPDATED_AT = '2026-05-28';
+
 const sharedSources = [
   {
     href: 'https://store.steampowered.com/app/1962700/Subnautica_2/',
@@ -112,6 +115,11 @@ const beginnerCopy: Record<string, BeginnerCopy> = {
       { href: Routes.Subnautica2OxygenDepth, label: 'Oxygen and Depth' },
       { href: Routes.Subnautica2AirTank, label: 'Air Tank and O2' },
       { href: Routes.Subnautica2Scanner, label: 'Scanner Guide' },
+      { href: Routes.Subnautica2Beacon, label: 'Beacon Guide' },
+      { href: Routes.Subnautica2Resources, label: 'Resources Guide' },
+      { href: Routes.Subnautica2Crafting, label: 'Crafting Guide' },
+      { href: Routes.Subnautica2BaseBuilding, label: 'Base Building Guide' },
+      { href: Routes.Subnautica2Glass, label: 'Glass Recipe Guide' },
       {
         href: Routes.Subnautica2BioscannerBiomods,
         label: 'Bioscanner and Biomods',
@@ -119,7 +127,7 @@ const beginnerCopy: Record<string, BeginnerCopy> = {
     ],
     sourcesTitle: 'Source note',
     sourceBody:
-      'Checked May 23, 2026 against the official Steam Early Access listing and current beginner tips. Routes, recipes, and balance can change.',
+      'Checked May 28, 2026 against the official Steam Early Access listing and current beginner tips. Routes, recipes, and balance can change.',
     cardKicker: 'Starter route card',
     cardBody:
       'Spoiler-light first-hour route with tools, oxygen, scans, and resource loops.',
@@ -213,10 +221,15 @@ const beginnerCopy: Record<string, BeginnerCopy> = {
       { href: Routes.Subnautica2Silver, label: '银位置' },
       { href: Routes.Subnautica2AirTank, label: '气瓶和氧气' },
       { href: Routes.Subnautica2Scanner, label: 'Scanner 攻略' },
+      { href: Routes.Subnautica2Beacon, label: 'Beacon 指南' },
+      { href: Routes.Subnautica2Resources, label: '资源指南' },
+      { href: Routes.Subnautica2Crafting, label: '制作指南' },
+      { href: Routes.Subnautica2BaseBuilding, label: '基地建造指南' },
+      { href: Routes.Subnautica2Glass, label: 'Glass 配方指南' },
     ],
     sourcesTitle: '来源说明',
     sourceBody:
-      '2026 年 5 月 23 日核对官方 Steam 抢先体验页面和当前新手提示。路线、配方和平衡可能随补丁变化。',
+      '2026 年 5 月 28 日核对官方 Steam 抢先体验页面和当前新手提示。路线、配方和平衡可能随补丁变化。',
     cardKicker: '新手路线卡',
     cardBody: '轻剧透第一小时路线：工具、氧气、扫描和资源循环。',
     cardTypeLabel: '类型',
@@ -312,7 +325,7 @@ const beginnerCopy: Record<string, BeginnerCopy> = {
     ],
     sourcesTitle: 'Источники',
     sourceBody:
-      'Проверено 23 мая 2026 по Steam Early Access и текущим beginner tips. Рецепты и баланс могут меняться.',
+      'Проверено 28 мая 2026 по Steam Early Access и текущим beginner tips. Рецепты и баланс могут меняться.',
     cardKicker: 'Starter route card',
     cardBody:
       'Первый час без тяжелых спойлеров: инструменты, O2, scans и ресурсы.',
@@ -409,7 +422,7 @@ const beginnerCopy: Record<string, BeginnerCopy> = {
     ],
     sourcesTitle: 'Quellenhinweis',
     sourceBody:
-      'Geprüft am 23. Mai 2026 mit Steam Early Access und aktuellen Beginner-Tipps. Balance und Rezepte können sich ändern.',
+      'Geprüft am 28. Mai 2026 mit Steam Early Access und aktuellen Beginner-Tipps. Balance und Rezepte können sich ändern.',
     cardKicker: 'Starter route card',
     cardBody:
       'Spoilerarme erste Stunde mit Tools, O2, Scans und Ressourcen-Loops.',
@@ -506,7 +519,7 @@ const beginnerCopy: Record<string, BeginnerCopy> = {
     ],
     sourcesTitle: 'Sources',
     sourceBody:
-      'Vérifié le 23 mai 2026 avec Steam Early Access et les conseils débutant actuels. Recettes et équilibre peuvent changer.',
+      'Vérifié le 28 mai 2026 avec Steam Early Access et les conseils débutant actuels. Recettes et équilibre peuvent changer.',
     cardKicker: 'Starter route card',
     cardBody:
       'Première heure légère en spoilers : outils, O2, scans et boucles ressources.',
@@ -603,7 +616,7 @@ const beginnerCopy: Record<string, BeginnerCopy> = {
     ],
     sourcesTitle: 'Fontes',
     sourceBody:
-      'Verificado em 23 de maio de 2026 com Steam Early Access e dicas iniciais atuais. Receitas e balanceamento podem mudar.',
+      'Verificado em 28 de maio de 2026 com Steam Early Access e dicas iniciais atuais. Receitas e balanceamento podem mudar.',
     cardKicker: 'Starter route card',
     cardBody:
       'Primeira hora com poucos spoilers: ferramentas, O2, scans e rotas de recurso.',
@@ -700,7 +713,7 @@ const beginnerCopy: Record<string, BeginnerCopy> = {
     ],
     sourcesTitle: 'Fuentes',
     sourceBody:
-      'Verificado el 23 de mayo de 2026 con Steam Early Access y consejos iniciales actuales. Recetas y balance pueden cambiar.',
+      'Verificado el 28 de mayo de 2026 con Steam Early Access y consejos iniciales actuales. Recetas y balance pueden cambiar.',
     cardKicker: 'Starter route card',
     cardBody:
       'Primera hora con pocos spoilers: herramientas, O2, scans y rutas de recurso.',
@@ -797,7 +810,7 @@ const beginnerCopy: Record<string, BeginnerCopy> = {
     ],
     sourcesTitle: '출처 메모',
     sourceBody:
-      '2026년 5월 23일 Steam Early Access와 현재 초반 팁을 기준으로 확인했습니다. 레시피와 밸런스는 바뀔 수 있습니다.',
+      '2026년 5월 28일 Steam Early Access와 현재 초반 팁을 기준으로 확인했습니다. 레시피와 밸런스는 바뀔 수 있습니다.',
     cardKicker: 'Starter route card',
     cardBody: '스포일러를 줄인 첫 한 시간: 도구, O2, 스캔, 자원 루트.',
     cardTypeLabel: '유형',
@@ -889,7 +902,7 @@ const beginnerCopy: Record<string, BeginnerCopy> = {
     ],
     sourcesTitle: '出典メモ',
     sourceBody:
-      '2026年5月23日に Steam Early Access と現在の初心者向け記事を確認。レシピとバランスは変わる可能性があります。',
+      '2026年5月28日に Steam Early Access と現在の初心者向け記事を確認。レシピとバランスは変わる可能性があります。',
     cardKicker: 'Starter route card',
     cardBody: 'ネタバレ少なめの最初の1時間：道具、O2、スキャン、資源ルート。',
     cardTypeLabel: '種類',
@@ -930,7 +943,7 @@ export default async function BeginnerGuidePage({
 
   return (
     <LocalizedResourceGuidePage
-      copy={copy}
+      copy={{ ...copy, publishedAt: PUBLISHED_AT, updatedAt: UPDATED_AT }}
       icon={CompassIcon}
       locale={locale}
       pathname={Routes.Subnautica2Beginner}

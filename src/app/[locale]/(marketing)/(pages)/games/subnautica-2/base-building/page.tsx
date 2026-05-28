@@ -15,6 +15,9 @@ type BaseCopy = ResourceGuideCopy & {
   };
 };
 
+const PUBLISHED_AT = '2026-05-23';
+const UPDATED_AT = '2026-05-28';
+
 const sharedSources = [
   {
     href: 'https://store.steampowered.com/app/1962700/Subnautica_2/',
@@ -156,7 +159,7 @@ const baseCopy: Record<string, BaseCopy> = {
     ],
     sourcesTitle: 'Source note',
     sourceBody:
-      'Checked May 23, 2026 against Steam, PCGamesN base building notes, and PC Gamer coverage of the newer base building system. Recipes, scans, and build costs can change during Early Access.',
+      'Checked May 28, 2026 against Steam, PCGamesN base building notes, and PC Gamer coverage of the newer base building system. Recipes, scans, and build costs can change during Early Access.',
     cardKicker: 'Base planning card',
     cardBody:
       'First-base order for route placement, Habitat Builder progress, power, storage, crafting, and co-op expansion.',
@@ -272,7 +275,7 @@ const baseCopy: Record<string, BaseCopy> = {
     ],
     sourcesTitle: '来源说明',
     sourceBody:
-      '2026 年 5 月 23 日核对 Steam、PCGamesN 基地建造说明和 PC Gamer 关于新基地系统的报道。配方、扫描和建造成本可能随抢先体验补丁变化。',
+      '2026 年 5 月 28 日核对 Steam、PCGamesN 基地建造说明和 PC Gamer 关于新基地系统的报道。配方、扫描和建造成本可能随抢先体验补丁变化。',
     cardKicker: '基地规划卡',
     cardBody: '整理路线选址、Habitat Builder、供电、储物、制作和联机扩建顺序。',
     cardTypeLabel: '类型',
@@ -379,7 +382,7 @@ const baseCopy: Record<string, BaseCopy> = {
     ],
     sourcesTitle: 'Источники',
     sourceBody:
-      'Проверено 23 мая 2026 по Steam, PCGamesN и PC Gamer. Стоимость, сканы и рецепты могут меняться в Early Access.',
+      'Проверено 28 мая 2026 по Steam, PCGamesN и PC Gamer. Стоимость, сканы и рецепты могут меняться в Early Access.',
     cardKicker: 'Base planning card',
     cardBody:
       'Порядок первой базы: маршрут, Habitat Builder, питание, хранение, крафт и co-op.',
@@ -478,7 +481,7 @@ const baseCopy: Record<string, BaseCopy> = {
     ],
     sourcesTitle: 'Quellen',
     sourceBody:
-      'Geprüft am 23. Mai 2026 mit Steam, PCGamesN und PC Gamer. Kosten, Scans und Rezepte können sich in Early Access ändern.',
+      'Geprüft am 28. Mai 2026 mit Steam, PCGamesN und PC Gamer. Kosten, Scans und Rezepte können sich in Early Access ändern.',
     cardKicker: 'Base planning card',
     cardBody:
       'Erste Basis mit Route, Habitat Builder, Strom, Lager, Crafting und Co-op Ausbau.',
@@ -580,7 +583,7 @@ const baseCopy: Record<string, BaseCopy> = {
     ],
     sourcesTitle: 'Sources',
     sourceBody:
-      'Vérifié le 23 mai 2026 avec Steam, PCGamesN et PC Gamer. Coûts, scans et recettes peuvent changer en Early Access.',
+      'Vérifié le 28 mai 2026 avec Steam, PCGamesN et PC Gamer. Coûts, scans et recettes peuvent changer en Early Access.',
     cardKicker: 'Base planning card',
     cardBody:
       'Première base: route, Habitat Builder, énergie, stockage, crafting et extension co-op.',
@@ -682,7 +685,7 @@ const baseCopy: Record<string, BaseCopy> = {
     ],
     sourcesTitle: 'Fontes',
     sourceBody:
-      'Verificado em 23 de maio de 2026 com Steam, PCGamesN e PC Gamer. Custos, scans e receitas podem mudar no Early Access.',
+      'Verificado em 28 de maio de 2026 com Steam, PCGamesN e PC Gamer. Custos, scans e receitas podem mudar no Early Access.',
     cardKicker: 'Base planning card',
     cardBody:
       'Primeira base: rota, Habitat Builder, energia, armazenamento, crafting e expansão co-op.',
@@ -784,7 +787,7 @@ const baseCopy: Record<string, BaseCopy> = {
     ],
     sourcesTitle: 'Fuentes',
     sourceBody:
-      'Verificado el 23 de mayo de 2026 con Steam, PCGamesN y PC Gamer. Costos, scans y recetas pueden cambiar en Early Access.',
+      'Verificado el 28 de mayo de 2026 con Steam, PCGamesN y PC Gamer. Costos, scans y recetas pueden cambiar en Early Access.',
     cardKicker: 'Base planning card',
     cardBody:
       'Primera base: ruta, Habitat Builder, energía, almacenamiento, crafting y expansión co-op.',
@@ -879,7 +882,7 @@ const baseCopy: Record<string, BaseCopy> = {
     ],
     sourcesTitle: '출처 메모',
     sourceBody:
-      '2026년 5월 23일 Steam, PCGamesN, PC Gamer 자료를 확인했습니다. 비용, 스캔, 레시피는 Early Access 중 바뀔 수 있습니다.',
+      '2026년 5월 28일 Steam, PCGamesN, PC Gamer 자료를 확인했습니다. 비용, 스캔, 레시피는 Early Access 중 바뀔 수 있습니다.',
     cardKicker: 'Base planning card',
     cardBody:
       '첫 기지: 루트, Habitat Builder, 전력, 보관, 제작, 협동 확장 순서.',
@@ -974,7 +977,7 @@ const baseCopy: Record<string, BaseCopy> = {
     ],
     sourcesTitle: '出典メモ',
     sourceBody:
-      '2026年5月23日に Steam、PCGamesN、PC Gamer を確認しました。コスト、スキャン、レシピは Early Access 中に変わる可能性があります。',
+      '2026年5月28日に Steam、PCGamesN、PC Gamer を確認しました。コスト、スキャン、レシピは Early Access 中に変わる可能性があります。',
     cardKicker: 'Base planning card',
     cardBody:
       '最初の基地: ルート、Habitat Builder、電力、保管、制作、協力拡張の順番です。',
@@ -1016,7 +1019,7 @@ export default async function BaseBuildingGuidePage({
 
   return (
     <LocalizedResourceGuidePage
-      copy={copy}
+      copy={{ ...copy, publishedAt: PUBLISHED_AT, updatedAt: UPDATED_AT }}
       icon={HammerIcon}
       locale={locale}
       pathname={Routes.Subnautica2BaseBuilding}

@@ -15,6 +15,9 @@ type ResourcesCopy = ResourceGuideCopy & {
   };
 };
 
+const PUBLISHED_AT = '2026-05-23';
+const UPDATED_AT = '2026-05-28';
+
 const sharedSources = [
   {
     href: 'https://store.steampowered.com/app/1962700/Subnautica_2/',
@@ -112,7 +115,7 @@ const resourcesCopy: Record<string, ResourcesCopy> = {
     ],
     cautionTitle: 'Do not farm like a shopping list',
     cautionBody:
-      'The bad version of a resource run is “grab everything and hope it helps.” The better version is boring: one target, one loop, one backup oxygen plan, one reason to come back.',
+      'The bad version of a resource run is grabbing everything and hoping it helps. The better version is boring: one target, one loop, one backup oxygen plan, one reason to come back.',
     faqTitle: 'FAQ',
     faqs: [
       {
@@ -260,7 +263,7 @@ const resourcesCopy: Record<string, ResourcesCopy> = {
     ],
     sourcesTitle: 'Source note',
     sourceBody:
-      'Checked May 23, 2026 against the Steam Early Access listing plus current reporting on Silver, Atacamite, and Troilite. Exact routes can shift after patches.',
+      'Checked May 28, 2026 against the Steam Early Access listing plus current reporting on Silver, Atacamite, and Troilite. Exact routes can shift after patches.',
     cardKicker: 'Material hub card',
     cardBody:
       'A route-first resource hub for Copper, Silver, oxygen, Scanner progress, storage, and later rare materials.',
@@ -425,7 +428,7 @@ const resourcesCopy: Record<string, ResourcesCopy> = {
     ],
     sourcesTitle: '来源说明',
     sourceBody:
-      '2026 年 5 月 23 日核对 Steam 抢先体验页面，以及当前关于 Silver、Atacamite、Troilite 的报道。具体路线可能随补丁变化。',
+      '2026 年 5 月 28 日核对 Steam 抢先体验页面，以及当前关于 Silver、Atacamite、Troilite 的报道。具体路线可能随补丁变化。',
     cardKicker: '材料中心卡',
     cardBody:
       '围绕路线整理 Copper、Silver、氧气、Scanner、储物和后期稀有材料。',
@@ -534,7 +537,7 @@ const resourcesCopy: Record<string, ResourcesCopy> = {
     ],
     sourcesTitle: 'Источники',
     sourceBody:
-      'Проверено 23 мая 2026 по Steam Early Access и текущим материалам про Silver, Atacamite и Troilite. Маршруты могут меняться.',
+      'Проверено 28 мая 2026 по Steam Early Access и текущим материалам про Silver, Atacamite и Troilite. Маршруты могут меняться.',
     cardKicker: 'Material hub card',
     cardBody:
       'Маршрутный центр для Copper, Silver, O2, Scanner, хранения и редких материалов.',
@@ -643,7 +646,7 @@ const resourcesCopy: Record<string, ResourcesCopy> = {
     ],
     sourcesTitle: 'Quellen',
     sourceBody:
-      'Geprüft am 23. Mai 2026 mit Steam Early Access und aktuellen Berichten zu Silver, Atacamite und Troilite. Routen können sich ändern.',
+      'Geprüft am 28. Mai 2026 mit Steam Early Access und aktuellen Berichten zu Silver, Atacamite und Troilite. Routen können sich ändern.',
     cardKicker: 'Material hub card',
     cardBody:
       'Routen-Hub für Copper, Silver, O2, Scanner, Lagerung und seltene Materialien.',
@@ -755,7 +758,7 @@ const resourcesCopy: Record<string, ResourcesCopy> = {
     ],
     sourcesTitle: 'Sources',
     sourceBody:
-      'Vérifié le 23 mai 2026 avec Steam Early Access et les articles récents sur Silver, Atacamite et Troilite. Les routes peuvent changer.',
+      'Vérifié le 28 mai 2026 avec Steam Early Access et les articles récents sur Silver, Atacamite et Troilite. Les routes peuvent changer.',
     cardKicker: 'Material hub card',
     cardBody:
       'Hub de routes pour Copper, Silver, O2, Scanner, stockage et matériaux rares.',
@@ -867,7 +870,7 @@ const resourcesCopy: Record<string, ResourcesCopy> = {
     ],
     sourcesTitle: 'Fontes',
     sourceBody:
-      'Verificado em 23 de maio de 2026 com Steam Early Access e reportagens sobre Silver, Atacamite e Troilite. Rotas podem mudar.',
+      'Verificado em 28 de maio de 2026 com Steam Early Access e reportagens sobre Silver, Atacamite e Troilite. Rotas podem mudar.',
     cardKicker: 'Material hub card',
     cardBody:
       'Hub de rotas para Copper, Silver, O2, Scanner, armazenamento e materiais raros.',
@@ -979,7 +982,7 @@ const resourcesCopy: Record<string, ResourcesCopy> = {
     ],
     sourcesTitle: 'Fuentes',
     sourceBody:
-      'Verificado el 23 de mayo de 2026 con Steam Early Access y reportes sobre Silver, Atacamite y Troilite. Las rutas pueden cambiar.',
+      'Verificado el 28 de mayo de 2026 con Steam Early Access y reportes sobre Silver, Atacamite y Troilite. Las rutas pueden cambiar.',
     cardKicker: 'Material hub card',
     cardBody:
       'Hub de rutas para Copper, Silver, O2, Scanner, almacenamiento y materiales raros.',
@@ -1085,7 +1088,7 @@ const resourcesCopy: Record<string, ResourcesCopy> = {
     ],
     sourcesTitle: '출처 메모',
     sourceBody:
-      '2026년 5월 23일 Steam Early Access 페이지와 Silver, Atacamite, Troilite 관련 최신 보도를 확인했습니다. 루트는 패치 후 달라질 수 있습니다.',
+      '2026년 5월 28일 Steam Early Access 페이지와 Silver, Atacamite, Troilite 관련 최신 보도를 확인했습니다. 루트는 패치 후 달라질 수 있습니다.',
     cardKicker: 'Material hub card',
     cardBody:
       'Copper, Silver, O2, Scanner, 보관, 희귀 재료를 루트 중심으로 정리한 자원 허브입니다.',
@@ -1191,7 +1194,7 @@ const resourcesCopy: Record<string, ResourcesCopy> = {
     ],
     sourcesTitle: '出典メモ',
     sourceBody:
-      '2026年5月23日に Steam Early Access ページと Silver、Atacamite、Troilite に関する現在の記事を確認しました。ルートはパッチで変わる可能性があります。',
+      '2026年5月28日に Steam Early Access ページと Silver、Atacamite、Troilite に関する現在の記事を確認しました。ルートはパッチで変わる可能性があります。',
     cardKicker: 'Material hub card',
     cardBody:
       'Copper、Silver、O2、Scanner、保管、レア素材をルート中心で整理する資源ハブです。',
@@ -1233,7 +1236,7 @@ export default async function ResourcesGuidePage({
 
   return (
     <LocalizedResourceGuidePage
-      copy={copy}
+      copy={{ ...copy, publishedAt: PUBLISHED_AT, updatedAt: UPDATED_AT }}
       icon={BoxesIcon}
       locale={locale}
       pathname={Routes.Subnautica2Resources}
