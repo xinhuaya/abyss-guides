@@ -593,53 +593,156 @@ sonicCopy.zh = {
 };
 
 sonicCopy.ja = {
-  ...sonicCopy.en,
   metadata: {
     title:
       'Subnautica 2 Sonic Resonator ガイド - 採掘、Bloom Biofilm、Feedback前提',
     description:
-      'Subnautica 2のSonic Resonatorガイド。フラグメント、巨大鉱石、Bloom Biofilm、Feedback Resonatorへのアップグレードを整理します。',
+      'Subnautica 2のSonic Resonatorガイド。断片2個、巨大鉱石、Bloom Biofilm、ルートブロッカー、Feedback Resonatorへのアップグレード準備を整理します。',
   },
+  eyebrow: 'Subnautica 2 採掘ツール',
   title: 'Subnautica 2 Sonic Resonator ガイド',
   description:
-    'Sonic Resonatorは巨大鉱石とBloom Biofilmのための重要ツールです。ただし装甲化した感染ルートでは、後のFeedback Resonatorが必要になることがあります。',
+    'Sonic Resonatorは、手持ちツールだけで素材を拾う段階から一歩進むための道具です。巨大鉱石を開け、Bloom Biofilmまわりの作業を進め、後半のFeedback Resonatorにもつながります。',
   quickLabel: '要点',
   quickAnswer:
-    'Scanner、酸素、帰り道が安定してからSonic Resonatorのフラグメントを2個スキャンします。まずは巨大鉱石とBloom Biofilm用のツールとして使い、Armored Cankerや遠距離処理が必要な場面ではFeedback Resonatorを準備します。',
-  routeSteps: [
+    'Scanner、酸素、帰り道が安定してからSonic Resonator断片を2個スキャンします。作成後は巨大鉱石、Bloom Biofilm、一部のルートブロッカーに使います。ただしArmored Canker、成熟したAngel Comb周辺、遠距離処理が必要な場面は、後のFeedback Resonatorを準備するサインです。',
+  fieldNotesTitle: 'Sonic Resonatorのメモ',
+  fieldNotes: [
     {
-      title: 'Scannerを先に整える',
-      body: 'フラグメントスキャンが入口です。電池と酸素に余裕を持たせます。',
+      title: '採掘ルートの価値が変わる',
+      body: 'Sonic Resonatorを作ると、大きな鉱石ノードを目的地として考えられるようになります。Lead、Quartz、Lithium、深部素材のルートをもう一度見直す価値があります。',
     },
     {
-      title: '巨大鉱石で試す',
-      body: 'まず近場の大きな鉱石ノードで使い、深いルートへ持ち込む前に感覚をつかみます。',
+      title: 'Bloomの最終回答ではない',
+      body: 'Bloom Biofilmまわりには役立ちますが、後半の装甲化したBloom Cankerや長距離処理はFeedback Resonator側の仕事です。効かない時にバグだと決めつけない方がいいです。',
     },
     {
-      title: 'Bloom Biofilmに使う',
-      body: '早いBloomルートの清理に役立ちますが、装甲化したCankerにはFeedback Resonatorが必要になることがあります。',
-    },
-    {
-      title: 'Feedback Resonatorへつなげる',
-      body: 'Feedback ResonatorはSonic Resonatorから進むアップグレードです。',
+      title: '深部へ行く前に近場で試す',
+      body: 'チャージや射程の感覚は、酸素が苦しくない場所で覚える方が安全です。近場の鉱石や障害物で一度試してから深いルートへ持ち込みます。',
     },
   ],
+  routeChecklistTitle: 'Sonic Resonatorを使う前に',
+  routeChecklist: [
+    '断片2個をスキャンし、レシピが完成している。',
+    'Scannerの電池、酸素、帰り道に余裕がある。',
+    '作成後は近場の巨大鉱石で使い方を試す。',
+    'Angel CombやArmored Cankerで詰まったらFeedback Resonatorを確認する。',
+  ],
+  contentsLabel: '目次',
+  routeTitle: 'Sonic Resonatorルート計画',
+  routeSteps: [
+    {
+      title: '通常Scannerから始める',
+      body: '入口は断片スキャンです。Scannerの電池、酸素、帰り道が不安定なまま探すと、ツール探しより生還の方が忙しくなります。',
+    },
+    {
+      title: '採掘ルートとして計画する',
+      body: 'PC GamerとGamesRadarはSonic Resonatorを、巨大鉱石やunknown mining promptへの答えとして扱っています。断片を探すだけでなく、作成後にどの鉱石へ戻るかまで考えておきます。',
+    },
+    {
+      title: '巨大鉱石とブロッカーに使う',
+      body: '作成したら、大きな鉱石ノード、Bloom Biofilm、邪魔な成長物に使います。通常ツールでは届かない、または壊せない対象を処理するための道具です。',
+    },
+    {
+      title: 'Feedback Resonatorへの前提にする',
+      body: 'Sonic ResonatorはFeedback Resonatorのベースツールです。PC GamerとGAMES.GGはいずれも、通常Sonicで届かない後半BloomルートにFeedback Resonatorを関連づけています。',
+    },
+    {
+      title: 'BiofilmとCankerを混同しない',
+      body: 'Bloom Biofilmの処理と、Armored Bloom Cankerの遠距離処理は同じではありません。Angel Comb周辺で効きが悪い時は、Feedback Resonatorを作る段階かもしれません。',
+    },
+  ],
+  tableTitle: 'スキャン前に準備するもの',
+  tableHeaders: ['準備', '理由'],
+  tableRows: [
+    [
+      'Scannerと電池',
+      '断片ルートの途中で電池が切れると、探索がその場で止まります。',
+    ],
+    [
+      '酸素の余裕',
+      '巨大鉱石や壁面ノードを見ていると、思ったより立ち止まります。',
+    ],
+    [
+      '空きインベントリ',
+      'このツールの目的は採掘です。雑素材で埋めた状態で出ると回収効率が落ちます。',
+    ],
+    [
+      'Beaconまたは目印',
+      '断片ルートが後の深部素材につながるなら、再訪できるように残します。',
+    ],
+    [
+      'Feedback Resonatorの予定',
+      'Angel CombやArmored Cankerで止まっているなら、Sonic作成後すぐ次の改造を見ます。',
+    ],
+  ],
+  visualTitle: 'ツールカード',
+  visualItems: [
+    {
+      label: '入口',
+      value: '2 scans',
+      note: '断片2個を通常Scannerで回収する。',
+    },
+    {
+      label: '用途',
+      value: 'Ore',
+      note: '巨大鉱石、Bloom Biofilm、ブロッカーに使う。',
+    },
+    {
+      label: '次',
+      value: 'Feedback',
+      note: '遠距離処理が必要になったら改造へ進む。',
+    },
+  ],
+  cautionTitle: 'Sonicで全部解決しようとしない',
+  cautionBody:
+    'Sonic Resonatorは強い道具ですが、後半のBloom CankerやAngel Comb周辺ではFeedback Resonatorが必要になる場面があります。効かない対象に粘るより、素材を集めて次の改造へ進む方が早いです。',
+  faqTitle: 'FAQ',
   faqs: [
     {
       title: 'Sonic Resonatorは何に使う？',
-      body: '巨大鉱石、Bloom Biofilm、一部のルートブロッカーに使います。',
+      body: '巨大鉱石、Bloom Biofilm、一部のルートブロッカーに使います。通常ツールでは処理しにくい採掘対象を開けるための道具です。',
+    },
+    {
+      title: '断片はいくつ必要？',
+      body: '現行ガイドでは2個の断片スキャンでブループリントを進める前提です。スキャン前にScannerの電池を確認しましょう。',
     },
     {
       title: 'Feedback Resonatorに必要？',
-      body: 'はい。Feedback ResonatorはSonic Resonatorから進むアップグレードです。',
+      body: '必要です。Feedback ResonatorはSonic Resonatorをベースにしたアップグレードとして扱われます。',
     },
     {
       title: 'Angel Combで効かないのはなぜ？',
-      body: 'Armored Bloom Cankerなど、Feedback Resonatorが必要な対象かもしれません。',
+      body: 'Armored Bloom Cankerなど、Feedback Resonatorが必要な対象かもしれません。Sonicだけで押し切るより改造ルートを確認します。',
     },
   ],
+  readNextTitle: '次に読む',
+  related: [
+    {
+      href: Routes.Subnautica2FeedbackResonator,
+      label: 'Feedback Resonator ガイド',
+    },
+    { href: Routes.Subnautica2BloomBiofilm, label: 'Bloom Biofilm ガイド' },
+    { href: Routes.Subnautica2ConduitCrystal, label: 'Conduit Crystal ガイド' },
+    { href: Routes.Subnautica2Celestine, label: 'Celestine ガイド' },
+    { href: Routes.Subnautica2Strontium, label: 'Strontium ガイド' },
+    { href: Routes.Subnautica2MetalFarm, label: 'Metal Farm ガイド' },
+    { href: Routes.Subnautica2AngelComb, label: 'Angel Comb ガイド' },
+    { href: Routes.Subnautica2AxumVision, label: 'Axum Vision ガイド' },
+    { href: Routes.Subnautica2Resources, label: '資源ガイド' },
+    { href: Routes.Subnautica2OxygenDepth, label: '酸素と深度ガイド' },
+  ],
+  sourcesTitle: 'ソースメモ',
   sourceBody:
-    '2026年5月27日にPC Gamer、GamesRadar、GAMES.GGを確認しました。Early Access中はツール挙動やルートが変わる可能性があります。',
+    '2026年5月29日にPC Gamer、GamesRadar、GAMES.GGのSonic Resonator / Feedback Resonator情報を確認しました。Subnautica 2はEarly Access中なので、断片位置、ツール挙動、Bloom系ルートは今後のパッチで変わる可能性があります。',
+  cardKicker: '採掘ツールカード',
+  cardBody:
+    '断片スキャン、巨大鉱石、Bloom Biofilm、ルートブロッカー、Feedback Resonatorへのアップグレード準備。',
+  cardTypeLabel: '種類',
+  cardTypeValue: '採掘ツール',
+  cardVerifiedLabel: '確認日',
+  cardStatusLabel: '状態',
+  cardStatusValue: 'Early Access',
 };
 
 const fallbackLocaleAliases = {
