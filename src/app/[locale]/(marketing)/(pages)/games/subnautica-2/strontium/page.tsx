@@ -587,65 +587,151 @@ strontiumCopy.zh = {
 };
 
 strontiumCopy.ja = {
-  ...strontiumCopy.en,
   metadata: {
     title:
       'Subnautica 2 Strontium ガイド - Celestine、Processor、Feedback Resonator',
     description:
-      'Subnautica 2のStrontiumガイド。Celestine採掘、Sonic Resonator、Processor変換、Feedback Resonator用の必要数を整理します。',
+      'Subnautica 2のStrontiumガイド。Celestine採掘、Sonic Resonator、Processor変換、2:1レシピ、Feedback Resonator用の必要数を整理します。',
   },
+  eyebrow: 'Subnautica 2 加工素材',
   title: 'Subnautica 2 Strontium ガイド',
   description:
-    'Strontiumは拾う素材ではなく、CelestineをProcessorで加工して作る素材です。Alien Ruins周辺の深いルートを安全に回れる準備をしてから集めます。',
+    'Strontiumはその辺で拾う素材ではなく、CelestineをProcessorで加工して作る素材です。つまり本当の難所は加工ボタンではなく、Alien Ruins周辺でCelestineを安全に集めて帰ることです。',
   quickLabel: '要点',
   quickAnswer:
-    '現在の情報では、ProcessorでCelestine 2個をStrontium 1個に変換します。Feedback ResonatorにはStrontiumが2個必要なので、最低でもCelestineを4個分集めておきます。',
-  routeTitle: 'Strontium ルート',
+    '現在の情報では、ProcessorでCelestine 2個をStrontium 1個に変換します。Feedback ResonatorにはStrontiumが2個必要なので、最低でもCelestineを4個分集めます。予備素材まで考えるなら、Celestineを全部すぐ加工せず、必要な分だけStrontiumに変える方が安全です。',
+  fieldNotesTitle: 'Strontium計画のメモ',
+  fieldNotes: [
+    {
+      title: 'ボトルネックはStrontiumではなくCelestine',
+      body: 'StrontiumはProcessorで作るだけです。時間がかかるのは、Alien Ruins周辺へ行き、Sonic ResonatorでCelestineを採り、Tadpoleで無事に帰る部分です。',
+    },
+    {
+      title: '加工前に数を計算する',
+      body: 'Strontium 2個はCelestine 4個です。Feedback Resonatorだけが目的なら4個で足りますが、後のレシピ用にCelestineを生で残す選択もあります。',
+    },
+    {
+      title: '保管場所を分ける',
+      body: 'Strontiumは完成素材なので、普通の鉱物箱に入れると忘れやすいです。Feedback Resonatorやツール改造素材の箱にまとめると迷いません。',
+    },
+  ],
+  routeChecklistTitle: 'Strontiumを作る前に',
+  routeChecklist: [
+    'Processorを使える状態にした。',
+    'Celestineの所持数を確認した。',
+    'Feedback Resonator用ならStrontium 2個、つまりCelestine 4個を確保した。',
+    '余ったCelestineをすぐ全部加工しない。次のレシピが見えてから決める。',
+  ],
+  contentsLabel: '目次',
+  routeTitle: 'Strontiumルート計画',
   routeSteps: [
     {
       title: 'Celestineを本当のボトルネックとして見る',
-      body: 'CelestineはAlien Ruins周辺の深いエリアで探します。そこへ安定して行けないなら、まずルート作りが先です。',
+      body: 'PC GamerはCelestineをAlien Ruins周辺の深いルートに置いています。そこへ落ち着いて行けないなら、Strontiumレシピより先にTadpole深度、帰り道、Repair Toolを整えます。',
     },
     {
       title: 'Sonic Resonatorを持つ',
-      body: '大きなCelestineノードにはSonic Resonatorが必要です。',
+      body: '大きなCelestineノードにはSonic Resonatorが必要です。せっかく深部まで行って採れないと時間が重いので、出発前にインベントリで確認します。',
     },
     {
       title: 'Processorで加工する',
-      body: 'Celestineを持ち帰り、基地のProcessorでStrontiumにします。',
+      body: 'All Things HowはCelestine 2個からStrontium 1個をProcessorで作る流れとして整理しています。動かない時は、Processorを使っているか、電力があるか、投入数が足りているかを確認します。',
     },
     {
       title: 'Feedback Resonator用に2個残す',
-      body: '現在のFeedback ResonatorレシピではStrontiumが2個必要です。',
+      body: 'PC GamerのFeedback Resonator素材リストではStrontiumが2個必要です。作成が終わるまで、最初の2個は他の用途に回さない方が安全です。',
+    },
+    {
+      title: 'Celestineルートを再訪できる形にする',
+      body: '一度きれいな採掘ルートを作ると、Strontiumは急に楽になります。Beaconや目印を残して、二回目を作業に変えます。',
     },
   ],
+  tableTitle: 'Strontiumチェックリスト',
+  tableHeaders: ['必要なもの', '理由'],
   tableRows: [
-    ['Celestine', 'Strontiumの原料。Feedback Resonator用なら最低4個必要です。'],
-    ['Sonic Resonator', '大きなノードを採掘するために必要です。'],
-    ['Processor', 'CelestineをStrontiumに変換します。'],
-    ['Reserve', '最初の2個はFeedback Resonator用に残します。'],
+    [
+      'Celestine',
+      'Strontiumの原料です。Feedback Resonator用なら最低4個必要です。',
+    ],
+    [
+      'Sonic Resonator',
+      '大きなCelestineノードを採るために必要です。持ち忘れ注意。',
+    ],
+    ['Processor', '基地でCelestineをStrontiumに変換するステーションです。'],
+    [
+      'Tadpole深度計画',
+      'Celestineルートは深度と帰り道が問題になりやすいです。',
+    ],
+    [
+      '予約枠',
+      '最初のStrontium 2個はFeedback Resonator用として分けて保管します。',
+    ],
   ],
+  visualTitle: '加工カード',
   visualItems: [
-    { label: 'Mine', value: 'Celestine', note: 'Alien Ruins周辺で集めます。' },
-    { label: 'Process', value: '2 to 1', note: 'Processorで変換します。' },
-    { label: 'Reserve', value: '2x', note: 'Feedback Resonator用に残します。' },
+    {
+      label: '採る',
+      value: 'Celestine',
+      note: 'Alien Ruins周辺でCelestineを集める。',
+    },
+    {
+      label: '加工',
+      value: '2 -> 1',
+      note: 'ProcessorでCelestine 2個をStrontium 1個へ。',
+    },
+    {
+      label: '予約',
+      value: '2x',
+      note: 'Feedback Resonator用にStrontium 2個を残す。',
+    },
   ],
+  cautionTitle: 'Celestineを全部Strontiumにしない',
+  cautionBody:
+    '加工素材は便利ですが、Early Accessではレシピが変わることもあります。今すぐ使う分だけStrontiumにして、余ったCelestineは生のまま残しておく方があとで融通が利きます。',
+  faqTitle: 'FAQ',
   faqs: [
     {
       title: 'Strontiumはどう作る？',
-      body: 'Celestine 2個をProcessorに入れるとStrontium 1個になります。',
+      body: '現在の情報では、Celestine 2個をProcessorに入れるとStrontium 1個になります。',
     },
     {
       title: 'Feedback Resonatorには何個必要？',
-      body: '現在のレシピではStrontiumが2個必要です。',
+      body: '現在のレシピではStrontiumが2個必要です。つまりCelestine 4個ぶんを確保します。',
     },
     {
       title: 'Sonic Resonatorは必要？',
-      body: '大きなCelestineノードを採るなら必要です。',
+      body: '大きなCelestineノードを採るなら必要です。Strontium作成そのものにはProcessorを使いますが、原料集めでSonic Resonatorが効きます。',
+    },
+    {
+      title: 'Celestineは全部加工していい？',
+      body: '急ぎのアップグレード分だけ加工するのがおすすめです。余りはCelestineのまま置くと、後のレシピ変更や別素材要求に対応しやすいです。',
     },
   ],
+  readNextTitle: '次に読む',
+  related: [
+    { href: Routes.Subnautica2Celestine, label: 'Celestine ガイド' },
+    { href: Routes.Subnautica2SonicResonator, label: 'Sonic Resonator ガイド' },
+    {
+      href: Routes.Subnautica2FeedbackResonator,
+      label: 'Feedback Resonator ガイド',
+    },
+    { href: Routes.Subnautica2ConduitCrystal, label: 'Conduit Crystal ガイド' },
+    { href: Routes.Subnautica2Processor, label: 'Processor ガイド' },
+    { href: Routes.Subnautica2Biomes, label: 'バイオームガイド' },
+    { href: Routes.Subnautica2Resources, label: '資源ガイド' },
+    { href: Routes.Subnautica2Tadpole, label: 'Tadpole ガイド' },
+  ],
+  sourcesTitle: 'ソースメモ',
   sourceBody:
-    '2026年5月27日にPC Gamer、All Things How、Subnautica2.ggを確認しました。Early Access中はルートやレシピが変わる可能性があります。',
+    '2026年5月29日にPC Gamer、All Things How、Subnautica2.ggのCelestine / Strontium / Feedback Resonator情報を確認しました。Subnautica 2はEarly Access中なので、加工レシピ、必要数、Celestineルートは今後のパッチで変わる可能性があります。',
+  cardKicker: '加工素材カード',
+  cardBody:
+    'Celestine採掘、Sonic Resonator、Processor 2:1変換、Feedback Resonator用のStrontium 2個予約。',
+  cardTypeLabel: '種類',
+  cardTypeValue: '加工素材',
+  cardVerifiedLabel: '確認日',
+  cardStatusLabel: '状態',
+  cardStatusValue: 'Early Access',
 };
 
 const fallbackLocaleAliases = {
