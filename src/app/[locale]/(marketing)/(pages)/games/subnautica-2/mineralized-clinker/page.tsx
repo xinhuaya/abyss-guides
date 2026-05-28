@@ -16,7 +16,7 @@ type ClinkerCopy = ResourceGuideCopy & {
 };
 
 const PUBLISHED_AT = '2026-05-24';
-const UPDATED_AT = '2026-05-24';
+const UPDATED_AT = '2026-05-28';
 
 const sharedSources = [
   {
@@ -153,7 +153,7 @@ const clinkerCopy: Record<string, ClinkerCopy> = {
     ],
     sourcesTitle: 'Source note',
     sourceBody:
-      'Checked May 24, 2026 against Unknown Worlds Hotfix 2, PC Gamer Troilite and Metal Farm route reporting, and the official Early Access roadmap.',
+      'Checked May 28, 2026 against Unknown Worlds Hotfix 2, PC Gamer Troilite and Metal Farm route reporting, and the official Early Access roadmap.',
     cardKicker: 'Mineral scan card',
     cardBody:
       'A route note for players who see Mineralized Clinker while trying to solve Troilite, Mangalloy, and Metal Farm progression.',
@@ -274,7 +274,7 @@ const clinkerCopy: Record<string, ClinkerCopy> = {
     ],
     sourcesTitle: '来源说明',
     sourceBody:
-      '2026 年 5 月 24 日核对 Unknown Worlds Hotfix 2、PC Gamer Troilite 和 Metal Farm 路线报道，以及官方抢先体验路线图。',
+      '2026 年 5 月 28 日核对 Unknown Worlds Hotfix 2、PC Gamer Troilite 和 Metal Farm 路线报道，以及官方抢先体验路线图。',
     cardKicker: '矿点扫描卡',
     cardBody:
       '给正在找 Troilite、Mangalloy 和 Metal Farm 路线的玩家准备的 Mineralized Clinker 路线说明。',
@@ -379,7 +379,7 @@ const clinkerCopy: Record<string, ClinkerCopy> = {
     ],
     sourcesTitle: 'Источники',
     sourceBody:
-      'Проверено 24 мая 2026 по Hotfix 2, PC Gamer Troilite, Metal Farm и roadmap.',
+      'Проверено 28 мая 2026 по Hotfix 2, PC Gamer Troilite, Metal Farm и roadmap.',
     cardKicker: 'Mineral scan card',
     cardBody: 'Route note for Mineralized Clinker, Troilite and Metal Farm.',
     cardTypeLabel: 'Тип',
@@ -477,7 +477,7 @@ const clinkerCopy: Record<string, ClinkerCopy> = {
     ],
     sourcesTitle: 'Quellen',
     sourceBody:
-      'Geprueft am 24. Mai 2026 mit Hotfix 2, PC Gamer Troilite, Metal Farm und Roadmap.',
+      'Geprueft am 28. Mai 2026 mit Hotfix 2, PC Gamer Troilite, Metal Farm und Roadmap.',
     cardKicker: 'Mineral scan card',
     cardBody: 'Route note for Mineralized Clinker, Troilite and Metal Farm.',
     cardTypeLabel: 'Typ',
@@ -575,7 +575,7 @@ const clinkerCopy: Record<string, ClinkerCopy> = {
     ],
     sourcesTitle: 'Sources',
     sourceBody:
-      'Verifie le 24 mai 2026 avec Hotfix 2, PC Gamer Troilite, Metal Farm et roadmap.',
+      'Verifie le 28 mai 2026 avec Hotfix 2, PC Gamer Troilite, Metal Farm et roadmap.',
     cardKicker: 'Mineral scan card',
     cardBody: 'Route note for Mineralized Clinker, Troilite and Metal Farm.',
     cardTypeLabel: 'Type',
@@ -670,7 +670,7 @@ const clinkerCopy: Record<string, ClinkerCopy> = {
     ],
     sourcesTitle: 'Fontes',
     sourceBody:
-      'Checado em 24 de maio de 2026 com Hotfix 2, PC Gamer Troilite, Metal Farm e roadmap.',
+      'Checado em 28 de maio de 2026 com Hotfix 2, PC Gamer Troilite, Metal Farm e roadmap.',
     cardKicker: 'Mineral scan card',
     cardBody: 'Route note for Mineralized Clinker, Troilite and Metal Farm.',
     cardTypeLabel: 'Tipo',
@@ -765,7 +765,7 @@ const clinkerCopy: Record<string, ClinkerCopy> = {
     ],
     sourcesTitle: 'Fuentes',
     sourceBody:
-      'Revisado el 24 de mayo de 2026 con Hotfix 2, PC Gamer Troilite, Metal Farm y roadmap.',
+      'Revisado el 28 de mayo de 2026 con Hotfix 2, PC Gamer Troilite, Metal Farm y roadmap.',
     cardKicker: 'Mineral scan card',
     cardBody: 'Route note for Mineralized Clinker, Troilite and Metal Farm.',
     cardTypeLabel: 'Tipo',
@@ -863,7 +863,7 @@ const clinkerCopy: Record<string, ClinkerCopy> = {
     ],
     sourcesTitle: '출처',
     sourceBody:
-      '2026년 5월 24일 Hotfix 2, PC Gamer Troilite, Metal Farm, roadmap을 확인했습니다.',
+      '2026년 5월 28일 Hotfix 2, PC Gamer Troilite, Metal Farm, roadmap을 확인했습니다.',
     cardKicker: 'Mineral scan card',
     cardBody: 'Mineralized Clinker, Troilite, Metal Farm을 위한 루트 노트.',
     cardTypeLabel: '유형',
@@ -964,7 +964,7 @@ const clinkerCopy: Record<string, ClinkerCopy> = {
     ],
     sourcesTitle: 'ソース',
     sourceBody:
-      '2026年5月24日に Hotfix 2、PC Gamer Troilite、Metal Farm、roadmap を確認。',
+      '2026年5月28日に Hotfix 2、PC Gamer Troilite、Metal Farm、roadmap を確認。',
     cardKicker: 'Mineral scan card',
     cardBody: 'Mineralized Clinker、Troilite、Metal Farm のための route note。',
     cardTypeLabel: '種類',

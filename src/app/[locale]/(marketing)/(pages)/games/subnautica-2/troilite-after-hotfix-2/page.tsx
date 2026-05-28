@@ -16,7 +16,7 @@ type TroilitePatchCopy = ResourceGuideCopy & {
 };
 
 const PUBLISHED_AT = '2026-05-24';
-const UPDATED_AT = '2026-05-24';
+const UPDATED_AT = '2026-05-28';
 
 const sharedSources = [
   {
@@ -150,7 +150,7 @@ const troilitePatchCopy: Record<string, TroilitePatchCopy> = {
     ],
     sourcesTitle: 'Source note',
     sourceBody:
-      'Checked May 24, 2026 against Unknown Worlds Hotfix 2, current Troilite route reporting, Metal Farm reporting, and the official roadmap.',
+      'Checked May 28, 2026 against Unknown Worlds Hotfix 2, current Troilite route reporting, Metal Farm reporting, and the official roadmap.',
     cardKicker: 'Troilite patch card',
     cardBody:
       'A late-game patch note for players rechecking Troilite, Mineralized Clinker, Mangalloy, and Metal Farm routes after Hotfix 2.',
@@ -257,7 +257,7 @@ const troilitePatchCopy: Record<string, TroilitePatchCopy> = {
     ],
     sourcesTitle: '来源说明',
     sourceBody:
-      '2026 年 5 月 24 日核对 Unknown Worlds Hotfix 2、当前 Troilite 路线报道、Metal Farm 报道和官方路线图。',
+      '2026 年 5 月 28 日核对 Unknown Worlds Hotfix 2、当前 Troilite 路线报道、Metal Farm 报道和官方路线图。',
     cardKicker: 'Troilite 补丁卡',
     cardBody:
       'Hotfix 2 后专门复查 Troilite、Mineralized Clinker、Mangalloy 和 Metal Farm 路线的补丁说明。',
@@ -377,7 +377,7 @@ const derivedLocales: Record<string, Partial<TroilitePatchCopy>> = {
     ],
     sourcesTitle: 'Источники',
     sourceBody:
-      'Проверено 24 мая 2026 по Hotfix 2, PC Gamer Troilite, Metal Farm и roadmap.',
+      'Проверено 28 мая 2026 по Hotfix 2, PC Gamer Troilite, Metal Farm и roadmap.',
     cardKicker: 'Troilite patch card',
     cardBody:
       'Заметка для повторной проверки Troilite, Mineralized Clinker, Mangalloy и Metal Farm после Hotfix 2.',
@@ -494,7 +494,7 @@ const derivedLocales: Record<string, Partial<TroilitePatchCopy>> = {
     ],
     sourcesTitle: 'Quellen',
     sourceBody:
-      'Geprueft am 24. Mai 2026 mit Hotfix 2, PC Gamer Troilite, Metal Farm und Roadmap.',
+      'Geprueft am 28. Mai 2026 mit Hotfix 2, PC Gamer Troilite, Metal Farm und Roadmap.',
     cardKicker: 'Troilite patch card',
     cardBody:
       'Patch-Notiz fuer Troilite, Mineralized Clinker, Mangalloy und Metal Farm nach Hotfix 2.',
@@ -611,7 +611,7 @@ const derivedLocales: Record<string, Partial<TroilitePatchCopy>> = {
     ],
     sourcesTitle: 'Sources',
     sourceBody:
-      'Verifie le 24 mai 2026 avec Hotfix 2, PC Gamer Troilite, Metal Farm et roadmap.',
+      'Verifie le 28 mai 2026 avec Hotfix 2, PC Gamer Troilite, Metal Farm et roadmap.',
     cardKicker: 'Troilite patch card',
     cardBody:
       'Note de patch pour Troilite, Mineralized Clinker, Mangalloy et Metal Farm apres Hotfix 2.',
@@ -728,7 +728,7 @@ const derivedLocales: Record<string, Partial<TroilitePatchCopy>> = {
     ],
     sourcesTitle: 'Fontes',
     sourceBody:
-      'Checado em 24 de maio de 2026 com Hotfix 2, PC Gamer Troilite, Metal Farm e roadmap.',
+      'Checado em 28 de maio de 2026 com Hotfix 2, PC Gamer Troilite, Metal Farm e roadmap.',
     cardKicker: 'Troilite patch card',
     cardBody:
       'Nota de patch para Troilite, Mineralized Clinker, Mangalloy e Metal Farm depois do Hotfix 2.',
@@ -845,7 +845,7 @@ const derivedLocales: Record<string, Partial<TroilitePatchCopy>> = {
     ],
     sourcesTitle: 'Fuentes',
     sourceBody:
-      'Revisado el 24 de mayo de 2026 con Hotfix 2, PC Gamer Troilite, Metal Farm y roadmap.',
+      'Revisado el 28 de mayo de 2026 con Hotfix 2, PC Gamer Troilite, Metal Farm y roadmap.',
     cardKicker: 'Troilite patch card',
     cardBody:
       'Nota de patch para Troilite, Mineralized Clinker, Mangalloy y Metal Farm despues de Hotfix 2.',
@@ -962,7 +962,7 @@ const derivedLocales: Record<string, Partial<TroilitePatchCopy>> = {
     ],
     sourcesTitle: '출처',
     sourceBody:
-      '2026년 5월 24일 Hotfix 2, PC Gamer Troilite, Metal Farm, roadmap을 확인했습니다.',
+      '2026년 5월 28일 Hotfix 2, PC Gamer Troilite, Metal Farm, roadmap을 확인했습니다.',
     cardKicker: 'Troilite patch card',
     cardBody:
       'Hotfix 2 이후 Troilite, Mineralized Clinker, Mangalloy, Metal Farm을 다시 확인하는 패치 노트.',
@@ -1079,7 +1079,7 @@ const derivedLocales: Record<string, Partial<TroilitePatchCopy>> = {
     ],
     sourcesTitle: 'ソース',
     sourceBody:
-      '2026年5月24日に Hotfix 2、PC Gamer Troilite、Metal Farm、roadmap を確認。',
+      '2026年5月28日に Hotfix 2、PC Gamer Troilite、Metal Farm、roadmap を確認。',
     cardKicker: 'Troilite patch card',
     cardBody:
       'Hotfix 2 後の Troilite、Mineralized Clinker、Mangalloy、Metal Farm を再確認するパッチノート。',

@@ -16,7 +16,7 @@ type SilverPatchCopy = ResourceGuideCopy & {
 };
 
 const PUBLISHED_AT = '2026-05-24';
-const UPDATED_AT = '2026-05-24';
+const UPDATED_AT = '2026-05-28';
 
 const sharedSources = [
   {
@@ -146,7 +146,7 @@ const silverPatchCopy: Record<string, SilverPatchCopy> = {
     ],
     sourcesTitle: 'Source note',
     sourceBody:
-      'Checked May 24, 2026 against Unknown Worlds Hotfix 2, the community feedback letter, GamesRadar launch-week Silver reporting, and the official roadmap.',
+      'Checked May 28, 2026 against Unknown Worlds Hotfix 2, the community feedback letter, GamesRadar launch-week Silver reporting, and the official roadmap.',
     cardKicker: 'Silver patch card',
     cardBody:
       'A patch-aware Silver note for players checking whether old routes still match the current Early Access build.',
@@ -245,7 +245,7 @@ const silverPatchCopy: Record<string, SilverPatchCopy> = {
     ],
     sourcesTitle: '来源说明',
     sourceBody:
-      '2026 年 5 月 24 日核对 Unknown Worlds Hotfix 2、社区反馈信、GamesRadar 首发周银资源报道和官方路线图。',
+      '2026 年 5 月 28 日核对 Unknown Worlds Hotfix 2、社区反馈信、GamesRadar 首发周银资源报道和官方路线图。',
     cardKicker: '银资源补丁卡',
     cardBody:
       '专门核对 Hotfix 2 后银资源是否变多、旧路线是否还可靠，以及哪些说法不能照搬。',
@@ -351,7 +351,7 @@ const silverPatchCopy: Record<string, SilverPatchCopy> = {
     ],
     sourcesTitle: 'Источники',
     sourceBody:
-      'Проверено 24 мая 2026 по Hotfix 2, feedback letter, GamesRadar и официальной roadmap.',
+      'Проверено 28 мая 2026 по Hotfix 2, feedback letter, GamesRadar и официальной roadmap.',
     cardKicker: 'Silver patch card',
     cardBody:
       'Проверка Silver после Hotfix 2: что стало мягче и какие старые советы осторожно читать.',
@@ -464,7 +464,7 @@ const silverPatchCopy: Record<string, SilverPatchCopy> = {
     ],
     sourcesTitle: 'Quellen',
     sourceBody:
-      'Geprueft am 24. Mai 2026 mit Hotfix 2, Feedback-Brief, GamesRadar und offizieller Roadmap.',
+      'Geprueft am 28. Mai 2026 mit Hotfix 2, Feedback-Brief, GamesRadar und offizieller Roadmap.',
     cardKicker: 'Silver patch card',
     cardBody:
       'Silver nach Hotfix 2: bestaetigte Aenderung, alte Guide-Risiken und Routencheck.',
@@ -574,7 +574,7 @@ const silverPatchCopy: Record<string, SilverPatchCopy> = {
     ],
     sourcesTitle: 'Sources',
     sourceBody:
-      'Verifie le 24 mai 2026 avec Hotfix 2, lettre feedback, GamesRadar et roadmap officielle.',
+      'Verifie le 28 mai 2026 avec Hotfix 2, lettre feedback, GamesRadar et roadmap officielle.',
     cardKicker: 'Silver patch card',
     cardBody:
       'Silver apres Hotfix 2: ce qui est confirme et ce qu il faut verifier.',
@@ -681,7 +681,7 @@ const silverPatchCopy: Record<string, SilverPatchCopy> = {
     ],
     sourcesTitle: 'Fontes',
     sourceBody:
-      'Checado em 24 de maio de 2026 com Hotfix 2, carta de feedback, GamesRadar e roadmap oficial.',
+      'Checado em 28 de maio de 2026 com Hotfix 2, carta de feedback, GamesRadar e roadmap oficial.',
     cardKicker: 'Silver patch card',
     cardBody:
       'Silver depois do Hotfix 2: mudanca confirmada, risco de guia antigo e rota para testar.',
@@ -788,7 +788,7 @@ const silverPatchCopy: Record<string, SilverPatchCopy> = {
     ],
     sourcesTitle: 'Fuentes',
     sourceBody:
-      'Revisado el 24 de mayo de 2026 con Hotfix 2, carta de feedback, GamesRadar y roadmap oficial.',
+      'Revisado el 28 de mayo de 2026 con Hotfix 2, carta de feedback, GamesRadar y roadmap oficial.',
     cardKicker: 'Silver patch card',
     cardBody:
       'Silver despues de Hotfix 2: cambio confirmado, riesgo de guia vieja y ruta para probar.',
@@ -891,7 +891,7 @@ const silverPatchCopy: Record<string, SilverPatchCopy> = {
     ],
     sourcesTitle: '출처',
     sourceBody:
-      '2026년 5월 24일 Unknown Worlds Hotfix 2, feedback letter, GamesRadar, official roadmap을 확인했습니다.',
+      '2026년 5월 28일 Unknown Worlds Hotfix 2, feedback letter, GamesRadar, official roadmap을 확인했습니다.',
     cardKicker: 'Silver patch card',
     cardBody:
       'Hotfix 2 이후 Silver 변경, 오래된 가이드 위험, 재확인 루트를 정리합니다.',
@@ -994,7 +994,7 @@ const silverPatchCopy: Record<string, SilverPatchCopy> = {
     ],
     sourcesTitle: 'ソース',
     sourceBody:
-      '2026年5月24日に Unknown Worlds Hotfix 2、feedback letter、GamesRadar、official roadmap を確認。',
+      '2026年5月28日に Unknown Worlds Hotfix 2、feedback letter、GamesRadar、official roadmap を確認。',
     cardKicker: 'Silver patch card',
     cardBody:
       'Hotfix 2 後の Silver 変更、古い攻略の注意点、再確認ルートを整理します。',

@@ -16,7 +16,7 @@ type HotfixCopy = ResourceGuideCopy & {
 };
 
 const PUBLISHED_AT = '2026-05-24';
-const UPDATED_AT = '2026-05-24';
+const UPDATED_AT = '2026-05-28';
 
 const sharedSources = [
   {
@@ -154,7 +154,7 @@ const hotfixCopy: Record<string, HotfixCopy> = {
     ],
     sourcesTitle: 'Source note',
     sourceBody:
-      'Checked May 24, 2026 against the official Unknown Worlds Hotfix 2 post, community feedback letter, roadmap, and Steam Early Access page.',
+      'Checked May 28, 2026 against the official Unknown Worlds Hotfix 2 post, community feedback letter, roadmap, and Steam Early Access page.',
     cardKicker: 'Patch field card',
     cardBody:
       'A patch-aware guide to the Hotfix 2 changes that affect Silver, oxygen, co-op, Troilite, Hammerheads, and early routing.',
@@ -258,7 +258,7 @@ const hotfixCopy: Record<string, HotfixCopy> = {
     ],
     sourcesTitle: '来源说明',
     sourceBody:
-      '2026 年 5 月 24 日核对 Unknown Worlds 官方 Hotfix 2、社区反馈信、路线图和 Steam 抢先体验页面。',
+      '2026 年 5 月 28 日核对 Unknown Worlds 官方 Hotfix 2、社区反馈信、路线图和 Steam 抢先体验页面。',
     cardKicker: '补丁记录卡',
     cardBody:
       '整理 Hotfix 2 对银、氧气、联机、Troilite、Hammerhead 和前期路线的实际影响。',
@@ -373,7 +373,7 @@ const hotfixCopy: Record<string, HotfixCopy> = {
     ],
     sourcesTitle: 'Источники',
     sourceBody:
-      'Проверено 24 мая 2026 по официальным заметкам Unknown Worlds, roadmap и Steam Early Access page.',
+      'Проверено 28 мая 2026 по официальным заметкам Unknown Worlds, roadmap и Steam Early Access page.',
     cardKicker: 'Patch card',
     cardBody:
       'Патч-гайд по Silver, oxygen, co-op, Troilite, Hammerhead и ранним маршрутам.',
@@ -488,7 +488,7 @@ const hotfixCopy: Record<string, HotfixCopy> = {
     ],
     sourcesTitle: 'Quellen',
     sourceBody:
-      'Geprueft am 24. Mai 2026 mit Unknown Worlds Hotfix 2, Feedback-Brief, Roadmap und Steam Early Access page.',
+      'Geprueft am 28. Mai 2026 mit Unknown Worlds Hotfix 2, Feedback-Brief, Roadmap und Steam Early Access page.',
     cardKicker: 'Patch field card',
     cardBody:
       'Patch-Guide zu Silver, oxygen, co-op, Troilite, Hammerhead und fruehen Routen.',
@@ -603,7 +603,7 @@ const hotfixCopy: Record<string, HotfixCopy> = {
     ],
     sourcesTitle: 'Sources',
     sourceBody:
-      'Verifie le 24 mai 2026 avec Hotfix 2, la lettre feedback, la roadmap et la page Steam Early Access.',
+      'Verifie le 28 mai 2026 avec Hotfix 2, la lettre feedback, la roadmap et la page Steam Early Access.',
     cardKicker: 'Patch card',
     cardBody:
       'Guide patch pour Silver, oxygene, co-op, Troilite, Hammerhead et routes de debut.',
@@ -718,7 +718,7 @@ const hotfixCopy: Record<string, HotfixCopy> = {
     ],
     sourcesTitle: 'Fontes',
     sourceBody:
-      'Checado em 24 de maio de 2026 com Hotfix 2 oficial, carta de feedback, roadmap e Steam Early Access page.',
+      'Checado em 28 de maio de 2026 com Hotfix 2 oficial, carta de feedback, roadmap e Steam Early Access page.',
     cardKicker: 'Patch card',
     cardBody:
       'Guia de patch para Silver, oxigenio, co-op, Troilite, Hammerhead e rotas iniciais.',
@@ -833,7 +833,7 @@ const hotfixCopy: Record<string, HotfixCopy> = {
     ],
     sourcesTitle: 'Fuentes',
     sourceBody:
-      'Revisado el 24 de mayo de 2026 con Hotfix 2 oficial, carta de feedback, roadmap y Steam Early Access page.',
+      'Revisado el 28 de mayo de 2026 con Hotfix 2 oficial, carta de feedback, roadmap y Steam Early Access page.',
     cardKicker: 'Patch card',
     cardBody:
       'Guia de patch para Silver, oxigeno, co-op, Troilite, Hammerhead y rutas tempranas.',
@@ -941,7 +941,7 @@ const hotfixCopy: Record<string, HotfixCopy> = {
     ],
     sourcesTitle: '출처',
     sourceBody:
-      '2026년 5월 24일 Unknown Worlds Hotfix 2, feedback letter, roadmap, Steam Early Access page를 확인했습니다.',
+      '2026년 5월 28일 Unknown Worlds Hotfix 2, feedback letter, roadmap, Steam Early Access page를 확인했습니다.',
     cardKicker: 'Patch card',
     cardBody:
       'Silver, oxygen, co-op, Troilite, Hammerhead, 초반 루트를 위한 패치 가이드.',
@@ -1049,7 +1049,7 @@ const hotfixCopy: Record<string, HotfixCopy> = {
     ],
     sourcesTitle: 'ソース',
     sourceBody:
-      '2026年5月24日に Unknown Worlds Hotfix 2、feedback letter、roadmap、Steam Early Access page を確認。',
+      '2026年5月28日に Unknown Worlds Hotfix 2、feedback letter、roadmap、Steam Early Access page を確認。',
     cardKicker: 'Patch card',
     cardBody:
       'Silver、oxygen、co-op、Troilite、Hammerhead、序盤ルート向けのパッチガイド。',
