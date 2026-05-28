@@ -449,14 +449,138 @@ acidicRaionPouchCopy.zh = {
 };
 
 acidicRaionPouchCopy.ja = {
-  ...acidicRaionPouchCopy.en,
   metadata: {
-    title: 'Subnautica 2 Acidic Raion Pouch Guide',
+    title: 'Subnautica 2 Acidic Raion Pouch ガイド - Coral Gardens、採集、用途',
     description:
-      'Guide for Acidic Raion Pouch location, Coral Gardens, harvest route, Basic Battery, Mild Acid, Processor, and Strong Acid planning.',
+      'Subnautica 2のAcidic Raion Pouchガイド。Coral Gardens、採集ルート、Basic Battery、Mild Acid、Processor、Strong Acid計画を整理します。',
   },
+  eyebrow: 'Subnautica 2 バッテリー素材',
+  title: 'Subnautica 2 Acidic Raion Pouch ガイド',
+  description:
+    'Acidic Raion Pouchは、序盤のバッテリー作りで忘れやすい素材です。Copperは覚えていても、このpouchがなくてScannerやMild Acidの準備が止まることがあります。',
+  quickLabel: '要点',
+  quickAnswer:
+    'Subnautica2Hubの現行データでは、Acidic Raion PouchはCoral Gardensで採集するraw resourceとして掲載されています。用途はBasic Battery x1、FabricatorのMild Acid x2、ProcessorのMild Acid x2です。安定した座標リストはまだ薄いので、具体ルートはパッチ後に再確認してください。',
+  fieldNotesTitle: 'pouch集めのメモ',
+  fieldNotes: [
+    {
+      title: '食料ついでに混ぜない',
+      body: 'Acidic Raion Pouchは軽い有機素材に見えますが、電力と酸素材の両方に入ります。ついで拾いではなく、素材集めの一走として扱った方が安定します。',
+    },
+    {
+      title: '最初の道具後は2個単位で考える',
+      body: 'Basic Batteryは1個で動きますが、Mild Acidは2個使います。化学素材を見始めたら、pouchは2個単位で数えると予定が立てやすいです。',
+    },
+    {
+      title: '自分用のルートメモを残す',
+      body: '方向、目印、戻り道を一言書くだけで十分です。あとで「Coral Gardensのどこだっけ」と泳ぎ直す時間をかなり減らせます。',
+    },
+  ],
+  routeChecklistTitle: 'pouchルートを離れる前に',
+  routeChecklist: [
+    '次のBasic Battery用に1個残している。',
+    'Mild Acid用に2個単位で分けている。',
+    'Batteryを作る前にCopperの残量も確認した。',
+    '次回も同じ場所へ戻れる目印を覚えた。',
+  ],
+  contentsLabel: '目次',
+  routeTitle: 'Acidic Raion Pouchルート',
+  routeSteps: [
+    {
+      title: 'Coral Gardensを出発点にする',
+      body: 'Subnautica2Hubが現在出している場所の手がかりはCoral Gardensです。細かい座標はパッチ後にずれる可能性があるため、最新確認済みの情報だけ信用しましょう。',
+    },
+    {
+      title: 'Acid Raion由来の素材として探す',
+      body: 'この素材はAcid Raionに結びついています。databankでは膜、群体、加圧された酸が説明されるので、床に落ちている鉱物ではなく、採集対象として見ます。',
+    },
+    {
+      title: '最初はBasic Batteryに使う',
+      body: '序盤で一番分かりやすい用途はBasic Batteryです。pouch 1個とCopper 2個でScanner用のバッテリー準備が進みます。',
+    },
+    {
+      title: '余りはMild Acidへ残す',
+      body: '現行データでは、Mild AcidのFabricatorルートとProcessorルートの両方にAcidic Raion Pouch x2が入っています。化学素材に進むなら、全部バッテリーにしない方が安全です。',
+    },
+    {
+      title: 'バイオーム名だけでなく部屋を覚える',
+      body: '座標データが薄い間は、自分のルートメモが一番役に立ちます。入口、深度、近い目印、戻り道まで書いておくと再訪しやすいです。',
+    },
+  ],
+  tableTitle: 'Acidic Raion Pouch チェックリスト',
+  tableHeaders: ['項目', '確認すること'],
+  tableRows: [
+    ['場所の手がかり', 'Subnautica2HubはCoral Gardensと掲載。'],
+    ['入手方法', 'harvest素材。通常の鉱物拾いとは別に見る。'],
+    ['Basic Battery', 'Acidic Raion Pouch x1とCopper x2で使う。'],
+    ['Mild Acid', '現行データではAcidic Raion Pouch x2が必要。'],
+    ['後続クラフト', 'Mild AcidからBiolab、Processor、Strong Acidへつながる。'],
+    ['地図精度', '公開データには安定した座標リストがまだ少ない。'],
+  ],
+  visualTitle: 'Pouch素材チェーン',
+  visualItems: [
+    {
+      label: '探す',
+      value: 'Coral Gardens',
+      note: '現時点で一番使える公開バイオーム情報です。',
+    },
+    {
+      label: '採集',
+      value: 'Pouch',
+      note: 'Acid Raion由来の素材として扱います。',
+    },
+    {
+      label: '使う',
+      value: 'Battery',
+      note: '余った分をMild Acidへ回します。',
+    },
+  ],
+  cautionTitle: '正確な座標を言い切らない',
+  cautionBody:
+    '現在の公開データで強いのは、アイテム、用途、Coral Gardensという手がかりまでです。細かい座標は更新で変わる可能性があるため、まずはバイオームと採集対象を押さえましょう。',
+  faqTitle: 'FAQ',
+  faqs: [
+    {
+      title: 'Subnautica 2でAcidic Raion Pouchはどこ？',
+      body: 'Subnautica2Hubは現在、Coral Gardensで採集できる素材として掲載しています。',
+    },
+    {
+      title: 'Acidic Raion Pouchは何に使う？',
+      body: '現行データではBasic Battery、FabricatorのMild Acid、ProcessorのMild Acidに使います。',
+    },
+    {
+      title: 'Basic Batteryには何個必要？',
+      body: '現在のBasic Batteryレシピでは、Acidic Raion Pouch x1とCopper x2を使います。',
+    },
+    {
+      title: '正確な座標はある？',
+      body: '今回確認した公開データには、安定した座標リストはありません。Coral Gardensという手がかりを使い、パッチ後に再確認してください。',
+    },
+  ],
+  readNextTitle: '次に読む',
+  related: [
+    { href: Routes.Subnautica2BasicBattery, label: 'Basic Battery ガイド' },
+    { href: Routes.Subnautica2MildAcid, label: 'Mild Acid ガイド' },
+    { href: Routes.Subnautica2Processor, label: 'Processor ガイド' },
+    { href: Routes.Subnautica2Biolab, label: 'Biolab ガイド' },
+    { href: Routes.Subnautica2StrongAcid, label: 'Strong Acid ガイド' },
+    { href: Routes.Subnautica2Copper, label: 'Copperの場所' },
+    { href: Routes.Subnautica2Scanner, label: 'Scanner ガイド' },
+    { href: Routes.Subnautica2Resources, label: '資源ガイド' },
+    { href: Routes.Subnautica2Crafting, label: 'クラフトガイド' },
+    { href: Routes.Subnautica2Biomes, label: 'バイオームガイド' },
+  ],
+  sourcesTitle: 'ソースメモ',
   sourceBody:
-    'Checked May 27, 2026 against Subnautica2.gg item and Acid Raion databank pages plus Subnautica2Hub resource data. Early Access spawn and crafting data can change.',
+    '2026年5月27日にSubnautica2.ggのitemページ、Acid Raion databank、Subnautica2Hubのresourceページを確認しました。Early Access中はスポーン、採集方法、クラフト用途が変わる可能性があります。',
+  cardKicker: '採集カード',
+  cardBody:
+    'Coral Gardens、採集メモ、Basic Battery用途、Mild Acid用途、地図データ注意。',
+  cardTypeLabel: '種類',
+  cardTypeValue: '資源ガイド',
+  cardVerifiedLabel: '確認日',
+  cardStatusLabel: '状態',
+  cardStatusValue: 'Early Access',
 };
 
 const fallbackLocaleAliases = {

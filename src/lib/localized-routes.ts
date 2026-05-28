@@ -734,7 +734,6 @@ const localizedRoutes: Partial<Record<Locale, ReadonlySet<string>>> = {
 };
 
 const zhOnlyRoutes = [
-  Routes.Subnautica2AcidicRaionPouch,
   Routes.Subnautica2AdvancedWiringKit,
   Routes.Subnautica2AngelComb,
   Routes.Subnautica2Atacamite,
@@ -789,6 +788,7 @@ const zhOnlyRoutes = [
 
 const zhJaRoutes = [
   Routes.Subnautica2AdvancedBattery,
+  Routes.Subnautica2AcidicRaionPouch,
   Routes.Subnautica2Biolab,
   Routes.Subnautica2EchoLocation,
   Routes.Subnautica2FiberMesh,
