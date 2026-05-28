@@ -82,6 +82,21 @@ const workflow = [
   'Repeat once power and storage are stable.',
 ];
 
+const fieldNotes = [
+  {
+    title: 'Build the first farm where you can babysit it',
+    body: 'A Metal Farm is not just a machine, it is a power and storage habit. Put the first one close enough that you notice when production, power, or inventory gets awkward.',
+  },
+  {
+    title: 'Duplicate bottlenecks, not comfort materials',
+    body: 'Titanium feels useful, but the first production cycles should go into rare inputs that block several recipes. Troilite is usually the cleaner first test.',
+  },
+  {
+    title: 'Keep one clean input sample',
+    body: 'Before experimenting, leave one Troilite or Atacamite untouched in a marked locker. That small reserve prevents a lot of bad late-route decisions.',
+  },
+];
+
 const faqs = [
   {
     title: 'How do you unlock Metal Farm in Subnautica 2?',
@@ -278,6 +293,25 @@ export default async function MetalFarmGuidePage({
                 and a major threat nearby. Bring repairs, healing, and enough
                 oxygen margin to abandon the scan if the route goes bad.
               </p>
+            </section>
+
+            <section>
+              <h2 className="text-3xl font-semibold text-[#effffb]">
+                Field notes
+              </h2>
+              <div className="mt-5 grid gap-4">
+                {fieldNotes.map((note) => (
+                  <section
+                    key={note.title}
+                    className="border border-cyan-200/12 bg-[#071f23] p-5"
+                  >
+                    <h3 className="font-semibold text-[#78ead7]">
+                      {note.title}
+                    </h3>
+                    <p className="mt-3 leading-7 text-[#abc8c3]">{note.body}</p>
+                  </section>
+                ))}
+              </div>
             </section>
 
             <section>

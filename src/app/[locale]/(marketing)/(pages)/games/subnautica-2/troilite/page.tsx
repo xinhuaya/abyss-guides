@@ -86,6 +86,21 @@ const rules = [
   'Recheck this page after every resource-flow patch or major Early Access update.',
 ];
 
+const fieldNotes = [
+  {
+    title: 'Spend the first sample on information',
+    body: 'Before crafting, use the first successful Troilite run to confirm the route, mark the return path, and decide whether Metal Farm or Entangled Power Cell matters more.',
+  },
+  {
+    title: 'Old scarcity advice needs a date',
+    body: 'Hotfix 2 added more late-game Troilite resource areas. If a guide says there is only one tight source, check whether it was retested after May 28, 2026.',
+  },
+  {
+    title: 'Do not run the route tired',
+    body: 'Troilite sits in the kind of route where small mistakes stack up: depth, predators, power, and panic. Bank partial progress instead of forcing one heroic dive.',
+  },
+];
+
 const faqs = [
   {
     title: 'Where do you find Troilite in Subnautica 2?',
@@ -299,6 +314,25 @@ export default async function TroiliteGuidePage({
                   </li>
                 ))}
               </ul>
+            </section>
+
+            <section>
+              <h2 className="text-3xl font-semibold text-[#effffb]">
+                Field notes
+              </h2>
+              <div className="mt-5 grid gap-4">
+                {fieldNotes.map((note) => (
+                  <section
+                    key={note.title}
+                    className="border border-cyan-200/12 bg-[#071f23] p-5"
+                  >
+                    <h3 className="font-semibold text-[#78ead7]">
+                      {note.title}
+                    </h3>
+                    <p className="mt-3 leading-7 text-[#abc8c3]">{note.body}</p>
+                  </section>
+                ))}
+              </div>
             </section>
 
             <section className="border border-cyan-200/12 bg-[#071f23] p-6">

@@ -74,6 +74,21 @@ const useRows = [
   ],
 ];
 
+const fieldNotes = [
+  {
+    title: 'Mark the way home before mining',
+    body: 'The Atacamite cluster is not useful if you cannot repeat the dive. Drop a beacon or write the route from the Research Base before filling your inventory.',
+  },
+  {
+    title: 'Bring a real mining loadout',
+    body: 'This is not a swim-by pickup. Treat it like a Sonic Resonator trip with depth, power, storage, and return timing solved before you leave base.',
+  },
+  {
+    title: 'Keep Atacamite and Troilite together in storage',
+    body: 'Mangalloy planning gets messy when the two rare inputs live in different lockers. Put them in one marked rare-metal box and avoid surprise co-op spending.',
+  },
+];
+
 const faqs = [
   {
     title: 'Where do you find Atacamite in Subnautica 2?',
@@ -252,6 +267,25 @@ export default async function AtacamiteGuidePage({
                 your resource storage so you do not accidentally spend all of
                 it.
               </p>
+            </section>
+
+            <section>
+              <h2 className="text-3xl font-semibold text-[#effffb]">
+                Field notes
+              </h2>
+              <div className="mt-5 grid gap-4">
+                {fieldNotes.map((note) => (
+                  <section
+                    key={note.title}
+                    className="border border-cyan-200/12 bg-[#071f23] p-5"
+                  >
+                    <h3 className="font-semibold text-[#78ead7]">
+                      {note.title}
+                    </h3>
+                    <p className="mt-3 leading-7 text-[#abc8c3]">{note.body}</p>
+                  </section>
+                ))}
+              </div>
             </section>
 
             <section>

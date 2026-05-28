@@ -74,6 +74,21 @@ const rules = [
   'Treat Mangalloy as a chain, not a single item: gather raw inputs, process basic ingots, then craft.',
 ];
 
+const fieldNotes = [
+  {
+    title: 'Make the decision before opening the Fabricator',
+    body: 'Mangalloy feels like an obvious upgrade craft, but the real choice is whether raw Troilite should seed a Metal Farm first. Decide that before the recipe screen tempts you.',
+  },
+  {
+    title: 'One ingot is a route receipt',
+    body: 'When you finish the first Mangalloy, write down where its rare inputs came from. The next repair or build step will be easier if the route is already repeatable.',
+  },
+  {
+    title: 'Keep co-op storage boring',
+    body: 'Rare-metal lockers should be plainly named. A beautiful base does not help if a teammate turns the only Troilite into the wrong craft.',
+  },
+];
+
 const faqs = [
   {
     title: 'How do you make Mangalloy Ingot in Subnautica 2?',
@@ -268,6 +283,25 @@ export default async function MangalloyGuidePage({
                   </li>
                 ))}
               </ul>
+            </section>
+
+            <section>
+              <h2 className="text-3xl font-semibold text-[#effffb]">
+                Field notes
+              </h2>
+              <div className="mt-5 grid gap-4">
+                {fieldNotes.map((note) => (
+                  <section
+                    key={note.title}
+                    className="border border-cyan-200/12 bg-[#071f23] p-5"
+                  >
+                    <h3 className="font-semibold text-[#78ead7]">
+                      {note.title}
+                    </h3>
+                    <p className="mt-3 leading-7 text-[#abc8c3]">{note.body}</p>
+                  </section>
+                ))}
+              </div>
             </section>
 
             <section>
