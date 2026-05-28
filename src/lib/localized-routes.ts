@@ -761,7 +761,6 @@ const zhOnlyRoutes = [
   Routes.Subnautica2MetalFarm,
   Routes.Subnautica2MetalSalvage,
   Routes.Subnautica2ModificationStation,
-  Routes.Subnautica2Moonpool,
   Routes.Subnautica2NecroleiCyst,
   Routes.Subnautica2PlasteelIngot,
   Routes.Subnautica2PowerPlantObservatory,
@@ -784,6 +783,7 @@ const zhJaRoutes = [
   Routes.Subnautica2AdvancedBattery,
   Routes.Subnautica2Biolab,
   Routes.Subnautica2EchoLocation,
+  Routes.Subnautica2Moonpool,
   Routes.Subnautica2PowerCell,
   Routes.Subnautica2Processor,
 ] as const;

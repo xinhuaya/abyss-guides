@@ -339,7 +339,160 @@ const moonpoolCopy: Record<string, MoonpoolCopy> = {
 
 const fallbackCopy = moonpoolCopy.en;
 
+moonpoolCopy.ja = {
+  metadata: {
+    title: 'Subnautica 2 Moonpool ガイド - 解除、素材、Tadpole Dock、配置',
+    description:
+      'Subnautica 2のMoonpoolガイド。スキャン解除、Titanium x5、Habitat Builder配置、Tadpole Dockの余白、Vehicle Fabricator、insufficient space対策を整理します。',
+  },
+  eyebrow: 'Subnautica 2 車両ベイ準備',
+  title: 'Subnautica 2 Moonpool ガイド',
+  description:
+    'Moonpoolは素材より配置で悩みやすい基地パーツです。下に十分な水深があるか、Tadpoleがまっすぐ入れるか、DockやVehicle Fabricatorが近くで邪魔しないかを先に見ておくと、後の作り直しが減ります。',
+  quickLabel: '要点',
+  quickAnswer:
+    '現在のSubnautica2.ggデータでは、MoonpoolはスキャンやData Box系の解除ルートを持つ設計図として掲載されています。Dexertoは現在の建築コストをTitanium x5、建築手段をHabitat Builderとしています。PC GamerとAllThingsHowはMoonpoolをTadpole DockやVehicle Fabricatorの車両ルートと結びつけており、Shacknewsはよくある「insufficient space to dock」を余白と配置の問題として扱っています。開けた水域に置き、下と入口を空け、Beaconで戻り先を示してから周辺パーツを増やしましょう。',
+  fieldNotesTitle: 'Moonpool配置メモ',
+  fieldNotes: [
+    {
+      title: '車両側から進入ラインを見る',
+      body: '基地の壁側から見ると置けそうでも、Tadpoleで入ると角度が悪いことがあります。確定前に入口の泳ぎやすさを一度確認します。',
+    },
+    {
+      title: '窮屈なら早めに作り直す',
+      body: 'Titanium x5は、毎回のドッキングで引っかかる時間より安いコストです。装飾や増築の前に違和感があれば移動しましょう。',
+    },
+    {
+      title: '車両拠点には分かる名前を付ける',
+      body: 'Moonpoolはルートの中心になります。Beacon名は「Tadpole bay」や「east vehicle base」のように、何のための場所か分かる名前にします。',
+    },
+  ],
+  routeChecklistTitle: 'ベイ確認',
+  routeChecklist: [
+    'Moonpoolの下と周囲に開けた水域がある。',
+    'Tadpole側から進入ラインを試した。',
+    '増築前にBeaconで車両ベイを示した。',
+    'Tadpole DockとVehicle Fabricatorを近くに置ける余白がある。',
+  ],
+  contentsLabel: '目次',
+  routeTitle: 'Moonpool設置ルート',
+  routeSteps: [
+    {
+      title: '素材集めの前に解除を確認する',
+      body: 'Subnautica2.ggはMoonpoolをスキャンやData Box系の手掛かりがある設計図として掲載しています。先に解除ルートを済ませ、PDAで建築可能か確認してから素材を運びます。',
+    },
+    {
+      title: 'レシピはシンプルに見る',
+      body: 'DexertoはMoonpoolをHabitat Builderで建てる基地パーツとして扱い、素材をTitanium x5としています。コストは重すぎないので、配置ミスなら早めに直せます。',
+    },
+    {
+      title: '開けた水域に置く',
+      body: 'Moonpoolは普通の部屋より空間を使います。下にはDockの余白、側面にはTadpoleの進入角度、周囲には地形や基地パーツとの距離が必要です。',
+    },
+    {
+      title: '飾る前にBeaconを置く',
+      body: 'Moonpool付近にBeaconを置くと、TitaniumやGlass、電力素材を運んでいる間も車両拠点を見失いません。暗い海で自分の基地を探す時間を減らせます。',
+    },
+    {
+      title: 'DockとVehicle Fabricatorを一緒に考える',
+      body: 'PC GamerとAllThingsHowは、Moonpool、Tadpole Dock、Vehicle Fabricatorを同じ車両ルートとして扱っています。空いている壁ではなく、車両が通る線に合わせて置きましょう。',
+    },
+    {
+      title: 'insufficient spaceは配置で直す',
+      body: 'ゲームがinsufficient spaceを出すなら、プレビュー角度で粘るより場所を疑います。Shacknewsも余白の問題として扱っているので、より深く開けた水域に移すのが早いです。',
+    },
+  ],
+  tableTitle: 'Moonpool チェックリスト',
+  tableHeaders: ['必要なもの', '確認すること'],
+  tableRows: [
+    [
+      '設計図解除',
+      '現在の公開データではスキャンやData Box系の手掛かりがあります。',
+    ],
+    ['Titanium x5', 'Dexertoが現在の建築コストとして掲載しています。'],
+    ['Habitat Builder', '現在の基地パーツページではHabitat Builder建築です。'],
+    ['開けた水域', 'ベイの下と周囲に十分な空間があること。'],
+    ['Beacon', '基地が広がる前に車両ベイを分かりやすく示します。'],
+    ['Tadpole Dock', 'Moonpoolに十分な余白があると確認してから置きます。'],
+    ['Vehicle Fabricator', '同じ進入ルートの近くで計画します。'],
+  ],
+  visualTitle: 'ベイ配置カード',
+  visualItems: [
+    {
+      label: '下部',
+      value: '空ける',
+      note: 'Dockには水深と余白が必要です。',
+    },
+    {
+      label: '素材',
+      value: '5 Ti',
+      note: '配置が悪ければ作り直せるコストです。',
+    },
+    {
+      label: 'ルート',
+      value: 'Tadpole',
+      note: 'プレビューより進入角度を重視します。',
+    },
+  ],
+  cautionTitle: '窮屈なMoonpoolは毎回の車両移動を悪くする',
+  cautionBody:
+    'Tadpoleを岩や基地パーツの間にねじ込む必要があるなら、Moonpoolの位置が合っていません。序盤に1回作り直すほうが、その後の十数回の出入りよりずっと楽です。',
+  faqTitle: 'FAQ',
+  faqs: [
+    {
+      title: 'Moonpoolはどう解除しますか？',
+      body: '現在のSubnautica2.ggデータでは、MoonpoolはスキャンやData Box系の解除手掛かりを持つ設計図として掲載されています。Early Access中なので、スキャン後はPDAで確認しましょう。',
+    },
+    {
+      title: 'Moonpoolの素材は何ですか？',
+      body: 'Dexertoは現在、MoonpoolをHabitat Builderで作る基地パーツとして掲載し、素材をTitanium x5としています。',
+    },
+    {
+      title: 'Moonpoolはどこに置くべきですか？',
+      body: '下に水深があり、側面も開けた水域に置きます。浅い底、岩壁の近く、混み合った基地レイアウトは避けます。',
+    },
+    {
+      title: 'insufficient space to dockが出る原因は？',
+      body: '多くは余白不足です。Moonpoolを地形から離すか、より深く開けた水域で車両ベイを作り直してからTadpole Dockを追加します。',
+    },
+  ],
+  readNextTitle: '次に読む',
+  related: [
+    {
+      href: Routes.Subnautica2InsufficientSpaceToDock,
+      label: 'Insufficient Space to Dock 修正',
+    },
+    { href: Routes.Subnautica2BaseBuilding, label: '基地建築ガイド' },
+    { href: Routes.Subnautica2HabitatBuilder, label: 'Habitat Builder ガイド' },
+    { href: Routes.Subnautica2TadpoleDock, label: 'Tadpole Dock ガイド' },
+    {
+      href: Routes.Subnautica2VehicleFabricator,
+      label: 'Vehicle Fabricator ガイド',
+    },
+    { href: Routes.Subnautica2Tadpole, label: 'Tadpole 車両ガイド' },
+    { href: Routes.Subnautica2Beacon, label: 'Beacon ガイド' },
+    { href: Routes.Subnautica2Titanium, label: 'Titanium 入手ガイド' },
+    { href: Routes.Subnautica2Glass, label: 'Glass レシピガイド' },
+    { href: Routes.Subnautica2Crafting, label: 'クラフトガイド' },
+  ],
+  sourcesTitle: '出典メモ',
+  sourceBody:
+    '2026年5月28日にSubnautica2.gg、Dexerto、PC Gamer、Shacknewsで確認。Subnautica 2はEarly Access中のため、解除ルート、建築素材、配置挙動、ドッキングエラーはパッチで変わる可能性があります。',
+  cardKicker: '車両ベイカード',
+  cardBody:
+    'スキャン/Data Box解除、Titanium x5、Habitat Builder配置、Tadpole Dockの余白、Vehicle Fabricator連携、insufficient space対策。',
+  cardTypeLabel: '種類',
+  cardTypeValue: '基地パーツガイド',
+  cardVerifiedLabel: '確認日',
+  cardStatusLabel: '状態',
+  cardStatusValue: 'Early Access',
+};
+
 for (const locale of ['ja', 'de', 'fr', 'pt-BR', 'es-419', 'ko', 'ru']) {
+  if (moonpoolCopy[locale]) {
+    continue;
+  }
+
   moonpoolCopy[locale] = {
     ...fallbackCopy,
     metadata: {
