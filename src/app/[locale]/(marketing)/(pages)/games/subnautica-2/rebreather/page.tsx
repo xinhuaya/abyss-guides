@@ -373,14 +373,141 @@ rebreatherCopy.zh = {
 };
 
 rebreatherCopy.ja = {
-  ...fallbackCopy,
   metadata: {
-    title: 'Subnautica 2 Rebreather Guide',
+    title: 'Subnautica 2 Rebreather ガイド - レシピ、解除、深潜りのタイミング',
     description:
-      'Guide for Rebreather unlock, System Chip, Fiber Mesh x2, Wiring Kit, oxygen depth planning, and deep-route timing.',
+      'Subnautica 2のRebreatherガイド。Blueprint Analyzer解除、System Chip、Fiber Mesh x2、Wiring Kit、酸素と深度、作るタイミングを整理します。',
   },
+  eyebrow: 'Subnautica 2 呼吸装備',
+  title: 'Subnautica 2 Rebreather ガイド',
+  description:
+    'Rebreatherは、深度による酸素消費が探索ルートを苦しくし始めた時に作る装備です。空気タンクそのものを増やす道具ではありませんが、深めの往復をかなり落ち着かせてくれます。',
+  quickLabel: '要点',
+  quickAnswer:
+    'GameSpotはRebreatherを序盤のBlueprint Analyzer解除として紹介しています。PC Gamerは、Rebreatherがタンク容量を増やすのではなく、深い場所での酸素消費を抑える装備だと説明し、素材をSystem Chip x1とFiber Mesh x2としています。Early Access中はメニュー文言が変わる可能性があるので、素材集めの前に自分のセーブ内のレシピを確認しましょう。',
+  fieldNotesTitle: '深潜り用メモ',
+  fieldNotes: [
+    {
+      title: '深度ペナルティを和らげる装備',
+      body: 'Rebreatherは深い場所で酸素が減りやすい問題を軽くします。ただし目印がない、出口を決めていない、荷物が満タンのルートまでは救ってくれません。',
+    },
+    {
+      title: 'System ChipはSilverの圧力につながる',
+      body: 'レシピにSystem Chipがあるなら、裏側ではWiring KitとSilverの在庫を見ています。最後のSilverを使う前に、次の重要クラフトを確認しましょう。',
+    },
+    {
+      title: '深い用事が見えてから作る',
+      body: '浅いループが中心なら、Air Tank強化や帰り道の整理のほうが効くこともあります。深めの用事が本当に出てきたタイミングで作ると無駄が少ないです。',
+    },
+  ],
+  routeChecklistTitle: 'Rebreather確認',
+  routeChecklist: [
+    'Blueprint Analyzerで解除が見えている。',
+    'メニュー上のSystem ChipとFiber Mesh要求を確認した。',
+    'Silverをより急ぎのクラフトから奪っていない。',
+    '次のルートがRebreatherを使う深さに入っている。',
+  ],
+  contentsLabel: '目次',
+  routeTitle: 'Rebreather制作計画',
+  routeSteps: [
+    {
+      title: '素材集めの前に解除する',
+      body: 'GameSpotはRebreatherをBlueprint Analyzerの序盤解除として扱っています。メニューに見えていないなら、先にAnalyzerを進め、素材だけを集める遠回りを避けます。',
+    },
+    {
+      title: '何を解決する装備かを知る',
+      body: 'Rebreatherは大きな空気タンクではありません。深度ペナルティで酸素が速く減る場面に使い、長いルートではAir Tank強化と組み合わせます。',
+    },
+    {
+      title: '電子素材のチェーンをたどる',
+      body: 'System ChipはWiring Kitへ戻り、Wiring KitはSilver不足につながりがちです。Silverが少ない時は、Rebreatherが次の本当の詰まりかを先に見ます。',
+    },
+    {
+      title: 'Fiber Meshを2つ計画に入れる',
+      body: 'PC GamerはRebreather素材としてFiber Mesh x2を掲載しています。植物素材のルートが整っている時は安いですが、出発直前の用事にすると面倒です。',
+    },
+    {
+      title: '短距離ではなく深度のために作る',
+      body: 'Rebreatherが強いのは、深さのせいで酸素消費が痛くなってきたルートです。拠点近くの浅いスキャンなら、タンクやルート整理を優先したほうがよい場合もあります。',
+    },
+    {
+      title: '帰還ルールは残す',
+      body: '呼吸装備がよくなっても、迷子や欲張りは別問題です。出口を決め、予備酸素を残し、うまくいきすぎていると感じる前に戻りましょう。',
+    },
+  ],
+  tableTitle: 'Rebreather チェックリスト',
+  tableHeaders: ['必要なもの', '確認すること'],
+  tableRows: [
+    ['解除', 'GameSpotはBlueprint Analyzer解除として紹介しています。'],
+    ['System Chip x1', '電子素材チェーンの確認が必要です。'],
+    ['Fiber Mesh x2', 'PC Gamerは2つ必要と掲載しています。'],
+    ['Wiring Kit', 'System Chipの裏側でSilverと一緒に見ておく素材です。'],
+    ['使いどころ', '深度による酸素消費が目立つルートで価値が出ます。'],
+  ],
+  visualTitle: '深潜り装備チェーン',
+  visualItems: [
+    {
+      label: '解除',
+      value: 'Analyzer',
+      note: '素材集めの前にBlueprint Analyzerを確認。',
+    },
+    {
+      label: '制作',
+      value: 'Gear',
+      note: 'System ChipとFiber Meshが主な確認点です。',
+    },
+    {
+      label: '潜航',
+      value: '深いルート',
+      note: '酸素消費が痛くなる場所で使います。',
+    },
+  ],
+  cautionTitle: 'レシピ表記の違いに振り回されない',
+  cautionBody:
+    '攻略ページによって、完成部品で書く場合と、その下の素材チェーンまで書く場合があります。Fabricatorや装備メニューを開き、自分のセーブに表示されている文言を基準にしましょう。',
+  faqTitle: 'FAQ',
+  faqs: [
+    {
+      title: 'Rebreatherはどう解除しますか？',
+      body: 'GameSpotは序盤のBlueprint Analyzer解除として紹介しています。表示されない場合は、まずAnalyzerの進行を確認してください。',
+    },
+    {
+      title: 'Rebreatherのレシピは？',
+      body: 'PC GamerはSystem Chip x1とFiber Mesh x2を掲載しています。Early Access中は変わる可能性があるので、作る前にゲーム内メニューで確認しましょう。',
+    },
+    {
+      title: 'いつ作るべきですか？',
+      body: '深いルートで酸素消費がきつくなってきた時です。浅い移動が中心なら、Air Tank強化や道順の改善が先でも構いません。',
+    },
+    {
+      title: 'Rebreatherは酸素上限を増やしますか？',
+      body: 'いいえ。深度による酸素消費を抑える装備です。酸素上限を増やすにはAir Tank系の準備も必要です。',
+    },
+  ],
+  readNextTitle: '次に読む',
+  related: [
+    { href: Routes.Subnautica2ImprovedFins, label: 'Improved Fins ガイド' },
+    { href: Routes.Subnautica2OxygenDepth, label: '酸素と深度ガイド' },
+    { href: Routes.Subnautica2AirTank, label: 'Air TankとO2' },
+    { href: Routes.Subnautica2SystemChip, label: 'System Chip ガイド' },
+    { href: Routes.Subnautica2WiringKit, label: 'Wiring Kit ガイド' },
+    { href: Routes.Subnautica2FiberMesh, label: 'Fiber Mesh ガイド' },
+    { href: Routes.Subnautica2StrongAcid, label: 'Strong Acid ガイド' },
+    { href: Routes.Subnautica2Processor, label: 'Processor ガイド' },
+    { href: Routes.Subnautica2Wakemaker, label: 'Wakemaker ガイド' },
+    { href: Routes.Subnautica2Crafting, label: 'クラフトガイド' },
+  ],
+  sourcesTitle: '出典メモ',
   sourceBody:
-    'Checked May 27, 2026 against PC Gamer, GameSpot, Subnautica 2 Wiki, Mobalytics, and Serenes Forest. Early Access recipe text and unlock wording can change.',
+    '2026年5月27日にPC Gamer、GameSpot、Subnautica 2 Wiki、Mobalytics、Serenes Forestで確認。Early Access中はレシピ文言や解除条件が変わる可能性があるため、ゲーム内メニューでの確認を前提にしています。',
+  cardKicker: '呼吸装備カード',
+  cardBody:
+    'Blueprint Analyzer解除、System Chip、Fiber Mesh、Wiring Kitチェーン、深いルートでの酸素消費対策。',
+  cardTypeLabel: '種類',
+  cardTypeValue: '装備ガイド',
+  cardVerifiedLabel: '確認日',
+  cardStatusLabel: '状態',
+  cardStatusValue: 'Early Access',
 };
 
 for (const locale of ['ja', 'de', 'fr', 'pt-BR', 'es-419', 'ko', 'ru']) {
