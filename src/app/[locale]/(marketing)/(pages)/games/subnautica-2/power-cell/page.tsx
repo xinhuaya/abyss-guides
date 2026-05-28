@@ -16,7 +16,7 @@ type PowerCellCopy = ResourceGuideCopy & {
 };
 
 const PUBLISHED_AT = '2026-05-26';
-const UPDATED_AT = '2026-05-27';
+const UPDATED_AT = '2026-05-28';
 
 const sharedSources = [
   {
@@ -48,6 +48,28 @@ const powerCellCopy: Record<string, PowerCellCopy> = {
     quickLabel: 'Quick answer',
     quickAnswer:
       'Current Subnautica2.gg and Subnautica2Hub blueprint pages list Power Cell as a Fabricator craft using Basic Battery x2, Strong Acid x1, and Salt x1. PC Gamer notes that Power Cell is part of the Tadpole craft, so treat it as a vehicle milestone rather than a spare battery. Make the batteries first, confirm Strong Acid, keep one Salt aside, then craft the cell when the Tadpole plan is ready. If you are already chasing Advanced Battery or Entangled Power Cell, keep those rare-material routes separate.',
+    fieldNotesTitle: 'Field notes for vehicle power',
+    fieldNotes: [
+      {
+        title: 'Do not eat your tool batteries',
+        body: 'A Power Cell feels like progress until your Scanner or Repair Tool is dead. Replace the Basic Batteries first, then feed two into the vehicle chain.',
+      },
+      {
+        title: 'Strong Acid is the real errand',
+        body: 'Copper and Salt are easy to notice. Strong Acid is the piece that makes this route branch into Processor and Necrolei Cyst planning.',
+      },
+      {
+        title: 'Keep rare power in another box',
+        body: 'Advanced Battery and Entangled Power Cell routes pull from deeper materials. Mixing those parts with normal Power Cell prep is how lockers become soup.',
+      },
+    ],
+    routeChecklistTitle: 'Power Cell check',
+    routeChecklist: [
+      'Two spare Basic Batteries are ready, not stolen from tools.',
+      'Strong Acid route is solved before final crafting.',
+      'One Salt is reserved for the cell.',
+      'Advanced power materials stay in a separate locker.',
+    ],
     contentsLabel: 'Contents',
     routeTitle: 'Power Cell route',
     routeSteps: [
@@ -313,6 +335,28 @@ powerCellCopy.zh = {
   ...powerCellCopy.zh,
   quickAnswer:
     'Subnautica2.gg 和 Subnautica2Hub 当前把 Power Cell 写成 Fabricator 制作，配方是 Basic Battery x2、Strong Acid x1、Salt x1。PC Gamer 提到 Power Cell 是 Tadpole 制作链的一部分，所以别把它当普通备用电池。先做两块 Basic Battery，确认 Strong Acid，留一块 Salt，等 Tadpole 其他环节接近完成时再合成。如果你已经在做 Advanced Battery 或 Entangled Power Cell，把那些稀有材料路线单独放，不要混进普通 Power Cell 箱子。',
+  fieldNotesTitle: '载具供电笔记',
+  fieldNotes: [
+    {
+      title: '别吃掉工具电池',
+      body: 'Power Cell 看起来像进度，但 Scanner 或 Repair Tool 没电会更烦。先补齐工具电池，再把两块 Basic Battery 合进去。',
+    },
+    {
+      title: 'Strong Acid 才是真跑腿',
+      body: 'Copper 和 Salt 很容易想起来，真正让路线分叉的是 Strong Acid，它会把你带到 Processor 和 Necrolei Cyst 链上。',
+    },
+    {
+      title: '稀有供电材料另放一箱',
+      body: 'Advanced Battery 和 Entangled Power Cell 会拉到更深材料。把它们和普通 Power Cell 材料混放，柜子很快就会看不懂。',
+    },
+  ],
+  routeChecklistTitle: 'Power Cell 检查',
+  routeChecklist: [
+    '两块 Basic Battery 是备用，不是从工具里拆的。',
+    'Strong Acid 路线已经解决，再最终合成。',
+    '提前留一块 Salt 给 Power Cell。',
+    '高级供电材料放在单独柜子里。',
+  ],
   routeSteps: [
     ...powerCellCopy.zh.routeSteps,
     {

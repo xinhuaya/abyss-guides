@@ -16,7 +16,7 @@ type RebreatherCopy = ResourceGuideCopy & {
 };
 
 const PUBLISHED_AT = '2026-05-26';
-const UPDATED_AT = '2026-05-27';
+const UPDATED_AT = '2026-05-28';
 
 const sharedSources = [
   {
@@ -56,6 +56,28 @@ const rebreatherCopy: Record<string, RebreatherCopy> = {
     quickLabel: 'Quick answer',
     quickAnswer:
       'Current GameSpot reporting points to the Rebreather as an early Blueprint Analyzer unlock, while PC Gamer explains that it reduces the oxygen drain from deeper dives instead of increasing the tank itself. PC Gamer lists the craft as System Chip x1 and Fiber Mesh x2. Some database pages have used different Fiber Mesh wording, so confirm the exact menu text in your save before farming.',
+    fieldNotesTitle: 'Field notes for deeper breathing',
+    fieldNotes: [
+      {
+        title: 'It solves depth drain, not bad routes',
+        body: 'The Rebreather helps when depth eats oxygen faster. It does not fix a route with no landmarks, no exit plan, and a full backpack.',
+      },
+      {
+        title: 'System Chip means Silver pressure',
+        body: 'If the recipe asks for System Chip, you are really checking the Wiring Kit and Silver chain underneath. Do not spend your last Silver without looking at the next craft.',
+      },
+      {
+        title: 'Craft it when the route is already calling for it',
+        body: 'If shallow loops are still your main work, tank upgrades and cleaner pathing may matter more. Craft Rebreather when deeper errands are actually on the board.',
+      },
+    ],
+    routeChecklistTitle: 'Rebreather check',
+    routeChecklist: [
+      'Blueprint Analyzer unlock is visible.',
+      'System Chip and Fiber Mesh needs are checked in the menu.',
+      'Silver is not stolen from a more urgent craft.',
+      'The next route is deep enough to justify it.',
+    ],
     contentsLabel: 'Contents',
     routeTitle: 'Rebreather craft plan',
     routeSteps: [
@@ -275,6 +297,28 @@ rebreatherCopy.zh = {
   ...rebreatherCopy.zh,
   quickAnswer:
     'GameSpot 当前把 Rebreather 写成前期 Blueprint Analyzer 解锁；PC Gamer 说明它不是增加氧气上限，而是减少深潜时的氧气消耗。PC Gamer 当前配方是 System Chip x1 和 Fiber Mesh x2。部分资料库对 Fiber Mesh 数量写法不同，正式刷材料前先看你存档里的菜单。',
+  fieldNotesTitle: '深水呼吸笔记',
+  fieldNotes: [
+    {
+      title: '它解决深度耗氧，不解决烂路线',
+      body: 'Rebreather 能缓解深度带来的氧气消耗，但它不能修复没有地标、没有出口计划、背包还满的路线。',
+    },
+    {
+      title: 'System Chip 背后就是 Silver 压力',
+      body: '如果配方要 System Chip，本质上是在检查 Wiring Kit 和 Silver 链。花掉最后一块 Silver 前，先看下一件关键制作。',
+    },
+    {
+      title: '路线真的需要时再做',
+      body: '如果你主要还在跑浅水循环，气瓶升级和路线整理可能更优先。等深水任务真的摆上桌，再做 Rebreather。',
+    },
+  ],
+  routeChecklistTitle: 'Rebreather 检查',
+  routeChecklist: [
+    'Blueprint Analyzer 里已经能看到解锁。',
+    '菜单里的 System Chip 和 Fiber Mesh 需求已确认。',
+    'Silver 没有从更紧急的制作里抢走。',
+    '下一条路线深到确实需要它。',
+  ],
   routeSteps: [
     {
       title: '先解锁，再刷材料',

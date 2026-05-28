@@ -16,7 +16,7 @@ type RepairToolCopy = ResourceGuideCopy & {
 };
 
 const PUBLISHED_AT = '2026-05-26';
-const UPDATED_AT = '2026-05-27';
+const UPDATED_AT = '2026-05-28';
 
 const sharedSources = [
   {
@@ -52,6 +52,28 @@ const repairToolCopy: Record<string, RepairToolCopy> = {
     quickLabel: 'Quick answer',
     quickAnswer:
       'Current Subnautica2.gg and Subnautica2Hub data list Repair Tool as a scan-unlocked tool crafted at the Fabrication Station / Fabricator with Titanium Ingot, Wiring Kit, Basic Battery, and Sulfur. PC Gamer currently reports 2 Titanium Ingots while the database pages list 1, so check your PDA before the final craft. Build it before the Tadpole, Karakorum, or deeper power routes start turning small damage into lost time.',
+    fieldNotesTitle: 'Field notes for repair prep',
+    fieldNotes: [
+      {
+        title: 'Craft it before the first scary trip',
+        body: 'The Repair Tool feels optional until a long route goes wrong. Make it while you are calm, not when the Tadpole is smoking near a bad landmark.',
+      },
+      {
+        title: 'Battery charge matters as much as the tool',
+        body: 'A dead Repair Tool is just another item in the hotbar. Keep one charged Basic Battery near the kit before vehicle or base-power runs.',
+      },
+      {
+        title: 'Sulfur is small but easy to spend',
+        body: 'Reserve one piece for repairs. It is annoying to finish the scans and ingot work, then lose the craft to a material you thought was common.',
+      },
+    ],
+    routeChecklistTitle: 'Repair check',
+    routeChecklist: [
+      'Repair Tool scans are complete before material farming.',
+      'Titanium Ingot count is checked in the PDA.',
+      'One charged Basic Battery is saved for the tool.',
+      'Sulfur is reserved before vehicle routes.',
+    ],
     contentsLabel: 'Contents',
     routeTitle: 'Repair Tool unlock and craft plan',
     routeSteps: [
@@ -193,6 +215,28 @@ const repairToolCopy: Record<string, RepairToolCopy> = {
     quickLabel: '快速结论',
     quickAnswer:
       'Subnautica2.gg 和 Subnautica2Hub 当前资料把 Repair Tool 写成扫描解锁工具，在 Fabrication Station / Fabricator 用 Titanium Ingot、Wiring Kit、Basic Battery 和 Sulfur 制作。PC Gamer 当前写 Titanium Ingot x2，而数据库页写 x1，所以最终制作前看一眼 PDA。Subnautica2.gg 当前还写到需要扫描 3 个 Repair Tool，并列出 11 个扫描位置。',
+    fieldNotesTitle: '维修准备笔记',
+    fieldNotes: [
+      {
+        title: '第一次危险路线前就做出来',
+        body: 'Repair Tool 看起来像可选项，直到长路线出事。趁路线还平稳时做出来，不要等 Tadpole 冒烟才想起它。',
+      },
+      {
+        title: '有工具还要有电',
+        body: '没电的 Repair Tool 只是快捷栏里的摆设。跑载具或基地供电路线前，旁边留一块充好的 Basic Battery。',
+      },
+      {
+        title: 'Sulfur 小，但很容易被花掉',
+        body: '提前给维修留一份。扫描和 ingot 都做完了，最后卡在一个以为很普通的材料上，会很烦。',
+      },
+    ],
+    routeChecklistTitle: '维修检查',
+    routeChecklist: [
+      'Repair Tool 扫描完成后再集中刷材料。',
+      'Titanium Ingot 数量以 PDA 为准。',
+      '给工具留一块充好的 Basic Battery。',
+      '跑载具路线前，Sulfur 已经预留。',
+    ],
     contentsLabel: '目录',
     routeTitle: 'Repair Tool 解锁和制作路线',
     routeSteps: [

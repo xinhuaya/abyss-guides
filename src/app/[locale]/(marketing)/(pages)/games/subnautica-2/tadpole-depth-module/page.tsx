@@ -16,7 +16,7 @@ type TadpoleDepthModuleCopy = ResourceGuideCopy & {
 };
 
 const PUBLISHED_AT = '2026-05-25';
-const UPDATED_AT = '2026-05-27';
+const UPDATED_AT = '2026-05-28';
 
 const sharedSources = [
   {
@@ -52,6 +52,28 @@ const tadpoleDepthModuleCopy: Record<string, TadpoleDepthModuleCopy> = {
     quickLabel: 'Quick answer',
     quickAnswer:
       'Scan the Tadpole Depth Module Mk.1 fragments around the deeper Alien Ruins route, with current reporting pointing toward a cave below a Needler nest southeast of the Alien Ruins Research Base. Prepare the Modification Station, Celestine, Enameled Glass, and a System Chip before expecting the upgrade to happen quickly. After installing it, use the extra depth for Feedback Resonator, rare resource, and deeper base-route planning.',
+    fieldNotesTitle: 'Field notes for the Mk.1 push',
+    fieldNotes: [
+      {
+        title: 'Do not chase depth with a tired vehicle',
+        body: 'The scan route is exactly where weak power, hull damage, and sloppy parking start to matter. Repair and charge first, then go looking for the module.',
+      },
+      {
+        title: 'Park like you plan to leave fast',
+        body: 'Face the Tadpole toward the exit before scanning. Needlers make a slow three-point turn feel much longer than it should.',
+      },
+      {
+        title: 'One deep goal per trip',
+        body: 'The first run after the upgrade should solve one thing: Feedback Resonator, a rare material loop, or a base route check. New depth is tempting. Keep it boring once.',
+      },
+    ],
+    routeChecklistTitle: 'Mk.1 check',
+    routeChecklist: [
+      'Tadpole is repaired and powered before the scan route.',
+      'Modification Station and recipe materials are staged at base.',
+      'Beacon or landmark note marks the Alien Ruins approach.',
+      'First deeper route has one named objective.',
+    ],
     contentsLabel: 'Contents',
     routeTitle: 'Depth Module route plan',
     routeSteps: [
@@ -426,6 +448,28 @@ const tadpoleDepthModuleCopy: Record<string, TadpoleDepthModuleCopy> = {
 
 tadpoleDepthModuleCopy.zh = {
   ...tadpoleDepthModuleCopy.zh,
+  fieldNotesTitle: 'Mk.1 深度推进笔记',
+  fieldNotes: [
+    {
+      title: '别开着疲劳载具去追深度',
+      body: '扫描路线正是电量不足、船体受损和停车随意开始惩罚你的地方。先修好、充好，再去找模块。',
+    },
+    {
+      title: '停车时就想着怎么跑',
+      body: '扫描前让 Tadpole 车头朝出口。Needler 在附近时，一个慢吞吞的掉头会显得特别漫长。',
+    },
+    {
+      title: '一次深水只做一个目标',
+      body: '升级后的第一趟深水最好只解决一件事：Feedback Resonator、稀有材料路线，或者基地路线检查。新深度很诱人，先让它无聊一次。',
+    },
+  ],
+  routeChecklistTitle: 'Mk.1 检查',
+  routeChecklist: [
+    '去扫描前，Tadpole 已修好并有足够电量。',
+    'Modification Station 和配方材料已在基地准备好。',
+    'Alien Ruins 入口有 Beacon 或清楚地标记录。',
+    '第一条更深路线只设一个明确目标。',
+  ],
   routeSteps: [
     {
       title: '先把支撑链做好',
