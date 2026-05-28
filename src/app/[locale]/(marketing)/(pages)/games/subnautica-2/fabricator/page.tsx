@@ -16,7 +16,7 @@ type FabricatorCopy = ResourceGuideCopy & {
 };
 
 const PUBLISHED_AT = '2026-05-27';
-const UPDATED_AT = '2026-05-27';
+const UPDATED_AT = '2026-05-29';
 
 const sharedSources = [
   {
@@ -48,6 +48,28 @@ const fabricatorCopy: Record<string, FabricatorCopy> = {
     quickLabel: 'Quick answer',
     quickAnswer:
       'Current Subnautica2.gg and PC Gamer data point to a buildable Fabricator that uses Titanium x1, Copper x1, and Quartz x1. PC Gamer frames it as the fully functional Fabricator upgrade: unlock base building, build a base room, craft the station with the Habitat Builder, then place it on an interior wall. Treat exact station names as Early Access wording and confirm your PDA after updates.',
+    fieldNotesTitle: 'Field notes for the first base bench',
+    fieldNotes: [
+      {
+        title: 'Build it where your hands already go',
+        body: 'A base Fabricator is not special because of the recipe. It is special because it sits beside storage, chargers, and finished parts instead of forcing every craft back through the Life Pod.',
+      },
+      {
+        title: 'Quartz is the ingredient people forget',
+        body: 'Titanium and Copper usually ride along with base work. Quartz is small enough to miss, so keep one piece in the same locker as your Habitat Builder materials.',
+      },
+      {
+        title: 'Make the wall boring on purpose',
+        body: 'The best Fabricator spot is not dramatic. It is a plain interior wall beside labeled boxes, close enough that Copper Wire, batteries, glass, and processors do not scatter across the base.',
+      },
+    ],
+    routeChecklistTitle: 'Before placing Fabricator',
+    routeChecklist: [
+      'Confirm base building and interior module placement are already unlocked.',
+      'Carry Titanium x1, Copper x1, Quartz x1, and a charged Habitat Builder.',
+      'Place at least two labeled storage boxes beside the station.',
+      'Keep Vehicle Fabricator materials in a different box so the recipes do not blur together.',
+    ],
     contentsLabel: 'Contents',
     routeTitle: 'Fabricator setup route',
     routeSteps: [
@@ -165,6 +187,28 @@ const fabricatorCopy: Record<string, FabricatorCopy> = {
     quickLabel: '快速结论',
     quickAnswer:
       '当前 Subnautica2.gg 和 PC Gamer 数据都指向可建造 Fabricator：材料是 Titanium x1、Copper x1、Quartz x1。PC Gamer 把它称为 fully functional Fabricator 升级：先解锁基地建造，建一个基地空间，再用 Habitat Builder 把它放在室内墙面上。抢先体验阶段名称可能变化，更新后以 PDA 为准。',
+    fieldNotesTitle: '第一台基地工作台笔记',
+    fieldNotes: [
+      {
+        title: '放在手最常去的位置',
+        body: '基地 Fabricator 的价值不在配方多复杂，而在它能和箱子、充电、半成品放在一起。这样你不用每做一件东西就游回 Life Pod。',
+      },
+      {
+        title: 'Quartz 最容易被忘掉',
+        body: 'Titanium 和 Copper 通常会跟着基地材料一起带，Quartz 因为太小反而容易漏。把一块 Quartz 和 Habitat Builder 材料放在同一个箱子里。',
+      },
+      {
+        title: '普通墙面反而最好用',
+        body: 'Fabricator 不需要摆在很炫的位置。最实用的是一面干净墙，旁边放原料箱和成品箱，Copper Wire、电池、玻璃和 Processor 都能顺手处理。',
+      },
+    ],
+    routeChecklistTitle: '放置 Fabricator 前',
+    routeChecklist: [
+      '先确认基地建造和室内模块已经解锁。',
+      '带齐 Titanium x1、Copper x1、Quartz x1，以及有电的 Habitat Builder。',
+      '工作台旁边至少放两个有标签的储物箱。',
+      'Vehicle Fabricator 材料单独放，避免两套配方混在一起。',
+    ],
     contentsLabel: '目录',
     routeTitle: 'Fabricator 设置路线',
     routeSteps: [

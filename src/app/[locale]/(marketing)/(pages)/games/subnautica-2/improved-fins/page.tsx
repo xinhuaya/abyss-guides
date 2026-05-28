@@ -16,7 +16,7 @@ type ImprovedFinsCopy = ResourceGuideCopy & {
 };
 
 const PUBLISHED_AT = '2026-05-26';
-const UPDATED_AT = '2026-05-27';
+const UPDATED_AT = '2026-05-29';
 
 const sharedSources = [
   {
@@ -52,6 +52,28 @@ const improvedFinsCopy: Record<string, ImprovedFinsCopy> = {
     quickLabel: 'Quick answer',
     quickAnswer:
       'Dexerto lists Improved Fins as feet-slot equipment crafted at the Fabricator from Basic Fins x1, Fiber Mesh x1, and Conduit Crystal x2, with a data card / scan unlock. GamesRadar+ says the blueprint comes from scanning three discarded pairs near the Alien Ruins route after mid-game story progress, and warns about Tadpole depth, Needlers, and needing a Rebreather for the area. Treat this as a Tadpole route: bring Repair Tool, Battery Terminal charged batteries, and enough oxygen to scan calmly.',
+    fieldNotesTitle: 'Field notes for the Alien Ruins swim',
+    fieldNotes: [
+      {
+        title: 'This is a route, not a shopping list',
+        body: 'The recipe is short, but the scan trip is the real cost. If you are not ready to leave the Tadpole, scan under pressure, and get back cleanly, the blueprint can wait.',
+      },
+      {
+        title: 'The old fins are part of the plan',
+        body: 'Improved Fins use the starter pair. Put Basic Fins in a known locker before the trip so the final craft does not turn into a second early-game material run.',
+      },
+      {
+        title: 'Charge tools before chasing fragments',
+        body: 'The scan route often stacks Scanner, Repair Tool, route markers, and a nervous Tadpole repair in the same outing. Weak batteries make the whole trip feel worse than it needs to.',
+      },
+    ],
+    routeChecklistTitle: 'Before chasing Improved Fins',
+    routeChecklist: [
+      'Bring Tadpole, Rebreather, Repair Tool, Scanner, and a real oxygen margin.',
+      'Store Basic Fins safely before collecting Conduit Crystal.',
+      'Charge Scanner and Repair Tool batteries before leaving base.',
+      'Mark the exit line before scanning around Alien Ruins debris.',
+    ],
     contentsLabel: 'Contents',
     routeTitle: 'Improved Fins route plan',
     routeSteps: [
@@ -178,6 +200,28 @@ const improvedFinsCopy: Record<string, ImprovedFinsCopy> = {
     quickLabel: '快速结论',
     quickAnswer:
       'Dexerto 把 Improved Fins 列为脚部装备，Fabricator 配方为 Basic Fins x1、Fiber Mesh x1 和 Conduit Crystal x2，并写有 data card / scan 解锁要求。GamesRadar+ 说蓝图来自 Alien Ruins 路线附近三双废弃 Improved Fins 的扫描，并提醒这条路线涉及 Tadpole 深度、Needlers 和 Rebreather。Subnautica2.gg 也把 Improved Fins 标为通过 Fabrication Station 制作的 fins。',
+    fieldNotesTitle: 'Alien Ruins 路线笔记',
+    fieldNotes: [
+      {
+        title: '这不是单纯的材料清单',
+        body: '配方本身不长，真正麻烦的是扫描路线。如果你还不能稳定离开 Tadpole、边扫边看氧气、再安全回车，那就先把这页收藏着。',
+      },
+      {
+        title: '旧 Basic Fins 也是材料',
+        body: 'Improved Fins 会吃掉第一双 Basic Fins。出发前把它放进固定箱子里，别到最后缺的不是稀有材料，而是开局装备。',
+      },
+      {
+        title: '电池状态会影响整趟体验',
+        body: '这条路线常常同时用到 Scanner、Repair Tool、路线标记和 Tadpole 维修。弱电池会把本来能稳稳完成的扫描变成手忙脚乱。',
+      },
+    ],
+    routeChecklistTitle: '追 Improved Fins 前',
+    routeChecklist: [
+      '带上 Tadpole、Rebreather、Repair Tool、Scanner，并留出足够氧气余量。',
+      '采 Conduit Crystal 前，先确认 Basic Fins 已经收好。',
+      '出门前给 Scanner 和 Repair Tool 换上满电电池。',
+      '围着 Alien Ruins 残骸扫描前，先标好返回路线。',
+    ],
     contentsLabel: '目录',
     routeTitle: 'Improved Fins 路线规划',
     routeSteps: [

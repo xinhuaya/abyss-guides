@@ -16,7 +16,7 @@ type WakemakerCopy = ResourceGuideCopy & {
 };
 
 const PUBLISHED_AT = '2026-05-25';
-const UPDATED_AT = '2026-05-27';
+const UPDATED_AT = '2026-05-29';
 
 const sharedSources = [
   {
@@ -48,6 +48,28 @@ const wakemakerCopy: Record<string, WakemakerCopy> = {
     quickLabel: 'Quick answer',
     quickAnswer:
       'Current PC Gamer reporting says Wakemaker fragments can be scanned around the safe shallows near Life Pod 1, with additional fragments in the Lily Pads. Subnautica2Hub lists the recipe as Titanium x1, Copper Wire x1, Basic Battery x1, and Fiber Mesh x1, with four scans required to unlock it. It belongs in the same early movement kit as Basic Fins, Air Tank, Scanner, and a charged tool battery.',
+    fieldNotesTitle: 'Field notes for the first powered swim',
+    fieldNotes: [
+      {
+        title: 'Sweep the shallows like you mean it',
+        body: 'Fragments around Life Pod 1 are easy to miss because the area feels safe and familiar. Slow down around debris edges before assuming your save only spawned the Lily Pads set.',
+      },
+      {
+        title: 'Four scans means four actual scans',
+        body: 'A partial blueprint does nothing for the next route. Check the PDA progress before leaving the area, especially if the last fragment is tucked beside wreckage or terrain.',
+      },
+      {
+        title: 'Treat Fiber Mesh as the trip tax',
+        body: 'Titanium and Copper Wire are usually already in your base rhythm. Fiber Mesh is the part that sends you back outside, so gather it before walking to the Fabricator.',
+      },
+    ],
+    routeChecklistTitle: 'Before crafting Wakemaker',
+    routeChecklist: [
+      'Finish the full scan count before leaving the fragment area.',
+      'Keep one Basic Battery unspent for the recipe.',
+      'Bring Fiber Mesh back with the electronics materials, not afterward.',
+      'Recharge Scanner or Repair Tool batteries if Lily Pads becomes the backup route.',
+    ],
     contentsLabel: 'Contents',
     routeTitle: 'Wakemaker unlock route',
     routeSteps: [
@@ -184,6 +206,28 @@ const wakemakerCopy: Record<string, WakemakerCopy> = {
     quickLabel: '快速结论',
     quickAnswer:
       'PC Gamer 当前报道说，Wakemaker 碎片可以先在 Life Pod 1 附近的安全浅滩找，Lily Pads 也有更多碎片。Subnautica2Hub 当前配方写的是 Titanium x1、Copper Wire x1、Basic Battery x1、Fiber Mesh x1，并列出需要 4 次扫描解锁。',
+    fieldNotesTitle: '第一次动力游泳笔记',
+    fieldNotes: [
+      {
+        title: '浅滩也要认真扫',
+        body: 'Life Pod 1 附近很安全，反而容易让人扫得太快。先把残骸边缘和小碎片区域慢慢看一圈，再判断是不是要去 Lily Pads 补扫描。',
+      },
+      {
+        title: '差一次扫描就等于没做完',
+        body: '蓝图没满之前，碎片进度不会帮你跑下一条路线。离开前看一眼 PDA，别只凭记忆觉得应该够了。',
+      },
+      {
+        title: 'Fiber Mesh 才是容易漏的材料',
+        body: 'Titanium 和 Copper Wire 通常基地里会有，Fiber Mesh 更容易让你再跑一趟植物材料。去 Fabricator 前先把它带齐。',
+      },
+    ],
+    routeChecklistTitle: '制作 Wakemaker 前',
+    routeChecklist: [
+      '离开碎片区前确认扫描进度已经满了。',
+      '提前留一个 Basic Battery，不要全用在别的工具上。',
+      'Fiber Mesh 和电子材料一起带回基地，别回头再补。',
+      '如果要去 Lily Pads 补碎片，先给 Scanner 或 Repair Tool 换电池。',
+    ],
     contentsLabel: '目录',
     routeTitle: 'Wakemaker 解锁路线',
     routeSteps: [

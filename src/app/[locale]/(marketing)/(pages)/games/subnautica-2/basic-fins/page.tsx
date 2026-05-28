@@ -16,7 +16,7 @@ type BasicFinsCopy = ResourceGuideCopy & {
 };
 
 const PUBLISHED_AT = '2026-05-26';
-const UPDATED_AT = '2026-05-27';
+const UPDATED_AT = '2026-05-29';
 
 const sharedSources = [
   {
@@ -52,6 +52,28 @@ const basicFinsCopy: Record<string, BasicFinsCopy> = {
     quickLabel: 'Quick answer',
     quickAnswer:
       'Dexerto lists Basic Fins as feet-slot equipment with a small speed boost, crafted at the Fabricator from Rubber x2 and Fiber x2. All Things How matches the 2 Rubber + 2 Fiber recipe and breaks the raw chain down to 4 Lucifer Rotsac and 4 Fibrous Pulp. GameWith instead lists Rubber x2 and Fiber Mesh x2, while also saying the recipe is available from the start and later upgrades into Improved Fins with Basic Fins, Fiber Mesh, and Conduit Crystal. Check your Fabricator first, then pair the fins with Air Tank, Wakemaker, and Repair Tool prep before longer swims.',
+    fieldNotesTitle: 'Field notes from the first swim upgrade',
+    fieldNotes: [
+      {
+        title: 'Make them before the route feels urgent',
+        body: 'Basic Fins feel small on paper, then save a few seconds on every surface trip, salvage sweep, and oxygen retreat. Crafting them before a long resource route is better than promising yourself you will do it afterward.',
+      },
+      {
+        title: 'Check the ingredient name, not just the guide',
+        body: 'The live guide sources do not agree on Fiber versus Fiber Mesh. That is annoying, but it is also easy to handle: open your Fabricator first, then farm the exact wording your save shows.',
+      },
+      {
+        title: 'Keep the first pair in the upgrade chain',
+        body: 'Improved Fins can use Basic Fins as the base item. Store the starter pair if you swap equipment later; rebuilding old gear because you threw it away is a classic early-base tax.',
+      },
+    ],
+    routeChecklistTitle: 'Before making Basic Fins',
+    routeChecklist: [
+      'Open the Fabricator and confirm Fiber or Fiber Mesh in your current build.',
+      'Keep Rubber and the plant material in the same locker until both are ready.',
+      'Craft fins before Silver, Quartz, long Rubber refills, or wreck sweeps.',
+      'Leave one oxygen-safe return marker if the material run pushes past the shallows.',
+    ],
     contentsLabel: 'Contents',
     routeTitle: 'Basic Fins route plan',
     routeSteps: [
@@ -178,6 +200,28 @@ const basicFinsCopy: Record<string, BasicFinsCopy> = {
     quickLabel: '快速结论',
     quickAnswer:
       'Dexerto 把 Basic Fins 列为脚部装备，效果是小幅提高游泳速度，Fabricator 配方写为 Rubber x2 和 Fiber x2。All Things How 也写的是 2 Rubber + 2 Fiber，并把原材料拆成 4 个 Lucifer Rotsac 和 4 个 Fibrous Pulp。GameWith 则列为 Rubber x2 和 Fiber Mesh x2，同时说明配方开局可用，后续可用 Basic Fins、Fiber Mesh 和 Conduit Crystal 升级成 Improved Fins。因为当前来源在 Fiber / Fiber Mesh 上不完全一致，采集第二种材料前先看你存档里的 Fabricator。',
+    fieldNotesTitle: '第一次提速的现场笔记',
+    fieldNotes: [
+      {
+        title: '别等到路线很长了才想起来做',
+        body: 'Basic Fins 的数值看起来不夸张，但它会影响每一次上浮、每一趟捡材料、每一次回氧气安全线。准备跑长路线前先做，比跑到一半后悔舒服得多。',
+      },
+      {
+        title: '看游戏里的配方名字',
+        body: '现在资料源在 Fiber 和 Fiber Mesh 上不完全一致。最稳的方法不是猜，而是先打开 Fabricator，看你当前版本到底写了哪个材料。',
+      },
+      {
+        title: '第一双别随手丢',
+        body: 'Improved Fins 后面会用到 Basic Fins。换装后把旧 fins 放进箱子里，别到中期又为了升级重新做一遍。',
+      },
+    ],
+    routeChecklistTitle: '制作 Basic Fins 前',
+    routeChecklist: [
+      '先在 Fabricator 里确认第二个材料是 Fiber 还是 Fiber Mesh。',
+      'Rubber 和植物材料先放在同一个箱子里，别分散到基地各处。',
+      '跑 Silver、Quartz、Rubber 补货或残骸路线前先把 fins 做出来。',
+      '如果采集路线离浅滩远，先留好一条安全回氧路线。',
+    ],
     contentsLabel: '目录',
     routeTitle: 'Basic Fins 路线规划',
     routeSteps: [
