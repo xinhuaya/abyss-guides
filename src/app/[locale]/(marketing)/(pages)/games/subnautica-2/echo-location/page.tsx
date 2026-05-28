@@ -16,7 +16,7 @@ type EchoLocationCopy = ResourceGuideCopy & {
 };
 
 const PUBLISHED_AT = '2026-05-25';
-const UPDATED_AT = '2026-05-25';
+const UPDATED_AT = '2026-05-29';
 
 const sharedSources = [
   {
@@ -48,6 +48,28 @@ const echoLocationCopy: Record<string, EchoLocationCopy> = {
     quickLabel: 'Quick answer',
     quickAnswer:
       'Current Subnautica2.gg, Subnautica2Hub, and Wikily data list Echo Location as a locked Tadpole module crafted at the Modification Station with Quartz x3, Mild Acid x1, and Atacamite x1. Its job is to ping nearby resources. Treat the unlock as progression-gated or scan-gated until your save shows the recipe.',
+    fieldNotesTitle: 'Field notes for resource pings',
+    fieldNotes: [
+      {
+        title: 'The module is a route helper, not a miracle',
+        body: 'Echo Location helps you notice nearby resources, but it does not replace good markers, clean storage, or knowing which material you are actually chasing.',
+      },
+      {
+        title: 'Quartz is the quiet cost',
+        body: 'Three Quartz can hurt if Glass and System Chip work are active. Set those pieces aside before you start converting every crystal into windows.',
+      },
+      {
+        title: 'Wait for the recipe to appear',
+        body: 'Public data marks the module as locked. If it is missing, keep scanning and progressing instead of farming the materials again.',
+      },
+    ],
+    routeChecklistTitle: 'Before crafting Echo Location',
+    routeChecklist: [
+      'Confirm the recipe is visible in Modification Station.',
+      'Reserve Quartz x3 before spending on Glass or base parts.',
+      'Prepare Mild Acid and Atacamite in the same module locker.',
+      'Keep Beacons in your route kit even after the module is installed.',
+    ],
     contentsLabel: 'Contents',
     routeTitle: 'Echo Location craft plan',
     routeSteps: [
@@ -165,6 +187,28 @@ const echoLocationCopy: Record<string, EchoLocationCopy> = {
     quickLabel: '快速结论',
     quickAnswer:
       'Subnautica2.gg、Subnautica2Hub 和 Wikily 当前都把 Echo Location 写成锁定的 Tadpole 模块，在 Modification Station 用 Quartz x3、Mild Acid x1、Atacamite x1 制作。作用是 ping 附近资源。解锁方式公开资料写法不完全一致，所以先按剧情/扫描进度锁定处理。',
+    fieldNotesTitle: '资源 ping 模块笔记',
+    fieldNotes: [
+      {
+        title: '这是路线辅助，不是万能雷达',
+        body: 'Echo Location 能帮你注意附近资源，但不能替代 Beacon、清楚的箱子和明确的采集目标。',
+      },
+      {
+        title: 'Quartz 才是安静成本',
+        body: 'Quartz x3 在 Glass 和 System Chip 也在推进时会很疼。先把这三块留出来，再考虑基地窗户。',
+      },
+      {
+        title: '等配方出现再刷材料',
+        body: '公开资料把它标成锁定模块。如果你存档里还没有配方，继续扫描和推剧情，不要反复刷同一批材料。',
+      },
+    ],
+    routeChecklistTitle: '制作 Echo Location 前',
+    routeChecklist: [
+      '先确认 Modification Station 里已经显示配方。',
+      'Quartz x3 先留好，再去做 Glass 或基地部件。',
+      'Mild Acid 和 Atacamite 放进同一个模块材料箱。',
+      '装上模块后，路线包里仍然保留 Beacon。',
+    ],
     contentsLabel: '目录',
     routeTitle: 'Echo Location 制作规划',
     routeSteps: [

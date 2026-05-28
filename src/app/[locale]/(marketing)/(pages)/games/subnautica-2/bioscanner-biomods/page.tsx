@@ -16,7 +16,7 @@ type BioscannerCopy = ResourceGuideCopy & {
 };
 
 const PUBLISHED_AT = '2026-05-24';
-const UPDATED_AT = '2026-05-27';
+const UPDATED_AT = '2026-05-29';
 
 const sharedSources = [
   {
@@ -60,6 +60,28 @@ const bioscannerCopy: Record<string, BioscannerCopy> = {
     quickLabel: 'Quick answer',
     quickAnswer:
       'Treat the Bioscanner as a late Alien Ruins route upgrade, not a beach-start errand. PC Gamer places it in the Cicada wreckage about 500m southeast of the Alien Ruins Research Outpost, around bearing 130, after the Tadpole Pens / blackbox chain. Scans are not retroactive, so once you craft the upgrade, revisit useful lifeforms for Biomod progress.',
+    fieldNotesTitle: 'Field notes for Biomod scanning',
+    fieldNotes: [
+      {
+        title: 'Old scans do not pay you back',
+        body: 'Because scans are not retroactive, the moment you craft Bioscanner matters. After installing it, revisit useful creatures instead of assuming your old Scanner habit already counted.',
+      },
+      {
+        title: 'The wreck route is mid-game work',
+        body: 'Cicada wreckage is not a casual beach errand. Bring the Tadpole, repair safety, and a route marker before treating the bearing as a straight line.',
+      },
+      {
+        title: 'Pick Biomods for routes you repeat',
+        body: 'The best early Biomod is usually the one that makes your daily loops safer or faster, not the one with the flashiest name.',
+      },
+    ],
+    routeChecklistTitle: 'Before using Bioscanner',
+    routeChecklist: [
+      'Finish the route chain that opens the Cicada wreckage area.',
+      'Bring Tadpole safety and mark the return line from the wreck.',
+      'After crafting, rescan useful lifeforms for Biomod progress.',
+      'Choose Biomods around repeated routes, oxygen pressure, and danger.',
+    ],
     contentsLabel: 'Contents',
     routeTitle: 'Bioscanner route plan',
     routeSteps: [
@@ -197,6 +219,28 @@ const bioscannerCopy: Record<string, BioscannerCopy> = {
     quickLabel: '快速结论',
     quickAnswer:
       '把 Bioscanner 当成中期路线升级，不要当成开局五分钟目标。先养成普通 Scanner 习惯，再用 Bioscanner 扫描生物推进 Biomod。前期 Biomod 优先选能让反复跑图更安全的，不要只看名字炫不炫。',
+    fieldNotesTitle: 'Biomod 扫描笔记',
+    fieldNotes: [
+      {
+        title: '旧扫描不会自动补账',
+        body: 'Bioscanner 扫描不是追溯计算，所以做出升级的时间点很重要。装好之后，要重新去扫有用生物。',
+      },
+      {
+        title: '残骸路线属于中期工作',
+        body: 'Cicada wreckage 不是开局海滩小任务。带 Tadpole、维修安全和路线标记，再把方位当成路线参考。',
+      },
+      {
+        title: 'Biomod 选常跑路线需要的',
+        body: '前期最好的 Biomod 往往不是名字最炫的，而是能让你每天反复跑的路线更安全、更省时间的。',
+      },
+    ],
+    routeChecklistTitle: '使用 Bioscanner 前',
+    routeChecklist: [
+      '先完成能打开 Cicada wreckage 区域的路线链。',
+      '带 Tadpole 安全方案，并标记残骸回程线。',
+      '制作后重新扫描有用生物，推进 Biomod 进度。',
+      '围绕重复路线、氧气压力和危险来源选择 Biomod。',
+    ],
     contentsLabel: '目录',
     routeTitle: 'Bioscanner 路线规划',
     routeSteps: [

@@ -16,7 +16,7 @@ type EngineEfficiencyCopy = ResourceGuideCopy & {
 };
 
 const PUBLISHED_AT = '2026-05-25';
-const UPDATED_AT = '2026-05-25';
+const UPDATED_AT = '2026-05-29';
 
 const sharedSources = [
   {
@@ -52,6 +52,28 @@ const engineEfficiencyCopy: Record<string, EngineEfficiencyCopy> = {
     quickLabel: 'Quick answer',
     quickAnswer:
       'Current Subnautica2.gg, Subnautica2Hub, and Wikily data list Engine Efficiency as a locked Tadpole module crafted at the Modification Station with Titanium Ingot x1, Glass x2, and System Chip x1. The module reduces Tadpole power use by 20% and stacks up to four times for a listed max of 80%. Console Pulse also reports an Engine Efficiency pickup inside the Alien Ruins route.',
+    fieldNotesTitle: 'Field notes for power savings',
+    fieldNotes: [
+      {
+        title: 'One module changes route comfort',
+        body: 'The first Engine Efficiency module is often more valuable than chasing a perfect stack. It stretches ordinary Tadpole trips before you are ready for long rare-material loops.',
+      },
+      {
+        title: 'System Chip is the real trade',
+        body: 'Titanium Ingot and Glass are visible costs, but System Chip often competes with other upgrades. Craft the module when vehicle uptime is the next bottleneck.',
+      },
+      {
+        title: 'Pickups and crafted copies can coexist',
+        body: 'If your route finds an Engine Efficiency pickup, use it. Later crafted copies can still support longer loops once Modification Station recipes are stable.',
+      },
+    ],
+    routeChecklistTitle: 'Before crafting Engine Efficiency',
+    routeChecklist: [
+      'Confirm Tadpole power use is limiting routes more than depth or oxygen.',
+      'Protect System Chip needs for other modules before crafting.',
+      'Use Alien Ruins pickup data as a route bonus, not a guaranteed shortcut.',
+      'Stack extra modules only after the first one improves daily trips.',
+    ],
     contentsLabel: 'Contents',
     routeTitle: 'Engine Efficiency craft plan',
     routeSteps: [
@@ -166,6 +188,28 @@ const engineEfficiencyCopy: Record<string, EngineEfficiencyCopy> = {
     quickLabel: '快速结论',
     quickAnswer:
       'Subnautica2.gg、Subnautica2Hub 和 Wikily 当前都把 Engine Efficiency 写成锁定的 Tadpole 模块，在 Modification Station 用 Titanium Ingot x1、Glass x2、System Chip x1 制作。效果是降低 Tadpole 20% 电量消耗，最多叠 4 个，公开资料写的上限是 80%。Console Pulse 还提到 Alien Ruins 路线里有一个可拾取模块。',
+    fieldNotesTitle: '载具省电笔记',
+    fieldNotes: [
+      {
+        title: '第一块模块就很有感觉',
+        body: '不要一开始就追求完美叠满。第一块 Engine Efficiency 往往已经能让普通 Tadpole 路线舒服很多。',
+      },
+      {
+        title: '真正要权衡的是 System Chip',
+        body: 'Titanium Ingot 和 Glass 很直观，System Chip 才常常和其它升级抢材料。只有载具续航真成为下一卡点时再做。',
+      },
+      {
+        title: '拾取和制作可以并行',
+        body: '如果 Alien Ruins 路线里捡到模块，先用起来。后续 Modification Station 稳定后，再考虑做更多。',
+      },
+    ],
+    routeChecklistTitle: '制作 Engine Efficiency 前',
+    routeChecklist: [
+      '先确认现在卡的是 Tadpole 电量，不是深度或氧气。',
+      '制作前检查其它模块是否也要 System Chip。',
+      'Alien Ruins 拾取信息当路线奖励，不当必定捷径。',
+      '第一块改善日常路线后，再考虑继续叠加。',
+    ],
     contentsLabel: '目录',
     routeTitle: 'Engine Efficiency 制作规划',
     routeSteps: [

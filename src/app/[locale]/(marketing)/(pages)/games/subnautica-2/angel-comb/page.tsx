@@ -16,7 +16,7 @@ type AngelCombCopy = ResourceGuideCopy & {
 };
 
 const PUBLISHED_AT = '2026-05-26';
-const UPDATED_AT = '2026-05-27';
+const UPDATED_AT = '2026-05-29';
 
 const sharedSources = [
   {
@@ -56,6 +56,28 @@ const angelCombCopy: Record<string, AngelCombCopy> = {
     quickLabel: 'Quick answer',
     quickAnswer:
       'PC Gamer says the first Angel Comb is about 200m northwest of the Lifepod, around bearing 300, and contains Heat Tolerance after you clear viral blooms. GamesRadar+ gives a nearby estimate of 190-200m northwest at about bearing 285. GAMES.GG describes the heat-barrier route as two smaller Bloom sites plus a larger central Angel Comb, and says Sonic Resonator is needed before you can clear the Bloom infestations. Bring upgraded oxygen, an Air Bladder, medical kits, and a distraction or movement option.',
+    fieldNotesTitle: 'Field notes for the first Angel Comb',
+    fieldNotes: [
+      {
+        title: 'The bearing is only a starting point',
+        body: 'PC Gamer and GamesRadar+ give slightly different bearings, which is normal for a route with terrain and vertical movement. Use the northwest heading to find the area, then follow the bloom layout.',
+      },
+      {
+        title: 'Clear the small sites before the central prize',
+        body: 'The route makes more sense when the smaller Bloom sites are treated as steps, not distractions. Skipping them is how you reach the central comb and wonder why nothing feels finished.',
+      },
+      {
+        title: 'Heat Tolerance is a route unlock',
+        body: 'This adaptation opens later hot areas, so do not leave the biome as soon as the fight pressure drops. Confirm the comb interaction before swimming home.',
+      },
+    ],
+    routeChecklistTitle: 'Before clearing Angel Comb',
+    routeChecklist: [
+      'Bring Sonic Resonator, upgraded oxygen, Air Bladder, and medical kits.',
+      'Use northwest bearings as guidance, then trust the Bloom trail.',
+      'Clear side Bloom sites before returning to the central Angel Comb.',
+      'Confirm Heat Tolerance before leaving the area.',
+    ],
     contentsLabel: 'Contents',
     routeTitle: 'Angel Comb clearing plan',
     routeSteps: [
@@ -184,6 +206,28 @@ const angelCombCopy: Record<string, AngelCombCopy> = {
     quickLabel: '快速结论',
     quickAnswer:
       'PC Gamer 说第一处 Angel Comb 位于 Lifepod 西北约 200m、方位约 300 度，清理 viral blooms 后可获得 Heat Tolerance。GamesRadar+ 给出的范围很接近：Lifepod 西北约 190-200m、方位约 285 度。GAMES.GG 把热屏障路线描述成两处小 Bloom 加一处中央 Angel Comb，并说明你需要 Sonic Resonator 才能推进 Bloom 清理。建议带更高氧气容量、Air Bladder、医疗包，以及干扰或位移手段。',
+    fieldNotesTitle: '第一次 Angel Comb 笔记',
+    fieldNotes: [
+      {
+        title: '方位只是起点',
+        body: 'PC Gamer 和 GamesRadar+ 给出的角度略有差异，这在有地形和上下游动的路线里很正常。先用西北方向找到区域，再跟着 Bloom 布局走。',
+      },
+      {
+        title: '先清小点，再回中央',
+        body: '两处小 Bloom 不是干扰项，而是这条路线的步骤。跳过它们，很容易到中央 Angel Comb 后觉得流程没有结束。',
+      },
+      {
+        title: 'Heat Tolerance 是路线解锁',
+        body: '这个适应能力会打开后续热区，所以压力下降后别立刻回家。离开前确认已经和 Angel Comb 完成互动。',
+      },
+    ],
+    routeChecklistTitle: '清 Angel Comb 前',
+    routeChecklist: [
+      '带 Sonic Resonator、更高氧气容量、Air Bladder 和医疗包。',
+      '西北方位只当参考，进入区域后跟着 Bloom 线索走。',
+      '清完两处 side Bloom，再回中央 Angel Comb。',
+      '离开前确认 Heat Tolerance 已经拿到。',
+    ],
     contentsLabel: '目录',
     routeTitle: 'Angel Comb 清理规划',
     routeSteps: [

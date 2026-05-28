@@ -16,7 +16,7 @@ type FeedbackCopy = ResourceGuideCopy & {
 };
 
 const PUBLISHED_AT = '2026-05-24';
-const UPDATED_AT = '2026-05-27';
+const UPDATED_AT = '2026-05-29';
 
 const sharedSources = [
   {
@@ -60,6 +60,28 @@ const feedbackCopy: Record<string, FeedbackCopy> = {
     quickLabel: 'Quick answer',
     quickAnswer:
       'Get the Sonic Resonator first, then scan two Feedback Resonator fragments in the glowing green abyssal pool / Metal Farms route northeast of the Alien Ruins Research Base. PC Gamer places that run roughly 870m at bearing 75 from the Research Base and around 450m deep, so bring the Tadpole Depth Module, Repair Tool, healing, and a real exit plan. Current recipe data lists Sonic Resonator x1, Enameled Glass x2, Conduit Crystal x2, and Strontium x2 at the Modification Station. You need the upgrade for ranged Bloom Canker clearing on the Axum Vision Angel Comb route.',
+    fieldNotesTitle: 'Field notes for the deep scan run',
+    fieldNotes: [
+      {
+        title: 'This route punishes casual prep',
+        body: 'The distance, depth, and return path matter more than the fragment count. If Tadpole depth, repairs, or healing are not ready, the two scans can become a messy rescue trip.',
+      },
+      {
+        title: 'Stage the recipe before scanning',
+        body: 'Enameled Glass, Conduit Crystal, and Strontium are all expensive enough to deserve a checklist. Gather them before the scan run if you want the upgrade built the same session.',
+      },
+      {
+        title: 'Build it for Axum Vision, not just collection',
+        body: 'Feedback Resonator is most useful when it immediately feeds the later Angel Comb route. Treat it as a key for ranged Bloom Canker clearing.',
+      },
+    ],
+    routeChecklistTitle: 'Before scanning Feedback Resonator',
+    routeChecklist: [
+      'Bring Tadpole Depth Module, Repair Tool, healing, and spare power.',
+      'Mark the exit from the glowing green route before chasing fragments.',
+      'Stage Enameled Glass x2, Conduit Crystal x2, and Strontium x2.',
+      'Plan the next stop as Axum Vision or Bloom Canker clearing.',
+    ],
     contentsLabel: 'Contents',
     routeTitle: 'Feedback Resonator route plan',
     routeSteps: [
@@ -228,6 +250,28 @@ const feedbackCopy: Record<string, FeedbackCopy> = {
     quickLabel: '快速结论',
     quickAnswer:
       '先拿 Sonic Resonator，再去 Alien Ruins Research Base 东北方向的绿色深池 / Metal Farms 路线扫描两个 Feedback Resonator 碎片。PC Gamer 把这趟路线写成从 Research Base 出发约 870m、方位约 75 度、深度约 450m，所以要带 Tadpole Depth Module、Repair Tool、回血物品和明确的撤退线。当前配方是 Modification Station 制作：Sonic Resonator x1、Enameled Glass x2、Conduit Crystal x2、Strontium x2。它后面会用于 Axum Vision 路线，远距离清 Bloom Cankers。',
+    fieldNotesTitle: '深水扫描路线笔记',
+    fieldNotes: [
+      {
+        title: '这条路线不适合随便准备',
+        body: '距离、深度和回程比碎片数量更重要。如果 Tadpole 深度、维修或回血没准备好，两次扫描也可能变成救命路线。',
+      },
+      {
+        title: '扫描前先准备配方',
+        body: 'Enameled Glass、Conduit Crystal 和 Strontium 都不便宜。想同一晚做出升级，就先把这些材料单独列好。',
+      },
+      {
+        title: '它是 Axum Vision 的钥匙',
+        body: 'Feedback Resonator 最有价值的用法，是立刻接到后续 Angel Comb 路线，用来远距离清 Bloom Cankers。',
+      },
+    ],
+    routeChecklistTitle: '扫描 Feedback Resonator 前',
+    routeChecklist: [
+      '带 Tadpole Depth Module、Repair Tool、回血物品和备用电力。',
+      '追碎片前先标出绿色深池路线的出口。',
+      '提前准备 Enameled Glass x2、Conduit Crystal x2、Strontium x2。',
+      '下一步按 Axum Vision 或 Bloom Canker 清理来规划。',
+    ],
     contentsLabel: '目录',
     routeTitle: 'Feedback Resonator 路线规划',
     routeSteps: [
