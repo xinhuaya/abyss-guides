@@ -473,6 +473,161 @@ const systemChipCopy: Record<string, SystemChipCopy> = {
   },
 };
 
+systemChipCopy.ja = {
+  metadata: {
+    title:
+      'Subnautica 2 System Chip ガイド - レシピ、Wiring Kit、Quartz、アップグレード用途',
+    description:
+      'Subnautica 2のSystem Chipガイド。Wiring Kit、Quartz、Silver準備、Rebreather、Scanner Station、Tadpole、Depth Module用途を整理します。',
+  },
+  eyebrow: 'Subnautica 2 電子素材',
+  title: 'Subnautica 2 System Chip ガイド',
+  description:
+    'System Chipは小さいのに、アップグレード計画を止めやすい素材です。Silverを先に安定させ、Quartzをそろえ、どの装備に使うかを決めてから作ると無駄が減ります。',
+  quickLabel: '要点',
+  quickAnswer:
+    '現在のガイドでは、System ChipはWiring KitとQuartzで作る電子素材として扱われています。PC GamerはRebreather素材にSystem Chip x1を掲載しており、TadpoleやDepth Module系の計画にもつながります。実際に詰まりやすいのはチップそのものより、Wiring Kitに必要なSilverです。',
+  fieldNotesTitle: 'チップ素材メモ',
+  fieldNotes: [
+    {
+      title: '出発前にSilver数を計算する',
+      body: 'System Chipは1つのレシピに見えますが、裏側にはWiring Kitがあります。複数の装備がチップを要求するなら、まずSilverの必要数をメモしましょう。',
+    },
+    {
+      title: 'チップを進行ゲートとして見る',
+      body: 'Rebreather、Scanner Station、Tadpole、Depth ModuleでSystem Chipが出てきたら、素材集めが電子部品計画に入った合図です。',
+    },
+    {
+      title: 'Quartzを電子素材の近くへ置く',
+      body: 'Quartzはガラス素材として別箱に入りがちです。チップを作る時期だけでも、SilverやCopper Wireの近くに置くと戻り直しが減ります。',
+    },
+  ],
+  routeChecklistTitle: '制作前チェック',
+  routeChecklist: [
+    'System Chipを要求している具体的なレシピを確認した。',
+    'Silverを全部Wiring Kitに変えず、必要分を残している。',
+    'Quartz、Silver、Copper Wire、完成チップを同じ電子素材箱に置いた。',
+    'Silverルートが安定してから予備チップを作る。',
+  ],
+  contentsLabel: '目次',
+  routeTitle: 'System Chip制作計画',
+  routeSteps: [
+    {
+      title: 'レシピを疑う前にSilverを解決する',
+      body: 'System Chipで止まる時は、たいていWiring Kit側が問題です。Wiring KitはSilverに戻るので、まずSilverルートが安定しているか見ます。',
+    },
+    {
+      title: 'Quartzを電子素材と一緒に保管する',
+      body: 'Quartzはガラス用素材に見えますが、System Chipの日は電子素材です。Copper、Silver、Wiring Kitと近くに置くと、1個だけ取りに戻ることが減ります。',
+    },
+    {
+      title: '名前のあるアップグレードに合わせて作る',
+      body: 'Fabricatorで作れるからといって、Wiring Kitを全部System Chipにしないほうが安全です。Rebreather、Scanner Station、Tadpole、Engine Efficiency、Depth Moduleは同じ電子素材を取り合います。',
+    },
+    {
+      title: '深度アップグレードと一緒に考える',
+      body: '現在のTadpole Depth Module Mk.1情報ではSystem Chipが使われます。小さなチップですが、普通の移動から深いルートへ進む時の門番になります。',
+    },
+    {
+      title: 'Silverが安定してから予備を作る',
+      body: 'Silverルートが安定したあとなら予備のSystem Chipは便利です。それまでは、Silver、Quartz、Wiring Kitのまま残すほうが柔軟です。',
+    },
+  ],
+  tableTitle: 'System Chip チェックリスト',
+  tableHeaders: ['項目', '確認すること'],
+  tableRows: [
+    ['Wiring Kit', '主要な入力素材で、Silverルートが重要になる理由です。'],
+    ['Quartz', 'ガラス素材の箱に入れて忘れやすい素材です。'],
+    ['Silverルート', '安定したSilver集めが電子素材の停滞を防ぎます。'],
+    [
+      'レシピ目標',
+      'Rebreather、Scanner Station、Tadpole、Moduleなど必要なクラフト名を決めます。',
+    ],
+    ['Rebreather', 'PC GamerはSystem Chip x1を素材として掲載しています。'],
+    [
+      'Depth Module計画',
+      '現在のMk.1アップグレード情報でSystem Chipが使われます。',
+    ],
+  ],
+  visualTitle: '電子素材チェーン',
+  visualItems: [
+    {
+      label: '採集',
+      value: 'Silver',
+      note: 'Wiring Kitのために一番詰まりやすい素材です。',
+    },
+    {
+      label: '追加',
+      value: 'Quartz',
+      note: 'ガラス用だけでなく電子素材側にも置きます。',
+    },
+    {
+      label: '使用',
+      value: 'Upgrade',
+      note: '明確なレシピに合わせて使います。',
+    },
+  ],
+  cautionTitle: 'Wiring Kitを全部チップにしない',
+  cautionBody:
+    'System Chipを並べると整理された気分になりますが、次のレシピがWiring Kitを直接要求することがあります。次に作るものが見えるまでは、一部を素材のまま残しましょう。',
+  faqTitle: 'FAQ',
+  faqs: [
+    {
+      title: 'System Chipはどう作りますか？',
+      body: '現在のガイドでは、Wiring KitとQuartzで作る電子素材として扱われています。作れない時は、まずWiring Kit用のSilverを確認します。',
+    },
+    {
+      title: '何に使いますか？',
+      body: '現在の情報では、Rebreather、Scanner Station、Tadpole、Engine Efficiency、Tadpole Depth Module Mk.1などのルートに関わります。',
+    },
+    {
+      title: '序盤に多めに作るべきですか？',
+      body: '大量の作り置きはおすすめしません。Silverが安定するまでは、完成チップより原料やWiring Kitのまま残すほうが柔軟です。',
+    },
+    {
+      title: 'Tadpole Depth Moduleとの関係は？',
+      body: 'Mk.1アップグレードの電子素材側に含まれます。CelestineやEnameled Glassのようなルート素材と一緒に準備します。',
+    },
+  ],
+  readNextTitle: '次に読む',
+  related: [
+    { href: Routes.Subnautica2Rebreather, label: 'Rebreather ガイド' },
+    { href: Routes.Subnautica2FiberMesh, label: 'Fiber Mesh ガイド' },
+    {
+      href: Routes.Subnautica2ScannerStation,
+      label: 'Scanner Station ガイド',
+    },
+    { href: Routes.Subnautica2WiringKit, label: 'Wiring Kit ガイド' },
+    {
+      href: Routes.Subnautica2AdvancedWiringKit,
+      label: 'Advanced Wiring Kit ガイド',
+    },
+    { href: Routes.Subnautica2Quartz, label: 'Quartz 入手ガイド' },
+    { href: Routes.Subnautica2Silver, label: 'Silver 入手ガイド' },
+    { href: Routes.Subnautica2Crafting, label: 'クラフトガイド' },
+    {
+      href: Routes.Subnautica2EngineEfficiency,
+      label: 'Engine Efficiency ガイド',
+    },
+    { href: Routes.Subnautica2Tadpole, label: 'Tadpole 車両ガイド' },
+    {
+      href: Routes.Subnautica2TadpoleDepthModule,
+      label: 'Tadpole Depth Module ガイド',
+    },
+  ],
+  sourcesTitle: '出典メモ',
+  sourceBody:
+    '2026年5月27日にPC Gamer、Dexerto、Subnautica2.ggのSystem Chip情報、PC GamerのSilverおよびTadpole情報を確認。Early Access中は用途やレシピが変わる可能性があります。',
+  cardKicker: '電子素材カード',
+  cardBody:
+    'Wiring Kit、Quartz、Silver準備、Rebreather、Scanner Station、Tadpole、Depth Moduleの計画。',
+  cardTypeLabel: '種類',
+  cardTypeValue: 'クラフト素材',
+  cardVerifiedLabel: '確認日',
+  cardStatusLabel: '状態',
+  cardStatusValue: 'Early Access',
+};
+
 systemChipCopy.zh = {
   ...systemChipCopy.zh,
   fieldNotesTitle: 'System Chip 卡点笔记',
@@ -512,12 +667,6 @@ systemChipCopy.zh = {
   ],
   sourceBody:
     '2026 年 5 月 27 日核对 PC Gamer、Dexerto、Subnautica2.gg 的 System Chip 资料，以及 PC Gamer 的 Silver 和 Tadpole 报道。抢先体验阶段用途可能随补丁变化。',
-};
-
-systemChipCopy.ja = {
-  ...systemChipCopy.en,
-  sourceBody:
-    'Checked May 27, 2026 against current PC Gamer, Dexerto, and Subnautica2.gg System Chip data, plus PC Gamer Silver and Tadpole coverage.',
 };
 
 const fallbackLocaleAliases = {
