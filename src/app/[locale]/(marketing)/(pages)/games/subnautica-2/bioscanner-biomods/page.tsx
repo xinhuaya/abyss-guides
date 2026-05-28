@@ -574,79 +574,153 @@ bioscannerCopy.zh = {
 };
 
 bioscannerCopy.ja = {
-  ...bioscannerCopy.en,
   metadata: {
-    title:
-      'Subnautica 2 Bioscanner and Biomods ガイド - 場所、解放、最初の選択',
+    title: 'Subnautica 2 Bioscanner / Biomods ガイド - 場所、解放、最初の選択',
     description:
-      'Subnautica 2のBioscannerとBiomodsガイド。Cicada wreckage、Alien Ruins、非遡及スキャン、Biomod unlocks、最初の選択を整理します。',
+      'Subnautica 2のBioscannerとBiomodsガイド。Cicada wreckage、Alien Ruins、非遡及スキャン、Biomod解放、最初に選ぶアップグレードを整理します。',
   },
-  title: 'Subnautica 2 Bioscanner and Biomods ガイド',
+  eyebrow: 'Subnautica 2 Biomodルート',
+  title: 'Subnautica 2 Bioscanner / Biomods ガイド',
   description:
-    'Bioscannerは早く追いすぎると危険です。Alien Ruinsの後半ルート、Tadpole深度、酸素、帰り道を整えてから向かいます。',
+    'Bioscannerは早く追いすぎると危ない中盤アップグレードです。酸素、Tadpole、帰り道、空きインベントリを整えてから向かう方が、スキャンもBiomod選びもずっと楽になります。',
   quickLabel: '要点',
   quickAnswer:
-    'PC GamerはBioscannerをAlien Ruins Research Outpostから南東約500m、方位130あたりのCicada wreckageに置いています。通常Scannerの過去スキャンは遡及しないため、Bioscanner作成後に重要な生物を再スキャンします。',
+    'Bioscannerは開幕の寄り道ではなく、Alien Ruins後半からCicada wreckageへ向かうルートで取りに行く装備です。PC GamerはAlien Ruins Research Outpostから南東約500m、方位130付近のCicada wreckageに置いています。通常Scannerの過去スキャンは遡及しないため、作成後に重要な生物をもう一度スキャンしましょう。',
+  fieldNotesTitle: 'Biomodスキャンのメモ',
+  fieldNotes: [
+    {
+      title: '昔のスキャンは返ってこない',
+      body: 'Bioscannerを作る前に通常Scannerで調べた生物は、そのままBiomod進行に入らない可能性があります。作成後に使う生物を改めて見に行く前提で動きます。',
+    },
+    {
+      title: 'Cicada wreckは中盤ルート',
+      body: 'これは海岸から軽く泳ぐ用事ではありません。Tadpole、Repair Tool、酸素の余裕、帰り道の目印を用意してから方位を追いましょう。',
+    },
+    {
+      title: 'Biomodは毎日走るルートで選ぶ',
+      body: '最初のBiomodは名前の派手さより、よく通るルートを楽にするかで選ぶのが安定します。酸素、移動、帰還、素材ループに効くものを優先します。',
+    },
+  ],
+  routeChecklistTitle: 'Bioscannerへ向かう前に',
+  routeChecklist: [
+    'Cicada wreckage方面へ進めるAlien Ruins / blackboxルートを進めた。',
+    'Tadpole、Repair Tool、酸素の余裕、帰り道の目印を用意した。',
+    'Bioscanner作成後に生物を再スキャンするつもりでいる。',
+    'Biomodは見た目ではなく、繰り返すルートの問題から選ぶ。',
+  ],
+  contentsLabel: '目次',
+  routeTitle: 'Bioscannerルート計画',
   routeSteps: [
     {
-      title: '通常Scannerを先に終える',
-      body: 'ツール、Station、Vehicle fragmentsが不足しているなら先にそちらを進めます。',
+      title: '通常Scannerの仕事を先に片付ける',
+      body: 'ツール、ステーション、乗り物の断片がまだ多く残っているなら、まず通常Scannerでそこを進めます。Bioscannerは別の成長ルートで、基本ブループリント作業の代わりにはなりません。',
     },
     {
       title: 'Cicada wreckを目標にする',
-      body: 'Alien Ruins Research Outpost南東のwreckを目印にします。blackbox目標が進んでいないと見つけにくいルートです。',
+      body: 'PC GamerはAlien Ruins Research Outpostの南東にあるCicada wreckageを目印にしています。RubyやIsoのblackbox目標が進んでいない段階では、そこまでの水域がかなり空っぽに感じるはずです。',
     },
     {
-      title: 'スキャンはやり直す',
-      body: 'Bioscanner前の通常Scannerスキャンは遡及しないため、必要なlifeformはもう一度スキャンします。',
+      title: 'スキャン潜水として準備する',
+      body: 'Bioscannerの回収では、移動して終わりではなく、wreckの確認と生物スキャンが続きます。Tadpoleの深度、Repair Tool、Air Bladder、酸素の余裕、目印を用意します。',
     },
     {
-      title: 'Biomodはルート価値で選ぶ',
-      body: '酸素、移動安全、再探索に効くものを最初に選ぶと安定します。',
+      title: '生物を意識してスキャンする',
+      body: 'PC GamerはBioscannerスキャンが非遡及だと説明しています。通常Scannerで見たことがある生物でも、Bioscanner作成後にもう一度確認しましょう。',
+    },
+    {
+      title: 'Biomodは繰り返すルートで決める',
+      body: '最初に強いBiomodは、次の数回のルートを楽にしてくれるものです。酸素の圧迫、帰り道の不安、繰り返し偵察、特定素材の周回が軽くなるなら有力候補です。',
     },
   ],
+  tableTitle: 'Biomod優先度チェック',
+  tableHeaders: ['選択肢', '見るポイント'],
   tableRows: [
-    ['Oxygen support', 'wreckやscan routeを安定させます。'],
-    ['Movement safety', '帰り道の事故を減らします。'],
     [
-      'Resource loop',
-      'CelestineやConduit Crystalなど、改善したい素材ルートがある時に選びます。',
+      '酸素サポート',
+      '洞窟、wreck、blackbox追跡、長めのスキャンが不安なら最初に価値が出やすい。',
     ],
-    ['Experimental picks', '基本ルートが安定してから試します。'],
+    [
+      '移動または帰還の安全',
+      'よく迷う、戻りで焦る、Tadpoleまでの距離が長い時に強い。',
+    ],
+    ['生物・環境対応', '次のルートが明確にその問題を出してくる時に選ぶ。'],
+    [
+      '資源ループ向け',
+      'Celestine、Conduit Crystal、Bloom系など、改善したい素材周回が見えてから選ぶ。',
+    ],
+    ['実験枠', '基本の生存と移動が安定してから試す方が損が少ない。'],
   ],
+  visualTitle: 'Bioscanner準備カード',
   visualItems: [
     {
       label: 'Before',
       value: 'Cicada',
-      note: 'Alien Ruins blackbox routeを進めます。',
+      note: 'Alien Ruins / blackboxルートを進めてから向かう。',
     },
     {
       label: 'During',
-      value: 'Scans',
-      note: '重要なlifeformを再スキャンします。',
+      value: 'Life scans',
+      note: '酸素と目印が安定している時に安全な対象をスキャン。',
     },
     {
       label: 'After',
-      value: 'Biomod',
-      note: '次のルートが楽になるものを選びます。',
+      value: 'Route value',
+      note: '次に繰り返すルートを楽にするBiomodを選ぶ。',
     },
   ],
+  cautionTitle: 'Biomodを固定ビルドにしない',
+  cautionBody:
+    'Early Accessではアップグレードの強さが変わります。大事なのは最終リストを決め打ちすることではなく、自分が今走っているルートをどれだけ楽にするかです。',
+  faqTitle: 'FAQ',
   faqs: [
     {
-      title: 'Bioscannerはどこ？',
-      body: 'Alien Ruins Research Outpost南東約500m、方位130あたりのCicada wreckageです。',
+      title: 'Bioscannerはいつ取りに行く？',
+      body: 'Alien RuinsとCicada wreckage方面へ安定して行けるようになってからがおすすめです。PC GamerはAlien Ruins Research Outpostから南東約500m、方位130付近と説明しています。',
     },
     {
       title: 'Biomodsはどう解放する？',
-      body: 'Bioscannerでlifeformをスキャンして進めます。過去の通常Scannerスキャンは遡及しません。',
+      body: '現行報道では、Bioscannerでの生物スキャンがBiomod進行につながります。通常Scannerで過去に見た生物は、Bioscanner後に再スキャンが必要になる場合があります。',
     },
     {
-      title: '最初のBiomodは？',
-      body: '酸素、移動安全、探索の安定に効くものを優先します。',
+      title: '最初のBiomodは何を選ぶ？',
+      body: '酸素、移動安全、スキャンの安定、または今走っている素材ループに効くものを選びます。派手さより、次の数回のルートで効くかを見ます。',
+    },
+    {
+      title: '普通のScannerはまだ必要？',
+      body: '必要です。通常Scannerは断片、ステーション、ルート解放の基本ツールで、Bioscannerは別の成長レイヤーです。',
     },
   ],
+  readNextTitle: '次に読む',
+  related: [
+    { href: Routes.Subnautica2Biolab, label: 'Biolab ガイド' },
+    { href: Routes.Subnautica2Scanner, label: 'Scanner ガイド' },
+    { href: Routes.Subnautica2OxygenDepth, label: '酸素と深度ガイド' },
+    { href: Routes.Subnautica2Biomes, label: 'バイオームガイド' },
+    { href: Routes.Subnautica2Resources, label: '資源ガイド' },
+    { href: Routes.Subnautica2Beginner, label: '初心者ルート' },
+    { href: Routes.Subnautica2AngelComb, label: 'Angel Comb ガイド' },
+    { href: Routes.Subnautica2BloomBiofilm, label: 'Bloom Biofilm ガイド' },
+    {
+      href: Routes.Subnautica2FeedbackResonator,
+      label: 'Feedback Resonator ガイド',
+    },
+    {
+      href: Routes.Subnautica2ConduitCrystal,
+      label: 'Conduit Crystal ガイド',
+    },
+    { href: Routes.Subnautica2Celestine, label: 'Celestine ガイド' },
+  ],
+  sourcesTitle: 'ソースメモ',
   sourceBody:
-    '2026年5月27日にPC Gamer、GameSpot、GAMES.GG、公式Early Accessロードマップを確認しました。Early Access中は場所や条件が変わる可能性があります。',
+    '2026年5月27日にPC Gamer、GameSpot、GAMES.GG、Unknown Worlds公式Early Accessロードマップを確認しました。Bioscanner位置、Biomod条件、wreckルート目標は今後のパッチで変わる可能性があります。',
+  cardKicker: 'Biomodスキャンカード',
+  cardBody:
+    'Bioscannerの時期、生物スキャン、Biomod優先度、ルートから選ぶアップグレード計画。',
+  cardTypeLabel: '種類',
+  cardTypeValue: 'アップグレードガイド',
+  cardVerifiedLabel: '確認日',
+  cardStatusLabel: '状態',
+  cardStatusValue: 'Early Access',
 };
 
 const fallbackLocaleAliases = {
