@@ -43,6 +43,28 @@ const copperCopy: Record<string, CopperCopy> = {
     quickLabel: 'Quick answer',
     quickAnswer:
       'Start with the cave systems below and near the Lifepod. Games.gg points to Copper almost directly below the Lifepod and another early cave roughly 50 meters east. Mobalytics also describes a Colonists Bunker cave route around 200 meters southeast of the Lifepod, so use the pod as the anchor and expand outward only when your oxygen allows it.',
+    fieldNotesTitle: 'Field notes for Copper loops',
+    fieldNotes: [
+      {
+        title: 'Keep the first loop boring',
+        body: 'Copper is not the material to chase across half the map on day one. A dull Lifepod loop that you can repeat twice is better than a dramatic cave run you barely survive once.',
+      },
+      {
+        title: 'Count batteries before decoration',
+        body: 'The first Copper pieces disappear into Basic Batteries, Scanner progress, and wiring faster than expected. If a craft does not help the next route, leave it for later.',
+      },
+      {
+        title: 'Pair Copper with a small scan sweep',
+        body: 'The best Copper run usually checks one or two nearby fragments on the way back. That keeps the route useful even when the cave gives fewer pieces than you hoped.',
+      },
+    ],
+    routeChecklistTitle: 'Copper run check',
+    routeChecklist: [
+      'Start from Lifepod or a base hatch you can find again.',
+      'Empty enough inventory for Copper, not random clutter.',
+      'Save Copper for batteries, Scanner, and wiring first.',
+      'Return while the route still feels repeatable.',
+    ],
     contentsLabel: 'Contents',
     routeTitle: 'Early Copper route',
     routeSteps: [
@@ -141,6 +163,28 @@ const copperCopy: Record<string, CopperCopy> = {
     quickLabel: '快速答案',
     quickAnswer:
       '先找 Lifepod 下方和附近的洞穴。Games.gg 提到，Lifepod 正下方就有早期铜点，东侧大约 50 米还有一个洞穴点；Mobalytics 还提到 Lifepod 东南约 200 米的 Colonists Bunker cave 路线。前期先把 Lifepod 当锚点，不要氧气不够还硬跑远路。',
+    fieldNotesTitle: '找铜路线笔记',
+    fieldNotes: [
+      {
+        title: '第一条路线越无聊越好',
+        body: '铜不是第一天就要跨半张图去追的材料。一条能从 Lifepod 反复跑两遍的短路线，比一次差点憋死的深洞探险更有用。',
+      },
+      {
+        title: '先算电池，再想装饰',
+        body: '第一批铜很快会被 Basic Battery、Scanner 和 wiring 吃掉。不能让下一趟路线变短的东西，先别急着做。',
+      },
+      {
+        title: '找铜时顺手扫一点碎片',
+        body: '好用的铜路线，回程通常能顺手扫一两个附近碎片。就算洞里铜不多，这趟也不会完全白跑。',
+      },
+    ],
+    routeChecklistTitle: '找铜前检查',
+    routeChecklist: [
+      '从 Lifepod 或能找回来的基地舱门出发。',
+      '背包留给铜，不要一开始就塞满杂物。',
+      '第一批铜优先留给电池、Scanner 和 wiring。',
+      '趁路线还清楚时回家，不要硬赌最后一个角落。',
+    ],
     contentsLabel: '目录',
     routeTitle: '前期找铜路线',
     routeSteps: [

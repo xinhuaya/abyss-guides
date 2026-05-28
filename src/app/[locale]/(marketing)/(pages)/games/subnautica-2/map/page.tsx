@@ -47,6 +47,28 @@ const mapCopy: Record<string, MapCopy> = {
     quickLabel: 'Quick answer',
     quickAnswer:
       'Explore Subnautica 2 by loops instead of random lines. Pick one landmark, choose one objective, drop a Beacon when the route earns a name, note oxygen pressure and danger, then return before the swim turns messy.',
+    fieldNotesTitle: 'Field notes for route mapping',
+    fieldNotes: [
+      {
+        title: 'Name routes after jobs',
+        body: 'Copper loop, scan sweep, base scout, Silver cave: those names are boring on purpose. They tell you what to pack and when to turn around.',
+      },
+      {
+        title: 'A bad return is map data',
+        body: 'If you came home panicked, write down why. Low visibility, one confusing bend, or a late oxygen turn-back is exactly the kind of note that saves the next dive.',
+      },
+      {
+        title: 'Use Beacons only when a route earns one',
+        body: 'Beacon spam turns the ocean into clutter. Drop one when a route has a clear job or a place you genuinely expect to revisit.',
+      },
+    ],
+    routeChecklistTitle: 'Map note check',
+    routeChecklist: [
+      'Route starts from a landmark you can describe.',
+      'The dive has one job, not five half-jobs.',
+      'Danger, visibility, and oxygen pressure are recorded.',
+      'Beacon names are short enough to read while moving.',
+    ],
     contentsLabel: 'Contents',
     routeTitle: 'How to build a useful route',
     routeSteps: [
@@ -168,6 +190,28 @@ const mapCopy: Record<string, MapCopy> = {
     quickLabel: '快速答案',
     quickAnswer:
       '探索 Subnautica 2 时按循环路线走，不要随便拉直线乱游。选一个地标，一个目标，记下氧气压力和危险点，在路线变乱之前回家。好的地图笔记应该帮助你下次复跑，而不是只记得那里“好像挺有意思”。',
+    fieldNotesTitle: '路线地图笔记',
+    fieldNotes: [
+      {
+        title: '按任务给路线命名',
+        body: '铜循环、碎片扫描、基地侦察、银洞路线，这些名字故意很普通。它们能提醒你带什么、什么时候回头。',
+      },
+      {
+        title: '狼狈回家也是地图信息',
+        body: '如果你是慌着游回来的，就把原因写下来。能见度差、某个转弯迷路、氧气回头太晚，这些都能救下一趟。',
+      },
+      {
+        title: 'Beacon 不要乱插',
+        body: 'Beacon 太多会把海里变成一堆噪音。只有路线有明确任务，或者某个点你真的会回来，才值得插一个。',
+      },
+    ],
+    routeChecklistTitle: '地图笔记检查',
+    routeChecklist: [
+      '路线从一个能说清楚的地标开始。',
+      '这一趟只做一个目标，不做五个半目标。',
+      '危险、能见度和氧气压力都有记录。',
+      'Beacon 名字短到游动时也能看懂。',
+    ],
     contentsLabel: '目录',
     routeTitle: '怎么做一条有用路线',
     routeSteps: [

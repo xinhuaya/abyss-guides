@@ -47,6 +47,28 @@ const baseCopy: Record<string, BaseCopy> = {
     quickLabel: 'Quick answer',
     quickAnswer:
       'Build your first Subnautica 2 base near routes you repeat: Copper, Silver, Scanner fragments, oxygen safety, food, and return landmarks. Get the Habitat Builder path moving, place a simple room and hatch, power it, then add storage before you chase a beautiful layout.',
+    fieldNotesTitle: 'Field notes for the first base',
+    fieldNotes: [
+      {
+        title: 'Build where you already swim',
+        body: 'A first base should sit on a route you have proven, not on a postcard view you found once. If you cannot return to the spot while tired, it is too early for a main base.',
+      },
+      {
+        title: 'Storage is progression',
+        body: 'Lockers do not look exciting, but they stop every dive from ending in a sorting mess. Name them early, especially if someone else is sharing the base.',
+      },
+      {
+        title: 'Leave one ugly side for expansion',
+        body: 'Pretty symmetry can wait. Keep one side clear for power, vehicles, production rooms, or whatever Early Access patches make more important later.',
+      },
+    ],
+    routeChecklistTitle: 'First base check',
+    routeChecklist: [
+      'The base shortens at least one repeated route.',
+      'Power, hatch, storage, and crafting are solved first.',
+      'Lockers have simple names before the pile grows.',
+      'One side is left clear for later expansion.',
+    ],
     contentsLabel: 'Contents',
     routeTitle: 'First base order',
     routeSteps: [
@@ -182,6 +204,28 @@ const baseCopy: Record<string, BaseCopy> = {
     quickLabel: '快速答案',
     quickAnswer:
       '第一座 Subnautica 2 基地应建在你会反复跑的路线旁边：Copper、Silver、Scanner 碎片、氧气安全、食物和回程地标。先推进 Habitat Builder，做一个简单房间和舱门，解决供电，再加储物，最后再追求漂亮布局。',
+    fieldNotesTitle: '第一座基地笔记',
+    fieldNotes: [
+      {
+        title: '建在你已经会游的路线上',
+        body: '第一座基地应该压在确认过的路线旁边，而不是建在某次偶然看到的漂亮风景点。如果你累的时候都找不回来，它就还不适合做主基地。',
+      },
+      {
+        title: '储物本身就是进度',
+        body: '柜子看起来不刺激，但它能阻止每趟潜水都变成整理背包。早点命名，联机时尤其省事。',
+      },
+      {
+        title: '留一侧丑一点，给以后扩建',
+        body: '对称和美观可以晚点再说。先留一侧给供电、载具、生产房间，或者抢先体验补丁后突然变重要的新系统。',
+      },
+    ],
+    routeChecklistTitle: '第一座基地检查',
+    routeChecklist: [
+      '这座基地至少缩短一条反复跑的路线。',
+      '供电、舱门、储物和制作先解决。',
+      '柜子在材料堆起来之前就有简单名字。',
+      '至少留一侧空间给后续扩建。',
+    ],
     contentsLabel: '目录',
     routeTitle: '第一座基地建造顺序',
     routeSteps: [

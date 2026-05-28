@@ -16,7 +16,7 @@ type ScannerCopy = ResourceGuideCopy & {
 };
 
 const PUBLISHED_AT = '2026-05-23';
-const UPDATED_AT = '2026-05-27';
+const UPDATED_AT = '2026-05-28';
 
 const sharedSources = [
   {
@@ -47,6 +47,28 @@ const scannerCopy: Record<string, ScannerCopy> = {
     quickLabel: 'Quick answer',
     quickAnswer:
       'Make and carry the Scanner early. Scan fragments, stations, alien-route objects, and anything that looks like it belongs in a recipe chain before filling your inventory with loose loot. PC Gamer places the Bioscanner in Cicada wreckage about 500m southeast of the Alien Ruins Research Outpost, around bearing 130, and notes that earlier lifeform scans do not count retroactively.',
+    fieldNotesTitle: 'Field notes for scan routes',
+    fieldNotes: [
+      {
+        title: 'Fragments beat loose loot',
+        body: 'A full bag feels good for five minutes. A missed fragment costs another whole trip. When you enter wreckage or a worksite, scan first and tidy the inventory later.',
+      },
+      {
+        title: 'Do not scan at panic oxygen',
+        body: 'Scanning makes you stop moving and stare at the thing instead of the exit. If the oxygen warning is already loud, mark the spot in your head and come back with a cleaner route.',
+      },
+      {
+        title: 'Bioscanner is a second pass',
+        body: 'Lifeform scans become more important once the Bioscanner is in your kit. Treat that as a planned revisit, not a reason to chase every creature before you are ready.',
+      },
+    ],
+    routeChecklistTitle: 'Scan route check',
+    routeChecklist: [
+      'Scanner is packed before leaving the safe route.',
+      'Fragments and stations are scanned before inventory looting.',
+      'Oxygen budget includes still-time for scans.',
+      'Bioscanner targets are saved for a deliberate revisit.',
+    ],
     contentsLabel: 'Contents',
     routeTitle: 'Scanner priority route',
     routeSteps: [
@@ -188,6 +210,28 @@ const scannerCopy: Record<string, ScannerCopy> = {
     quickLabel: '快速答案',
     quickAnswer:
       '尽早做 Scanner，并且每次长路线都带上。看到碎片、工作站、外星路线物件，先扫再捡东西。Bioscanner 是后面的升级，当前报道提到它可以通过扫描海洋生物解锁更多 Biomod，所以不要把它当成开局五分钟就必须追的目标。',
+    fieldNotesTitle: '扫描路线笔记',
+    fieldNotes: [
+      {
+        title: '碎片比散装材料更值钱',
+        body: '满背包只爽五分钟，漏扫一个碎片可能要你整条路线重跑。进残骸或工作区时，先扫，再整理背包。',
+      },
+      {
+        title: '低氧时不要硬扫',
+        body: '扫描会让你停在原地盯着目标，而不是看出口。氧气警报已经响得烦人时，先记住位置，回去补路线。',
+      },
+      {
+        title: 'Bioscanner 算第二轮回访',
+        body: '拿到 Bioscanner 以后，生物扫描才会更重要。把它当成计划好的回访目标，不要前期为了每只生物乱追。',
+      },
+    ],
+    routeChecklistTitle: '扫描前检查',
+    routeChecklist: [
+      '离开安全路线前，Scanner 已经带上。',
+      '碎片和工作站先扫，再捡背包材料。',
+      '氧气预算要算上停下来扫描的时间。',
+      'Bioscanner 相关目标留给专门回访。',
+    ],
     contentsLabel: '目录',
     routeTitle: '扫描优先级路线',
     routeSteps: [
