@@ -770,12 +770,16 @@ const zhOnlyRoutes = [
   Routes.Subnautica2Salt,
   Routes.Subnautica2ScannerStation,
   Routes.Subnautica2SilverIngot,
+  Routes.Subnautica2StrongAcid,
   Routes.Subnautica2Sulfur,
+  Routes.Subnautica2SystemChip,
+  Routes.Subnautica2Tadpole,
   Routes.Subnautica2TadpoleDock,
   Routes.Subnautica2Titanium,
   Routes.Subnautica2Troilite,
   Routes.Subnautica2VehicleFabricator,
   Routes.Subnautica2Wakemaker,
+  Routes.Subnautica2WiringKit,
 ] as const;
 
 const zhJaRoutes = [
