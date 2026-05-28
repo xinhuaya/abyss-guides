@@ -16,7 +16,7 @@ type TadpoleDockCopy = ResourceGuideCopy & {
 };
 
 const PUBLISHED_AT = '2026-05-26';
-const UPDATED_AT = '2026-05-26';
+const UPDATED_AT = '2026-05-28';
 
 const sharedSources = [
   {
@@ -44,10 +44,10 @@ const tadpoleDockCopy: Record<string, TadpoleDockCopy> = {
     eyebrow: 'Subnautica 2 Moonpool setup',
     title: 'Subnautica 2 Tadpole Dock Guide',
     description:
-      'The Tadpole Dock is the part of the vehicle bay that feels obvious only after it works. Before that, it is a little placement puzzle: enough room under the Moonpool, a clean approach path, and no base pieces blocking the vehicle.',
+      'The Tadpole Dock is the part of the vehicle bay that feels obvious only after it works. Before that, it is a little placement puzzle: enough room under the Moonpool, a clean approach path, no base pieces blocking the vehicle, and a couple of Copper Wire saved before the build session.',
     quickLabel: 'Quick answer',
     quickAnswer:
-      'Current Dexerto data lists Tadpole Dock as a Builder Tool construct using Titanium Ingot x2, Silver Ingot x1, and Copper Wire x2. AllThingsHow shows the dock as a Moonpool add-on, and PC Gamer warns that the Moonpool setup needs space below the base because the dock extends downward. Build the Moonpool in open water first, then place the Tadpole Dock where the vehicle can enter without clipping terrain or base parts.',
+      'Current Dexerto data lists Tadpole Dock as a Builder Tool construct using Titanium Ingot x2, Silver Ingot x1, and Copper Wire x2. AllThingsHow shows the dock as a Moonpool add-on, and PC Gamer warns that the Moonpool setup needs space below the base because the dock extends downward. Build the Moonpool in open water first, reserve Copper Wire before base pieces eat it, then place the Tadpole Dock where the vehicle can enter without clipping terrain or base parts.',
     contentsLabel: 'Contents',
     routeTitle: 'Tadpole Dock placement route',
     routeSteps: [
@@ -62,6 +62,10 @@ const tadpoleDockCopy: Record<string, TadpoleDockCopy> = {
       {
         title: 'Craft the dock materials together',
         body: 'Dexerto currently lists Titanium Ingot x2, Silver Ingot x1, and Copper Wire x2. Copper Wire is easy to spend on other base parts, so put two wires aside before the build session starts.',
+      },
+      {
+        title: 'Keep a Power Cell plan nearby',
+        body: 'Dock placement is only half the vehicle push. Keep Power Cell and Tadpole materials in the same project box so the bay is ready when the craft chain opens.',
       },
       {
         title: 'Place Dock and Vehicle Fabricator as a pair',
@@ -79,6 +83,10 @@ const tadpoleDockCopy: Record<string, TadpoleDockCopy> = {
       ['Titanium Ingot x2', 'Current public recipe data for the dock.'],
       ['Silver Ingot x1', 'Do not spend the Silver chain before docking prep.'],
       ['Copper Wire x2', 'Reserve two wires before base building eats them.'],
+      [
+        'Power Cell plan',
+        'Keep Tadpole power materials near the dock project.',
+      ],
       ['Vehicle Fabricator', 'Works with the dock as part of the Tadpole bay.'],
       ['Clear approach', 'No terrain or base parts blocking vehicle entry.'],
     ],
@@ -144,11 +152,12 @@ const tadpoleDockCopy: Record<string, TadpoleDockCopy> = {
       { href: Routes.Subnautica2SilverIngot, label: 'Silver Ingot Guide' },
       { href: Routes.Subnautica2CopperWire, label: 'Copper Wire Guide' },
       { href: Routes.Subnautica2PowerCell, label: 'Power Cell Guide' },
+      { href: Routes.Subnautica2Beacon, label: 'Beacon Guide' },
       { href: Routes.Subnautica2Crafting, label: 'Crafting Guide' },
     ],
     sourcesTitle: 'Source note',
     sourceBody:
-      'Checked May 26, 2026 against Dexerto, AllThingsHow, and PC Gamer. Subnautica 2 is in Early Access, so recipe costs, build behavior, and Moonpool placement rules can change after patches.',
+      'Checked May 28, 2026 against Dexerto, AllThingsHow, and PC Gamer. Subnautica 2 is in Early Access, so recipe costs, build behavior, and Moonpool placement rules can change after patches.',
     cardKicker: 'Dock card',
     cardBody:
       'Titanium Ingot x2, Silver Ingot x1, Copper Wire x2, Moonpool clearance, Vehicle Fabricator pairing, and Tadpole approach testing.',
@@ -264,11 +273,12 @@ const tadpoleDockCopy: Record<string, TadpoleDockCopy> = {
       { href: Routes.Subnautica2SilverIngot, label: 'Silver Ingot 指南' },
       { href: Routes.Subnautica2CopperWire, label: 'Copper Wire 指南' },
       { href: Routes.Subnautica2PowerCell, label: 'Power Cell 指南' },
+      { href: Routes.Subnautica2Beacon, label: 'Beacon 指南' },
       { href: Routes.Subnautica2Crafting, label: '制作指南' },
     ],
     sourcesTitle: '来源说明',
     sourceBody:
-      '2026 年 5 月 26 日核对 Dexerto、AllThingsHow 和 PC Gamer。Subnautica 2 仍在抢先体验阶段，配方消耗、建造行为和 Moonpool 摆放规则都可能随补丁变化。',
+      '2026 年 5 月 28 日核对 Dexerto、AllThingsHow 和 PC Gamer。Subnautica 2 仍在抢先体验阶段，配方消耗、建造行为和 Moonpool 摆放规则都可能随补丁变化。',
     cardKicker: 'Dock 卡片',
     cardBody:
       'Titanium Ingot x2、Silver Ingot x1、Copper Wire x2、Moonpool 下方空间、Vehicle Fabricator 搭配和 Tadpole 进出测试。',

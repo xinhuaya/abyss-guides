@@ -16,7 +16,7 @@ type DockFixCopy = ResourceGuideCopy & {
 };
 
 const PUBLISHED_AT = '2026-05-26';
-const UPDATED_AT = '2026-05-26';
+const UPDATED_AT = '2026-05-28';
 
 const sharedSources = [
   {
@@ -44,10 +44,10 @@ const dockFixCopy: Record<string, DockFixCopy> = {
     eyebrow: 'Subnautica 2 docking fix',
     title: 'Subnautica 2 Insufficient Space to Dock Fix',
     description:
-      'The “insufficient space to dock” message usually feels like the game is being picky. Most of the time, it is simpler than that: the Moonpool is too close to terrain, too shallow below, or boxed in by your own base pieces.',
+      'The insufficient space to dock message usually feels like the game is being picky. Most of the time, it is simpler than that: the Moonpool is too close to terrain, too shallow below, or boxed in by your own base pieces.',
     quickLabel: 'Quick answer',
     quickAnswer:
-      'If Subnautica 2 says insufficient space to dock, move the Moonpool or Tadpole Dock to deeper, more open water. Shacknews points the fix toward clearing space around the docking area, while PC Gamer and AllThingsHow both treat the Moonpool, Tadpole Dock, and Vehicle Fabricator as a connected vehicle-bay setup. Do not keep rotating the preview in a cramped spot. Rebuild the bay where the Tadpole has a clean approach and enough room underneath.',
+      'If Subnautica 2 says insufficient space to dock, move the Moonpool or Tadpole Dock to deeper, more open water. Shacknews points the fix toward clearing space around the docking area, while PC Gamer and AllThingsHow both treat the Moonpool, Tadpole Dock, and Vehicle Fabricator as a connected vehicle-bay setup. Do not keep rotating the preview in a cramped spot. Rebuild the bay where the Tadpole has a clean approach, enough room underneath, and a Beacon marker you can actually find again.',
     contentsLabel: 'Contents',
     routeTitle: 'Docking fix route',
     routeSteps: [
@@ -62,6 +62,10 @@ const dockFixCopy: Record<string, DockFixCopy> = {
       {
         title: 'Move away from rocks and base clutter',
         body: 'Shacknews focuses on clearing space around the dock. Give the Tadpole room to line up before it reaches the bay instead of forcing a sharp turn at the entrance.',
+      },
+      {
+        title: 'Mark the clean replacement spot',
+        body: 'When you find deeper open water, drop a Beacon before rebuilding. The fix is much easier when you are moving parts to a named vehicle bay instead of guessing where the good water was.',
       },
       {
         title: 'Place Moonpool, then Dock, then Fabricator',
@@ -84,6 +88,7 @@ const dockFixCopy: Record<string, DockFixCopy> = {
         'Approach path',
         'Tadpole should enter without scraping or sharp turns.',
       ],
+      ['Beacon marker', 'Name the replacement bay before moving materials.'],
       ['Tadpole Dock', 'Attach after Moonpool placement feels clean.'],
       ['Vehicle Fabricator', 'Keep it near the bay without blocking entry.'],
       ['Rebuild early', 'Cheap fixes beat living with a bad vehicle bay.'],
@@ -137,6 +142,7 @@ const dockFixCopy: Record<string, DockFixCopy> = {
         label: 'Vehicle Fabricator Guide',
       },
       { href: Routes.Subnautica2Tadpole, label: 'Tadpole Vehicle Guide' },
+      { href: Routes.Subnautica2Beacon, label: 'Beacon Guide' },
       { href: Routes.Subnautica2BaseBuilding, label: 'Base Building Guide' },
       {
         href: Routes.Subnautica2HabitatBuilder,
@@ -145,7 +151,7 @@ const dockFixCopy: Record<string, DockFixCopy> = {
     ],
     sourcesTitle: 'Source note',
     sourceBody:
-      'Checked May 26, 2026 against Shacknews, PC Gamer, and AllThingsHow. Subnautica 2 is in Early Access, so docking checks, placement previews, and Moonpool behavior can change after patches.',
+      'Checked May 28, 2026 against Shacknews, PC Gamer, and AllThingsHow. Subnautica 2 is in Early Access, so docking checks, placement previews, and Moonpool behavior can change after patches.',
     cardKicker: 'Docking error card',
     cardBody:
       'Moonpool depth, Tadpole Dock clearance, approach path, Vehicle Fabricator spacing, and rebuild timing.',
@@ -252,12 +258,13 @@ const dockFixCopy: Record<string, DockFixCopy> = {
         label: 'Vehicle Fabricator 指南',
       },
       { href: Routes.Subnautica2Tadpole, label: 'Tadpole 载具指南' },
+      { href: Routes.Subnautica2Beacon, label: 'Beacon 指南' },
       { href: Routes.Subnautica2BaseBuilding, label: '基地建造指南' },
       { href: Routes.Subnautica2HabitatBuilder, label: 'Habitat Builder 指南' },
     ],
     sourcesTitle: '来源说明',
     sourceBody:
-      '2026 年 5 月 26 日核对 Shacknews、PC Gamer 和 AllThingsHow。Subnautica 2 仍处于抢先体验阶段，停靠检查、摆放预览和 Moonpool 行为可能随补丁变化。',
+      '2026 年 5 月 28 日核对 Shacknews、PC Gamer 和 AllThingsHow。Subnautica 2 仍处于抢先体验阶段，停靠检查、摆放预览和 Moonpool 行为可能随补丁变化。',
     cardKicker: '停靠报错卡片',
     cardBody:
       'Moonpool 下方深度、Tadpole Dock 空间、进出路线、Vehicle Fabricator 距离和重建时机。',

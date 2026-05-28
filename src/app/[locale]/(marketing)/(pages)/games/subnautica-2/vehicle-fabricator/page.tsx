@@ -16,7 +16,7 @@ type VehicleFabricatorCopy = ResourceGuideCopy & {
 };
 
 const PUBLISHED_AT = '2026-05-26';
-const UPDATED_AT = '2026-05-26';
+const UPDATED_AT = '2026-05-28';
 
 const sharedSources = [
   {
@@ -44,10 +44,10 @@ const vehicleFabricatorCopy: Record<string, VehicleFabricatorCopy> = {
     eyebrow: 'Subnautica 2 vehicle station',
     title: 'Subnautica 2 Vehicle Fabricator Guide',
     description:
-      'Vehicle Fabricator is where the Tadpole plan stops being a pile of parts and becomes an actual vehicle. The catch is that the station is not just another wall gadget; it needs the Moonpool and Tadpole Dock setup to make sense.',
+      'Vehicle Fabricator is where the Tadpole plan stops being a pile of parts and becomes an actual vehicle. The catch is that the station is not just another wall gadget; it needs Moonpool clearance, Tadpole Dock space, Glass, and Power Cell timing to line up.',
     quickLabel: 'Quick answer',
     quickAnswer:
-      'Current Subnautica2.gg data lists Vehicle Fabricator as a Builder Tool construct using Titanium Ingot x2, Copper Ingot x1, and Glass x2. PC Gamer and AllThingsHow both point players toward a Moonpool-based setup: build enough base space, place the Moonpool, attach the Tadpole Dock, then use the Vehicle Fabricator for the Tadpole chain. Treat the recipe as patch-sensitive and check your PDA after updates.',
+      'Current Subnautica2.gg data lists Vehicle Fabricator as a Builder Tool construct using Titanium Ingot x2, Copper Ingot x1, and Glass x2. PC Gamer and AllThingsHow both point players toward a Moonpool-based setup: build enough base space, place the Moonpool, attach the Tadpole Dock, then use the Vehicle Fabricator for the Tadpole chain. Treat the recipe as patch-sensitive and check your PDA after updates. In practice, mark the vehicle bay with a Beacon and stock Glass before you craft the final Power Cell.',
     contentsLabel: 'Contents',
     routeTitle: 'Vehicle Fabricator route',
     routeSteps: [
@@ -58,6 +58,10 @@ const vehicleFabricatorCopy: Record<string, VehicleFabricatorCopy> = {
       {
         title: 'Prepare the ingot and glass materials',
         body: 'Subnautica2.gg currently lists Titanium Ingot x2, Copper Ingot x1, and Glass x2. That means you should solve Titanium, Copper, and Quartz routes before blaming the vehicle chain.',
+      },
+      {
+        title: 'Mark the bay before the final craft',
+        body: 'A Beacon beside the vehicle base keeps return trips painless while you move Glass, ingots, and Power Cell parts. Do this before the build session turns into three separate swims.',
       },
       {
         title: 'Place Moonpool and Tadpole Dock first',
@@ -89,6 +93,7 @@ const vehicleFabricatorCopy: Record<string, VehicleFabricatorCopy> = {
         'Current recipe data; recheck in the PDA after patches.',
       ],
       ['Glass x2', 'Quartz route or stored Glass before the build push.'],
+      ['Beacon marker', 'Mark the vehicle bay before moving heavy materials.'],
       ['Power Cell', 'Needed for Tadpole progress, not for random storage.'],
     ],
     visualTitle: 'Vehicle bay plan',
@@ -141,6 +146,7 @@ const vehicleFabricatorCopy: Record<string, VehicleFabricatorCopy> = {
       { href: Routes.Subnautica2TadpoleDock, label: 'Tadpole Dock Guide' },
       { href: Routes.Subnautica2Tadpole, label: 'Tadpole Vehicle Guide' },
       { href: Routes.Subnautica2PowerCell, label: 'Power Cell Guide' },
+      { href: Routes.Subnautica2Beacon, label: 'Beacon Guide' },
       { href: Routes.Subnautica2BaseBuilding, label: 'Base Building Guide' },
       {
         href: Routes.Subnautica2HabitatBuilder,
@@ -162,7 +168,7 @@ const vehicleFabricatorCopy: Record<string, VehicleFabricatorCopy> = {
     ],
     sourcesTitle: 'Source note',
     sourceBody:
-      'Checked May 26, 2026 against Subnautica2.gg, PC Gamer, and AllThingsHow. Subnautica 2 is in Early Access, so construction costs, unlocks, and placement rules should be rechecked after major patches.',
+      'Checked May 28, 2026 against Subnautica2.gg, PC Gamer, and AllThingsHow. Subnautica 2 is in Early Access, so construction costs, unlocks, and placement rules should be rechecked after major patches.',
     cardKicker: 'Vehicle station',
     cardBody:
       'Moonpool clearance, Tadpole Dock setup, current Vehicle Fabricator recipe data, Power Cell timing, and upgrade planning.',
@@ -273,6 +279,7 @@ const vehicleFabricatorCopy: Record<string, VehicleFabricatorCopy> = {
       { href: Routes.Subnautica2TadpoleDock, label: 'Tadpole Dock 指南' },
       { href: Routes.Subnautica2Tadpole, label: 'Tadpole 载具指南' },
       { href: Routes.Subnautica2PowerCell, label: 'Power Cell 指南' },
+      { href: Routes.Subnautica2Beacon, label: 'Beacon 指南' },
       { href: Routes.Subnautica2BaseBuilding, label: '基地建造指南' },
       { href: Routes.Subnautica2HabitatBuilder, label: 'Habitat Builder 指南' },
       { href: Routes.Subnautica2TitaniumIngot, label: 'Titanium Ingot 指南' },
@@ -291,7 +298,7 @@ const vehicleFabricatorCopy: Record<string, VehicleFabricatorCopy> = {
     ],
     sourcesTitle: '来源说明',
     sourceBody:
-      '2026 年 5 月 26 日核对 Subnautica2.gg、PC Gamer 和 AllThingsHow。Subnautica 2 仍在抢先体验阶段，建造消耗、解锁条件和摆放规则都可能随大补丁变化。',
+      '2026 年 5 月 28 日核对 Subnautica2.gg、PC Gamer 和 AllThingsHow。Subnautica 2 仍在抢先体验阶段，建造消耗、解锁条件和摆放规则都可能随大补丁变化。',
     cardKicker: '载具工作站',
     cardBody:
       'Moonpool 空间、Tadpole Dock 设置、当前 Vehicle Fabricator 配方数据、Power Cell 时机和升级规划。',

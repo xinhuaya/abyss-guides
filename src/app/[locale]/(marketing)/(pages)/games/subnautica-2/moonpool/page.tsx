@@ -16,7 +16,7 @@ type MoonpoolCopy = ResourceGuideCopy & {
 };
 
 const PUBLISHED_AT = '2026-05-26';
-const UPDATED_AT = '2026-05-26';
+const UPDATED_AT = '2026-05-28';
 
 const sharedSources = [
   {
@@ -48,10 +48,10 @@ const moonpoolCopy: Record<string, MoonpoolCopy> = {
     eyebrow: 'Subnautica 2 vehicle bay setup',
     title: 'Subnautica 2 Moonpool Guide',
     description:
-      'Moonpool is where a neat base plan can turn into a vehicle headache. The recipe is not the hard part. The hard part is leaving enough water, height, and approach room for Tadpole support pieces to actually work.',
+      'Moonpool is where a neat base plan can turn into a vehicle headache. The recipe is not the hard part. The hard part is leaving enough water, height, approach room, and a marked return route for Tadpole support pieces to actually work.',
     quickLabel: 'Quick answer',
     quickAnswer:
-      'Current Subnautica2.gg data lists Moonpool as a scan-unlocked build with multiple unlock leads, including scan and Data Box paths. Dexerto lists the current build cost as Titanium x5 with the Habitat Builder. PC Gamer and AllThingsHow both tie Moonpool planning to the Tadpole Dock and Vehicle Fabricator chain, while Shacknews points the common "insufficient space to dock" problem back to clearance and placement. Build it in open water with room below, then add Tadpole Dock and Vehicle Fabricator around the vehicle route.',
+      'Current Subnautica2.gg data lists Moonpool as a scan-unlocked build with multiple unlock leads, including scan and Data Box paths. Dexerto lists the current build cost as Titanium x5 with the Habitat Builder. PC Gamer and AllThingsHow both tie Moonpool planning to the Tadpole Dock and Vehicle Fabricator chain, while Shacknews points the common "insufficient space to dock" problem back to clearance and placement. Build it in open water with room below, mark the bay with a Beacon, then add Tadpole Dock and Vehicle Fabricator around the vehicle route.',
     contentsLabel: 'Contents',
     routeTitle: 'Moonpool setup route',
     routeSteps: [
@@ -66,6 +66,10 @@ const moonpoolCopy: Record<string, MoonpoolCopy> = {
       {
         title: 'Build it in open water',
         body: 'The Moonpool needs more room than a normal room. Leave space below for docking hardware, space around the sides for approach, and enough depth that the Tadpole does not scrape terrain.',
+      },
+      {
+        title: 'Mark the bay before you decorate',
+        body: 'A Beacon near the Moonpool keeps the vehicle base easy to find while you are still hauling Titanium, Glass, and power parts. It is cheaper than hunting your own base in bad light.',
       },
       {
         title: 'Plan Dock and Vehicle Fabricator together',
@@ -89,6 +93,7 @@ const moonpoolCopy: Record<string, MoonpoolCopy> = {
         'Current base-piece page uses Habitat Builder construction.',
       ],
       ['Open water', 'Enough room below and around the bay.'],
+      ['Beacon', 'Mark the vehicle bay before the base layout gets busy.'],
       ['Tadpole Dock', 'Place only after the Moonpool has real clearance.'],
       ['Vehicle Fabricator', 'Plan it beside the same approach route.'],
     ],
@@ -149,13 +154,15 @@ const moonpoolCopy: Record<string, MoonpoolCopy> = {
         label: 'Vehicle Fabricator Guide',
       },
       { href: Routes.Subnautica2Tadpole, label: 'Tadpole Vehicle Guide' },
+      { href: Routes.Subnautica2Beacon, label: 'Beacon Guide' },
       { href: Routes.Subnautica2Titanium, label: 'Titanium Location Guide' },
+      { href: Routes.Subnautica2Glass, label: 'Glass Recipe Guide' },
       { href: Routes.Subnautica2Resources, label: 'Resources Guide' },
       { href: Routes.Subnautica2Crafting, label: 'Crafting Guide' },
     ],
     sourcesTitle: 'Source note',
     sourceBody:
-      'Checked May 26, 2026 against Subnautica2.gg, Dexerto, PC Gamer, and Shacknews. Subnautica 2 is in Early Access, so unlock paths, build costs, placement behavior, and docking errors can change after patches.',
+      'Checked May 28, 2026 against Subnautica2.gg, Dexerto, PC Gamer, and Shacknews. Subnautica 2 is in Early Access, so unlock paths, build costs, placement behavior, and docking errors can change after patches.',
     cardKicker: 'Vehicle bay card',
     cardBody:
       'Scan/Data Box unlock leads, Titanium x5, Habitat Builder placement, Tadpole Dock clearance, Vehicle Fabricator pairing, and insufficient-space fixes.',
@@ -266,13 +273,15 @@ const moonpoolCopy: Record<string, MoonpoolCopy> = {
         label: 'Vehicle Fabricator 指南',
       },
       { href: Routes.Subnautica2Tadpole, label: 'Tadpole 载具指南' },
+      { href: Routes.Subnautica2Beacon, label: 'Beacon 指南' },
       { href: Routes.Subnautica2Titanium, label: 'Titanium 位置指南' },
+      { href: Routes.Subnautica2Glass, label: 'Glass 配方指南' },
       { href: Routes.Subnautica2Resources, label: '资源指南' },
       { href: Routes.Subnautica2Crafting, label: '制作指南' },
     ],
     sourcesTitle: '来源说明',
     sourceBody:
-      '2026 年 5 月 26 日核对 Subnautica2.gg、Dexerto、PC Gamer 和 Shacknews。Subnautica 2 仍处于抢先体验阶段，解锁路线、建造材料、摆放行为和 docking 报错都可能随补丁变化。',
+      '2026 年 5 月 28 日核对 Subnautica2.gg、Dexerto、PC Gamer 和 Shacknews。Subnautica 2 仍处于抢先体验阶段，解锁路线、建造材料、摆放行为和 docking 报错都可能随补丁变化。',
     cardKicker: '载具区卡片',
     cardBody:
       '扫描 / Data Box 解锁线索、Titanium x5、Habitat Builder 摆放、Tadpole Dock 空间、Vehicle Fabricator 搭配和空间不足修正。',
