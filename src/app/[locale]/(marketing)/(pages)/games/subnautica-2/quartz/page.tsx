@@ -16,7 +16,7 @@ type QuartzCopy = ResourceGuideCopy & {
 };
 
 const PUBLISHED_AT = '2026-05-26';
-const UPDATED_AT = '2026-05-26';
+const UPDATED_AT = '2026-05-28';
 
 const sharedSources = [
   {
@@ -48,10 +48,10 @@ const quartzCopy: Record<string, QuartzCopy> = {
     eyebrow: 'Subnautica 2 resource route',
     title: 'Subnautica 2 Quartz Location Guide',
     description:
-      'Quartz feels common until every recipe wants it at once. Get a few by hand for the first tools, then set up a cleaner bulk route before glass and electronics start fighting over the same locker.',
+      'Quartz feels common until every recipe wants it at once. Get a few by hand for the first tools, then mark a cleaner bulk route before Glass, Scanner Station, and electronics start fighting over the same locker.',
     quickLabel: 'Quick answer',
     quickAnswer:
-      'PC Gamer reports that early Quartz appears as white crystal chunks on and inside orange-green coral domes, including under the Lifepod, with many domes northwest of the Lifepod. Hand pickups are enough for early Scanner and Glass work, medium crystals can be smashed with the Survival Multitool, and large Quartz deposits later need the Sonic Resonator. Subnautica2Hub lists Quartz in Coral Gardens and Observatory Ruins, while Subnautica2.gg lists it as used in 20 recipes and tied to Processor / glass crafting data.',
+      'PC Gamer reports that early Quartz appears as white crystal chunks on and inside orange-green coral domes, including under the Lifepod, with many domes northwest of the Lifepod. Hand pickups are enough for early Scanner and Glass work, medium crystals can be smashed with the Survival Multitool, and large Quartz deposits later need the Sonic Resonator. Subnautica2Hub lists Quartz in Coral Gardens and Observatory Ruins, while Subnautica2.gg lists it as used in 20 recipes and tied to Processor / glass crafting data. Save a marked Quartz route before you spend the lot on base windows.',
     contentsLabel: 'Contents',
     routeTitle: 'Quartz route plan',
     routeSteps: [
@@ -62,6 +62,10 @@ const quartzCopy: Record<string, QuartzCopy> = {
       {
         title: 'Sweep northwest for early stacks',
         body: 'The same guide points to loads of coral domes northwest of the Lifepod. This is the safer early route for Scanner, Glass, and Habitat Builder prep.',
+      },
+      {
+        title: 'Drop a Beacon on the good dome line',
+        body: 'Once you find a repeatable cluster, mark it. Quartz is annoying not because it is hidden, but because you need it again when Glass, Scanner Station, and System Chip plans collide.',
       },
       {
         title: 'Break medium crystals when you see them',
@@ -90,6 +94,10 @@ const quartzCopy: Record<string, QuartzCopy> = {
         'Subnautica2Hub lists Coral Gardens and Observatory Ruins.',
       ],
       ['Recipe pressure', 'Subnautica2.gg lists Quartz as used in 20 recipes.'],
+      [
+        'Route marker',
+        'Beacon one reliable dome route before Glass and base work ramp up.',
+      ],
     ],
     visualTitle: 'Quartz split',
     visualItems: [
@@ -134,6 +142,8 @@ const quartzCopy: Record<string, QuartzCopy> = {
     readNextTitle: 'Read next',
     related: [
       { href: Routes.Subnautica2Scanner, label: 'Scanner Guide' },
+      { href: Routes.Subnautica2Glass, label: 'Glass Recipe Guide' },
+      { href: Routes.Subnautica2Beacon, label: 'Beacon Guide' },
       {
         href: Routes.Subnautica2HabitatBuilder,
         label: 'Habitat Builder Guide',
@@ -145,11 +155,15 @@ const quartzCopy: Record<string, QuartzCopy> = {
         href: Routes.Subnautica2SonicResonator,
         label: 'Sonic Resonator Guide',
       },
+      {
+        href: Routes.Subnautica2ScannerStation,
+        label: 'Scanner Station Guide',
+      },
       { href: Routes.Subnautica2Resources, label: 'Resources Guide' },
     ],
     sourcesTitle: 'Source note',
     sourceBody:
-      'Checked May 26, 2026 against PC Gamer, Subnautica2Hub, Subnautica2.gg, and Dexerto. Early Access resource locations and recipe lists can change, so recheck the PDA and map after patches.',
+      'Checked May 28, 2026 against PC Gamer, Subnautica2Hub, Subnautica2.gg, and Dexerto. Early Access resource locations and recipe lists can change, so recheck the PDA and map after patches.',
     cardKicker: 'Resource card',
     cardBody:
       'Coral dome pickups, northwest Lifepod sweep, medium crystal smash, Sonic Resonator bulk mining, glass pressure, and electronics storage.',
@@ -168,10 +182,10 @@ const quartzCopy: Record<string, QuartzCopy> = {
     eyebrow: 'Subnautica 2 资源路线',
     title: 'Subnautica 2 Quartz 位置指南',
     description:
-      'Quartz 看起来很常见，直到 Scanner、Glass、System Chip 和模块一起要它。前期先手捡，后面再安排批量路线，别让玻璃把电子材料吃光。',
+      'Quartz 看起来很常见，直到 Scanner、Glass、Scanner Station、System Chip 和模块一起要它。前期先手捡，后面把稳定路线标出来，别让玻璃把电子材料吃光。',
     quickLabel: '快速结论',
     quickAnswer:
-      'PC Gamer 报道早期 Quartz 是白色水晶块，出现在橙绿色珊瑚穹顶上或里面，包括 Lifepod 下方；Lifepod 西北方向有很多这类穹顶。手捡足够支撑早期 Scanner 和 Glass，中等水晶可以用 Survival Multitool 打碎，大型 Quartz 矿点后期需要 Sonic Resonator。Subnautica2Hub 把 Quartz 区域列为 Coral Gardens 和 Observatory Ruins；Subnautica2.gg 当前写 Quartz 用于 20 个配方，并和 Processor / glass 制作资料相关。',
+      'PC Gamer 报道早期 Quartz 是白色水晶块，出现在橙绿色珊瑚穹顶上或里面，包括 Lifepod 下方；Lifepod 西北方向有很多这类穹顶。手捡足够支撑早期 Scanner 和 Glass，中等水晶可以用 Survival Multitool 打碎，大型 Quartz 矿点后期需要 Sonic Resonator。Subnautica2Hub 把 Quartz 区域列为 Coral Gardens 和 Observatory Ruins；Subnautica2.gg 当前写 Quartz 用于 20 个配方，并和 Processor / glass 制作资料相关。建议在做基地窗户前，先标出一条能反复补 Quartz 的路线。',
     contentsLabel: '目录',
     routeTitle: 'Quartz 路线规划',
     routeSteps: [
@@ -182,6 +196,10 @@ const quartzCopy: Record<string, QuartzCopy> = {
       {
         title: '早期往西北扫一圈',
         body: '同一篇攻略提到 Lifepod 西北方向有很多珊瑚穹顶。这条路线适合早期 Scanner、Glass 和 Habitat Builder 准备。',
+      },
+      {
+        title: '给稳定穹顶路线放 Beacon',
+        body: '找到能反复跑的 Quartz 点后就标出来。Quartz 麻烦的地方不是完全找不到，而是 Glass、Scanner Station 和 System Chip 一起要材料时，你会突然又缺一批。',
       },
       {
         title: '看到中等水晶就敲掉',
@@ -204,6 +222,7 @@ const quartzCopy: Record<string, QuartzCopy> = {
       ['批量采集', '大型矿点需要 Sonic Resonator。'],
       ['生态区', 'Subnautica2Hub 列出 Coral Gardens 和 Observatory Ruins。'],
       ['配方压力', 'Subnautica2.gg 当前写 Quartz 用于 20 个配方。'],
+      ['路线标记', 'Glass 和基地制作提速前，先给稳定 Quartz 路线放 Beacon。'],
     ],
     visualTitle: 'Quartz 分流',
     visualItems: [
@@ -248,16 +267,19 @@ const quartzCopy: Record<string, QuartzCopy> = {
     readNextTitle: '继续阅读',
     related: [
       { href: Routes.Subnautica2Scanner, label: 'Scanner 指南' },
+      { href: Routes.Subnautica2Glass, label: 'Glass 配方指南' },
+      { href: Routes.Subnautica2Beacon, label: 'Beacon 指南' },
       { href: Routes.Subnautica2HabitatBuilder, label: 'Habitat Builder 指南' },
       { href: Routes.Subnautica2SystemChip, label: 'System Chip 指南' },
       { href: Routes.Subnautica2WiringKit, label: 'Wiring Kit 指南' },
       { href: Routes.Subnautica2EchoLocation, label: 'Echo Location 指南' },
       { href: Routes.Subnautica2SonicResonator, label: 'Sonic Resonator 指南' },
+      { href: Routes.Subnautica2ScannerStation, label: 'Scanner Station 指南' },
       { href: Routes.Subnautica2Resources, label: '资源指南' },
     ],
     sourcesTitle: '来源说明',
     sourceBody:
-      '2026 年 5 月 26 日核对 PC Gamer、Subnautica2Hub、Subnautica2.gg 和 Dexerto。抢先体验阶段资源点和配方列表可能变化，更新后请重新核对 PDA 和地图。',
+      '2026 年 5 月 28 日核对 PC Gamer、Subnautica2Hub、Subnautica2.gg 和 Dexerto。抢先体验阶段资源点和配方列表可能变化，更新后请重新核对 PDA 和地图。',
     cardKicker: '资源卡',
     cardBody:
       '珊瑚穹顶手捡、Lifepod 西北路线、中等水晶敲碎、Sonic Resonator 批量采集、Glass 消耗和电子材料收纳。',

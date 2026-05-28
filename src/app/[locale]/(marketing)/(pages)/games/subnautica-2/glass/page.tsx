@@ -16,7 +16,7 @@ type GlassCopy = ResourceGuideCopy & {
 };
 
 const PUBLISHED_AT = '2026-05-26';
-const UPDATED_AT = '2026-05-26';
+const UPDATED_AT = '2026-05-28';
 
 const sharedSources = [
   {
@@ -48,10 +48,10 @@ const glassCopy: Record<string, GlassCopy> = {
     eyebrow: 'Subnautica 2 crafting route',
     title: 'Subnautica 2 Glass Recipe Guide',
     description:
-      'Glass is not rare, but it is annoyingly easy to spend before you notice. Make enough for the Habitat Builder, keep a few panes for vehicle and module chains, and do not burn every Quartz run on decor.',
+      'Glass is not rare, but it is annoyingly easy to spend before you notice. Make enough for the Habitat Builder, keep a few panes for Scanner Station and vehicle chains, and do not burn every Quartz run on decor.',
     quickLabel: 'Quick answer',
     quickAnswer:
-      'Dexerto and Subnautica 2 Wiki list the standard Glass recipe as Quartz x2 at the Fabricator. Both also list an alternate Glass-from-Salt recipe using Salt x2 at the Processor, with Dexerto noting that the Quartz recipe unlocks after picking up Quartz and the Salt version unlocks through Processor Construct Data. Subnautica2Hub lists Glass as a crafted resource used in equipment, tools, base modules, and habitat structures, including Engine Efficiency, Enameled Glass, Tadpole, Habitat Builder, Biobed, Dining Table, Vehicle Fabricator, and Interior Door.',
+      'Dexerto and Subnautica 2 Wiki list the standard Glass recipe as Quartz x2 at the Fabricator. Both also list an alternate Glass-from-Salt recipe using Salt x2 at the Processor, with Dexerto noting that the Quartz recipe unlocks after picking up Quartz and the Salt version unlocks through Processor Construct Data. Subnautica2Hub lists Glass as a crafted resource used in equipment, tools, base modules, and habitat structures, including Engine Efficiency, Enameled Glass, Tadpole, Habitat Builder, Biobed, Dining Table, Vehicle Fabricator, and Interior Door. In a real save, keep the first panes for Habitat Builder and Scanner Station work before you start window shopping.',
     contentsLabel: 'Contents',
     routeTitle: 'Glass crafting plan',
     routeSteps: [
@@ -66,6 +66,10 @@ const glassCopy: Record<string, GlassCopy> = {
       {
         title: 'Craft Habitat Builder before decorating',
         body: 'Subnautica2Hub and Subnautica2.gg both connect Glass to Habitat Builder. That unlock is more important than a pretty base window, so build the tool first.',
+      },
+      {
+        title: 'Keep a base-tech stack',
+        body: 'Once the Habitat Builder is handled, put a few panes aside for Scanner Station and vehicle-fabricator steps. That little stack saves you from stripping every Quartz dome twice.',
       },
       {
         title: 'Hold extra Glass for chain recipes',
@@ -90,6 +94,10 @@ const glassCopy: Record<string, GlassCopy> = {
         'Recipe pressure',
         'Subnautica2Hub lists Glass across equipment, tools, modules, and structures.',
       ],
+      [
+        'Base chain',
+        'Habitat Builder first, then Scanner Station and vehicle pieces.',
+      ],
     ],
     visualTitle: 'Glass split',
     visualItems: [
@@ -106,7 +114,7 @@ const glassCopy: Record<string, GlassCopy> = {
       {
         label: 'Reserve',
         value: '3-5',
-        note: 'Tools, modules, vehicle chain.',
+        note: 'Tools, Scanner Station, vehicle chain.',
       },
     ],
     cautionTitle: 'Do not craft Glass just because you can',
@@ -141,6 +149,14 @@ const glassCopy: Record<string, GlassCopy> = {
       },
       { href: Routes.Subnautica2EnameledGlass, label: 'Enameled Glass Guide' },
       {
+        href: Routes.Subnautica2ScannerStation,
+        label: 'Scanner Station Guide',
+      },
+      {
+        href: Routes.Subnautica2VehicleFabricator,
+        label: 'Vehicle Fabricator Guide',
+      },
+      {
         href: Routes.Subnautica2EngineEfficiency,
         label: 'Engine Efficiency Guide',
       },
@@ -149,7 +165,7 @@ const glassCopy: Record<string, GlassCopy> = {
     ],
     sourcesTitle: 'Source note',
     sourceBody:
-      'Checked May 26, 2026 against Dexerto, Subnautica2Hub, Subnautica2.gg, and Subnautica 2 Wiki. Early Access recipes, unlock data, and use lists can change, so recheck the Fabricator, Processor, and PDA after patches.',
+      'Checked May 28, 2026 against Dexerto, Subnautica2Hub, Subnautica2.gg, and Subnautica 2 Wiki. Early Access recipes, unlock data, and use lists can change, so recheck the Fabricator, Processor, and PDA after patches.',
     cardKicker: 'Crafting card',
     cardBody:
       'Quartz x2, Salt x2 alternate recipe, Fabricator, Processor, Habitat Builder, Enameled Glass, Tadpole, Engine Efficiency, and storage planning.',
@@ -169,10 +185,10 @@ const glassCopy: Record<string, GlassCopy> = {
     eyebrow: 'Subnautica 2 制作路线',
     title: 'Subnautica 2 Glass 配方指南',
     description:
-      'Glass 不算稀有，但特别容易在你没注意时被花光。先保证 Habitat Builder，再留几块给载具和模块链，别把每次 Quartz 路线都拿去装饰基地。',
+      'Glass 不算稀有，但特别容易在你没注意时被花光。先保证 Habitat Builder，再留几块给 Scanner Station 和载具链，别把每次 Quartz 路线都拿去装饰基地。',
     quickLabel: '快速结论',
     quickAnswer:
-      'Dexerto 和 Subnautica 2 Wiki 都把标准 Glass 配方列为 Fabricator 中的 Quartz x2。它们也列出替代配方：在 Processor 中用 Salt x2 制作 Glass；Dexerto 还说明，标准配方会在第一次捡起 Quartz 后解锁，Salt 版本则来自 Processor Construct Data。Subnautica2Hub 把 Glass 列为制作资源，用在装备、工具、基地模块和舱室结构里，包括 Engine Efficiency、Enameled Glass、Tadpole、Habitat Builder、Biobed、Dining Table、Vehicle Fabricator 和 Interior Door。',
+      'Dexerto 和 Subnautica 2 Wiki 都把标准 Glass 配方列为 Fabricator 中的 Quartz x2。它们也列出替代配方：在 Processor 中用 Salt x2 制作 Glass；Dexerto 还说明，标准配方会在第一次捡起 Quartz 后解锁，Salt 版本则来自 Processor Construct Data。Subnautica2Hub 把 Glass 列为制作资源，用在装备、工具、基地模块和舱室结构里，包括 Engine Efficiency、Enameled Glass、Tadpole、Habitat Builder、Biobed、Dining Table、Vehicle Fabricator 和 Interior Door。实际开荒时，第一批 Glass 先给 Habitat Builder 和 Scanner Station，不要一上来全拿去做窗户。',
     contentsLabel: '目录',
     routeTitle: 'Glass 制作规划',
     routeSteps: [
@@ -187,6 +203,10 @@ const glassCopy: Record<string, GlassCopy> = {
       {
         title: '装饰基地前先做 Habitat Builder',
         body: 'Subnautica2Hub 和 Subnautica2.gg 都把 Glass 连接到 Habitat Builder。这个工具优先级比好看的窗户更高，先做工具。',
+      },
+      {
+        title: '留一份基地科技库存',
+        body: 'Habitat Builder 做完后，再给 Scanner Station 和载具制作链留几块 Glass。这个小库存能省掉很多重复刷 Quartz 的时间。',
       },
       {
         title: '额外 Glass 留给链式配方',
@@ -205,6 +225,7 @@ const glassCopy: Record<string, GlassCopy> = {
       ['解锁', 'Dexerto 说捡起 Quartz 会解锁标准配方。'],
       ['早期优先级', 'Habitat Builder 和 Enameled Glass 先于装饰性基地部件。'],
       ['配方压力', 'Subnautica2Hub 显示 Glass 会进入装备、工具、模块和结构。'],
+      ['基地链', '先 Habitat Builder，再 Scanner Station 和载具部件。'],
     ],
     visualTitle: 'Glass 分配',
     visualItems: [
@@ -221,7 +242,7 @@ const glassCopy: Record<string, GlassCopy> = {
       {
         label: '预留',
         value: '3-5',
-        note: '工具、模块、载具链。',
+        note: '工具、Scanner Station、载具链。',
       },
     ],
     cautionTitle: '不要因为能做就一直做 Glass',
@@ -252,6 +273,11 @@ const glassCopy: Record<string, GlassCopy> = {
       { href: Routes.Subnautica2Salt, label: 'Salt 位置指南' },
       { href: Routes.Subnautica2HabitatBuilder, label: 'Habitat Builder 指南' },
       { href: Routes.Subnautica2EnameledGlass, label: 'Enameled Glass 指南' },
+      { href: Routes.Subnautica2ScannerStation, label: 'Scanner Station 指南' },
+      {
+        href: Routes.Subnautica2VehicleFabricator,
+        label: 'Vehicle Fabricator 指南',
+      },
       {
         href: Routes.Subnautica2EngineEfficiency,
         label: 'Engine Efficiency 指南',
@@ -261,7 +287,7 @@ const glassCopy: Record<string, GlassCopy> = {
     ],
     sourcesTitle: '来源说明',
     sourceBody:
-      '2026 年 5 月 26 日核对 Dexerto、Subnautica2Hub、Subnautica2.gg 和 Subnautica 2 Wiki。抢先体验阶段配方、解锁数据和用途列表都可能变化；更新后请重新检查 Fabricator、Processor 和 PDA。',
+      '2026 年 5 月 28 日核对 Dexerto、Subnautica2Hub、Subnautica2.gg 和 Subnautica 2 Wiki。抢先体验阶段配方、解锁数据和用途列表都可能变化；更新后请重新检查 Fabricator、Processor 和 PDA。',
     cardKicker: '制作卡',
     cardBody:
       'Quartz x2、Salt x2 替代配方、Fabricator、Processor、Habitat Builder、Enameled Glass、Tadpole、Engine Efficiency 和收纳规划。',

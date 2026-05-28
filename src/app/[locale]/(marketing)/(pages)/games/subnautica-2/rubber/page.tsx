@@ -16,7 +16,7 @@ type RubberCopy = ResourceGuideCopy & {
 };
 
 const PUBLISHED_AT = '2026-05-26';
-const UPDATED_AT = '2026-05-26';
+const UPDATED_AT = '2026-05-28';
 
 const sharedSources = [
   {
@@ -44,10 +44,10 @@ const rubberCopy: Record<string, RubberCopy> = {
     eyebrow: 'Subnautica 2 crafting route',
     title: 'Subnautica 2 Rubber Recipe Guide',
     description:
-      'Rubber is one of those tiny early materials that quietly decides whether your first swim feels smooth or miserable. Make the first batch for movement and oxygen, then stop before the locker fills with half-finished plans.',
+      'Rubber is one of those tiny early materials that quietly decides whether your first swim feels smooth or miserable. Make the first batch for movement and oxygen, then pair the route with Fiber Mesh and deeper-air prep.',
     quickLabel: 'Quick answer',
     quickAnswer:
-      'Subnautica 2 Wiki lists Rubber as a Fabricator basic material made from Lucifer Rotsac x2. The same page describes Rubber as a flexible, tough insulator derived from biopolymers and lists current uses in Air Bladder, Basic Fins, Standard Air Tank, and Stool. PC Gamer has current Lucifer Rotsac location coverage, while Dexerto keeps Rubber in its Subnautica 2 resource index. For early routing, treat Rubber as an oxygen-and-mobility material first, not a decorative craft.',
+      'Subnautica 2 Wiki lists Rubber as a Fabricator basic material made from Lucifer Rotsac x2. The same page describes Rubber as a flexible, tough insulator derived from biopolymers and lists current uses in Air Bladder, Basic Fins, Standard Air Tank, and Stool. PC Gamer has current Lucifer Rotsac location coverage, while Dexerto keeps Rubber in its Subnautica 2 resource index. For early routing, treat Rubber as an oxygen-and-mobility material first, then batch it with Fiber Mesh and Rebreather prep instead of clicking out random extras.',
     contentsLabel: 'Contents',
     routeTitle: 'Rubber route plan',
     routeSteps: [
@@ -58,6 +58,10 @@ const rubberCopy: Record<string, RubberCopy> = {
       {
         title: 'Craft only the first movement set',
         body: 'Rubber feeds Basic Fins and Air Bladder. Make the mobility pieces first so every later resource trip is shorter and less panicked.',
+      },
+      {
+        title: 'Batch it with plant-material errands',
+        body: 'Rubber and Fiber Mesh sit in the same early mental bucket: plant materials that turn into movement, air, and safety tools. Do both errands together when your route is nearby.',
       },
       {
         title: 'Hold one piece for Standard Air Tank',
@@ -79,6 +83,10 @@ const rubberCopy: Record<string, RubberCopy> = {
       ['Station', 'Craft Rubber at the Fabricator.'],
       ['First use', 'Basic Fins and Air Bladder improve the first loops.'],
       ['Oxygen use', 'Standard Air Tank currently uses Rubber.'],
+      [
+        'Route pairing',
+        'Check Fiber Mesh and Rebreather materials on the same prep loop.',
+      ],
       ['Storage', 'Keep raw Lucifer Rotsac separate from finished Rubber.'],
     ],
     visualTitle: 'Rubber priority',
@@ -126,6 +134,8 @@ const rubberCopy: Record<string, RubberCopy> = {
       { href: Routes.Subnautica2BasicFins, label: 'Basic Fins Guide' },
       { href: Routes.Subnautica2ImprovedFins, label: 'Improved Fins Guide' },
       { href: Routes.Subnautica2AirTank, label: 'Air Tank and O2 Guide' },
+      { href: Routes.Subnautica2OxygenDepth, label: 'Oxygen and Depth Guide' },
+      { href: Routes.Subnautica2Rebreather, label: 'Rebreather Guide' },
       { href: Routes.Subnautica2Wakemaker, label: 'Wakemaker Guide' },
       { href: Routes.Subnautica2FiberMesh, label: 'Fiber Mesh Guide' },
       { href: Routes.Subnautica2Resources, label: 'Resources Guide' },
@@ -134,7 +144,7 @@ const rubberCopy: Record<string, RubberCopy> = {
     ],
     sourcesTitle: 'Source note',
     sourceBody:
-      'Checked May 26, 2026 against Subnautica 2 Wiki, PC Gamer, and Dexerto. Early Access ingredient locations, recipe inputs, and use lists can change, so recheck the Fabricator and PDA after patches.',
+      'Checked May 28, 2026 against Subnautica 2 Wiki, PC Gamer, and Dexerto. Early Access ingredient locations, recipe inputs, and use lists can change, so recheck the Fabricator and PDA after patches.',
     cardKicker: 'Crafting card',
     cardBody:
       'Lucifer Rotsac x2, Fabricator craft, Basic Fins, Air Bladder, Standard Air Tank, oxygen routing, and early material storage.',
@@ -154,10 +164,10 @@ const rubberCopy: Record<string, RubberCopy> = {
     eyebrow: 'Subnautica 2 制作路线',
     title: 'Subnautica 2 Rubber 配方指南',
     description:
-      'Rubber 是那种很小但很影响手感的前期材料。第一批先给移动和氧气，后面再慢慢补，别一上来就把箱子塞满半成品。',
+      'Rubber 是那种很小但很影响手感的前期材料。第一批先给移动和氧气，后面和 Fiber Mesh、深潜氧气路线一起补，别一上来就把箱子塞满半成品。',
     quickLabel: '快速结论',
     quickAnswer:
-      'Subnautica 2 Wiki 把 Rubber 列为 Fabricator 基础材料，配方是 Lucifer Rotsac x2。该页面还把 Rubber 描述为来自生物聚合物的柔韧绝缘材料，并列出当前用途：Air Bladder、Basic Fins、Standard Air Tank 和 Stool。PC Gamer 有当前 Lucifer Rotsac 位置指南，Dexerto 也把 Rubber 放在 Subnautica 2 资源索引中。前期建议把 Rubber 当成氧气和移动材料，而不是装饰材料。',
+      'Subnautica 2 Wiki 把 Rubber 列为 Fabricator 基础材料，配方是 Lucifer Rotsac x2。该页面还把 Rubber 描述为来自生物聚合物的柔韧绝缘材料，并列出当前用途：Air Bladder、Basic Fins、Standard Air Tank 和 Stool。PC Gamer 有当前 Lucifer Rotsac 位置指南，Dexerto 也把 Rubber 放在 Subnautica 2 资源索引中。前期建议把 Rubber 当成氧气和移动材料，再顺手和 Fiber Mesh、Rebreather 准备放在同一轮路线里处理。',
     contentsLabel: '目录',
     routeTitle: 'Rubber 路线规划',
     routeSteps: [
@@ -168,6 +178,10 @@ const rubberCopy: Record<string, RubberCopy> = {
       {
         title: '第一批优先做移动道具',
         body: 'Rubber 会进入 Basic Fins 和 Air Bladder。先把移动与保命工具做出来，后面的采集路线会轻松很多。',
+      },
+      {
+        title: '和植物材料路线一起跑',
+        body: 'Rubber 和 Fiber Mesh 都属于前期植物材料压力：一个接移动和氧气，一个接安全工具与深潜准备。路线靠近时一起补，效率更高。',
       },
       {
         title: '给 Standard Air Tank 留一份',
@@ -189,6 +203,7 @@ const rubberCopy: Record<string, RubberCopy> = {
       ['工作台', '在 Fabricator 中制作 Rubber。'],
       ['第一用途', 'Basic Fins 和 Air Bladder 会改善前期循环。'],
       ['氧气用途', 'Standard Air Tank 当前会用到 Rubber。'],
+      ['路线搭配', '同一轮检查 Fiber Mesh 和 Rebreather 需要的材料。'],
       ['收纳', 'Lucifer Rotsac 原料和成品 Rubber 分开放。'],
     ],
     visualTitle: 'Rubber 优先级',
@@ -235,6 +250,8 @@ const rubberCopy: Record<string, RubberCopy> = {
     related: [
       { href: Routes.Subnautica2BasicFins, label: 'Basic Fins 指南' },
       { href: Routes.Subnautica2AirTank, label: '气瓶和氧气指南' },
+      { href: Routes.Subnautica2OxygenDepth, label: '氧气与深度指南' },
+      { href: Routes.Subnautica2Rebreather, label: 'Rebreather 指南' },
       { href: Routes.Subnautica2Wakemaker, label: 'Wakemaker 指南' },
       { href: Routes.Subnautica2FiberMesh, label: 'Fiber Mesh 指南' },
       { href: Routes.Subnautica2Resources, label: '资源指南' },
@@ -243,7 +260,7 @@ const rubberCopy: Record<string, RubberCopy> = {
     ],
     sourcesTitle: '来源说明',
     sourceBody:
-      '2026 年 5 月 26 日核对 Subnautica 2 Wiki、PC Gamer 和 Dexerto。抢先体验阶段材料位置、配方输入和用途列表都可能变化；更新后请重新检查 Fabricator 和 PDA。',
+      '2026 年 5 月 28 日核对 Subnautica 2 Wiki、PC Gamer 和 Dexerto。抢先体验阶段材料位置、配方输入和用途列表都可能变化；更新后请重新检查 Fabricator 和 PDA。',
     cardKicker: '制作卡',
     cardBody:
       'Lucifer Rotsac x2、Fabricator 制作、Basic Fins、Air Bladder、Standard Air Tank、氧气路线和前期材料收纳。',

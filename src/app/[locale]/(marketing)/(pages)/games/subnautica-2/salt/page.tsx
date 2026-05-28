@@ -16,7 +16,7 @@ type SaltCopy = ResourceGuideCopy & {
 };
 
 const PUBLISHED_AT = '2026-05-26';
-const UPDATED_AT = '2026-05-26';
+const UPDATED_AT = '2026-05-28';
 
 const sharedSources = [
   {
@@ -48,10 +48,10 @@ const saltCopy: Record<string, SaltCopy> = {
     eyebrow: 'Subnautica 2 resource route',
     title: 'Subnautica 2 Salt Location Guide',
     description:
-      'Salt looks humble until a Power Cell blocks your Tadpole. Grab the early cave pieces, then treat salt like a recurring supply line instead of a one-and-done material.',
+      'Salt looks humble until a Power Cell blocks your Tadpole. Grab the early cave pieces, mark the respawn, then split Salt between power, Glass, water, and food instead of spending it by habit.',
     quickLabel: 'Quick answer',
     quickAnswer:
-      'PC Gamer reports the easiest early Salt spot as a cave roughly 200 meters southeast of the Lifepod, near Chap Black Box, past the Welcome Center and down by two pillars with a giant Coral Crab nearby. The cave holds two Salt pieces that respawn over time. Dexerto also points to the same Chap Blackbox cave and a bulk Dead Coral Biome route south-southeast of the Lifepod. Subnautica2Hub lists Salt in Coral Gardens at 0-400m, with Salt Crystals and Sonic Resonator deposits, and connects it to Power Cell, Glass from Salt, food, water, and Power Storage recipes.',
+      'PC Gamer reports the easiest early Salt spot as a cave roughly 200 meters southeast of the Lifepod, near Chap Black Box, past the Welcome Center and down by two pillars with a giant Coral Crab nearby. The cave holds two Salt pieces that respawn over time. Dexerto also points to the same Chap Blackbox cave and a bulk Dead Coral Biome route south-southeast of the Lifepod. Subnautica2Hub lists Salt in Coral Gardens at 0-400m, with Salt Crystals and Sonic Resonator deposits, and connects it to Power Cell, Glass from Salt, food, water, and Power Storage recipes. If you mark only one material route early, make it this one or your Tadpole and Glass plan will keep nagging you.',
     contentsLabel: 'Contents',
     routeTitle: 'Salt route plan',
     routeSteps: [
@@ -70,6 +70,10 @@ const saltCopy: Record<string, SaltCopy> = {
       {
         title: 'Reserve one for the Power Cell',
         body: 'PC Gamer ties Salt directly to Power Cell crafting for the Tadpole. Do not turn every piece into food before the vehicle chain is solved.',
+      },
+      {
+        title: 'Decide before making Glass from Salt',
+        body: 'The Salt-to-Glass recipe is useful when Quartz is being saved for electronics, but it also competes with Power Cell, water, and food. Check the next build before processing a full stack.',
       },
       {
         title: 'Use later farms for bulk',
@@ -92,6 +96,7 @@ const saltCopy: Record<string, SaltCopy> = {
         'PC Gamer reports two Salt pieces that respawn over time.',
       ],
       ['Vehicle chain', 'Power Cell uses Salt in current public data.'],
+      ['Glass option', 'Salt x2 can become Glass at the Processor.'],
       ['Bulk data', 'Subnautica2Hub lists Coral Gardens at 0-400m.'],
     ],
     visualTitle: 'Salt plan',
@@ -140,6 +145,8 @@ const saltCopy: Record<string, SaltCopy> = {
       { href: Routes.Subnautica2StrongAcid, label: 'Strong Acid Guide' },
       { href: Routes.Subnautica2PowerCell, label: 'Power Cell Guide' },
       { href: Routes.Subnautica2BasicBattery, label: 'Basic Battery Guide' },
+      { href: Routes.Subnautica2Glass, label: 'Glass Recipe Guide' },
+      { href: Routes.Subnautica2Beacon, label: 'Beacon Guide' },
       { href: Routes.Subnautica2Quartz, label: 'Quartz Location Guide' },
       { href: Routes.Subnautica2Lithium, label: 'Lithium Location Guide' },
       { href: Routes.Subnautica2Lead, label: 'Lead Location Guide' },
@@ -147,7 +154,7 @@ const saltCopy: Record<string, SaltCopy> = {
     ],
     sourcesTitle: 'Source note',
     sourceBody:
-      'Checked May 26, 2026 against PC Gamer, Subnautica2Hub, Subnautica2.gg, and Dexerto. Early Access spawn routes, respawn behavior, and recipe lists can change; verify with the PDA and current map after patches.',
+      'Checked May 28, 2026 against PC Gamer, Subnautica2Hub, Subnautica2.gg, and Dexerto. Early Access spawn routes, respawn behavior, and recipe lists can change; verify with the PDA and current map after patches.',
     cardKicker: 'Resource card',
     cardBody:
       'Chap Black Box cave, southeast Lifepod route, respawning early Salt, Power Cell priority, jerky caution, Coral Gardens farming, and Heat Tolerance route notes.',
@@ -166,10 +173,10 @@ const saltCopy: Record<string, SaltCopy> = {
     eyebrow: 'Subnautica 2 资源路线',
     title: 'Subnautica 2 Salt 位置指南',
     description:
-      'Salt 看起来普通，但 Power Cell 一卡住，Tadpole 就动不了。先拿东南洞穴里的早期材料，然后把 Salt 当成长期补给，不要只拿一次就忘。',
+      'Salt 看起来普通，但 Power Cell 一卡住，Tadpole 就动不了。先拿东南洞穴里的早期材料，把刷新点标出来，再把 Salt 分给供电、Glass、水和食物。',
     quickLabel: '快速结论',
     quickAnswer:
-      'PC Gamer 报道最容易的早期 Salt 点在 Lifepod 东南约 200 米、Chap Black Box 附近的小洞穴；路线会经过 Welcome Center，往下到两根石柱和一只巨大 Coral Crab 附近。洞里有两块 Salt，并且会随时间刷新。Dexerto 也指向 Chap Blackbox 洞穴，并补充 Lifepod 南偏东的 Dead Coral Biome 批量路线。Subnautica2Hub 把 Salt 列在 Coral Gardens，深度 0-400m，采集方式包含 Salt Crystal 和 Sonic Resonator 矿点，并关联 Power Cell、Glass from Salt、食物、水和 Power Storage 配方。',
+      'PC Gamer 报道最容易的早期 Salt 点在 Lifepod 东南约 200 米、Chap Black Box 附近的小洞穴；路线会经过 Welcome Center，往下到两根石柱和一只巨大 Coral Crab 附近。洞里有两块 Salt，并且会随时间刷新。Dexerto 也指向 Chap Blackbox 洞穴，并补充 Lifepod 南偏东的 Dead Coral Biome 批量路线。Subnautica2Hub 把 Salt 列在 Coral Gardens，深度 0-400m，采集方式包含 Salt Crystal 和 Sonic Resonator 矿点，并关联 Power Cell、Glass from Salt、食物、水和 Power Storage 配方。前期如果只标一个材料点，就先标这个洞穴，后面 Tadpole 和 Glass 都会回头找它。',
     contentsLabel: '目录',
     routeTitle: 'Salt 路线规划',
     routeSteps: [
@@ -190,6 +197,10 @@ const saltCopy: Record<string, SaltCopy> = {
         body: 'PC Gamer 把 Salt 和 Tadpole 所需的 Power Cell 直接关联起来。在载具链完成前，不要把所有 Salt 都做成食物。',
       },
       {
+        title: '用 Salt 做 Glass 前先看下一步',
+        body: 'Salt 转 Glass 在 Quartz 要留给电子材料时很好用，但它也会和 Power Cell、水、食物抢材料。处理一整组 Salt 前，先看当前最卡的是哪条链。',
+      },
+      {
         title: '后期再做批量路线',
         body: 'PC Gamer 还提到火山热泉区和 The Great Jaw 周边也能找 Salt。Dexerto 指向 Dead Coral Biome 批量路线，Subnautica2Hub 则列出 Coral Gardens 0-400m 和 Sonic Resonator 矿点采集。',
       },
@@ -201,6 +212,7 @@ const saltCopy: Record<string, SaltCopy> = {
       ['地标', 'Welcome Center、两根石柱、巨大 Coral Crab、立灯。'],
       ['第一批材料', 'PC Gamer 报道洞内两块 Salt 会随时间刷新。'],
       ['载具链', '当前公开资料中 Power Cell 需要 Salt。'],
+      ['Glass 选项', 'Processor 中 Salt x2 可以转成 Glass。'],
       ['批量数据', 'Subnautica2Hub 当前列出 Coral Gardens，0-400m。'],
     ],
     visualTitle: 'Salt 跑图',
@@ -249,6 +261,8 @@ const saltCopy: Record<string, SaltCopy> = {
       { href: Routes.Subnautica2StrongAcid, label: 'Strong Acid 指南' },
       { href: Routes.Subnautica2PowerCell, label: 'Power Cell 指南' },
       { href: Routes.Subnautica2BasicBattery, label: 'Basic Battery 指南' },
+      { href: Routes.Subnautica2Glass, label: 'Glass 配方指南' },
+      { href: Routes.Subnautica2Beacon, label: 'Beacon 指南' },
       { href: Routes.Subnautica2Quartz, label: 'Quartz 位置指南' },
       { href: Routes.Subnautica2Lithium, label: 'Lithium 位置指南' },
       { href: Routes.Subnautica2Lead, label: 'Lead 位置指南' },
@@ -256,7 +270,7 @@ const saltCopy: Record<string, SaltCopy> = {
     ],
     sourcesTitle: '来源说明',
     sourceBody:
-      '2026 年 5 月 26 日核对 PC Gamer、Subnautica2Hub、Subnautica2.gg 和 Dexerto。抢先体验阶段生成路线、刷新情况和配方列表都可能变化；更新后请以 PDA 和当前地图为准。',
+      '2026 年 5 月 28 日核对 PC Gamer、Subnautica2Hub、Subnautica2.gg 和 Dexerto。抢先体验阶段生成路线、刷新情况和配方列表都可能变化；更新后请以 PDA 和当前地图为准。',
     cardKicker: '资源卡',
     cardBody:
       'Chap Black Box 洞穴、Lifepod 东南路线、前期刷新 Salt、Power Cell 优先级、jerky 提醒、Coral Gardens 采集和 Heat Tolerance 路线备注。',
