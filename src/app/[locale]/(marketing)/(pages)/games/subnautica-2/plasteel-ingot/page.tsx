@@ -16,7 +16,7 @@ type PlasteelIngotCopy = ResourceGuideCopy & {
 };
 
 const PUBLISHED_AT = '2026-05-26';
-const UPDATED_AT = '2026-05-26';
+const UPDATED_AT = '2026-05-29';
 
 const sharedSources = [
   {
@@ -48,6 +48,28 @@ const plasteelIngotCopy: Record<string, PlasteelIngotCopy> = {
     quickLabel: 'Quick answer',
     quickAnswer:
       'Current Subnautica2.gg data lists Plasteel Ingot as a Processor craft that makes Plasteel Ingot x1 from Titanium x2 and Lithium x1 after picking up Lithium. GamesRadar reports the same 2x Titanium plus 1x Lithium recipe and notes that ingots need a Processor. Subnautica2.gg currently ties Plasteel Ingot to High Capacity Air Tank, Fabrication Station, Scout Ray Chassis, and Vehicle Fabricator uses.',
+    fieldNotesTitle: 'Field notes for Plasteel timing',
+    fieldNotes: [
+      {
+        title: 'Lithium is the gate, not Titanium',
+        body: 'Titanium is easy to replace. Lithium usually asks for a real route. Do not turn the first piece into Plasteel unless the next upgrade is already chosen.',
+      },
+      {
+        title: 'Processor access changes the plan',
+        body: 'If the Processor is not ready, the ingot is still only an intention. Stage Titanium and Lithium together, then craft once the station and target recipe are both clear.',
+      },
+      {
+        title: 'Keep one air-tank path protected',
+        body: 'High Capacity Air Tank competes with other Plasteel uses. If oxygen progression is next, that ingot should not drift into vehicle or station experiments.',
+      },
+    ],
+    routeChecklistTitle: 'Before making Plasteel Ingot',
+    routeChecklist: [
+      'Confirm Processor access before converting Lithium.',
+      'Name the target recipe before crafting the ingot.',
+      'Protect High Capacity Air Tank materials if oxygen is the next bottleneck.',
+      'Keep raw Titanium nearby for base work after the ingot craft.',
+    ],
     contentsLabel: 'Contents',
     routeTitle: 'Plasteel Ingot planning route',
     routeSteps: [
@@ -177,6 +199,28 @@ const plasteelIngotCopy: Record<string, PlasteelIngotCopy> = {
     quickLabel: '快速结论',
     quickAnswer:
       'Subnautica2.gg 当前把 Plasteel Ingot 写成 Processor 配方：Titanium x2 + Lithium x1，捡到 Lithium 后解锁，产出 Plasteel Ingot x1。GamesRadar 的 ingot 指南也写到 2x Titanium + 1x Lithium，并说明 ingot 需要 Processor。Subnautica2.gg 当前还把它关联到 High Capacity Air Tank、Fabrication Station、Scout Ray Chassis 和 Vehicle Fabricator。',
+    fieldNotesTitle: 'Plasteel Ingot 时机笔记',
+    fieldNotes: [
+      {
+        title: '真正卡你的是 Lithium',
+        body: 'Titanium 比较好补，Lithium 通常需要一条认真路线。第一块 Lithium 不要急着压成 Plasteel，先确认下一个升级目标。',
+      },
+      {
+        title: 'Processor 到位后再动手',
+        body: 'Processor 没准备好时，ingot 只是一个计划。Titanium 和 Lithium 可以先放一起，等工作站和目标配方都明确后再加工。',
+      },
+      {
+        title: '保护一条气瓶升级线',
+        body: 'High Capacity Air Tank 会和其它 Plasteel 用途抢材料。如果接下来卡的是氧气，这个 ingot 不要被载具或工作站实验顺手花掉。',
+      },
+    ],
+    routeChecklistTitle: '制作 Plasteel Ingot 前',
+    routeChecklist: [
+      '转换 Lithium 前先确认 Processor 已经能用。',
+      '先说清楚 ingot 要给哪个配方，再开始制作。',
+      '如果氧气是下一卡点，先保护 High Capacity Air Tank 材料。',
+      '压 ingot 后旁边仍然保留一些原 Titanium 给基地工程。',
+    ],
     contentsLabel: '目录',
     routeTitle: 'Plasteel Ingot 规划路线',
     routeSteps: [

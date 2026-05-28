@@ -16,7 +16,7 @@ type SilverIngotCopy = ResourceGuideCopy & {
 };
 
 const PUBLISHED_AT = '2026-05-26';
-const UPDATED_AT = '2026-05-26';
+const UPDATED_AT = '2026-05-29';
 
 const sharedSources = [
   {
@@ -47,6 +47,28 @@ const silverIngotCopy: Record<string, SilverIngotCopy> = {
     quickLabel: 'Quick answer',
     quickAnswer:
       'Current Subnautica2.gg data lists Silver Ingot as a Processor craft made from Silver x3. The same public blueprint chain points to Silver Ingot x1 for Advanced Battery, and Dexerto currently lists Silver Ingot x1 in the Tadpole Dock recipe. Make one only when you are ready to spend it, and keep raw Silver aside for Wiring Kit, oxygen, and other electronics.',
+    fieldNotesTitle: 'Field notes for Silver compression',
+    fieldNotes: [
+      {
+        title: 'Raw Silver has too many jobs',
+        body: 'Silver Ingot is useful, but raw Silver also feeds electronics, power, and oxygen-adjacent chains. Compressing every piece too early creates a different shortage.',
+      },
+      {
+        title: 'Only make ingots with a destination',
+        body: 'Advanced Battery and Tadpole Dock are clear destinations. A vague plan to need Silver later is not enough reason to lock three pieces into an ingot.',
+      },
+      {
+        title: 'Keep one electronics stack untouched',
+        body: 'A small raw Silver reserve beside Wiring Kit parts prevents a base upgrade from stealing the metal meant for tools and power.',
+      },
+    ],
+    routeChecklistTitle: 'Before making Silver Ingot',
+    routeChecklist: [
+      'Confirm Advanced Battery, Tadpole Dock, or another exact target recipe.',
+      'Keep raw Silver aside for Wiring Kit and electronics chains.',
+      'Do not process the last three Silver unless the next craft is immediate.',
+      'Store finished ingots with power or dock materials, not loose ore.',
+    ],
     contentsLabel: 'Contents',
     routeTitle: 'Silver Ingot planning route',
     routeSteps: [
@@ -166,6 +188,28 @@ const silverIngotCopy: Record<string, SilverIngotCopy> = {
     quickLabel: '快速结论',
     quickAnswer:
       'Subnautica2.gg 当前资料把 Silver Ingot 写成 Processor 配方，材料是 Silver x3。公开蓝图链里 Advanced Battery 需要 Silver Ingot x1，Dexerto 当前的 Tadpole Dock 配方也列出 Silver Ingot x1。建议有明确目标再加工，同时给 Wiring Kit、氧气和其它电子材料留一点原始 Silver。',
+    fieldNotesTitle: 'Silver 压 ingot 笔记',
+    fieldNotes: [
+      {
+        title: '原 Silver 用途太多',
+        body: 'Silver Ingot 很有用，但原 Silver 还会进入电子材料、电力和氧气相关链条。太早全压成 ingot，只是把一种缺货换成另一种缺货。',
+      },
+      {
+        title: '有目标再加工',
+        body: 'Advanced Battery 和 Tadpole Dock 都是明确目标。只是觉得以后可能会用 Silver，不足以让你把三块原料锁进一个 ingot。',
+      },
+      {
+        title: '留一小堆给电子材料',
+        body: 'Wiring Kit 材料旁边留一点原 Silver，可以防止基地升级顺手拿走工具和供电链需要的金属。',
+      },
+    ],
+    routeChecklistTitle: '制作 Silver Ingot 前',
+    routeChecklist: [
+      '先确认目标是 Advanced Battery、Tadpole Dock 或其它明确配方。',
+      '给 Wiring Kit 和电子材料链留原 Silver。',
+      '如果下一个制作不是马上发生，不要压掉最后三块 Silver。',
+      '成品 ingot 放到电力或 dock 材料旁边，不要混进散矿箱。',
+    ],
     contentsLabel: '目录',
     routeTitle: 'Silver Ingot 规划路线',
     routeSteps: [

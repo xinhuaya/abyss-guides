@@ -16,7 +16,7 @@ type RubberCopy = ResourceGuideCopy & {
 };
 
 const PUBLISHED_AT = '2026-05-26';
-const UPDATED_AT = '2026-05-28';
+const UPDATED_AT = '2026-05-29';
 
 const sharedSources = [
   {
@@ -48,6 +48,28 @@ const rubberCopy: Record<string, RubberCopy> = {
     quickLabel: 'Quick answer',
     quickAnswer:
       'Subnautica 2 Wiki lists Rubber as a Fabricator basic material made from Lucifer Rotsac x2. The same page describes Rubber as a flexible, tough insulator derived from biopolymers and lists current uses in Air Bladder, Basic Fins, Standard Air Tank, and Stool. PC Gamer has current Lucifer Rotsac location coverage, while Dexerto keeps Rubber in its Subnautica 2 resource index. For early routing, treat Rubber as an oxygen-and-mobility material first, then batch it with Fiber Mesh and Rebreather prep instead of clicking out random extras.',
+    fieldNotesTitle: 'Field notes for Rubber batching',
+    fieldNotes: [
+      {
+        title: 'Rubber is part of the oxygen kit',
+        body: 'It is easy to think of Rubber as generic material, but early Rubber usually means Air Bladder, Basic Fins, or tank progress. Spend it like movement safety, not clutter.',
+      },
+      {
+        title: 'Batch it with plant errands',
+        body: 'Lucifer Rotsac runs pair naturally with Fiber Mesh, Rebreather prep, and early equipment checks. One tidy plant loop beats three tiny swims back to the Fabricator.',
+      },
+      {
+        title: 'Do not make random extras first',
+        body: 'A spare piece is fine. A locker full of Rubber before fins and oxygen gear is not. Let the route decide the batch size.',
+      },
+    ],
+    routeChecklistTitle: 'Before processing Rubber',
+    routeChecklist: [
+      'Count Air Bladder, Basic Fins, and Standard Air Tank needs first.',
+      'Pair Lucifer Rotsac collection with Fiber Mesh or Rebreather materials.',
+      'Keep Rubber beside oxygen and movement gear, not general junk storage.',
+      'Craft extras only after the first mobility kit is complete.',
+    ],
     contentsLabel: 'Contents',
     routeTitle: 'Rubber route plan',
     routeSteps: [
@@ -168,6 +190,28 @@ const rubberCopy: Record<string, RubberCopy> = {
     quickLabel: '快速结论',
     quickAnswer:
       'Subnautica 2 Wiki 把 Rubber 列为 Fabricator 基础材料，配方是 Lucifer Rotsac x2。该页面还把 Rubber 描述为来自生物聚合物的柔韧绝缘材料，并列出当前用途：Air Bladder、Basic Fins、Standard Air Tank 和 Stool。PC Gamer 有当前 Lucifer Rotsac 位置指南，Dexerto 也把 Rubber 放在 Subnautica 2 资源索引中。前期建议把 Rubber 当成氧气和移动材料，再顺手和 Fiber Mesh、Rebreather 准备放在同一轮路线里处理。',
+    fieldNotesTitle: 'Rubber 批量制作笔记',
+    fieldNotes: [
+      {
+        title: 'Rubber 属于氧气套装',
+        body: '它看起来像普通基础材料，但前期 Rubber 往往对应 Air Bladder、Basic Fins 或气瓶进度。把它当成移动和生存安全材料来花。',
+      },
+      {
+        title: '和植物材料一起跑',
+        body: 'Lucifer Rotsac 路线很适合顺便做 Fiber Mesh、Rebreather 准备和早期装备检查。一趟干净的植物路线，比三次游回 Fabricator 更省事。',
+      },
+      {
+        title: '别先做一堆随机备用',
+        body: '留一两个备用可以，但 fins 和氧气装备还没完成前，不要先做满一箱 Rubber。批量多少应该由下一件装备决定。',
+      },
+    ],
+    routeChecklistTitle: '加工 Rubber 前',
+    routeChecklist: [
+      '先数清 Air Bladder、Basic Fins 和 Standard Air Tank 需要多少。',
+      'Lucifer Rotsac 路线顺手带 Fiber Mesh 或 Rebreather 材料。',
+      'Rubber 放在氧气和移动装备旁边，不要混进杂物箱。',
+      '第一套移动装备完成后，再考虑额外库存。',
+    ],
     contentsLabel: '目录',
     routeTitle: 'Rubber 路线规划',
     routeSteps: [

@@ -16,7 +16,7 @@ type GlassCopy = ResourceGuideCopy & {
 };
 
 const PUBLISHED_AT = '2026-05-26';
-const UPDATED_AT = '2026-05-28';
+const UPDATED_AT = '2026-05-29';
 
 const sharedSources = [
   {
@@ -52,6 +52,28 @@ const glassCopy: Record<string, GlassCopy> = {
     quickLabel: 'Quick answer',
     quickAnswer:
       'Dexerto and Subnautica 2 Wiki list the standard Glass recipe as Quartz x2 at the Fabricator. Both also list an alternate Glass-from-Salt recipe using Salt x2 at the Processor, with Dexerto noting that the Quartz recipe unlocks after picking up Quartz and the Salt version unlocks through Processor Construct Data. Subnautica2Hub lists Glass as a crafted resource used in equipment, tools, base modules, and habitat structures, including Engine Efficiency, Enameled Glass, Tadpole, Habitat Builder, Biobed, Dining Table, Vehicle Fabricator, and Interior Door. In a real save, keep the first panes for Habitat Builder and Scanner Station work before you start window shopping.',
+    fieldNotesTitle: 'Field notes for the first panes',
+    fieldNotes: [
+      {
+        title: 'Glass is not decoration yet',
+        body: 'The first few panes should unlock routes and stations before they make the base pretty. Habitat Builder, Scanner Station, and Enameled Glass chains all matter more than a nice view.',
+      },
+      {
+        title: 'Quartz glass is the simple default',
+        body: 'Salt can work through the Processor route, but Quartz is the easier early habit. Keep the Salt recipe in mind when Quartz is under pressure from electronics.',
+      },
+      {
+        title: 'Label one window box later',
+        body: 'Once tools and stations are covered, then make a dedicated window stack. Until then, loose Glass should live near upgrades, not base decoration plans.',
+      },
+    ],
+    routeChecklistTitle: 'Before crafting Glass',
+    routeChecklist: [
+      'Protect enough Quartz for Scanner, System Chip, and module work.',
+      'Make the first Glass for Habitat Builder or Scanner Station needs.',
+      'Use Salt-to-Glass only after Processor access is clear in your save.',
+      'Hold two Glass back if Enameled Glass is next.',
+    ],
     contentsLabel: 'Contents',
     routeTitle: 'Glass crafting plan',
     routeSteps: [
@@ -189,6 +211,28 @@ const glassCopy: Record<string, GlassCopy> = {
     quickLabel: '快速结论',
     quickAnswer:
       'Dexerto 和 Subnautica 2 Wiki 都把标准 Glass 配方列为 Fabricator 中的 Quartz x2。它们也列出替代配方：在 Processor 中用 Salt x2 制作 Glass；Dexerto 还说明，标准配方会在第一次捡起 Quartz 后解锁，Salt 版本则来自 Processor Construct Data。Subnautica2Hub 把 Glass 列为制作资源，用在装备、工具、基地模块和舱室结构里，包括 Engine Efficiency、Enameled Glass、Tadpole、Habitat Builder、Biobed、Dining Table、Vehicle Fabricator 和 Interior Door。实际开荒时，第一批 Glass 先给 Habitat Builder 和 Scanner Station，不要一上来全拿去做窗户。',
+    fieldNotesTitle: '第一批 Glass 笔记',
+    fieldNotes: [
+      {
+        title: '现在还不是装修材料',
+        body: '前几块 Glass 应该先服务路线和工作站，而不是让基地好看。Habitat Builder、Scanner Station 和 Enameled Glass 链条都比窗景更重要。',
+      },
+      {
+        title: 'Quartz 配方更适合早期习惯',
+        body: 'Salt 通过 Processor 也能做 Glass，但早期更顺手的还是 Quartz。等电子材料也在抢 Quartz 时，再考虑 Salt 版本。',
+      },
+      {
+        title: '晚一点再建窗户箱',
+        body: '工具和工作站覆盖之后，再专门留一箱做窗户。那之前，Glass 应该靠近升级材料，而不是装饰计划。',
+      },
+    ],
+    routeChecklistTitle: '制作 Glass 前',
+    routeChecklist: [
+      '先保护 Scanner、System Chip 和模块需要的 Quartz。',
+      '第一批 Glass 优先给 Habitat Builder 或 Scanner Station。',
+      'Salt 转 Glass 要等你存档里 Processor 路线明确后再用。',
+      '如果下一步要做 Enameled Glass，提前留两块 Glass。',
+    ],
     contentsLabel: '目录',
     routeTitle: 'Glass 制作规划',
     routeSteps: [

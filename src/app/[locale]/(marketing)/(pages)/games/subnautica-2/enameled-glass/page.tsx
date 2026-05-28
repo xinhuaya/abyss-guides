@@ -16,7 +16,7 @@ type EnameledGlassCopy = ResourceGuideCopy & {
 };
 
 const PUBLISHED_AT = '2026-05-25';
-const UPDATED_AT = '2026-05-27';
+const UPDATED_AT = '2026-05-29';
 
 const sharedSources = [
   {
@@ -52,6 +52,28 @@ const enameledGlassCopy: Record<string, EnameledGlassCopy> = {
     quickLabel: 'Quick answer',
     quickAnswer:
       'Current guides point to Enameled Glass as Glass plus Creature Enamel at the Fabricator. Get the quartz / glass side ready first, then run the Alien Ruins Creature Enamel route. Feedback Resonator currently asks for 2x Enameled Glass, so keep two pieces marked for that upgrade before you spend them elsewhere.',
+    fieldNotesTitle: 'Field notes for Enameled Glass timing',
+    fieldNotes: [
+      {
+        title: 'The Glass side should already be done',
+        body: 'Creature Enamel is the route cost. Glass is the base cost. If you are still short on Quartz, fix that before turning the Alien Ruins trip into a half-finished craft.',
+      },
+      {
+        title: 'Reserve the Feedback Resonator pair',
+        body: 'Two Enameled Glass pieces should be treated as spoken for if Feedback Resonator is next. Put them in a named locker so they do not vanish into another upgrade.',
+      },
+      {
+        title: 'Do not farm enamel without a reason',
+        body: 'Creature Enamel runs are more expensive than basic Quartz loops. Go with a target recipe in mind and leave after the count is covered.',
+      },
+    ],
+    routeChecklistTitle: 'Before crafting Enameled Glass',
+    routeChecklist: [
+      'Prepare Glass before starting the Creature Enamel route.',
+      'Reserve two finished pieces for Feedback Resonator if that upgrade is next.',
+      'Bring enough oxygen and route markers for Alien Ruins material work.',
+      'Store Enameled Glass with module parts, not base decoration materials.',
+    ],
     contentsLabel: 'Contents',
     routeTitle: 'Enameled Glass craft plan',
     routeSteps: [
@@ -207,6 +229,28 @@ const enameledGlassCopy: Record<string, EnameledGlassCopy> = {
     quickLabel: '快速结论',
     quickAnswer:
       '当前攻略把 Enameled Glass 指向 Fabricator 里的 Glass + Creature Enamel。先把 Quartz / Glass 一侧准备好，再去 Alien Ruins 一带跑 Creature Enamel。Feedback Resonator 目前需要 2 个 Enameled Glass，所以如果你正在做 Sonic Resonator 升级线，先把这两个成品单独留出来。',
+    fieldNotesTitle: 'Enameled Glass 时机笔记',
+    fieldNotes: [
+      {
+        title: 'Glass 这一侧应该先准备好',
+        body: 'Creature Enamel 是路线成本，Glass 是基地成本。如果 Quartz 还不够，先补 Glass，别让 Alien Ruins 路线跑完后只做出半成品。',
+      },
+      {
+        title: '先给 Feedback Resonator 留两块',
+        body: '如果下一步要做 Feedback Resonator，两个 Enameled Glass 就已经有归属了。放进有名字的箱子里，别被别的升级顺手吃掉。',
+      },
+      {
+        title: '不要无目标刷 enamel',
+        body: 'Creature Enamel 路线比普通 Quartz 路线更贵。带着明确配方去，数量够了就离开。',
+      },
+    ],
+    routeChecklistTitle: '制作 Enameled Glass 前',
+    routeChecklist: [
+      '跑 Creature Enamel 前先把 Glass 准备好。',
+      '如果下一步是 Feedback Resonator，先预留两个成品。',
+      'Alien Ruins 材料路线要带足氧气和路线标记。',
+      'Enameled Glass 放在模块材料旁边，不要混进基地装饰材料。',
+    ],
     contentsLabel: '目录',
     routeTitle: 'Enameled Glass 制作规划',
     routeSteps: [
