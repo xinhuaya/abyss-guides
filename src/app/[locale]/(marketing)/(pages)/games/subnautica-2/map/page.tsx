@@ -15,6 +15,9 @@ type MapCopy = ResourceGuideCopy & {
   };
 };
 
+const PUBLISHED_AT = '2026-05-23';
+const UPDATED_AT = '2026-05-28';
+
 const sharedSources = [
   {
     href: 'https://store.steampowered.com/app/1962700/Subnautica_2/',
@@ -43,7 +46,7 @@ const mapCopy: Record<string, MapCopy> = {
       'The best early map is not a huge spoiler image. It is a set of repeatable routes: where you start, what you came for, what can hurt you, and when you turn back.',
     quickLabel: 'Quick answer',
     quickAnswer:
-      'Explore Subnautica 2 by loops instead of random lines. Pick one landmark, choose one objective, note oxygen pressure and danger, then return before the route turns messy. A good map note should help you repeat the trip, not just remember that something looked interesting.',
+      'Explore Subnautica 2 by loops instead of random lines. Pick one landmark, choose one objective, drop a Beacon when the route earns a name, note oxygen pressure and danger, then return before the swim turns messy.',
     contentsLabel: 'Contents',
     routeTitle: 'How to build a useful route',
     routeSteps: [
@@ -57,11 +60,11 @@ const mapCopy: Record<string, MapCopy> = {
       },
       {
         title: 'Mark pressure points',
-        body: 'The useful parts of a map are not only resources. Mark low visibility, oxygen strain, hostile routes, confusing turns, and safe return points.',
+        body: 'The useful parts of a map are not only resources. Mark low visibility, oxygen strain, hostile routes, confusing turns, safe return points, and places where a Scanner Station would save guesswork later.',
       },
       {
         title: 'Turn loops into pages',
-        body: 'Once a route works twice, connect it to a guide: resources, crafting, Air Tank, Scanner, or future base-location pages.',
+        body: 'Once a route works twice, connect it to a guide: resources, crafting, Air Tank, Beacon, Scanner Station, or base-location planning.',
       },
     ],
     visualTitle: 'Map note board',
@@ -99,7 +102,7 @@ const mapCopy: Record<string, MapCopy> = {
       ],
       [
         'Base potential',
-        'Space, power access, storage convenience, and whether teammates can find it.',
+        'Space, power access, storage convenience, Moonpool clearance, and whether teammates can find it.',
       ],
       [
         'Progression value',
@@ -133,10 +136,16 @@ const mapCopy: Record<string, MapCopy> = {
       { href: Routes.Subnautica2Crafting, label: 'Crafting Guide' },
       { href: Routes.Subnautica2AirTank, label: 'Air Tank and O2' },
       { href: Routes.Subnautica2Scanner, label: 'Scanner Guide' },
+      { href: Routes.Subnautica2ScannerStation, label: 'Scanner Station' },
+      { href: Routes.Subnautica2BaseBuilding, label: 'Base Building' },
+      {
+        href: Routes.Subnautica2BestBaseLocations,
+        label: 'Best Base Locations',
+      },
     ],
     sourcesTitle: 'Source note',
     sourceBody:
-      'Checked May 23, 2026 against the Steam Early Access listing and current exploration tips. This page avoids fixed coordinates until routes can be verified after patches.',
+      'Checked May 28, 2026 against the Steam Early Access listing and current exploration tips. This page avoids fixed coordinates until routes can be verified after patches.',
     cardKicker: 'Route map card',
     cardBody:
       'Spoiler-light route planning for landmarks, oxygen pressure, biome notes, base spots, and co-op navigation.',
@@ -235,7 +244,7 @@ const mapCopy: Record<string, MapCopy> = {
     ],
     sourcesTitle: '来源说明',
     sourceBody:
-      '2026 年 5 月 23 日核对 Steam 抢先体验页面和当前探索建议。本页暂不写死坐标，等补丁后路线核对再更新。',
+      '2026 年 5 月 28 日核对 Steam 抢先体验页面和当前探索建议。本页暂不写死坐标，等补丁后路线核对再更新。',
     cardKicker: '路线地图卡',
     cardBody: '围绕地标、氧气压力、生态区笔记、基地点和联机导航来规划路线。',
     cardTypeLabel: '类型',
@@ -338,7 +347,7 @@ const mapCopy: Record<string, MapCopy> = {
     ],
     sourcesTitle: 'Источники',
     sourceBody:
-      'Проверено 23 мая 2026 по Steam Early Access и текущим советам по исследованию. Координаты не фиксируются до проверки после патчей.',
+      'Проверено 28 мая 2026 по Steam Early Access и текущим советам по исследованию. Координаты не фиксируются до проверки после патчей.',
     cardKicker: 'Route map card',
     cardBody:
       'Маршруты, ориентиры, O2, биомы, базы и co-op навигация без тяжелых спойлеров.',
@@ -445,7 +454,7 @@ const mapCopy: Record<string, MapCopy> = {
     ],
     sourcesTitle: 'Quellen',
     sourceBody:
-      'Geprüft am 23. Mai 2026 mit Steam Early Access und aktuellen Exploration-Tipps. Feste Koordinaten warten auf Patch-Prüfung.',
+      'Geprüft am 28. Mai 2026 mit Steam Early Access und aktuellen Exploration-Tipps. Feste Koordinaten warten auf Patch-Prüfung.',
     cardKicker: 'Route map card',
     cardBody:
       'Routenplanung für Landmarken, O2-Druck, Biomnotizen, Basen und Co-op Navigation.',
@@ -552,7 +561,7 @@ const mapCopy: Record<string, MapCopy> = {
     ],
     sourcesTitle: 'Sources',
     sourceBody:
-      'Vérifié le 23 mai 2026 avec Steam Early Access et les conseils d’exploration actuels. Les coordonnées fixes attendent une vérification après patch.',
+      'Vérifié le 28 mai 2026 avec Steam Early Access et les conseils d’exploration actuels. Les coordonnées fixes attendent une vérification après patch.',
     cardKicker: 'Route map card',
     cardBody:
       'Routes, repères, O2, biomes, bases et navigation co-op sans gros spoilers.',
@@ -659,7 +668,7 @@ const mapCopy: Record<string, MapCopy> = {
     ],
     sourcesTitle: 'Fontes',
     sourceBody:
-      'Verificado em 23 de maio de 2026 com Steam Early Access e dicas atuais de exploração. Coordenadas fixas ficam para revisão pós-patch.',
+      'Verificado em 28 de maio de 2026 com Steam Early Access e dicas atuais de exploração. Coordenadas fixas ficam para revisão pós-patch.',
     cardKicker: 'Route map card',
     cardBody:
       'Rotas, referências, O2, biomas, bases e navegação co-op com poucos spoilers.',
@@ -769,7 +778,7 @@ const mapCopy: Record<string, MapCopy> = {
     ],
     sourcesTitle: 'Fuentes',
     sourceBody:
-      'Verificado el 23 de mayo de 2026 con Steam Early Access y consejos actuales de exploración. Coordenadas fijas quedan para revisión post-parche.',
+      'Verificado el 28 de mayo de 2026 con Steam Early Access y consejos actuales de exploración. Coordenadas fijas quedan para revisión post-parche.',
     cardKicker: 'Route map card',
     cardBody:
       'Rutas, referencias, O2, biomas, bases y navegación co-op con pocos spoilers.',
@@ -867,7 +876,7 @@ const mapCopy: Record<string, MapCopy> = {
     ],
     sourcesTitle: '출처 메모',
     sourceBody:
-      '2026년 5월 23일 Steam Early Access 페이지와 현재 탐험 팁을 확인했습니다. 고정 좌표는 패치 후 검증 전까지 피합니다.',
+      '2026년 5월 28일 Steam Early Access 페이지와 현재 탐험 팁을 확인했습니다. 고정 좌표는 패치 후 검증 전까지 피합니다.',
     cardKicker: 'Route map card',
     cardBody:
       '랜드마크, O2, 바이옴 메모, 기지, 협동 내비게이션을 위한 스포일러 적은 루트 계획입니다.',
@@ -965,7 +974,7 @@ const mapCopy: Record<string, MapCopy> = {
     ],
     sourcesTitle: '出典メモ',
     sourceBody:
-      '2026年5月23日に Steam Early Access ページと現在の探索ヒントを確認しました。固定座標はパッチ後の確認まで避けます。',
+      '2026年5月28日に Steam Early Access ページと現在の探索ヒントを確認しました。固定座標はパッチ後の確認まで避けます。',
     cardKicker: 'Route map card',
     cardBody:
       '目印、O2、バイオームメモ、基地、協力ナビのためのネタバレ少なめルート計画です。',
@@ -1007,7 +1016,7 @@ export default async function MapGuidePage({
 
   return (
     <LocalizedResourceGuidePage
-      copy={copy}
+      copy={{ ...copy, publishedAt: PUBLISHED_AT, updatedAt: UPDATED_AT }}
       icon={MapIcon}
       locale={locale}
       pathname={Routes.Subnautica2Map}

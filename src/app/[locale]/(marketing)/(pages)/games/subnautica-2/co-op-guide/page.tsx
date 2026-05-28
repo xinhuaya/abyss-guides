@@ -15,6 +15,9 @@ type CoopCopy = ResourceGuideCopy & {
   };
 };
 
+const PUBLISHED_AT = '2026-05-23';
+const UPDATED_AT = '2026-05-28';
+
 const sharedSources = [
   {
     href: 'https://store.steampowered.com/app/1962700/Subnautica_2/',
@@ -50,6 +53,10 @@ const coopCopy: Record<string, CoopCopy> = {
       {
         title: 'Use voice or short route calls',
         body: 'Until your group is used to the map, use Discord, party chat, or very short route names. “Silver cave behind base” beats a long speech underwater.',
+      },
+      {
+        title: 'Name shared Beacons and lockers',
+        body: 'Use plain labels like Base East, Silver Run, Wreck Drop, and Moonpool Parts. Nobody wants to decode private jokes while drowning.',
       },
       {
         title: 'Split jobs loosely',
@@ -90,6 +97,10 @@ const coopCopy: Record<string, CoopCopy> = {
         'Common resources, rare materials, crafted parts, and personal gear should not share one box.',
       ],
       [
+        'Label Beacons and lockers',
+        'Short shared names make maps, base storage, and vehicle staging easier to understand after a break.',
+      ],
+      [
         'Agree on upgrades',
         'Shared materials should go toward the next team goal, not whoever opens the fabricator first.',
       ],
@@ -127,10 +138,14 @@ const coopCopy: Record<string, CoopCopy> = {
       { href: Routes.Subnautica2Resources, label: 'Resources Guide' },
       { href: Routes.Subnautica2Crafting, label: 'Crafting Guide' },
       { href: Routes.Subnautica2AirTank, label: 'Air Tank and O2' },
+      { href: Routes.Subnautica2Beacon, label: 'Beacon Guide' },
+      { href: Routes.Subnautica2BaseBuilding, label: 'Base Building' },
+      { href: Routes.Subnautica2ScannerStation, label: 'Scanner Station' },
+      { href: Routes.Subnautica2PowerCell, label: 'Power Cell Guide' },
     ],
     sourcesTitle: 'Source note',
     sourceBody:
-      'Checked May 23, 2026 against official Steam and Xbox listings. Multiplayer details, invite behavior, and platform requirements can change during Early Access.',
+      'Checked May 28, 2026 against official Steam and Xbox listings. Multiplayer details, invite behavior, and platform requirements can change during Early Access.',
     cardKicker: 'Co-op field card',
     cardBody:
       'Team setup notes for hosting, invites, route names, shared storage, roles, and rare-material spending.',
@@ -237,7 +252,7 @@ const coopCopy: Record<string, CoopCopy> = {
     ],
     sourcesTitle: '来源说明',
     sourceBody:
-      '2026 年 5 月 23 日核对 Steam 与 Xbox 官方商店页。多人细节、邀请行为和平台要求可能随抢先体验补丁变化。',
+      '2026 年 5 月 28 日核对 Steam 与 Xbox 官方商店页。多人细节、邀请行为和平台要求可能随抢先体验补丁变化。',
     cardKicker: '联机野外卡',
     cardBody: '整理房主、邀请、路线名、共享仓库、队伍分工和稀有材料花费规则。',
     cardTypeLabel: '类型',
@@ -349,7 +364,7 @@ const coopCopy: Record<string, CoopCopy> = {
     ],
     sourcesTitle: 'Источники',
     sourceBody:
-      'Проверено 23 мая 2026 по официальным страницам Steam и Xbox. Инвайты и требования платформ могут меняться в Early Access.',
+      'Проверено 28 мая 2026 по официальным страницам Steam и Xbox. Инвайты и требования платформ могут меняться в Early Access.',
     cardKicker: 'Co-op field card',
     cardBody:
       'Host, invites, route names, shared storage, roles and rare-material spending rules.',
@@ -459,7 +474,7 @@ const coopCopy: Record<string, CoopCopy> = {
     ],
     sourcesTitle: 'Quellen',
     sourceBody:
-      'Geprüft am 23. Mai 2026 mit offiziellen Steam- und Xbox-Listings. Invite-Verhalten und Plattformregeln können sich in Early Access ändern.',
+      'Geprüft am 28. Mai 2026 mit offiziellen Steam- und Xbox-Listings. Invite-Verhalten und Plattformregeln können sich in Early Access ändern.',
     cardKicker: 'Co-op field card',
     cardBody:
       'Host, Einladungen, Routennamen, Lagerregeln, Rollen und rare Materialien.',
@@ -572,7 +587,7 @@ const coopCopy: Record<string, CoopCopy> = {
     ],
     sourcesTitle: 'Sources',
     sourceBody:
-      'Vérifié le 23 mai 2026 avec les listings officiels Steam et Xbox. Invitations et règles plateforme peuvent changer en Early Access.',
+      'Vérifié le 28 mai 2026 avec les listings officiels Steam et Xbox. Invitations et règles plateforme peuvent changer en Early Access.',
     cardKicker: 'Co-op field card',
     cardBody:
       'Host, invitations, noms de routes, stockage, rôles et dépenses rares.',
@@ -685,7 +700,7 @@ const coopCopy: Record<string, CoopCopy> = {
     ],
     sourcesTitle: 'Fontes',
     sourceBody:
-      'Verificado em 23 de maio de 2026 com listagens oficiais Steam e Xbox. Convites e requisitos de plataforma podem mudar no Early Access.',
+      'Verificado em 28 de maio de 2026 com listagens oficiais Steam e Xbox. Convites e requisitos de plataforma podem mudar no Early Access.',
     cardKicker: 'Co-op field card',
     cardBody:
       'Host, convites, nomes de rota, armazenamento, funções e gastos de material raro.',
@@ -798,7 +813,7 @@ const coopCopy: Record<string, CoopCopy> = {
     ],
     sourcesTitle: 'Fuentes',
     sourceBody:
-      'Verificado el 23 de mayo de 2026 con páginas oficiales de Steam y Xbox. Invitaciones y requisitos de plataforma pueden cambiar en Early Access.',
+      'Verificado el 28 de mayo de 2026 con páginas oficiales de Steam y Xbox. Invitaciones y requisitos de plataforma pueden cambiar en Early Access.',
     cardKicker: 'Co-op field card',
     cardBody:
       'Host, invitaciones, nombres de ruta, almacenamiento, roles y gasto de material raro.',
@@ -905,7 +920,7 @@ const coopCopy: Record<string, CoopCopy> = {
     ],
     sourcesTitle: '출처 메모',
     sourceBody:
-      '2026년 5월 23일 Steam과 Xbox 공식 페이지를 확인했습니다. 멀티플레이 초대와 플랫폼 요구 사항은 Early Access 중 바뀔 수 있습니다.',
+      '2026년 5월 28일 Steam과 Xbox 공식 페이지를 확인했습니다. 멀티플레이 초대와 플랫폼 요구 사항은 Early Access 중 바뀔 수 있습니다.',
     cardKicker: 'Co-op field card',
     cardBody:
       'Host, 초대, 루트 이름, 공유 보관, 역할, 희귀 재료 사용 규칙입니다.',
@@ -1009,7 +1024,7 @@ const coopCopy: Record<string, CoopCopy> = {
     ],
     sourcesTitle: '出典メモ',
     sourceBody:
-      '2026年5月23日に Steam と Xbox の公式ページを確認しました。招待動作やプラットフォーム要件は Early Access 中に変わる可能性があります。',
+      '2026年5月28日に Steam と Xbox の公式ページを確認しました。招待動作やプラットフォーム要件は Early Access 中に変わる可能性があります。',
     cardKicker: 'Co-op field card',
     cardBody: 'Host、招待、ルート名、共有保管、役割、レア素材消費ルールです。',
     cardTypeLabel: '種類',
@@ -1050,7 +1065,7 @@ export default async function CoopGuidePage({
 
   return (
     <LocalizedResourceGuidePage
-      copy={copy}
+      copy={{ ...copy, publishedAt: PUBLISHED_AT, updatedAt: UPDATED_AT }}
       icon={UsersIcon}
       locale={locale}
       pathname={Routes.Subnautica2Coop}

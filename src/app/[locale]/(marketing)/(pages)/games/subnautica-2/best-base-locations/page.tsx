@@ -15,6 +15,9 @@ type BaseLocationsCopy = ResourceGuideCopy & {
   };
 };
 
+const PUBLISHED_AT = '2026-05-23';
+const UPDATED_AT = '2026-05-28';
+
 const sharedSources = [
   {
     href: 'https://store.steampowered.com/app/1962700/Subnautica_2/',
@@ -43,13 +46,13 @@ const baseLocationsCopy: Record<string, BaseLocationsCopy> = {
       'The best base location is not always the prettiest view. It is the place that saves time every time you leave, return, craft, store, and head out again.',
     quickLabel: 'Quick answer',
     quickAnswer:
-      'Start with a practical base near the Lifepod and early resource loop. Add a second staging base only when a route proves worth repeating, such as Old Habitat objectives, Cicada Wreck trips, or later rare-material routes. Do not build deep before oxygen, power, storage, and vehicle access are ready.',
+      'Start with a practical base near the Lifepod and early resource loop. Add a second staging base only when a route proves worth repeating, such as Old Habitat objectives, Cicada Wreck trips, or later rare-material routes. Mark candidates with Beacons before spending big materials.',
     contentsLabel: 'Contents',
     routeTitle: 'Best base location types',
     routeSteps: [
       {
         title: 'Starter base: Lifepod resource loop',
-        body: 'This is the safest first choice. It supports Copper, Silver, Scanner progress, basic food and water, and short returns while you learn the map.',
+        body: 'This is the safest first choice. It supports Copper, Silver, Scanner progress, basic food and water, and short returns while you learn the map. Drop a Beacon as soon as the spot starts acting like home.',
       },
       {
         title: 'Route base: Old Habitat staging',
@@ -61,7 +64,7 @@ const baseLocationsCopy: Record<string, BaseLocationsCopy> = {
       },
       {
         title: 'Deep base: rare-material routes',
-        body: 'Late bases should support Atacamite, Troilite, Metal Farm setup, or vehicle staging. Wait until power and return routes are boring.',
+        body: 'Late bases should support Atacamite, Troilite, Metal Farm setup, or vehicle staging. Wait until power, return routes, and Moonpool clearance are boring.',
       },
     ],
     visualTitle: 'Base location board',
@@ -91,7 +94,7 @@ const baseLocationsCopy: Record<string, BaseLocationsCopy> = {
       ],
       [
         'Resource loop',
-        'Does it shorten Copper, Silver, food, water, scans, or rare-material trips?',
+        'Does it shorten Copper, Silver, food, water, scans, vehicle trips, or rare-material routes?',
       ],
       [
         'Power plan',
@@ -132,10 +135,17 @@ const baseLocationsCopy: Record<string, BaseLocationsCopy> = {
       { href: Routes.Subnautica2Resources, label: 'Resources Guide' },
       { href: Routes.Subnautica2Coop, label: 'Co-op Guide' },
       { href: Routes.Subnautica2AirTank, label: 'Air Tank and O2' },
+      { href: Routes.Subnautica2Beacon, label: 'Beacon Guide' },
+      { href: Routes.Subnautica2ScannerStation, label: 'Scanner Station' },
+      { href: Routes.Subnautica2Moonpool, label: 'Moonpool Guide' },
+      {
+        href: Routes.Subnautica2VehicleFabricator,
+        label: 'Vehicle Fabricator',
+      },
     ],
     sourcesTitle: 'Source note',
     sourceBody:
-      'Checked May 23, 2026 against Steam plus current PC Gamer and BossDown base-location coverage. Treat exact distances and route details as patch-sensitive during Early Access.',
+      'Checked May 28, 2026 against Steam plus current PC Gamer and BossDown base-location coverage. Treat exact distances and route details as patch-sensitive during Early Access.',
     cardKicker: 'Base location card',
     cardBody:
       'Route-first base placement for starter storage, Old Habitat staging, wreck checks, co-op hubs, and late rare-material routes.',
@@ -233,7 +243,7 @@ const baseLocationsCopy: Record<string, BaseLocationsCopy> = {
     ],
     sourcesTitle: '来源说明',
     sourceBody:
-      '2026 年 5 月 23 日核对 Steam，以及当前 PC Gamer 和 BossDown 基地位置内容。抢先体验期间，具体距离和路线细节都应视为会随补丁变化。',
+      '2026 年 5 月 28 日核对 Steam，以及当前 PC Gamer 和 BossDown 基地位置内容。抢先体验期间，具体距离和路线细节都应视为会随补丁变化。',
     cardKicker: '基地位置卡',
     cardBody:
       '按路线规划前期储物、Old Habitat 中转、残骸检查、联机中心和后期稀有材料基地。',
@@ -334,7 +344,7 @@ const baseLocationsCopy: Record<string, BaseLocationsCopy> = {
     ],
     sourcesTitle: 'Источники',
     sourceBody:
-      'Проверено 23 мая 2026 по Steam, PC Gamer и BossDown. Точные дистанции и детали маршрутов могут меняться в Early Access.',
+      'Проверено 28 мая 2026 по Steam, PC Gamer и BossDown. Точные дистанции и детали маршрутов могут меняться в Early Access.',
     cardKicker: 'Base location card',
     cardBody:
       'Места для starter storage, Old Habitat, wreck routes, co-op hubs и поздних редких материалов.',
@@ -438,7 +448,7 @@ const baseLocationsCopy: Record<string, BaseLocationsCopy> = {
     ],
     sourcesTitle: 'Quellen',
     sourceBody:
-      'Geprüft am 23. Mai 2026 mit Steam, PC Gamer und BossDown. Distanzen und Routendetails bleiben in Early Access patch-sensitiv.',
+      'Geprüft am 28. Mai 2026 mit Steam, PC Gamer und BossDown. Distanzen und Routendetails bleiben in Early Access patch-sensitiv.',
     cardKicker: 'Base location card',
     cardBody:
       'Standorte für Starterlager, Old Habitat, Wrackrouten, Co-op Hubs und späte rare Materialien.',
@@ -543,7 +553,7 @@ const baseLocationsCopy: Record<string, BaseLocationsCopy> = {
     ],
     sourcesTitle: 'Sources',
     sourceBody:
-      'Vérifié le 23 mai 2026 avec Steam, PC Gamer et BossDown. Distances et routes restent sensibles aux patchs en Early Access.',
+      'Vérifié le 28 mai 2026 avec Steam, PC Gamer et BossDown. Distances et routes restent sensibles aux patchs en Early Access.',
     cardKicker: 'Base location card',
     cardBody:
       'Emplacements pour stockage starter, Old Habitat, wreck routes, hubs co-op et matériaux rares tardifs.',
@@ -645,7 +655,7 @@ const baseLocationsCopy: Record<string, BaseLocationsCopy> = {
     ],
     sourcesTitle: 'Fontes',
     sourceBody:
-      'Verificado em 23 de maio de 2026 com Steam, PC Gamer e BossDown. Distâncias e rotas podem mudar no Early Access.',
+      'Verificado em 28 de maio de 2026 com Steam, PC Gamer e BossDown. Distâncias e rotas podem mudar no Early Access.',
     cardKicker: 'Base location card',
     cardBody:
       'Locais para armazenamento inicial, Old Habitat, wreck routes, hubs co-op e rotas raras.',
@@ -747,7 +757,7 @@ const baseLocationsCopy: Record<string, BaseLocationsCopy> = {
     ],
     sourcesTitle: 'Fuentes',
     sourceBody:
-      'Verificado el 23 de mayo de 2026 con Steam, PC Gamer y BossDown. Distancias y rutas pueden cambiar en Early Access.',
+      'Verificado el 28 de mayo de 2026 con Steam, PC Gamer y BossDown. Distancias y rutas pueden cambiar en Early Access.',
     cardKicker: 'Base location card',
     cardBody:
       'Lugares para almacenamiento inicial, Old Habitat, wreck routes, hubs co-op y rutas raras.',
@@ -845,7 +855,7 @@ const baseLocationsCopy: Record<string, BaseLocationsCopy> = {
     ],
     sourcesTitle: '출처 메모',
     sourceBody:
-      '2026년 5월 23일 Steam, PC Gamer, BossDown 자료를 확인했습니다. 거리와 루트 세부 사항은 Early Access 중 바뀔 수 있습니다.',
+      '2026년 5월 28일 Steam, PC Gamer, BossDown 자료를 확인했습니다. 거리와 루트 세부 사항은 Early Access 중 바뀔 수 있습니다.',
     cardKicker: 'Base location card',
     cardBody:
       '초반 보관, Old Habitat, wreck routes, 협동 허브, 후반 희귀 재료용 위치입니다.',
@@ -942,7 +952,7 @@ const baseLocationsCopy: Record<string, BaseLocationsCopy> = {
     ],
     sourcesTitle: '出典メモ',
     sourceBody:
-      '2026年5月23日に Steam、PC Gamer、BossDown を確認しました。距離やルート詳細は Early Access 中に変わる可能性があります。',
+      '2026年5月28日に Steam、PC Gamer、BossDown を確認しました。距離やルート詳細は Early Access 中に変わる可能性があります。',
     cardKicker: 'Base location card',
     cardBody:
       '序盤保管、Old Habitat、wreck routes、協力ハブ、後半レア素材用の基地場所です。',
@@ -984,7 +994,7 @@ export default async function BestBaseLocationsPage({
 
   return (
     <LocalizedResourceGuidePage
-      copy={copy}
+      copy={{ ...copy, publishedAt: PUBLISHED_AT, updatedAt: UPDATED_AT }}
       icon={MapPinnedIcon}
       locale={locale}
       pathname={Routes.Subnautica2BestBaseLocations}

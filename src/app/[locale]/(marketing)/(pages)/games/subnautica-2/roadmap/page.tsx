@@ -79,7 +79,7 @@ type RoadmapCopy = {
 };
 
 const PUBLISHED_AT = '2026-05-23';
-const MODIFIED_AT = '2026-05-24';
+const MODIFIED_AT = '2026-05-28';
 
 const officialSources = [
   {
@@ -119,7 +119,7 @@ const roadmapCopy: Record<string, RoadmapCopy> = {
     cardKicker: 'EA transmission',
     quickLabel: 'Quick answer',
     quickAnswer:
-      'Unknown Worlds is treating Subnautica 2 as a long Early Access build. The official plan mixes hotfixes, smaller improvement updates, co-op-focused work, and larger expansions that add more biomes, creatures, resources, craftables, features, vehicles, story, and systems.',
+      'Unknown Worlds is treating Subnautica 2 as a long Early Access build. As of the May 28 check, Hotfix 2 is still the latest official gameplay patch tracked here, and the official plan still points to hotfixes, smaller improvement updates, co-op work, and larger content expansions.',
     statusTitle: 'Current tracker status',
     stats: [
       {
@@ -233,7 +233,7 @@ const roadmapCopy: Record<string, RoadmapCopy> = {
       },
       {
         title: 'Update internal links',
-        body: 'A patch often changes more than one page. Link the update to the resource, crafting, co-op, map, or beginner guide that players need next.',
+        body: 'A patch often changes more than one page. Link the update to the resource, crafting, co-op, map, base-location, or vehicle guide that players need next.',
       },
       {
         title: 'Keep future plans conditional',
@@ -269,10 +269,18 @@ const roadmapCopy: Record<string, RoadmapCopy> = {
       { href: Routes.Subnautica2Silver, label: 'Silver Location' },
       { href: Routes.Subnautica2Coop, label: 'Co-op Guide' },
       { href: Routes.Subnautica2Map, label: 'Map and Biomes' },
+      {
+        href: Routes.Subnautica2BestBaseLocations,
+        label: 'Best Base Locations',
+      },
+      {
+        href: Routes.Subnautica2VehicleFabricator,
+        label: 'Vehicle Fabricator',
+      },
     ],
     sourceTitle: 'Source note',
     sourceBody:
-      'Checked against official Unknown Worlds and Steam sources. We avoid adding dates or features that have not been announced.',
+      'Checked May 28, 2026 against official Unknown Worlds and Steam sources. We avoid adding dates or features that have not been announced.',
     sourceLinks: officialSources,
   },
   zh: {

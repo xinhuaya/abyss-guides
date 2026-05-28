@@ -16,7 +16,7 @@ type BiomesCopy = ResourceGuideCopy & {
 };
 
 const PUBLISHED_AT = '2026-05-24';
-const UPDATED_AT = '2026-05-24';
+const UPDATED_AT = '2026-05-28';
 
 const sharedSources = [
   {
@@ -48,7 +48,7 @@ const biomesCopy: Record<string, BiomesCopy> = {
     eyebrow: 'Subnautica 2 biome routes',
     title: 'Subnautica 2 Biomes Guide',
     description:
-      'The useful question is not “what is every biome called?” yet. In Early Access, the better question is where a route starts, what it gives you, how risky it feels, and whether you can repeat it without getting turned around.',
+      'The useful question is not every biome name yet. In Early Access, the better question is where a route starts, what it gives you, how risky it feels, and whether you can repeat it without getting turned around.',
     quickLabel: 'Quick answer',
     quickAnswer:
       'Treat Subnautica 2 biomes as route zones: starter safety, scan routes, wreck routes, base candidates, and late rare-material runs. Keep exact names and borders flexible until official notes or repeated in-game checks confirm them.',
@@ -61,11 +61,11 @@ const biomesCopy: Record<string, BiomesCopy> = {
       },
       {
         title: 'Old Habitat staging route',
-        body: 'Old Habitat routes are useful once objectives or repeated materials pull you away from the starter loop. Build notes around landmarks and return cues, not a vague memory of “somewhere past the rocks.”',
+        body: 'Old Habitat routes are useful once objectives or repeated materials pull you away from the starter loop. Build notes around landmarks, Beacon names, and return cues, not a vague memory of somewhere past the rocks.',
       },
       {
         title: 'Wreck and scan routes',
-        body: 'Wreck routes are for fragments, scans, and longer dives. Mark visibility, air pressure, and whether a small staging base would save time before you commit materials.',
+        body: 'Wreck routes are for fragments, scans, and longer dives. Mark visibility, air pressure, Scanner Station value, and whether a small staging base would save time before you commit materials.',
       },
       {
         title: 'Thermal and deep-resource routes',
@@ -156,6 +156,9 @@ const biomesCopy: Record<string, BiomesCopy> = {
       },
       { href: Routes.Subnautica2Resources, label: 'Resources Guide' },
       { href: Routes.Subnautica2AirTank, label: 'Air Tank and O2' },
+      { href: Routes.Subnautica2Beacon, label: 'Beacon Guide' },
+      { href: Routes.Subnautica2ScannerStation, label: 'Scanner Station' },
+      { href: Routes.Subnautica2BaseBuilding, label: 'Base Building' },
       {
         href: Routes.Subnautica2TroiliteAfterHotfix2,
         label: 'Troilite After Hotfix 2',
@@ -163,7 +166,7 @@ const biomesCopy: Record<string, BiomesCopy> = {
     ],
     sourcesTitle: 'Source note',
     sourceBody:
-      'Checked May 24, 2026 against the official Steam page, Unknown Worlds Early Access roadmap, and current route/base-planning coverage. Exact biome borders and resource clusters should be treated as patch-sensitive.',
+      'Checked May 28, 2026 against the official Steam page, Unknown Worlds Early Access roadmap, and current route/base-planning coverage. Exact biome borders and resource clusters should be treated as patch-sensitive.',
     cardKicker: 'Biome scout card',
     cardBody:
       'Spoiler-light biome planning for starter loops, wreck routes, base candidates, oxygen pressure, and late rare-material runs.',
@@ -280,7 +283,7 @@ const biomesCopy: Record<string, BiomesCopy> = {
     ],
     sourcesTitle: '来源说明',
     sourceBody:
-      '2026 年 5 月 24 日核对 Steam 官方页面、Unknown Worlds 抢先体验路线图和当前路线/基地规划资料。具体边界和资源簇按补丁敏感信息处理。',
+      '2026 年 5 月 28 日核对 Steam 官方页面、Unknown Worlds 抢先体验路线图和当前路线/基地规划资料。具体边界和资源簇按补丁敏感信息处理。',
     cardKicker: '侦察卡',
     cardBody:
       '面向新手循环、残骸路线、基地候选点、氧气压力和后期稀有材料路线的轻剧透规划。',
@@ -397,7 +400,7 @@ const biomesCopy: Record<string, BiomesCopy> = {
     ],
     sourcesTitle: '出典メモ',
     sourceBody:
-      '2026年5月24日に Steam、Unknown Worlds roadmap、現在の route/base planning coverage を確認。',
+      '2026年5月28日に Steam、Unknown Worlds roadmap、現在の route/base planning coverage を確認。',
     cardKicker: 'Biome scout card',
     cardBody:
       'starter loops、wreck routes、base candidates、oxygen pressure、late rare-material runs の計画メモ。',
