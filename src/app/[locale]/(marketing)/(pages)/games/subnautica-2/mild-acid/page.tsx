@@ -486,14 +486,147 @@ mildAcidCopy.zh = {
 };
 
 mildAcidCopy.ja = {
-  ...mildAcidCopy.en,
   metadata: {
-    title: 'Subnautica 2 Mild Acid Guide',
+    title: 'Subnautica 2 Mild Acid ガイド - レシピ、Processor、使い道',
     description:
-      'Guide for Mild Acid recipe, Acidic Raion Pouch, Copper, Fabricator, Processor route, Strong Acid bridge, and uses.',
+      'Subnautica 2のMild Acidガイド。Acidic Raion Pouch、Copper、Fabricator、Processorルート、Biolab、Echo Location、Strong Acidへの流れを整理します。',
   },
+  eyebrow: 'Subnautica 2 化学素材',
+  title: 'Subnautica 2 Mild Acid ガイド',
+  description:
+    'Mild Acidが必要になると、Acidic Raion Pouchはバッテリー素材だけではなくなります。Biolab、Processor、Echo Location、Strong Acidへ進むなら、pouchルートを早めに整えておくと後が楽です。',
+  quickLabel: '要点',
+  quickAnswer:
+    'Subnautica2.ggとSubnautica2Hubの現行ブループリントでは、Mild Acidは初期解放で、FabricatorにAcidic Raion Pouch x2とCopper x1を入れて作ります。DexertoはProcessorでAcidic Raion Pouch x2を使うルートも掲載しています。用途はBiolab、Processor、Echo Locationに関わり、Processorの先でStrong Acidにもつながります。',
+  fieldNotesTitle: 'Mild Acid作りのメモ',
+  fieldNotes: [
+    {
+      title: '本当のコストはpouchルート',
+      body: 'Copperは目につくので不足に気づきやすいです。遅れやすいのは、酸を作ると決めてからAcidic Raion Pouchを2個取りに戻るところです。',
+    },
+    {
+      title: '使う分をまとめて作る',
+      body: 'Mild Acidを1個だけ作ると、次のクラフトでまた同じ素材集めに戻りがちです。Processor、Biolab、Echo Locationを見ているなら2、3個まとめて計画した方が楽です。',
+    },
+    {
+      title: 'pouchを全部バッテリーへ回さない',
+      body: 'Basic Batteryにもpouchは必要ですが、Mild Acidは一度に2個使います。最初のScannerや道具作成が済んだら、化学素材用のpouchを少し分けておきましょう。',
+    },
+  ],
+  routeChecklistTitle: 'Mild Acidを作る前に',
+  routeChecklist: [
+    'Acidic Raion Pouchがバッテリー用と酸用の両方に足りる。',
+    'CopperがCopper Wireや道具分まで残っている。',
+    'Processor、Biolab、Echo Locationなど目標レシピが見えている。',
+    '完成したacidを化学素材箱に分けて保管する。',
+  ],
+  contentsLabel: '目次',
+  routeTitle: 'Mild Acid作成プラン',
+  routeSteps: [
+    {
+      title: 'Acidic Raion Pouchルートから始める',
+      body: 'Mild Acidはまずpouchで止まります。まだ安定して集められないなら、Copperより先にCoral Gardensへの入り口と帰り道を覚えましょう。',
+    },
+    {
+      title: 'Fabricatorレシピを基準にする',
+      body: '2つのブループリントデータベースは、FabricatorレシピをAcidic Raion Pouch x2とCopper x1、Mild Acid x1として掲載しています。まずはこのルートで準備するのが無難です。',
+    },
+    {
+      title: 'Processorルートは入手後に確認する',
+      body: 'DexertoはProcessorルートも掲載しています。便利な代替案ですが、自分のセーブで確認するまではFabricator用の素材も残しておきましょう。',
+    },
+    {
+      title: '2、3個まとめて作る',
+      body: '遅いのはpouch集めです。Mild Acidを1個だけ作ると、次のクラフトでまた同じ採集に戻りやすいので、目標が見えている時は少しまとめて作ります。',
+    },
+    {
+      title: '化学素材箱を分ける',
+      body: 'Biolab、Processor、Echo Locationはそれぞれ違う制作ルートで顔を出します。Processorの先ではStrong Acidにも進むので、Mild Acidは専用箱に入れておくと探す時間が減ります。',
+    },
+  ],
+  tableTitle: 'Mild Acid チェックリスト',
+  tableHeaders: ['項目', '確認すること'],
+  tableRows: [
+    ['Fabricatorレシピ', '現行データではAcidic Raion Pouch x2とCopper x1。'],
+    ['Processorルート', 'DexertoはAcidic Raion Pouch x2のルートを掲載。'],
+    ['解放状態', 'Subnautica2.ggとS2Hubは初期解放として掲載。'],
+    ['用途', 'Biolab、Processor、Echo Locationに関わります。'],
+    [
+      '次のチェーン',
+      'ProcessorからStrong Acidへ進み、Power CellやRebreather計画にも響きます。',
+    ],
+    [
+      'パッチ確認',
+      'Early Access中は制作設備や素材数が変わる可能性があります。',
+    ],
+  ],
+  visualTitle: '酸素材チェーン',
+  visualItems: [
+    {
+      label: '採集',
+      value: 'Pouch',
+      note: 'Acidic Raion Pouchが遅れやすい入力素材です。',
+    },
+    {
+      label: '加工',
+      value: 'Mild Acid',
+      note: 'まずFabricator、Processorは確認後に使います。',
+    },
+    {
+      label: '投入',
+      value: 'Upgrades',
+      note: 'Biolab、Processor、Echo Location、Strong Acidへ。',
+    },
+  ],
+  cautionTitle: 'pouchを全部バッテリーにしない',
+  cautionBody:
+    'Basic Batteryはpouchを1個だけ使いますが、Mild Acidは2個使います。最初の道具作成が終わったら、化学ルート用にpouchを分けておくと後で詰まりにくくなります。',
+  faqTitle: 'FAQ',
+  faqs: [
+    {
+      title: 'Subnautica 2でMild Acidはどう作る？',
+      body: '現行のSubnautica2.ggとSubnautica2Hubでは、FabricatorでAcidic Raion Pouch x2とCopper x1から作ると掲載されています。',
+    },
+    {
+      title: 'ProcessorでもMild Acidを作れる？',
+      body: 'DexertoはAcidic Raion Pouch x2を使うProcessorルートを掲載しています。Early Accessの公開データは差が出ることがあるので、実際のセーブでも確認してください。',
+    },
+    {
+      title: 'Mild Acidは何に使う？',
+      body: '現行の公開データではBiolab、Processor、Echo Locationに関わります。Processorの先でStrong Acidに進むため、pouchルートは中盤でも重要です。',
+    },
+    {
+      title: 'Mild Acidはスキャンで解放する？',
+      body: 'Subnautica2.ggとSubnautica2Hubは初期解放として掲載しています。表示されない場合はAcidic Raion Pouchを拾い、Fabricatorをもう一度確認してください。',
+    },
+  ],
+  readNextTitle: '次に読む',
+  related: [
+    {
+      href: Routes.Subnautica2AcidicRaionPouch,
+      label: 'Acidic Raion Pouch ガイド',
+    },
+    { href: Routes.Subnautica2Processor, label: 'Processor ガイド' },
+    { href: Routes.Subnautica2Biolab, label: 'Biolab ガイド' },
+    { href: Routes.Subnautica2EchoLocation, label: 'Echo Location ガイド' },
+    { href: Routes.Subnautica2StrongAcid, label: 'Strong Acid ガイド' },
+    { href: Routes.Subnautica2FiberMesh, label: 'Fiber Mesh ガイド' },
+    { href: Routes.Subnautica2Rebreather, label: 'Rebreather ガイド' },
+    { href: Routes.Subnautica2BasicBattery, label: 'Basic Battery ガイド' },
+    { href: Routes.Subnautica2Copper, label: 'Copperの場所' },
+    { href: Routes.Subnautica2Crafting, label: 'クラフトガイド' },
+  ],
+  sourcesTitle: 'ソースメモ',
   sourceBody:
-    'Checked May 27, 2026 against Subnautica2.gg, Subnautica2Hub, and Dexerto Mild Acid pages. Public Early Access station-route data does not fully agree.',
+    '2026年5月27日にSubnautica2.gg、Subnautica2Hub、DexertoのMild Acidページを確認しました。Early Accessの公開データでは制作設備ルートに差があるため、FabricatorレシピとProcessorルートを分けて扱っています。',
+  cardKicker: '化学素材カード',
+  cardBody:
+    'Acidic Raion Pouch、Copper、Fabricatorレシピ、Processorルート、Biolab、Echo Location用途。',
+  cardTypeLabel: '種類',
+  cardTypeValue: 'クラフトガイド',
+  cardVerifiedLabel: '確認日',
+  cardStatusLabel: '状態',
+  cardStatusValue: 'Early Access',
 };
 
 const fallbackLocaleAliases = {
