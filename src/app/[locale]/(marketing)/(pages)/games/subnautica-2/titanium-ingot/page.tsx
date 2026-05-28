@@ -16,7 +16,7 @@ type TitaniumIngotCopy = ResourceGuideCopy & {
 };
 
 const PUBLISHED_AT = '2026-05-23';
-const UPDATED_AT = '2026-05-28';
+const UPDATED_AT = '2026-05-29';
 
 const sharedSources = [
   {
@@ -313,14 +313,138 @@ const titaniumIngotCopy: Record<string, TitaniumIngotCopy> = {
 };
 
 titaniumIngotCopy.ja = {
-  ...titaniumIngotCopy.en,
   metadata: {
-    title: 'How to Make Titanium Ingots in Subnautica 2',
+    title:
+      'Subnautica 2 Titanium Ingot ガイド - Processor、Metal Farm、Mangalloy準備',
     description:
-      'Guide for Titanium Ingots, Processor timing, raw Titanium storage, Metal Farm supply, and Mangalloy prep.',
+      'Subnautica 2のTitanium Ingotガイド。Processorでの加工タイミング、raw Titaniumの保管、Metal Farmルート、Mangalloy Ingotへの準備を整理します。',
   },
+  eyebrow: 'Subnautica 2 Processor素材',
+  title: 'Subnautica 2 Titanium Ingot ガイド',
+  description:
+    'Titanium Ingotは、ただTitaniumを圧縮するだけの素材に見えます。ただし序盤から中盤ではraw Titaniumも基地建築にずっと必要です。全部インゴットにすると、次のロッカーや基地パーツで足が止まります。',
+  quickLabel: '要点',
+  quickAnswer:
+    'Processorが使えるようになったらTitaniumからTitanium Ingotを作れます。PC GamerはTitanium IngotをMangalloy Ingotなど後半クラフトチェーンに絡めているので、raw Titaniumを先に十分残してから加工しましょう。Metal Farmルートが安定してから、次のレシピに必要な分だけ作るのが安全です。',
+  fieldNotesTitle: 'Titanium Ingot加工のメモ',
+  fieldNotes: [
+    {
+      title: 'raw Titaniumはまだ現役',
+      body: '基地パーツ、ロッカー、便利ツールはゆるくTitaniumを要求し続けます。基地を広げている最中なら、保管箱を全部インゴットに変えるのは早いです。',
+    },
+    {
+      title: '名前のあるレシピに合わせて作る',
+      body: 'インゴットはraw Titaniumより融通が利きません。Mangalloyなど、次に作るものが見えてから加工すると無駄が少ないです。',
+    },
+    {
+      title: 'Metal Farm後は判断が軽くなる',
+      body: 'Metal Farmのスキャンとルートができると、raw Titaniumの補充が楽になります。それまでは、Titanium Ingot一つずつを小さな判断として扱います。',
+    },
+  ],
+  routeChecklistTitle: 'Titaniumを加工する前に',
+  routeChecklist: [
+    '基地拡張、ロッカー、基本ツール用のraw Titaniumを残した。',
+    'Processorを解放し、素材箱の近くに置いた。',
+    '次のレシピが本当にTitanium Ingotを要求している。',
+    'raw Titanium、Titanium Ingot、合金素材を別々に保管する。',
+  ],
+  contentsLabel: '目次',
+  routeTitle: 'Titanium Ingot加工ルート',
+  routeSteps: [
+    {
+      title: 'raw Titaniumの予備を作る',
+      body: 'Titaniumは序盤の建築と繰り返しクラフトの土台です。Processorに入れる前に、基地モジュール、ロッカー、ツール作成が止まらない数を残します。',
+    },
+    {
+      title: 'Processorを素材箱の近くに置く',
+      body: 'Titanium Ingotは加工素材です。Processorを保管箱の近くに置くと、raw Titanium、完成インゴット、後の合金チェーンを数えやすくなります。',
+    },
+    {
+      title: 'Metal Farmで供給を安定させる',
+      body: 'PC GamerはMetal Farmスキャンを、Titanium供給を安定させるルートとして扱っています。そこが見えてから加工量を増やす方が安心です。',
+    },
+    {
+      title: 'Mangalloy用に予約する',
+      body: 'PC GamerはTitanium IngotをMangalloy Ingotのクラフトチェーンに絡めています。作った瞬間に使い切らず、次の合金レシピの分として残します。',
+    },
+    {
+      title: '保管箱を分ける',
+      body: 'raw Titanium、Titanium Ingot、Mangalloyなどを同じ箱に入れると、加工済み素材の数がすぐ分からなくなります。箱を分けるだけでレシピ確認がかなり楽になります。',
+    },
+  ],
+  tableTitle: 'Titanium Ingot計画表',
+  tableHeaders: ['役割', '見るポイント'],
+  tableRows: [
+    ['加工素材', 'レシピがloose Titaniumではなく圧縮素材を要求する時に作る。'],
+    ['Mangalloy前提', 'Mangalloy Ingotチェーンの一部として扱う。'],
+    ['基地ペース', '加工しすぎると基地拡張やロッカー追加が止まりやすい。'],
+    [
+      'Metal Farmルート',
+      'スキャン後はraw Titaniumの補充が楽になり、加工判断も軽くなる。',
+    ],
+    ['保管分け', 'raw、ingot、alloyを分けると必要数を見失いにくい。'],
+  ],
+  visualTitle: '金属加工チェーン',
+  visualItems: [
+    {
+      label: '集める',
+      value: 'Titanium',
+      note: '基地パーツ用のraw stockを残す。',
+    },
+    {
+      label: '加工',
+      value: 'Ingot',
+      note: 'Processorで必要分だけ作る。',
+    },
+    {
+      label: '予約',
+      value: 'Mangalloy',
+      note: '後半の合金チェーン用に保管する。',
+    },
+  ],
+  cautionTitle: 'Titaniumを全部まとめて加工しない',
+  cautionBody:
+    'Processorが使えるようになると、素材箱をきれいにしたくなります。でもSubnautica 2ではraw Titaniumもずっと使います。次のレシピが見えていないなら、加工は少なめにしておく方が動きやすいです。',
+  faqTitle: 'FAQ',
+  faqs: [
+    {
+      title: 'Titanium Ingotはどう作る？',
+      body: 'Processorが使える状態でTitaniumを加工します。必要な数だけ作り、raw Titaniumも別に残します。',
+    },
+    {
+      title: 'いつ作るべき？',
+      body: 'Mangalloy Ingotなど、次のレシピがTitanium Ingotを要求してから作るのがおすすめです。',
+    },
+    {
+      title: 'Metal Farmは関係ある？',
+      body: '関係あります。Metal Farmルートが安定するとraw Titaniumの補充がしやすくなるので、加工しすぎた時のリカバリーが楽になります。',
+    },
+    {
+      title: 'raw Titaniumをどれくらい残す？',
+      body: '基地拡張中なら多めに残します。ロッカー、基地パーツ、基本クラフトが止まらない数を先に確保しましょう。',
+    },
+  ],
+  readNextTitle: '次に読む',
+  related: [
+    { href: Routes.Subnautica2Titanium, label: 'Titanium ガイド' },
+    { href: Routes.Subnautica2MetalFarm, label: 'Metal Farm ガイド' },
+    { href: Routes.Subnautica2Mangalloy, label: 'Mangalloy Ingot ガイド' },
+    { href: Routes.Subnautica2Processor, label: 'Processor ガイド' },
+    { href: Routes.Subnautica2Crafting, label: 'クラフトガイド' },
+    { href: Routes.Subnautica2Resources, label: '資源ガイド' },
+    { href: Routes.Subnautica2BaseBuilding, label: '基地建築ガイド' },
+  ],
+  sourcesTitle: 'ソースメモ',
   sourceBody:
-    'Checked May 28, 2026 against PC Gamer Titanium Ingot and Metal Farm coverage plus Subnautica2.gg blueprint data.',
+    '2026年5月29日にPC GamerのTitanium Ingot / Metal Farm記事とSubnautica2.ggのTitanium Ingot blueprintを確認しました。Subnautica 2はEarly Access中なので、加工レシピ、Metal Farmルート、合金チェーンは今後変わる可能性があります。',
+  cardKicker: '金属加工カード',
+  cardBody:
+    'raw Titanium、Processor、Titanium Ingot、Metal Farm供給、Mangalloy Ingot準備。',
+  cardTypeLabel: '種類',
+  cardTypeValue: '加工素材',
+  cardVerifiedLabel: '確認日',
+  cardStatusLabel: '状態',
+  cardStatusValue: 'Early Access',
 };
 
 const fallbackLocaleAliases = {
