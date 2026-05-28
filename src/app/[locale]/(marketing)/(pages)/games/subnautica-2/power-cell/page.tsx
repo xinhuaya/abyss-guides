@@ -395,14 +395,160 @@ powerCellCopy.zh = {
 };
 
 powerCellCopy.ja = {
-  ...fallbackCopy,
   metadata: {
-    title: 'Subnautica 2 Power Cell Guide',
+    title:
+      'Subnautica 2 Power Cell ガイド - レシピ、Strong Acid、Salt、Tadpole準備',
     description:
-      'Guide for Power Cell recipe, Basic Battery, Strong Acid, Salt, Fabricator crafting, Tadpole use, Advanced Battery split, and vehicle power planning.',
+      'Subnautica 2のPower Cellガイド。Basic Battery x2、Strong Acid x1、Salt x1、Fabricator制作、Tadpole用途、車両電力の準備を整理します。',
   },
+  eyebrow: 'Subnautica 2 車両電力',
+  title: 'Subnautica 2 Power Cell ガイド',
+  description:
+    'Power Cellはただの大きな電池に見えますが、実際にはTadpoleに進むための小さな関門です。Basic Battery、Strong Acid、Saltの3本の素材ルートを先に整えてから作ると、工具の電池切れで困りません。',
+  quickLabel: '要点',
+  quickAnswer:
+    '現在のSubnautica2.ggとSubnautica2Hubの設計図ページでは、Power CellはFabricatorでBasic Battery x2、Strong Acid x1、Salt x1を使って作るとされています。PC GamerはPower CellをTadpole制作の素材として扱っているので、予備電池ではなく車両進行用の素材として見たほうが自然です。まず工具用とは別にBasic Batteryを2つ用意し、Strong Acidを確認し、Saltを1つ残してから、Tadpoleの準備が近づいたタイミングで作ります。',
+  fieldNotesTitle: '車両電力メモ',
+  fieldNotes: [
+    {
+      title: '工具の電池を食べない',
+      body: 'Power Cellを作った直後にScannerやRepair Toolが動かないと探索が止まります。工具用のBasic Batteryを残してから、2つを車両用に回しましょう。',
+    },
+    {
+      title: 'Strong Acidが本当の寄り道',
+      body: 'CopperやSaltは見つけやすい素材です。詰まりやすいのはStrong Acidで、ProcessorやNecrolei Cystの流れまで見ておく必要があります。',
+    },
+    {
+      title: '希少電力素材とは分ける',
+      body: 'Advanced BatteryやEntangled Power Cellはさらに深い素材を使います。通常のPower Cell素材と混ぜると、どれを何に使うのか分かりにくくなります。',
+    },
+  ],
+  routeChecklistTitle: 'Power Cell確認',
+  routeChecklist: [
+    'Basic Batteryが2つあり、工具から抜いた最後の電池ではない。',
+    'Strong Acidの入手ルートを確認している。',
+    'Saltを1つPower Cell用に残している。',
+    'Advanced BatteryやEntangled Power Cell用素材は別ロッカーに分けている。',
+  ],
+  contentsLabel: '目次',
+  routeTitle: 'Power Cell ルート',
+  routeSteps: [
+    {
+      title: 'まずBasic Batteryを2つ用意する',
+      body: 'レシピはBasic Batteryを2つ消費します。Scanner、Repair Tool、Habitat Builder用の電池まで使い切らないよう、先に予備を作っておきます。',
+    },
+    {
+      title: 'Strong Acidを目的を持って取りに行く',
+      body: 'Strong AcidはCopper集めのついでに自然とそろう素材ではありません。Necrolei CystやProcessorのルートと一緒に考えると迷いにくくなります。',
+    },
+    {
+      title: 'Saltを1つ残しておく',
+      body: 'Saltは安い素材ですが、食料や水、別レシピで気づかないうちに使いがちです。Power Cell用に1つだけ車両素材の箱へ移しておきます。',
+    },
+    {
+      title: 'Tadpole制作が近づいてから合成する',
+      body: 'PC GamerはPower CellをTadpole制作チェーンに入れています。車両断片や制作設備がまだなら、素材のまま置いておくほうが柔軟です。',
+    },
+    {
+      title: '長い探索前に充電の流れを決める',
+      body: '車両と高級電池が入ってくると、電力管理は1アイテムの問題ではなくなります。Battery Terminalと電池用ロッカーを用意すると、探索前の準備がかなり楽になります。',
+    },
+    {
+      title: '通常電力と希少電力を分ける',
+      body: 'Power CellはTadpoleへの橋渡しです。Advanced BatteryやEntangled Power CellはConduit Crystal、Silver Ingot、Gold Ingot、Troiliteなど別の素材を使うので、レシピが見えてから混ぜましょう。',
+    },
+  ],
+  tableTitle: 'Power Cell チェックリスト',
+  tableHeaders: ['必要なもの', '確認すること'],
+  tableRows: [
+    ['Basic Battery x2', '通常電池を2つ消費します。'],
+    ['Strong Acid x1', 'Tadpole進行で詰まりやすい素材です。'],
+    ['Salt x1', '安いですが、別用途で使い切りやすい素材です。'],
+    ['Fabricator', '現在の設計図ページではFabricator制作です。'],
+    ['Tadpole計画', 'PC GamerはPower CellをTadpole制作素材に入れています。'],
+    ['電池保管', '工具用電池と車両素材が同じ山を取り合わないようにします。'],
+    [
+      '高級電力素材の分離',
+      'Advanced BatteryとEntangled Power Cellは別ルートで管理します。',
+    ],
+  ],
+  visualTitle: '車両電力カード',
+  visualItems: [
+    {
+      label: '電池',
+      value: '2',
+      note: 'Basic Batteryを2つ使います。',
+    },
+    {
+      label: '酸',
+      value: '1',
+      note: 'Strong Acidが主な詰まりポイントです。',
+    },
+    {
+      label: '用途',
+      value: 'Tadpole',
+      note: '希少電力素材より先に車両進行へ回します。',
+    },
+  ],
+  cautionTitle: '最後の工具電池をPower Cellにしない',
+  cautionBody:
+    'Power Cellを作ったあと、ScannerやRepair Toolの予備電池がないと探索のテンポが崩れます。先に工具を動かせる状態にしてから、Tadpole用の電力へ進みましょう。',
+  faqTitle: 'FAQ',
+  faqs: [
+    {
+      title: 'Power Cellのレシピは何ですか？',
+      body: '現在の設計図ページでは、FabricatorでBasic Battery x2、Strong Acid x1、Salt x1を使うとされています。',
+    },
+    {
+      title: 'Power Cellは何に使いますか？',
+      body: 'PC GamerはPower CellをTadpole制作チェーンに入れています。現在のルートでは、主に車両進行用の素材として扱うのが自然です。',
+    },
+    {
+      title: 'Power Cellが作れない原因は？',
+      body: '多くの場合はStrong Acid不足、または余っているBasic Batteryがないことです。Basic Battery、Strong Acid、Saltの3つを先に確認しましょう。',
+    },
+    {
+      title: '序盤にPower Cellを多めに作るべきですか？',
+      body: '基本的にはおすすめしません。次の車両ステップで必要な1つを作り、余った素材は次のレシピが見えるまで分けて保管します。',
+    },
+  ],
+  readNextTitle: '次に読む',
+  related: [
+    { href: Routes.Subnautica2Tadpole, label: 'Tadpole 車両ガイド' },
+    {
+      href: Routes.Subnautica2VehicleFabricator,
+      label: 'Vehicle Fabricator ガイド',
+    },
+    { href: Routes.Subnautica2BasicBattery, label: 'Basic Battery ガイド' },
+    {
+      href: Routes.Subnautica2AdvancedBattery,
+      label: 'Advanced Battery ガイド',
+    },
+    {
+      href: Routes.Subnautica2EntangledPowerCell,
+      label: 'Entangled Power Cell ガイド',
+    },
+    {
+      href: Routes.Subnautica2BatteryTerminal,
+      label: 'Battery Terminal ガイド',
+    },
+    { href: Routes.Subnautica2StrongAcid, label: 'Strong Acid ガイド' },
+    { href: Routes.Subnautica2NecroleiCyst, label: 'Necrolei Cyst ガイド' },
+    { href: Routes.Subnautica2Salt, label: 'Salt 入手ガイド' },
+    { href: Routes.Subnautica2Processor, label: 'Processor ガイド' },
+    { href: Routes.Subnautica2Crafting, label: 'クラフトガイド' },
+  ],
+  sourcesTitle: '出典メモ',
   sourceBody:
-    'Checked May 27, 2026 against Subnautica2.gg, Subnautica2Hub, and PC Gamer. Early Access recipe costs, battery routes, and vehicle requirements can change.',
+    '2026年5月27日にSubnautica2.gg、Subnautica2Hub、PC Gamerで確認。Subnautica 2はEarly Access中のため、レシピ素材、電池ルート、車両要件はパッチで変わる可能性があります。',
+  cardKicker: '電力カード',
+  cardBody:
+    'Basic Battery x2、Strong Acid x1、Salt x1、Fabricator制作、Tadpole用途、電池保管の計画。',
+  cardTypeLabel: '種類',
+  cardTypeValue: '車両電力ガイド',
+  cardVerifiedLabel: '確認日',
+  cardStatusLabel: '状態',
+  cardStatusValue: 'Early Access',
 };
 
 for (const locale of ['ja', 'de', 'fr', 'pt-BR', 'es-419', 'ko', 'ru']) {

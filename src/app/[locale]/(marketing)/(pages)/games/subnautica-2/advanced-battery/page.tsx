@@ -396,14 +396,157 @@ advancedBatteryCopy.zh = {
 };
 
 advancedBatteryCopy.ja = {
-  ...fallbackCopy,
   metadata: {
-    title: 'Subnautica 2 Advanced Battery Guide',
+    title: 'Subnautica 2 Advanced Battery ガイド - 設計図、素材、200エネルギー',
     description:
-      'Guide for Advanced Battery fragments, Karakorum Power Plant, Data Box unlocks, Conduit Crystal, Strong Acid, Silver Ingot, 200 energy, Entangled Power Cell split, and battery charging.',
+      'Subnautica 2のAdvanced Batteryガイド。Karakorum Power Plantの断片、Data Box、Conduit Crystal、Strong Acid、Silver Ingot、200エネルギー、充電運用を整理します。',
   },
+  eyebrow: 'Subnautica 2 電力アップグレード',
+  title: 'Subnautica 2 Advanced Battery ガイド',
+  description:
+    'Advanced Batteryを作ると、ScannerやRepair Toolの電池切れがかなり楽になります。ただし素材も設計図も少し深いルートに寄るので、ついでのクラフトではなく小さな遠征として準備したほうが安全です。',
+  quickLabel: '要点',
+  quickAnswer:
+    'All Things HowはAdvanced Batteryを200 energyとし、断片ルートをKarakorum Power Plant周辺に置いています。Subnautica2.ggでは、Advanced Battery断片を2つスキャンする方法とData Boxによる解除が掲載されています。現在の公開データでは、Fabricatorの素材はConduit Crystal x1、Strong Acid x1、Silver Ingot x1です。拠点があるなら先にBattery Terminalを作り、使い切ったAdvanced Batteryを充電で回すと素材の無駄が減ります。',
+  fieldNotesTitle: 'Advanced Battery メモ',
+  fieldNotes: [
+    {
+      title: '解除ルートはきちんと潜る',
+      body: 'Advanced Batteryは序盤のCopperだけで済む電池ではありません。Karakorum Power Plantへ向かうなら、酸素、Scannerの残量、帰り道を先に決めてから断片を探しましょう。',
+    },
+    {
+      title: '3つの素材を同じ箱にまとめる',
+      body: 'Conduit Crystal、Strong Acid、Silver Ingotは集める流れが別です。小さなロッカーを1つ用意して、最後に素材探しで往復しないようにします。',
+    },
+    {
+      title: '作り替えるより充電する',
+      body: '200エネルギーの強みは使い回せることです。Battery Terminalがあるなら、空になったAdvanced Batteryは新しく作るより充電に回しましょう。',
+    },
+  ],
+  routeChecklistTitle: '作る前の確認',
+  routeChecklist: [
+    '断片スキャンかData Boxで設計図を解除している。',
+    'Conduit Crystal、Strong Acid、Silver Ingotを同じ場所に置いた。',
+    'Battery Terminalで充電する運用を決めている。',
+    'Entangled Power Cell用のGold IngotやTroiliteは別に保管する。',
+  ],
+  contentsLabel: '目次',
+  routeTitle: 'Advanced Battery ルート',
+  routeSteps: [
+    {
+      title: '序盤電池と同じ感覚で扱わない',
+      body: 'Basic BatteryはCopperの問題ですが、Advanced Batteryはルートの問題です。深めの素材、安定した酸素、設計図を取るスキャン行程がそろってから価値が出ます。',
+    },
+    {
+      title: 'Karakorum Power Plantへ行く前に装備を整える',
+      body: 'All Things Howは断片の行き先をKarakorum Power Plant周辺とし、充電済みScanner、Rebreather、少なくともStandard Air Tankを勧めています。この準備が重く感じるなら、急がないほうがいい段階です。',
+    },
+    {
+      title: '断片を探しつつData Boxも見る',
+      body: 'Subnautica2.ggは解除方法として2つのAdvanced Battery断片、またはData Boxを挙げています。壁や設備だけでなく、エリア内の箱も見落とさないようにします。',
+    },
+    {
+      title: '素材は3点チェックにする',
+      body: '現在の素材はConduit Crystal x1、Strong Acid x1、Silver Ingot x1です。Fabricatorへ向かう前に3つを並べて確認すると、半端な往復が減ります。',
+    },
+    {
+      title: 'Battery Terminalと一緒に使う',
+      body: 'Advanced Batteryは長い探索用の工具に入れると便利です。使い切ったら拠点のBattery Terminalに戻し、次の潜航までに充電しておきます。',
+    },
+    {
+      title: 'Entangled Power Cellとは分ける',
+      body: 'Advanced Batteryは工具用の電力強化です。Entangled Power Cellはさらに後の電力素材で、Gold IngotやTroiliteも絡みます。近い箱に置いても、混ぜないほうが管理しやすいです。',
+    },
+  ],
+  tableTitle: 'Advanced Battery チェックリスト',
+  tableHeaders: ['必要なもの', '確認すること'],
+  tableRows: [
+    ['Scanner', '断片ルートの解除に必要です。'],
+    [
+      'Karakorum Power Plantの準備',
+      'All Things Howは断片ルートをこの深めのエリアに置いています。',
+    ],
+    ['Conduit Crystal x1', 'レシピに入る深めの素材です。'],
+    ['Strong Acid x1', 'Processor系の素材なので、無駄遣いしないようにします。'],
+    ['Silver Ingot x1', '加工済みSilverの在庫計画が必要です。'],
+    ['Battery Terminal', '200エネルギー電池を使い捨てにしないための要です。'],
+    [
+      'Entangled素材の分離',
+      'Gold IngotやTroiliteはAdvanced Batteryではなく、Entangled Power Cell側に残します。',
+    ],
+  ],
+  visualTitle: '電力アップグレードカード',
+  visualItems: [
+    {
+      label: '解除',
+      value: '2スキャン',
+      note: '現在の公開データではData Boxルートもあります。',
+    },
+    {
+      label: '制作',
+      value: '3素材',
+      note: 'Conduit Crystal、Strong Acid、Silver Ingot。',
+    },
+    {
+      label: '容量',
+      value: '200',
+      note: 'Subnautica2Hubは200 energyと掲載しています。',
+    },
+  ],
+  cautionTitle: '充電できない状態で希少素材を電池にしない',
+  cautionBody:
+    'Advanced Batteryは便利ですが、最初の1つにはアップグレードや車両計画にも近い素材を使います。Battery Terminalがまだないなら、先に充電環境を作ってから高級電池に進むほうが損をしません。',
+  faqTitle: 'FAQ',
+  faqs: [
+    {
+      title: 'Advanced Batteryはどう解除しますか？',
+      body: '現在の公開データでは、Advanced Battery断片を2つスキャンする方法とData Boxによる解除が掲載されています。All Things Howは断片ルートをKarakorum Power Plant周辺に置いています。',
+    },
+    {
+      title: 'Advanced Batteryの素材は何ですか？',
+      body: '現在の設計図ページでは、FabricatorでConduit Crystal x1、Strong Acid x1、Silver Ingot x1を使うとされています。',
+    },
+    {
+      title: 'Advanced Batteryの容量は？',
+      body: 'Subnautica2HubはAdvanced Batteryを200 energyと掲載しています。',
+    },
+    {
+      title: 'Battery Terminalより先に作るべきですか？',
+      body: '基本的にはおすすめしません。Battery Terminalがあると高価な電池を充電して使い回せるので、素材の価値が大きく上がります。',
+    },
+  ],
+  readNextTitle: '次に読む',
+  related: [
+    {
+      href: Routes.Subnautica2BatteryTerminal,
+      label: 'Battery Terminal ガイド',
+    },
+    {
+      href: Routes.Subnautica2KarakorumPowerPlant,
+      label: 'Karakorum Power Plant ルート',
+    },
+    { href: Routes.Subnautica2BasicBattery, label: 'Basic Battery ガイド' },
+    { href: Routes.Subnautica2PowerCell, label: 'Power Cell ガイド' },
+    {
+      href: Routes.Subnautica2EntangledPowerCell,
+      label: 'Entangled Power Cell ガイド',
+    },
+    { href: Routes.Subnautica2ConduitCrystal, label: 'Conduit Crystal ガイド' },
+    { href: Routes.Subnautica2StrongAcid, label: 'Strong Acid ガイド' },
+    { href: Routes.Subnautica2SilverIngot, label: 'Silver Ingot ガイド' },
+    { href: Routes.Subnautica2Crafting, label: 'クラフトガイド' },
+  ],
+  sourcesTitle: '出典メモ',
   sourceBody:
-    'Checked May 27, 2026 against All Things How, Subnautica2.gg, and Subnautica2Hub. Early Access fragment routes, Data Box placement, recipes, and energy values can change.',
+    '2026年5月27日にAll Things How、Subnautica2.gg、Subnautica2Hubで確認。Subnautica 2はEarly Access中のため、断片ルート、Data Box位置、素材、エネルギー値はパッチで変わる可能性があります。',
+  cardKicker: '電池アップグレード',
+  cardBody:
+    'Karakorum断片ルート、Data Box解除、Conduit Crystal、Strong Acid、Silver Ingot、200エネルギー、Battery Terminalでの充電運用。',
+  cardTypeLabel: '種類',
+  cardTypeValue: '電力ガイド',
+  cardVerifiedLabel: '確認日',
+  cardStatusLabel: '状態',
+  cardStatusValue: 'Early Access',
 };
 
 for (const locale of ['ja', 'de', 'fr', 'pt-BR', 'es-419', 'ko', 'ru']) {
