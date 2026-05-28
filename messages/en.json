@@ -49,7 +49,7 @@
     "description": "Free mockups help you test ideas. Pro and Max include monthly live-generation credits, cleaner exports, and faster iteration.",
     "subtitle": "Choose the plan that works best for you",
     "hero": {
-      "eyebrow": "ThumbAI pricing",
+      "eyebrow": "Abyss Guides pricing",
       "badgeFree": "Free plan available",
       "badgeCredits": "Monthly credits included",
       "badgeCancel": "No separate top-up required",
@@ -179,10 +179,10 @@
   },
   "AboutPage": {
     "title": "About",
-    "description": "This is MkSaaS, an AI SaaS template built with modern technologies, helping you build your SaaS faster and better.",
-    "authorName": "MkSaaS",
-    "authorBio": "AI SaaS Boilerplate",
-    "introduction": "👋 Hi there! This is MkSaaS, an AI SaaS template built with modern technologies, helping you build your SaaS faster and better. If you have any questions, welcome to contact me.",
+    "description": "This is Abyss Guides, an survival guide site built with modern technologies, helping you build your guide pages faster and cleaner.",
+    "authorName": "Abyss Guides",
+    "authorBio": "Survival Guide Site",
+    "introduction": "👋 Hi there! This is Abyss Guides, an survival guide site built with modern technologies, helping you build your guide pages faster and cleaner. If you have any questions, welcome to contact me.",
     "talkWithMe": "Talk with me",
     "followMe": "Follow me on X"
   },
@@ -341,7 +341,7 @@
     "previousPage": "Previous",
     "nextPage": "Next",
     "chooseLanguage": "Select language",
-    "title": "MkSaaS Docs",
+    "title": "Abyss Guides Docs",
     "homepage": "Homepage",
     "PageActions": {
       "copyMarkdown": "Copy Markdown",
@@ -651,7 +651,7 @@
         },
         "packages": {
           "title": "Plan credits",
-          "description": "ThumbAI credits come from your monthly plan. Extra credit packs are hidden in the MVP.",
+          "description": "Abyss Guides credits come from your monthly plan. Extra credit packs are hidden in the MVP.",
           "purchase": "Buy credits",
           "processing": "Processing...",
           "popular": "Recommended",
@@ -821,12 +821,12 @@
     }
   },
   "HomePage": {
-    "title": "MkSaaS",
-    "description": "Make AI SaaS in days, simply and effortlessly",
+    "title": "Abyss Guides",
+    "description": "Subnautica 2 routes, resources, and update notes",
     "hero": {
-      "title": "Make AI SaaS in days, simply and effortlessly",
-      "description": "The is a demo website built with MkSaaS, a Next.js SaaS boilerplate to help you build your AI SaaS faster and better.",
-      "introduction": "Introducing MkSaaS Boilerplate",
+      "title": "Subnautica 2 routes, resources, and update notes",
+      "description": "The is a demo website built with Abyss Guides, a Next.js guide site to help you build your AI guide pages faster and cleaner.",
+      "introduction": "Introducing Abyss Guides Boilerplate",
       "primary": "Get Started",
       "secondary": "See Demo"
     },
@@ -973,80 +973,80 @@
           "name": "Jonathan Yombo",
           "role": "Software Engineer",
           "image": "https://randomuser.me/api/portraits/men/1.jpg",
-          "quote": "MkSaaS is really extraordinary and very practical, no need to break your head. A real gold mine."
+          "quote": "Abyss Guides is really extraordinary and very practical, no need to break your head. A real gold mine."
         },
         "item-2": {
           "name": "Yves Kalume",
           "role": "GDE - Android",
           "image": "https://randomuser.me/api/portraits/men/6.jpg",
-          "quote": "With no experience in webdesign I just redesigned my entire website in a few minutes with tailwindcss thanks to MkSaaS."
+          "quote": "With no experience in webdesign I just redesigned my entire website in a few minutes with tailwindcss thanks to Abyss Guides."
         },
         "item-3": {
           "name": "Yucel Faruksahan",
           "role": "Tailkits Creator",
           "image": "https://randomuser.me/api/portraits/men/7.jpg",
-          "quote": "Great work on MkSaaS template. This is one of the best personal website that I have seen so far :)"
+          "quote": "Great work on Abyss Guides template. This is one of the best personal website that I have seen so far :)"
         },
         "item-4": {
           "name": "Anonymous author",
           "role": "Product Manager",
           "image": "https://randomuser.me/api/portraits/men/8.jpg",
-          "quote": "I downloaded the one of MkSaaS template which is very clear to understand at the start and you could modify the codes/blocks to fit perfectly on your purpose of the page."
+          "quote": "I downloaded the one of Abyss Guides template which is very clear to understand at the start and you could modify the codes/blocks to fit perfectly on your purpose of the page."
         },
         "item-5": {
           "name": "Shekinah Tshiokufila",
           "role": "Senior Software Engineer",
           "image": "https://randomuser.me/api/portraits/men/4.jpg",
-          "quote": "MkSaaS is redefining the standard of web design, with these blocks it provides an easy and efficient way for those who love beauty but may lack the time to implement it."
+          "quote": "Abyss Guides is redefining the standard of web design, with these blocks it provides an easy and efficient way for those who love beauty but may lack the time to implement it."
         },
         "item-6": {
           "name": "Oketa Fred",
           "role": "Fullstack Developer",
           "image": "https://randomuser.me/api/portraits/men/2.jpg",
-          "quote": "I absolutely love MkSaaS! The component blocks are beautifully designed and easy to use, which makes creating a great-looking website a breeze."
+          "quote": "I absolutely love Abyss Guides! The component blocks are beautifully designed and easy to use, which makes creating a great-looking website a breeze."
         },
         "item-7": {
           "name": "Zeki",
           "role": "Founder of ChatExtend",
           "image": "https://randomuser.me/api/portraits/men/5.jpg",
-          "quote": "MkSaaS is the perfect fusion of simplicity and versatility, enabling us to create UIs that are as stunning as they are user-friendly."
+          "quote": "Abyss Guides is the perfect fusion of simplicity and versatility, enabling us to create UIs that are as stunning as they are user-friendly."
         },
         "item-8": {
           "name": "Joseph Kitheka",
           "role": "Fullstack Developer",
           "image": "https://randomuser.me/api/portraits/men/9.jpg",
-          "quote": "MkSaaS has transformed the way I develop web applications. Their extensive collection of UI components, blocks, and templates has significantly accelerated my workflow."
+          "quote": "Abyss Guides has transformed the way I develop web applications. Their extensive collection of UI components, blocks, and templates has significantly accelerated my workflow."
         },
         "item-9": {
           "name": "Khatab Wedaa",
           "role": "MerakiUI Creator",
           "image": "https://randomuser.me/api/portraits/men/10.jpg",
-          "quote": "MkSaaS is an elegant, clean, and responsive tailwind css components it's very helpful to start fast with your project."
+          "quote": "Abyss Guides is an elegant, clean, and responsive tailwind css components it's very helpful to start fast with your project."
         },
         "item-10": {
           "name": "Rodrigo Aguilar",
           "role": "TailwindAwesome Creator",
           "image": "https://randomuser.me/api/portraits/men/11.jpg",
-          "quote": "I love MkSaaS ❤️. The component blocks are well-structured, simple to use, and beautifully designed. It makes it really easy to have a good-looking website in no time."
+          "quote": "I love Abyss Guides ❤️. The component blocks are well-structured, simple to use, and beautifully designed. It makes it really easy to have a good-looking website in no time."
         },
         "item-11": {
           "name": "Eric Ampire",
           "role": "@GoogleDevExpert for Android",
           "image": "https://randomuser.me/api/portraits/men/12.jpg",
-          "quote": "MkSaaS templates are the perfect solution for anyone who wants to create a beautiful and functional website without any web design experience."
+          "quote": "Abyss Guides templates are the perfect solution for anyone who wants to create a beautiful and functional website without any web design experience."
         },
         "item-12": {
           "name": "Roland Tubonge",
           "role": "Software Engineer",
           "image": "https://randomuser.me/api/portraits/men/13.jpg",
-          "quote": "MkSaaS is so well designed that even with a very poor knowledge of web design you can do miracles. Let yourself be seduced!"
+          "quote": "Abyss Guides is so well designed that even with a very poor knowledge of web design you can do miracles. Let yourself be seduced!"
         }
       }
     },
     "stats": {
       "title": "Stats",
-      "subtitle": "MkSaaS in numbers",
-      "description": "MkSaaS lets you make AI SaaS in days, simply and effortlessly",
+      "subtitle": "Abyss Guides in numbers",
+      "description": "Abyss Guides lets you make guide site in days, simply and effortlessly",
       "items": {
         "item-1": {
           "title": "Stars on GitHub"
@@ -1061,7 +1061,7 @@
     },
     "calltoaction": {
       "title": "Start Building",
-      "description": "MkSaaS lets you make AI SaaS in days, simply and effortlessly",
+      "description": "Abyss Guides lets you make guide site in days, simply and effortlessly",
       "primaryButton": "Get Started",
       "secondaryButton": "See Demo"
     }
@@ -1070,7 +1070,7 @@
     "copy": {
       "hero": {
         "badge": "AI thumbnail generator",
-        "title": "ThumbAI",
+        "title": "Abyss Guides",
         "description": "Create clickable YouTube thumbnails in seconds. Write the cover hook, add an optional reference image, and preview three A/B-ready concepts.",
         "proof": [
           "Free worldwide beta",
@@ -1175,13 +1175,13 @@
   "ThumbAIWorkbench": {
     "meta": {
       "title": "YouTube Thumbnail Maker",
-      "description": "A full ThumbAI workbench for YouTube thumbnail ideas, reference images, creator portraits, scripts, and A/B-ready mockups."
+      "description": "A full Abyss Guides workbench for YouTube thumbnail ideas, reference images, creator portraits, scripts, and A/B-ready mockups."
     },
     "copy": {
       "hero": {
         "eyebrow": "Full thumbnail workbench",
         "title": "Build the whole thumbnail brief in one place",
-        "description": "Bring a video idea, link, reference cover, creator face, video file, or script. ThumbAI turns the inputs into three clickable thumbnail directions you can compare before production.",
+        "description": "Bring a video idea, link, reference cover, creator face, video file, or script. Abyss Guides turns the inputs into three clickable thumbnail directions you can compare before production.",
         "generate": "Generate directions",
         "generating": "Building directions",
         "ideaLabel": "Video idea or hook",
@@ -1244,11 +1244,7 @@
           "face": "Face-focused",
           "text": "Text-led"
         },
-        "checks": [
-          "Readable text",
-          "Clear subject",
-          "Mobile-safe"
-        ],
+        "checks": ["Readable text", "Clear subject", "Mobile-safe"],
         "liveTitle": "A/B-ready AI results",
         "liveDescription": "Live AI images generated through Replicate and saved to storage.",
         "download": "Download",

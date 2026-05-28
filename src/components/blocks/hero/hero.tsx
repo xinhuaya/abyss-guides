@@ -160,7 +160,7 @@ export default function HeroSection() {
               <Image
                 className="bg-muted/50 relative hidden rounded-2xl dark:block"
                 src="https://cdn.mksaas.com/blocks/music.png"
-                alt="MkSaaS dashboard screenshot showing the application interface in dark mode"
+                alt="Abyss Guides dashboard screenshot showing the application interface in dark mode"
                 width={2796}
                 height={2008}
                 priority
@@ -169,7 +169,7 @@ export default function HeroSection() {
               <Image
                 className="z-2 border-border/25 relative rounded-2xl border dark:hidden"
                 src="https://cdn.mksaas.com/blocks/music-light.png"
-                alt="MkSaaS dashboard screenshot showing the application interface in light mode"
+                alt="Abyss Guides dashboard screenshot showing the application interface in light mode"
                 width={2796}
                 height={2008}
                 priority
