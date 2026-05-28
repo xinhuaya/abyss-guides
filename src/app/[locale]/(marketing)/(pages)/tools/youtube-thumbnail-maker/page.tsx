@@ -13,7 +13,7 @@ export async function generateMetadata({
   const t = await getTranslations({ locale, namespace: 'Metadata' });
   const wt = await getTranslations({
     locale,
-    namespace: 'ThumbAIWorkbench.meta',
+    namespace: 'GuideWorkbench.meta',
   });
 
   return constructMetadata({

@@ -130,9 +130,9 @@ type ThumbAIHomeCopy = {
 
 export function ThumbAIHome() {
   const messages = useMessages() as unknown as {
-    ThumbAIHome: { copy: ThumbAIHomeCopy };
+    GuideHome: { copy: ThumbAIHomeCopy };
   };
-  const copy = messages.ThumbAIHome.copy;
+  const copy = messages.GuideHome.copy;
   const [title, setTitle] = useState('');
   const [format, setFormat] = useState(formats[0].id);
   const [outputLanguage, setOutputLanguage] = useState(outputLanguages[0].id);

@@ -45,7 +45,7 @@
     }
   },
   "PricingPage": {
-    "title": "Choose the plan for your thumbnail workflow",
+    "title": "Choose the plan for your guide workflow",
     "description": "Free mockups help you test ideas. Pro and Max include monthly live-generation credits, cleaner exports, and faster iteration.",
     "subtitle": "Choose the plan that works best for you",
     "hero": {
@@ -54,7 +54,7 @@
       "badgeCredits": "Monthly credits included",
       "badgeCancel": "No separate top-up required",
       "primaryCta": "Try the maker",
-      "secondaryCta": "Generate a test thumbnail"
+      "secondaryCta": "Generate a test guide card"
     },
     "plansEyebrow": "Plans",
     "plansTitle": "Simple subscriptions with credits included",
@@ -62,17 +62,17 @@
     "creditPacks": {
       "eyebrow": "Credit packs",
       "title": "Need more generations this week?",
-      "description": "Buy extra credits when a video batch, sponsor deadline, or channel sprint needs more thumbnail options. Credits are separate from your plan and work with the live generator.",
+      "description": "Buy extra credits when a guide batch, sponsor deadline, or channel sprint needs more guide card options. Credits are separate from your plan and work with the live generator.",
       "cta": "Manage credits",
       "popular": "Best value",
       "basic": {
         "name": "Starter",
         "credits": "20 credits",
         "price": "$5",
-        "description": "Good for testing hooks and a few real thumbnail directions."
+        "description": "Good for testing hooks and a few real guide card directions."
       },
       "standard": {
-        "name": "Creator",
+        "name": "Player",
         "credits": "60 credits",
         "price": "$12",
         "description": "Enough for weekly publishing and A/B-ready variants."
@@ -109,9 +109,9 @@
       "name": "Free",
       "description": "For trying the workflow and testing a few ideas.",
       "features": {
-        "feature-1": "Fast mock thumbnail directions",
+        "feature-1": "Fast mock guide card directions",
         "feature-2": "10 monthly live credits",
-        "feature-3": "16:9 YouTube previews",
+        "feature-3": "16:9 guide previews",
         "feature-4": "Basic A/B testing labels"
       },
       "limits": {
@@ -122,7 +122,7 @@
     },
     "pro": {
       "name": "Pro",
-      "description": "For creators who publish every week.",
+      "description": "For players who publish every week.",
       "features": {
         "feature-1": "300 monthly live credits",
         "feature-2": "Saved generation history",
@@ -142,9 +142,9 @@
         "feature-1": "1,000 monthly live credits",
         "feature-2": "Everything in Pro",
         "feature-3": "Higher priority queue later",
-        "feature-4": "Batch thumbnail workflow later",
+        "feature-4": "Batch guide workflow later",
         "feature-5": "Advanced reference workflows",
-        "feature-6": "Creator portrait tools later",
+        "feature-6": "Player portrait tools later",
         "feature-7": "Early access to new tools"
       }
     }
@@ -155,7 +155,7 @@
       "description": "20 live generations for quick tests."
     },
     "standard": {
-      "name": "Creator",
+      "name": "Player",
       "description": "60 credits for weekly publishing."
     },
     "premium": {
@@ -164,7 +164,7 @@
     },
     "enterprise": {
       "name": "Scale",
-      "description": "500 credits for heavy thumbnail testing."
+      "description": "500 credits for heavy guide testing."
     }
   },
   "NotFoundPage": {
@@ -419,8 +419,8 @@
           }
         }
       },
-      "thumbnailMaker": {
-        "title": "Thumbnail Maker"
+      "guideMaker": {
+        "title": "Guide Card Maker"
       },
       "inspiration": {
         "title": "Inspiration"
@@ -443,7 +443,7 @@
       "product": {
         "title": "Product",
         "items": {
-          "thumbnailMaker": "Thumbnail Maker",
+          "guideMaker": "Guide Card Maker",
           "inspiration": "Inspiration",
           "pricing": "Pricing",
           "guideHub": "Subnautica 2 Hub",
@@ -622,7 +622,7 @@
           "points": {
             "0": {
               "title": "1 credit per live run",
-              "description": "A live run returns three thumbnail directions."
+              "description": "A live run returns three guide card directions."
             },
             "1": {
               "title": "Mock previews are free",
@@ -640,7 +640,7 @@
         },
         "balance": {
           "title": "Credit Balance",
-          "description": "For live AI thumbnail generation",
+          "description": "For live AI guide card generation",
           "credits": "Credits",
           "creditsDescription": "You have {credits} credits",
           "creditsExpired": "Credits expired",
@@ -983,7 +983,7 @@
         },
         "item-3": {
           "name": "Yucel Faruksahan",
-          "role": "Tailkits Creator",
+          "role": "Tailkits Player",
           "image": "https://randomuser.me/api/portraits/men/7.jpg",
           "quote": "Great work on Abyss Guides template. This is one of the best personal website that I have seen so far :)"
         },
@@ -1019,13 +1019,13 @@
         },
         "item-9": {
           "name": "Khatab Wedaa",
-          "role": "MerakiUI Creator",
+          "role": "MerakiUI Player",
           "image": "https://randomuser.me/api/portraits/men/10.jpg",
           "quote": "Abyss Guides is an elegant, clean, and responsive tailwind css components it's very helpful to start fast with your project."
         },
         "item-10": {
           "name": "Rodrigo Aguilar",
-          "role": "TailwindAwesome Creator",
+          "role": "TailwindAwesome Player",
           "image": "https://randomuser.me/api/portraits/men/11.jpg",
           "quote": "I love Abyss Guides ❤️. The component blocks are well-structured, simple to use, and beautifully designed. It makes it really easy to have a good-looking website in no time."
         },
@@ -1066,22 +1066,22 @@
       "secondaryButton": "See Demo"
     }
   },
-  "ThumbAIHome": {
+  "GuideHome": {
     "copy": {
       "hero": {
-        "badge": "AI thumbnail generator",
+        "badge": "AI guide card generator",
         "title": "Abyss Guides",
-        "description": "Create clickable YouTube thumbnails in seconds. Write the cover hook, add an optional reference image, and preview three A/B-ready concepts.",
+        "description": "Create clickable guide cards in seconds. Write the cover hook, add an optional reference image, and preview three A/B-ready concepts.",
         "proof": [
           "Free worldwide beta",
           "Unlimited mockups",
           "No login to try"
         ],
         "ideaLabel": "Cover copy or video hook",
-        "ideaPlaceholder": "Big thumbnail text, title idea, or the one thing viewers must click for...",
+        "ideaPlaceholder": "Big guide card text, title idea, or the one thing viewers must click for...",
         "generate": "Generate",
         "generating": "Generating",
-        "generationError": "Could not generate mock thumbnails. Please try again.",
+        "generationError": "Could not generate mock guide cards. Please try again.",
         "workbenchQuestion": "Need video, creator face, script, or link analysis?",
         "workbenchLink": "Open full workbench",
         "fallbackPrompt": "I tested cheap AI tools for 30 days",
@@ -1092,7 +1092,7 @@
       "uploads": {
         "reference": {
           "label": "Reference cover",
-          "description": "Add a thumbnail style",
+          "description": "Add a guide card style",
           "uploading": "Uploading reference",
           "uploaded": "Reference uploaded",
           "failed": "Upload failed",
@@ -1128,10 +1128,10 @@
       "inspiration": {
         "eyebrow": "Get inspired",
         "title": "Start with a direction, not a blank canvas.",
-        "description": "A few thumbnail patterns that work well for creator content, tool reviews, challenges, and tutorial videos. The homepage stays focused; heavier inputs live in the workbench.",
+        "description": "A few guide card patterns that work well for guide content, tool reviews, challenges, and tutorial videos. The homepage stays focused; heavier inputs live in the workbench.",
         "cards": [
           {
-            "title": "Creator challenge",
+            "title": "Player challenge",
             "type": "Face hook",
             "hook": "I WAS WRONG"
           },
@@ -1153,8 +1153,8 @@
         ]
       },
       "features": {
-        "eyebrow": "Why creators use it",
-        "title": "Small controls. Faster thumbnail decisions.",
+        "eyebrow": "Why players use it",
+        "title": "Small controls. Faster guide card decisions.",
         "items": [
           {
             "title": "Three variants by default",
@@ -1162,37 +1162,37 @@
           },
           {
             "title": "Language-aware output",
-            "description": "Pick the thumbnail text language separately from the interface. Useful when your channel targets another market."
+            "description": "Pick the guide card text language separately from the interface. Useful when your channel targets another market."
           },
           {
-            "title": "Built for YouTube first",
-            "description": "16:9 is the main format. Shorts and social sizes stay available without making the home tool feel heavy."
+            "title": "Built for guide pages first",
+            "description": "Wide guide cards are the main format. Short notes and social sizes stay available without making the home tool feel heavy."
           }
         ]
       }
     }
   },
-  "ThumbAIWorkbench": {
+  "GuideWorkbench": {
     "meta": {
-      "title": "YouTube Thumbnail Maker",
-      "description": "A full Abyss Guides workbench for YouTube thumbnail ideas, reference images, creator portraits, scripts, and A/B-ready mockups."
+      "title": "YouTube Guide Card Maker",
+      "description": "A full Abyss Guides workbench for guide card ideas, reference images, route screenshots, scripts, and A/B-ready mockups."
     },
     "copy": {
       "hero": {
-        "eyebrow": "Full thumbnail workbench",
-        "title": "Build the whole thumbnail brief in one place",
-        "description": "Bring a video idea, link, reference cover, creator face, video file, or script. Abyss Guides turns the inputs into three clickable thumbnail directions you can compare before production.",
+        "eyebrow": "Full guide card workbench",
+        "title": "Build the whole guide card brief in one place",
+        "description": "Bring a guide idea, link, reference cover, creator face, route file, or script. Abyss Guides turns the inputs into three clickable guide card directions you can compare before production.",
         "generate": "Generate directions",
         "generating": "Building directions",
         "ideaLabel": "Video idea or hook",
         "ideaPlaceholder": "Example: I tested the cheapest AI desk setup for 30 days...",
-        "urlLabel": "YouTube or source link",
+        "urlLabel": "Guide or source link",
         "urlPlaceholder": "https://youtube.com/watch?v=...",
         "outputLabel": "Output",
-        "strategyLabel": "Thumbnail strategy",
+        "strategyLabel": "Guide Card strategy",
         "layoutLabel": "Composition",
         "assetsTitle": "Optional creative inputs",
-        "assetsDescription": "Add only what you have. More context helps the live AI pipeline produce stronger thumbnail directions.",
+        "assetsDescription": "Add only what you have. More context helps the live AI pipeline produce stronger guide card directions.",
         "selected": "Selected assets",
         "empty": "No assets selected yet",
         "mockNotice": "Signed-in runs use live AI; homepage previews stay lightweight",
@@ -1201,13 +1201,13 @@
       },
       "uploads": {
         "reference": {
-          "title": "Reference thumbnail",
+          "title": "Reference guide card",
           "description": "Upload a cover style you want to borrow from.",
           "cta": "Choose image"
         },
         "portrait": {
-          "title": "Creator portrait",
-          "description": "Add a face photo for future face-focused thumbnails.",
+          "title": "Player portrait",
+          "description": "Add a face photo for future face-focused guide cards.",
           "cta": "Choose portrait"
         },
         "video": {
@@ -1267,16 +1267,16 @@
       "mode": {
         "simple": "Simple mode",
         "pro": "Pro Brief",
-        "simpleTitle": "Start with the inputs most creators actually use.",
+        "simpleTitle": "Start with the inputs most players actually use.",
         "simpleDescription": "Use this for quick ideation: title, source link, output size, and language. It stays separate from the homepage because this page keeps the results, controls, and future history in one workspace.",
-        "proTitle": "For creators, strategists, and thumbnail designers.",
-        "proDescription": "Build a real thumbnail brief with strategy, composition, reference covers, creator portraits, video files, and scripts.",
+        "proTitle": "For players, strategists, and guide editors.",
+        "proDescription": "Build a real guide card brief with strategy, composition, reference covers, route screenshots, route files, and scripts.",
         "proCta": "Open Pro Brief"
       },
       "history": {
         "title": "Generation history",
         "description": "Your latest saved generations. Click a card to inspect the brief, export again, or remove it from your account.",
-        "empty": "No generation jobs yet. Add an idea and run your first thumbnail direction.",
+        "empty": "No generation jobs yet. Add an idea and run your first guide card direction.",
         "clear": "Clear",
         "retry": "Retry",
         "active": "Active preview",
@@ -1301,7 +1301,7 @@
       },
       "authGate": {
         "eyebrow": "Live generation access",
-        "signedOutTitle": "Sign in to generate real thumbnails",
+        "signedOutTitle": "Sign in to generate real guide cards",
         "signedOutDescription": "The homepage stays free for quick previews. The workbench uses live AI, R2 storage, and generation history, so it needs an account before it can run.",
         "signedInTitle": "Live generation is unlocked",
         "signedInDescription": "Your workbench runs through the protected live pipeline with rate limits and saved image storage.",

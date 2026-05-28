@@ -281,9 +281,9 @@ export function ThumbAIWorkbench() {
   const router = useLocaleRouter();
   const { data: session, isPending: sessionPending } = authClient.useSession();
   const messages = useMessages() as unknown as {
-    ThumbAIWorkbench: { copy: ThumbAIWorkbenchCopy };
+    GuideWorkbench: { copy: ThumbAIWorkbenchCopy };
   };
-  const copy = messages.ThumbAIWorkbench.copy;
+  const copy = messages.GuideWorkbench.copy;
   const [idea, setIdea] = useState('');
   const [url, setUrl] = useState('');
   const [format, setFormat] = useState(formats[0].id);
