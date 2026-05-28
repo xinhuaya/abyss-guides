@@ -9,7 +9,7 @@ import { getBaseUrl } from '@/lib/urls';
 
 type Href = Parameters<typeof getLocalePathname>[0]['href'];
 
-const SUBNAUTICA_LAST_MODIFIED = new Date('2026-05-28');
+const SUBNAUTICA_LAST_MODIFIED = new Date('2026-05-29');
 
 /**
  * static routes for sitemap, you may change the routes for your own

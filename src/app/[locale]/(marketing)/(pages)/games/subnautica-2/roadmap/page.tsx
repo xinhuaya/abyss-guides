@@ -81,7 +81,7 @@ type RoadmapCopy = {
 };
 
 const PUBLISHED_AT = '2026-05-23';
-const MODIFIED_AT = '2026-05-28';
+const MODIFIED_AT = '2026-05-29';
 
 const officialSources = [
   {
@@ -121,7 +121,7 @@ const roadmapCopy: Record<string, RoadmapCopy> = {
     cardKicker: 'EA transmission',
     quickLabel: 'Quick answer',
     quickAnswer:
-      'Unknown Worlds is treating Subnautica 2 as a long Early Access build. As of the May 28 check, Hotfix 2 is still the latest official gameplay patch tracked here, and the official plan still points to hotfixes, smaller improvement updates, co-op work, and larger content expansions.',
+      'Unknown Worlds is treating Subnautica 2 as a long Early Access build. As of the May 29 check, Hotfix 2 is still the latest official gameplay patch tracked here, and the official plan still points to hotfixes, smaller improvement updates, co-op work, and larger content expansions.',
     statusTitle: 'Current tracker status',
     stats: [
       {
@@ -297,7 +297,7 @@ const roadmapCopy: Record<string, RoadmapCopy> = {
     ],
     sourceTitle: 'Source note',
     sourceBody:
-      'Checked May 28, 2026 against official Unknown Worlds and Steam sources. We avoid adding dates or features that have not been announced.',
+      'Checked May 29, 2026 against official Unknown Worlds and Steam sources. We avoid adding dates or features that have not been announced.',
     sourceLinks: officialSources,
   },
   zh: {

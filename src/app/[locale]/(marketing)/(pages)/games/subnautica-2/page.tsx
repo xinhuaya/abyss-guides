@@ -54,7 +54,7 @@ const copyByLocale: Record<'en' | 'zh', HubCopy> = {
       description:
         'Start here for Subnautica 2 beginner tips, resource locations, crafting recipes, map and biome notes, co-op help, settings fixes, and Early Access updates.',
     },
-    updated: 'Last updated May 28, 2026',
+    updated: 'Last updated May 29, 2026',
     title: 'Subnautica 2 Guide Hub',
     description:
       'Subnautica 2 is in Early Access, so guides need to stay flexible. This hub organizes beginner routes, resources, crafting, map notes, co-op help, settings, and updates in one place.',
@@ -737,7 +737,7 @@ const copyByLocale: Record<'en' | 'zh', HubCopy> = {
       description:
         'Subnautica 2 中文攻略入口，整理新手路线、资源位置、制作链、地图生态区、联机建议和抢先体验更新。',
     },
-    updated: '最后更新：2026 年 5 月 28 日',
+    updated: '最后更新：2026 年 5 月 29 日',
     title: 'Subnautica 2 攻略中心',
     description:
       'Subnautica 2 还在抢先体验阶段，数据会变，攻略也要跟着改。这个入口先把新手路线、资源、制作、地图、联机和更新放在一起，方便玩家快速跳到要查的内容。',
@@ -1342,7 +1342,7 @@ const hubCopyOverrides: Record<string, Partial<HubCopy>> = {
       description:
         'Русский хаб по Subnautica 2: первые маршруты, ресурсы, крафт, карта, кооп и обновления Early Access.',
     },
-    updated: 'Обновлено 28 мая 2026',
+    updated: 'Обновлено 29 мая 2026',
     title: 'Subnautica 2 Guide Hub',
     description:
       'Subnautica 2 находится в раннем доступе, поэтому точные данные могут меняться. Этот хаб собирает стартовые маршруты, ресурсы, крафт, карту, кооп и обновления в одном месте.',
@@ -1389,7 +1389,7 @@ const hubCopyOverrides: Record<string, Partial<HubCopy>> = {
       description:
         'Deutscher Subnautica 2 Hub fuer Anfaenger, Ressourcen, Crafting, Karte, Koop und Early-Access-Updates.',
     },
-    updated: 'Zuletzt aktualisiert am 28. Mai 2026',
+    updated: 'Zuletzt aktualisiert am 29. Mai 2026',
     title: 'Subnautica 2 Guide Hub',
     description:
       'Subnautica 2 ist im Early Access, also koennen Details nach Patches wechseln. Dieser Hub sammelt Start-Routen, Ressourcen, Crafting, Karte, Koop und Updates.',
@@ -1436,7 +1436,7 @@ const hubCopyOverrides: Record<string, Partial<HubCopy>> = {
       description:
         'Hub francais pour Subnautica 2 : debuter, ressources, craft, carte, coop et mises a jour Early Access.',
     },
-    updated: 'Mis a jour le 28 mai 2026',
+    updated: 'Mis a jour le 29 mai 2026',
     title: 'Hub de guides Subnautica 2',
     description:
       'Subnautica 2 est en Early Access, donc les details peuvent changer. Ce hub regroupe les routes de depart, les ressources, le craft, la carte, la coop et les mises a jour.',
@@ -1482,7 +1482,7 @@ const hubCopyOverrides: Record<string, Partial<HubCopy>> = {
       description:
         'Hub em portugues do Brasil para Subnautica 2: inicio, recursos, fabricacao, mapa, coop e atualizacoes do Early Access.',
     },
-    updated: 'Atualizado em 28 de maio de 2026',
+    updated: 'Atualizado em 29 de maio de 2026',
     title: 'Hub de guias de Subnautica 2',
     description:
       'Subnautica 2 esta em Early Access, entao detalhes mudam com patches. Este hub junta rotas iniciais, recursos, fabricacao, mapa, coop e atualizacoes.',
@@ -1528,7 +1528,7 @@ const hubCopyOverrides: Record<string, Partial<HubCopy>> = {
       description:
         'Hub en espanol latino para Subnautica 2: inicio, recursos, fabricacion, mapa, cooperativo y actualizaciones de Early Access.',
     },
-    updated: 'Actualizado el 28 de mayo de 2026',
+    updated: 'Actualizado el 29 de mayo de 2026',
     title: 'Centro de guias de Subnautica 2',
     description:
       'Subnautica 2 esta en Early Access, asi que los datos pueden cambiar. Este hub junta rutas iniciales, recursos, fabricacion, mapa, cooperativo y actualizaciones.',
@@ -1574,7 +1574,7 @@ const hubCopyOverrides: Record<string, Partial<HubCopy>> = {
       description:
         'Subnautica 2 한국어 공략 허브입니다. 초반 루트, 자원, 제작, 지도, 협동 플레이, 얼리 액세스 업데이트를 정리합니다.',
     },
-    updated: '마지막 업데이트: 2026년 5월 28일',
+    updated: '마지막 업데이트: 2026년 5월 29일',
     title: 'Subnautica 2 공략 허브',
     description:
       'Subnautica 2는 얼리 액세스 게임이라 패치마다 정보가 바뀔 수 있습니다. 이 허브는 초반 루트, 자원, 제작, 지도, 협동, 업데이트를 한곳에 묶습니다.',
@@ -1620,7 +1620,7 @@ const hubCopyOverrides: Record<string, Partial<HubCopy>> = {
       description:
         'Subnautica 2 日本語攻略ハブ。序盤ルート、資源、クラフト、マップ、協力プレイ、早期アクセス更新を整理します。',
     },
-    updated: '最終更新: 2026年5月28日',
+    updated: '最終更新: 2026年5月29日',
     title: 'Subnautica 2 攻略ハブ',
     description:
       'Subnautica 2 は早期アクセス中なので、情報はパッチで変わります。このハブでは序盤ルート、資源、クラフト、マップ、協力プレイ、更新情報をまとめます。',
