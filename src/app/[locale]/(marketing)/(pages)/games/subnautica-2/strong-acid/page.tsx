@@ -314,14 +314,143 @@ const strongAcidCopy: Record<string, StrongAcidCopy> = {
 };
 
 strongAcidCopy.ja = {
-  ...strongAcidCopy.en,
   metadata: {
-    title: 'How to Get Strong Acid in Subnautica 2',
+    title: 'Subnautica 2 Strong Acid ガイド - Necrolei Cyst とProcessorルート',
     description:
-      'Guide for Strong Acid, Necrolei Cysts, Processor route, Power Cell, Rebreather prep, and Tadpole planning.',
+      'Subnautica 2のStrong Acidガイド。Necrolei Cyst、Processor、Power Cell、Fiber Mesh、Rebreather、Tadpole準備まで実用ルートで整理します。',
   },
+  eyebrow: 'Necrolei Cyst クラフトルート',
+  title: 'Subnautica 2 Strong Acid ガイド',
+  description:
+    'Strong Acidは、探索、加工、酸素管理、乗り物準備が一気につながる素材です。Necrolei CystとProcessorから始まり、Power CellやTadpoleの計画にもすぐ響いてきます。',
+  quickLabel: '要点',
+  quickAnswer:
+    'Strong Acidを作るには、Old Habitat周辺のルートでNecrolei Cystを集め、Processorで加工します。PC GamerはStrong AcidをPower Cellの重要素材として扱っており、Power CellはTadpole準備にも関わります。Fiber MeshやRebreatherも同時に進めるなら、化学素材を少し残しておくと安心です。',
+  fieldNotesTitle: 'Strong Acid集めのメモ',
+  fieldNotes: [
+    {
+      title: 'cystは化学素材の在庫として見る',
+      body: 'Necrolei Cystは普通の植物素材に見えますが、Strong Acidが出てきた時点でPower Cell、Processor、深いルート準備と同じ計画に入ります。',
+    },
+    {
+      title: '次のレシピが見えるまで酸にしない',
+      body: 'Strong Acidは便利です。ただ、未加工のcystとProcessorが使える状態の方が柔軟です。Power Cell、Tadpole、呼吸装備が明確に必要になってから加工しましょう。',
+    },
+    {
+      title: 'Old Habitatからは少し余分に持ち帰る',
+      body: 'Old Habitatルートは方向感覚と酸素の両方を使います。安全に戻れるなら最低数より少し多めに集め、同じ泳ぎをすぐ繰り返さなくて済むようにします。',
+    },
+  ],
+  routeChecklistTitle: 'Strong Acidを作る前に',
+  routeChecklist: [
+    'Processorをスキャン、または設置してからStrong Acidを前提にする。',
+    'Old Habitat周辺のNecrolei Cystルートをメモした。',
+    'Power Cellや深いルート装備を優先して素材を使う。',
+    'cystルートから安全に戻れる酸素の余裕を残す。',
+  ],
+  contentsLabel: '目次',
+  routeTitle: 'Strong Acid作成ルート',
+  routeSteps: [
+    {
+      title: 'Processorルートを先に開ける',
+      body: 'PC Gamerは、Life Pod北側のOld Habitatで進むblack-box目標ルート中にProcessorをスキャンできると説明しています。最初の一回は素材拾いではなく、スキャンと酸素確認の泳ぎとして見ましょう。',
+    },
+    {
+      title: '近くでNecrolei Cystを集める',
+      body: '同じOld Habitat周辺は、Necrolei Cyst集めにも使いやすい場所として紹介されています。インベントリがいっぱいになる前に、帰り道を先に確認しておきます。',
+    },
+    {
+      title: 'Power Cellを目標に加工する',
+      body: 'Strong Acidが重要なのは、Power Cell作成につながるからです。次の目標がTadpoleなら、Processorが使えるからといって化学素材を気軽に使い切らない方が安全です。',
+    },
+    {
+      title: '使う前に酸素ルートを確認する',
+      body: 'RebreatherやFiber Meshの準備も、深いルートでは同じ流れに入ってきます。快適に潜れる深度を広げる前なら、呼吸装備を終える分の余裕を残します。',
+    },
+    {
+      title: '安全なら予備を持ち帰る',
+      body: 'ルートが安定したら、最低数だけで帰らない方が後で楽です。乗り物チェーンでは試作、修理、予備電源で思ったより素材を使います。',
+    },
+  ],
+  tableTitle: 'Strong Acid クラフトチェーン',
+  tableHeaders: ['素材または設備', '役割'],
+  tableRows: [
+    ['Necrolei Cyst', 'Strong Acidの主な採集素材。'],
+    ['Processor', 'Strong Acidを加工する設備。'],
+    ['Strong Acid', 'Power Cell作成につながる加工素材。'],
+    [
+      'Fiber Mesh / Rebreather',
+      '深いルート準備で同じ計画に入ることがある装備素材。',
+    ],
+    ['Power Cell', 'Tadpole進行に関係する乗り物チェーン素材。'],
+  ],
+  visualTitle: '化学素材から乗り物への流れ',
+  visualItems: [
+    {
+      label: '採集',
+      value: 'Cysts',
+      note: 'Necrolei Cystを持ち帰るルートを守ります。',
+    },
+    {
+      label: '加工',
+      value: 'Acid',
+      note: 'Processorが使えるようになってから酸にします。',
+    },
+    {
+      label: '投入',
+      value: 'Power',
+      note: 'Power CellとTadpole準備が主な圧力点です。',
+    },
+  ],
+  cautionTitle: 'Strong Acidは乗り物チェーン素材',
+  cautionBody:
+    'Necrolei Cystをただの植物素材として使い切らないでください。Strong AcidはPower Cell計画に入り、Fiber MeshやRebreatherの深いルート準備とも近い場所にあります。',
+  faqTitle: 'FAQ',
+  faqs: [
+    {
+      title: 'Subnautica 2でStrong Acidはどう作る？',
+      body: 'Necrolei Cystを集め、Processorを使ってStrong Acidに加工します。現在の報道では、Processorとcystの計画にOld Habitatルートがよく出てきます。',
+    },
+    {
+      title: 'Strong Acidはなぜ必要？',
+      body: 'Power Cell作成に使う素材です。Power CellはTadpoleの準備にも関わるため、Strong Acidは乗り物進行の手前で重要になります。',
+    },
+    {
+      title: 'Necrolei Cystはどこで探す？',
+      body: 'PC GamerとGamesRadarはいずれもOld Habitatルートを案内しています。酸素の余裕を取り、帰り道を見失わない状態で集めましょう。',
+    },
+    {
+      title: 'Strong Acidは貯めておくべき？',
+      body: 'ルートが安全になったら少量の予備は便利です。それまでは、未加工のcystとProcessorが使える状態の方が柔軟です。',
+    },
+  ],
+  readNextTitle: '次に読む',
+  related: [
+    { href: Routes.Subnautica2NecroleiCyst, label: 'Necrolei Cyst ガイド' },
+    { href: Routes.Subnautica2Processor, label: 'Processor ガイド' },
+    { href: Routes.Subnautica2MildAcid, label: 'Mild Acid ガイド' },
+    { href: Routes.Subnautica2Sulfur, label: 'Sulfurの場所' },
+    { href: Routes.Subnautica2FiberMesh, label: 'Fiber Mesh ガイド' },
+    { href: Routes.Subnautica2Rebreather, label: 'Rebreather ガイド' },
+    { href: Routes.Subnautica2Tadpole, label: 'Tadpole 車両ガイド' },
+    { href: Routes.Subnautica2PowerCell, label: 'Power Cell ガイド' },
+    {
+      href: Routes.Subnautica2AdvancedBattery,
+      label: 'Advanced Battery ガイド',
+    },
+    { href: Routes.Subnautica2Crafting, label: 'クラフトガイド' },
+  ],
+  sourcesTitle: 'ソースメモ',
   sourceBody:
-    'Checked May 28, 2026 against PC Gamer Strong Acid and Rebreather coverage plus GamesRadar Necrolei Cyst route notes.',
+    '2026年5月28日にPC GamerのStrong Acid / Rebreather記事と、GamesRadarのNecrolei Cystルート記事を確認しました。Subnautica 2はEarly Access中なので、Processorルート、素材数、後続用途はパッチ後に再確認してください。',
+  cardKicker: '化学ルートカード',
+  cardBody:
+    'Necrolei Cyst、Processor、Strong Acid作成、Power Cell用途、Fiber Mesh、Tadpole準備。',
+  cardTypeLabel: '種類',
+  cardTypeValue: 'クラフトルート',
+  cardVerifiedLabel: '確認日',
+  cardStatusLabel: '状態',
+  cardStatusValue: 'Early Access',
 };
 
 const fallbackLocaleAliases = {

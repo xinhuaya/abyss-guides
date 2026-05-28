@@ -770,7 +770,6 @@ const zhOnlyRoutes = [
   Routes.Subnautica2Salt,
   Routes.Subnautica2ScannerStation,
   Routes.Subnautica2SilverIngot,
-  Routes.Subnautica2StrongAcid,
   Routes.Subnautica2Sulfur,
   Routes.Subnautica2Tadpole,
   Routes.Subnautica2TadpoleDock,
@@ -789,6 +788,7 @@ const zhJaRoutes = [
   Routes.Subnautica2PowerCell,
   Routes.Subnautica2Rebreather,
   Routes.Subnautica2SystemChip,
+  Routes.Subnautica2StrongAcid,
   Routes.Subnautica2WiringKit,
 ] as const;
 
