@@ -58,6 +58,8 @@ type RoadmapCopy = {
   impactRows: Array<[string, string, string]>;
   workflowTitle: string;
   workflow: RoadmapCard[];
+  fieldNotesTitle?: string;
+  fieldNotes?: RoadmapCard[];
   cautionTitle: string;
   cautionBody: string;
   faqTitle: string;
@@ -240,6 +242,21 @@ const roadmapCopy: Record<string, RoadmapCopy> = {
         body: 'Roadmap items are plans, not promises. If there is no official date, the page should say planned, expected, or future.',
       },
     ],
+    fieldNotesTitle: 'Field notes for patch watching',
+    fieldNotes: [
+      {
+        title: 'Keep patch facts and route advice separate',
+        body: 'A hotfix can say Silver was added without telling you the best repeatable route. Write the patch fact first, then update the route page only after the path is checked.',
+      },
+      {
+        title: 'Use dates like part of the guide',
+        body: 'Early Access advice gets old quickly. A visible checked date tells readers whether they are seeing launch-week notes or a page refreshed after the latest hotfix.',
+      },
+      {
+        title: 'One patch can touch five pages',
+        body: 'A resource change can affect beginner routes, crafting, base planning, co-op callouts, and the main resource index. Update the links as carefully as the article body.',
+      },
+    ],
     cautionTitle: 'Do not treat the roadmap like a release calendar',
     cautionBody:
       'Unknown Worlds says the roadmap can change during Early Access. For SEO and trust, this page should separate live patch facts from future plans instead of pretending every feature has a fixed date.',
@@ -413,6 +430,21 @@ const roadmapCopy: Record<string, RoadmapCopy> = {
       {
         title: '未来计划要保守写',
         body: '路线图是计划，不是承诺。没有官方日期时，只能写计划中、预计或未来。',
+      },
+    ],
+    fieldNotesTitle: '看补丁时的现场笔记',
+    fieldNotes: [
+      {
+        title: '补丁事实和路线建议分开写',
+        body: '官方说增加了银资源点，不等于最优路线已经确定。先写清补丁事实，再等路线实测后更新具体攻略。',
+      },
+      {
+        title: '日期也是攻略的一部分',
+        body: '抢先体验信息过期很快。把核对日期露出来，玩家才知道看到的是首发周笔记，还是 Hotfix 之后更新过的内容。',
+      },
+      {
+        title: '一个补丁可能影响五篇文章',
+        body: '资源改动会牵动新手路线、制作链、基地规划、联机报点和资源总表。内部链接要跟正文一起改。',
       },
     ],
     cautionTitle: '不要把路线图当成发售日历',
@@ -1964,6 +1996,29 @@ export default async function RoadmapGuidePage({
                 ))}
               </div>
             </section>
+
+            {copy.fieldNotes?.length ? (
+              <section>
+                <h2 className="text-3xl font-semibold text-[#effffb]">
+                  {copy.fieldNotesTitle}
+                </h2>
+                <div className="mt-5 grid gap-4">
+                  {copy.fieldNotes.map((note) => (
+                    <section
+                      key={note.title}
+                      className="border border-cyan-200/12 bg-[#071f23] p-5"
+                    >
+                      <h3 className="font-semibold text-[#78ead7]">
+                        {note.title}
+                      </h3>
+                      <p className="mt-3 leading-7 text-[#abc8c3]">
+                        {note.body}
+                      </p>
+                    </section>
+                  ))}
+                </div>
+              </section>
+            ) : null}
 
             <section className="border border-cyan-200/12 bg-[#082226] p-6">
               <div className="flex items-center gap-3">
