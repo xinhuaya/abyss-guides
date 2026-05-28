@@ -28,6 +28,10 @@ type SilverCopy = {
   description: string;
   quickLabel: string;
   quickAnswer: string;
+  fieldNotesTitle?: string;
+  fieldNotes?: Step[];
+  routeChecklistTitle?: string;
+  routeChecklist?: string[];
   routeTitle: string;
   routeSteps: Step[];
   tableTitle: string;
@@ -70,6 +74,28 @@ const silverCopy: Record<string, SilverCopy> = {
     quickLabel: 'Quick answer',
     quickAnswer:
       'For early Silver, follow the northward route from the Lifepod toward the Old Habitat colony ruins and check the cave spaces around the black-box objective path. PC Gamer points players toward caves near the Old Habitat, about 350 meters north of the Lifepod, and Unknown Worlds Hotfix 2 added more Silver resource areas in the early-game region.',
+    fieldNotesTitle: 'Field notes for Silver runs',
+    fieldNotes: [
+      {
+        title: 'Caves matter more than open seabed',
+        body: 'If you are sweeping flat ground and coming up empty, change the shape of the route. Silver is much easier to remember when the run is tied to cave mouths and ruins.',
+      },
+      {
+        title: 'Do not stare at deposits you cannot mine',
+        body: 'Small pieces solve early recipes. Larger blocks wait for the Sonic Resonator. If the tool is missing, mark the spot mentally and keep moving.',
+      },
+      {
+        title: 'Hotfix 2 made old advice worth rechecking',
+        body: 'Launch-week Silver complaints were real, but the early region has been adjusted. If a guide says the area is dry, test it against the current build before giving up.',
+      },
+    ],
+    routeChecklistTitle: 'Silver run check',
+    routeChecklist: [
+      'Start from Lifepod and swim north with a landmark in mind.',
+      'Check cave entrances near Old Habitat and the black-box path.',
+      'Keep oxygen for the return instead of chasing one more glint.',
+      'Save a few pieces before crafting side electronics.',
+    ],
     routeTitle: 'Early Silver route',
     routeSteps: [
       {
@@ -156,234 +182,256 @@ const silverCopy: Record<string, SilverCopy> = {
   },
   zh: {
     metadata: {
-      title: 'Subnautica 2 银在哪里找 - 前期路线、用途和补丁说明',
+      title: 'Subnautica 2 ????? - ????????????',
       description:
-        'Subnautica 2 银矿中文攻略，整理前期路线、采集方法、制作用途、出发清单和 Hotfix 2 之后的注意点。',
+        'Subnautica 2 ????????????????????????????? Hotfix 2 ???????',
     },
-    eyebrow: 'Subnautica 2 资源路线',
-    title: 'Subnautica 2 银在哪里找',
+    eyebrow: 'Subnautica 2 ????',
+    title: 'Subnautica 2 ?????',
     description:
-      '银是前期开局最容易卡住的材料之一。它不难到离谱，但位置很挑路线，乱游通常很浪费氧气。',
-    quickLabel: '快速答案',
+      '??????????????????????????????????????????',
+    quickLabel: '????',
     quickAnswer:
-      '前期找银，从 Lifepod 往北，沿着 Old Habitat 殖民地遗迹和黑匣子任务路线附近的洞穴找。PC Gamer 提到，Old Habitat 附近、距离 Lifepod 大约 350 米的洞穴是早期银的重点区域；Unknown Worlds 的 Hotfix 2 也已经增加了前期区域的银资源点。',
-    routeTitle: '前期找银路线',
+      '?????? Lifepod ????? Old Habitat ????????????????????PC Gamer ???Old Habitat ????? Lifepod ?? 350 ??????????????Unknown Worlds ? Hotfix 2 ????????????????',
+    fieldNotesTitle: '??????',
+    fieldNotes: [
+      {
+        title: '?????????',
+        body: '??????????????????????????????????????????????????',
+      },
+      {
+        title: '?????????',
+        body: '???????????????? Sonic Resonator????????????????????????',
+      },
+      {
+        title: 'Hotfix 2 ???????',
+        body: '?????????????????????????????????????????????',
+      },
+    ],
+    routeChecklistTitle: '?????',
+    routeChecklist: [
+      '? Lifepod ?????????????',
+      '??? Old Habitat ????????????',
+      '????????????????',
+      '?????????????????????',
+    ],
+    routeTitle: '??????',
     routeSteps: [
       {
-        title: '用 Lifepod 当起点',
-        body: '每次都从 Lifepod 出发往北走，不要在出生点周围随机乱翻。能重复的路线，比偶然捡到一块银更有价值。',
+        title: '? Lifepod ???',
+        body: '???? Lifepod ???????????????????????????????????????',
       },
       {
-        title: '往 Old Habitat 方向找',
-        body: '留意殖民地遗迹、Coral Dome 和黑匣子路线附近的洞口。银更常出现在洞穴里，不太适合只扫开放海底。',
+        title: '? Old Habitat ???',
+        body: '????????Coral Dome ?????????????????????????????????',
       },
       {
-        title: '分清两种银资源',
-        body: '小块银可以直接捡，大型矿块需要 Sonic Resonator。工具没到位时，不要在不能采的矿块旁边硬耗氧气。',
+        title: '???????',
+        body: '??????????????? Sonic Resonator????????????????????????',
       },
       {
-        title: '旧路线可以重新跑一次',
-        body: 'Hotfix 2 给前期区域加了更多银资源点。如果你之前觉得银少得离谱，更新后同一片区域可能已经好找一些。',
+        title: '??????????',
+        body: 'Hotfix 2 ????????????????????????????????????????????',
       },
     ],
-    tableTitle: '银的主要用途',
-    tableHeaders: ['用途', '为什么重要'],
+    tableTitle: '??????',
+    tableHeaders: ['??', '?????'],
     useRows: [
       [
-        '氧气升级',
-        '银会卡住气瓶相关进度，氧气上来后，之后每次资源跑图都会轻松很多。',
+        '????',
+        '????????????????????????????????',
       ],
-      ['Wiring Kit', '银会进入电子制作链，是很多进阶配方的前置材料。'],
+      ['Wiring Kit', '???????????????????????'],
       [
-        '基地和载具系统',
-        '至少先预留几块给基地设施和蝌蚪号相关制作链，抢先体验配方可能继续改。',
+        '???????',
+        '??????????????????????????????????',
       ],
       [
-        '后续扫描和采集',
-        '工具升级后，银就会从“看运气”变成可以稳定复跑的材料路线。',
+        '???????',
+        '?????????????????????????????',
       ],
     ],
-    patchTitle: '抢先体验补丁说明',
+    patchTitle: '????????',
     patchBody:
-      '银在首发那几天是明显痛点。GamesRadar 报道过玩家很难找到银；随后 Unknown Worlds 在 Hotfix 2 中给前期区域增加了更多银资源点。具体路线仍然要按版本更新来复查。',
-    checklistTitle: '出发前检查',
+      '?????????????GamesRadar ????????????? Unknown Worlds ? Hotfix 2 ????????????????????????????????',
+    checklistTitle: '?????',
     checklist: [
-      '背包先空出几个格子。',
-      '如果顺路做剧情任务，带好食物和水。',
-      '联机时用 Lifepod、Coral Dome、遗迹、洞口这些词报点。',
-      '不要把所有银一次性花光，先看下一条制作链需要什么。',
+      '??????????',
+      '?????????????????',
+      '???? Lifepod?Coral Dome????????????',
+      '?????????????????????????',
     ],
-    faqTitle: '常见问题',
+    faqTitle: '????',
     faqs: [
       {
-        question: '银可以直接捡吗？',
-        answer: '小块银可以直接捡。大型矿块需要 Sonic Resonator 才能开采。',
+        question: '????????',
+        answer: '??????????????? Sonic Resonator ?????',
       },
       {
-        question: '为什么前期银这么难找？',
+        question: '???????????',
         answer:
-          '因为可靠点位主要在洞穴和任务路线附近，不是在出生点开放海底随便刷。',
+          '?????????????????????????????????',
       },
       {
-        question: 'Hotfix 2 改了银吗？',
-        answer: '改了。Unknown Worlds 表示 Hotfix 2 增加了前期区域的银资源点。',
+        question: 'Hotfix 2 ?????',
+        answer: '???Unknown Worlds ?? Hotfix 2 ?????????????',
       },
     ],
-    readNextTitle: '继续阅读',
+    readNextTitle: '????',
     readNext: [
-      { href: Routes.Subnautica2Resources, label: '资源指南' },
-      { href: Routes.Subnautica2SilverIngot, label: 'Silver Ingot 指南' },
-      { href: Routes.Subnautica2AirTank, label: '气瓶和氧气' },
-      { href: Routes.Subnautica2Crafting, label: '制作指南' },
-      { href: Routes.Subnautica2Beginner, label: '新手指南' },
+      { href: Routes.Subnautica2Resources, label: '????' },
+      { href: Routes.Subnautica2SilverIngot, label: 'Silver Ingot ??' },
+      { href: Routes.Subnautica2AirTank, label: '?????' },
+      { href: Routes.Subnautica2Crafting, label: '????' },
+      { href: Routes.Subnautica2Beginner, label: '????' },
     ],
-    sourceTitle: '来源说明',
+    sourceTitle: '????',
     sourceBody:
-      '2026 年 5 月 28 日核对 Unknown Worlds Hotfix 2 和当前银路线报道。抢先体验阶段的地点可能继续变化。',
-    routeMindsetTitle: '路线思路',
+      '2026 ? 5 ? 28 ??? Unknown Worlds Hotfix 2 ?????????????????????????',
+    routeMindsetTitle: '????',
     routeMindsetBody:
-      '把银当成一条固定跑腿路线，不要当成碰运气。你能清楚描述洞口以后，银就不太会继续卡住制作链。',
+      '?????????????????????????????????????????????',
   },
   ru: {
     metadata: {
-      title: 'Где найти Silver в Subnautica 2 - ранний маршрут и применение',
+      title: '??? ????? Silver ? Subnautica 2 - ?????? ??????? ? ??????????',
       description:
-        'Русский гайд по Silver в Subnautica 2: ранний маршрут, применение, чеклист и заметки Hotfix 2.',
+        '??????? ???? ?? Silver ? Subnautica 2: ?????? ???????, ??????????, ??????? ? ??????? Hotfix 2.',
     },
-    eyebrow: 'Маршрут ресурса Subnautica 2',
-    title: 'Где найти Silver в Subnautica 2',
+    eyebrow: '??????? ??????? Subnautica 2',
+    title: '??? ????? Silver ? Subnautica 2',
     description:
-      'Silver быстро становится первым настоящим стопором. Материал не спрятан навсегда, но искать его на открытом дне почти всегда хуже, чем идти по нормальному маршруту.',
-    quickLabel: 'Короткий ответ',
+      'Silver ?????? ?????????? ?????? ????????? ????????. ???????? ?? ??????? ????????, ?? ?????? ??? ?? ???????? ??? ????? ?????? ????, ??? ???? ?? ??????????? ????????.',
+    quickLabel: '???????? ?????',
     quickAnswer:
-      'Идите от Lifepod на север к руинам Old Habitat и проверяйте пещеры рядом с маршрутом к black box. PC Gamer указывает на пещеры возле Old Habitat примерно в 350 метрах к северу от Lifepod, а Hotfix 2 добавил больше Silver в раннем регионе.',
-    routeTitle: 'Ранний маршрут за Silver',
+      '????? ?? Lifepod ?? ????? ? ?????? Old Habitat ? ?????????? ?????? ????? ? ????????? ? black box. PC Gamer ????????? ?? ?????? ????? Old Habitat ???????? ? 350 ?????? ? ?????? ?? Lifepod, ? Hotfix 2 ??????? ?????? Silver ? ?????? ???????.',
+    routeTitle: '?????? ??????? ?? Silver',
     routeSteps: [
       {
-        title: 'Начинайте от Lifepod',
-        body: 'Плывите на север от Lifepod. Повторяемый маршрут лучше, чем случайная находка.',
+        title: '????????? ?? Lifepod',
+        body: '??????? ?? ????? ?? Lifepod. ??????????? ??????? ?????, ??? ????????? ???????.',
       },
       {
-        title: 'Держитесь направления Old Habitat',
-        body: 'Ищите руины, Coral Dome и входы в пещеры рядом с путем к black box. В пещерах Silver встречается надежнее.',
+        title: '????????? ??????????? Old Habitat',
+        body: '????? ?????, Coral Dome ? ????? ? ?????? ????? ? ????? ? black box. ? ??????? Silver ??????????? ????????.',
       },
       {
-        title: 'Различайте маленькие и большие залежи',
-        body: 'Мелкие куски можно забрать руками. Большие блоки требуют Sonic Resonator.',
+        title: '?????????? ????????? ? ??????? ??????',
+        body: '?????? ????? ????? ??????? ??????. ??????? ????? ??????? Sonic Resonator.',
       },
       {
-        title: 'Проверьте маршрут после патча',
-        body: 'Hotfix 2 добавил больше Silver в раннем регионе, поэтому старые сухие маршруты могут стать лучше.',
+        title: '????????? ??????? ????? ?????',
+        body: 'Hotfix 2 ??????? ?????? Silver ? ?????? ???????, ??????? ?????? ????? ???????? ????? ????? ?????.',
       },
     ],
-    tableTitle: 'Зачем нужен Silver',
-    tableHeaders: ['Применение', 'Почему важно'],
+    tableTitle: '????? ????? Silver',
+    tableHeaders: ['??????????', '?????? ?????'],
     useRows: [
       [
-        'Кислород',
-        'Апгрейды воздуха делают все последующие вылазки безопаснее.',
+        '????????',
+        '???????? ??????? ?????? ??? ??????????? ??????? ??????????.',
       ],
       [
         'Wiring kits',
-        'Silver нужен для электроники и следующих цепочек крафта.',
+        'Silver ????? ??? ??????????? ? ????????? ??????? ??????.',
       ],
       [
-        'База и транспорт',
-        'Держите несколько кусков про запас для базы и цепочек Tadpole: рецепты Early Access еще могут меняться.',
+        '???? ? ?????????',
+        '??????? ????????? ?????? ??? ????? ??? ???? ? ??????? Tadpole: ??????? Early Access ??? ????? ????????.',
       ],
       [
-        'Повторный фарм',
-        'После улучшения инструментов Silver легче фармить по маршруту.',
+        '????????? ????',
+        '????? ????????? ???????????? Silver ????? ??????? ?? ????????.',
       ],
     ],
-    patchTitle: 'Заметка Early Access',
+    patchTitle: '??????? Early Access',
     patchBody:
-      'Silver был заметной проблемой на старте. GamesRadar писал, что игроки массово не могли его найти, а Hotfix 2 добавил больше точек Silver в раннем регионе.',
-    checklistTitle: 'Перед выходом',
+      'Silver ??? ???????? ????????? ?? ??????. GamesRadar ?????, ??? ?????? ??????? ?? ????? ??? ?????, ? Hotfix 2 ??????? ?????? ????? Silver ? ?????? ???????.',
+    checklistTitle: '????? ???????',
     checklist: [
-      'Освободите несколько слотов инвентаря.',
-      'Возьмите еду и воду, если совмещаете маршрут с заданием.',
-      'Для коопа называйте ориентиры: Lifepod, Coral Dome, руины, вход в пещеру.',
-      'Не тратьте весь Silver до проверки следующего рецепта.',
+      '?????????? ????????? ?????? ?????????.',
+      '???????? ??? ? ????, ???? ?????????? ??????? ? ????????.',
+      '??? ????? ????????? ?????????: Lifepod, Coral Dome, ?????, ???? ? ??????.',
+      '?? ??????? ???? Silver ?? ???????? ?????????? ???????.',
     ],
     faqTitle: 'FAQ',
     faqs: [
       {
-        question: 'Можно ли подобрать Silver руками?',
+        question: '????? ?? ????????? Silver ???????',
         answer:
-          'Да, мелкие куски подбираются руками. Большие залежи требуют Sonic Resonator.',
+          '??, ?????? ????? ??????????? ??????. ??????? ?????? ??????? Sonic Resonator.',
       },
       {
-        question: 'Почему Silver трудно найти в начале?',
+        question: '?????? Silver ?????? ????? ? ???????',
         answer:
-          'Надежные места чаще находятся в пещерах у маршрутов, а не на открытом дне.',
+          '???????? ????? ???? ????????? ? ??????? ? ?????????, ? ?? ?? ???????? ???.',
       },
       {
-        question: 'Hotfix 2 изменил Silver?',
+        question: 'Hotfix 2 ??????? Silver?',
         answer:
-          'Да. Unknown Worlds добавили больше зон Silver в раннем регионе.',
+          '??. Unknown Worlds ???????? ?????? ??? Silver ? ?????? ???????.',
       },
     ],
-    readNextTitle: 'Дальше',
+    readNextTitle: '??????',
     readNext: [
-      { href: Routes.Subnautica2Resources, label: 'Ресурсы' },
-      { href: Routes.Subnautica2AirTank, label: 'Air Tank и кислород' },
-      { href: Routes.Subnautica2Crafting, label: 'Крафт' },
-      { href: Routes.Subnautica2Beginner, label: 'Гайд новичка' },
+      { href: Routes.Subnautica2Resources, label: '???????' },
+      { href: Routes.Subnautica2AirTank, label: 'Air Tank ? ????????' },
+      { href: Routes.Subnautica2Crafting, label: '?????' },
+      { href: Routes.Subnautica2Beginner, label: '???? ???????' },
     ],
-    sourceTitle: 'Источники',
+    sourceTitle: '?????????',
     sourceBody:
-      'Проверено 28 мая 2026 по Unknown Worlds Hotfix 2 и актуальным гайдам. Early Access может менять локации.',
-    routeMindsetTitle: 'Как думать о маршруте',
+      '????????? 28 ??? 2026 ?? Unknown Worlds Hotfix 2 ? ?????????? ??????. Early Access ????? ?????? ???????.',
+    routeMindsetTitle: '??? ?????? ? ????????',
     routeMindsetBody:
-      'Silver лучше воспринимать как повторяемый маршрут. Когда вы можете объяснить вход в пещеру, ресурс перестает быть лотереей.',
+      'Silver ????? ???????????? ??? ??????????? ???????. ????? ?? ?????? ????????? ???? ? ??????, ?????? ????????? ???? ????????.',
   },
   de: {
     metadata: {
-      title: 'Subnautica 2 Silver finden - frühe Route und Nutzen',
+      title: 'Subnautica 2 Silver finden - fr?he Route und Nutzen',
       description:
-        'Deutscher Guide zu Silver in Subnautica 2 mit früher Route, Crafting-Nutzen, Checkliste und Hotfix-2-Hinweis.',
+        'Deutscher Guide zu Silver in Subnautica 2 mit fr?her Route, Crafting-Nutzen, Checkliste und Hotfix-2-Hinweis.',
     },
     eyebrow: 'Subnautica 2 Ressourcenroute',
     title: 'Wo du Silver in Subnautica 2 findest',
     description:
-      'Silver ist einer der ersten echten Engpässe. Mit einer klaren Route wird es deutlich weniger nervig.',
+      'Silver ist einer der ersten echten Engp?sse. Mit einer klaren Route wird es deutlich weniger nervig.',
     quickLabel: 'Kurzantwort',
     quickAnswer:
-      'Schwimme vom Lifepod nach Norden Richtung Old Habitat und prüfe die Höhlen entlang der Black-Box-Route. PC Gamer nennt Höhlen beim Old Habitat, etwa 350 Meter nördlich des Lifepods; Hotfix 2 hat zusätzliche Silver-Bereiche im frühen Spiel ergänzt.',
-    routeTitle: 'Frühe Silver-Route',
+      'Schwimme vom Lifepod nach Norden Richtung Old Habitat und pr?fe die H?hlen entlang der Black-Box-Route. PC Gamer nennt H?hlen beim Old Habitat, etwa 350 Meter n?rdlich des Lifepods; Hotfix 2 hat zus?tzliche Silver-Bereiche im fr?hen Spiel erg?nzt.',
+    routeTitle: 'Fr?he Silver-Route',
     routeSteps: [
       {
         title: 'Lifepod als Startpunkt',
-        body: 'Starte immer am Lifepod und schwimme nach Norden. Eine wiederholbare Route schlägt Zufallsfunde.',
+        body: 'Starte immer am Lifepod und schwimme nach Norden. Eine wiederholbare Route schl?gt Zufallsfunde.',
       },
       {
         title: 'Zum Old Habitat orientieren',
-        body: 'Achte auf Ruinen, Coral Dome und Höhleneingänge an der Black-Box-Route.',
+        body: 'Achte auf Ruinen, Coral Dome und H?hleneing?nge an der Black-Box-Route.',
       },
       {
         title: 'Zwei Silver-Quellen merken',
-        body: 'Kleine Stücke kannst du aufheben. Große Brocken brauchen den Sonic Resonator.',
+        body: 'Kleine St?cke kannst du aufheben. Gro?e Brocken brauchen den Sonic Resonator.',
       },
       {
-        title: 'Nach Hotfix 2 neu prüfen',
-        body: 'Hotfix 2 hat im frühen Gebiet mehr Silver hinzugefügt. Alte Routen können jetzt besser sein.',
+        title: 'Nach Hotfix 2 neu pr?fen',
+        body: 'Hotfix 2 hat im fr?hen Gebiet mehr Silver hinzugef?gt. Alte Routen k?nnen jetzt besser sein.',
       },
     ],
-    tableTitle: 'Wofür Silver gebraucht wird',
+    tableTitle: 'Wof?r Silver gebraucht wird',
     tableHeaders: ['Nutzen', 'Warum es wichtig ist'],
     useRows: [
       [
         'Sauerstoff',
-        'Air-Tank-Fortschritt macht jede spätere Sammelrunde sicherer.',
+        'Air-Tank-Fortschritt macht jede sp?tere Sammelrunde sicherer.',
       ],
       [
         'Wiring Kits',
-        'Silver steckt in Elektronik-Ketten und späterem Crafting.',
+        'Silver steckt in Elektronik-Ketten und sp?terem Crafting.',
       ],
       [
         'Basis und Fahrzeuge',
-        'Heb ein paar Stücke für Basisanlagen und Tadpole-Ketten auf; Early-Access-Rezepte können sich noch ändern.',
+        'Heb ein paar St?cke f?r Basisanlagen und Tadpole-Ketten auf; Early-Access-Rezepte k?nnen sich noch ?ndern.',
       ],
       [
         'Gezieltes Farming',
@@ -392,30 +440,30 @@ const silverCopy: Record<string, SilverCopy> = {
     ],
     patchTitle: 'Early-Access-Hinweis',
     patchBody:
-      'Silver war in der Launch-Woche ein klarer Engpass. GamesRadar berichtete über Suchprobleme; Unknown Worlds fügte mit Hotfix 2 mehr Silver im frühen Gebiet hinzu.',
+      'Silver war in der Launch-Woche ein klarer Engpass. GamesRadar berichtete ?ber Suchprobleme; Unknown Worlds f?gte mit Hotfix 2 mehr Silver im fr?hen Gebiet hinzu.',
     checklistTitle: 'Vor dem Start',
     checklist: [
-      'Ein paar Inventarplätze freilassen.',
+      'Ein paar Inventarpl?tze freilassen.',
       'Essen und Wasser mitnehmen, wenn du Storyziele kombinierst.',
-      'Im Koop klare Orientierungspunkte nutzen: Lifepod, Coral Dome, Ruinen, Höhle.',
-      'Nicht alles Silver ausgeben, bevor du die nächste Rezeptkette prüfst.',
+      'Im Koop klare Orientierungspunkte nutzen: Lifepod, Coral Dome, Ruinen, H?hle.',
+      'Nicht alles Silver ausgeben, bevor du die n?chste Rezeptkette pr?fst.',
     ],
     faqTitle: 'FAQ',
     faqs: [
       {
         question: 'Kann ich Silver direkt aufheben?',
         answer:
-          'Ja. Kleine Stücke hebst du auf, große Lager brauchen den Sonic Resonator.',
+          'Ja. Kleine St?cke hebst du auf, gro?e Lager brauchen den Sonic Resonator.',
       },
       {
         question: 'Warum wirkt Silver am Anfang so selten?',
         answer:
-          'Die guten Stellen liegen eher in Höhlen und an Routen, nicht frei auf dem Meeresboden.',
+          'Die guten Stellen liegen eher in H?hlen und an Routen, nicht frei auf dem Meeresboden.',
       },
       {
-        question: 'Hat Hotfix 2 Silver geändert?',
+        question: 'Hat Hotfix 2 Silver ge?ndert?',
         answer:
-          'Ja. Unknown Worlds hat mehr Silver-Bereiche im frühen Spiel hinzugefügt.',
+          'Ja. Unknown Worlds hat mehr Silver-Bereiche im fr?hen Spiel hinzugef?gt.',
       },
     ],
     readNextTitle: 'Weiterlesen',
@@ -423,194 +471,194 @@ const silverCopy: Record<string, SilverCopy> = {
       { href: Routes.Subnautica2Resources, label: 'Ressourcen' },
       { href: Routes.Subnautica2AirTank, label: 'Air Tank und O2' },
       { href: Routes.Subnautica2Crafting, label: 'Crafting' },
-      { href: Routes.Subnautica2Beginner, label: 'Anfänger-Guide' },
+      { href: Routes.Subnautica2Beginner, label: 'Anf?nger-Guide' },
     ],
     sourceTitle: 'Quellenhinweis',
     sourceBody:
-      'Geprüft am 28. Mai 2026 mit Unknown Worlds Hotfix 2 und aktuellen Silver-Routen. Early Access kann Orte ändern.',
+      'Gepr?ft am 28. Mai 2026 mit Unknown Worlds Hotfix 2 und aktuellen Silver-Routen. Early Access kann Orte ?ndern.',
     routeMindsetTitle: 'Routen-Denken',
     routeMindsetBody:
-      'Behandle Silver wie eine feste Erledigung, nicht wie Glück. Sobald du den Höhleneingang beschreiben kannst, wird es berechenbar.',
+      'Behandle Silver wie eine feste Erledigung, nicht wie Gl?ck. Sobald du den H?hleneingang beschreiben kannst, wird es berechenbar.',
   },
   fr: {
     metadata: {
-      title: 'Où trouver Silver dans Subnautica 2 - route rapide et usages',
+      title: 'O? trouver Silver dans Subnautica 2 - route rapide et usages',
       description:
-        'Guide français pour trouver Silver dans Subnautica 2 : route de début, usages, checklist et note Hotfix 2.',
+        'Guide fran?ais pour trouver Silver dans Subnautica 2 : route de d?but, usages, checklist et note Hotfix 2.',
     },
     eyebrow: 'Route de ressource Subnautica 2',
-    title: 'Où trouver Silver dans Subnautica 2',
+    title: 'O? trouver Silver dans Subnautica 2',
     description:
-      'Silver bloque vite la progression. La bonne approche consiste à suivre une route de grottes, pas à fouiller le fond marin au hasard.',
-    quickLabel: 'Réponse rapide',
+      'Silver bloque vite la progression. La bonne approche consiste ? suivre une route de grottes, pas ? fouiller le fond marin au hasard.',
+    quickLabel: 'R?ponse rapide',
     quickAnswer:
-      'Depuis le Lifepod, partez vers le nord en direction des ruines Old Habitat et vérifiez les grottes autour du chemin de la black box. PC Gamer indique des grottes près de Old Habitat, environ 350 mètres au nord du Lifepod; Hotfix 2 a ajouté plus de zones de Silver au début du jeu.',
-    routeTitle: 'Route Silver de début',
+      'Depuis le Lifepod, partez vers le nord en direction des ruines Old Habitat et v?rifiez les grottes autour du chemin de la black box. PC Gamer indique des grottes pr?s de Old Habitat, environ 350 m?tres au nord du Lifepod; Hotfix 2 a ajout? plus de zones de Silver au d?but du jeu.',
+    routeTitle: 'Route Silver de d?but',
     routeSteps: [
       {
-        title: 'Gardez le Lifepod comme point de départ',
-        body: "Partez du Lifepod vers le nord. Une route répétable vaut mieux qu'une trouvaille chanceuse.",
+        title: 'Gardez le Lifepod comme point de d?part',
+        body: "Partez du Lifepod vers le nord. Une route r?p?table vaut mieux qu'une trouvaille chanceuse.",
       },
       {
         title: 'Suivez la direction Old Habitat',
-        body: 'Cherchez les ruines, le Coral Dome et les entrées de grotte près du chemin de black box.',
+        body: 'Cherchez les ruines, le Coral Dome et les entr?es de grotte pr?s du chemin de black box.',
       },
       {
         title: 'Retenez les deux sources',
         body: 'Les petits morceaux se ramassent a la main. Les gros blocs demandent le Sonic Resonator.',
       },
       {
-        title: 'Revérifiez après Hotfix 2',
-        body: 'Hotfix 2 a ajouté plus de Silver dans la région de début. Une ancienne route peut être meilleure maintenant.',
+        title: 'Rev?rifiez apr?s Hotfix 2',
+        body: 'Hotfix 2 a ajout? plus de Silver dans la r?gion de d?but. Une ancienne route peut ?tre meilleure maintenant.',
       },
     ],
-    tableTitle: 'À quoi sert Silver',
+    tableTitle: '? quoi sert Silver',
     tableHeaders: ['Usage', "Pourquoi c'est important"],
     useRows: [
       [
-        'Oxygène',
-        "Les améliorations d'air tank rendent les prochaines sorties plus sûres.",
+        'Oxyg?ne',
+        "Les am?liorations d'air tank rendent les prochaines sorties plus s?res.",
       ],
       [
         'Wiring kits',
-        'Silver entre dans les chaînes électroniques et le craft avancé.',
+        'Silver entre dans les cha?nes ?lectroniques et le craft avanc?.',
       ],
       [
-        'Base et véhicule',
-        'Gardez quelques morceaux pour la base et les chaînes Tadpole; les recettes Early Access peuvent encore bouger.',
+        'Base et v?hicule',
+        'Gardez quelques morceaux pour la base et les cha?nes Tadpole; les recettes Early Access peuvent encore bouger.',
       ],
       [
-        'Farm répété',
+        'Farm r?p?t?',
         "Avec de meilleurs outils, Silver devient une route fixe au lieu d'un pari.",
       ],
     ],
     patchTitle: 'Note Early Access',
     patchBody:
-      'Silver a été un vrai point de friction au lancement. GamesRadar a signalé que les joueurs peinaient à en trouver; Hotfix 2 a ensuite ajouté plus de zones Silver au début du jeu.',
+      'Silver a ?t? un vrai point de friction au lancement. GamesRadar a signal? que les joueurs peinaient ? en trouver; Hotfix 2 a ensuite ajout? plus de zones Silver au d?but du jeu.',
     checklistTitle: 'Avant de partir',
     checklist: [
       'Gardez quelques emplacements libres.',
-      'Prenez nourriture et eau si vous faites aussi un objectif de scénario.',
-      'En coop, utilisez Lifepod, Coral Dome, ruines et entrée de grotte comme repères.',
-      'Ne dépensez pas tout votre Silver avant de vérifier la prochaine recette.',
+      'Prenez nourriture et eau si vous faites aussi un objectif de sc?nario.',
+      'En coop, utilisez Lifepod, Coral Dome, ruines et entr?e de grotte comme rep?res.',
+      'Ne d?pensez pas tout votre Silver avant de v?rifier la prochaine recette.',
     ],
     faqTitle: 'FAQ',
     faqs: [
       {
-        question: 'Peut-on ramasser Silver à la main ?',
+        question: 'Peut-on ramasser Silver ? la main ?',
         answer:
           'Oui pour les petits morceaux. Les gros gisements demandent le Sonic Resonator.',
       },
       {
-        question: 'Pourquoi Silver semble rare au début ?',
+        question: 'Pourquoi Silver semble rare au d?but ?',
         answer:
           'Les bons spots sont surtout dans les grottes et sur les routes de mission.',
       },
       {
-        question: 'Hotfix 2 a changé Silver ?',
+        question: 'Hotfix 2 a chang? Silver ?',
         answer:
-          'Oui. Unknown Worlds a ajouté plus de zones de Silver dans la région de début.',
+          'Oui. Unknown Worlds a ajout? plus de zones de Silver dans la r?gion de d?but.',
       },
     ],
-    readNextTitle: 'À lire ensuite',
+    readNextTitle: '? lire ensuite',
     readNext: [
       { href: Routes.Subnautica2Resources, label: 'Ressources' },
       { href: Routes.Subnautica2AirTank, label: 'Air Tank et O2' },
       { href: Routes.Subnautica2Crafting, label: 'Craft' },
-      { href: Routes.Subnautica2Beginner, label: 'Guide débutant' },
+      { href: Routes.Subnautica2Beginner, label: 'Guide d?butant' },
     ],
     sourceTitle: 'Sources',
     sourceBody:
-      'Vérifié le 28 mai 2026 avec Unknown Worlds Hotfix 2 et les routes Silver actuelles. Les lieux peuvent changer en Early Access.',
+      'V?rifi? le 28 mai 2026 avec Unknown Worlds Hotfix 2 et les routes Silver actuelles. Les lieux peuvent changer en Early Access.',
     routeMindsetTitle: 'Logique de route',
     routeMindsetBody:
-      "Traitez Silver comme une course que vous pouvez refaire. Quand l'entrée de grotte est claire, le matériau arrête de bloquer tout le craft.",
+      "Traitez Silver comme une course que vous pouvez refaire. Quand l'entr?e de grotte est claire, le mat?riau arr?te de bloquer tout le craft.",
   },
   'pt-BR': {
     metadata: {
       title: 'Onde encontrar Silver em Subnautica 2 - rota inicial e usos',
       description:
-        'Guia em português do Brasil para Silver em Subnautica 2, com rota inicial, usos, checklist e nota do Hotfix 2.',
+        'Guia em portugu?s do Brasil para Silver em Subnautica 2, com rota inicial, usos, checklist e nota do Hotfix 2.',
     },
     eyebrow: 'Rota de recurso de Subnautica 2',
     title: 'Onde encontrar Silver em Subnautica 2',
     description:
-      'Silver vira gargalo cedo. A melhor saída é seguir uma rota de cavernas em vez de procurar no fundo aberto sem direção.',
-    quickLabel: 'Resposta rápida',
+      'Silver vira gargalo cedo. A melhor sa?da ? seguir uma rota de cavernas em vez de procurar no fundo aberto sem dire??o.',
+    quickLabel: 'Resposta r?pida',
     quickAnswer:
-      'Saia do Lifepod rumo ao norte, em direção às ruínas Old Habitat, e cheque as cavernas perto da rota do black box. O PC Gamer aponta cavernas perto do Old Habitat, cerca de 350 metros ao norte do Lifepod; o Hotfix 2 adicionou mais áreas de Silver na região inicial.',
+      'Saia do Lifepod rumo ao norte, em dire??o ?s ru?nas Old Habitat, e cheque as cavernas perto da rota do black box. O PC Gamer aponta cavernas perto do Old Habitat, cerca de 350 metros ao norte do Lifepod; o Hotfix 2 adicionou mais ?reas de Silver na regi?o inicial.',
     routeTitle: 'Rota inicial de Silver',
     routeSteps: [
       {
         title: 'Use o Lifepod como ponto de partida',
-        body: 'Comece pelo Lifepod e vá para o norte. Uma rota repetível vale mais que achar Silver por sorte.',
+        body: 'Comece pelo Lifepod e v? para o norte. Uma rota repet?vel vale mais que achar Silver por sorte.',
       },
       {
         title: 'Siga para Old Habitat',
-        body: 'Procure ruínas, Coral Dome e entradas de caverna perto da rota do black box.',
+        body: 'Procure ru?nas, Coral Dome e entradas de caverna perto da rota do black box.',
       },
       {
         title: 'Entenda as duas fontes',
-        body: 'Pedaços pequenos podem ser coletados com a mão. Blocos grandes precisam do Sonic Resonator.',
+        body: 'Peda?os pequenos podem ser coletados com a m?o. Blocos grandes precisam do Sonic Resonator.',
       },
       {
         title: 'Revise rotas antigas depois do Hotfix 2',
-        body: 'O Hotfix 2 adicionou mais Silver na região inicial. Uma rota ruim no lançamento pode estar melhor agora.',
+        body: 'O Hotfix 2 adicionou mais Silver na regi?o inicial. Uma rota ruim no lan?amento pode estar melhor agora.',
       },
     ],
     tableTitle: 'Para que serve Silver',
     tableHeaders: ['Uso', 'Por que importa'],
     useRows: [
       [
-        'Oxigênio',
-        'Melhorar o tanque de ar deixa as próximas viagens mais seguras.',
+        'Oxig?nio',
+        'Melhorar o tanque de ar deixa as pr?ximas viagens mais seguras.',
       ],
       [
         'Wiring kits',
-        'Silver entra nas cadeias de eletrônica e fabricação avançada.',
+        'Silver entra nas cadeias de eletr?nica e fabrica??o avan?ada.',
       ],
       [
-        'Base e veículo',
-        'Guarde algumas peças para a base e cadeias do Tadpole; receitas de Early Access ainda podem mudar.',
+        'Base e ve?culo',
+        'Guarde algumas pe?as para a base e cadeias do Tadpole; receitas de Early Access ainda podem mudar.',
       ],
       [
-        'Farm repetível',
+        'Farm repet?vel',
         'Com ferramentas melhores, Silver vira rota fixa em vez de sorte.',
       ],
     ],
     patchTitle: 'Nota do Early Access',
     patchBody:
-      'Silver foi um problema claro na semana de lançamento. GamesRadar relatou a dificuldade dos jogadores, e o Hotfix 2 adicionou mais áreas de Silver no início do jogo.',
+      'Silver foi um problema claro na semana de lan?amento. GamesRadar relatou a dificuldade dos jogadores, e o Hotfix 2 adicionou mais ?reas de Silver no in?cio do jogo.',
     checklistTitle: 'Antes de sair da base',
     checklist: [
-      'Deixe alguns espaços livres no inventário.',
-      'Leve comida e água se também for fazer objetivo de história.',
-      'No coop, use Lifepod, Coral Dome, ruínas e entrada da caverna como chamadas.',
-      'Não gaste todo Silver antes de checar a próxima receita.',
+      'Deixe alguns espa?os livres no invent?rio.',
+      'Leve comida e ?gua se tamb?m for fazer objetivo de hist?ria.',
+      'No coop, use Lifepod, Coral Dome, ru?nas e entrada da caverna como chamadas.',
+      'N?o gaste todo Silver antes de checar a pr?xima receita.',
     ],
     faqTitle: 'FAQ',
     faqs: [
       {
-        question: 'Dá para coletar Silver com a mão?',
+        question: 'D? para coletar Silver com a m?o?',
         answer:
-          'Sim, os pedaços pequenos. Depósitos grandes precisam do Sonic Resonator.',
+          'Sim, os peda?os pequenos. Dep?sitos grandes precisam do Sonic Resonator.',
       },
       {
-        question: 'Por que Silver parece raro no começo?',
+        question: 'Por que Silver parece raro no come?o?',
         answer:
-          'Os pontos bons ficam mais em cavernas e rotas de missão, não no fundo aberto.',
+          'Os pontos bons ficam mais em cavernas e rotas de miss?o, n?o no fundo aberto.',
       },
       {
         question: 'O Hotfix 2 mudou Silver?',
         answer:
-          'Sim. Unknown Worlds adicionou mais áreas de Silver na região inicial.',
+          'Sim. Unknown Worlds adicionou mais ?reas de Silver na regi?o inicial.',
       },
     ],
     readNextTitle: 'Leia a seguir',
     readNext: [
       { href: Routes.Subnautica2Resources, label: 'Recursos' },
       { href: Routes.Subnautica2AirTank, label: 'Tanque de ar e O2' },
-      { href: Routes.Subnautica2Crafting, label: 'Fabricação' },
+      { href: Routes.Subnautica2Crafting, label: 'Fabrica??o' },
       { href: Routes.Subnautica2Beginner, label: 'Guia inicial' },
     ],
     sourceTitle: 'Fontes',
@@ -618,26 +666,26 @@ const silverCopy: Record<string, SilverCopy> = {
       'Verificado em 28 de maio de 2026 com Unknown Worlds Hotfix 2 e rotas atuais de Silver. Locais podem mudar no Early Access.',
     routeMindsetTitle: 'Mentalidade da rota',
     routeMindsetBody:
-      'Trate Silver como uma viagem repetível, não como sorte. Quando você sabe explicar a entrada da caverna, o material deixa de travar tudo.',
+      'Trate Silver como uma viagem repet?vel, n?o como sorte. Quando voc? sabe explicar a entrada da caverna, o material deixa de travar tudo.',
   },
   'es-419': {
     metadata: {
-      title: 'Dónde encontrar Silver en Subnautica 2 - ruta inicial y usos',
+      title: 'D?nde encontrar Silver en Subnautica 2 - ruta inicial y usos',
       description:
-        'Guía en español latino para Silver en Subnautica 2: ruta inicial, usos, checklist y nota del Hotfix 2.',
+        'Gu?a en espa?ol latino para Silver en Subnautica 2: ruta inicial, usos, checklist y nota del Hotfix 2.',
     },
     eyebrow: 'Ruta de recurso de Subnautica 2',
-    title: 'Dónde encontrar Silver en Subnautica 2',
+    title: 'D?nde encontrar Silver en Subnautica 2',
     description:
-      'Silver suele ser el primer recurso que frena el progreso. Buscarlo con una ruta clara ahorra mucho oxígeno.',
-    quickLabel: 'Respuesta rápida',
+      'Silver suele ser el primer recurso que frena el progreso. Buscarlo con una ruta clara ahorra mucho ox?geno.',
+    quickLabel: 'Respuesta r?pida',
     quickAnswer:
-      'Sal del Lifepod hacia el norte, rumbo a las ruinas Old Habitat, y revisa las cuevas cerca de la ruta del black box. PC Gamer menciona cuevas cerca del Old Habitat, a unos 350 metros al norte del Lifepod; el Hotfix 2 agregó más zonas de Silver en la región inicial.',
+      'Sal del Lifepod hacia el norte, rumbo a las ruinas Old Habitat, y revisa las cuevas cerca de la ruta del black box. PC Gamer menciona cuevas cerca del Old Habitat, a unos 350 metros al norte del Lifepod; el Hotfix 2 agreg? m?s zonas de Silver en la regi?n inicial.',
     routeTitle: 'Ruta inicial de Silver',
     routeSteps: [
       {
         title: 'Usa el Lifepod como ancla',
-        body: 'Empieza desde el Lifepod y nada hacia el norte. Una ruta repetible sirve más que encontrar Silver por suerte.',
+        body: 'Empieza desde el Lifepod y nada hacia el norte. Una ruta repetible sirve m?s que encontrar Silver por suerte.',
       },
       {
         title: 'Sigue hacia Old Habitat',
@@ -645,27 +693,27 @@ const silverCopy: Record<string, SilverCopy> = {
       },
       {
         title: 'Distingue las dos fuentes',
-        body: 'Las piezas pequeñas se recogen a mano. Los depósitos grandes necesitan Sonic Resonator.',
+        body: 'Las piezas peque?as se recogen a mano. Los dep?sitos grandes necesitan Sonic Resonator.',
       },
       {
-        title: 'Vuelve a probar después del Hotfix 2',
-        body: 'El Hotfix 2 agregó más Silver en la región inicial, así que algunas rutas viejas mejoraron.',
+        title: 'Vuelve a probar despu?s del Hotfix 2',
+        body: 'El Hotfix 2 agreg? m?s Silver en la regi?n inicial, as? que algunas rutas viejas mejoraron.',
       },
     ],
-    tableTitle: 'Para qué sirve Silver',
-    tableHeaders: ['Uso', 'Por qué importa'],
+    tableTitle: 'Para qu? sirve Silver',
+    tableHeaders: ['Uso', 'Por qu? importa'],
     useRows: [
       [
-        'Oxígeno',
-        'Mejorar el tanque hace que cada salida posterior sea más segura.',
+        'Ox?geno',
+        'Mejorar el tanque hace que cada salida posterior sea m?s segura.',
       ],
       [
         'Wiring kits',
-        'Silver entra en cadenas de electrónica y fabricación avanzada.',
+        'Silver entra en cadenas de electr?nica y fabricaci?n avanzada.',
       ],
       [
-        'Base y vehículo',
-        'Guarda algunas piezas para la base y cadenas del Tadpole; las recetas de Early Access todavía pueden cambiar.',
+        'Base y veh?culo',
+        'Guarda algunas piezas para la base y cadenas del Tadpole; las recetas de Early Access todav?a pueden cambiar.',
       ],
       [
         'Farmeo repetible',
@@ -674,38 +722,38 @@ const silverCopy: Record<string, SilverCopy> = {
     ],
     patchTitle: 'Nota de Early Access',
     patchBody:
-      'Silver fue un problema claro en la semana de lanzamiento. GamesRadar reportó que muchos jugadores no lo encontraban; Hotfix 2 agregó más zonas de Silver al inicio.',
+      'Silver fue un problema claro en la semana de lanzamiento. GamesRadar report? que muchos jugadores no lo encontraban; Hotfix 2 agreg? m?s zonas de Silver al inicio.',
     checklistTitle: 'Antes de salir',
     checklist: [
       'Deja espacios libres en el inventario.',
-      'Lleva comida y agua si también harás un objetivo de historia.',
+      'Lleva comida y agua si tambi?n har?s un objetivo de historia.',
       'En coop, usa Lifepod, Coral Dome, ruinas y entrada de cueva como llamadas.',
       'No gastes todo tu Silver antes de revisar la siguiente receta.',
     ],
     faqTitle: 'FAQ',
     faqs: [
       {
-        question: '¿Puedo recoger Silver a mano?',
+        question: '?Puedo recoger Silver a mano?',
         answer:
-          'Sí, las piezas pequeñas. Los depósitos grandes requieren Sonic Resonator.',
+          'S?, las piezas peque?as. Los dep?sitos grandes requieren Sonic Resonator.',
       },
       {
-        question: '¿Por qué Silver parece tan raro al inicio?',
+        question: '?Por qu? Silver parece tan raro al inicio?',
         answer:
-          'Los puntos confiables están más en cuevas y rutas de misión que en el fondo abierto.',
+          'Los puntos confiables est?n m?s en cuevas y rutas de misi?n que en el fondo abierto.',
       },
       {
-        question: '¿Hotfix 2 cambió Silver?',
+        question: '?Hotfix 2 cambi? Silver?',
         answer:
-          'Sí. Unknown Worlds agregó más zonas de Silver en la región inicial.',
+          'S?. Unknown Worlds agreg? m?s zonas de Silver en la regi?n inicial.',
       },
     ],
-    readNextTitle: 'Leer después',
+    readNextTitle: 'Leer despu?s',
     readNext: [
       { href: Routes.Subnautica2Resources, label: 'Recursos' },
       { href: Routes.Subnautica2AirTank, label: 'Tanque de aire y O2' },
-      { href: Routes.Subnautica2Crafting, label: 'Fabricación' },
-      { href: Routes.Subnautica2Beginner, label: 'Guía inicial' },
+      { href: Routes.Subnautica2Crafting, label: 'Fabricaci?n' },
+      { href: Routes.Subnautica2Beginner, label: 'Gu?a inicial' },
     ],
     sourceTitle: 'Fuentes',
     sourceBody:
@@ -716,185 +764,185 @@ const silverCopy: Record<string, SilverCopy> = {
   },
   ko: {
     metadata: {
-      title: 'Subnautica 2 Silver 위치 - 초반 루트와 사용처',
+      title: 'Subnautica 2 Silver ?? - ?? ??? ???',
       description:
-        'Subnautica 2 Silver 한국어 공략입니다. 초반 위치, 제작 사용처, 출발 체크리스트, Hotfix 2 변경점을 정리합니다.',
+        'Subnautica 2 Silver ??? ?????. ?? ??, ?? ???, ?? ?????, Hotfix 2 ???? ?????.',
     },
-    eyebrow: 'Subnautica 2 자원 루트',
-    title: 'Subnautica 2 Silver 위치',
+    eyebrow: 'Subnautica 2 ?? ??',
+    title: 'Subnautica 2 Silver ??',
     description:
-      'Silver는 초반 진행을 가장 자주 막는 재료입니다. 무작정 바닥을 뒤지는 것보다 동굴 루트를 잡는 편이 훨씬 낫습니다.',
-    quickLabel: '빠른 답',
+      'Silver? ?? ??? ?? ?? ?? ?????. ??? ??? ??? ??? ?? ??? ?? ?? ?? ????.',
+    quickLabel: '?? ?',
     quickAnswer:
-      'Lifepod에서 북쪽으로 Old Habitat 폐허 방향으로 이동하고, black box 목표 경로 근처의 동굴을 확인하세요. PC Gamer는 Lifepod 북쪽 약 350m의 Old Habitat 근처 동굴을 언급했고, Unknown Worlds Hotfix 2는 초반 지역에 Silver 자원 구역을 더 추가했습니다.',
-    routeTitle: '초반 Silver 루트',
+      'Lifepod?? ???? Old Habitat ?? ???? ????, black box ?? ?? ??? ??? ?????. PC Gamer? Lifepod ?? ? 350m? Old Habitat ?? ??? ????, Unknown Worlds Hotfix 2? ?? ??? Silver ?? ??? ? ??????.',
+    routeTitle: '?? Silver ??',
     routeSteps: [
       {
-        title: 'Lifepod를 기준점으로 잡기',
-        body: '항상 Lifepod에서 북쪽으로 시작하세요. 반복 가능한 루트가 운 좋게 하나 줍는 것보다 낫습니다.',
+        title: 'Lifepod? ????? ??',
+        body: '?? Lifepod?? ???? ?????. ?? ??? ??? ? ?? ?? ?? ??? ????.',
       },
       {
-        title: 'Old Habitat 방향 보기',
-        body: '폐허, Coral Dome, black box 경로 근처의 동굴 입구를 찾으세요.',
+        title: 'Old Habitat ?? ??',
+        body: '??, Coral Dome, black box ?? ??? ?? ??? ????.',
       },
       {
-        title: '두 종류의 Silver 구분',
-        body: '작은 조각은 손으로 줍습니다. 큰 광맥은 Sonic Resonator가 필요합니다.',
+        title: '? ??? Silver ??',
+        body: '?? ??? ??? ????. ? ??? Sonic Resonator? ?????.',
       },
       {
-        title: 'Hotfix 2 이후 다시 확인',
-        body: 'Hotfix 2가 초반 지역에 Silver를 더 추가했습니다. 예전 루트가 지금은 나아졌을 수 있습니다.',
+        title: 'Hotfix 2 ?? ?? ??',
+        body: 'Hotfix 2? ?? ??? Silver? ? ??????. ?? ??? ??? ???? ? ????.',
       },
     ],
-    tableTitle: 'Silver 사용처',
-    tableHeaders: ['사용처', '중요한 이유'],
+    tableTitle: 'Silver ???',
+    tableHeaders: ['???', '??? ??'],
     useRows: [
       [
-        '산소 업그레이드',
-        '공기 탱크 진행이 이후 자원 루트를 훨씬 안전하게 만듭니다.',
+        '?? ?????',
+        '?? ?? ??? ?? ?? ??? ?? ???? ????.',
       ],
-      ['Wiring kits', 'Silver는 전자 부품과 제작 체인의 재료입니다.'],
+      ['Wiring kits', 'Silver? ?? ??? ?? ??? ?????.'],
       [
-        '기지와 탈것',
-        '기지 설비와 Tadpole 제작 체인에 쓸 수 있게 몇 개는 남겨두세요. Early Access 레시피는 계속 바뀔 수 있습니다.',
+        '??? ??',
+        '?? ??? Tadpole ?? ??? ? ? ?? ? ?? ?????. Early Access ???? ?? ?? ? ????.',
       ],
       [
-        '반복 파밍',
-        '도구가 좋아지면 Silver는 기억력 테스트가 아니라 고정 루트가 됩니다.',
+        '?? ??',
+        '??? ???? Silver? ??? ???? ??? ?? ??? ???.',
       ],
     ],
-    patchTitle: '얼리 액세스 패치 메모',
+    patchTitle: '?? ??? ?? ??',
     patchBody:
-      'Silver는 출시 초기에 큰 병목이었습니다. GamesRadar는 플레이어들이 Silver를 찾기 어려워했다고 보도했고, Hotfix 2는 초반 지역에 Silver 자원 구역을 더 추가했습니다.',
-    checklistTitle: '출발 전 체크',
+      'Silver? ?? ??? ? ???????. GamesRadar? ?????? Silver? ?? ?????? ????, Hotfix 2? ?? ??? Silver ?? ??? ? ??????.',
+    checklistTitle: '?? ? ??',
     checklist: [
-      '인벤토리 칸을 몇 개 비워두세요.',
-      '스토리 목표와 같이 간다면 음식과 물을 챙기세요.',
-      '협동에서는 Lifepod, Coral Dome, 폐허, 동굴 입구로 위치를 말하세요.',
-      '다음 제작 체인을 보기 전 Silver를 전부 쓰지 마세요.',
+      '???? ?? ? ? ?????.',
+      '??? ??? ?? ??? ??? ?? ????.',
+      '????? Lifepod, Coral Dome, ??, ?? ??? ??? ????.',
+      '?? ?? ??? ?? ? Silver? ?? ?? ???.',
     ],
     faqTitle: 'FAQ',
     faqs: [
       {
-        question: 'Silver를 손으로 주울 수 있나요?',
+        question: 'Silver? ??? ?? ? ????',
         answer:
-          '작은 조각은 가능합니다. 큰 광맥은 Sonic Resonator가 필요합니다.',
+          '?? ??? ?????. ? ??? Sonic Resonator? ?????.',
       },
       {
-        question: '초반 Silver가 왜 희귀하게 느껴지나요?',
+        question: '?? Silver? ? ???? ??????',
         answer:
-          '신뢰할 만한 위치가 열린 해저가 아니라 동굴과 임무 루트 근처에 많기 때문입니다.',
+          '??? ?? ??? ?? ??? ??? ??? ?? ?? ??? ?? ?????.',
       },
       {
-        question: 'Hotfix 2가 Silver를 바꿨나요?',
+        question: 'Hotfix 2? Silver? ?????',
         answer:
-          '네. Unknown Worlds는 초반 지역에 Silver 자원 구역을 더 추가했습니다.',
+          '?. Unknown Worlds? ?? ??? Silver ?? ??? ? ??????.',
       },
     ],
-    readNextTitle: '다음 글',
+    readNextTitle: '?? ?',
     readNext: [
-      { href: Routes.Subnautica2Resources, label: '자원 가이드' },
-      { href: Routes.Subnautica2AirTank, label: '공기 탱크와 산소' },
-      { href: Routes.Subnautica2Crafting, label: '제작 가이드' },
-      { href: Routes.Subnautica2Beginner, label: '초보자 가이드' },
+      { href: Routes.Subnautica2Resources, label: '?? ???' },
+      { href: Routes.Subnautica2AirTank, label: '?? ??? ??' },
+      { href: Routes.Subnautica2Crafting, label: '?? ???' },
+      { href: Routes.Subnautica2Beginner, label: '??? ???' },
     ],
-    sourceTitle: '출처 메모',
+    sourceTitle: '?? ??',
     sourceBody:
-      '2026년 5월 28일 Unknown Worlds Hotfix 2와 현재 Silver 루트 보도를 기준으로 확인했습니다. Early Access 위치는 바뀔 수 있습니다.',
-    routeMindsetTitle: '루트 생각법',
+      '2026? 5? 28? Unknown Worlds Hotfix 2? ?? Silver ?? ??? ???? ??????. Early Access ??? ?? ? ????.',
+    routeMindsetTitle: '?? ???',
     routeMindsetBody:
-      'Silver를 운이 아니라 반복 가능한 심부름으로 보세요. 동굴 입구를 설명할 수 있으면 제작 체인을 덜 막습니다.',
+      'Silver? ?? ??? ?? ??? ????? ???. ?? ??? ??? ? ??? ?? ??? ? ????.',
   },
   ja: {
     metadata: {
-      title: 'Subnautica 2 Silver の場所 - 序盤ルートと使い道',
+      title: 'Subnautica 2 Silver ??? - ?????????',
       description:
-        'Subnautica 2 の Silver 日本語攻略。序盤ルート、使い道、出発チェック、Hotfix 2 の変更点を整理します。',
+        'Subnautica 2 ? Silver ???????????????????????Hotfix 2 ???????????',
     },
-    eyebrow: 'Subnautica 2 資源ルート',
-    title: 'Subnautica 2 の Silver はどこで見つかる？',
+    eyebrow: 'Subnautica 2 ?????',
+    title: 'Subnautica 2 ? Silver ?????????',
     description:
-      'Silver は序盤で最初に詰まりやすい素材です。海底を適当に探すより、洞窟ルートを覚えるほうが早いです。',
-    quickLabel: '要点',
+      'Silver ??????????????????????????????????????????????',
+    quickLabel: '??',
     quickAnswer:
-      'Lifepod から北へ進み、Old Habitat の廃墟方面と black box 目標ルート周辺の洞窟を探します。PC Gamer は Lifepod から北へ約350mの Old Habitat 近くの洞窟を紹介しており、Unknown Worlds の Hotfix 2 では序盤エリアに Silver 資源ポイントが追加されました。',
-    routeTitle: '序盤の Silver ルート',
+      'Lifepod ???????Old Habitat ?????? black box ????????????????PC Gamer ? Lifepod ?????350m? Old Habitat ?????????????Unknown Worlds ? Hotfix 2 ???????? Silver ???????????????',
+    routeTitle: '??? Silver ???',
     routeSteps: [
       {
-        title: 'Lifepod を基準にする',
-        body: 'Lifepod から北へ進みます。偶然拾うより、何度も使えるルートのほうが大事です。',
+        title: 'Lifepod ??????',
+        body: 'Lifepod ??????????????????????????????????',
       },
       {
-        title: 'Old Habitat 方面を見る',
-        body: '廃墟、Coral Dome、black box ルート近くの洞窟入口を探してください。',
+        title: 'Old Habitat ?????',
+        body: '???Coral Dome?black box ???????????????????',
       },
       {
-        title: '2種類の Silver を覚える',
-        body: '小さい破片は手で拾えます。大きな鉱床には Sonic Resonator が必要です。',
+        title: '2??? Silver ????',
+        body: '???????????????????? Sonic Resonator ??????',
       },
       {
-        title: 'Hotfix 2 後に再確認する',
-        body: 'Hotfix 2 で序盤エリアの Silver 資源ポイントが増えました。古いルートが改善されている場合があります。',
+        title: 'Hotfix 2 ???????',
+        body: 'Hotfix 2 ??????? Silver ??????????????????????????????????',
       },
     ],
-    tableTitle: 'Silver の使い道',
-    tableHeaders: ['使い道', '重要な理由'],
+    tableTitle: 'Silver ????',
+    tableHeaders: ['???', '?????'],
     useRows: [
       [
-        '酸素アップグレード',
-        'Air Tank 関連の進行で、以後の探索がかなり安全になります。',
+        '?????????',
+        'Air Tank ????????????????????????',
       ],
-      ['Wiring kits', '電子部品と上位クラフトの材料になります。'],
+      ['Wiring kits', '????????????????????'],
       [
-        '基地と乗り物',
-        '基地設備や Tadpole 関連クラフト用に数個は残しておくと安心です。Early Access のレシピはまだ変わる可能性があります。',
+        '??????',
+        '????? Tadpole ??????????????????????Early Access ???????????????????',
       ],
       [
-        '反復ファーム',
-        '道具が揃うと、Silver は運ではなく固定ルートで集められます。',
+        '??????',
+        '???????Silver ???????????????????',
       ],
     ],
-    patchTitle: 'Early Access の注意',
+    patchTitle: 'Early Access ???',
     patchBody:
-      'Silver は発売直後の大きな詰まりポイントでした。GamesRadar は多くのプレイヤーが探しづらいと報じ、その後 Hotfix 2 で序盤エリアに Silver 資源ポイントが追加されました。',
-    checklistTitle: '出発前チェック',
+      'Silver ????????????????????GamesRadar ?????????????????????? Hotfix 2 ??????? Silver ???????????????',
+    checklistTitle: '???????',
     checklist: [
-      'インベントリを数枠空けておく。',
-      'ストーリー目標も進めるなら食料と水を持つ。',
-      '協力プレイでは Lifepod、Coral Dome、廃墟、洞窟入口で位置を伝える。',
-      '次のレシピを確認する前に Silver を全部使い切らない。',
+      '???????????????',
+      '?????????????????????',
+      '??????? Lifepod?Coral Dome????????????????',
+      '???????????? Silver ??????????',
     ],
     faqTitle: 'FAQ',
     faqs: [
       {
-        question: 'Silver は手で拾えますか？',
+        question: 'Silver ?????????',
         answer:
-          '小さい破片は拾えます。大きな鉱床には Sonic Resonator が必要です。',
+          '?????????????????? Sonic Resonator ??????',
       },
       {
-        question: '序盤の Silver が少なく感じる理由は？',
+        question: '??? Silver ???????????',
         answer:
-          '信頼できる場所が開けた海底ではなく、洞窟やミッションルート近くに多いからです。',
+          '???????????????????????????????????????',
       },
       {
-        question: 'Hotfix 2 で Silver は変わりましたか？',
+        question: 'Hotfix 2 ? Silver ?????????',
         answer:
-          'はい。Unknown Worlds は序盤エリアに Silver 資源ポイントを追加しました。',
+          '???Unknown Worlds ??????? Silver ??????????????',
       },
     ],
-    readNextTitle: '次に読む',
+    readNextTitle: '????',
     readNext: [
-      { href: Routes.Subnautica2Resources, label: '資源ガイド' },
-      { href: Routes.Subnautica2AirTank, label: 'Air Tank と酸素' },
-      { href: Routes.Subnautica2Crafting, label: 'クラフトガイド' },
-      { href: Routes.Subnautica2Beginner, label: '初心者ガイド' },
+      { href: Routes.Subnautica2Resources, label: '?????' },
+      { href: Routes.Subnautica2AirTank, label: 'Air Tank ???' },
+      { href: Routes.Subnautica2Crafting, label: '???????' },
+      { href: Routes.Subnautica2Beginner, label: '??????' },
     ],
-    sourceTitle: '出典メモ',
+    sourceTitle: '????',
     sourceBody:
-      '2026年5月28日に Unknown Worlds Hotfix 2 と現在の Silver ルート記事を確認。Early Access の位置情報は変わる可能性があります。',
-    routeMindsetTitle: 'ルートの考え方',
+      '2026?5?28?? Unknown Worlds Hotfix 2 ???? Silver ?????????Early Access ??????????????????',
+    routeMindsetTitle: '???????',
     routeMindsetBody:
-      'Silver は偶然ではなく、繰り返せるルートとして考えると楽になります。洞窟入口を説明できるようになると、制作が止まりにくくなります。',
+      'Silver ?????????????????????????????????????????????????????????????',
   },
 };
 
@@ -1059,6 +1107,62 @@ export default async function SilverGuidePage({
                 {copy.quickAnswer}
               </p>
             </section>
+
+            {copy.fieldNotes?.length || copy.routeChecklist?.length ? (
+              <section className="grid gap-4 md:grid-cols-[minmax(0,1fr)_280px]">
+                {copy.fieldNotes?.length ? (
+                  <section className="overflow-hidden border border-cyan-200/12 bg-[#071f23]">
+                    <div
+                      aria-hidden="true"
+                      className="h-28 bg-cover bg-center opacity-80"
+                      style={{
+                        backgroundImage:
+                          "linear-gradient(90deg,rgba(3,19,20,.18),rgba(3,19,20,.88)),url('/abyss/chibi-deep-sea-hero.webp')",
+                      }}
+                    />
+                    <div className="p-5">
+                      <h2 className="text-2xl font-semibold text-[#effffb]">
+                        {copy.fieldNotesTitle}
+                      </h2>
+                      <div className="mt-4 grid gap-4">
+                        {copy.fieldNotes.map((note) => (
+                          <section
+                            className="border-l-2 border-[#f08b4f] pl-4"
+                            key={note.title}
+                          >
+                            <h3 className="font-semibold text-[#78ead7]">
+                              {note.title}
+                            </h3>
+                            <p className="mt-2 text-sm leading-6 text-[#abc8c3]">
+                              {note.body}
+                            </p>
+                          </section>
+                        ))}
+                      </div>
+                    </div>
+                  </section>
+                ) : null}
+
+                {copy.routeChecklist?.length ? (
+                  <aside className="border border-cyan-200/12 bg-[#082226] p-5">
+                    <p className="text-xs font-semibold uppercase tracking-[0.18em] text-[#f08b4f]">
+                      {copy.routeChecklistTitle}
+                    </p>
+                    <ul className="mt-4 space-y-3 text-sm leading-6 text-[#d1e8e2]">
+                      {copy.routeChecklist.map((item) => (
+                        <li className="flex gap-3" key={item}>
+                          <span
+                            aria-hidden="true"
+                            className="mt-2 size-1.5 shrink-0 bg-[#78ead7]"
+                          />
+                          <span>{item}</span>
+                        </li>
+                      ))}
+                    </ul>
+                  </aside>
+                ) : null}
+              </section>
+            ) : null}
 
             <section>
               <h2 className="text-3xl font-semibold text-[#effffb]">

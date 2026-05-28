@@ -29,6 +29,10 @@ export type ResourceGuideCopy = {
   checkedAt?: string;
   quickLabel: string;
   quickAnswer: string;
+  fieldNotesTitle?: string;
+  fieldNotes?: ResourceGuideSection[];
+  routeChecklistTitle?: string;
+  routeChecklist?: string[];
   contentsLabel: string;
   routeTitle: string;
   routeSteps: ResourceGuideSection[];
@@ -278,6 +282,62 @@ export function LocalizedResourceGuidePage({
                 {copy.quickAnswer}
               </p>
             </section>
+
+            {copy.fieldNotes?.length || copy.routeChecklist?.length ? (
+              <section className="grid gap-4 md:grid-cols-[minmax(0,1fr)_280px]">
+                {copy.fieldNotes?.length ? (
+                  <section className="overflow-hidden border border-cyan-200/12 bg-[#071f23]">
+                    <div
+                      aria-hidden="true"
+                      className="h-28 bg-cover bg-center opacity-80"
+                      style={{
+                        backgroundImage:
+                          "linear-gradient(90deg,rgba(3,19,20,.18),rgba(3,19,20,.88)),url('/abyss/chibi-deep-sea-hero.webp')",
+                      }}
+                    />
+                    <div className="p-5">
+                      <h2 className="text-2xl font-semibold text-[#effffb]">
+                        {copy.fieldNotesTitle}
+                      </h2>
+                      <div className="mt-4 grid gap-4">
+                        {copy.fieldNotes.map((note) => (
+                          <section
+                            className="border-l-2 border-[#f08b4f] pl-4"
+                            key={note.title}
+                          >
+                            <h3 className="font-semibold text-[#78ead7]">
+                              {note.title}
+                            </h3>
+                            <p className="mt-2 text-sm leading-6 text-[#abc8c3]">
+                              {note.body}
+                            </p>
+                          </section>
+                        ))}
+                      </div>
+                    </div>
+                  </section>
+                ) : null}
+
+                {copy.routeChecklist?.length ? (
+                  <aside className="border border-cyan-200/12 bg-[#082226] p-5">
+                    <p className="text-xs font-semibold uppercase tracking-[0.18em] text-[#f08b4f]">
+                      {copy.routeChecklistTitle}
+                    </p>
+                    <ul className="mt-4 space-y-3 text-sm leading-6 text-[#d1e8e2]">
+                      {copy.routeChecklist.map((item) => (
+                        <li className="flex gap-3" key={item}>
+                          <span
+                            aria-hidden="true"
+                            className="mt-2 size-1.5 shrink-0 bg-[#78ead7]"
+                          />
+                          <span>{item}</span>
+                        </li>
+                      ))}
+                    </ul>
+                  </aside>
+                ) : null}
+              </section>
+            ) : null}
 
             <section>
               <h2 className="text-3xl font-semibold text-[#effffb]">
