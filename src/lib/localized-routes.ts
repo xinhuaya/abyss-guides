@@ -733,11 +733,68 @@ const localizedRoutes: Partial<Record<Locale, ReadonlySet<string>>> = {
   ]),
 };
 
+const zhOnlyRoutes = [
+  Routes.Subnautica2AdvancedBattery,
+  Routes.Subnautica2AdvancedWiringKit,
+  Routes.Subnautica2AngelComb,
+  Routes.Subnautica2Atacamite,
+  Routes.Subnautica2AxumVision,
+  Routes.Subnautica2BasicFins,
+  Routes.Subnautica2BatteryTerminal,
+  Routes.Subnautica2Beacon,
+  Routes.Subnautica2BloomBiofilm,
+  Routes.Subnautica2CopperIngot,
+  Routes.Subnautica2EngineEfficiency,
+  Routes.Subnautica2EntangledPowerCell,
+  Routes.Subnautica2Fabricator,
+  Routes.Subnautica2FiberMesh,
+  Routes.Subnautica2GermaniumIngot,
+  Routes.Subnautica2Glass,
+  Routes.Subnautica2Gold,
+  Routes.Subnautica2GoldIngot,
+  Routes.Subnautica2HeatTolerance,
+  Routes.Subnautica2ImprovedFins,
+  Routes.Subnautica2InsufficientSpaceToDock,
+  Routes.Subnautica2KarakorumPowerPlant,
+  Routes.Subnautica2Lead,
+  Routes.Subnautica2Lithium,
+  Routes.Subnautica2Mangalloy,
+  Routes.Subnautica2MetalFarm,
+  Routes.Subnautica2MetalSalvage,
+  Routes.Subnautica2ModificationStation,
+  Routes.Subnautica2Moonpool,
+  Routes.Subnautica2NecroleiCyst,
+  Routes.Subnautica2PlasteelIngot,
+  Routes.Subnautica2PowerCell,
+  Routes.Subnautica2PowerPlantObservatory,
+  Routes.Subnautica2Quartz,
+  Routes.Subnautica2Rebreather,
+  Routes.Subnautica2RepairTool,
+  Routes.Subnautica2Rubber,
+  Routes.Subnautica2Salt,
+  Routes.Subnautica2ScannerStation,
+  Routes.Subnautica2SilverIngot,
+  Routes.Subnautica2Sulfur,
+  Routes.Subnautica2TadpoleDock,
+  Routes.Subnautica2Titanium,
+  Routes.Subnautica2Troilite,
+  Routes.Subnautica2VehicleFabricator,
+  Routes.Subnautica2Wakemaker,
+] as const;
+
+const zhJaRoutes = [
+  Routes.Subnautica2Biolab,
+  Routes.Subnautica2EchoLocation,
+  Routes.Subnautica2Processor,
+] as const;
+
+function createLocaleSet(locales: Locale[]): ReadonlySet<Locale> {
+  return new Set<Locale>([routing.defaultLocale, ...locales]);
+}
+
 const routeLocaleOverrides = new Map<string, ReadonlySet<Locale>>([
-  [Routes.Subnautica2Atacamite, new Set<Locale>([routing.defaultLocale, 'zh'])],
-  [Routes.Subnautica2Mangalloy, new Set<Locale>([routing.defaultLocale, 'zh'])],
-  [Routes.Subnautica2MetalFarm, new Set<Locale>([routing.defaultLocale, 'zh'])],
-  [Routes.Subnautica2Troilite, new Set<Locale>([routing.defaultLocale, 'zh'])],
+  ...zhOnlyRoutes.map((route) => [route, createLocaleSet(['zh'])] as const),
+  ...zhJaRoutes.map((route) => [route, createLocaleSet(['zh', 'ja'])] as const),
 ]);
 
 export function normalizeRoutePath(
