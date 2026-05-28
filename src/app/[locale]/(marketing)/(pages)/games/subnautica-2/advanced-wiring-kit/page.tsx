@@ -16,7 +16,7 @@ type AdvancedWiringKitCopy = ResourceGuideCopy & {
 };
 
 const PUBLISHED_AT = '2026-05-27';
-const UPDATED_AT = '2026-05-27';
+const UPDATED_AT = '2026-05-28';
 
 const sharedSources = [
   {
@@ -52,6 +52,28 @@ const advancedWiringKitCopy: Record<string, AdvancedWiringKitCopy> = {
     quickLabel: 'Quick answer',
     quickAnswer:
       'Current Subnautica2.gg data lists Advanced Wiring Kit as a locked electronics craft at the Fabrication Station using Wiring Kit x1, Gold x1, and Sulfur x1, with unlock paths from obtaining Wiring Kit or Gold. Wikily lists the same three ingredients and labels the station as Fabricator. Current public uses include Dedicated Core, Heat Resistance Chip, and Scout Ray Chassis, while PC Gamer confirms Gold is part of Advanced Wiring Kit and System Chip progress.',
+    fieldNotesTitle: 'Field notes for advanced electronics',
+    fieldNotes: [
+      {
+        title: 'Do not craft it because the parts exist',
+        body: 'Advanced Wiring Kit eats Wiring Kit, Gold, and Sulfur at once. If the next recipe is not visible, loose materials are safer.',
+      },
+      {
+        title: 'Check Sulfur before Repair Tool work',
+        body: 'Sulfur looks like the small input, but it can compete with repair and chemistry routes. Spend it after the safety tools are handled.',
+      },
+      {
+        title: 'Gold has several bosses',
+        body: 'Gold gets pulled into electronics, power, and station chains. One Advanced Wiring Kit can steal progress from more than one plan.',
+      },
+    ],
+    routeChecklistTitle: 'Before crafting Advanced Wiring Kit',
+    routeChecklist: [
+      'The target recipe is visible.',
+      'Normal Wiring Kit and raw Silver needs are already covered.',
+      'Gold is not needed for a higher-priority electronics craft.',
+      'Sulfur is not blocking Repair Tool or Strong Acid routes.',
+    ],
     contentsLabel: 'Contents',
     routeTitle: 'Advanced Wiring Kit planning route',
     routeSteps: [
@@ -172,6 +194,28 @@ const advancedWiringKitCopy: Record<string, AdvancedWiringKitCopy> = {
     quickLabel: '快速结论',
     quickAnswer:
       'Subnautica2.gg 当前把 Advanced Wiring Kit 写成锁定电子配方，在 Fabrication Station 用 Wiring Kit x1、Gold x1、Sulfur x1 制作，并列出两条解锁方式：获得 Wiring Kit 或获得 Gold。Wikily 也列出同样三种材料，但制作站写作 Fabricator。当前公开用途包括 Dedicated Core、Heat Resistance Chip 和 Scout Ray Chassis；PC Gamer 也确认 Gold 会进入 Advanced Wiring Kit 和 System Chip 推进。',
+    fieldNotesTitle: 'Advanced Wiring Kit 电子材料笔记',
+    fieldNotes: [
+      {
+        title: '不要因为材料够就做',
+        body: 'Advanced Wiring Kit 一次吃 Wiring Kit、Gold 和 Sulfur。下一个配方没显示时，散装材料更安全。',
+      },
+      {
+        title: '先看 Sulfur 是否要给修理线',
+        body: 'Sulfur 看起来只是小输入，但会和修理、化学路线竞争。安全工具处理好后再花它。',
+      },
+      {
+        title: 'Gold 会被多条路线抢',
+        body: 'Gold 会进入电子、电力和工作站路线。一个 Advanced Wiring Kit 可能同时偷走几个计划的进度。',
+      },
+    ],
+    routeChecklistTitle: '制作 Advanced Wiring Kit 前',
+    routeChecklist: [
+      '目标配方已经显示出来。',
+      '普通 Wiring Kit 和 raw Silver 需求已经覆盖。',
+      'Gold 没有被更高优先级电子配方占用。',
+      'Sulfur 没有卡住 Repair Tool 或 Strong Acid 路线。',
+    ],
     contentsLabel: '目录',
     routeTitle: 'Advanced Wiring Kit 规划路线',
     routeSteps: [

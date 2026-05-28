@@ -16,7 +16,7 @@ type EntangledPowerCellCopy = ResourceGuideCopy & {
 };
 
 const PUBLISHED_AT = '2026-05-27';
-const UPDATED_AT = '2026-05-27';
+const UPDATED_AT = '2026-05-28';
 
 const sharedSources = [
   {
@@ -56,6 +56,28 @@ const entangledPowerCellCopy: Record<string, EntangledPowerCellCopy> = {
     quickLabel: 'Quick answer',
     quickAnswer:
       'Current public data agrees that Entangled Power Cell uses Conduit Crystal x1, Strong Acid x1, Gold Ingot x1, and Troilite x1 at the Fabricator or Fabrication Station. Wikily lists it as locked behind scans and currently not used in another recipe, while Subnautica 2 Guide and Nerdschalk describe fragment scanning near the Karakorum Power Plant or alien-structure route. Treat it as late-route power prep and recheck your PDA after patches.',
+    fieldNotesTitle: 'Field notes for rare power',
+    fieldNotes: [
+      {
+        title: 'This is not a better spare battery',
+        body: 'Entangled Power Cell pulls from expensive routes. Treat it as a named upgrade material, not something you craft because the locker happens to allow it.',
+      },
+      {
+        title: 'Protect Gold Ingot and Troilite',
+        body: 'Those two inputs can quietly block other late-chain crafts. Check what else is waiting before you commit them to power.',
+      },
+      {
+        title: 'Keep it away from normal Power Cell prep',
+        body: 'Normal vehicle power and entangled power should sit beside each other, not in the same pile. The ingredients are too different to count casually.',
+      },
+    ],
+    routeChecklistTitle: 'Before crafting Entangled Power Cell',
+    routeChecklist: [
+      'The recipe that needs Entangled Power Cell is visible.',
+      'Gold Ingot and Troilite are not needed by a higher-priority craft.',
+      'Advanced Battery route is already stable.',
+      'Normal Power Cell stock remains separate.',
+    ],
     contentsLabel: 'Contents',
     routeTitle: 'Entangled Power Cell route',
     routeSteps: [
@@ -206,6 +228,28 @@ const entangledPowerCellCopy: Record<string, EntangledPowerCellCopy> = {
     quickLabel: '快速结论',
     quickAnswer:
       '当前公开资料基本一致：Entangled Power Cell 使用 Conduit Crystal x1、Strong Acid x1、Gold Ingot x1、Troilite x1，在 Fabricator 或 Fabrication Station 制作。Wikily 把它标成扫描解锁，并显示当前不再进入其他配方；Subnautica 2 Guide 和 Nerdschalk 则把碎片路线指向 Karakorum Power Plant 或 alien structure 附近。把它当成后期供电准备，补丁后要回 PDA 复查。',
+    fieldNotesTitle: 'Entangled Power Cell 稀有电力笔记',
+    fieldNotes: [
+      {
+        title: '这不是更高级的备用电池',
+        body: 'Entangled Power Cell 会吃很贵的材料。把它当成明确升级材料，不要因为箱子里刚好够就随手做。',
+      },
+      {
+        title: '保护 Gold Ingot 和 Troilite',
+        body: '这两种输入也会卡住别的后期制作。投入电力路线前，先看有没有更优先的配方在等。',
+      },
+      {
+        title: '和普通 Power Cell 分开放',
+        body: '普通载具电力和 entangled 电力最好相邻但不混放。材料差太多，混在一起很容易算错。',
+      },
+    ],
+    routeChecklistTitle: '制作 Entangled Power Cell 前',
+    routeChecklist: [
+      '需要 Entangled Power Cell 的配方已经显示出来。',
+      'Gold Ingot 和 Troilite 没有被更高优先级配方占用。',
+      'Advanced Battery 路线已经稳定。',
+      '普通 Power Cell 库存单独放。',
+    ],
     contentsLabel: '目录',
     routeTitle: 'Entangled Power Cell 路线',
     routeSteps: [

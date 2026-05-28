@@ -16,7 +16,7 @@ type BatteryTerminalCopy = ResourceGuideCopy & {
 };
 
 const PUBLISHED_AT = '2026-05-26';
-const UPDATED_AT = '2026-05-27';
+const UPDATED_AT = '2026-05-28';
 
 const sharedSources = [
   {
@@ -48,6 +48,28 @@ const batteryTerminalCopy: Record<string, BatteryTerminalCopy> = {
     quickLabel: 'Quick answer',
     quickAnswer:
       'GAMES.GG places Battery Terminal fragments inside the Old Habitat area, roughly 380 meters north of the Lifepod, and says you scan two fragments to unlock the blueprint. Current blueprint pages list the build as a Habitat Builder deployable using Titanium x2, Quartz x2, and Copper Wire x1. GAMES.GG says the terminal can charge up to six Basic or Advanced Batteries at once. Use it for tool batteries; Power Cells and vehicle charging are a separate plan.',
+    fieldNotesTitle: 'Field notes for battery rotation',
+    fieldNotes: [
+      {
+        title: 'Build it before the locker gets messy',
+        body: 'Battery Terminal pays off before you think it will. Once tools, vehicles, and advanced batteries share the base, loose cells become hard to read.',
+      },
+      {
+        title: 'Put it beside the power locker',
+        body: 'A charger across the base becomes decorative. Put it where drained batteries naturally land after a trip.',
+      },
+      {
+        title: 'Separate dead, charging, and ready',
+        body: 'Three tiny piles beat one confusing pile. The whole station is there to stop you from crafting batteries you could have recharged.',
+      },
+    ],
+    routeChecklistTitle: 'Before placing Battery Terminal',
+    routeChecklist: [
+      'Powered base room has space beside battery storage.',
+      'Tool batteries and vehicle batteries have separate labels.',
+      'Advanced Battery rotation is planned.',
+      'Dead batteries have a dedicated drop spot.',
+    ],
     contentsLabel: 'Contents',
     routeTitle: 'Battery Terminal route',
     routeSteps: [
@@ -186,6 +208,28 @@ const batteryTerminalCopy: Record<string, BatteryTerminalCopy> = {
     quickLabel: '快速结论',
     quickAnswer:
       'GAMES.GG 把 Battery Terminal 碎片路线指向 Old Habitat 内部，大约在 Lifepod 北侧 380 米，并写到需要扫描两个碎片来解锁。当前蓝图页面把它列为 Habitat Builder 可放置设施，配方是 Titanium x2、Quartz x2、Copper Wire x1。GAMES.GG 还写到它最多可同时给 6 块 Basic 或 Advanced Battery 充电。注意：它需要基地供电，别在基地电力还不稳定时急着塞满空电池。',
+    fieldNotesTitle: 'Battery Terminal 轮换笔记',
+    fieldNotes: [
+      {
+        title: '箱子变乱前就建',
+        body: 'Battery Terminal 比想象中更早回本。工具、载具和高级电池都进基地后，散装电池很快就看不清。',
+      },
+      {
+        title: '放在电力箱旁边',
+        body: '充电器离箱子太远就会变成摆设。把它放在每次回家自然会丢电池的位置。',
+      },
+      {
+        title: '没电、充电中、可用分开',
+        body: '三个小分区比一堆混放强。这个工作站的意义，就是让你少做本来可以充好的电池。',
+      },
+    ],
+    routeChecklistTitle: '放置 Battery Terminal 前',
+    routeChecklist: [
+      '有电的基地房间旁边留出电池收纳位置。',
+      '工具电池和载具电池有不同标签。',
+      'Advanced Battery 轮换方式已经想好。',
+      '没电电池有固定投放点。',
+    ],
     contentsLabel: '目录',
     routeTitle: 'Battery Terminal 路线',
     routeSteps: [

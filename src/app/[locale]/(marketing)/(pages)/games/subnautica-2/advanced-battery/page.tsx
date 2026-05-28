@@ -16,7 +16,7 @@ type AdvancedBatteryCopy = ResourceGuideCopy & {
 };
 
 const PUBLISHED_AT = '2026-05-26';
-const UPDATED_AT = '2026-05-27';
+const UPDATED_AT = '2026-05-28';
 
 const sharedSources = [
   {
@@ -48,6 +48,28 @@ const advancedBatteryCopy: Record<string, AdvancedBatteryCopy> = {
     quickLabel: 'Quick answer',
     quickAnswer:
       'All Things How says Advanced Battery stores 200 energy and points the blueprint route to the Karakorum Power Plant area, where you scan two fragments. Subnautica2.gg lists two unlock paths: scan 2 Advanced Battery fragments or open a Data Box. Current blueprint pages list the Fabricator recipe as Conduit Crystal x1, Strong Acid x1, and Silver Ingot x1. Build Battery Terminal first if you already have a base, then rotate Advanced Batteries through it instead of crafting replacements. Keep Entangled Power Cell materials separate, because that route adds Gold Ingot and Troilite pressure.',
+    fieldNotesTitle: 'Field notes for advanced power',
+    fieldNotes: [
+      {
+        title: 'Do the unlock trip like a dive plan',
+        body: 'Advanced Battery is not a casual Copper craft. If Karakorum Power Plant is next, bring air, scanner power, and a route home before chasing fragments.',
+      },
+      {
+        title: 'Keep the three rare inputs together',
+        body: 'Conduit Crystal, Strong Acid, and Silver Ingot come from different rhythms. Put them in one small locker so the final craft does not become a guessing game.',
+      },
+      {
+        title: 'Recharge before replacing',
+        body: 'The point of a 200-energy battery is rotation. Once Battery Terminal exists, drained Advanced Batteries should cycle through it instead of becoming clutter.',
+      },
+    ],
+    routeChecklistTitle: 'Before crafting Advanced Battery',
+    routeChecklist: [
+      'Fragment or Data Box unlock is confirmed.',
+      'Conduit Crystal, Strong Acid, and Silver Ingot are staged together.',
+      'Battery Terminal route is planned for recharge cycles.',
+      'Entangled Power Cell materials stay in a separate pile.',
+    ],
     contentsLabel: 'Contents',
     routeTitle: 'Advanced Battery route',
     routeSteps: [
@@ -195,6 +217,28 @@ const advancedBatteryCopy: Record<string, AdvancedBatteryCopy> = {
     quickLabel: '快速结论',
     quickAnswer:
       'All Things How 写到 Advanced Battery 有 200 energy，并把碎片路线指向 Karakorum Power Plant 区域，需要扫描两个碎片。Subnautica2.gg 当前列出两种解锁方式：扫描 2 个 Advanced Battery 碎片，或打开 Data Box。当前蓝图页面写的 Fabricator 配方是 Conduit Crystal x1、Strong Acid x1、Silver Ingot x1。如果你已经有基地，先做 Battery Terminal，再把 Advanced Battery 拿来轮换充电，价值会高很多。',
+    fieldNotesTitle: 'Advanced Battery 电力笔记',
+    fieldNotes: [
+      {
+        title: '把解锁当成一次正式潜水',
+        body: 'Advanced Battery 不是随手做的 Copper 配方。去 Karakorum Power Plant 前，先准备氧气、Scanner 电量和回程路线。',
+      },
+      {
+        title: '三种稀有输入放一起',
+        body: 'Conduit Crystal、Strong Acid、Silver Ingot 的节奏完全不同。放进同一个小箱子，最后制作时就不会到处翻。',
+      },
+      {
+        title: '先充电，再替换',
+        body: '200 energy 的价值在于循环使用。有 Battery Terminal 后，没电的 Advanced Battery 应该拿去充，而不是继续做新的。',
+      },
+    ],
+    routeChecklistTitle: '制作 Advanced Battery 前',
+    routeChecklist: [
+      '碎片或 Data Box 解锁已经确认。',
+      'Conduit Crystal、Strong Acid、Silver Ingot 已放在一起。',
+      'Battery Terminal 的充电循环已经规划好。',
+      'Entangled Power Cell 材料单独放，不和这里混。',
+    ],
     contentsLabel: '目录',
     routeTitle: 'Advanced Battery 路线',
     routeSteps: [
