@@ -1018,43 +1018,69 @@ const derivedLocales: Record<string, Partial<TroilitePatchCopy>> = {
   },
   ja: {
     metadata: {
-      title: 'Subnautica 2 Hotfix 2 後の Troilite - late-game 資源更新',
+      title: 'Subnautica 2 Hotfix 2後のTroilite - 後半資源ルート更新',
       description:
-        'Subnautica 2 Hotfix 2 後の Troilite: late-game resource areas、Mineralized Clinker、Metal Farm、古い攻略の注意点。',
+        'Subnautica 2 Hotfix 2後のTroiliteガイド。後半エリアの資源追加、Mineralized Clinker、Metal Farm、古い一本道攻略の注意点を整理します。',
     },
-    eyebrow: 'Troilite Hotfix 2 note',
-    title: 'Subnautica 2 Hotfix 2 後の Troilite',
+    eyebrow: 'Subnautica 2 Hotfix 2資源メモ',
+    title: 'Subnautica 2 Hotfix 2後のTroilite',
     description:
-      'Hotfix 2 は late-game route に関係します。Troilite はまだ危険ですが、公式ノートは resource areas の追加を示しています。',
+      'Hotfix 2はTroilite探しを少し楽にします。ただし楽になるのは「候補地点が増えた」という意味で、序盤素材になったわけではありません。深度、採掘準備、帰り道は今まで通り必要です。',
     quickLabel: '要点',
     quickAnswer:
-      'Hotfix 2 は late-game region に Troilite resource areas を追加します。今でも準備が必要な late-route material です。',
+      'Unknown WorldsはHotfix 2で、後半エリアにTroilite資源エリアを追加したと説明しています。Troiliteは引き続きMineralized Clinkerから探す後半素材です。古い攻略の「ここだけ」系ルートは参考にしつつ、Hotfix 2後は周辺の後半エリアも再確認しましょう。',
+    fieldNotesTitle: 'Hotfix 2後のTroiliteメモ',
+    fieldNotes: [
+      {
+        title: '増えたが簡単になったわけではない',
+        body: 'パッチは入手機会を増やしましたが、Troiliteが浅瀬の素材になったわけではありません。Mineralized Clinkerを探す深いルートとして準備します。',
+      },
+      {
+        title: '古い一本道表現は疑って読む',
+        body: 'Hotfix前の記事は、一つの危険なルートへ強く寄せて書かれがちです。目印は使えますが、「そこだけ」という断定は新しいパッチ環境で確認し直します。',
+      },
+      {
+        title: '最初のサンプルは使い道を決めてから',
+        body: 'Troilite不足で詰まっていたなら、最初に見つけた分を雑に消費しない方がいいです。MangalloyやMetal Farm関連の次レシピを見てから使います。',
+      },
+    ],
+    routeChecklistTitle: 'Troiliteを探す前に',
+    routeChecklist: [
+      'Hotfix 2が入った状態でプレイしている。',
+      'Mineralized ClinkerをTroiliteの手がかりとして見る。',
+      'Beaconまたは地形メモで再訪できるルートを残す。',
+      '最初のTroiliteは、詰まっていたレシピ用に予約する。',
+    ],
     contentsLabel: '目次',
-    routeTitle: 'Troilite 変更の読み方',
+    routeTitle: 'Troilite変更の読み方',
     routeSteps: [
       {
         title: '序盤資源として扱わない',
-        body: 'Silver の変更は序盤向けですが、Troilite は別です。公式ノートは late-game region と書いているため、深いルート、道具、帰り道の準備が必要です。',
+        body: 'Hotfix 2のSilver変更は序盤プレイヤー向けですが、Troiliteは別です。公式ノートは後半エリアの追加と書いているため、深いルート、採掘道具、帰り道の準備が必要です。',
       },
       {
-        title: 'Mineralized Clinker を見る',
-        body: 'PC Gamer は、Troilite が調査時に Mineralized Clinker と関係すると説明しています。Troilite という単語だけを探すと見落とします。',
+        title: 'Mineralized Clinkerを見る',
+        body: 'PC GamerはTroiliteが調査時にMineralized Clinkerとして見える点に触れています。海底に「Troilite」という文字を探す感覚だと見落としやすいです。',
       },
       {
         title: '古い一本道ガイドを再確認する',
-        body: 'Hotfix 2 前の攻略は、危険で狭い1ルートを示すものが多めでした。late-game resource areas が増えたので、「ここだけ」という書き方は再テストが必要です。',
+        body: 'Hotfix 2前の攻略は、危険で狭い1ルートを示すものが多めでした。資源エリアが増えたので、「ここだけ」と書かれている情報は新しい環境で再テストします。',
       },
       {
-        title: 'Metal Farm と一緒に考える',
-        body: 'Troilite は rare crafting の流れに入ります。採掘ツール、インベントリ、次のレシピを確認してから走る方が安全です。',
+        title: 'Metal Farmと一緒に考える',
+        body: 'Troiliteは希少金属クラフトの流れに入ります。採掘ツール、空きインベントリ、次のレシピを確認してから走る方が、見つけた素材を無駄にしません。',
+      },
+      {
+        title: '見つけた場所をルート化する',
+        body: 'Hotfix後に見つけたTroilite地点は、次回も使える資産です。Beaconを置くか、近くの地形と進入角度をメモしておきます。',
       },
     ],
-    tableTitle: 'Hotfix 2 後の Troilite',
+    tableTitle: 'Hotfix 2後のTroilite',
     tableHeaders: ['質問', 'パッチ後の答え'],
     tableRows: [
       [
         '何が変わった？',
-        'Unknown Worlds は late-game region に Troilite resource areas を追加したと説明しています。',
+        'Unknown Worldsは後半エリアにTroilite資源エリアを追加したと説明しています。',
       ],
       [
         '何は変わらない？',
@@ -1062,73 +1088,73 @@ const derivedLocales: Record<string, Partial<TroilitePatchCopy>> = {
       ],
       [
         'どの名前を見る？',
-        'ルートでは Troilite 入手に関係する Mineralized Clinker を確認します。',
+        'ルートではTroilite入手に関係するMineralized Clinkerを確認します。',
       ],
       [
         '古い地図は使える？',
-        'Landmark は使えますが、一つの狭い場所だけという説明は再テストが必要です。',
+        '地形の目印は使えますが、一つの狭い場所だけという説明は再テストが必要です。',
       ],
       [
         'どのページを更新する？',
-        'Troilite、Mangalloy Ingot、Metal Farm、late-game crafting です。',
+        'Troilite、Mangalloy Ingot、Metal Farm、後半クラフト系ページです。',
       ],
     ],
-    visualTitle: 'Troilite route card',
+    visualTitle: 'Troiliteルートカード',
     visualItems: [
       {
-        label: 'Patch',
+        label: 'パッチ',
         value: 'Hotfix 2',
-        note: 'late-game resource areas 追加。',
+        note: '後半エリアの資源候補が増えた。',
       },
       {
-        label: 'Deposit',
+        label: '鉱床',
         value: 'Clinker',
-        note: 'Mineralized Clinker を確認。',
+        note: 'Mineralized Clinkerを確認する。',
       },
       {
-        label: 'Use',
+        label: '用途',
         value: 'Rare chain',
-        note: 'Mangalloy と Metal Farm planning。',
+        note: 'MangalloyやMetal Farm計画に回す。',
       },
     ],
     cautionTitle: 'パッチを言いすぎない',
     cautionBody:
-      'Troilite areas が増えても safe、early、unlimited にはなりません。late-game route を再確認するという意味です。',
+      'Troiliteの候補地点が増えても、安全、序盤、無限入手になったわけではありません。Hotfix 2は「後半ルートを新しい前提で見直す」ための情報です。',
     faqTitle: 'FAQ',
     faqs: [
       {
         title: 'Hotfix 2 で Troilite は増えた？',
-        body: 'はい。Unknown Worlds は late-game region に Troilite resource areas を追加したと説明しています。',
+        body: 'はい。Unknown Worldsは後半エリアにTroilite資源エリアを追加したと説明しています。',
       },
       {
-        title: 'Troilite はまだ late game？',
-        body: 'はい。公式ノートが late-game region と書いているので、準備した後半ルートとして扱います。',
+        title: 'Troiliteはまだ後半素材？',
+        body: 'はい。公式ノートが後半エリアと書いているので、準備した後半ルートとして扱います。',
       },
       {
-        title: 'Mineralized Clinker とは？',
-        body: 'Troilite ルートで見る名前です。PC Gamer は調査時の Troilite と関係すると説明しています。',
+        title: 'Mineralized Clinkerとは？',
+        body: 'Troiliteルートで見る鉱床名です。PC Gamerは調査時のTroiliteと関係すると説明しています。',
       },
       {
-        title: '古い Troilite 攻略は直すべき？',
-        body: 'はい。Troilite が狭い1ルートだけと書く記事は、Hotfix 2 後に再確認が必要です。',
+        title: '古いTroilite攻略は直すべき？',
+        body: 'はい。Troiliteが狭い1ルートだけと書く記事は、Hotfix 2後に再確認が必要です。',
       },
     ],
     readNextTitle: '次に読む',
     related: [
-      { href: Routes.Subnautica2Hotfix2, label: 'Hotfix 2 Changes' },
-      { href: Routes.Subnautica2Troilite, label: 'Troilite Location' },
-      { href: Routes.Subnautica2MetalFarm, label: 'Metal Farm Guide' },
-      { href: Routes.Subnautica2Mangalloy, label: 'Mangalloy Ingot' },
-      { href: Routes.Subnautica2Resources, label: 'Resources Guide' },
+      { href: Routes.Subnautica2Hotfix2, label: 'Hotfix 2変更点' },
+      { href: Routes.Subnautica2Troilite, label: 'Troilite ガイド' },
+      { href: Routes.Subnautica2MetalFarm, label: 'Metal Farm ガイド' },
+      { href: Routes.Subnautica2Mangalloy, label: 'Mangalloy Ingot ガイド' },
+      { href: Routes.Subnautica2Resources, label: '資源ガイド' },
     ],
-    sourcesTitle: 'ソース',
+    sourcesTitle: 'ソースメモ',
     sourceBody:
-      '2026年5月28日に Hotfix 2、PC Gamer Troilite、Metal Farm、roadmap を確認。',
-    cardKicker: 'Troilite patch card',
+      '2026年5月29日にUnknown Worlds公式Hotfix 2、PC GamerのTroilite / Metal Farm記事、Unknown Worlds公式Early Accessロードマップを確認しました。Early Access中なので、資源エリア、鉱床名、必要数は今後のパッチで変わる可能性があります。',
+    cardKicker: 'Troiliteパッチカード',
     cardBody:
-      'Hotfix 2 後の Troilite、Mineralized Clinker、Mangalloy、Metal Farm を再確認するパッチノート。',
+      'Hotfix 2後のTroilite、Mineralized Clinker、Mangalloy、Metal Farmを再確認するためのルートメモ。',
     cardTypeLabel: '種類',
-    cardTypeValue: 'Patch route',
+    cardTypeValue: 'パッチ後ルート',
     cardVerifiedLabel: '確認日',
     cardStatusLabel: '状態',
     cardStatusValue: 'Hotfix 2',

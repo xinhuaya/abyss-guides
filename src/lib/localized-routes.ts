@@ -774,7 +774,6 @@ const zhOnlyRoutes = [
   Routes.Subnautica2TadpoleDock,
   Routes.Subnautica2Titanium,
   Routes.Subnautica2Troilite,
-  Routes.Subnautica2TroiliteAfterHotfix2,
   Routes.Subnautica2VehicleFabricator,
   Routes.Subnautica2Wakemaker,
 ] as const;
@@ -799,6 +798,7 @@ const zhJaRoutes = [
   Routes.Subnautica2StrongAcid,
   Routes.Subnautica2Tadpole,
   Routes.Subnautica2TitaniumIngot,
+  Routes.Subnautica2TroiliteAfterHotfix2,
   Routes.Subnautica2WiringKit,
 ] as const;
 
