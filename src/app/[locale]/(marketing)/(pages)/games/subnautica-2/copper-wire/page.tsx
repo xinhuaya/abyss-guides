@@ -16,7 +16,7 @@ type CopperWireCopy = ResourceGuideCopy & {
 };
 
 const PUBLISHED_AT = '2026-05-25';
-const UPDATED_AT = '2026-05-25';
+const UPDATED_AT = '2026-05-28';
 
 const sharedSources = [
   {
@@ -47,7 +47,7 @@ const copperWireCopy: Record<string, CopperWireCopy> = {
       'Copper Wire is the quiet hinge between basic Copper runs and the first real electronics chain. It is simple to craft, but easy to mismanage if every Copper piece turns into batteries first.',
     quickLabel: 'Quick answer',
     quickAnswer:
-      'Current blueprint data lists Copper Wire as unlocked by default and crafted at the Fabrication Station from 2 Copper. Keep a few wires ready for Wiring Kit, Habitat Builder, Processor, Battery Terminal, Tadpole Dock, and base pieces, but do not convert every Copper stack before your battery and tool plan is settled.',
+      'Current blueprint data lists Copper Wire as unlocked by default and crafted at the Fabrication Station from 2 Copper. Keep a few wires ready for Wiring Kit, Habitat Builder, Processor, Battery Terminal, Scanner Station, Tadpole Dock, and base pieces, but do not convert every Copper stack before your battery and tool plan is settled.',
     contentsLabel: 'Contents',
     routeTitle: 'Copper Wire craft plan',
     routeSteps: [
@@ -71,6 +71,10 @@ const copperWireCopy: Record<string, CopperWireCopy> = {
         title: 'Keep a base-building reserve',
         body: 'Habitat Builder, Processor, Battery Terminal, Tadpole Dock, and several builder pieces can pull from the same wire pile. Label the locker before the base project gets messy.',
       },
+      {
+        title: 'Do not forget Scanner Station electronics',
+        body: 'Scanner Station planning can pull you through Copper Wire, System Chip, Wiring Kit, and Silver in one jump. Keep the wire close to Silver and Quartz so the electronics chain is easy to audit.',
+      },
     ],
     tableTitle: 'Copper Wire checklist',
     tableHeaders: ['Item', 'What to confirm'],
@@ -86,7 +90,7 @@ const copperWireCopy: Record<string, CopperWireCopy> = {
       ['Wiring Kit', 'Wire plus Silver starts the next electronics chain.'],
       [
         'Base tools',
-        'Habitat Builder and Processor can make Copper Wire disappear quickly.',
+        'Habitat Builder, Scanner Station, and Processor can make Copper Wire disappear quickly.',
       ],
       [
         'Storage rule',
@@ -139,6 +143,10 @@ const copperWireCopy: Record<string, CopperWireCopy> = {
       { href: Routes.Subnautica2TadpoleDock, label: 'Tadpole Dock Guide' },
       { href: Routes.Subnautica2BasicBattery, label: 'Basic Battery Guide' },
       {
+        href: Routes.Subnautica2ScannerStation,
+        label: 'Scanner Station Guide',
+      },
+      {
         href: Routes.Subnautica2BatteryTerminal,
         label: 'Battery Terminal Guide',
       },
@@ -157,7 +165,7 @@ const copperWireCopy: Record<string, CopperWireCopy> = {
     ],
     sourcesTitle: 'Source note',
     sourceBody:
-      'Checked May 25, 2026 against current Subnautica2.gg, Dexerto, and Subnautica2Hub Copper Wire data. Subnautica 2 is still in Early Access, so recipes and builder uses can move after patches.',
+      'Checked May 28, 2026 against current Subnautica2.gg, Dexerto, and Subnautica2Hub Copper Wire data. Subnautica 2 is still in Early Access, so recipes and builder uses can move after patches.',
     cardKicker: 'Electronics card',
     cardBody:
       'Copper pairs, battery timing, Wiring Kit prep, base-building use, and electronics storage.',
@@ -262,6 +270,7 @@ const copperWireCopy: Record<string, CopperWireCopy> = {
       { href: Routes.Subnautica2Copper, label: 'Copper 位置' },
       { href: Routes.Subnautica2TadpoleDock, label: 'Tadpole Dock 指南' },
       { href: Routes.Subnautica2BasicBattery, label: 'Basic Battery 指南' },
+      { href: Routes.Subnautica2ScannerStation, label: 'Scanner Station 指南' },
       {
         href: Routes.Subnautica2BatteryTerminal,
         label: 'Battery Terminal Guide',
@@ -278,7 +287,7 @@ const copperWireCopy: Record<string, CopperWireCopy> = {
     ],
     sourcesTitle: '来源说明',
     sourceBody:
-      '2026 年 5 月 25 日核对 Subnautica2.gg、Dexerto 和 Subnautica2Hub 的 Copper Wire 数据。Subnautica 2 仍处于抢先体验阶段，配方和建造用途可能随补丁调整。',
+      '2026 年 5 月 28 日核对 Subnautica2.gg、Dexerto 和 Subnautica2Hub 的 Copper Wire 数据。Subnautica 2 仍处于抢先体验阶段，配方和建造用途可能随补丁调整。',
     cardKicker: '电子材料卡',
     cardBody:
       'Copper 配对、电池制作时机、Wiring Kit 前置、基地建造用途和电子材料收纳。',
@@ -400,7 +409,7 @@ const copperWireCopy: Record<string, CopperWireCopy> = {
     ],
     sourcesTitle: 'ソースメモ',
     sourceBody:
-      '2026年5月25日に Subnautica2.gg、Dexerto、Subnautica2Hub の Copper Wire 情報を確認しました。Early Access 中はレシピや建築用途が変わる可能性があります。',
+      '2026年5月28日に Subnautica2.gg、Dexerto、Subnautica2Hub の Copper Wire 情報を確認しました。Early Access 中はレシピや建築用途が変わる可能性があります。',
     cardKicker: '電子素材カード',
     cardBody:
       'Copper の分配、バッテリーのタイミング、Wiring Kit 準備、基地建築、素材保管。',

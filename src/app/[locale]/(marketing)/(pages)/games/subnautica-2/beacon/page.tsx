@@ -16,7 +16,7 @@ type BeaconCopy = ResourceGuideCopy & {
 };
 
 const PUBLISHED_AT = '2026-05-26';
-const UPDATED_AT = '2026-05-26';
+const UPDATED_AT = '2026-05-28';
 
 const sharedSources = [
   {
@@ -50,7 +50,7 @@ const beaconCopy: Record<string, BeaconCopy> = {
       'Beacon looks boring until you lose a good cave, wreck, or resource patch. Then it becomes one of the best cheap tools in the game.',
     quickLabel: 'Quick answer',
     quickAnswer:
-      'Current Subnautica2.gg blueprint data lists Beacon as crafted with Copper x1 and Titanium x1. PC Gamer recommends placing beacons because Subnautica 2 does not hand you a simple map for every useful spot, and Wand Digital currently describes the unlock as two scans. Use beacons to mark bases, deep entrances, rare material routes, and safe return points.',
+      'Current Subnautica2.gg blueprint data lists Beacon as crafted with Copper x1 and Titanium x1. PC Gamer recommends placing beacons because Subnautica 2 does not hand you a simple map for every useful spot, and Wand Digital currently describes the unlock as two scans. Use beacons to mark bases, deep entrances, rare material routes, safe return points, and any place you plan to revisit with Habitat Builder or Scanner Station support.',
     contentsLabel: 'Contents',
     routeTitle: 'Beacon craft and placement plan',
     routeSteps: [
@@ -65,6 +65,10 @@ const beaconCopy: Record<string, BeaconCopy> = {
       {
         title: 'Mark exits, not just discoveries',
         body: 'A beacon on the cool thing is helpful. A beacon on the way back out is often better, especially around caves, Lily Pads, and deeper routes.',
+      },
+      {
+        title: 'Drop one before base work gets expensive',
+        body: 'If you are about to place a starter base, Scanner Station, or repeated resource route, mark the approach first. A cheap beacon can save more time than the room you are trying to build.',
       },
       {
         title: 'Name it while the route is fresh',
@@ -84,6 +88,10 @@ const beaconCopy: Record<string, BeaconCopy> = {
       [
         'Placement',
         'Use at exits, bases, rare resources, and route junctions.',
+      ],
+      [
+        'Base routes',
+        'Mark starter bases, Scanner Station locations, and repeated resource loops.',
       ],
       ['Naming', 'Rename immediately so signals stay useful later.'],
     ],
@@ -131,7 +139,16 @@ const beaconCopy: Record<string, BeaconCopy> = {
     related: [
       { href: Routes.Subnautica2Map, label: 'Map and Biomes' },
       { href: Routes.Subnautica2Scanner, label: 'Scanner Guide' },
+      {
+        href: Routes.Subnautica2HabitatBuilder,
+        label: 'Habitat Builder Guide',
+      },
+      {
+        href: Routes.Subnautica2ScannerStation,
+        label: 'Scanner Station Guide',
+      },
       { href: Routes.Subnautica2BaseBuilding, label: 'Base Building Guide' },
+      { href: Routes.Subnautica2AirTank, label: 'Air Tank and O2 Guide' },
       { href: Routes.Subnautica2Copper, label: 'Copper Location' },
       { href: Routes.Subnautica2Resources, label: 'Resources Guide' },
       { href: Routes.Subnautica2OxygenDepth, label: 'Oxygen and Depth Guide' },
@@ -139,7 +156,7 @@ const beaconCopy: Record<string, BeaconCopy> = {
     ],
     sourcesTitle: 'Source note',
     sourceBody:
-      'Checked May 26, 2026 against Subnautica2.gg, PC Gamer, Wand Digital, and BossDown. Early Access scan counts and recipe tables can change, so check your PDA if the Fabricator differs.',
+      'Checked May 28, 2026 against Subnautica2.gg, PC Gamer, Wand Digital, and BossDown. Early Access scan counts and recipe tables can change, so check your PDA if the Fabricator differs.',
     cardKicker: 'Navigation card',
     cardBody:
       'Scan unlock, Copper and Titanium recipe, marker naming, route exits, and signal clutter control.',
@@ -239,7 +256,10 @@ const beaconCopy: Record<string, BeaconCopy> = {
     related: [
       { href: Routes.Subnautica2Map, label: '地图与生态区' },
       { href: Routes.Subnautica2Scanner, label: 'Scanner 指南' },
+      { href: Routes.Subnautica2HabitatBuilder, label: 'Habitat Builder 指南' },
+      { href: Routes.Subnautica2ScannerStation, label: 'Scanner Station 指南' },
       { href: Routes.Subnautica2BaseBuilding, label: '基地建造指南' },
+      { href: Routes.Subnautica2AirTank, label: '气瓶和氧气指南' },
       { href: Routes.Subnautica2Copper, label: 'Copper 位置' },
       { href: Routes.Subnautica2Resources, label: '资源指南' },
       { href: Routes.Subnautica2OxygenDepth, label: '氧气与深度指南' },
@@ -247,7 +267,7 @@ const beaconCopy: Record<string, BeaconCopy> = {
     ],
     sourcesTitle: '来源说明',
     sourceBody:
-      '2026 年 5 月 26 日核对 Subnautica2.gg、PC Gamer、Wand Digital 和 BossDown。抢先体验阶段扫描次数和配方表可能调整，如果 Fabricator 不同，以你的 PDA 为准。',
+      '2026 年 5 月 28 日核对 Subnautica2.gg、PC Gamer、Wand Digital 和 BossDown。抢先体验阶段扫描次数和配方表可能调整，如果 Fabricator 不同，以你的 PDA 为准。',
     cardKicker: '导航工具卡',
     cardBody:
       '扫描解锁、Copper 与 Titanium 配方、标记命名、路线出口和信号清理。',

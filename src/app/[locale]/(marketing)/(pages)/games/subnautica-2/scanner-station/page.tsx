@@ -16,7 +16,7 @@ type ScannerStationCopy = ResourceGuideCopy & {
 };
 
 const PUBLISHED_AT = '2026-05-26';
-const UPDATED_AT = '2026-05-26';
+const UPDATED_AT = '2026-05-28';
 
 const sharedSources = [
   {
@@ -51,7 +51,7 @@ const scannerStationCopy: Record<string, ScannerStationCopy> = {
       'The Scanner Station is for the moment when swimming in circles stops being charming. Build it when a base is stable enough to support search work, not when you are still short on basic power and lockers.',
     quickLabel: 'Quick answer',
     quickAnswer:
-      'Current Subnautica 2 Wiki and equipment-table sources list Scanner Station as a base utility tied to Titanium, Copper Wire, and System Chip style electronics. Because recipe tables can word the chain differently during Early Access, check the in-game build menu before spending Silver-heavy electronics.',
+      'Current Subnautica 2 Wiki and equipment-table sources list Scanner Station as a base utility tied to Titanium, Copper Wire, and System Chip style electronics. Build it after the base has power, storage, and a Beacon marker. Because recipe tables can word the chain differently during Early Access, check the in-game build menu before spending Silver-heavy electronics.',
     contentsLabel: 'Contents',
     routeTitle: 'Scanner Station build plan',
     routeSteps: [
@@ -72,6 +72,10 @@ const scannerStationCopy: Record<string, ScannerStationCopy> = {
         body: 'Search utilities are only helpful when the base can actually run them. Check power margin before treating the station as finished.',
       },
       {
+        title: 'Mark the search base',
+        body: 'A Scanner Station is part of a route, not a trophy. Put a Beacon on the base or approach line so the next resource run starts cleanly instead of with a search for your search tool.',
+      },
+      {
         title: 'Use it to shorten repeat loops',
         body: 'The station earns its slot when you are repeatedly hunting the same materials. If you only need one quick pickup, direct route notes may be faster.',
       },
@@ -87,6 +91,10 @@ const scannerStationCopy: Record<string, ScannerStationCopy> = {
       ['Copper Wire', 'Set aside Copper x2 worth of wiring.'],
       ['System Chip', 'Check Wiring Kit and Silver before committing.'],
       ['Power', 'Make sure the base can support another utility module.'],
+      [
+        'Beacon',
+        'Mark the station base so repeat runs start from a known point.',
+      ],
     ],
     visualTitle: 'Base search loop',
     visualItems: [
@@ -131,6 +139,11 @@ const scannerStationCopy: Record<string, ScannerStationCopy> = {
     readNextTitle: 'Read next',
     related: [
       { href: Routes.Subnautica2Scanner, label: 'Scanner Guide' },
+      {
+        href: Routes.Subnautica2HabitatBuilder,
+        label: 'Habitat Builder Guide',
+      },
+      { href: Routes.Subnautica2Beacon, label: 'Beacon Guide' },
       { href: Routes.Subnautica2SystemChip, label: 'System Chip Guide' },
       { href: Routes.Subnautica2WiringKit, label: 'Wiring Kit Guide' },
       { href: Routes.Subnautica2CopperWire, label: 'Copper Wire Guide' },
@@ -144,7 +157,7 @@ const scannerStationCopy: Record<string, ScannerStationCopy> = {
     ],
     sourcesTitle: 'Source note',
     sourceBody:
-      'Checked May 26, 2026 against Subnautica 2 Wiki, Serenes Forest, Rock Paper Shotgun, and Subnautica2Hub. Early Access recipe tables may change, so this page keeps the electronics chain explicit and tells players to verify the build menu.',
+      'Checked May 28, 2026 against Subnautica 2 Wiki, Serenes Forest, Rock Paper Shotgun, and Subnautica2Hub. Early Access recipe tables may change, so this page keeps the electronics chain explicit and tells players to verify the build menu.',
     cardKicker: 'Base utility card',
     cardBody:
       'Base placement, Titanium, Copper Wire, System Chip, power margin, and repeat resource-search timing.',
@@ -243,6 +256,8 @@ const scannerStationCopy: Record<string, ScannerStationCopy> = {
     readNextTitle: '继续阅读',
     related: [
       { href: Routes.Subnautica2Scanner, label: 'Scanner 指南' },
+      { href: Routes.Subnautica2HabitatBuilder, label: 'Habitat Builder 指南' },
+      { href: Routes.Subnautica2Beacon, label: 'Beacon 指南' },
       { href: Routes.Subnautica2SystemChip, label: 'System Chip 指南' },
       { href: Routes.Subnautica2WiringKit, label: 'Wiring Kit 指南' },
       { href: Routes.Subnautica2CopperWire, label: 'Copper Wire 指南' },
@@ -256,7 +271,7 @@ const scannerStationCopy: Record<string, ScannerStationCopy> = {
     ],
     sourcesTitle: '来源说明',
     sourceBody:
-      '2026 年 5 月 26 日核对 Subnautica 2 Wiki、Serenes Forest、Rock Paper Shotgun 和 Subnautica2Hub。抢先体验阶段配方表可能调整，所以页面保留电子材料链说明，并提醒玩家核对建造菜单。',
+      '2026 年 5 月 28 日核对 Subnautica 2 Wiki、Serenes Forest、Rock Paper Shotgun 和 Subnautica2Hub。抢先体验阶段配方表可能调整，所以页面保留电子材料链说明，并提醒玩家核对建造菜单。',
     cardKicker: '基地工具卡',
     cardBody:
       '基地摆放、Titanium、Copper Wire、System Chip、供电余量和重复资源搜索时机。',

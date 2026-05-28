@@ -16,7 +16,7 @@ type HabitatBuilderCopy = ResourceGuideCopy & {
 };
 
 const PUBLISHED_AT = '2026-05-25';
-const UPDATED_AT = '2026-05-25';
+const UPDATED_AT = '2026-05-28';
 
 const sharedSources = [
   {
@@ -47,7 +47,7 @@ const habitatBuilderCopy: Record<string, HabitatBuilderCopy> = {
       'Habitat Builder is the moment your run stops being a backpack problem and starts becoming a home route. Unlock it cleanly, craft it once, then build only what helps your next dives.',
     quickLabel: 'Quick answer',
     quickAnswer:
-      'Current blueprint data lists Habitat Builder as locked behind scanning 2 Habitat Builders. After the blueprint unlocks, craft it at the Fabrication Station with Titanium x2, Glass x1, Basic Battery x1, and Copper Wire x1. Treat Copper Wire and battery prep as the easy-to-miss parts before you leave base.',
+      'Current blueprint data lists Habitat Builder as locked behind scanning 2 Habitat Builders. After the blueprint unlocks, craft it at the Fabrication Station with Titanium x2, Glass x1, Basic Battery x1, and Copper Wire x1. Treat Copper Wire and battery prep as the easy-to-miss parts, then mark the first base with a Beacon before the layout grows.',
     contentsLabel: 'Contents',
     routeTitle: 'Habitat Builder unlock plan',
     routeSteps: [
@@ -68,6 +68,10 @@ const habitatBuilderCopy: Record<string, HabitatBuilderCopy> = {
         body: 'Habitat Builder unlocks the base-building loop, but the first goal is function: hatch, power, storage, and a route hub you can actually find again.',
       },
       {
+        title: 'Place a beacon before you expand',
+        body: 'A starter base only helps if you can return to it quickly. Drop a Beacon, name it by the resource route it supports, then start adding power, lockers, and later a Scanner Station.',
+      },
+      {
         title: 'Build a working starter base',
         body: 'A small powered room with storage beats a huge shell with no rhythm. Expand after the base shortens Copper, Silver, Scanner, and food runs.',
       },
@@ -85,6 +89,10 @@ const habitatBuilderCopy: Record<string, HabitatBuilderCopy> = {
       [
         'Copper Wire x1',
         'The electronics piece that links this tool back to Copper planning.',
+      ],
+      [
+        'Beacon marker',
+        'Mark the starter base before you leave to gather more parts.',
       ],
     ],
     visualTitle: 'Base tool chain',
@@ -130,6 +138,11 @@ const habitatBuilderCopy: Record<string, HabitatBuilderCopy> = {
     readNextTitle: 'Read next',
     related: [
       { href: Routes.Subnautica2BaseBuilding, label: 'Base Building Guide' },
+      { href: Routes.Subnautica2Beacon, label: 'Beacon Guide' },
+      {
+        href: Routes.Subnautica2ScannerStation,
+        label: 'Scanner Station Guide',
+      },
       {
         href: Routes.Subnautica2VehicleFabricator,
         label: 'Vehicle Fabricator Guide',
@@ -151,7 +164,7 @@ const habitatBuilderCopy: Record<string, HabitatBuilderCopy> = {
     ],
     sourcesTitle: 'Source note',
     sourceBody:
-      'Checked May 25, 2026 against current Subnautica2.gg and Subnautica2Hub Habitat Builder data, plus PCGamesN base-building coverage. Scan counts, recipes, and build costs can change during Early Access patches.',
+      'Checked May 28, 2026 against current Subnautica2.gg and Subnautica2Hub Habitat Builder data, plus PCGamesN base-building coverage. Scan counts, recipes, and build costs can change during Early Access patches.',
     cardKicker: 'Base tool card',
     cardBody:
       'Scan unlock, Titanium, Glass, Basic Battery, Copper Wire, first base order, and starter storage.',
@@ -251,6 +264,8 @@ const habitatBuilderCopy: Record<string, HabitatBuilderCopy> = {
     readNextTitle: '继续阅读',
     related: [
       { href: Routes.Subnautica2BaseBuilding, label: '基地建造指南' },
+      { href: Routes.Subnautica2Beacon, label: 'Beacon 指南' },
+      { href: Routes.Subnautica2ScannerStation, label: 'Scanner Station 指南' },
       {
         href: Routes.Subnautica2VehicleFabricator,
         label: 'Vehicle Fabricator 指南',
@@ -272,7 +287,7 @@ const habitatBuilderCopy: Record<string, HabitatBuilderCopy> = {
     ],
     sourcesTitle: '来源说明',
     sourceBody:
-      '2026 年 5 月 25 日核对 Subnautica2.gg 与 Subnautica2Hub 的 Habitat Builder 数据，以及 PCGamesN 的基地建造资料。抢先体验期间，扫描数量、配方和建造消耗可能随补丁调整。',
+      '2026 年 5 月 28 日核对 Subnautica2.gg 与 Subnautica2Hub 的 Habitat Builder 数据，以及 PCGamesN 的基地建造资料。抢先体验期间，扫描数量、配方和建造消耗可能随补丁调整。',
     cardKicker: '基地工具卡',
     cardBody:
       '扫描解锁、Titanium、Glass、Basic Battery、Copper Wire、第一座基地顺序和储物准备。',
@@ -387,7 +402,7 @@ const habitatBuilderCopy: Record<string, HabitatBuilderCopy> = {
     ],
     sourcesTitle: 'ソースメモ',
     sourceBody:
-      '2026年5月25日に Subnautica2.gg と Subnautica2Hub の Habitat Builder 情報、PCGamesN の基地建築情報を確認しました。Early Access 中はスキャン数、レシピ、建築コストが変わる可能性があります。',
+      '2026年5月28日に Subnautica2.gg と Subnautica2Hub の Habitat Builder 情報、PCGamesN の基地建築情報を確認しました。Early Access 中はスキャン数、レシピ、建築コストが変わる可能性があります。',
     cardKicker: '基地ツールカード',
     cardBody:
       'スキャン解放、Titanium、Glass、Basic Battery、Copper Wire、最初の基地順序。',
