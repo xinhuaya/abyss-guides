@@ -16,7 +16,7 @@ type TroiliteSoftlockCopy = ResourceGuideCopy & {
 };
 
 const PUBLISHED_AT = '2026-05-24';
-const UPDATED_AT = '2026-05-24';
+const UPDATED_AT = '2026-05-28';
 
 const sharedSources = [
   {
@@ -152,7 +152,7 @@ const troiliteSoftlockCopy: Record<string, TroiliteSoftlockCopy> = {
     ],
     sourcesTitle: 'Source note',
     sourceBody:
-      'Checked May 24, 2026 against Unknown Worlds Hotfix 2, PC Gamer Troilite route reporting, PC Gamer Metal Farm reporting, and the official Early Access roadmap.',
+      'Checked May 28, 2026 against Unknown Worlds Hotfix 2, PC Gamer Troilite route reporting, PC Gamer Metal Farm reporting, and the official Early Access roadmap.',
     cardKicker: 'Recovery card',
     cardBody:
       'A no-drama checklist for players who spent Troilite early and need to keep Metal Farm or Mangalloy progress alive.',
@@ -270,7 +270,7 @@ const troiliteSoftlockCopy: Record<string, TroiliteSoftlockCopy> = {
     ],
     sourcesTitle: '来源说明',
     sourceBody:
-      '2026 年 5 月 24 日核对 Unknown Worlds Hotfix 2、PC Gamer Troilite 路线、PC Gamer Metal Farm 报道和官方抢先体验路线图。',
+      '2026 年 5 月 28 日核对 Unknown Worlds Hotfix 2、PC Gamer Troilite 路线、PC Gamer Metal Farm 报道和官方抢先体验路线图。',
     cardKicker: '补救卡',
     cardBody:
       '给已经花掉 Troilite、但还想保住 Metal Farm 或 Mangalloy 进度的玩家看的检查表。',
@@ -373,7 +373,7 @@ const troiliteSoftlockCopy: Record<string, TroiliteSoftlockCopy> = {
     ],
     sourcesTitle: '出典メモ',
     sourceBody:
-      '2026年5月24日に Unknown Worlds Hotfix 2、PC Gamer の Troilite / Metal Farm 記事、公式ロードマップを確認。',
+      '2026年5月28日に Unknown Worlds Hotfix 2、PC Gamer の Troilite / Metal Farm 記事、公式ロードマップを確認。',
     cardKicker: 'Recovery card',
     cardBody: 'Troilite を使った後の進行を立て直すための短いチェックリスト。',
     cardTypeLabel: '種類',
