@@ -51,6 +51,28 @@ const beaconCopy: Record<string, BeaconCopy> = {
     quickLabel: 'Quick answer',
     quickAnswer:
       'Current Subnautica2.gg blueprint data lists Beacon as crafted with Copper x1 and Titanium x1. PC Gamer recommends placing beacons because Subnautica 2 does not hand you a simple map for every useful spot, and Wand Digital currently describes the unlock as two scans. Use beacons to mark bases, deep entrances, rare material routes, safe return points, and any place you plan to revisit with Habitat Builder or Scanner Station support.',
+    fieldNotesTitle: 'Field notes for cleaner markers',
+    fieldNotes: [
+      {
+        title: 'Mark the exit before the prize',
+        body: 'A marker on a rare resource is nice. A marker on the cave mouth that gets you home is often better, especially before you know the route in both directions.',
+      },
+      {
+        title: 'Use job names, not vibes',
+        body: '"Silver cave exit" beats "cool place". Name the beacon after the reason you will come back, and future you will spend less time guessing.',
+      },
+      {
+        title: 'Hide retired errands',
+        body: 'Old markers are useful until they are not. Once a route is solved or a base is moved, turn the signal off so emergency markers stay visible.',
+      },
+    ],
+    routeChecklistTitle: 'Beacon habit',
+    routeChecklist: [
+      'Name the marker before leaving the area.',
+      'Mark exits and return lanes, not only loot spots.',
+      'Use Beacons for bases, deep routes, and rare resources.',
+      'Hide markers that no longer guide a current route.',
+    ],
     contentsLabel: 'Contents',
     routeTitle: 'Beacon craft and placement plan',
     routeSteps: [
@@ -179,6 +201,28 @@ const beaconCopy: Record<string, BeaconCopy> = {
     quickLabel: '快速结论',
     quickAnswer:
       'Subnautica2.gg 当前蓝图数据把 Beacon 配方写成 Copper x1 和 Titanium x1。PC Gamer 建议多放 beacon，因为 Subnautica 2 不会为每个有用地点都给你清楚地图；Wand Digital 当前把解锁写成需要 2 次扫描。Beacon 适合标记基地、深水入口、稀有材料路线和安全返航点。',
+    fieldNotesTitle: 'Beacon 标记笔记',
+    fieldNotes: [
+      {
+        title: '先标出口，再标宝贝',
+        body: '稀有资源点插 Beacon 很有用，但洞口和回家路线往往更重要。尤其是你还没把路线正反方向都跑熟的时候。',
+      },
+      {
+        title: '用任务名，不要用心情名',
+        body: '“银洞出口”比“好地方”强很多。Beacon 名字要写你为什么会回来，不然几小时后还是要猜。',
+      },
+      {
+        title: '旧任务记得隐藏',
+        body: '旧标记有用，但不是永远有用。路线跑熟了、基地搬走了，就把信号关掉，让真正重要的标记露出来。',
+      },
+    ],
+    routeChecklistTitle: 'Beacon 使用习惯',
+    routeChecklist: [
+      '离开前就给 Beacon 改名。',
+      '不只标资源点，也标出口和回程线。',
+      '基地、深处路线、稀有资源更值得插 Beacon。',
+      '不再服务当前路线的标记及时隐藏。',
+    ],
     contentsLabel: '目录',
     routeTitle: 'Beacon 制作和摆放规划',
     routeSteps: [

@@ -48,6 +48,28 @@ const habitatBuilderCopy: Record<string, HabitatBuilderCopy> = {
     quickLabel: 'Quick answer',
     quickAnswer:
       'Current blueprint data lists Habitat Builder as locked behind scanning 2 Habitat Builders. After the blueprint unlocks, craft it at the Fabrication Station with Titanium x2, Glass x1, Basic Battery x1, and Copper Wire x1. Treat Copper Wire and battery prep as the easy-to-miss parts, then mark the first base with a Beacon before the layout grows.',
+    fieldNotesTitle: 'Field notes before building',
+    fieldNotes: [
+      {
+        title: 'Scan first, shop later',
+        body: 'It is easy to overfarm before the recipe is actually unlocked. Finish the scan requirement first, then let the PDA tell you what is still missing.',
+      },
+      {
+        title: 'Copper Wire is the quiet blocker',
+        body: 'Players usually remember Titanium. The thing that stalls the craft is often the Copper already spent on batteries. Save the wire before making spares.',
+      },
+      {
+        title: 'Build the ugly working base',
+        body: 'A hatch, power, locker wall, and clear return route matter more than a perfect first room. Make the base useful, then make it pretty.',
+      },
+    ],
+    routeChecklistTitle: 'Builder check',
+    routeChecklist: [
+      'Two Habitat Builder scans are finished.',
+      'Copper is split between battery and wire needs.',
+      'Beacon is ready for the starter base site.',
+      'First build plan is hatch, power, storage, then expansion.',
+    ],
     contentsLabel: 'Contents',
     routeTitle: 'Habitat Builder unlock plan',
     routeSteps: [
@@ -188,6 +210,28 @@ const habitatBuilderCopy: Record<string, HabitatBuilderCopy> = {
     quickLabel: '快速结论',
     quickAnswer:
       '当前蓝图数据写的是：Habitat Builder 需要扫描 2 个 Habitat Builder 解锁。解锁后在 Fabrication Station 用 Titanium x2、Glass x1、Basic Battery x1、Copper Wire x1 制作。出发前尤其要确认 Copper Wire 和 Basic Battery，因为它们都会吃前期 Copper。',
+    fieldNotesTitle: '建基地前的现场笔记',
+    fieldNotes: [
+      {
+        title: '先扫，再囤材料',
+        body: '配方没解锁之前乱囤材料，很容易囤偏。先把扫描要求做完，再让 PDA 告诉你到底缺什么。',
+      },
+      {
+        title: 'Copper Wire 经常是暗坑',
+        body: 'Titanium 大家通常记得，真正卡住制作的常常是前期铜都拿去做电池了。先把 Copper Wire 的材料留出来。',
+      },
+      {
+        title: '先盖能用的丑基地',
+        body: '舱门、供电、一排柜子、清楚回程路线，比第一间房完美对称更重要。先让基地有用，再让它好看。',
+      },
+    ],
+    routeChecklistTitle: 'Builder 检查',
+    routeChecklist: [
+      '2 次 Habitat Builder 扫描已经完成。',
+      'Copper 已经分给电池和 Copper Wire。',
+      '准备好 Beacon 标记第一座基地。',
+      '第一轮只做舱门、供电、储物，再扩建。',
+    ],
     contentsLabel: '目录',
     routeTitle: 'Habitat Builder 解锁规划',
     routeSteps: [

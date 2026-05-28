@@ -52,6 +52,28 @@ const scannerStationCopy: Record<string, ScannerStationCopy> = {
     quickLabel: 'Quick answer',
     quickAnswer:
       'Current Subnautica 2 Wiki and equipment-table sources list Scanner Station as a base utility tied to Titanium, Copper Wire, and System Chip style electronics. Build it after the base has power, storage, and a Beacon marker. Because recipe tables can word the chain differently during Early Access, check the in-game build menu before spending Silver-heavy electronics.',
+    fieldNotesTitle: 'Field notes for search bases',
+    fieldNotes: [
+      {
+        title: 'Only build it where repetition hurts',
+        body: 'A Scanner Station earns its cost when you keep searching the same area. If you only need one pickup, a Beacon note and a direct route may be faster.',
+      },
+      {
+        title: 'Do not starve the base for it',
+        body: 'Power and storage come first. A station in a weak base just adds one more expensive thing to manage before the base is ready.',
+      },
+      {
+        title: 'Keep a material locker for electronics',
+        body: 'System Chip work pulls on Silver and wiring chains. Put station materials in one labeled locker so they do not vanish into random upgrades.',
+      },
+    ],
+    routeChecklistTitle: 'Station check',
+    routeChecklist: [
+      'The base already has power and storage.',
+      'The nearby route needs repeated resource searches.',
+      'System Chip and Copper Wire materials are reserved.',
+      'Beacon marks the base before scan runs begin.',
+    ],
     contentsLabel: 'Contents',
     routeTitle: 'Scanner Station build plan',
     routeSteps: [
@@ -180,6 +202,28 @@ const scannerStationCopy: Record<string, ScannerStationCopy> = {
     quickLabel: '快速结论',
     quickAnswer:
       'Subnautica 2 Wiki 和当前装备表资料把 Scanner Station 写成基地工具，并和 Titanium、Copper Wire、System Chip 这类电子材料链联系在一起。抢先体验阶段配方表写法可能不同，花掉 Silver 相关电子材料前先看游戏内建造菜单。',
+    fieldNotesTitle: '搜索基地笔记',
+    fieldNotes: [
+      {
+        title: '只在反复搜索很痛苦时建',
+        body: 'Scanner Station 的价值来自重复搜索。如果只是拿一次材料，Beacon 笔记加一条直达路线可能更快。',
+      },
+      {
+        title: '别为了它饿死基地',
+        body: '供电和储物要先稳住。一个弱基地里硬塞 Scanner Station，只会多一个昂贵的管理负担。',
+      },
+      {
+        title: '电子材料单独放柜子',
+        body: 'System Chip 会牵出 Silver 和 wiring 压力。把站点材料放进一个有名字的柜子，别让它们被随机升级吃掉。',
+      },
+    ],
+    routeChecklistTitle: 'Station 检查',
+    routeChecklist: [
+      '基地已经有稳定供电和储物。',
+      '附近路线确实需要反复搜索资源。',
+      'System Chip 和 Copper Wire 材料已预留。',
+      '开始扫描前，Beacon 已经标好基地。',
+    ],
     contentsLabel: '目录',
     routeTitle: 'Scanner Station 建造规划',
     routeSteps: [

@@ -52,6 +52,28 @@ const moonpoolCopy: Record<string, MoonpoolCopy> = {
     quickLabel: 'Quick answer',
     quickAnswer:
       'Current Subnautica2.gg data lists Moonpool as a scan-unlocked build with multiple unlock leads, including scan and Data Box paths. Dexerto lists the current build cost as Titanium x5 with the Habitat Builder. PC Gamer and AllThingsHow both tie Moonpool planning to the Tadpole Dock and Vehicle Fabricator chain, while Shacknews points the common "insufficient space to dock" problem back to clearance and placement. Build it in open water with room below, mark the bay with a Beacon, then add Tadpole Dock and Vehicle Fabricator around the vehicle route.',
+    fieldNotesTitle: 'Field notes for Moonpool placement',
+    fieldNotes: [
+      {
+        title: 'Preview clearance from the vehicle angle',
+        body: 'The build preview can look fine from the base wall and still feel awful from the Tadpole approach. Swim the entry line before committing.',
+      },
+      {
+        title: 'Rebuild early if it feels cramped',
+        body: 'Titanium x5 is cheaper than fighting a bad bay for every vehicle trip. If docking already feels awkward, move the Moonpool before decorating around it.',
+      },
+      {
+        title: 'Name the vehicle base clearly',
+        body: 'A Moonpool becomes a route hub. Mark it with a Beacon that says what it serves, such as "Tadpole bay" or "east vehicle base".',
+      },
+    ],
+    routeChecklistTitle: 'Bay check',
+    routeChecklist: [
+      'Open water below and around the Moonpool.',
+      'Approach line is tested from the vehicle side.',
+      'Beacon marks the bay before expansion.',
+      'Tadpole Dock and Vehicle Fabricator have room nearby.',
+    ],
     contentsLabel: 'Contents',
     routeTitle: 'Moonpool setup route',
     routeSteps: [
@@ -185,6 +207,28 @@ const moonpoolCopy: Record<string, MoonpoolCopy> = {
     quickLabel: '快速结论',
     quickAnswer:
       'Subnautica2.gg 当前把 Moonpool 写成需要解锁的蓝图，并列出扫描和 Data Box 类路线。Dexerto 当前列出的建造材料是 Titanium x5，用 Habitat Builder 建造。PC Gamer 和 AllThingsHow 都把 Moonpool 放进 Tadpole Dock、Vehicle Fabricator 的载具链里；Shacknews 提到常见的 “insufficient space to dock” 问题通常要从空间和摆放位置修。建议在开阔水域先建 Moonpool，再围绕 Tadpole 进出路线摆 Dock 和 Vehicle Fabricator。',
+    fieldNotesTitle: 'Moonpool 摆放笔记',
+    fieldNotes: [
+      {
+        title: '从载具进出角度看空间',
+        body: '从基地墙面看预览可能很顺眼，但 Tadpole 进出时不一定舒服。确定前先游一遍进出线。',
+      },
+      {
+        title: '觉得挤就早点重建',
+        body: 'Titanium x5 比每次载具进出都别扭便宜多了。还没装饰前发现位置不舒服，直接搬。',
+      },
+      {
+        title: '给载具基地起清楚名字',
+        body: 'Moonpool 会变成路线中心。Beacon 名字要写它服务什么，比如 “Tadpole bay” 或 “east vehicle base”。',
+      },
+    ],
+    routeChecklistTitle: '载具舱检查',
+    routeChecklist: [
+      'Moonpool 下方和四周都有开阔水域。',
+      '从载具方向测试过进出路线。',
+      '扩建前已经用 Beacon 标记载具舱。',
+      'Tadpole Dock 和 Vehicle Fabricator 附近有空间。',
+    ],
     contentsLabel: '目录',
     routeTitle: 'Moonpool 设置路线',
     routeSteps: [
