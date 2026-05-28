@@ -325,9 +325,148 @@ const bloomBiofilmCopy: Record<string, BloomBiofilmCopy> = {
   },
 };
 
+bloomBiofilmCopy.ja = {
+  metadata: {
+    title:
+      'Subnautica 2 Bloom Biofilm ガイド - Sonic Resonator、Canker、Angel Comb',
+    description:
+      'Subnautica 2のBloom Biofilmガイド。Sonic Resonatorの蓄力操作、Bloom Canker、Angel Combの詰まり、Feedback Resonatorが必要になるタイミングを整理します。',
+  },
+  eyebrow: 'Subnautica 2 感染ブロッカー',
+  title: 'Subnautica 2 Bloom Biofilm ガイド',
+  description:
+    'Bloom Biofilmは、そこが道具で開けるルートだと教えてくる壁です。ナイフやScannerで何も起きないなら、無理に触り続けずSonic Resonatorを持ってきます。',
+  quickLabel: '要点',
+  quickAnswer:
+    'PC GamerはBloom BiofilmをSonic Resonatorで除去すると説明しています。Sonic Resonatorを装備し、レティクルのメーターが満ちるまで蓄力し、BiofilmやCankerへ向けて放ちます。GamesRadar+は最初の病気のAngel Comb周辺のBloom CankersにもSonic Resonatorが必要だと説明していますが、後半のAngel CombではFeedback Resonatorが必要になる場合があります。',
+  fieldNotesTitle: 'Bloom処理のメモ',
+  fieldNotes: [
+    {
+      title: '焦って半押ししない',
+      body: 'Sonic Resonatorは蓄力してから放つ道具です。メーターが溜まる前に撃つと、ルートが壊れているように見えます。',
+    },
+    {
+      title: 'Sonicで足りない場面がある',
+      body: '序盤のBloom BiofilmやCankerはSonic Resonatorで進みます。ただし後半の成熟したAngel Comb周辺ではFeedback Resonatorを要求されることがあります。',
+    },
+    {
+      title: '出口を作ってから掃除する',
+      body: 'Bloom地帯は障害物、敵、酸素管理が重なります。紫の根や白いCankerを見つめる前に、Tadpoleへ戻る線を決めておきます。',
+    },
+  ],
+  routeChecklistTitle: 'Bloom Biofilmを処理する前に',
+  routeChecklist: [
+    'Sonic Resonatorを持ち、電池に余裕がある。',
+    'レティクルのメーターが満ちるまで蓄力してから放つ。',
+    '後半ルートならFeedback Resonatorが必要か確認する。',
+    '感染ルートへ入る前に帰り道の目印を残す。',
+  ],
+  contentsLabel: '目次',
+  routeTitle: 'Bloom Biofilm除去手順',
+  routeSteps: [
+    {
+      title: 'Bloom系の障害物か確認する',
+      body: '感染した膜、白っぽい成長物、紫の根、通常操作では開かない洞窟や入口が目印です。生き物の膜のようなものが道をふさいでいるならBloom系の可能性が高いです。',
+    },
+    {
+      title: 'ScannerではなくSonic Resonatorを持つ',
+      body: 'All Things Howは、間違った道具を持っていると反応しない点を注意しています。Scannerやナイフをしまい、Sonic Resonatorを直接装備します。',
+    },
+    {
+      title: '蓄力して照準を合わせて放つ',
+      body: 'PC Gamerの説明通り、Sonic Resonatorを長押ししてレティクルのメーターを溜めます。狙いをBiofilmやCankerに置いたまま放ちます。',
+    },
+    {
+      title: 'Angel Combの前にCankerを探す',
+      body: 'GamesRadar+は最初の病気のAngel Combについて、Viral Cankerを破壊して回復させる流れを説明しています。中央が開かない時は、周囲のBloom地点を探します。',
+    },
+    {
+      title: '後半はFeedback Resonatorを疑う',
+      body: 'GamesRadar+は後半のAngel CombsではFeedback Resonatorが必要になると説明しています。Heat Tolerance周辺の初回ルートはSonic、後半の遠距離処理はFeedbackと分けて考えます。',
+    },
+  ],
+  tableTitle: 'Bloom Biofilmチェック表',
+  tableHeaders: ['問題', '処理方法'],
+  tableRows: [
+    ['Biofilmが入口をふさぐ', 'Sonic Resonatorを蓄力して膜へ撃つ。'],
+    ['反応がない', 'Sonic Resonatorを直接装備し、成長物へ近づいて狙い直す。'],
+    [
+      'Angel Combが開かない',
+      '接続されたBloom Cankersやjuvenile Comb地点を探す。',
+    ],
+    ['蓄力中に邪魔される', '回復、フレア、酸素の余裕を持ってから処理する。'],
+    ['後半Angel Combで効かない', 'Feedback Resonatorの作成を確認する。'],
+  ],
+  visualTitle: '処理順カード',
+  visualItems: [
+    {
+      label: '道具',
+      value: 'Sonic',
+      note: '普通の道具ではBloomは消えない。',
+    },
+    {
+      label: '対象',
+      value: 'Cankers',
+      note: '白い成長物や感染膜を先に処理する。',
+    },
+    {
+      label: '解放',
+      value: 'Adaptation',
+      note: 'BloomルートがきれいになるとAngel Combが進む。',
+    },
+  ],
+  cautionTitle: '酸素ぎりぎりで掃除しない',
+  cautionBody:
+    'Sonic Resonatorは蓄力が必要です。Bloom地帯には敵や曲がった洞窟も多いので、酸素が残り少ない状態で始めると失敗しやすくなります。一度戻って整えてから処理した方が早いです。',
+  faqTitle: 'FAQ',
+  faqs: [
+    {
+      title: 'Bloom Biofilmはどう消す？',
+      body: 'Sonic Resonatorを装備し、レティクルのメーターが満ちるまで蓄力してからBiofilmへ放ちます。',
+    },
+    {
+      title: 'なぜ反応しない？',
+      body: '道具が違う、狙いが外れている、距離が遠い、または後半ルートでFeedback Resonatorが必要な対象かもしれません。',
+    },
+    {
+      title: 'Bloom BiofilmとBloom Cankerは同じ？',
+      body: '同じBloom系の障害物ですが、見た目や配置が違います。初回のAngel Comb周辺ではSonic Resonatorが主な解決策です。',
+    },
+    {
+      title: 'いつFeedback Resonatorが必要？',
+      body: 'GamesRadar+は後半のAngel CombsでFeedback Resonatorが必要になると説明しています。Sonicで進まない時は改造ルートを確認しましょう。',
+    },
+  ],
+  readNextTitle: '次に読む',
+  related: [
+    { href: Routes.Subnautica2AngelComb, label: 'Angel Comb ガイド' },
+    { href: Routes.Subnautica2HeatTolerance, label: 'Heat Tolerance ガイド' },
+    { href: Routes.Subnautica2SonicResonator, label: 'Sonic Resonator ガイド' },
+    {
+      href: Routes.Subnautica2FeedbackResonator,
+      label: 'Feedback Resonator ガイド',
+    },
+    { href: Routes.Subnautica2AirTank, label: 'Air Tank / 酸素ガイド' },
+    { href: Routes.Subnautica2Wakemaker, label: 'Wakemaker ガイド' },
+    { href: Routes.Subnautica2Biolab, label: 'Biolab / Biomods ガイド' },
+    { href: Routes.Subnautica2Resources, label: '資源ガイド' },
+  ],
+  sourcesTitle: 'ソースメモ',
+  sourceBody:
+    '2026年5月29日にPC Gamer、GamesRadar+、GAMES.GG、All Things HowのBloom Biofilm / Bloom Canker / Sonic Resonator情報を確認しました。Early Access中なので、Bloom挙動やFeedback Resonator要件は今後のパッチで変わる可能性があります。',
+  cardKicker: 'Bloom障害物カード',
+  cardBody:
+    'Sonic Resonator蓄力、Bloom Biofilm除去、Bloom Canker順序、Angel Combの詰まり、Feedback Resonatorタイミング、酸素安全。',
+  cardTypeLabel: '種類',
+  cardTypeValue: '問題解決',
+  cardVerifiedLabel: '確認日',
+  cardStatusLabel: '状態',
+  cardStatusValue: 'Early Access',
+};
+
 const fallbackCopy = bloomBiofilmCopy.en;
 
-for (const locale of ['ja', 'de', 'fr', 'pt-BR', 'es-419', 'ko', 'ru']) {
+for (const locale of ['de', 'fr', 'pt-BR', 'es-419', 'ko', 'ru']) {
   bloomBiofilmCopy[locale] = {
     ...fallbackCopy,
     metadata: {
