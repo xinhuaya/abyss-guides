@@ -99,14 +99,19 @@ export async function generateMetadata({
 }): Promise<Metadata | undefined> {
   const { locale } = await params;
   const isZh = locale === 'zh';
+  const isJa = locale === 'ja';
 
   return constructMetadata({
-    title: isZh
-      ? 'Subnautica 2 Atacamite 在哪里找 - Alien Ruins 路线'
-      : 'Where to Find Atacamite in Subnautica 2 - Alien Ruins Route',
-    description: isZh
-      ? 'Subnautica 2 Atacamite 获取路线：Alien Ruins、Mangalloy Ingot、Metal Farm、深层采矿准备和 Early Access 补丁注意点。'
-      : 'Find Atacamite in Subnautica 2 with Alien Ruins route notes, Mangalloy Ingot uses, Metal Farm planning, depth requirements, and Early Access caveats.',
+    title: isJa
+      ? 'Subnautica 2 Atacamite ガイド - Alien Ruins採掘ルート'
+      : isZh
+        ? 'Subnautica 2 Atacamite 在哪里找 - Alien Ruins 路线'
+        : 'Where to Find Atacamite in Subnautica 2 - Alien Ruins Route',
+    description: isJa
+      ? 'Subnautica 2のAtacamite採掘ルート。Alien Ruins、Mangalloy Ingot、Metal Farm、深度準備、Early Access中の注意点をまとめます。'
+      : isZh
+        ? 'Subnautica 2 Atacamite 获取路线：Alien Ruins、Mangalloy Ingot、Metal Farm、深层采矿准备和 Early Access 补丁注意点。'
+        : 'Find Atacamite in Subnautica 2 with Alien Ruins route notes, Mangalloy Ingot uses, Metal Farm planning, depth requirements, and Early Access caveats.',
     locale,
     pathname: Routes.Subnautica2Atacamite,
   });
@@ -188,6 +193,82 @@ const faqs = [
   },
 ];
 
+const jaRouteNotes = [
+  {
+    title: 'Alien Ruins Research Baseを起点にする',
+    body: '現在のルート情報はAtacamiteをAlien Ruins周辺へ向けています。Research Baseを基準点にすると、あとで同じ採掘ルートを再現しやすくなります。',
+  },
+  {
+    title: '深部採掘の準備を先に済ませる',
+    body: 'PC GamerはAtacamiteを序盤の快適な深度より深いAlien Ruinsルートとして扱っています。Tadpole Depth Moduleを準備してから、採掘ルートとして見ます。',
+  },
+  {
+    title: '濃い緑の柱状結晶を探す',
+    body: 'Atacamiteのノードは見分けやすい見た目です。鉱脈を見つけたらSonic Resonatorで採り、Mangalloy用に再訪できるようルートを残します。',
+  },
+  {
+    title: '一つだけ取って帰らない',
+    body: 'AtacamiteはMangalloy Ingot、Metal Farm、後半のPower Plant進行に関わります。安全に採れるなら、少し多めに持ち帰る方が二度手間を減らせます。',
+  },
+  {
+    title: 'Troiliteとセットで考える',
+    body: 'MangalloyはAtacamiteとTroiliteを一緒に考える素材です。Atacamiteを先に見つけたら、次の深部遠征にTroiliteを入れるか判断します。',
+  },
+];
+
+const jaUseRows = [
+  [
+    'Mangalloy Ingot',
+    'AtacamiteはMangalloy Ingotクラフトに関わる希少素材の一つです。',
+  ],
+  [
+    'Metal Farmチェーン',
+    'Metal FarmはMangalloy Ingotを要求するため、Atacamite不足が金属生産を間接的に止めます。',
+  ],
+  [
+    'Alien Power Plant',
+    '後半の修理や進行でMangalloy Ingotが複数必要になる可能性があるため、Atacamiteは早めに貯める価値があります。',
+  ],
+  [
+    'ルート記録',
+    '序盤素材より深い場所にあるため、一回だけ拾うより再訪できるルートを作る方が大事です。',
+  ],
+];
+
+const jaFieldNotes = [
+  {
+    title: '採掘前に帰り道を残す',
+    body: '次回同じ鉱脈に戻れないなら、そのAtacamite回収はほとんど運です。Beaconを置くか、Research Baseからの進み方をメモします。',
+  },
+  {
+    title: 'ちゃんとした採掘装備で出る',
+    body: 'これは通りすがりの拾い物ではありません。Sonic Resonator、深度、電力、空き容量、帰り時間をそろえてから出ます。',
+  },
+  {
+    title: 'AtacamiteとTroiliteを同じ箱に置く',
+    body: 'Mangalloy素材が別々の箱に散ると、あとで数を間違えやすくなります。rare-metal用の箱を一つ作るだけでかなり楽になります。',
+  },
+];
+
+const jaFaqs = [
+  {
+    title: 'Subnautica 2のAtacamiteはどこ？',
+    body: '現在のルート情報は、深めのAlien Ruinsエリアを指しています。PC GamerはAlien Ruins Research Baseの東北東、alien dwellingsやquartzノード付近の鉱脈を説明しています。',
+  },
+  {
+    title: 'Atacamite前に何を準備する？',
+    body: 'Tadpole Depth Module、Sonic Resonator、酸素の余裕、ルートを残す方法を準備します。短い泳ぎではなく深部採掘として扱います。',
+  },
+  {
+    title: 'Atacamiteは何に使う？',
+    body: 'Mangalloy Ingotの希少素材として使います。そこからMetal Farmや後半のAlien系進行へつながります。',
+  },
+  {
+    title: 'Atacamiteは多めに採るべき？',
+    body: '安全に帰れるなら多めに採る価値があります。深部ルートを何度も走るより、余裕のある時に数回分を持ち帰る方が効率的です。',
+  },
+];
+
 export default async function AtacamiteGuidePage({
   params,
 }: {
@@ -195,86 +276,138 @@ export default async function AtacamiteGuidePage({
 }) {
   const { locale } = await params;
   const isZh = locale === 'zh';
-  const activeRouteNotes = isZh ? zhRouteNotes : routeNotes;
-  const activeUseRows = isZh ? zhUseRows : useRows;
-  const activeFieldNotes = isZh ? zhFieldNotes : fieldNotes;
-  const activeFaqs = isZh ? zhFaqs : faqs;
-  const pageCopy = isZh
+  const isJa = locale === 'ja';
+  const activeRouteNotes = isJa
+    ? jaRouteNotes
+    : isZh
+      ? zhRouteNotes
+      : routeNotes;
+  const activeUseRows = isJa ? jaUseRows : isZh ? zhUseRows : useRows;
+  const activeFieldNotes = isJa
+    ? jaFieldNotes
+    : isZh
+      ? zhFieldNotes
+      : fieldNotes;
+  const activeFaqs = isJa ? jaFaqs : isZh ? zhFaqs : faqs;
+  const pageCopy = isJa
     ? {
         articleDescription:
-          'Atacamite 路线笔记，覆盖 Alien Ruins、Mangalloy Ingot、Metal Farm 和深层采矿准备。',
-        breadcrumbName: 'Subnautica 2 Atacamite 在哪里找',
-        eyebrow: 'Alien Ruins 材料路线',
-        title: 'Subnautica 2 Atacamite 在哪里找',
+          'Atacamiteルートメモ。Alien Ruins、Mangalloy Ingot、Metal Farm、深部採掘準備を整理します。',
+        breadcrumbName: 'Subnautica 2 Atacamite ガイド',
+        eyebrow: 'Alien Ruins素材ルート',
+        title: 'Subnautica 2 Atacamite ガイド',
         description:
-          'Atacamite 是一条更深的材料路线，因为它会进入 Mangalloy Ingot 制作链。这页用实用、可复跑的方式整理 Subnautica 2 Early Access 的采集规划。',
-        quickLabel: '快速答案',
+          'AtacamiteはMangalloy Ingotにつながる深部素材です。このページではSubnautica 2 Early AccessのAtacamite採掘を、再訪できるルートとして整理します。',
+        quickLabel: '要点',
         quickAnswer:
-          '拿到 Tadpole Depth Module 之后，再去较深的 Alien Ruins 路线找 Atacamite。PC Gamer 提到一个较强矿簇在 Alien Ruins Research Base 东北偏东方向，靠近外星居住结构和 quartz 节点。先把它留给 Mangalloy，不要一开始就当普通矿随便花。',
-        routeTitle: '路线笔记',
-        useTitle: '为什么 Atacamite 重要',
+          'Tadpole Depth Moduleを取ってから、深めのAlien RuinsルートでAtacamiteを探します。PC GamerはAlien Ruins Research Baseの東北東、alien dwellingsやquartzノード付近の鉱脈を説明しています。最初はMangalloy用に予約し、普通の鉱石のように雑に使わない方が安全です。',
+        routeTitle: 'ルートメモ',
+        useTitle: 'Atacamiteが重要な理由',
         useHeader: '用途',
-        planningHeader: '规划建议',
-        safeTitle: '安全刷矿规则',
+        planningHeader: '計画メモ',
+        safeTitle: '安全な採掘ルール',
         safeBody:
-          '把 Atacamite 当成计划好的深层采矿，不要当成路过捡矿。如果你已经安全到达 Alien Ruins，就尽量带回足够几次 Mangalloy 制作的量，然后更新材料箱标记，避免后面误用。',
-        fieldNotesTitle: '实用笔记',
-        faqTitle: '常见问题',
-        readNextTitle: '继续看',
-        related: [
-          ['Mangalloy Ingot 指南', Routes.Subnautica2Mangalloy],
-          ['Troilite 获取路线', Routes.Subnautica2Troilite],
-          ['Conduit Crystal 指南', Routes.Subnautica2ConduitCrystal],
-          ['Karakorum Power Plant 路线', Routes.Subnautica2KarakorumPowerPlant],
-          ['Metal Farm 指南', Routes.Subnautica2MetalFarm],
-        ],
-        sourceTitle: '来源说明',
-        sourceBody:
-          '2026 年 5 月 29 日复查：对照当前 Atacamite 路线报道、Mangalloy 规划和附近深层材料页。Subnautica 2 资源补丁后需要重查。',
-        sourceLabel: 'PC Gamer Atacamite 指南',
-        routeMindsetTitle: '路线心态',
-        routeMindsetBody:
-          'Atacamite 最值得记录的是地标、方向、深度和返程路。这四个信息比一句“这里有矿”更有用。',
-      }
-    : {
-        articleDescription:
-          'Atacamite route notes for Alien Ruins, Mangalloy Ingot, Metal Farm, and deep mining prep.',
-        breadcrumbName: 'Where to Find Atacamite in Subnautica 2',
-        eyebrow: 'Alien Ruins material route',
-        title: 'Where to Find Atacamite in Subnautica 2',
-        description:
-          'Atacamite is a deeper-route resource that matters because it feeds Mangalloy Ingots. This guide keeps the route practical and patch-aware for Subnautica 2 Early Access.',
-        quickLabel: 'Quick answer',
-        quickAnswer:
-          'Look for Atacamite around lower-depth Alien Ruins routes after you have the Tadpole Depth Module. PC Gamer reports a strong cluster east-northeast of the Alien Ruins Research Base, near alien dwellings and quartz nodes. Save it for Mangalloy before you treat it like spare mineral stock.',
-        routeTitle: 'Route notes',
-        useTitle: 'Why Atacamite matters',
-        useHeader: 'Use',
-        planningHeader: 'Planning note',
-        safeTitle: 'Safe farming rule',
-        safeBody:
-          'Treat Atacamite as a planned mining trip, not a casual pickup. If you have already reached the Alien Ruins safely, gather enough for several Mangalloy crafts before leaving, then update your resource storage so you do not accidentally spend all of it.',
-        fieldNotesTitle: 'Field notes',
+          'Atacamiteは計画した深部採掘として扱います。Alien Ruinsへ安全に届くなら、Mangalloy数回分を持ち帰り、素材箱のラベルも更新して誤消費を防ぎます。',
+        fieldNotesTitle: '実用メモ',
         faqTitle: 'FAQ',
-        readNextTitle: 'Read next',
+        readNextTitle: '次に読む',
         related: [
-          ['Mangalloy Ingot Guide', Routes.Subnautica2Mangalloy],
-          ['Troilite Location', Routes.Subnautica2Troilite],
-          ['Conduit Crystal Guide', Routes.Subnautica2ConduitCrystal],
+          ['Mangalloy Ingot ガイド', Routes.Subnautica2Mangalloy],
+          ['Troilite ガイド', Routes.Subnautica2Troilite],
+          ['Conduit Crystal ガイド', Routes.Subnautica2ConduitCrystal],
           [
-            'Karakorum Power Plant Route',
+            'Karakorum Power Plantルート',
             Routes.Subnautica2KarakorumPowerPlant,
           ],
-          ['Metal Farm Guide', Routes.Subnautica2MetalFarm],
+          ['Metal Farm ガイド', Routes.Subnautica2MetalFarm],
         ],
-        sourceTitle: 'Source note',
+        sourceTitle: 'ソースメモ',
         sourceBody:
-          'Checked May 29, 2026 against current Atacamite route reporting, Mangalloy planning notes, and nearby deep-route material pages. Recheck after Subnautica 2 resource patches.',
-        sourceLabel: 'PC Gamer Atacamite guide',
-        routeMindsetTitle: 'Route mindset',
+          '2026年5月29日にPC GamerのAtacamiteルート情報、Mangalloy計画、周辺の深部素材ページを確認しました。Subnautica 2はEarly Access中なので、資源位置や必要数は今後のパッチで再確認が必要です。',
+        sourceLabel: 'PC Gamer Atacamiteガイド',
+        routeMindsetTitle: 'ルートの考え方',
         routeMindsetBody:
-          'Atacamite is worth documenting by landmark, bearing, depth, and return path. Those four notes are more useful than a vague resource label.',
-      };
+          'Atacamiteはランドマーク、方位、深度、帰り道で記録すると役に立ちます。「この辺にある」より、その四つのメモの方が再訪に強いです。',
+      }
+    : isZh
+      ? {
+          articleDescription:
+            'Atacamite 路线笔记，覆盖 Alien Ruins、Mangalloy Ingot、Metal Farm 和深层采矿准备。',
+          breadcrumbName: 'Subnautica 2 Atacamite 在哪里找',
+          eyebrow: 'Alien Ruins 材料路线',
+          title: 'Subnautica 2 Atacamite 在哪里找',
+          description:
+            'Atacamite 是一条更深的材料路线，因为它会进入 Mangalloy Ingot 制作链。这页用实用、可复跑的方式整理 Subnautica 2 Early Access 的采集规划。',
+          quickLabel: '快速答案',
+          quickAnswer:
+            '拿到 Tadpole Depth Module 之后，再去较深的 Alien Ruins 路线找 Atacamite。PC Gamer 提到一个较强矿簇在 Alien Ruins Research Base 东北偏东方向，靠近外星居住结构和 quartz 节点。先把它留给 Mangalloy，不要一开始就当普通矿随便花。',
+          routeTitle: '路线笔记',
+          useTitle: '为什么 Atacamite 重要',
+          useHeader: '用途',
+          planningHeader: '规划建议',
+          safeTitle: '安全刷矿规则',
+          safeBody:
+            '把 Atacamite 当成计划好的深层采矿，不要当成路过捡矿。如果你已经安全到达 Alien Ruins，就尽量带回足够几次 Mangalloy 制作的量，然后更新材料箱标记，避免后面误用。',
+          fieldNotesTitle: '实用笔记',
+          faqTitle: '常见问题',
+          readNextTitle: '继续看',
+          related: [
+            ['Mangalloy Ingot 指南', Routes.Subnautica2Mangalloy],
+            ['Troilite 获取路线', Routes.Subnautica2Troilite],
+            ['Conduit Crystal 指南', Routes.Subnautica2ConduitCrystal],
+            [
+              'Karakorum Power Plant 路线',
+              Routes.Subnautica2KarakorumPowerPlant,
+            ],
+            ['Metal Farm 指南', Routes.Subnautica2MetalFarm],
+          ],
+          sourceTitle: '来源说明',
+          sourceBody:
+            '2026 年 5 月 29 日复查：对照当前 Atacamite 路线报道、Mangalloy 规划和附近深层材料页。Subnautica 2 资源补丁后需要重查。',
+          sourceLabel: 'PC Gamer Atacamite 指南',
+          routeMindsetTitle: '路线心态',
+          routeMindsetBody:
+            'Atacamite 最值得记录的是地标、方向、深度和返程路。这四个信息比一句“这里有矿”更有用。',
+        }
+      : {
+          articleDescription:
+            'Atacamite route notes for Alien Ruins, Mangalloy Ingot, Metal Farm, and deep mining prep.',
+          breadcrumbName: 'Where to Find Atacamite in Subnautica 2',
+          eyebrow: 'Alien Ruins material route',
+          title: 'Where to Find Atacamite in Subnautica 2',
+          description:
+            'Atacamite is a deeper-route resource that matters because it feeds Mangalloy Ingots. This guide keeps the route practical and patch-aware for Subnautica 2 Early Access.',
+          quickLabel: 'Quick answer',
+          quickAnswer:
+            'Look for Atacamite around lower-depth Alien Ruins routes after you have the Tadpole Depth Module. PC Gamer reports a strong cluster east-northeast of the Alien Ruins Research Base, near alien dwellings and quartz nodes. Save it for Mangalloy before you treat it like spare mineral stock.',
+          routeTitle: 'Route notes',
+          useTitle: 'Why Atacamite matters',
+          useHeader: 'Use',
+          planningHeader: 'Planning note',
+          safeTitle: 'Safe farming rule',
+          safeBody:
+            'Treat Atacamite as a planned mining trip, not a casual pickup. If you have already reached the Alien Ruins safely, gather enough for several Mangalloy crafts before leaving, then update your resource storage so you do not accidentally spend all of it.',
+          fieldNotesTitle: 'Field notes',
+          faqTitle: 'FAQ',
+          readNextTitle: 'Read next',
+          related: [
+            ['Mangalloy Ingot Guide', Routes.Subnautica2Mangalloy],
+            ['Troilite Location', Routes.Subnautica2Troilite],
+            ['Conduit Crystal Guide', Routes.Subnautica2ConduitCrystal],
+            [
+              'Karakorum Power Plant Route',
+              Routes.Subnautica2KarakorumPowerPlant,
+            ],
+            ['Metal Farm Guide', Routes.Subnautica2MetalFarm],
+          ],
+          sourceTitle: 'Source note',
+          sourceBody:
+            'Checked May 29, 2026 against current Atacamite route reporting, Mangalloy planning notes, and nearby deep-route material pages. Recheck after Subnautica 2 resource patches.',
+          sourceLabel: 'PC Gamer Atacamite guide',
+          routeMindsetTitle: 'Route mindset',
+          routeMindsetBody:
+            'Atacamite is worth documenting by landmark, bearing, depth, and return path. Those four notes are more useful than a vague resource label.',
+        };
   const baseUrl = getBaseUrl().replace(/\/$/, '');
   const pageUrl = getUrlWithLocale(Routes.Subnautica2Atacamite, locale).replace(
     /\/$/,
