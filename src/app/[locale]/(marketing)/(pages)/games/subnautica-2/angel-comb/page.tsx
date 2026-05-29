@@ -455,9 +455,153 @@ angelCombCopy.zh = {
   cardStatusValue: '抢先体验',
 };
 
+angelCombCopy.ja = {
+  metadata: {
+    title:
+      'Subnautica 2 Angel Comb ガイド - Bloom Biofilm、Heat Tolerance、Sonic Resonator',
+    description:
+      'Subnautica 2のAngel Combガイド。Bloom Biofilm除去、Sonic Resonator準備、Heat Tolerance解放、酸素安全、熱地帯への進行を整理します。',
+  },
+  eyebrow: 'Subnautica 2 Angel Combルート',
+  title: 'Subnautica 2 Angel Comb ガイド',
+  description:
+    'Angel Combは普通に拾う素材ではありません。中央が開かない時は、たいていBloomルートの掃除が足りていません。Sonic Resonator、酸素、帰り道を用意して、小さな洞窟仕事として進めます。',
+  quickLabel: '要点',
+  quickAnswer:
+    'PC Gamerは最初のAngel CombをLifepodから北西約200m、方位300付近と説明しています。GamesRadar+は約190から200m北西、方位285付近と近い範囲を挙げています。Bloomを処理するとHeat Toleranceを得られます。GAMES.GGは、中央のAngel Combへ進む前に小さなBloom地点を処理する流れを説明しており、Sonic Resonatorが必要です。酸素強化、Air Bladder、回復、敵をやり過ごす手段を持っていきましょう。',
+  fieldNotesTitle: '最初のAngel Combメモ',
+  fieldNotes: [
+    {
+      title: '方位は検索範囲として見る',
+      body: 'PC GamerとGamesRadar+で方位が少し違いますが、地形と上下移動があるルートでは普通です。北西方向を探す範囲として使い、あとはBloomの配置を追います。',
+    },
+    {
+      title: '小さなBloom地点を先に処理する',
+      body: '中央だけを触っても進まない時は、周辺の小さなBloom地点が残っている可能性があります。寄り道ではなく手順として見ます。',
+    },
+    {
+      title: 'Heat Toleranceを確認してから帰る',
+      body: 'このAngel Combの目的はHeat Toleranceです。敵が落ち着いたからといってすぐ帰らず、解放が入ったか確認します。',
+    },
+  ],
+  routeChecklistTitle: 'Angel Combへ行く前に',
+  routeChecklist: [
+    'Sonic Resonatorを用意した。',
+    'Standard Air Tank、Air Bladder、回復を持った。',
+    '北西の方位は目安として使い、Bloomの跡を追う。',
+    '中央Angel Combへ戻る前に周辺Bloom地点を処理する。',
+  ],
+  contentsLabel: '目次',
+  routeTitle: 'Angel Comb処理手順',
+  routeSteps: [
+    {
+      title: '方位を一点ではなく扇形で見る',
+      body: 'PC Gamerは約200m北西、方位300。GamesRadar+は約190から200m北西、方位285付近としています。どちらも同じ探索ポケットを示しているので、一つの数字にこだわりすぎない方が早いです。',
+    },
+    {
+      title: '小さなBloom地点を先に片付ける',
+      body: 'GAMES.GGは、中央のAngel Combにつながる小さなBloom infestationsを処理する流れとして説明しています。大きな構造物が閉じたままなら、周辺のBloom地点を探します。',
+    },
+    {
+      title: 'Sonic Resonatorを持ってから潜る',
+      body: '現在の攻略ではBloom処理にSonic Resonatorが結びついています。感染膜が見えているのに進まないなら、一度戻って道具を作る方が安全です。',
+    },
+    {
+      title: '洞窟ルートとして酸素を見積もる',
+      body: 'このルートは部屋、戻り、敵の圧力が重なります。Standard Air TankとAir Bladderがあるだけで、かなり落ち着いて処理できます。',
+    },
+    {
+      title: 'Heat Toleranceを取ってから切り上げる',
+      body: '最初のAngel Combの目的はHeat Toleranceです。解放できたら、体力、酸素、ルート記憶に余裕がない限り、その場で熱地帯の買い物まで広げない方が無難です。',
+    },
+  ],
+  tableTitle: 'Angel Combチェックリスト',
+  tableHeaders: ['必要なもの', '理由'],
+  tableRows: [
+    ['Sonic Resonator', '現在のBloom処理ガイドで必要な道具です。'],
+    ['Standard Air Tank', '部屋移動と戻りの余裕を作ります。'],
+    ['Air Bladder', '洞窟ルートが崩れた時の緊急脱出に使えます。'],
+    ['Medical Kit', '敵の細かいダメージでルートが崩れるのを防ぎます。'],
+    ['目印', '北西の洞窟は一度見つけても、二度目に迷いやすいです。'],
+  ],
+  visualTitle: 'Bloomルートカード',
+  visualItems: [
+    {
+      label: '探す',
+      value: 'NW',
+      note: 'Lifepodから約190から200m北西。',
+    },
+    {
+      label: '処理',
+      value: 'Bloom',
+      note: '小さな地点を先に、中央Angel Combは後で。',
+    },
+    {
+      label: '解放',
+      value: 'Heat',
+      note: 'Heat Toleranceを確認してから帰る。',
+    },
+  ],
+  cautionTitle: '中央だけを押し続けない',
+  cautionBody:
+    'Angel Combが反応しない時、正面から何度も触るより周辺のBloom地点を見直す方が早いです。道具、酸素、周辺処理のどれかが欠けていることが多いです。',
+  faqTitle: 'FAQ',
+  faqs: [
+    {
+      title: 'Angel Combはどこ？',
+      body: '現在の主要ガイドでは、Lifepodから北西約190から200m、方位285から300付近の探索範囲として扱われています。',
+    },
+    {
+      title: '何を持っていく？',
+      body: 'Sonic Resonator、Standard Air Tank、Air Bladder、Medical Kitを持っていくと安定します。',
+    },
+    {
+      title: '中央Angel Combが開かないのはなぜ？',
+      body: '周辺のBloom地点やCankerが残っている可能性があります。中央だけでなく接続された小さな地点を確認します。',
+    },
+    {
+      title: 'Heat Toleranceはここで取れる？',
+      body: 'はい。最初のAngel Combルートの主目的はHeat Tolerance解放です。帰る前に解放を確認しましょう。',
+    },
+    {
+      title: 'Feedback Resonatorは必要？',
+      body: '最初のHeat ToleranceルートはSonic Resonatorが中心です。後半のAngel CombではFeedback Resonatorが必要になる場合があります。',
+    },
+  ],
+  readNextTitle: '次に読む',
+  related: [
+    { href: Routes.Subnautica2BloomBiofilm, label: 'Bloom Biofilm ガイド' },
+    { href: Routes.Subnautica2HeatTolerance, label: 'Heat Tolerance ガイド' },
+    { href: Routes.Subnautica2SonicResonator, label: 'Sonic Resonator ガイド' },
+    {
+      href: Routes.Subnautica2FeedbackResonator,
+      label: 'Feedback Resonator ガイド',
+    },
+    { href: Routes.Subnautica2AirTank, label: 'Air Tank / 酸素ガイド' },
+    { href: Routes.Subnautica2Wakemaker, label: 'Wakemaker ガイド' },
+    { href: Routes.Subnautica2Biolab, label: 'Biolab / Biomods ガイド' },
+    {
+      href: Routes.Subnautica2BioscannerBiomods,
+      label: 'Bioscanner / Biomods ガイド',
+    },
+    { href: Routes.Subnautica2AxumVision, label: 'Axum Vision ガイド' },
+  ],
+  sourcesTitle: 'ソースメモ',
+  sourceBody:
+    '2026年5月29日にPC Gamer、GamesRadar+、GAMES.GG、GameWith、PC Gamer Feedback Resonator記事を確認しました。Early Access中なので、方位、Bloom処理手順、Heat Tolerance要件は今後のパッチで変わる可能性があります。',
+  cardKicker: 'Angel Combカード',
+  cardBody:
+    '北西探索範囲、Bloom Biofilm処理順、Sonic Resonator準備、Feedback Resonator後半要件、酸素余裕、Heat Tolerance解放。',
+  cardTypeLabel: '種類',
+  cardTypeValue: 'ルートガイド',
+  cardVerifiedLabel: '確認日',
+  cardStatusLabel: '状態',
+  cardStatusValue: 'Early Access',
+};
+
 const fallbackCopy = angelCombCopy.en;
 
-for (const locale of ['ja', 'de', 'fr', 'pt-BR', 'es-419', 'ko', 'ru']) {
+for (const locale of ['de', 'fr', 'pt-BR', 'es-419', 'ko', 'ru']) {
   angelCombCopy[locale] = {
     ...fallbackCopy,
     metadata: {
