@@ -788,6 +788,7 @@ const zhJaRoutes = [
   Routes.Subnautica2ConduitCrystal,
   Routes.Subnautica2FeedbackResonator,
   Routes.Subnautica2FiberMesh,
+  Routes.Subnautica2InteractiveMap,
   Routes.Subnautica2MildAcid,
   Routes.Subnautica2Moonpool,
   Routes.Subnautica2PowerCell,

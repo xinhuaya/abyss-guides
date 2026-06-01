@@ -90,6 +90,7 @@ export enum Routes {
   Subnautica2TroiliteSoftlock = '/games/subnautica-2/troilite-softlock',
   Subnautica2Crafting = '/games/subnautica-2/crafting',
   Subnautica2Map = '/games/subnautica-2/map',
+  Subnautica2InteractiveMap = '/games/subnautica-2/interactive-map',
   Subnautica2Coop = '/games/subnautica-2/co-op-guide',
   Subnautica2Updates = '/games/subnautica-2/roadmap',
   Subnautica2ReleaseDate = '/games/subnautica-2/release-date',
