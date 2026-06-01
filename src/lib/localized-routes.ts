@@ -785,6 +785,7 @@ const zhJaRoutes = [
   Routes.Subnautica2BioscannerBiomods,
   Routes.Subnautica2BloomBiofilm,
   Routes.Subnautica2Celestine,
+  Routes.Subnautica2CoopPlayerCount,
   Routes.Subnautica2ConduitCrystal,
   Routes.Subnautica2FeedbackResonator,
   Routes.Subnautica2FiberMesh,

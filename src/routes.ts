@@ -92,6 +92,7 @@ export enum Routes {
   Subnautica2Map = '/games/subnautica-2/map',
   Subnautica2InteractiveMap = '/games/subnautica-2/interactive-map',
   Subnautica2Coop = '/games/subnautica-2/co-op-guide',
+  Subnautica2CoopPlayerCount = '/games/subnautica-2/co-op-player-count',
   Subnautica2Updates = '/games/subnautica-2/roadmap',
   Subnautica2ReleaseDate = '/games/subnautica-2/release-date',
   Subnautica2Hotfix2 = '/games/subnautica-2/hotfix-2',
