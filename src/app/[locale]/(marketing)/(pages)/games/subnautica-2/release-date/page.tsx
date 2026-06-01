@@ -157,6 +157,8 @@ const releaseDateCopy: Record<string, ReleaseDateCopy> = {
     readNextTitle: 'Read next',
     related: [
       { href: Routes.Subnautica2Updates, label: 'Roadmap and Updates' },
+      { href: Routes.Subnautica2Ps5ReleaseDate, label: 'PS5 Release Date' },
+      { href: Routes.Subnautica2XboxGamePass, label: 'Xbox Game Pass Guide' },
       { href: Routes.Subnautica2Hotfix2, label: 'Hotfix 2 Changes' },
       { href: Routes.Subnautica2Coop, label: 'Co-op Guide' },
       { href: Routes.Subnautica2Map, label: 'Map Guide' },
