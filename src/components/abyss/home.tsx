@@ -10,7 +10,9 @@ import {
   BoxesIcon,
   CalendarDaysIcon,
   CompassIcon,
+  Gamepad2Icon,
   MapIcon,
+  MonitorPlayIcon,
   RadioIcon,
   SearchIcon,
   TimerResetIcon,
@@ -40,6 +42,10 @@ type HomeCopy = {
   latestDescription: string;
   latestLinks: HomeLink[];
   openLabel: string;
+  platformTitle: string;
+  platformHeading: string;
+  platformDescription: string;
+  platformLinks: HomeLink[];
   popularTitle: string;
   popularHeading: string;
   popularDescription: string;
@@ -116,6 +122,36 @@ const enCopy: HomeCopy = {
       href: Routes.Subnautica2SilverAfterHotfix2,
       icon: AlertTriangleIcon,
       label: 'Updated',
+    },
+  ],
+  platformTitle: 'Platform answers',
+  platformHeading: 'Buying, installing, or waiting?',
+  platformDescription:
+    'These pages answer the searches that happen before a player starts a save. They keep confirmed facts separate from platform guesses, which matters while Subnautica 2 is still in Early Access.',
+  platformLinks: [
+    {
+      title: 'Release date status',
+      description:
+        'Early Access date, full-release wording, Steam, Xbox, Game Pass, and what changed after launch.',
+      href: Routes.Subnautica2ReleaseDate,
+      icon: CalendarDaysIcon,
+      label: 'Status',
+    },
+    {
+      title: 'Xbox Game Pass',
+      description:
+        'Where to check Game Pass, PC Game Pass, Cloud wording, device support, and co-op before installing.',
+      href: Routes.Subnautica2XboxGamePass,
+      icon: MonitorPlayIcon,
+      label: 'Xbox',
+    },
+    {
+      title: 'PS5 release date',
+      description:
+        'A cautious PlayStation watch page that says what is confirmed, what is not, and which sources matter.',
+      href: Routes.Subnautica2Ps5ReleaseDate,
+      icon: Gamepad2Icon,
+      label: 'PS5',
     },
   ],
   popularTitle: 'In-game routes',
@@ -250,6 +286,36 @@ const zhCopy: HomeCopy = {
       label: '已更新',
     },
   ],
+  platformTitle: '平台和发售',
+  platformHeading: '购买前、安装前、等主机版前，先看这里',
+  platformDescription:
+    '这一层放的是玩家开存档之前就会搜的问题。能确认的写清楚，不能确认的不编日期，这对抢先体验游戏很重要。',
+  platformLinks: [
+    {
+      title: '发售状态',
+      description:
+        '抢先体验日期、正式版说法、Steam、Xbox、Game Pass 和上线后变化。',
+      href: Routes.Subnautica2ReleaseDate,
+      icon: CalendarDaysIcon,
+      label: '状态',
+    },
+    {
+      title: 'Xbox Game Pass',
+      description:
+        '安装前先看 Game Pass、PC Game Pass、Cloud、设备支持和联机信息。',
+      href: Routes.Subnautica2XboxGamePass,
+      icon: MonitorPlayIcon,
+      label: 'Xbox',
+    },
+    {
+      title: 'PS5 发售日',
+      description:
+        'PlayStation 观察页：已确认的写清楚，未确认的不当成真实日期。',
+      href: Routes.Subnautica2Ps5ReleaseDate,
+      icon: Gamepad2Icon,
+      label: 'PS5',
+    },
+  ],
   popularTitle: '进游戏后常用',
   popularHeading: '开局、扫描、氧气、资源，先把这些做顺',
   popularDescription:
@@ -377,6 +443,36 @@ const jaCopy: HomeCopy = {
       label: '更新',
     },
   ],
+  platformTitle: 'プラットフォームと発売情報',
+  platformHeading: '購入前、インストール前、コンソール待ちの前に',
+  platformDescription:
+    'ここには、セーブを始める前に検索される疑問をまとめます。確認できることははっきり書き、未確認の日付は作りません。',
+  platformLinks: [
+    {
+      title: '発売状況',
+      description:
+        'Early Access日、正式版の扱い、Steam、Xbox、Game Pass、発売後の変化。',
+      href: Routes.Subnautica2ReleaseDate,
+      icon: CalendarDaysIcon,
+      label: '状況',
+    },
+    {
+      title: 'Xbox Game Pass',
+      description:
+        'Game Pass、PC Game Pass、Cloud、対応デバイス、co-op情報を確認します。',
+      href: Routes.Subnautica2XboxGamePass,
+      icon: MonitorPlayIcon,
+      label: 'Xbox',
+    },
+    {
+      title: 'PS5発売日',
+      description:
+        'PlayStation向けの確認ページ。未確認の日付を事実として扱いません。',
+      href: Routes.Subnautica2Ps5ReleaseDate,
+      icon: Gamepad2Icon,
+      label: 'PS5',
+    },
+  ],
   popularTitle: 'ゲーム中に使うページ',
   popularHeading: '酸素、スキャン、資源、クラフトを迷わない',
   popularDescription:
@@ -471,22 +567,22 @@ function LinkCard({
     <LocaleLink
       href={item.href}
       className={cn(
-        'group block border border-cyan-200/12 bg-[#08252a]/92 p-5 transition hover:-translate-y-0.5 hover:border-cyan-200/45 hover:bg-[#0a3036]',
+        'group block min-w-0 overflow-hidden border border-cyan-200/12 bg-[#08252a]/92 p-5 transition hover:-translate-y-0.5 hover:border-cyan-200/45 hover:bg-[#0a3036]',
         compact && 'p-4'
       )}
     >
-      <div className="flex min-h-8 items-center justify-between gap-3">
+      <div className="flex min-h-8 min-w-0 items-start justify-between gap-3">
         <Icon className="size-5 shrink-0 text-[#78ead7]" />
         {item.label ? (
-          <span className="shrink-0 border border-[#f08b4f]/35 bg-[#f08b4f]/10 px-2 py-1 text-xs font-semibold text-[#ffc4a1]">
+          <span className="min-w-0 max-w-[8rem] break-words border border-[#f08b4f]/35 bg-[#f08b4f]/10 px-2 py-1 text-right text-xs font-semibold text-[#ffc4a1]">
             {item.label}
           </span>
         ) : null}
       </div>
-      <h3 className="mt-5 text-lg font-semibold text-[#f0fffb]">
+      <h3 className="mt-5 break-words text-lg font-semibold text-[#f0fffb]">
         {item.title}
       </h3>
-      <p className="mt-3 text-sm leading-6 text-[#a8c6c0]">
+      <p className="mt-3 break-words text-sm leading-6 text-[#a8c6c0]">
         {item.description}
       </p>
       <span className="mt-4 inline-flex items-center gap-2 text-sm font-medium text-[#78ead7]">
@@ -586,12 +682,12 @@ export function AbyssHome({ locale }: { locale?: Locale }) {
             <p className="text-sm font-semibold uppercase tracking-[0.18em] text-[#bf6f45]">
               {copy.latestTitle}
             </p>
-            <h2 className="mt-3 text-3xl font-semibold md:text-4xl">
+            <h2 className="mt-3 break-words text-3xl font-semibold md:text-4xl">
               {copy.latestHeading}
             </h2>
             <p className="mt-4 text-[#abc8c3]">{copy.latestDescription}</p>
           </div>
-          <div className="grid gap-4 md:grid-cols-2 lg:grid-cols-3">
+          <div className="grid grid-cols-1 gap-4 md:grid-cols-2 lg:grid-cols-3">
             {copy.latestLinks.map((item) => (
               <LinkCard
                 item={item}
@@ -603,18 +699,46 @@ export function AbyssHome({ locale }: { locale?: Locale }) {
         </Container>
       </section>
 
+      <section className="border-b border-cyan-200/10 bg-[#04181c]">
+        <Container className="px-4 py-14">
+          <div className="grid grid-cols-1 gap-8 lg:grid-cols-[0.75fr_1.25fr] lg:items-start">
+            <div className="max-w-xl">
+              <p className="text-sm font-semibold uppercase tracking-[0.18em] text-[#f08b4f]">
+                {copy.platformTitle}
+              </p>
+              <h2 className="mt-3 break-words text-3xl font-semibold md:text-4xl">
+                {copy.platformHeading}
+              </h2>
+              <p className="mt-4 leading-8 text-[#abc8c3]">
+                {copy.platformDescription}
+              </p>
+            </div>
+            <div className="grid grid-cols-1 gap-4 md:grid-cols-3">
+              {copy.platformLinks.map((item) => (
+                <LinkCard
+                  compact
+                  item={item}
+                  key={item.href}
+                  openLabel={copy.openLabel}
+                />
+              ))}
+            </div>
+          </div>
+        </Container>
+      </section>
+
       <section className="border-b border-cyan-200/10 bg-[#031314]">
         <Container className="px-4 py-14">
           <div className="mb-8 max-w-3xl">
             <p className="text-sm font-semibold uppercase tracking-[0.18em] text-[#78ead7]">
               {copy.popularTitle}
             </p>
-            <h2 className="mt-3 text-3xl font-semibold md:text-4xl">
+            <h2 className="mt-3 break-words text-3xl font-semibold md:text-4xl">
               {copy.popularHeading}
             </h2>
             <p className="mt-4 text-[#abc8c3]">{copy.popularDescription}</p>
           </div>
-          <div className="grid gap-4 md:grid-cols-2 lg:grid-cols-4">
+          <div className="grid grid-cols-1 gap-4 md:grid-cols-2 lg:grid-cols-4">
             {copy.popularLinks.map((item) => (
               <LinkCard
                 compact
@@ -629,15 +753,17 @@ export function AbyssHome({ locale }: { locale?: Locale }) {
 
       <section className="border-b border-cyan-200/10 bg-[#071f23]">
         <Container className="px-4 py-14">
-          <div className="grid gap-8 lg:grid-cols-[0.8fr_1.2fr] lg:items-start">
+          <div className="grid grid-cols-1 gap-8 lg:grid-cols-[0.8fr_1.2fr] lg:items-start">
             <div>
               <BookOpenIcon className="mb-5 size-8 text-[#f08b4f]" />
-              <h2 className="text-3xl font-semibold">{copy.coreTitle}</h2>
+              <h2 className="break-words text-3xl font-semibold">
+                {copy.coreTitle}
+              </h2>
               <p className="mt-4 leading-8 text-[#abc8c3]">
                 {copy.coreDescription}
               </p>
             </div>
-            <div className="grid gap-4 md:grid-cols-3">
+            <div className="grid grid-cols-1 gap-4 md:grid-cols-3">
               {copy.coreLinks.map((item) => (
                 <LinkCard
                   compact
