@@ -31,6 +31,7 @@ type HomeLink = {
 type HomeCopy = {
   eyebrow: string;
   title: string;
+  titleLines?: string[];
   description: string;
   primaryCta: string;
   secondaryCta: string;
@@ -54,6 +55,10 @@ type HomeCopy = {
 const enCopy: HomeCopy = {
   eyebrow: 'Subnautica 2 guide hub',
   title: 'Start routes, live notes, and quick answers for Subnautica 2.',
+  titleLines: [
+    'Start routes, live notes,',
+    'and quick answers for Subnautica 2.',
+  ],
   description:
     'Abyss Guides puts the pages players actually search for at the front: what to do first, what changed in the latest hotfix, where to find key materials, and which platform details are confirmed.',
   primaryCta: 'Start the beginner route',
@@ -189,7 +194,8 @@ const enCopy: HomeCopy = {
 
 const zhCopy: HomeCopy = {
   eyebrow: 'Subnautica 2 攻略中心',
-  title: 'Subnautica 2 玩家最先需要的路线、更新和答案。',
+  title: 'Subnautica 2 攻略入口：先看路线和更新。',
+  titleLines: ['Subnautica 2 攻略入口', '先看路线和更新'],
   description:
     'Abyss Guides 首页只放玩家真正会搜、会点、会反复用的内容：开局怎么走，最新补丁改了什么，关键材料去哪找，平台和发售问题哪些已经确认。',
   primaryCta: '先看新手路线',
@@ -313,7 +319,8 @@ const zhCopy: HomeCopy = {
 
 const jaCopy: HomeCopy = {
   eyebrow: 'Subnautica 2攻略ハブ',
-  title: 'Subnautica 2で最初に見るルート、更新、答え。',
+  title: 'Subnautica 2攻略: ルートと更新を先に。',
+  titleLines: ['Subnautica 2攻略', 'ルートと更新を先に'],
   description:
     'Abyss Guidesのトップは、プレイヤーが実際に探すページを先に出します。序盤ルート、最新Hotfix、重要素材、発売日と対応機種をすぐ確認できます。',
   primaryCta: '初心者ルートを見る',
@@ -523,8 +530,15 @@ export function AbyssHome({ locale }: { locale?: Locale }) {
               <RadioIcon className="size-4" />
               {copy.eyebrow}
             </div>
-            <h1 className="max-w-5xl text-balance font-semibold text-5xl leading-[1.02] tracking-normal text-[#e8fff9] md:text-7xl">
-              {copy.title}
+            <h1
+              className="max-w-5xl break-words font-semibold text-3xl leading-[1.08] tracking-normal text-[#e8fff9] sm:text-5xl md:text-7xl"
+              style={{ overflowWrap: 'anywhere' }}
+            >
+              {(copy.titleLines ?? [copy.title]).map((line) => (
+                <span className="block" key={line}>
+                  {line}
+                </span>
+              ))}
             </h1>
             <p className="mt-6 max-w-2xl text-lg leading-8 text-[#a9c9c3]">
               {copy.description}
@@ -547,7 +561,7 @@ export function AbyssHome({ locale }: { locale?: Locale }) {
               </LocaleLink>
             </div>
 
-            <div className="mt-10 grid max-w-2xl grid-cols-3 gap-2">
+            <div className="mt-10 grid max-w-2xl grid-cols-1 gap-2 sm:grid-cols-3">
               {copy.stats.map(([value, label]) => (
                 <div
                   className="border border-cyan-200/14 bg-[#020d12]/70 p-3"
