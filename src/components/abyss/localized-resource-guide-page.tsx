@@ -6,8 +6,11 @@ import type { LucideIcon } from 'lucide-react';
 import {
   AlertTriangleIcon,
   ChevronRightIcon,
+  ExternalLinkIcon,
   HelpCircleIcon,
+  ImageIcon,
   ListIcon,
+  PlayCircleIcon,
   RadarIcon,
 } from 'lucide-react';
 import type { Locale } from 'next-intl';
@@ -77,6 +80,119 @@ type LocalizedResourceGuidePageProps = {
 };
 
 const DEFAULT_CONTENT_DATE = '2026-05-23';
+const OFFICIAL_TRAILER_URL = 'https://www.youtube.com/watch?v=6t2nDHldoSk';
+
+type MediaCopy = {
+  title: string;
+  imageTitle: string;
+  imageBody: string;
+  imageSource: string;
+  videoTitle: string;
+  videoBody: string;
+  videoSource: string;
+};
+
+const mediaCopy: Record<string, MediaCopy> = {
+  en: {
+    title: 'Visual notes and source media',
+    imageTitle: 'Original route art',
+    imageBody:
+      'Abyss Guides uses original chibi deep-sea art for page visuals instead of copying wiki screenshots or fan uploads.',
+    imageSource: 'Source: Abyss Guides original artwork',
+    videoTitle: 'Official Subnautica 2 gameplay trailer',
+    videoBody:
+      'Use the trailer for mood, vehicles, and biome context. Do not treat trailer scenes as exact farming coordinates.',
+    videoSource: 'Source: Official Subnautica YouTube embed',
+  },
+  zh: {
+    title: '图文笔记和视频来源',
+    imageTitle: '本站原创路线图',
+    imageBody:
+      'Abyss Guides 的页面视觉会优先用原创 Q 版深海图，不直接搬运 Wiki 截图或玩家上传图片。',
+    imageSource: '来源：Abyss Guides 原创图片',
+    videoTitle: 'Subnautica 2 官方实机预告',
+    videoBody:
+      '视频适合用来看氛围、载具和生态区感觉，不要把预告片画面当成精确采集坐标。',
+    videoSource: '来源：Subnautica 官方 YouTube 嵌入视频',
+  },
+  ja: {
+    title: '画像メモと動画ソース',
+    imageTitle: 'Abyss Guidesのオリジナル画像',
+    imageBody:
+      'Abyss Guidesでは、Wiki画像やユーザー投稿をコピーせず、オリジナルのちび深海アートを使います。',
+    imageSource: '出典: Abyss Guides オリジナル画像',
+    videoTitle: 'Subnautica 2 公式ゲームプレイトレーラー',
+    videoBody:
+      '雰囲気、乗り物、バイオームを見るための動画です。採集ポイントの正確な座標としては扱いません。',
+    videoSource: '出典: Subnautica公式YouTube埋め込み',
+  },
+  de: {
+    title: 'Bildnotizen und Quellen',
+    imageTitle: 'Originale Routengrafik',
+    imageBody:
+      'Abyss Guides nutzt eigene Chibi-Tiefsee-Grafiken statt Wiki-Screenshots oder Fan-Uploads zu kopieren.',
+    imageSource: 'Quelle: Originalgrafik von Abyss Guides',
+    videoTitle: 'Offizieller Subnautica 2 Gameplay-Trailer',
+    videoBody:
+      'Das Video hilft bei Stimmung, Fahrzeugen und Biomen. Es ist keine Karte mit genauen Farm-Koordinaten.',
+    videoSource: 'Quelle: Offizielles Subnautica-YouTube-Embed',
+  },
+  fr: {
+    title: 'Notes visuelles et sources',
+    imageTitle: 'Illustration originale',
+    imageBody:
+      'Abyss Guides utilise ses propres visuels chibi sous-marins au lieu de reprendre des captures de wiki ou des images de fans.',
+    imageSource: 'Source : illustration originale Abyss Guides',
+    videoTitle: 'Bande-annonce officielle de gameplay de Subnautica 2',
+    videoBody:
+      'La vidéo sert pour l’ambiance, les véhicules et les biomes. Elle ne remplace pas des coordonnées de collecte.',
+    videoSource: 'Source : intégration YouTube officielle Subnautica',
+  },
+  'es-419': {
+    title: 'Notas visuales y fuentes',
+    imageTitle: 'Arte de ruta original',
+    imageBody:
+      'Abyss Guides usa arte chibi submarino propio en vez de copiar capturas de wikis o imágenes subidas por fans.',
+    imageSource: 'Fuente: arte original de Abyss Guides',
+    videoTitle: 'Tráiler oficial de gameplay de Subnautica 2',
+    videoBody:
+      'El video sirve para ver ambiente, vehículos y biomas. No lo uses como coordenadas exactas de farmeo.',
+    videoSource: 'Fuente: inserción oficial de YouTube de Subnautica',
+  },
+  ko: {
+    title: '이미지 메모와 출처',
+    imageTitle: '오리지널 루트 아트',
+    imageBody:
+      'Abyss Guides는 위키 스크린샷이나 팬 업로드 이미지를 복사하지 않고 자체 제작한 귀여운 심해 이미지를 씁니다.',
+    imageSource: '출처: Abyss Guides 오리지널 아트',
+    videoTitle: 'Subnautica 2 공식 게임플레이 트레일러',
+    videoBody:
+      '영상은 분위기, 탈것, 생물군계 참고용입니다. 정확한 채집 좌표로 보지는 마세요.',
+    videoSource: '출처: Subnautica 공식 YouTube 임베드',
+  },
+  'pt-BR': {
+    title: 'Notas visuais e fontes',
+    imageTitle: 'Arte original de rota',
+    imageBody:
+      'Abyss Guides usa arte chibi submarina própria, sem copiar capturas de wiki nem uploads de fãs.',
+    imageSource: 'Fonte: arte original do Abyss Guides',
+    videoTitle: 'Trailer oficial de gameplay de Subnautica 2',
+    videoBody:
+      'O vídeo ajuda com clima, veículos e biomas. Não use cenas do trailer como coordenadas exatas de farm.',
+    videoSource: 'Fonte: incorporação oficial do YouTube de Subnautica',
+  },
+  ru: {
+    title: 'Визуальные заметки и источники',
+    imageTitle: 'Оригинальная схема маршрута',
+    imageBody:
+      'Abyss Guides использует собственную милую подводную графику, а не копирует скриншоты с вики или фанатские загрузки.',
+    imageSource: 'Источник: оригинальная графика Abyss Guides',
+    videoTitle: 'Официальный геймплейный трейлер Subnautica 2',
+    videoBody:
+      'Видео подходит для понимания атмосферы, транспорта и биомов. Это не точная карта точек фарма.',
+    videoSource: 'Источник: официальный YouTube-ролик Subnautica',
+  },
+};
 
 function formatGuideDate(date: string, locale: Locale) {
   return new Intl.DateTimeFormat(locale, {
@@ -100,6 +216,7 @@ export function LocalizedResourceGuidePage({
   const publishedAt = copy.publishedAt ?? DEFAULT_CONTENT_DATE;
   const updatedAt = copy.updatedAt ?? publishedAt;
   const checkedAt = copy.checkedAt ?? formatGuideDate(updatedAt, locale);
+  const visualCopy = mediaCopy[locale] ?? mediaCopy.en;
   const jsonLd = [
     {
       '@context': 'https://schema.org',
@@ -107,6 +224,7 @@ export function LocalizedResourceGuidePage({
       headline: copy.title,
       description: copy.description,
       url: pageUrl,
+      image: `${baseUrl}/abyss/chibi-deep-sea-hero.webp`,
       datePublished: publishedAt,
       dateModified: updatedAt,
       inLanguage: locale,
@@ -338,6 +456,67 @@ export function LocalizedResourceGuidePage({
                 ) : null}
               </section>
             ) : null}
+
+            <section>
+              <h2 className="text-3xl font-semibold text-[#effffb]">
+                {visualCopy.title}
+              </h2>
+              <div className="mt-5 grid gap-4 lg:grid-cols-[0.85fr_1.15fr]">
+                <figure className="overflow-hidden border border-cyan-200/12 bg-[#071f23]">
+                  <div
+                    className="h-64 bg-cover bg-center"
+                    style={{
+                      backgroundImage:
+                        "linear-gradient(180deg,rgba(3,19,20,.08),rgba(3,19,20,.46)),url('/abyss/chibi-deep-sea-hero.webp')",
+                    }}
+                  />
+                  <figcaption className="border-t border-cyan-200/12 p-5">
+                    <div className="flex items-center gap-2 text-[#78ead7]">
+                      <ImageIcon className="size-4" />
+                      <h3 className="font-semibold">{visualCopy.imageTitle}</h3>
+                    </div>
+                    <p className="mt-3 text-sm leading-6 text-[#abc8c3]">
+                      {visualCopy.imageBody}
+                    </p>
+                    <p className="mt-3 text-xs uppercase tracking-[0.16em] text-[#f08b4f]">
+                      {visualCopy.imageSource}
+                    </p>
+                  </figcaption>
+                </figure>
+
+                <section className="overflow-hidden border border-cyan-200/12 bg-[#071f23]">
+                  <div className="aspect-video bg-[#020b0d]">
+                    <iframe
+                      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                      allowFullScreen
+                      className="h-full w-full"
+                      loading="lazy"
+                      referrerPolicy="strict-origin-when-cross-origin"
+                      src="https://www.youtube-nocookie.com/embed/6t2nDHldoSk"
+                      title={visualCopy.videoTitle}
+                    />
+                  </div>
+                  <div className="border-t border-cyan-200/12 p-5">
+                    <div className="flex items-center gap-2 text-[#78ead7]">
+                      <PlayCircleIcon className="size-4" />
+                      <h3 className="font-semibold">{visualCopy.videoTitle}</h3>
+                    </div>
+                    <p className="mt-3 text-sm leading-6 text-[#abc8c3]">
+                      {visualCopy.videoBody}
+                    </p>
+                    <a
+                      className="mt-3 inline-flex items-center gap-2 text-xs font-semibold uppercase tracking-[0.16em] text-[#f08b4f] hover:text-[#ffb27e]"
+                      href={OFFICIAL_TRAILER_URL}
+                      rel="noreferrer"
+                      target="_blank"
+                    >
+                      {visualCopy.videoSource}
+                      <ExternalLinkIcon className="size-3.5" />
+                    </a>
+                  </div>
+                </section>
+              </div>
+            </section>
 
             <section>
               <h2 className="text-3xl font-semibold text-[#effffb]">
