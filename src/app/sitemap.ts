@@ -108,6 +108,8 @@ const staticRoutes = [
   Routes.Subnautica2ReleaseDate,
   Routes.Subnautica2Ps5ReleaseDate,
   Routes.Subnautica2XboxGamePass,
+  Routes.Subnautica2SystemRequirements,
+  Routes.Subnautica2EarlyAccessWorthIt,
   Routes.Subnautica2MapSizeBiomes,
   Routes.Subnautica2Hotfix2,
   Routes.Subnautica2SilverAfterHotfix2,

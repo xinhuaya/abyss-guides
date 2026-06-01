@@ -146,6 +146,22 @@ const enCopy: HomeCopy = {
       label: 'Xbox',
     },
     {
+      title: 'System requirements',
+      description:
+        'Minimum and recommended PC specs, RAM, GPU, storage, and Early Access performance caution.',
+      href: Routes.Subnautica2SystemRequirements,
+      icon: MonitorPlayIcon,
+      label: 'PC',
+    },
+    {
+      title: 'Is Early Access worth it?',
+      description:
+        'A buy-or-wait guide for players comparing patches, co-op, Game Pass, and waiting for 1.0.',
+      href: Routes.Subnautica2EarlyAccessWorthIt,
+      icon: TimerResetIcon,
+      label: 'Buy?',
+    },
+    {
       title: 'Crossplay',
       description:
         'Steam, Xbox, Game Pass, co-op invites, and the checks to run before starting a group save.',
@@ -324,6 +340,21 @@ const zhCopy: HomeCopy = {
       label: 'Xbox',
     },
     {
+      title: '配置要求',
+      description:
+        '最低配置、推荐配置、内存、显卡、硬盘空间和抢先体验性能风险。',
+      href: Routes.Subnautica2SystemRequirements,
+      icon: MonitorPlayIcon,
+      label: 'PC',
+    },
+    {
+      title: '抢先体验值不值得买',
+      description: '比较补丁、联机、Game Pass 和等正式版，适合买前决策。',
+      href: Routes.Subnautica2EarlyAccessWorthIt,
+      icon: TimerResetIcon,
+      label: '购买',
+    },
+    {
       title: '跨平台联机',
       description: 'Steam、Xbox、Game Pass、好友邀请和开多人存档前的核对项。',
       href: Routes.Subnautica2Crossplay,
@@ -493,6 +524,21 @@ const jaCopy: HomeCopy = {
       href: Routes.Subnautica2XboxGamePass,
       icon: MonitorPlayIcon,
       label: 'Xbox',
+    },
+    {
+      title: '必要スペック',
+      description:
+        '最低・推奨PCスペック、RAM、GPU、容量、Early Accessの性能注意点。',
+      href: Routes.Subnautica2SystemRequirements,
+      icon: MonitorPlayIcon,
+      label: 'PC',
+    },
+    {
+      title: 'Early Accessは買い？',
+      description: 'パッチ、co-op、Game Pass、1.0待ちを比べる購入判断ページ。',
+      href: Routes.Subnautica2EarlyAccessWorthIt,
+      icon: TimerResetIcon,
+      label: '購入',
     },
     {
       title: 'クロスプレイ',
@@ -758,7 +804,7 @@ export function AbyssHome({ locale }: { locale?: Locale }) {
                 {copy.platformDescription}
               </p>
             </div>
-            <div className="grid grid-cols-1 gap-4 md:grid-cols-2 xl:grid-cols-4">
+            <div className="grid grid-cols-1 gap-4 md:grid-cols-2 xl:grid-cols-3">
               {copy.platformLinks.map((item) => (
                 <LinkCard
                   compact
