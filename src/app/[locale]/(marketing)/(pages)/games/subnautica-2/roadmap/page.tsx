@@ -8,8 +8,11 @@ import {
   CalendarDaysIcon,
   CheckCircle2Icon,
   ClipboardListIcon,
+  ExternalLinkIcon,
   FileTextIcon,
+  ImageIcon,
   MessagesSquareIcon,
+  PlayCircleIcon,
   RadioIcon,
   RadarIcon,
   RefreshCcwIcon,
@@ -82,6 +85,55 @@ type RoadmapCopy = {
 
 const PUBLISHED_AT = '2026-05-23';
 const MODIFIED_AT = '2026-05-29';
+const ROADMAP_IMAGE = '/abyss/chibi-update-console.webp';
+const OFFICIAL_TRAILER_URL = 'https://www.youtube.com/watch?v=6t2nDHldoSk';
+
+const roadmapMediaCopy: Record<
+  string,
+  {
+    title: string;
+    imageTitle: string;
+    imageBody: string;
+    imageSource: string;
+    videoTitle: string;
+    videoBody: string;
+    videoSource: string;
+  }
+> = {
+  en: {
+    title: 'Visual notes and source media',
+    imageTitle: 'Original update-console art',
+    imageBody:
+      'This page uses Abyss Guides original artwork for the update tracker visual instead of copying wiki screenshots or fan uploads.',
+    imageSource: 'Source: Abyss Guides original artwork',
+    videoTitle: 'Official Subnautica 2 gameplay trailer',
+    videoBody:
+      'Use the trailer for tone and Early Access context. Patch timing still comes from Unknown Worlds posts and Steam.',
+    videoSource: 'Source: Official Subnautica YouTube embed',
+  },
+  zh: {
+    title: '图文笔记和视频来源',
+    imageTitle: '本站原创更新控制台图',
+    imageBody:
+      '这个路线图页面使用 Abyss Guides 原创图片，不直接搬运 Wiki 截图或玩家上传图。',
+    imageSource: '来源：Abyss Guides 原创图片',
+    videoTitle: 'Subnautica 2 官方实机预告',
+    videoBody:
+      '视频用于理解氛围和 Early Access 背景；补丁时间仍以 Unknown Worlds 和 Steam 为准。',
+    videoSource: '来源：Subnautica 官方 YouTube 嵌入视频',
+  },
+  ja: {
+    title: '画像メモと動画ソース',
+    imageTitle: 'Abyss Guidesの更新コンソール画像',
+    imageBody:
+      'このページでは、Wiki画像やユーザー投稿をコピーせず、Abyss Guidesのオリジナル画像を使います。',
+    imageSource: '出典: Abyss Guides オリジナル画像',
+    videoTitle: 'Subnautica 2 公式ゲームプレイトレーラー',
+    videoBody:
+      '動画は雰囲気とEarly Accessの文脈用です。パッチ時期は公式投稿とSteamを優先します。',
+    videoSource: '出典: Subnautica公式YouTube埋め込み',
+  },
+};
 
 const officialSources = [
   {
@@ -1715,6 +1767,7 @@ export default async function RoadmapGuidePage({
     ''
   );
   const hubUrl = `${baseUrl}${getPathWithLocale(Routes.Subnautica2, locale)}`;
+  const mediaCopy = roadmapMediaCopy[locale] ?? roadmapMediaCopy.en;
   const jsonLd = [
     {
       '@context': 'https://schema.org',
@@ -1722,6 +1775,7 @@ export default async function RoadmapGuidePage({
       headline: copy.title,
       description: copy.metadata.description,
       url: pageUrl,
+      image: `${baseUrl}${ROADMAP_IMAGE}`,
       datePublished: PUBLISHED_AT,
       dateModified: MODIFIED_AT,
       inLanguage: locale,
@@ -1783,7 +1837,7 @@ export default async function RoadmapGuidePage({
           aria-hidden="true"
           className="absolute inset-0 bg-cover bg-right opacity-40"
           style={{
-            backgroundImage: "url('/abyss/chibi-deep-sea-hero.webp')",
+            backgroundImage: `url('${ROADMAP_IMAGE}')`,
           }}
         />
         <div
@@ -1856,6 +1910,66 @@ export default async function RoadmapGuidePage({
               <p className="mt-4 text-lg leading-8 text-[#d7eee8]">
                 {copy.quickAnswer}
               </p>
+            </section>
+
+            <section>
+              <h2 className="text-3xl font-semibold text-[#effffb]">
+                {mediaCopy.title}
+              </h2>
+              <div className="mt-5 grid gap-4 lg:grid-cols-[0.85fr_1.15fr]">
+                <figure className="overflow-hidden border border-cyan-200/12 bg-[#071f23]">
+                  <div
+                    className="h-64 bg-cover bg-center"
+                    style={{
+                      backgroundImage: `linear-gradient(180deg,rgba(3,19,20,.08),rgba(3,19,20,.46)),url('${ROADMAP_IMAGE}')`,
+                    }}
+                  />
+                  <figcaption className="border-t border-cyan-200/12 p-5">
+                    <div className="flex items-center gap-2 text-[#78ead7]">
+                      <ImageIcon className="size-4" />
+                      <h3 className="font-semibold">{mediaCopy.imageTitle}</h3>
+                    </div>
+                    <p className="mt-3 text-sm leading-6 text-[#abc8c3]">
+                      {mediaCopy.imageBody}
+                    </p>
+                    <p className="mt-3 text-xs uppercase tracking-[0.16em] text-[#f08b4f]">
+                      {mediaCopy.imageSource}
+                    </p>
+                  </figcaption>
+                </figure>
+
+                <section className="overflow-hidden border border-cyan-200/12 bg-[#071f23]">
+                  <div className="aspect-video bg-[#020b0d]">
+                    <iframe
+                      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                      allowFullScreen
+                      className="h-full w-full"
+                      loading="lazy"
+                      referrerPolicy="strict-origin-when-cross-origin"
+                      src="https://www.youtube-nocookie.com/embed/6t2nDHldoSk"
+                      title={mediaCopy.videoTitle}
+                    />
+                  </div>
+                  <div className="border-t border-cyan-200/12 p-5">
+                    <div className="flex items-center gap-2 text-[#78ead7]">
+                      <PlayCircleIcon className="size-4" />
+                      <h3 className="font-semibold">{mediaCopy.videoTitle}</h3>
+                    </div>
+                    <p className="mt-3 text-sm leading-6 text-[#abc8c3]">
+                      {mediaCopy.videoBody}
+                    </p>
+                    <a
+                      className="mt-3 inline-flex items-center gap-2 text-xs font-semibold uppercase tracking-[0.16em] text-[#f08b4f] hover:text-[#ffb27e]"
+                      href={OFFICIAL_TRAILER_URL}
+                      rel="noreferrer"
+                      target="_blank"
+                    >
+                      {mediaCopy.videoSource}
+                      <ExternalLinkIcon className="size-3.5" />
+                    </a>
+                  </div>
+                </section>
+              </div>
             </section>
 
             <section>
@@ -2059,7 +2173,7 @@ export default async function RoadmapGuidePage({
                 aria-hidden="true"
                 className="h-40 bg-cover bg-right"
                 style={{
-                  backgroundImage: "url('/abyss/chibi-deep-sea-hero.webp')",
+                  backgroundImage: `url('${ROADMAP_IMAGE}')`,
                 }}
               />
               <div className="border-t border-cyan-200/12 p-5">
