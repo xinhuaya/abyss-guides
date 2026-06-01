@@ -911,12 +911,12 @@ const airTankCopy: Record<string, AirTankCopy> = {
   },
   ja: {
     metadata: {
-      title: 'Subnautica 2 Air Tank と O2 攻略 - 序盤の酸素を増やす',
+      title: 'Subnautica 2 酸素タンクガイド - 序盤のO2を増やす',
       description:
         'Subnautica 2 の酸素日本語攻略。Air Bladders、Oxygen Tunics、Bloom Sap funnels、Oxygen Control、Standard Air Tank を整理します。',
     },
     eyebrow: 'Subnautica 2 酸素ルート',
-    title: 'Subnautica 2 Air Tank と O2 攻略',
+    title: 'Subnautica 2 酸素タンクガイド',
     description:
       '酸素は序盤の本当の制限時間です。深い洞窟へ無理に入る前に、一時的な酸素、保険、タンク強化の順番を作りましょう。',
     quickLabel: '要点',
@@ -1124,63 +1124,6 @@ airTankCopy.zh = {
     '2026 年 5 月 27 日核对当前 O2 和新手路线报道。抢先体验阶段的配方、氧气工具效果和路线难度可能变化。',
   cardBody:
     '临时氧气、保命工具、气瓶升级时机、扫描路线余量，以及更安全的洞穴循环。',
-};
-
-airTankCopy.ja = {
-  ...airTankCopy.ja,
-  metadata: {
-    title: 'Subnautica 2 Air Tank and O2 Guide - Increase Oxygen Early',
-    description:
-      'Subnautica 2 oxygen guide covering Air Bladders, Oxygen Tunics, Bloom Sap funnels, Oxygen Control, Standard Air Tank, and extra O2 for scan routes.',
-  },
-  description:
-    'Oxygen is the first real timer in Subnautica 2. Build a safer loop before forcing deep caves: temporary oxygen, backup tools, scan-route planning, then the permanent tank upgrade.',
-  quickAnswer:
-    'Use environmental oxygen first: Oxygen Tunics, cleared Bloom Sap funnels, and cave air pockets. Carry Air Bladders, unlock Oxygen Control when you can, then craft the Standard Air Tank once Silver, Titanium, and Rubber are available. Leave extra O2 for Scanner and Bioscanner routes because scanning makes you stop moving.',
-  routeSteps: [
-    {
-      title: 'Use free oxygen first',
-      body: 'Oxygen Tunics, Bloom Sap funnels, and cave air pockets can keep short routes alive before upgrades.',
-    },
-    {
-      title: 'Carry Air Bladders',
-      body: 'They still matter after you know the area, especially when a cave turn or greedy scan goes wrong.',
-    },
-    {
-      title: 'Craft the Standard Air Tank',
-      body: 'This is the first permanent O2 upgrade that makes caves feel less brittle. Silver is usually the bottleneck.',
-    },
-    {
-      title: 'Budget extra O2 for scans',
-      body: 'Fragments, stations, wrecks, and lifeform scans are slower than mining loops because you stop moving.',
-    },
-  ],
-  tableRows: [
-    ['Oxygen Tunics', 'Emergency oxygen while learning nearby biomes.'],
-    ['Bloom Sap funnels', 'Route extender after clearing the blockage.'],
-    ['Cave air pockets', 'Useful midpoint resets while mapping caves.'],
-    ['Air Bladders', 'Portable oxygen and a faster surface return.'],
-    ['Standard Air Tank', 'First major permanent oxygen upgrade.'],
-    ['Scan routes', 'Scanner and Bioscanner routes need extra O2 buffer.'],
-  ],
-  related: [
-    { href: Routes.Subnautica2OxygenDepth, label: 'Oxygen and Depth' },
-    { href: Routes.Subnautica2Rebreather, label: 'Rebreather Guide' },
-    { href: Routes.Subnautica2Scanner, label: 'Scanner Guide' },
-    {
-      href: Routes.Subnautica2BioscannerBiomods,
-      label: 'Bioscanner and Biomods',
-    },
-    {
-      href: Routes.Subnautica2TadpoleDepthModule,
-      label: 'Tadpole Depth Module',
-    },
-    { href: Routes.Subnautica2Silver, label: 'Silver Location' },
-    { href: Routes.Subnautica2Rubber, label: 'Rubber Recipe Guide' },
-    { href: Routes.Subnautica2Beginner, label: 'Beginner Route' },
-  ],
-  sourceBody:
-    'Checked May 27, 2026 against current O2 and beginner-route reporting. Early Access recipes and utility values can change.',
 };
 
 function getCopy(locale: Locale): AirTankCopy {

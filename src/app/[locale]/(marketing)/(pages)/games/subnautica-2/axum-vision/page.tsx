@@ -392,9 +392,175 @@ const axumVisionCopy: Record<string, AxumVisionCopy> = {
   },
 };
 
+axumVisionCopy.ja = {
+  metadata: {
+    title:
+      'Subnautica 2 Axum Vision ガイド - 2つ目のAngel CombとPower Plant画面',
+    description:
+      'Subnautica 2のAxum Visionルート。2つ目のAngel Comb、Feedback Resonator、Tadpole Depth Module、3つのBloom Node、Axum glyph、Karakorum Power Plantの操作画面を整理します。',
+  },
+  eyebrow: 'Subnautica 2適応能力ルート',
+  title: 'Subnautica 2 Axum Vision ガイド',
+  description:
+    'Axum Visionは、Karakorum Power Plantを「見えているけど読めない場所」から、実際に操作できる場所へ変える適応能力です。難しいのは一回の戦闘ではありません。3つのBloom Nodeを片付けながら、中央のAngel Combへ戻る道を忘れないことです。',
+  quickLabel: '要点',
+  quickAnswer:
+    'Axum VisionはAlien Ruins / Karakorum方面の後半Angel Combから取ります。現在の情報では、Bloom Cankerを遠距離から壊すFeedback Resonatorが必要です。PC Gamerは250mより深いルートになるためTadpole Depth Moduleも挙げています。Subnautica 2 Guideは、Angel Comb周辺に西・南・東の3つのBloom Nodeを掲載しています。全てを処理して中央へ戻ると、Axum glyphやKarakorum Power Plantのpolarized screenを読めるようになります。',
+  fieldNotesTitle: 'Axum Visionの実用メモ',
+  fieldNotes: [
+    {
+      title: '一筆書きではなく周回ルートで考える',
+      body: 'Axum Visionは花を一つ処理して終わりではありません。中央のAngel Comb、3つのBloom Node、Karakorumの操作室をつなぐ周回として見ると迷いにくくなります。',
+    },
+    {
+      title: 'Feedback Resonatorで危険度が下がる',
+      body: 'Bloom Cankerは近づいて無理に処理すると、酸素と落ち着きをかなり削られます。遠距離で処理できる準備をしてから入る方が安定します。',
+    },
+    {
+      title: '解放したらすぐPower Plantへ戻る',
+      body: 'Axum Visionの目的はglyphと画面を読むことです。取った直後にPower Plant側へ戻ると、道順を覚えているうちに次の進行へつなげられます。',
+    },
+  ],
+  routeChecklistTitle: '出発前チェック',
+  routeChecklist: [
+    'Feedback Resonator、Tadpole Depth Module、Rebreather、目印を用意する。',
+    '西・南・東のBloom Nodeを処理してから中央へ戻る。',
+    '水の色の変化は進行のヒントとして見る。完全な証明とは考えない。',
+    'Axum Vision解放後はKarakorum Power Plantの操作画面を確認する。',
+  ],
+  contentsLabel: '目次',
+  routeTitle: 'Axum Visionルート',
+  routeSteps: [
+    {
+      title: '先にHeat ToleranceのAngel Combを終える',
+      body: '最初のAngel Combは練習になります。Axum VisionのAngel Combはもっと後半で、Alien RuinsとKarakorum方面の深いルートにあります。',
+    },
+    {
+      title: '大きな花を追う前に装備を整える',
+      body: 'PC GamerはこのAngel CombにFeedback ResonatorとTadpole Depth Moduleを挙げています。遠距離処理と深度の両方が必要になる、という見方で準備します。',
+    },
+    {
+      title: '紫のtendrilを目印に進む',
+      body: '中央のAngel Combから複数の紫色の管が伸びています。管をたどってBloom Nodeを処理し、終わったら中央へ戻ります。記憶だけで泳ぐと、似た壁や裂け目で方向感覚を失いやすいです。',
+    },
+    {
+      title: '3つのBloom Nodeを片付ける',
+      body: 'Subnautica 2 Guideは西・南・東の3つを掲載しています。PC GamerもResearch Base下、側面の分岐、wreckを通るルートという形で外側の処理を説明しています。座標というより、ルートの手がかりとして使います。',
+    },
+    {
+      title: '水の色で進行を確認する',
+      body: 'Bloom Cankerを処理すると、感染した灰色の水が通常の色へ戻るとSubnautica 2 Guideは説明しています。暗い場所で「全部壊したはず」と思い込むより、この変化を見る方が安全です。',
+    },
+    {
+      title: '中央のAngel Combへ戻る',
+      body: '外側のNodeが終わったら、中央へ戻ってAngel Comb本体を処理します。ここでAxum Visionが解放され、外星装置を読む準備が整います。',
+    },
+    {
+      title: 'Karakorum Power Plantで使う',
+      body: 'Subnautica 2 Guideによると、Axum VisionでAxum Radial A glyphやUpper / Lower Generator Control roomのpolarized screenが読めます。Observatory方面の進行を動かすための鍵です。',
+    },
+  ],
+  tableTitle: 'Axum Visionチェックリスト',
+  tableHeaders: ['必要なもの', '理由'],
+  tableRows: [
+    ['Heat Tolerance進行', '最初のAngel Combを済ませている前提で動く。'],
+    ['Feedback Resonator', 'Bloom Cankerを遠距離から処理する。'],
+    ['Tadpole Depth Module', 'ルートが序盤の安全深度より下へ落ちる。'],
+    ['Rebreatherと酸素タンク', '3つのNodeと中央への帰還で酸素を使う。'],
+    ['Beaconや目印', '中央の花、wreckルート、出口を見失わないため。'],
+    ['Conduit Crystal計画', 'この周辺のアップグレード準備と一緒に見ておく。'],
+    [
+      'Power Plantの再訪',
+      'Axum Visionはgenerator controlを見るところで効いてくる。',
+    ],
+  ],
+  visualTitle: '適応能力カード',
+  visualItems: [
+    {
+      label: '道具',
+      value: 'Feedback',
+      note: 'Bloom Canker処理にFeedback Resonatorを使う。',
+    },
+    {
+      label: 'Node',
+      value: '3',
+      note: '西・南・東のBloomルートを処理する。',
+    },
+    {
+      label: '解放',
+      value: 'Axum',
+      note: 'glyphとPower Plant画面を読めるようにする。',
+    },
+  ],
+  cautionTitle: '中央のAngel Combを確認してから帰る',
+  cautionBody:
+    '3つ目の外側Nodeが終わると、水の色が変わって「もう終わった」と感じやすいです。離脱前に中央へ戻ってください。ここを飛ばすと、Power Plantまで行ってから画面が読めずに引き返すことになります。',
+  faqTitle: 'FAQ',
+  faqs: [
+    {
+      title: 'Subnautica 2でAxum Visionはどう取る？',
+      body: 'Alien Ruins / Karakorum方面の後半Angel Combで、周辺のBloom CankerとBloom Nodeを処理し、中央のAngel Combへ戻って解放します。',
+    },
+    {
+      title: 'Axum Visionに必要な道具は？',
+      body: '現在の情報ではFeedback Resonatorが重要です。PC Gamerは、250mより深いルートになるためTadpole Depth Moduleも準備対象にしています。',
+    },
+    {
+      title: 'Bloom Nodeはいくつある？',
+      body: 'Subnautica 2 Guideは西・南・東の3つを掲載しています。PC Gamerも外側の3エリアを処理してから中央へ戻る流れを説明しています。',
+    },
+    {
+      title: 'Axum Visionは何に使う？',
+      body: 'Axum glyphとpolarized screenを読むために使います。Karakorum Power Plantの修理やObservatory方面の進行で必要になります。',
+    },
+  ],
+  readNextTitle: '次に読む',
+  related: [
+    { href: Routes.Subnautica2AngelComb, label: 'Angel Comb ガイド' },
+    {
+      href: Routes.Subnautica2FeedbackResonator,
+      label: 'Feedback Resonator ガイド',
+    },
+    {
+      href: Routes.Subnautica2BioscannerBiomods,
+      label: 'BioscannerとBiomods',
+    },
+    {
+      href: Routes.Subnautica2TadpoleDepthModule,
+      label: 'Tadpole Depth Module ガイド',
+    },
+    {
+      href: Routes.Subnautica2KarakorumPowerPlant,
+      label: 'Karakorum Power Plantルート',
+    },
+    {
+      href: Routes.Subnautica2PowerPlantObservatory,
+      label: 'Power Plant Observatory ガイド',
+    },
+    { href: Routes.Subnautica2ConduitCrystal, label: 'Conduit Crystal ガイド' },
+    { href: Routes.Subnautica2HeatTolerance, label: 'Heat Tolerance ガイド' },
+    { href: Routes.Subnautica2BloomBiofilm, label: 'Bloom Biofilm ガイド' },
+    { href: Routes.Subnautica2Rebreather, label: 'Rebreather ガイド' },
+    { href: Routes.Subnautica2AirTank, label: 'Air Tankと酸素ガイド' },
+    { href: Routes.Subnautica2Biomes, label: 'Biomes ガイド' },
+    { href: Routes.Subnautica2Map, label: 'Map ガイド' },
+  ],
+  sourcesTitle: 'ソースメモ',
+  sourceBody:
+    '2026年5月29日にPC Gamer、Subnautica 2 Guide、GAMES.GG、PCGamesNを確認しました。Subnautica 2はEarly Access中なので、Bloom Node位置、必要装備、深度、Power Plant画面の挙動はパッチ後に再確認します。',
+  cardKicker: '適応能力ルートカード',
+  cardBody:
+    '2つ目のAngel Comb、Feedback Resonator、Tadpole深度準備、3つのBloom Node、Axum glyph、polarized screen、Karakorum Power Plantの後続ルート。',
+  cardTypeLabel: 'タイプ',
+  cardTypeValue: '適応能力ガイド',
+  cardVerifiedLabel: '確認日',
+  cardStatusLabel: '状態',
+  cardStatusValue: 'Early Access',
+};
+
 const fallbackCopy = axumVisionCopy.en;
 
-for (const locale of ['ja', 'de', 'fr', 'pt-BR', 'es-419', 'ko', 'ru']) {
+for (const locale of ['de', 'fr', 'pt-BR', 'es-419', 'ko', 'ru']) {
   axumVisionCopy[locale] = {
     ...fallbackCopy,
     metadata: {

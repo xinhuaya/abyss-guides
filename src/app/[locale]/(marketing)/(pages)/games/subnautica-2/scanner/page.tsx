@@ -938,12 +938,12 @@ const scannerCopy: Record<string, ScannerCopy> = {
   },
   ja: {
     metadata: {
-      title: 'Subnautica 2 Scanner と Bioscanner 攻略 - 設計図の優先度',
+      title: 'Subnautica 2 スキャナーガイド - Bioscannerと設計図の優先度',
       description:
         'Subnautica 2 の Scanner 日本語攻略。設計図、Bioscanner、Biomods、酸素計画、序盤スキャン順を整理します。',
     },
     eyebrow: 'Subnautica 2 設計図ルート',
-    title: 'Subnautica 2 Scanner と Bioscanner 攻略',
+    title: 'Subnautica 2 スキャナーガイド',
     description:
       'Scanner は地味ですが、破片を1つ見逃すだけで同じルートをもう一度泳ぐことになります。',
     quickLabel: '要点',
@@ -1138,75 +1138,6 @@ scannerCopy.zh = {
     '2026 年 5 月 27 日核对 PC Gamer 的 Bioscanner、Biomods 和新手路线报道。抢先体验阶段的解锁顺序和残骸细节可能变化。',
   cardBody:
     '普通 Scanner 的蓝图顺序、Bioscanner 残骸线索、旧扫描不补算提醒，以及 Biomod 路线衔接。',
-};
-
-scannerCopy.ja = {
-  ...scannerCopy.ja,
-  metadata: {
-    title: 'Subnautica 2 Scanner and Bioscanner Guide - Blueprint Priority',
-    description:
-      'Subnautica 2 Scanner guide covering blueprint priority, Bioscanner location, Cicada wreck route, Biomod scan rules, and oxygen planning.',
-  },
-  description:
-    'The Scanner is easy to forget until one missed fragment costs another trip. Bioscanner comes later, and it makes lifeform scans part of the Biomod route.',
-  quickAnswer:
-    'Build the regular Scanner early and scan fragments, stations, alien-route objects, and recipe-chain clues before looting. PC Gamer places the Bioscanner in Cicada wreckage about 500m southeast of the Alien Ruins Research Outpost, around bearing 130, and reports that older lifeform scans do not count retroactively.',
-  routeSteps: [
-    {
-      title: 'Make the Scanner before long routes',
-      body: 'If you leave base without it, useful fragments turn into a second trip.',
-    },
-    {
-      title: 'Scan before looting',
-      body: 'At wrecks, stations, and alien structures, scan first. Materials can wait.',
-    },
-    {
-      title: 'Separate Scanner and Bioscanner jobs',
-      body: 'Regular Scanner moves tools, stations, and vehicles forward. Bioscanner handles lifeform scans for Biomods, and important lifeforms may need to be scanned again.',
-    },
-    {
-      title: 'Plan oxygen before the Cicada wreck',
-      body: 'The route from the Alien Ruins Research Outpost is long enough that a Beacon, air plan, or clear landmark chain helps.',
-    },
-  ],
-  tableRows: [
-    ['Tool fragments', 'They unlock gear that shortens later routes.'],
-    ['Stations', 'Production systems change what you can craft.'],
-    ['Vehicle fragments', 'They move you beyond pure swimming routes.'],
-    [
-      'Alien-route objects',
-      'They often point to the next story or upgrade path.',
-    ],
-    ['Marine life', 'With Bioscanner, lifeform scans feed Biomod progress.'],
-  ],
-  faqs: [
-    {
-      title: 'What should I scan first in Subnautica 2?',
-      body: 'Start with fragments and stations that unlock tools, base systems, vehicles, or route-extending upgrades.',
-    },
-    {
-      title: 'Where is the Bioscanner?',
-      body: 'PC Gamer places it in Cicada wreckage about 500m southeast of the Alien Ruins Research Outpost, around bearing 130.',
-    },
-    {
-      title: 'Do old lifeform scans count for Biomods?',
-      body: 'Current reporting says no, so re-scan key lifeforms after getting the Bioscanner.',
-    },
-  ],
-  related: [
-    {
-      href: Routes.Subnautica2BioscannerBiomods,
-      label: 'Bioscanner and Biomods',
-    },
-    { href: Routes.Subnautica2Biolab, label: 'Biolab Guide' },
-    { href: Routes.Subnautica2ScannerStation, label: 'Scanner Station Guide' },
-    { href: Routes.Subnautica2BasicBattery, label: 'Basic Battery Guide' },
-    { href: Routes.Subnautica2OxygenDepth, label: 'Oxygen and Depth Guide' },
-    { href: Routes.Subnautica2AirTank, label: 'Air Tank and O2' },
-    { href: Routes.Subnautica2Beginner, label: 'Beginner Route' },
-  ],
-  sourceBody:
-    'Checked May 27, 2026 against PC Gamer Bioscanner, Biomod, and beginner-route reporting. Early Access unlocks can still change.',
 };
 
 function getCopy(locale: Locale): ScannerCopy {

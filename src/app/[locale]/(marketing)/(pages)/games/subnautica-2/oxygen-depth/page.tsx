@@ -332,12 +332,12 @@ const oxygenDepthCopy: Record<string, OxygenDepthCopy> = {
   },
   ja: {
     metadata: {
-      title: 'Subnautica 2 Oxygen and Depth Guide - 深く潜る前の判断メモ',
+      title: 'Subnautica 2 酸素と深度ガイド - 深く潜る前の判断メモ',
       description:
         'Subnautica 2 の酸素と深度ガイド。O2、Air Bladder、Standard Air Tank、洞窟帰還、深潜り前チェックを整理します。',
     },
     eyebrow: 'Subnautica 2 depth planning',
-    title: 'Subnautica 2 Oxygen and Depth Guide',
+    title: 'Subnautica 2 酸素と深度ガイド',
     description:
       'Depth は数字だけではありません。酸素、視界、帰還距離、迷った時に戻れるかがセットです。',
     quickLabel: '短い答え',
@@ -536,74 +536,6 @@ oxygenDepthCopy.zh = {
     '2026 年 5 月 27 日核对当前 O2 攻略、入门路线资料、Steam 官方页面和抢先体验路线图。Subnautica 2 后续补丁可能改变具体路线难度。',
   cardBody:
     '给氧气升级、扫描路线、侦察潜水、洞穴返程和判断何时回头用的实用路线指南。',
-};
-
-oxygenDepthCopy.ja = {
-  ...oxygenDepthCopy.ja,
-  metadata: {
-    title: 'Subnautica 2 Oxygen and Depth Guide - When to Dive Deeper',
-    description:
-      'Subnautica 2 oxygen and depth guide covering O2 planning, Air Bladders, Standard Air Tank, scan routes, Bioscanner, cave returns, and turn-back rules.',
-  },
-  description:
-    'Depth is not just a number. It is oxygen, visibility, route memory, inventory space, and whether you can still find the way home under pressure.',
-  quickAnswer:
-    'Do not push deeper just because you reached an entrance once. Use environmental oxygen, carry Air Bladders, build the Standard Air Tank when Silver allows it, and leave when low O2 appears with another problem: bad landmarks, hostile pressure, an unmapped cave, or a scan that forces you to stop.',
-  routeSteps: [
-    {
-      title: 'Check the return before the reward',
-      body: 'Before chasing a scan, wreck, or rare material, ask how you will get home. If the plan only works perfectly, it is not ready.',
-    },
-    {
-      title: 'Use temporary oxygen while scouting',
-      body: 'Oxygen Tunics, Bloom Sap funnels, air pockets, and Air Bladders are scouting tools before a longer route.',
-    },
-    {
-      title: 'Upgrade when Silver allows it',
-      body: 'Standard Air Tank makes cave and scan routes feel far less brittle.',
-    },
-    {
-      title: 'Leave extra O2 for scans',
-      body: 'Scanner and Bioscanner routes make you stop moving, so turn back earlier than you would on a simple material run.',
-    },
-  ],
-  tableRows: [
-    [
-      'Can I describe the way back?',
-      'Yes, with a start landmark, midpoint cue, and return cue.',
-    ],
-    [
-      'Do I have backup oxygen?',
-      'Carry an Air Bladder or know the next oxygen reset.',
-    ],
-    ['Is this a cave or wreck?', 'Leave earlier than in open water.'],
-    [
-      'Is my inventory nearly full?',
-      'Go home first; full bags make deep routes worse.',
-    ],
-    [
-      'Will I need to scan?',
-      'Leave more O2 than usual because scanning locks you in place.',
-    ],
-  ],
-  related: [
-    { href: Routes.Subnautica2AirTank, label: 'Air Tank and O2' },
-    { href: Routes.Subnautica2Rebreather, label: 'Rebreather Guide' },
-    { href: Routes.Subnautica2Scanner, label: 'Scanner Guide' },
-    {
-      href: Routes.Subnautica2BioscannerBiomods,
-      label: 'Bioscanner and Biomods',
-    },
-    {
-      href: Routes.Subnautica2TadpoleDepthModule,
-      label: 'Tadpole Depth Module',
-    },
-    { href: Routes.Subnautica2Silver, label: 'Silver Location' },
-    { href: Routes.Subnautica2Map, label: 'Map and Routes' },
-    { href: Routes.Subnautica2Beginner, label: 'Beginner Route' },
-  ],
-  sourceBody:
-    'Checked May 27, 2026 against current O2 reporting, beginner-route guidance, the official Steam page, and the Early Access roadmap.',
 };
 
 const fallbackLocaleAliases = {
