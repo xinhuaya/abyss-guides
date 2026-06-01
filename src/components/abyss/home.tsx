@@ -146,6 +146,14 @@ const enCopy: HomeCopy = {
       label: 'Xbox',
     },
     {
+      title: 'Crossplay',
+      description:
+        'Steam, Xbox, Game Pass, co-op invites, and the checks to run before starting a group save.',
+      href: Routes.Subnautica2Crossplay,
+      icon: UsersRoundIcon,
+      label: 'Co-op',
+    },
+    {
       title: 'PS5 release date',
       description:
         'A cautious PlayStation watch page that says what is confirmed, what is not, and which sources matter.',
@@ -182,6 +190,14 @@ const enCopy: HomeCopy = {
       href: Routes.Subnautica2Resources,
       icon: BoxesIcon,
       label: 'Materials',
+    },
+    {
+      title: 'Map size and biomes',
+      description:
+        'A route-first map-size page that avoids fake numbers and focuses on useful biome planning.',
+      href: Routes.Subnautica2MapSizeBiomes,
+      icon: MapIcon,
+      label: 'Map',
     },
     {
       title: 'Crafting chains',
@@ -308,6 +324,13 @@ const zhCopy: HomeCopy = {
       label: 'Xbox',
     },
     {
+      title: '跨平台联机',
+      description: 'Steam、Xbox、Game Pass、好友邀请和开多人存档前的核对项。',
+      href: Routes.Subnautica2Crossplay,
+      icon: UsersRoundIcon,
+      label: '联机',
+    },
+    {
       title: 'PS5 发售日',
       description:
         'PlayStation 观察页：已确认的写清楚，未确认的不当成真实日期。',
@@ -341,6 +364,13 @@ const zhCopy: HomeCopy = {
       href: Routes.Subnautica2Resources,
       icon: BoxesIcon,
       label: '材料',
+    },
+    {
+      title: '地图大小和生态区',
+      description: '不编精确面积，先整理路线、生态区、资源循环和建家规划。',
+      href: Routes.Subnautica2MapSizeBiomes,
+      icon: MapIcon,
+      label: '地图',
     },
     {
       title: '制作链',
@@ -465,6 +495,14 @@ const jaCopy: HomeCopy = {
       label: 'Xbox',
     },
     {
+      title: 'クロスプレイ',
+      description:
+        'Steam、Xbox、Game Pass、招待、協力プレイ前の確認をまとめます。',
+      href: Routes.Subnautica2Crossplay,
+      icon: UsersRoundIcon,
+      label: '協力',
+    },
+    {
       title: 'PS5発売日',
       description:
         'PlayStation向けの確認ページ。未確認の日付を事実として扱いません。',
@@ -498,6 +536,13 @@ const jaCopy: HomeCopy = {
       href: Routes.Subnautica2Resources,
       icon: BoxesIcon,
       label: '素材',
+    },
+    {
+      title: 'マップサイズとバイオーム',
+      description: '正確な数字より、ルート、資源ループ、拠点候補を優先します。',
+      href: Routes.Subnautica2MapSizeBiomes,
+      icon: MapIcon,
+      label: 'マップ',
     },
     {
       title: 'クラフトチェーン',
@@ -713,7 +758,7 @@ export function AbyssHome({ locale }: { locale?: Locale }) {
                 {copy.platformDescription}
               </p>
             </div>
-            <div className="grid grid-cols-1 gap-4 md:grid-cols-3">
+            <div className="grid grid-cols-1 gap-4 md:grid-cols-2 xl:grid-cols-4">
               {copy.platformLinks.map((item) => (
                 <LinkCard
                   compact
@@ -738,7 +783,7 @@ export function AbyssHome({ locale }: { locale?: Locale }) {
             </h2>
             <p className="mt-4 text-[#abc8c3]">{copy.popularDescription}</p>
           </div>
-          <div className="grid grid-cols-1 gap-4 md:grid-cols-2 lg:grid-cols-4">
+          <div className="grid grid-cols-1 gap-4 md:grid-cols-2 xl:grid-cols-5">
             {copy.popularLinks.map((item) => (
               <LinkCard
                 compact
