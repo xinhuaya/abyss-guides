@@ -9,7 +9,7 @@ import { getBaseUrl } from '@/lib/urls';
 
 type Href = Parameters<typeof getLocalePathname>[0]['href'];
 
-const SUBNAUTICA_LAST_MODIFIED = new Date('2026-05-29');
+const SUBNAUTICA_LAST_MODIFIED = new Date('2026-06-01');
 
 /**
  * static routes for sitemap, you may change the routes for your own
@@ -104,6 +104,8 @@ const staticRoutes = [
   Routes.Subnautica2CoopPlayerCount,
   Routes.Subnautica2Updates,
   Routes.Subnautica2ReleaseDate,
+  Routes.Subnautica2Ps5ReleaseDate,
+  Routes.Subnautica2XboxGamePass,
   Routes.Subnautica2Hotfix2,
   Routes.Subnautica2SilverAfterHotfix2,
   Routes.Subnautica2TroiliteAfterHotfix2,

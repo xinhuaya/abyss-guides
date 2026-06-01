@@ -793,6 +793,7 @@ const zhJaRoutes = [
   Routes.Subnautica2MildAcid,
   Routes.Subnautica2Moonpool,
   Routes.Subnautica2PowerCell,
+  Routes.Subnautica2Ps5ReleaseDate,
   Routes.Subnautica2Rebreather,
   Routes.Subnautica2ReleaseDate,
   Routes.Subnautica2SonicResonator,
@@ -803,6 +804,7 @@ const zhJaRoutes = [
   Routes.Subnautica2TitaniumIngot,
   Routes.Subnautica2TroiliteAfterHotfix2,
   Routes.Subnautica2WiringKit,
+  Routes.Subnautica2XboxGamePass,
 ] as const;
 
 function createLocaleSet(locales: Locale[]): ReadonlySet<Locale> {

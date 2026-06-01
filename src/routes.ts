@@ -95,6 +95,8 @@ export enum Routes {
   Subnautica2CoopPlayerCount = '/games/subnautica-2/co-op-player-count',
   Subnautica2Updates = '/games/subnautica-2/roadmap',
   Subnautica2ReleaseDate = '/games/subnautica-2/release-date',
+  Subnautica2Ps5ReleaseDate = '/games/subnautica-2/ps5-release-date',
+  Subnautica2XboxGamePass = '/games/subnautica-2/xbox-game-pass',
   Subnautica2Hotfix2 = '/games/subnautica-2/hotfix-2',
   Subnautica2SilverAfterHotfix2 = '/games/subnautica-2/silver-after-hotfix-2',
   Subnautica2TroiliteAfterHotfix2 = '/games/subnautica-2/troilite-after-hotfix-2',
