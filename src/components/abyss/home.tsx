@@ -60,6 +60,29 @@ type HomeCopy = {
   disclaimerBody: string;
 };
 
+const homeImageByRoute: Partial<Record<Routes, string>> = {
+  [Routes.Subnautica2Beginner]: '/abyss/chibi-crafting-bench.webp',
+  [Routes.Subnautica2Hotfix2]: '/abyss/chibi-update-console.webp',
+  [Routes.Subnautica2ReleaseDate]: '/abyss/chibi-platform-briefing.webp',
+  [Routes.Subnautica2InteractiveMap]: '/abyss/chibi-map-exploration.webp',
+  [Routes.Subnautica2CoopPlayerCount]: '/abyss/chibi-coop-signal.webp',
+  [Routes.Subnautica2SilverAfterHotfix2]: '/abyss/chibi-update-console.webp',
+  [Routes.Subnautica2XboxGamePass]: '/abyss/chibi-platform-briefing.webp',
+  [Routes.Subnautica2SystemRequirements]: '/abyss/chibi-platform-briefing.webp',
+  [Routes.Subnautica2EarlyAccessWorthIt]: '/abyss/chibi-platform-briefing.webp',
+  [Routes.Subnautica2Crossplay]: '/abyss/chibi-coop-signal.webp',
+  [Routes.Subnautica2Ps5ReleaseDate]: '/abyss/chibi-platform-briefing.webp',
+  [Routes.Subnautica2OxygenDepth]: '/abyss/chibi-oxygen-depth.webp',
+  [Routes.Subnautica2Scanner]: '/abyss/chibi-crafting-bench.webp',
+  [Routes.Subnautica2Resources]: '/abyss/chibi-resource-scan.webp',
+  [Routes.Subnautica2Vehicles]: '/abyss/chibi-vehicle-route.webp',
+  [Routes.Subnautica2CreaturesLeviathans]: '/abyss/chibi-creature-risk.webp',
+  [Routes.Subnautica2BaseLocationTierList]: '/abyss/chibi-base-location.webp',
+  [Routes.Subnautica2MapSizeBiomes]: '/abyss/chibi-map-exploration.webp',
+  [Routes.Subnautica2Crafting]: '/abyss/chibi-crafting-bench.webp',
+  [Routes.Subnautica2Map]: '/abyss/chibi-map-exploration.webp',
+};
+
 const enCopy: HomeCopy = {
   eyebrow: 'Subnautica 2 guide hub',
   title: 'Start routes, live notes, and quick answers for Subnautica 2.',
@@ -722,33 +745,46 @@ function LinkCard({
   compact?: boolean;
 }) {
   const Icon = item.icon ?? BookOpenIcon;
+  const image =
+    homeImageByRoute[item.href] ?? '/abyss/chibi-deep-sea-hero.webp';
 
   return (
     <LocaleLink
       href={item.href}
       className={cn(
-        'group block min-w-0 overflow-hidden border border-cyan-200/12 bg-[#08252a]/92 p-5 transition hover:-translate-y-0.5 hover:border-cyan-200/45 hover:bg-[#0a3036]',
-        compact && 'p-4'
+        'group block min-w-0 overflow-hidden border border-cyan-200/12 bg-[#08252a]/92 transition hover:-translate-y-0.5 hover:border-cyan-200/45 hover:bg-[#0a3036]'
       )}
     >
-      <div className="flex min-h-8 min-w-0 items-start justify-between gap-3">
-        <Icon className="size-5 shrink-0 text-[#78ead7]" />
-        {item.label ? (
-          <span className="min-w-0 max-w-[8rem] break-words border border-[#f08b4f]/35 bg-[#f08b4f]/10 px-2 py-1 text-right text-xs font-semibold text-[#ffc4a1]">
-            {item.label}
-          </span>
-        ) : null}
+      <div
+        aria-hidden="true"
+        className={cn(
+          'bg-cover bg-center opacity-90 transition duration-300 group-hover:scale-[1.03]',
+          compact ? 'h-24' : 'h-32'
+        )}
+        style={{
+          backgroundImage: `linear-gradient(180deg,rgba(3,19,20,.08),rgba(3,19,20,.68)),url('${image}')`,
+        }}
+      />
+      <div className={cn('min-w-0', compact ? 'p-4' : 'p-5')}>
+        <div className="flex min-h-8 min-w-0 items-start justify-between gap-3">
+          <Icon className="size-5 shrink-0 text-[#78ead7]" />
+          {item.label ? (
+            <span className="min-w-0 max-w-[8rem] break-words border border-[#f08b4f]/35 bg-[#f08b4f]/10 px-2 py-1 text-right text-xs font-semibold text-[#ffc4a1]">
+              {item.label}
+            </span>
+          ) : null}
+        </div>
+        <h3 className="mt-5 break-words text-lg font-semibold text-[#f0fffb]">
+          {item.title}
+        </h3>
+        <p className="mt-3 break-words text-sm leading-6 text-[#a8c6c0]">
+          {item.description}
+        </p>
+        <span className="mt-4 inline-flex items-center gap-2 text-sm font-medium text-[#78ead7]">
+          {openLabel}
+          <ArrowRightIcon className="size-4 transition group-hover:translate-x-1" />
+        </span>
       </div>
-      <h3 className="mt-5 break-words text-lg font-semibold text-[#f0fffb]">
-        {item.title}
-      </h3>
-      <p className="mt-3 break-words text-sm leading-6 text-[#a8c6c0]">
-        {item.description}
-      </p>
-      <span className="mt-4 inline-flex items-center gap-2 text-sm font-medium text-[#78ead7]">
-        {openLabel}
-        <ArrowRightIcon className="size-4 transition group-hover:translate-x-1" />
-      </span>
     </LocaleLink>
   );
 }
