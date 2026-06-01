@@ -14,6 +14,7 @@ import {
   RadioIcon,
   SearchIcon,
   TimerResetIcon,
+  UsersRoundIcon,
   WrenchIcon,
 } from 'lucide-react';
 import type { LucideIcon } from 'lucide-react';
@@ -39,6 +40,7 @@ type HomeCopy = {
   latestLinks: HomeLink[];
   openLabel: string;
   popularTitle: string;
+  popularHeading: string;
   popularDescription: string;
   popularLinks: HomeLink[];
   coreTitle: string;
@@ -51,17 +53,25 @@ type HomeCopy = {
 
 const enCopy: HomeCopy = {
   eyebrow: 'Subnautica 2 guide hub',
-  title: 'Routes, resources, and patch notes for the alien ocean.',
+  title: 'Start routes, live notes, and quick answers for Subnautica 2.',
   description:
-    'Abyss Guides is a practical Subnautica 2 guide hub. Start with a route, check the material chain, then jump to the newest Early Access changes before you waste another dive.',
-  primaryCta: 'Open Subnautica 2 hub',
+    'Abyss Guides puts the pages players actually search for at the front: what to do first, what changed in the latest hotfix, where to find key materials, and which platform details are confirmed.',
+  primaryCta: 'Start the beginner route',
   secondaryCta: 'Find a resource',
-  latestTitle: 'Latest checks',
-  latestHeading: 'Patch-sensitive pages first',
+  latestTitle: 'Homepage focus',
+  latestHeading: 'The six pages players need first',
   latestDescription:
-    'Patch-sensitive pages stay close to the top because Early Access changes can move resources, recipes, and route priorities.',
+    'This front page is built around search intent, not filler. New players need a route, returning players need update notes, and undecided players need platform answers before they buy or install.',
   openLabel: 'Open',
   latestLinks: [
+    {
+      title: 'Beginner route',
+      description:
+        'First-hour priorities, safe loops, scanning habits, and low-spoiler survival notes.',
+      href: Routes.Subnautica2Beginner,
+      icon: CompassIcon,
+      label: 'Start here',
+    },
     {
       title: 'Hotfix 2 tracker',
       description:
@@ -71,6 +81,30 @@ const enCopy: HomeCopy = {
       label: 'Latest',
     },
     {
+      title: 'Release date and platforms',
+      description:
+        'Early Access date, Steam, Xbox, Game Pass, PS5 searches, and what is confirmed.',
+      href: Routes.Subnautica2ReleaseDate,
+      icon: CalendarDaysIcon,
+      label: 'Platforms',
+    },
+    {
+      title: 'Interactive map',
+      description:
+        'Map-size questions, confirmed map details, and how to plan routes before full tools arrive.',
+      href: Routes.Subnautica2InteractiveMap,
+      icon: MapIcon,
+      label: 'Map',
+    },
+    {
+      title: 'Co-op player count',
+      description:
+        'How many players can join, what crossplay means, and what local co-op searches get wrong.',
+      href: Routes.Subnautica2CoopPlayerCount,
+      icon: UsersRoundIcon,
+      label: 'Co-op',
+    },
+    {
       title: 'Silver after Hotfix 2',
       description:
         'A focused route for the material that blocks Scanner, Wiring Kit, and tank progress.',
@@ -78,27 +112,12 @@ const enCopy: HomeCopy = {
       icon: AlertTriangleIcon,
       label: 'Updated',
     },
-    {
-      title: 'Release date and platforms',
-      description:
-        'Early Access date, Steam, Xbox, Game Pass, PS5 searches, and what is confirmed.',
-      href: Routes.Subnautica2ReleaseDate,
-      icon: CalendarDaysIcon,
-      label: 'Search spike',
-    },
   ],
-  popularTitle: 'Popular right now',
+  popularTitle: 'In-game routes',
+  popularHeading: 'After the first click, these keep players moving',
   popularDescription:
-    'These are the pages players are most likely to need in the first few sessions or while pushing into Alien Ruins.',
+    'These are not homepage decoration. They are the pages players come back to while scanning, diving deeper, and building their first reliable kit.',
   popularLinks: [
-    {
-      title: 'Beginner route',
-      description:
-        'First-hour priorities, safe loops, scanning habits, and low-spoiler survival notes.',
-      href: Routes.Subnautica2Beginner,
-      icon: CompassIcon,
-      label: 'Start here',
-    },
     {
       title: 'Oxygen and depth',
       description:
@@ -116,12 +135,20 @@ const enCopy: HomeCopy = {
       label: 'Blueprints',
     },
     {
-      title: 'Release date and platforms',
+      title: 'Resources index',
       description:
-        'A clean answer for release date, release time, PS5, Xbox, and Game Pass searches.',
-      href: Routes.Subnautica2ReleaseDate,
-      icon: CalendarDaysIcon,
-      label: 'Platforms',
+        'Material locations, farming notes, and page-by-page resource checks.',
+      href: Routes.Subnautica2Resources,
+      icon: BoxesIcon,
+      label: 'Materials',
+    },
+    {
+      title: 'Crafting chains',
+      description:
+        'Recipe chains, blueprint unlocks, and the base for future calculators.',
+      href: Routes.Subnautica2Crafting,
+      icon: WrenchIcon,
+      label: 'Recipes',
     },
   ],
   coreTitle: 'Core guide sections',
@@ -151,7 +178,7 @@ const enCopy: HomeCopy = {
     },
   ],
   stats: [
-    ['47', 'indexed Japanese pages'],
+    ['6', 'homepage entry points'],
     ['Hotfix 2', 'latest tracked update'],
     ['8', 'search locales'],
   ],
@@ -162,17 +189,24 @@ const enCopy: HomeCopy = {
 
 const zhCopy: HomeCopy = {
   eyebrow: 'Subnautica 2 攻略中心',
-  title: '给深海玩家看的路线、资源和补丁笔记。',
+  title: 'Subnautica 2 玩家最先需要的路线、更新和答案。',
   description:
-    'Abyss Guides 不是模板站。它的核心就是 Subnautica 2 攻略资料库：先找路线，再查材料链，最后看最新补丁有没有改动。',
-  primaryCta: '进入攻略中心',
+    'Abyss Guides 首页只放玩家真正会搜、会点、会反复用的内容：开局怎么走，最新补丁改了什么，关键材料去哪找，平台和发售问题哪些已经确认。',
+  primaryCta: '先看新手路线',
   secondaryCta: '查资源',
-  latestTitle: '最新核对',
-  latestHeading: '把补丁相关内容放在最前面',
+  latestTitle: '首页核心入口',
+  latestHeading: '先展示这 6 个页面',
   latestDescription:
-    '抢先体验阶段变化很快，所以补丁相关页面要放在首页。资源位置、配方和路线优先级都可能跟着变。',
+    '这个首页不是用来堆内容的。新玩家要路线，老玩家要更新，准备入坑的人要平台和发售答案，这些内容必须先出现。',
   openLabel: '打开',
   latestLinks: [
+    {
+      title: '新手路线',
+      description: '开局优先级、安全循环、扫描习惯和低剧透生存建议。',
+      href: Routes.Subnautica2Beginner,
+      icon: CompassIcon,
+      label: '先看',
+    },
     {
       title: 'Hotfix 2 追踪',
       description: '银、氧气、联机和开局路线的最新核对笔记。',
@@ -181,32 +215,40 @@ const zhCopy: HomeCopy = {
       label: '最新',
     },
     {
+      title: '发售时间和平台',
+      description:
+        '抢先体验日期、Steam、Xbox、Game Pass、PS5 搜索和已确认信息。',
+      href: Routes.Subnautica2ReleaseDate,
+      icon: CalendarDaysIcon,
+      label: '平台',
+    },
+    {
+      title: '互动地图',
+      description: '地图大小、已确认地图信息，以及完整工具出来前怎么规划路线。',
+      href: Routes.Subnautica2InteractiveMap,
+      icon: MapIcon,
+      label: '地图',
+    },
+    {
+      title: '联机人数',
+      description: '最多几人联机、跨平台怎么理解，本地双人搜索为什么容易误解。',
+      href: Routes.Subnautica2CoopPlayerCount,
+      icon: UsersRoundIcon,
+      label: '联机',
+    },
+    {
       title: 'Hotfix 2 后的 Silver',
       description: 'Scanner、Wiring Kit、气瓶进度最容易卡在这里。',
       href: Routes.Subnautica2SilverAfterHotfix2,
       icon: AlertTriangleIcon,
       label: '已更新',
     },
-    {
-      title: '发售时间和平台',
-      description:
-        '抢先体验日期、Steam、Xbox、Game Pass、PS5 搜索和已确认信息。',
-      href: Routes.Subnautica2ReleaseDate,
-      icon: CalendarDaysIcon,
-      label: '搜索上升',
-    },
   ],
-  popularTitle: '热门内容',
+  popularTitle: '进游戏后常用',
+  popularHeading: '开局、扫描、氧气、资源，先把这些做顺',
   popularDescription:
-    '这些页面更适合放首页：新玩家会查，推进 Alien Ruins 的玩家也会反复回来用。',
+    '这几个入口负责把玩家留住：他们打开一篇之后，能继续查下一步，而不是看完就走。',
   popularLinks: [
-    {
-      title: '新手路线',
-      description: '开局优先级、安全循环、扫描习惯和低剧透生存建议。',
-      href: Routes.Subnautica2Beginner,
-      icon: CompassIcon,
-      label: '先看',
-    },
     {
       title: '氧气和深度',
       description: '什么时候继续下潜，什么时候回头，扫描路线怎么留氧气。',
@@ -222,12 +264,18 @@ const zhCopy: HomeCopy = {
       label: '蓝图',
     },
     {
-      title: '发售时间和平台',
-      description:
-        '集中回答 release date、release time、PS5、Xbox 和 Game Pass。',
-      href: Routes.Subnautica2ReleaseDate,
-      icon: CalendarDaysIcon,
-      label: '平台',
+      title: '资源索引',
+      description: '材料位置、采集思路和单项资源页，适合一边玩一边查。',
+      href: Routes.Subnautica2Resources,
+      icon: BoxesIcon,
+      label: '材料',
+    },
+    {
+      title: '制作链',
+      description: '配方链、蓝图解锁，以及后续制作计算器的数据基础。',
+      href: Routes.Subnautica2Crafting,
+      icon: WrenchIcon,
+      label: '配方',
     },
   ],
   coreTitle: '核心栏目',
@@ -254,7 +302,7 @@ const zhCopy: HomeCopy = {
     },
   ],
   stats: [
-    ['47', '日语可索引页'],
+    ['6', '首页核心入口'],
     ['Hotfix 2', '最新追踪'],
     ['8', '搜索语言'],
   ],
@@ -265,43 +313,17 @@ const zhCopy: HomeCopy = {
 
 const jaCopy: HomeCopy = {
   eyebrow: 'Subnautica 2攻略ハブ',
-  title: '深海探索のルート、素材、アップデートメモ。',
+  title: 'Subnautica 2で最初に見るルート、更新、答え。',
   description:
-    'Abyss GuidesはSubnautica 2の実用攻略ハブです。まずルートを決め、素材チェーンを確認し、Early Accessの変更点を見てから潜ります。',
-  primaryCta: '攻略ハブを開く',
+    'Abyss Guidesのトップは、プレイヤーが実際に探すページを先に出します。序盤ルート、最新Hotfix、重要素材、発売日と対応機種をすぐ確認できます。',
+  primaryCta: '初心者ルートを見る',
   secondaryCta: '資源を探す',
-  latestTitle: '最新チェック',
-  latestHeading: 'パッチに関係するページを先に',
+  latestTitle: 'トップの中心',
+  latestHeading: '最初に必要な6ページ',
   latestDescription:
-    'Early Accessでは資源、レシピ、進行ルートが変わることがあります。パッチに関係するページを上に置いています。',
+    '新規プレイヤーはルートを探し、戻ってくる人は更新を確認します。購入前の人は対応機種と発売情報を見ます。だから、この6つを前に出します。',
   openLabel: '開く',
   latestLinks: [
-    {
-      title: 'Hotfix 2まとめ',
-      description: 'Silver、酸素、協力プレイ、序盤ルートの確認メモ。',
-      href: Routes.Subnautica2Hotfix2,
-      icon: TimerResetIcon,
-      label: '最新',
-    },
-    {
-      title: 'Hotfix 2後のSilver',
-      description: 'Scanner、Wiring Kit、酸素タンクで詰まりやすい素材。',
-      href: Routes.Subnautica2SilverAfterHotfix2,
-      icon: AlertTriangleIcon,
-      label: '更新',
-    },
-    {
-      title: '発売日とプラットフォーム',
-      description: 'Early Access日、Steam、Xbox、Game Pass、PS5検索を整理。',
-      href: Routes.Subnautica2ReleaseDate,
-      icon: CalendarDaysIcon,
-      label: '検索増',
-    },
-  ],
-  popularTitle: 'よく使う攻略',
-  popularDescription:
-    '序盤の迷いどころとAlien Ruins方面の重要ルートを先に置いています。',
-  popularLinks: [
     {
       title: '初心者ルート',
       description:
@@ -310,6 +332,49 @@ const jaCopy: HomeCopy = {
       icon: CompassIcon,
       label: '最初に読む',
     },
+    {
+      title: 'Hotfix 2まとめ',
+      description: 'Silver、酸素、協力プレイ、序盤ルートの確認メモ。',
+      href: Routes.Subnautica2Hotfix2,
+      icon: TimerResetIcon,
+      label: '最新',
+    },
+    {
+      title: '発売日とプラットフォーム',
+      description: 'Early Access日、Steam、Xbox、Game Pass、PS5検索を整理。',
+      href: Routes.Subnautica2ReleaseDate,
+      icon: CalendarDaysIcon,
+      label: '対応機種',
+    },
+    {
+      title: 'インタラクティブマップ',
+      description:
+        'マップサイズ、確認済みの地形情報、正式なツール前のルート計画。',
+      href: Routes.Subnautica2InteractiveMap,
+      icon: MapIcon,
+      label: 'マップ',
+    },
+    {
+      title: '協力プレイ人数',
+      description:
+        '最大人数、クロスプレイの考え方、ローカル協力プレイ検索の注意点。',
+      href: Routes.Subnautica2CoopPlayerCount,
+      icon: UsersRoundIcon,
+      label: '協力',
+    },
+    {
+      title: 'Hotfix 2後のSilver',
+      description: 'Scanner、Wiring Kit、酸素タンクで詰まりやすい素材。',
+      href: Routes.Subnautica2SilverAfterHotfix2,
+      icon: AlertTriangleIcon,
+      label: '更新',
+    },
+  ],
+  popularTitle: 'ゲーム中に使うページ',
+  popularHeading: '酸素、スキャン、資源、クラフトを迷わない',
+  popularDescription:
+    'トップの次に見るページです。ひとつ読んだあと、次の行動にそのまま進める構成にしています。',
+  popularLinks: [
     {
       title: '酸素と深度',
       description: '深く潜る判断、引き返すタイミング、スキャン時の酸素計画。',
@@ -325,12 +390,18 @@ const jaCopy: HomeCopy = {
       label: '設計図',
     },
     {
-      title: '発売日とプラットフォーム',
-      description:
-        'release date、release time、PS5、Xbox、Game Passの確認メモ。',
-      href: Routes.Subnautica2ReleaseDate,
-      icon: CalendarDaysIcon,
-      label: 'Platforms',
+      title: '資源インデックス',
+      description: '素材の場所、採集メモ、個別資源ページへすぐ移動できます。',
+      href: Routes.Subnautica2Resources,
+      icon: BoxesIcon,
+      label: '素材',
+    },
+    {
+      title: 'クラフトチェーン',
+      description: 'レシピチェーン、設計図、将来の計算ツール用データ。',
+      href: Routes.Subnautica2Crafting,
+      icon: WrenchIcon,
+      label: 'レシピ',
     },
   ],
   coreTitle: '中心コンテンツ',
@@ -357,7 +428,7 @@ const jaCopy: HomeCopy = {
     },
   ],
   stats: [
-    ['47', '日本語インデックス対象'],
+    ['6', 'トップ入口'],
     ['Hotfix 2', '追跡中'],
     ['8', '検索ロケール'],
   ],
@@ -460,7 +531,7 @@ export function AbyssHome({ locale }: { locale?: Locale }) {
             </p>
             <div className="mt-8 flex flex-col gap-3 sm:flex-row">
               <LocaleLink
-                href={Routes.Subnautica2}
+                href={Routes.Subnautica2Beginner}
                 className={cn(buttonVariants({ size: 'lg' }), 'rounded-md')}
               >
                 {copy.primaryCta}
@@ -506,7 +577,7 @@ export function AbyssHome({ locale }: { locale?: Locale }) {
             </h2>
             <p className="mt-4 text-[#abc8c3]">{copy.latestDescription}</p>
           </div>
-          <div className="grid gap-4 md:grid-cols-3">
+          <div className="grid gap-4 md:grid-cols-2 lg:grid-cols-3">
             {copy.latestLinks.map((item) => (
               <LinkCard
                 item={item}
@@ -525,7 +596,7 @@ export function AbyssHome({ locale }: { locale?: Locale }) {
               {copy.popularTitle}
             </p>
             <h2 className="mt-3 text-3xl font-semibold md:text-4xl">
-              {copy.popularTitle}
+              {copy.popularHeading}
             </h2>
             <p className="mt-4 text-[#abc8c3]">{copy.popularDescription}</p>
           </div>
