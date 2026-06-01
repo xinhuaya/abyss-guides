@@ -81,6 +81,24 @@ type LocalizedResourceGuidePageProps = {
 
 const DEFAULT_CONTENT_DATE = '2026-05-23';
 const OFFICIAL_TRAILER_URL = 'https://www.youtube.com/watch?v=6t2nDHldoSk';
+const DEFAULT_GUIDE_IMAGE = '/abyss/chibi-deep-sea-hero.webp';
+
+const guideImageByPathname: Partial<Record<Routes, string>> = {
+  [Routes.Subnautica2Vehicles]: '/abyss/chibi-vehicle-route.webp',
+  [Routes.Subnautica2Tadpole]: '/abyss/chibi-vehicle-route.webp',
+  [Routes.Subnautica2TadpoleDock]: '/abyss/chibi-vehicle-route.webp',
+  [Routes.Subnautica2VehicleFabricator]: '/abyss/chibi-vehicle-route.webp',
+  [Routes.Subnautica2Moonpool]: '/abyss/chibi-vehicle-route.webp',
+  [Routes.Subnautica2CreaturesLeviathans]: '/abyss/chibi-creature-risk.webp',
+  [Routes.Subnautica2CreatureEnamel]: '/abyss/chibi-creature-risk.webp',
+  [Routes.Subnautica2AcidicRaionPouch]: '/abyss/chibi-creature-risk.webp',
+  [Routes.Subnautica2NecroleiCyst]: '/abyss/chibi-creature-risk.webp',
+  [Routes.Subnautica2BaseLocationTierList]: '/abyss/chibi-base-location.webp',
+  [Routes.Subnautica2BaseBuilding]: '/abyss/chibi-base-location.webp',
+  [Routes.Subnautica2BestBaseLocations]: '/abyss/chibi-base-location.webp',
+  [Routes.Subnautica2HabitatBuilder]: '/abyss/chibi-base-location.webp',
+  [Routes.Subnautica2MapSizeBiomes]: '/abyss/chibi-base-location.webp',
+};
 
 type MediaCopy = {
   title: string;
@@ -213,6 +231,7 @@ export function LocalizedResourceGuidePage({
   const baseUrl = getBaseUrl().replace(/\/$/, '');
   const pageUrl = getUrlWithLocale(pathname, locale).replace(/\/$/, '');
   const hubUrl = `${baseUrl}${getPathWithLocale(Routes.Subnautica2, locale)}`;
+  const guideImage = guideImageByPathname[pathname] ?? DEFAULT_GUIDE_IMAGE;
   const publishedAt = copy.publishedAt ?? DEFAULT_CONTENT_DATE;
   const updatedAt = copy.updatedAt ?? publishedAt;
   const checkedAt = copy.checkedAt ?? formatGuideDate(updatedAt, locale);
@@ -224,7 +243,7 @@ export function LocalizedResourceGuidePage({
       headline: copy.title,
       description: copy.description,
       url: pageUrl,
-      image: `${baseUrl}/abyss/chibi-deep-sea-hero.webp`,
+      image: `${baseUrl}${guideImage}`,
       datePublished: publishedAt,
       dateModified: updatedAt,
       inLanguage: locale,
@@ -286,7 +305,7 @@ export function LocalizedResourceGuidePage({
           aria-hidden="true"
           className="absolute inset-0 bg-cover bg-right opacity-40"
           style={{
-            backgroundImage: "url('/abyss/chibi-deep-sea-hero.webp')",
+            backgroundImage: `url('${guideImage}')`,
           }}
         />
         <div
@@ -409,8 +428,7 @@ export function LocalizedResourceGuidePage({
                       aria-hidden="true"
                       className="h-28 bg-cover bg-center opacity-80"
                       style={{
-                        backgroundImage:
-                          "linear-gradient(90deg,rgba(3,19,20,.18),rgba(3,19,20,.88)),url('/abyss/chibi-deep-sea-hero.webp')",
+                        backgroundImage: `linear-gradient(90deg,rgba(3,19,20,.18),rgba(3,19,20,.88)),url('${guideImage}')`,
                       }}
                     />
                     <div className="p-5">
@@ -466,8 +484,7 @@ export function LocalizedResourceGuidePage({
                   <div
                     className="h-64 bg-cover bg-center"
                     style={{
-                      backgroundImage:
-                        "linear-gradient(180deg,rgba(3,19,20,.08),rgba(3,19,20,.46)),url('/abyss/chibi-deep-sea-hero.webp')",
+                      backgroundImage: `linear-gradient(180deg,rgba(3,19,20,.08),rgba(3,19,20,.46)),url('${guideImage}')`,
                     }}
                   />
                   <figcaption className="border-t border-cyan-200/12 p-5">
@@ -647,7 +664,7 @@ export function LocalizedResourceGuidePage({
                 aria-hidden="true"
                 className="h-40 bg-cover bg-right"
                 style={{
-                  backgroundImage: "url('/abyss/chibi-deep-sea-hero.webp')",
+                  backgroundImage: `url('${guideImage}')`,
                 }}
               />
               <div className="border-t border-cyan-200/12 p-5">
