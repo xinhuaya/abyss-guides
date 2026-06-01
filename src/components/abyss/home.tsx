@@ -12,9 +12,11 @@ import {
   CompassIcon,
   Gamepad2Icon,
   MapIcon,
+  MapPinIcon,
   MonitorPlayIcon,
   RadioIcon,
   SearchIcon,
+  ShipWheelIcon,
   TimerResetIcon,
   UsersRoundIcon,
   WrenchIcon,
@@ -208,6 +210,30 @@ const enCopy: HomeCopy = {
       label: 'Materials',
     },
     {
+      title: 'Vehicles',
+      description:
+        'Tadpole notes, docking checks, creature behavior, and future vehicle watch items.',
+      href: Routes.Subnautica2Vehicles,
+      icon: ShipWheelIcon,
+      label: 'Routes',
+    },
+    {
+      title: 'Creatures and leviathans',
+      description:
+        'Hammerhead behavior, route risk, and careful leviathan watch notes without fake lists.',
+      href: Routes.Subnautica2CreaturesLeviathans,
+      icon: AlertTriangleIcon,
+      label: 'Risk',
+    },
+    {
+      title: 'Base location tiers',
+      description:
+        'Rank base spots by return path, resources, Tadpole approach, and creature trouble.',
+      href: Routes.Subnautica2BaseLocationTierList,
+      icon: MapPinIcon,
+      label: 'Bases',
+    },
+    {
       title: 'Map size and biomes',
       description:
         'A route-first map-size page that avoids fake numbers and focuses on useful biome planning.',
@@ -397,6 +423,27 @@ const zhCopy: HomeCopy = {
       label: '材料',
     },
     {
+      title: '载具',
+      description: 'Tadpole、停靠、载具路线、生物行为和未来载具观察。',
+      href: Routes.Subnautica2Vehicles,
+      icon: ShipWheelIcon,
+      label: '路线',
+    },
+    {
+      title: '生物和利维坦',
+      description: 'Hammerhead 行为、路线风险和谨慎的利维坦观察页。',
+      href: Routes.Subnautica2CreaturesLeviathans,
+      icon: AlertTriangleIcon,
+      label: '风险',
+    },
+    {
+      title: '基地位置梯度',
+      description: '按回程、资源、Tadpole 靠近和生物风险给基地分层。',
+      href: Routes.Subnautica2BaseLocationTierList,
+      icon: MapPinIcon,
+      label: '基地',
+    },
+    {
       title: '地图大小和生态区',
       description: '不编精确面积，先整理路线、生态区、资源循环和建家规划。',
       href: Routes.Subnautica2MapSizeBiomes,
@@ -582,6 +629,28 @@ const jaCopy: HomeCopy = {
       href: Routes.Subnautica2Resources,
       icon: BoxesIcon,
       label: '素材',
+    },
+    {
+      title: '乗り物',
+      description:
+        'Tadpole、ドッキング、生物挙動、今後の乗り物更新を追います。',
+      href: Routes.Subnautica2Vehicles,
+      icon: ShipWheelIcon,
+      label: 'ルート',
+    },
+    {
+      title: '生物とリヴァイアサン',
+      description: 'Hammerhead挙動、危険ルート、慎重なリヴァイアサン観察メモ。',
+      href: Routes.Subnautica2CreaturesLeviathans,
+      icon: AlertTriangleIcon,
+      label: '危険',
+    },
+    {
+      title: '拠点候補ランク',
+      description: '帰り道、素材、Tadpole接近、生物リスクで拠点を評価します。',
+      href: Routes.Subnautica2BaseLocationTierList,
+      icon: MapPinIcon,
+      label: '拠点',
     },
     {
       title: 'マップサイズとバイオーム',
@@ -829,7 +898,7 @@ export function AbyssHome({ locale }: { locale?: Locale }) {
             </h2>
             <p className="mt-4 text-[#abc8c3]">{copy.popularDescription}</p>
           </div>
-          <div className="grid grid-cols-1 gap-4 md:grid-cols-2 xl:grid-cols-5">
+          <div className="grid grid-cols-1 gap-4 md:grid-cols-2 xl:grid-cols-4">
             {copy.popularLinks.map((item) => (
               <LinkCard
                 compact
