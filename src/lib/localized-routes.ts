@@ -792,6 +792,7 @@ const zhJaRoutes = [
   Routes.Subnautica2Moonpool,
   Routes.Subnautica2PowerCell,
   Routes.Subnautica2Rebreather,
+  Routes.Subnautica2ReleaseDate,
   Routes.Subnautica2SonicResonator,
   Routes.Subnautica2Strontium,
   Routes.Subnautica2SystemChip,

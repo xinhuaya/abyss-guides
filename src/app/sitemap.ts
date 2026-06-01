@@ -101,6 +101,7 @@ const staticRoutes = [
   Routes.Subnautica2Map,
   Routes.Subnautica2Coop,
   Routes.Subnautica2Updates,
+  Routes.Subnautica2ReleaseDate,
   Routes.Subnautica2Hotfix2,
   Routes.Subnautica2SilverAfterHotfix2,
   Routes.Subnautica2TroiliteAfterHotfix2,
