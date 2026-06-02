@@ -76,7 +76,7 @@ const copyByLocale: Record<'en' | 'zh', HubCopy> = {
       description:
         'Start here for Subnautica 2 beginner tips, resource locations, crafting recipes, map and biome notes, co-op help, settings fixes, and Early Access updates.',
     },
-    updated: 'Last updated May 29, 2026',
+    updated: 'Last updated June 2, 2026',
     title: 'Subnautica 2 Guide Hub',
     description:
       'Subnautica 2 is in Early Access, so guides need to stay flexible. This hub organizes beginner routes, resources, crafting, map notes, co-op help, settings, and updates in one place.',
@@ -603,10 +603,15 @@ const copyByLocale: Record<'en' | 'zh', HubCopy> = {
         ],
       },
       {
-        title: 'Hotfix 2 checks',
+        title: 'Hotfix checks',
         description:
-          'Use this cluster when old launch-week advice says Silver or Troilite only comes from a narrow, punishing route.',
+          'Use this cluster when old launch-week advice conflicts with the latest patch notes.',
         links: [
+          {
+            href: Routes.Subnautica2Hotfix3,
+            label: 'Hotfix 3',
+            note: 'latest official patch',
+          },
           {
             href: Routes.Subnautica2Hotfix2,
             label: 'Hotfix 2',
@@ -711,11 +716,17 @@ const copyByLocale: Record<'en' | 'zh', HubCopy> = {
         ],
       },
     ],
-    patchEyebrow: 'Hotfix 2 tracker',
-    patchTitle: 'Patch-sensitive pages to recheck first',
+    patchEyebrow: 'Hotfix 3 tracker',
+    patchTitle: 'Latest patch-sensitive pages to recheck first',
     patchBody:
-      'Hotfix 2 changes early Silver availability and late-game Troilite resource areas. Start here when an old guide feels too harsh or too narrow.',
+      'Hotfix 3 changes DLSS, Interior Wall costs, Hammerhead behavior around Tadpoles, creature risk, co-op rejoining, and Strike Armor stacking. Start here before trusting launch-week advice.',
     patchLinks: [
+      {
+        href: Routes.Subnautica2Hotfix3,
+        title: 'Hotfix 3 Changes',
+        description:
+          'DLSS 4.5, Frame Generation, Interior Wall cost, Tadpoles, Hammerheads, creatures, co-op rejoin, and Strike Armor fixes.',
+      },
       {
         href: Routes.Subnautica2Hotfix2,
         title: 'Hotfix 2 Changes',
@@ -759,7 +770,7 @@ const copyByLocale: Record<'en' | 'zh', HubCopy> = {
       description:
         'Subnautica 2 中文攻略入口，整理新手路线、资源位置、制作链、地图生态区、联机建议和抢先体验更新。',
     },
-    updated: '最后更新：2026 年 5 月 29 日',
+    updated: '最后更新：2026 年 6 月 2 日',
     title: 'Subnautica 2 攻略中心',
     description:
       'Subnautica 2 还在抢先体验阶段，数据会变，攻略也要跟着改。这个入口先把新手路线、资源、制作、地图、联机和更新放在一起，方便玩家快速跳到要查的内容。',
@@ -1214,10 +1225,14 @@ const copyByLocale: Record<'en' | 'zh', HubCopy> = {
         ],
       },
       {
-        title: 'Hotfix 2 复查',
-        description:
-          '遇到首发周攻略说银或 Troilite 只有一条很折磨的路线时，先从这一组重新核对。',
+        title: 'Hotfix 复查',
+        description: '遇到首发周攻略和最新补丁说明冲突时，先从这一组重新核对。',
         links: [
+          {
+            href: Routes.Subnautica2Hotfix3,
+            label: 'Hotfix 3',
+            note: '最新官方补丁',
+          },
           {
             href: Routes.Subnautica2Hotfix2,
             label: 'Hotfix 2',
@@ -1322,11 +1337,17 @@ const copyByLocale: Record<'en' | 'zh', HubCopy> = {
         ],
       },
     ],
-    patchEyebrow: 'Hotfix 2 更新追踪',
+    patchEyebrow: 'Hotfix 3 更新追踪',
     patchTitle: '先复查这些补丁相关页面',
     patchBody:
-      'Hotfix 2 改了前期银资源点，也增加了后期 Troilite 资源区域。遇到首发周攻略说法太绝对时，优先从这组页面重新核对。',
+      'Hotfix 3 改了 DLSS、Interior Wall 成本、Hammerhead 对 Tadpole 的行为、怪物风险、联机重连和 Strike Armor 叠加问题。遇到首发周攻略说法太绝对时，优先从这组页面重新核对。',
     patchLinks: [
+      {
+        href: Routes.Subnautica2Hotfix3,
+        title: 'Hotfix 3 更新内容',
+        description:
+          'DLSS 4.5、Frame Generation、Interior Wall、Tadpole、Hammerhead、怪物、联机重连和 Strike Armor 修复。',
+      },
       {
         href: Routes.Subnautica2Hotfix2,
         title: 'Hotfix 2 更新内容',
@@ -1820,6 +1841,11 @@ const guideIndexCopyByLocale: Record<'en' | 'zh', GuideIndexCopy> = {
         title: 'Updates and platforms',
         links: [
           {
+            href: Routes.Subnautica2Hotfix3,
+            label: 'Hotfix 3',
+            note: 'DLSS, Tadpoles, creatures, co-op',
+          },
+          {
             href: Routes.Subnautica2Hotfix2,
             label: 'Hotfix 2',
             note: 'changed routes and known fixes',
@@ -1982,6 +2008,11 @@ const guideIndexCopyByLocale: Record<'en' | 'zh', GuideIndexCopy> = {
       {
         title: '更新和平台',
         links: [
+          {
+            href: Routes.Subnautica2Hotfix3,
+            label: 'Hotfix 3',
+            note: 'DLSS、Tadpole、怪物和联机',
+          },
           {
             href: Routes.Subnautica2Hotfix2,
             label: 'Hotfix 2',

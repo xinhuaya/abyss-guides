@@ -106,6 +106,7 @@ export enum Routes {
   Subnautica2EarlyAccessWorthIt = '/games/subnautica-2/early-access-worth-it',
   Subnautica2MapSizeBiomes = '/games/subnautica-2/map-size-biomes',
   Subnautica2Hotfix2 = '/games/subnautica-2/hotfix-2',
+  Subnautica2Hotfix3 = '/games/subnautica-2/hotfix-3',
   Subnautica2SilverAfterHotfix2 = '/games/subnautica-2/silver-after-hotfix-2',
   Subnautica2TroiliteAfterHotfix2 = '/games/subnautica-2/troilite-after-hotfix-2',
   ThumbnailMaker = '/tools/youtube-thumbnail-maker',

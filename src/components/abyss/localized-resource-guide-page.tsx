@@ -188,6 +188,7 @@ const guideImageByPathname: Partial<Record<Routes, string>> = {
   [Routes.Subnautica2SystemRequirements]: '/abyss/chibi-platform-briefing.webp',
   [Routes.Subnautica2EarlyAccessWorthIt]: '/abyss/chibi-platform-briefing.webp',
   [Routes.Subnautica2Hotfix2]: '/abyss/chibi-update-console.webp',
+  [Routes.Subnautica2Hotfix3]: '/abyss/chibi-update-console.webp',
   [Routes.Subnautica2SilverAfterHotfix2]: '/abyss/chibi-update-console.webp',
   [Routes.Subnautica2TroiliteAfterHotfix2]: '/abyss/chibi-update-console.webp',
 };
