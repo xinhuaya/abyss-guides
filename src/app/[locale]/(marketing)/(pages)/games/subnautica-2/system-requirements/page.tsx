@@ -179,6 +179,10 @@ const copyByLocale: Record<string, SystemRequirementsCopy> = {
     ],
     readNextTitle: 'Read next',
     related: [
+      {
+        href: Routes.Subnautica2SteamDeckSettings,
+        label: 'Steam Deck Settings',
+      },
       { href: Routes.Subnautica2XboxGamePass, label: 'Xbox Game Pass' },
       {
         href: Routes.Subnautica2EarlyAccessWorthIt,
@@ -309,6 +313,10 @@ const copyByLocale: Record<string, SystemRequirementsCopy> = {
     ],
     readNextTitle: '继续看',
     related: [
+      {
+        href: Routes.Subnautica2SteamDeckSettings,
+        label: 'Steam Deck 设置',
+      },
       { href: Routes.Subnautica2XboxGamePass, label: 'Xbox Game Pass' },
       {
         href: Routes.Subnautica2EarlyAccessWorthIt,

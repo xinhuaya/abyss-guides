@@ -117,6 +117,7 @@ const staticRoutes = [
   Routes.Subnautica2Ps5ReleaseDate,
   Routes.Subnautica2XboxGamePass,
   Routes.Subnautica2SystemRequirements,
+  Routes.Subnautica2SteamDeckSettings,
   Routes.Subnautica2SaveFileLocation,
   Routes.Subnautica2SaveRecoveryCloudSync,
   Routes.Subnautica2EarlyAccessWorthIt,
@@ -188,6 +189,7 @@ function getChangeFrequency(
     route === Routes.Subnautica2NibblersMarrowbreachAfterHotfix3 ||
     route === Routes.Subnautica2StrikeArmorStackingAfterHotfix3 ||
     route === Routes.Subnautica2StartupCrashAfterHotfix3 ||
+    route === Routes.Subnautica2SteamDeckSettings ||
     route === Routes.Subnautica2SaveFileLocation ||
     route === Routes.Subnautica2SaveRecoveryCloudSync
   ) {

@@ -653,6 +653,11 @@ const copyByLocale: Record<'en' | 'zh', HubCopy> = {
             note: 'DLSS 4.5 and Frame Generation',
           },
           {
+            href: Routes.Subnautica2SteamDeckSettings,
+            label: 'Steam Deck',
+            note: 'handheld settings and heat checks',
+          },
+          {
             href: Routes.Subnautica2StartupCrashAfterHotfix3,
             label: 'Startup crash',
             note: 'launch and DLSS crash checklist',
@@ -829,6 +834,12 @@ const copyByLocale: Record<'en' | 'zh', HubCopy> = {
         title: 'DLSS Settings After Hotfix 3',
         description:
           'DLSS 4.5, Frame Generation availability, saved settings, and what old PC settings advice needs retesting.',
+      },
+      {
+        href: Routes.Subnautica2SteamDeckSettings,
+        title: 'Steam Deck and Handheld Settings',
+        description:
+          'Steam Deck compatibility checks, frame caps, heat, battery, DLSS limits, and short save tests for handheld play.',
       },
       {
         href: Routes.Subnautica2StartupCrashAfterHotfix3,
@@ -1395,6 +1406,11 @@ const copyByLocale: Record<'en' | 'zh', HubCopy> = {
             note: 'DLSS 4.5 和 Frame Generation',
           },
           {
+            href: Routes.Subnautica2SteamDeckSettings,
+            label: 'Steam Deck',
+            note: '掌机设置和发热测试',
+          },
+          {
             href: Routes.Subnautica2Hotfix2,
             label: 'Hotfix 2',
             note: '官方改动整理',
@@ -1556,6 +1572,12 @@ const copyByLocale: Record<'en' | 'zh', HubCopy> = {
         title: 'Hotfix 3 后 DLSS 设置',
         description:
           'DLSS 4.5、Frame Generation 可用性、设置保存和旧 PC 画质攻略该怎么重新判断。',
+      },
+      {
+        href: Routes.Subnautica2SteamDeckSettings,
+        title: 'Steam Deck 和掌机设置',
+        description:
+          'Steam Deck 兼容性、锁帧、发热、电量、DLSS 限制和短存档测试流程。',
       },
       {
         href: Routes.Subnautica2StartupCrashAfterHotfix3,
@@ -2158,6 +2180,11 @@ const guideIndexCopyByLocale: Record<'en' | 'zh', GuideIndexCopy> = {
             note: 'PC spec and settings notes',
           },
           {
+            href: Routes.Subnautica2SteamDeckSettings,
+            label: 'Steam Deck settings',
+            note: 'handheld frame caps and heat checks',
+          },
+          {
             href: Routes.Subnautica2SaveFileLocation,
             label: 'Save file location',
             note: 'Steam backup and cloud notes',
@@ -2354,6 +2381,11 @@ const guideIndexCopyByLocale: Record<'en' | 'zh', GuideIndexCopy> = {
             href: Routes.Subnautica2DlssSettingsAfterHotfix3,
             label: 'DLSS 设置',
             note: 'DLSS 4.5 和 Frame Generation',
+          },
+          {
+            href: Routes.Subnautica2SteamDeckSettings,
+            label: 'Steam Deck 设置',
+            note: '掌机锁帧和发热测试',
           },
           {
             href: Routes.Subnautica2StartupCrashAfterHotfix3,

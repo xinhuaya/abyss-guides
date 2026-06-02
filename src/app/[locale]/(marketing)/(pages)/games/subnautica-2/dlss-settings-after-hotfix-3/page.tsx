@@ -174,6 +174,10 @@ const copyByLocale: Record<string, DlssCopy> = {
         href: Routes.Subnautica2SystemRequirements,
         label: 'System Requirements',
       },
+      {
+        href: Routes.Subnautica2SteamDeckSettings,
+        label: 'Steam Deck Settings',
+      },
       { href: Routes.Subnautica2XboxGamePass, label: 'Xbox Game Pass' },
       {
         href: Routes.Subnautica2MultiplayerNotWorking,
@@ -320,6 +324,10 @@ const copyByLocale: Record<string, DlssCopy> = {
         label: '启动崩溃排查',
       },
       { href: Routes.Subnautica2SystemRequirements, label: '配置要求' },
+      {
+        href: Routes.Subnautica2SteamDeckSettings,
+        label: 'Steam Deck 设置',
+      },
       { href: Routes.Subnautica2XboxGamePass, label: 'Xbox Game Pass' },
       { href: Routes.Subnautica2MultiplayerNotWorking, label: '联机问题修复' },
       {

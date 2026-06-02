@@ -175,6 +175,10 @@ const copyByLocale: Record<string, StartupCrashCopy> = {
         label: 'System Requirements',
       },
       {
+        href: Routes.Subnautica2SteamDeckSettings,
+        label: 'Steam Deck Settings',
+      },
+      {
         href: Routes.Subnautica2SaveFileLocation,
         label: 'Save File Backup',
       },
@@ -326,6 +330,10 @@ const copyByLocale: Record<string, StartupCrashCopy> = {
         label: 'Hotfix 3 后 DLSS 设置',
       },
       { href: Routes.Subnautica2SystemRequirements, label: '配置要求' },
+      {
+        href: Routes.Subnautica2SteamDeckSettings,
+        label: 'Steam Deck 设置',
+      },
       { href: Routes.Subnautica2SaveFileLocation, label: '存档备份' },
       {
         href: Routes.Subnautica2SaveRecoveryCloudSync,
