@@ -181,6 +181,10 @@ const hotfixCopy: Record<string, HotfixCopy> = {
         href: Routes.Subnautica2NibblersMarrowbreachAfterHotfix3,
         label: 'Nibblers and Marrowbreaches',
       },
+      {
+        href: Routes.Subnautica2StrikeArmorStackingAfterHotfix3,
+        label: 'Strike Armor Stacking',
+      },
       { href: Routes.Subnautica2CreaturesLeviathans, label: 'Creatures Guide' },
       {
         href: Routes.Subnautica2MultiplayerNotWorking,
@@ -333,6 +337,10 @@ const hotfixCopy: Record<string, HotfixCopy> = {
       {
         href: Routes.Subnautica2NibblersMarrowbreachAfterHotfix3,
         label: 'Nibbler 和 Marrowbreach',
+      },
+      {
+        href: Routes.Subnautica2StrikeArmorStackingAfterHotfix3,
+        label: 'Strike Armor 叠加',
       },
       { href: Routes.Subnautica2CreaturesLeviathans, label: '怪物攻略' },
       { href: Routes.Subnautica2MultiplayerNotWorking, label: '联机问题修复' },

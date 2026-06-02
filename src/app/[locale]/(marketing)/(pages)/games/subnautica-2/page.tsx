@@ -643,6 +643,11 @@ const copyByLocale: Record<'en' | 'zh', HubCopy> = {
             note: 'cost cut and base layout',
           },
           {
+            href: Routes.Subnautica2StrikeArmorStackingAfterHotfix3,
+            label: 'Strike Armor',
+            note: 'stacking fix and build retest',
+          },
+          {
             href: Routes.Subnautica2DlssSettingsAfterHotfix3,
             label: 'DLSS settings',
             note: 'DLSS 4.5 and Frame Generation',
@@ -797,6 +802,12 @@ const copyByLocale: Record<'en' | 'zh', HubCopy> = {
         title: 'Interior Wall Cost After Hotfix 3',
         description:
           'Interior Wall costs are now one quarter of the old price; use them for storage lanes, crafting corners, and co-op zones.',
+      },
+      {
+        href: Routes.Subnautica2StrikeArmorStackingAfterHotfix3,
+        title: 'Strike Armor Stacking After Hotfix 3',
+        description:
+          'What to do with old Strike Armor builds after Hotfix 3 fixed additive damage stacking.',
       },
       {
         href: Routes.Subnautica2DlssSettingsAfterHotfix3,
@@ -1341,6 +1352,11 @@ const copyByLocale: Record<'en' | 'zh', HubCopy> = {
             note: '成本降低和基地布局',
           },
           {
+            href: Routes.Subnautica2StrikeArmorStackingAfterHotfix3,
+            label: 'Strike Armor',
+            note: '叠加修复和 Build 复测',
+          },
+          {
             href: Routes.Subnautica2DlssSettingsAfterHotfix3,
             label: 'DLSS 设置',
             note: 'DLSS 4.5 和 Frame Generation',
@@ -1495,6 +1511,12 @@ const copyByLocale: Record<'en' | 'zh', HubCopy> = {
         title: 'Hotfix 3 后 Interior Wall 成本怎么规划',
         description:
           'Interior Wall 成本降到原来的 1/4 后，怎么做储物隔断、制作角落和联机分区。',
+      },
+      {
+        href: Routes.Subnautica2StrikeArmorStackingAfterHotfix3,
+        title: 'Hotfix 3 后 Strike Armor 还能叠加吗',
+        description:
+          '加法叠加修复后，旧 Strike Armor Build、伤害数字、模块复测和联机配装该怎么重新判断。',
       },
       {
         href: Routes.Subnautica2DlssSettingsAfterHotfix3,
@@ -2035,6 +2057,11 @@ const guideIndexCopyByLocale: Record<'en' | 'zh', GuideIndexCopy> = {
             note: 'base cost after Hotfix 3',
           },
           {
+            href: Routes.Subnautica2StrikeArmorStackingAfterHotfix3,
+            label: 'Strike Armor',
+            note: 'build retest after Hotfix 3',
+          },
+          {
             href: Routes.Subnautica2DlssSettingsAfterHotfix3,
             label: 'DLSS settings',
             note: 'DLSS 4.5 and Frame Generation',
@@ -2241,6 +2268,11 @@ const guideIndexCopyByLocale: Record<'en' | 'zh', GuideIndexCopy> = {
             href: Routes.Subnautica2InteriorWallCostAfterHotfix3,
             label: 'Interior Wall',
             note: 'Hotfix 3 后基地成本',
+          },
+          {
+            href: Routes.Subnautica2StrikeArmorStackingAfterHotfix3,
+            label: 'Strike Armor',
+            note: 'Hotfix 3 后 Build 复测',
           },
           {
             href: Routes.Subnautica2DlssSettingsAfterHotfix3,

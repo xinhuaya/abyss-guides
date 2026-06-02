@@ -164,6 +164,10 @@ const copyByLocale: Record<string, VehiclesCopy> = {
       { href: Routes.Subnautica2Tadpole, label: 'Tadpole Guide' },
       { href: Routes.Subnautica2TadpoleDock, label: 'Tadpole Dock' },
       { href: Routes.Subnautica2Hotfix3, label: 'Hotfix 3' },
+      {
+        href: Routes.Subnautica2StrikeArmorStackingAfterHotfix3,
+        label: 'Strike Armor After Hotfix 3',
+      },
       { href: Routes.Subnautica2MapSizeBiomes, label: 'Map Size and Biomes' },
       {
         href: Routes.Subnautica2BaseLocationTierList,
@@ -290,6 +294,10 @@ const copyByLocale: Record<string, VehiclesCopy> = {
       { href: Routes.Subnautica2Tadpole, label: 'Tadpole 指南' },
       { href: Routes.Subnautica2TadpoleDock, label: 'Tadpole 停靠' },
       { href: Routes.Subnautica2Hotfix3, label: 'Hotfix 3' },
+      {
+        href: Routes.Subnautica2StrikeArmorStackingAfterHotfix3,
+        label: 'Hotfix 3 后 Strike Armor',
+      },
       { href: Routes.Subnautica2MapSizeBiomes, label: '地图大小和生态区' },
       { href: Routes.Subnautica2BaseLocationTierList, label: '基地位置梯度' },
       { href: Routes.Subnautica2Hotfix2, label: 'Hotfix 2' },

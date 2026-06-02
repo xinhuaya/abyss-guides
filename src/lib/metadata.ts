@@ -57,6 +57,8 @@ const abyssMetadataImageByPathname: Record<string, string> = {
   [Routes.Subnautica2FlaresAfterHotfix3]: '/abyss/chibi-hammerhead-flare.webp',
   [Routes.Subnautica2NibblersMarrowbreachAfterHotfix3]:
     '/abyss/chibi-creature-hotfix3.webp',
+  [Routes.Subnautica2StrikeArmorStackingAfterHotfix3]:
+    '/abyss/chibi-strike-armor-hotfix3.webp',
   [Routes.Subnautica2CreatureEnamel]: '/abyss/chibi-creature-risk.webp',
   [Routes.Subnautica2AcidicRaionPouch]: '/abyss/chibi-creature-risk.webp',
   [Routes.Subnautica2NecroleiCyst]: '/abyss/chibi-creature-risk.webp',
