@@ -16,7 +16,7 @@ type ReleaseDateCopy = ResourceGuideCopy & {
 };
 
 const PUBLISHED_AT = '2026-06-01';
-const UPDATED_AT = '2026-06-01';
+const UPDATED_AT = '2026-06-02';
 
 const sharedSources = [
   {
@@ -28,8 +28,8 @@ const sharedSources = [
     label: 'Unknown Worlds Early Access roadmap',
   },
   {
-    href: 'https://unknownworlds.com/en/news/subnautica-2-ea1-hotfix-2',
-    label: 'Unknown Worlds Hotfix 2',
+    href: 'https://unknownworlds.com/en/news/subnautica-2-ea1-hotfix-3',
+    label: 'Unknown Worlds Hotfix 3',
   },
 ];
 
@@ -447,8 +447,206 @@ const releaseDateCopy: Record<string, ReleaseDateCopy> = {
   },
 };
 
+const localizedReleaseDateCopy: Record<string, ReleaseDateCopy> = {
+  en: {
+    ...releaseDateCopy.en,
+    quickAnswer:
+      'Subnautica 2 entered Early Access on May 14, 2026. The official Steam page lists the game as Early Access, and Unknown Worlds is still publishing post-launch hotfixes. This page was rechecked after the June 1 Hotfix 3 notes. Treat exact 1.0 timing, PS5 dates, and countdown pages as unconfirmed unless they link to an official source.',
+    routeSteps: [
+      {
+        title: 'Start with Early Access',
+        body: 'The useful confirmed date is May 14, 2026, when Subnautica 2 entered Early Access. That is the public build current guide pages are tracking.',
+      },
+      {
+        title: 'Separate 1.0 from hotfixes',
+        body: 'Hotfix 3 is a post-launch patch, not a 1.0 date. It tells you the Early Access build is still moving, so guide pages need patch checks instead of fixed assumptions.',
+      },
+      {
+        title: 'Read platform claims by source',
+        body: 'Steam and Xbox/Game Pass searches are common. PS5 searches are common too, but pages should avoid invented timing unless Unknown Worlds or a platform holder publishes it.',
+      },
+      {
+        title: 'Use the roadmap for what comes next',
+        body: 'The roadmap is still the better source for update shape: hotfixes, smaller improvements, co-op work, and bigger content expansions.',
+      },
+    ],
+    tableRows: [
+      [
+        'subnautica 2 release date',
+        'Early Access started May 14, 2026. A final 1.0 date should be checked against official sources.',
+      ],
+      [
+        'subnautica 2 release time',
+        'Release-time countdowns are stale after launch. Use the latest hotfix status if you are already playing.',
+      ],
+      [
+        'subnautica 2 steam',
+        'Steam is the official store page to check for Early Access status, system details, and official notices.',
+      ],
+      [
+        'subnautica 2 xbox game pass',
+        'Check official store or platform pages before trusting third-party summaries.',
+      ],
+      [
+        'subnautica 2 ps5',
+        'Treat PS5 timing as unconfirmed unless an official source says otherwise.',
+      ],
+    ],
+    related: [
+      { href: Routes.Subnautica2Updates, label: 'Roadmap and Updates' },
+      { href: Routes.Subnautica2Ps5ReleaseDate, label: 'PS5 Release Date' },
+      { href: Routes.Subnautica2XboxGamePass, label: 'Xbox Game Pass Guide' },
+      { href: Routes.Subnautica2Hotfix2, label: 'Hotfix Notes' },
+      { href: Routes.Subnautica2Coop, label: 'Co-op Guide' },
+      { href: Routes.Subnautica2Map, label: 'Map Guide' },
+    ],
+    sourcesTitle: 'Source note',
+    sourceBody:
+      'Checked June 2, 2026 against the official Steam page, the Unknown Worlds Early Access roadmap, and the June 1 Hotfix 3 notes. Search topics were selected from release date, release time, PS5, Xbox, Game Pass, and Steam queries.',
+  },
+  zh: {
+    metadata: {
+      title: 'Subnautica 2 发售时间、抢先体验、PS5、Xbox 与 Game Pass',
+      description:
+        'Subnautica 2 发售时间中文整理：抢先体验状态、Steam、Xbox、Game Pass、PS5 搜索意图、上线时间，以及官方已经确认的信息。',
+    },
+    eyebrow: 'Subnautica 2 发售时间',
+    title: 'Subnautica 2 发售时间和平台状态',
+    description:
+      '现在搜发售时间的人很多，但里面混着抢先体验、正式版、PS5、Xbox、Game Pass 和倒计时。这里先把能确认的讲清楚，再把还没有官方说法的部分分开。',
+    quickLabel: '快速结论',
+    quickAnswer:
+      'Subnautica 2 已在 2026 年 5 月 14 日进入抢先体验。Steam 官方页面显示它仍是 Early Access，Unknown Worlds 也在持续发布上线后的热修，比如 6 月 1 日的 Hotfix 3。正式版 1.0、PS5 时间和各种倒计时页面，都要先看有没有官方来源。',
+    fieldNotesTitle: '搜索意图笔记',
+    fieldNotes: [
+      {
+        title: '“发售时间”有两层意思',
+        body: '有些玩家问的是抢先体验哪天开，有些玩家问的是正式版 1.0。文章里必须分开写，不然很容易误导。',
+      },
+      {
+        title: '平台问题要写稳一点',
+        body: 'Xbox、Game Pass、Steam、PS5 的搜索会混在一起。能确认的就写确认，不能确认的就别编日期。',
+      },
+      {
+        title: '倒计时页面很容易过时',
+        body: '抢先体验已经上线后，倒计时内容的价值会下降。玩家更需要当前版本状态、补丁变化和下一步该看什么。',
+      },
+    ],
+    routeChecklistTitle: '看发售时间文章前先确认',
+    routeChecklist: [
+      '它说的是抢先体验，还是正式版 1.0？',
+      '有没有链接到 Steam 或 Unknown Worlds 官方页面？',
+      'PS5 和主机日期有没有官方来源？',
+      '如果已经在玩，优先看最新 Hotfix 页面。',
+    ],
+    contentsLabel: '目录',
+    routeTitle: '怎么判断当前发售状态',
+    routeSteps: [
+      {
+        title: '先看抢先体验日期',
+        body: '目前能稳定确认的是 2026 年 5 月 14 日的抢先体验上线日期。本页和站内攻略都围绕这个 Early Access 版本更新。',
+      },
+      {
+        title: '把 1.0 和热修分开',
+        body: 'Hotfix 3 是上线后的补丁，不是正式版日期。它说明抢先体验版本还在变，所以攻略要跟着补丁核对，而不是靠旧结论。',
+      },
+      {
+        title: '平台信息按来源判断',
+        body: 'Steam、Xbox、Game Pass 相关搜索很多，PS5 搜索也很多。没有官方页面支撑时，就应该写成未确认。',
+      },
+      {
+        title: '后续更新看路线图',
+        body: '官方路线图比传闻更适合引用，因为它讲的是更新方向：热修、体验改进、联机相关更新和更大的内容扩展。',
+      },
+    ],
+    tableTitle: '发售相关搜索怎么回答',
+    tableHeaders: ['搜索词', '实用回答'],
+    tableRows: [
+      [
+        'subnautica 2 release date',
+        '抢先体验日期是 2026 年 5 月 14 日。正式版日期要等官方来源。',
+      ],
+      [
+        'subnautica 2 release time',
+        '上线后倒计时内容基本过时，已经在玩的玩家更该看补丁状态。',
+      ],
+      [
+        'subnautica 2 steam',
+        'Steam 是确认抢先体验状态、系统信息和官方公告的主要页面。',
+      ],
+      [
+        'subnautica 2 xbox game pass',
+        '先看官方商店或平台页面，不要只看第三方摘要。',
+      ],
+      ['subnautica 2 ps5', '没有官方来源前，不要把 PS5 时间写成确定日期。'],
+    ],
+    visualTitle: '发售状态卡片',
+    visualItems: [
+      {
+        label: '上线',
+        value: '5月14日',
+        note: '这里追踪的是抢先体验上线日期。',
+      },
+      {
+        label: '状态',
+        value: 'EA',
+        note: '攻略需要跟着补丁继续更新。',
+      },
+      {
+        label: '关注',
+        value: 'Hotfix 3',
+        note: '最近一次核对到 2026 年 6 月 1 日热修。',
+      },
+    ],
+    cautionTitle: '不要把猜测写成日期',
+    cautionBody:
+      '搜索需求很高，但不代表所有平台传闻都有价值。PS5、主机或 1.0 日期如果没有官方来源，就应该明确写成未确认。',
+    faqTitle: 'FAQ',
+    faqs: [
+      {
+        title: 'Subnautica 2 什么时候上线？',
+        body: 'Subnautica 2 在 2026 年 5 月 14 日进入抢先体验。',
+      },
+      {
+        title: 'Subnautica 2 已经正式发售了吗？',
+        body: '还没有。现在公开版本是 Early Access，后续仍有热修和路线图更新。',
+      },
+      {
+        title: 'Subnautica 2 有 PS5 发售日吗？',
+        body: '除非 Unknown Worlds 或官方平台页面确认，否则不要相信具体 PS5 日期。',
+      },
+      {
+        title: '为什么发售时间和攻略有关？',
+        body: '抢先体验补丁会影响资源、Bug、路线难度和联机体验，所以发售页应该引导玩家去看最新补丁攻略。',
+      },
+    ],
+    readNextTitle: '继续看',
+    related: [
+      { href: Routes.Subnautica2Updates, label: '路线图和更新' },
+      { href: Routes.Subnautica2Hotfix2, label: 'Hotfix 笔记' },
+      { href: Routes.Subnautica2Coop, label: '联机攻略' },
+      { href: Routes.Subnautica2Map, label: '地图攻略' },
+      {
+        href: Routes.Subnautica2SilverAfterHotfix2,
+        label: '补丁后的 Silver 路线',
+      },
+    ],
+    sourcesTitle: '来源说明',
+    sourceBody:
+      '2026 年 6 月 2 日核对 Steam 官方页面、Unknown Worlds 抢先体验路线图和 6 月 1 日 Hotfix 3。选题来自 release date、release time、PS5、Xbox、Game Pass、Steam 等热门搜索词。',
+    cardKicker: '发售状态卡',
+    cardBody:
+      '给搜索发售时间、平台、抢先体验和上线后该看什么攻略的玩家看的状态页。',
+    cardTypeLabel: '类型',
+    cardTypeValue: '状态攻略',
+    cardVerifiedLabel: '核对时间',
+    cardStatusLabel: '状态',
+    cardStatusValue: '抢先体验',
+  },
+};
+
 function getCopy(locale: Locale): ReleaseDateCopy {
-  return releaseDateCopy[locale] ?? releaseDateCopy.en;
+  return localizedReleaseDateCopy[locale] ?? localizedReleaseDateCopy.en;
 }
 
 export async function generateMetadata({
