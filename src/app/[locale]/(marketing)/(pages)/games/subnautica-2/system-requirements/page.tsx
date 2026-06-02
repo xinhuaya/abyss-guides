@@ -13,9 +13,13 @@ type SystemRequirementsCopy = ResourceGuideCopy & {
 };
 
 const PUBLISHED_AT = '2026-06-01';
-const UPDATED_AT = '2026-06-01';
+const UPDATED_AT = '2026-06-02';
 
 const sharedSources = [
+  {
+    href: 'https://unknownworlds.com/en/news/subnautica-2-ea1-hotfix-3',
+    label: 'Unknown Worlds Hotfix 3',
+  },
   {
     href: 'https://store.steampowered.com/app/1962700/Subnautica_2/?l=english',
     label: 'Official Steam system requirements',
@@ -48,7 +52,7 @@ const copyByLocale: Record<string, SystemRequirementsCopy> = {
       'Before you buy or install, check the official Steam specs and leave room for Early Access changes. The game may run today, but future biomes, vehicles, and effects can raise practical expectations.',
     quickLabel: 'Quick answer',
     quickAnswer:
-      'The official Steam page lists Windows 10/11, a 64-bit system, 12 GB RAM, GTX 1660 6GB or RX 5500 XT 6GB, DirectX 12, broadband internet, and 50 GB storage as the minimum baseline. Recommended specs move up to Windows 11, 16 GB RAM, an RTX 3070 8GB or RX 6700 XT 8GB, and stronger CPUs.',
+      'The official Steam page lists Windows 10/11, a 64-bit system, 12 GB RAM, GTX 1660 6GB or RX 5500 XT 6GB, DirectX 12, broadband internet, and 50 GB storage as the minimum baseline. Recommended specs move up to Windows 11, 16 GB RAM, an RTX 3070 8GB or RX 6700 XT 8GB, and stronger CPUs. Hotfix 3 also matters for PC players because it fixes DLSS crashes, saved DLSS settings, Frame Generation availability in some versions, and upgrades DLSS to 4.5.',
     fieldNotesTitle: 'What the specs really mean',
     fieldNotes: [
       {
@@ -63,6 +67,10 @@ const copyByLocale: Record<string, SystemRequirementsCopy> = {
         title: 'Early Access can shift performance',
         body: 'Unknown Worlds says the game will keep expanding with biomes, creatures, tools, vehicles, and optimization work. Recheck specs after major updates.',
       },
+      {
+        title: 'DLSS advice changed after Hotfix 3',
+        body: 'Do not rely on launch-week DLSS warnings without checking the patched build. Hotfix 3 specifically names DLSS crashes, saved settings, Frame Generation, and DLSS 4.5.',
+      },
     ],
     routeChecklistTitle: 'Install checklist',
     routeChecklist: [
@@ -70,6 +78,7 @@ const copyByLocale: Record<string, SystemRequirementsCopy> = {
       'Confirm at least 12 GB RAM for the minimum baseline.',
       'Compare your GPU against GTX 1660 6GB or RX 5500 XT 6GB.',
       'Keep more than 50 GB free before installing.',
+      'Retest DLSS and Frame Generation after Hotfix 3 if you are on an NVIDIA setup.',
       'Use recommended specs if you plan to play co-op or record footage.',
     ],
     contentsLabel: 'Contents',
@@ -86,6 +95,10 @@ const copyByLocale: Record<string, SystemRequirementsCopy> = {
       {
         title: 'Plan for online co-op overhead',
         body: 'Online co-op adds network and session variables. If your PC is barely above minimum, lower settings before blaming the connection.',
+      },
+      {
+        title: 'Check DLSS after the latest hotfix',
+        body: 'Hotfix 3 upgrades DLSS to 4.5 and fixes several DLSS and Frame Generation problems. A settings guide written before June 1, 2026 may be stale.',
       },
       {
         title: 'Recheck after major roadmap updates',
@@ -109,6 +122,10 @@ const copyByLocale: Record<string, SystemRequirementsCopy> = {
         'Storage',
         '50 GB available space, with extra free space strongly preferred.',
       ],
+      [
+        'DLSS / Frame Generation',
+        'Hotfix 3 fixed DLSS crashes, saved settings, and some Frame Generation availability problems.',
+      ],
     ],
     visualTitle: 'PC readiness card',
     visualItems: [
@@ -126,6 +143,11 @@ const copyByLocale: Record<string, SystemRequirementsCopy> = {
         label: 'Best target',
         value: 'Recommended',
         note: 'A better fit for co-op and recording.',
+      },
+      {
+        label: 'Hotfix 3',
+        value: 'DLSS 4.5',
+        note: 'Retest graphics settings after the patch.',
       },
     ],
     cautionTitle:
@@ -150,6 +172,10 @@ const copyByLocale: Record<string, SystemRequirementsCopy> = {
         title: 'Will specs change during Early Access?',
         body: 'They can. Early Access updates can add content and optimization changes, so recheck after major patches.',
       },
+      {
+        title: 'Did Hotfix 3 change PC graphics advice?',
+        body: 'Yes. It fixes DLSS crashes, DLSS settings not saving correctly, Frame Generation availability in some versions, and upgrades DLSS to 4.5.',
+      },
     ],
     readNextTitle: 'Read next',
     related: [
@@ -160,11 +186,12 @@ const copyByLocale: Record<string, SystemRequirementsCopy> = {
       },
       { href: Routes.Subnautica2Crossplay, label: 'Crossplay Guide' },
       { href: Routes.Subnautica2ReleaseDate, label: 'Release Date' },
+      { href: Routes.Subnautica2Hotfix3, label: 'Hotfix 3' },
       { href: Routes.Subnautica2Hotfix2, label: 'Hotfix 2' },
     ],
     sourcesTitle: 'Source note',
     sourceBody:
-      'Checked June 1, 2026 against the official Steam requirements, Xbox listing, Unknown Worlds roadmap, and official trailer. The page image is Abyss Guides original art; the video is the official Subnautica embed.',
+      'Checked June 2, 2026 against Hotfix 3, the official Steam requirements, Xbox listing, Unknown Worlds roadmap, and official trailer. The page image is Abyss Guides original art; the video is the official Subnautica embed.',
     cardKicker: 'Install check',
     cardBody:
       'A buy-before-install page for players checking RAM, GPU, storage, and Early Access performance risk.',
@@ -186,7 +213,7 @@ const copyByLocale: Record<string, SystemRequirementsCopy> = {
       '购买或安装前，先看 Steam 官方配置，并给抢先体验更新留余量。现在能跑，不代表未来新生态区、载具和特效更新后一定舒服。',
     quickLabel: '快速结论',
     quickAnswer:
-      'Steam 官方页面列出的最低基础是 Windows 10/11、64 位系统、12 GB 内存、GTX 1660 6GB 或 RX 5500 XT 6GB、DirectX 12、宽带网络和 50 GB 空间。推荐配置提升到 Windows 11、16 GB 内存、RTX 3070 8GB 或 RX 6700 XT 8GB，以及更强 CPU。',
+      'Steam 官方页面列出的最低基础是 Windows 10/11、64 位系统、12 GB 内存、GTX 1660 6GB 或 RX 5500 XT 6GB、DirectX 12、宽带网络和 50 GB 空间。推荐配置提升到 Windows 11、16 GB 内存、RTX 3070 8GB 或 RX 6700 XT 8GB，以及更强 CPU。Hotfix 3 对 PC 玩家也很重要：它修复 DLSS 崩溃、DLSS 设置保存、部分版本 Frame Generation 不可用的问题，并把 DLSS 升级到 4.5。',
     fieldNotesTitle: '配置表应该这样看',
     fieldNotes: [
       {
@@ -199,7 +226,7 @@ const copyByLocale: Record<string, SystemRequirementsCopy> = {
       },
       {
         title: '抢先体验会变',
-        body: '路线图提到后续会有更多生态区、生物、工具、载具和优化，所以大更新后要重新核对。',
+        body: '路线图提到后续会有更多生态区、生物、工具、载具和优化，所以大更新后要重新核对。Hotfix 3 还直接改了 DLSS 和 Frame Generation，旧图形设置建议不要照搬。',
       },
     ],
     routeChecklistTitle: '安装前检查',
@@ -208,6 +235,7 @@ const copyByLocale: Record<string, SystemRequirementsCopy> = {
       '最低至少 12 GB 内存。',
       '显卡对照 GTX 1660 6GB 或 RX 5500 XT 6GB。',
       '安装前留出超过 50 GB 空间。',
+      '如果用 NVIDIA 显卡，Hotfix 3 后重新测试 DLSS 和 Frame Generation。',
       '如果要联机或录视频，尽量按推荐配置来。',
     ],
     contentsLabel: '目录',
@@ -227,7 +255,7 @@ const copyByLocale: Record<string, SystemRequirementsCopy> = {
       },
       {
         title: '大更新后重新核对',
-        body: '新生态区、生物、载具和画面更新，可能改变实际性能感受。',
+        body: '新生态区、生物、载具和画面更新，可能改变实际性能感受。Hotfix 3 已经修复 DLSS 崩溃、DLSS 设置保存和部分 Frame Generation 可用性问题。',
       },
     ],
     tableTitle: '官方 PC 配置摘要',
@@ -241,12 +269,17 @@ const copyByLocale: Record<string, SystemRequirementsCopy> = {
         '最低 GTX 1660 6GB / RX 5500 XT 6GB。推荐 RTX 3070 8GB / RX 6700 XT 8GB。',
       ],
       ['硬盘', '50 GB 可用空间，最好多留一些。'],
+      [
+        'DLSS / Frame Generation',
+        'Hotfix 3 修复了 DLSS 崩溃、设置保存和部分版本 Frame Generation 不可用的问题。',
+      ],
     ],
     visualTitle: 'PC 准备卡',
     visualItems: [
       { label: '最低内存', value: '12 GB', note: '能进门，不一定舒服。' },
       { label: '硬盘', value: '50 GB', note: '补丁和存档还要空间。' },
       { label: '更稳目标', value: '推荐配置', note: '更适合联机和录制。' },
+      { label: 'Hotfix 3', value: 'DLSS 4.5', note: '补丁后重新测图形设置。' },
     ],
     cautionTitle: '不要用桌面配置直接判断掌机或轻薄本',
     cautionBody:
@@ -279,11 +312,12 @@ const copyByLocale: Record<string, SystemRequirementsCopy> = {
       },
       { href: Routes.Subnautica2Crossplay, label: '跨平台联机' },
       { href: Routes.Subnautica2ReleaseDate, label: '发售时间' },
+      { href: Routes.Subnautica2Hotfix3, label: 'Hotfix 3' },
       { href: Routes.Subnautica2Hotfix2, label: 'Hotfix 2' },
     ],
     sourcesTitle: '来源说明',
     sourceBody:
-      '2026 年 6 月 1 日核对 Steam 官方配置、Xbox 页面、Unknown Worlds 路线图和官方预告。图片为 Abyss Guides 原创图，视频为 Subnautica 官方嵌入。',
+      '2026 年 6 月 2 日核对 Hotfix 3、Steam 官方配置、Xbox 页面、Unknown Worlds 路线图和官方预告。图片为 Abyss Guides 原创图，视频为 Subnautica 官方嵌入。',
     cardKicker: '安装检查',
     cardBody: '给安装前核对内存、显卡、硬盘和抢先体验性能风险的玩家看。',
     cardTypeLabel: '类型',

@@ -97,6 +97,7 @@ const homeImageByRoute: Partial<Record<Routes, string>> = {
   [Routes.Subnautica2Atacamite]: '/abyss/chibi-resource-scan.webp',
   [Routes.Subnautica2Mangalloy]: '/abyss/chibi-resource-scan.webp',
   [Routes.Subnautica2Tadpole]: '/abyss/chibi-vehicle-route.webp',
+  [Routes.Subnautica2Hotfix3]: '/abyss/chibi-update-console.webp',
 };
 
 const enCopy: HomeCopy = {
@@ -125,10 +126,10 @@ const enCopy: HomeCopy = {
       label: 'Start here',
     },
     {
-      title: 'Hotfix 2 tracker',
+      title: 'Hotfix 3 tracker',
       description:
-        'Silver, oxygen, co-op, and early route notes after the latest checked hotfix.',
-      href: Routes.Subnautica2Hotfix2,
+        'DLSS 4.5, Tadpole parking, creature behavior, base costs, and co-op notes after the latest checked hotfix.',
+      href: Routes.Subnautica2Hotfix3,
       icon: TimerResetIcon,
       label: 'Latest',
     },
@@ -317,7 +318,7 @@ const enCopy: HomeCopy = {
   ],
   stats: [
     ['6', 'homepage entry points'],
-    ['Hotfix 2', 'latest tracked update'],
+    ['Hotfix 3', 'latest tracked update'],
     ['8', 'search locales'],
   ],
   disclaimerTitle: 'Independent fan guide',
@@ -347,9 +348,9 @@ const zhCopy: HomeCopy = {
       label: '先看',
     },
     {
-      title: 'Hotfix 2 追踪',
-      description: '银、氧气、联机和开局路线的最新核对笔记。',
-      href: Routes.Subnautica2Hotfix2,
+      title: 'Hotfix 3 追踪',
+      description: 'DLSS 4.5、Tadpole 停放、怪物行为、基地成本和联机笔记。',
+      href: Routes.Subnautica2Hotfix3,
       icon: TimerResetIcon,
       label: '最新',
     },
@@ -522,7 +523,7 @@ const zhCopy: HomeCopy = {
   ],
   stats: [
     ['6', '首页核心入口'],
-    ['Hotfix 2', '最新追踪'],
+    ['Hotfix 3', '最新追踪'],
     ['8', '搜索语言'],
   ],
   disclaimerTitle: '独立玩家攻略站',
@@ -553,9 +554,10 @@ const jaCopy: HomeCopy = {
       label: '最初に読む',
     },
     {
-      title: 'Hotfix 2まとめ',
-      description: 'Silver、酸素、協力プレイ、序盤ルートの確認メモ。',
-      href: Routes.Subnautica2Hotfix2,
+      title: 'Hotfix 3まとめ',
+      description:
+        'DLSS 4.5、Tadpole、クリーチャー、拠点コスト、co-opの確認メモ。',
+      href: Routes.Subnautica2Hotfix3,
       icon: TimerResetIcon,
       label: '最新',
     },
@@ -731,7 +733,7 @@ const jaCopy: HomeCopy = {
   ],
   stats: [
     ['6', 'トップ入口'],
-    ['Hotfix 2', '追跡中'],
+    ['Hotfix 3', '追跡中'],
     ['8', '検索ロケール'],
   ],
   disclaimerTitle: '独立ファンガイド',
@@ -765,10 +767,10 @@ function getMissionBoardCopy(locale?: Locale) {
         '补丁、平台和路线页面会优先引用 Unknown Worlds、Steam、Xbox、官方视频和当前攻略来源；不确定的内容不会写成确定日期。',
       missions: [
         {
-          title: 'Hotfix 2 后先看什么',
+          title: 'Hotfix 3 后先看什么',
           description:
-            '快速确认 Silver、氧气、联机和开局路线有没有因为补丁改变。',
-          href: Routes.Subnautica2Hotfix2,
+            '快速确认 DLSS、Tadpole 停放、怪物风险、基地成本和联机重连变化。',
+          href: Routes.Subnautica2Hotfix3,
           icon: TimerResetIcon,
           label: 'Latest',
           meta: 'patch notes',
@@ -836,10 +838,10 @@ function getMissionBoardCopy(locale?: Locale) {
         'パッチ、対応機種、ルート情報はUnknown Worlds、Steam、Xbox、公式動画、現在の攻略ソースを優先します。不確かな内容は確定日として書きません。',
       missions: [
         {
-          title: 'Hotfix 2後の確認',
+          title: 'Hotfix 3後の確認',
           description:
-            'Silver、酸素、協力プレイ、序盤ルートの変更点を先に確認します。',
-          href: Routes.Subnautica2Hotfix2,
+            'DLSS、Tadpole、クリーチャー、拠点コスト、co-op再参加を確認します。',
+          href: Routes.Subnautica2Hotfix3,
           icon: TimerResetIcon,
           label: 'Latest',
           meta: 'patch notes',
@@ -907,10 +909,10 @@ function getMissionBoardCopy(locale?: Locale) {
       'Patch, platform, and route pages prioritize Unknown Worlds, Steam, Xbox, official video, and current guide reporting. Unconfirmed items stay clearly marked.',
     missions: [
       {
-        title: 'What changed after Hotfix 2',
+        title: 'What changed after Hotfix 3',
         description:
-          'Check Silver, oxygen, co-op, and first-route notes before following an older guide.',
-        href: Routes.Subnautica2Hotfix2,
+          'Check DLSS, Tadpole parking, creature risk, base costs, and co-op rejoin notes before following an older guide.',
+        href: Routes.Subnautica2Hotfix3,
         icon: TimerResetIcon,
         label: 'Latest',
         meta: 'patch notes',

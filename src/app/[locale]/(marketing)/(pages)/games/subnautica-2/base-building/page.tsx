@@ -16,9 +16,13 @@ type BaseCopy = ResourceGuideCopy & {
 };
 
 const PUBLISHED_AT = '2026-05-23';
-const UPDATED_AT = '2026-05-28';
+const UPDATED_AT = '2026-06-02';
 
 const sharedSources = [
+  {
+    href: 'https://unknownworlds.com/en/news/subnautica-2-ea1-hotfix-3',
+    label: 'Unknown Worlds Hotfix 3',
+  },
   {
     href: 'https://store.steampowered.com/app/1962700/Subnautica_2/',
     label: 'Official Steam page',
@@ -46,7 +50,7 @@ const baseCopy: Record<string, BaseCopy> = {
       'A good first base is not the prettiest thing you can build. It is the place that makes the next three dives shorter, calmer, and less annoying.',
     quickLabel: 'Quick answer',
     quickAnswer:
-      'Build your first Subnautica 2 base near routes you repeat: Copper, Silver, Scanner fragments, oxygen safety, food, and return landmarks. Get the Habitat Builder path moving, place a simple room and hatch, power it, then add storage before you chase a beautiful layout.',
+      'Build your first Subnautica 2 base near routes you repeat: Copper, Silver, Scanner fragments, oxygen safety, food, and return landmarks. Get the Habitat Builder path moving, place a simple room and hatch, power it, then add storage before you chase a beautiful layout. After Hotfix 3, Interior Walls are cheaper, so early room dividers are less punishing than launch-week guides suggested.',
     fieldNotesTitle: 'Field notes for the first base',
     fieldNotes: [
       {
@@ -61,12 +65,17 @@ const baseCopy: Record<string, BaseCopy> = {
         title: 'Leave one ugly side for expansion',
         body: 'Pretty symmetry can wait. Keep one side clear for power, vehicles, production rooms, or whatever Early Access patches make more important later.',
       },
+      {
+        title: 'Interior Walls got cheaper',
+        body: 'Hotfix 3 reduced Interior Wall costs to one quarter of the previous price. That makes storage corners and co-op room dividers easier to justify early.',
+      },
     ],
     routeChecklistTitle: 'First base check',
     routeChecklist: [
       'The base shortens at least one repeated route.',
       'Power, hatch, storage, and crafting are solved first.',
       'Lockers have simple names before the pile grows.',
+      'Use cheaper Interior Walls for storage lanes or co-op zones after Hotfix 3.',
       'One side is left clear for later expansion.',
     ],
     contentsLabel: 'Contents',
@@ -87,6 +96,10 @@ const baseCopy: Record<string, BaseCopy> = {
       {
         title: 'Label storage early',
         body: 'Separate common resources, rare materials, processed parts, organics, and personal gear. This matters even more in co-op.',
+      },
+      {
+        title: 'Use Interior Walls where they save time',
+        body: 'Because Hotfix 3 cut Interior Wall costs to one quarter, dividers are now useful for practical sorting instead of being a luxury decoration.',
       },
     ],
     visualTitle: 'First base build board',
@@ -123,6 +136,10 @@ const baseCopy: Record<string, BaseCopy> = {
         'Good lockers save more time than a bigger room with messy piles.',
       ],
       [
+        'Interior Walls',
+        'After Hotfix 3, their lower cost makes early storage lanes and co-op zones more reasonable.',
+      ],
+      [
         'Crafting access',
         'Materials become progress faster when fabrication is close to the route.',
       ],
@@ -148,6 +165,10 @@ const baseCopy: Record<string, BaseCopy> = {
         title: 'Is base building different in Subnautica 2?',
         body: 'Yes. Current coverage points to a more flexible building system, but the survival logic is the same: location, power, storage, and routes first.',
       },
+      {
+        title: 'Did Hotfix 3 change base building?',
+        body: 'Yes, in a small but practical way: Interior Wall costs were reduced to one quarter of the previous price.',
+      },
     ],
     readNextTitle: 'Read next',
     related: [
@@ -164,6 +185,7 @@ const baseCopy: Record<string, BaseCopy> = {
         href: Routes.Subnautica2InsufficientSpaceToDock,
         label: 'Insufficient Space to Dock Fix',
       },
+      { href: Routes.Subnautica2Hotfix3, label: 'Hotfix 3' },
       { href: Routes.Subnautica2TadpoleDock, label: 'Tadpole Dock Guide' },
       { href: Routes.Subnautica2Map, label: 'Map and Biomes' },
       {
@@ -181,7 +203,7 @@ const baseCopy: Record<string, BaseCopy> = {
     ],
     sourcesTitle: 'Source note',
     sourceBody:
-      'Checked May 28, 2026 against Steam, PCGamesN base building notes, and PC Gamer coverage of the newer base building system. Recipes, scans, and build costs can change during Early Access.',
+      'Checked June 2, 2026 against Hotfix 3, Steam, PCGamesN base building notes, and PC Gamer coverage of the newer base building system. Recipes, scans, and build costs can change during Early Access.',
     cardKicker: 'Base planning card',
     cardBody:
       'First-base order for route placement, Habitat Builder progress, power, storage, crafting, and co-op expansion.',
@@ -203,7 +225,7 @@ const baseCopy: Record<string, BaseCopy> = {
       '第一座好基地不一定是最漂亮的。它应该让接下来的三次下水更短、更稳、更少来回折腾。',
     quickLabel: '快速答案',
     quickAnswer:
-      '第一座 Subnautica 2 基地应建在你会反复跑的路线旁边：Copper、Silver、Scanner 碎片、氧气安全、食物和回程地标。先推进 Habitat Builder，做一个简单房间和舱门，解决供电，再加储物，最后再追求漂亮布局。',
+      '第一座 Subnautica 2 基地应建在你会反复跑的路线旁边：Copper、Silver、Scanner 碎片、氧气安全、食物和回程地标。先推进 Habitat Builder，做一个简单房间和舱门，解决供电，再加储物，最后再追求漂亮布局。Hotfix 3 后 Interior Wall 成本降到原来的四分之一，前期做储物隔区和联机分区没那么心疼了。',
     fieldNotesTitle: '第一座基地笔记',
     fieldNotes: [
       {
@@ -218,12 +240,17 @@ const baseCopy: Record<string, BaseCopy> = {
         title: '留一侧丑一点，给以后扩建',
         body: '对称和美观可以晚点再说。先留一侧给供电、载具、生产房间，或者抢先体验补丁后突然变重要的新系统。',
       },
+      {
+        title: 'Interior Wall 变便宜了',
+        body: 'Hotfix 3 把 Interior Wall 成本降到原来的四分之一。前期做储物角、联机分区、路线隔断，都比首发周攻略里说的更划算。',
+      },
     ],
     routeChecklistTitle: '第一座基地检查',
     routeChecklist: [
       '这座基地至少缩短一条反复跑的路线。',
       '供电、舱门、储物和制作先解决。',
       '柜子在材料堆起来之前就有简单名字。',
+      'Hotfix 3 后可以用更便宜的 Interior Wall 做储物通道或联机分区。',
       '至少留一侧空间给后续扩建。',
     ],
     contentsLabel: '目录',
@@ -244,6 +271,10 @@ const baseCopy: Record<string, BaseCopy> = {
       {
         title: '尽早给仓库分类',
         body: '常用资源、稀有材料、加工零件、有机物、个人装备分开。联机时这件事尤其重要。',
+      },
+      {
+        title: 'Interior Wall 用在省时间的地方',
+        body: 'Hotfix 3 降低成本后，Interior Wall 不只是装饰。用它分出储物线、制作角和队友区域，会比纯靠一堆柜子更清楚。',
       },
     ],
     visualTitle: '第一座基地建造板',
@@ -270,6 +301,10 @@ const baseCopy: Record<string, BaseCopy> = {
       ['位置', '基地应该缩短重复路线，而不是逼你每天风景通勤。'],
       ['供电', '制作、储物和后续系统都需要先稳定供电。'],
       ['储物', '整理好的柜子比更大的乱房间省时间。'],
+      [
+        'Interior Wall',
+        'Hotfix 3 后成本更低，早期做储物通道和联机分区更合理。',
+      ],
       ['制作入口', '制作点靠近路线，材料才能更快变成进度。'],
       ['扩建空间', '给载具、生产系统和联机往返留空间。'],
     ],
@@ -290,6 +325,10 @@ const baseCopy: Record<string, BaseCopy> = {
         title: 'Subnautica 2 基地建造有变化吗？',
         body: '有。当前报道显示建造系统更灵活，但生存逻辑没变：位置、供电、储物和路线优先。',
       },
+      {
+        title: 'Hotfix 3 改了基地建造吗？',
+        body: '改了一点实用内容：Interior Wall 成本降到原来的四分之一。',
+      },
     ],
     readNextTitle: '继续阅读',
     related: [
@@ -303,6 +342,7 @@ const baseCopy: Record<string, BaseCopy> = {
         href: Routes.Subnautica2InsufficientSpaceToDock,
         label: 'Insufficient Space to Dock 修复',
       },
+      { href: Routes.Subnautica2Hotfix3, label: 'Hotfix 3' },
       { href: Routes.Subnautica2TadpoleDock, label: 'Tadpole Dock 指南' },
       { href: Routes.Subnautica2ScannerStation, label: 'Scanner Station 指南' },
       {
@@ -319,7 +359,7 @@ const baseCopy: Record<string, BaseCopy> = {
     ],
     sourcesTitle: '来源说明',
     sourceBody:
-      '2026 年 5 月 28 日核对 Steam、PCGamesN 基地建造说明和 PC Gamer 关于新基地系统的报道。配方、扫描和建造成本可能随抢先体验补丁变化。',
+      '2026 年 6 月 2 日核对 Hotfix 3、Steam、PCGamesN 基地建造说明和 PC Gamer 关于新基地系统的报道。配方、扫描和建造成本可能随抢先体验补丁变化。',
     cardKicker: '基地规划卡',
     cardBody: '整理路线选址、Habitat Builder、供电、储物、制作和联机扩建顺序。',
     cardTypeLabel: '类型',
