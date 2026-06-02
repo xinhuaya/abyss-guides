@@ -167,6 +167,10 @@ const crossplayCopy: Record<string, CrossplayCopy> = {
       },
       { href: Routes.Subnautica2XboxGamePass, label: 'Xbox Game Pass' },
       { href: Routes.Subnautica2SaveFileLocation, label: 'Save File Backup' },
+      {
+        href: Routes.Subnautica2SaveRecoveryCloudSync,
+        label: 'Save Recovery Checklist',
+      },
       { href: Routes.Subnautica2ReleaseDate, label: 'Release Date' },
       { href: Routes.Subnautica2Hotfix2, label: 'Hotfix 2' },
     ],

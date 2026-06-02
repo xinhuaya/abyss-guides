@@ -663,6 +663,11 @@ const copyByLocale: Record<'en' | 'zh', HubCopy> = {
             note: 'Steam backups and cloud notes',
           },
           {
+            href: Routes.Subnautica2SaveRecoveryCloudSync,
+            label: 'Save recovery',
+            note: 'cloud conflicts and restore steps',
+          },
+          {
             href: Routes.Subnautica2Hotfix2,
             label: 'Hotfix 2',
             note: 'official change summary',
@@ -836,6 +841,12 @@ const copyByLocale: Record<'en' | 'zh', HubCopy> = {
         title: 'Save File Location and Backup',
         description:
           'Steam save folder, .sav and .bak files, cloud sync timing, and Xbox/Game Pass backup caution.',
+      },
+      {
+        href: Routes.Subnautica2SaveRecoveryCloudSync,
+        title: 'Save Recovery and Cloud Sync Conflicts',
+        description:
+          'How to handle Steam Cloud conflict prompts, corrupted saves, .bak files, and safe one-slot restore tests.',
       },
       {
         href: Routes.Subnautica2Hotfix2,
@@ -1559,6 +1570,12 @@ const copyByLocale: Record<'en' | 'zh', HubCopy> = {
           'Steam 存档文件夹、.sav 和 .bak、云同步时间，以及 Xbox/Game Pass 备份注意事项。',
       },
       {
+        href: Routes.Subnautica2SaveRecoveryCloudSync,
+        title: 'Subnautica 2 存档恢复和云同步冲突',
+        description:
+          'Steam Cloud 冲突、坏档、.bak 文件、单槽位还原测试，以及 Game Pass 版本注意事项。',
+      },
+      {
         href: Routes.Subnautica2Hotfix2,
         title: 'Hotfix 2 更新内容',
         description: '银、Troilite、氧气、Hammerhead、联机和崩溃修复整理。',
@@ -2111,6 +2128,11 @@ const guideIndexCopyByLocale: Record<'en' | 'zh', GuideIndexCopy> = {
             note: 'Steam backups and cloud saves',
           },
           {
+            href: Routes.Subnautica2SaveRecoveryCloudSync,
+            label: 'Save recovery',
+            note: 'cloud conflicts and restore tests',
+          },
+          {
             href: Routes.Subnautica2Hotfix2,
             label: 'Hotfix 2',
             note: 'changed routes and known fixes',
@@ -2139,6 +2161,11 @@ const guideIndexCopyByLocale: Record<'en' | 'zh', GuideIndexCopy> = {
             href: Routes.Subnautica2SaveFileLocation,
             label: 'Save file location',
             note: 'Steam backup and cloud notes',
+          },
+          {
+            href: Routes.Subnautica2SaveRecoveryCloudSync,
+            label: 'Save recovery',
+            note: 'cloud conflicts and .bak restore',
           },
         ],
       },
@@ -2339,6 +2366,11 @@ const guideIndexCopyByLocale: Record<'en' | 'zh', GuideIndexCopy> = {
             note: 'Steam 备份和云存档',
           },
           {
+            href: Routes.Subnautica2SaveRecoveryCloudSync,
+            label: '存档恢复',
+            note: '云冲突和还原测试',
+          },
+          {
             href: Routes.Subnautica2Hotfix2,
             label: 'Hotfix 2',
             note: '路线变化和修复整理',
@@ -2367,6 +2399,11 @@ const guideIndexCopyByLocale: Record<'en' | 'zh', GuideIndexCopy> = {
             href: Routes.Subnautica2SaveFileLocation,
             label: '存档位置',
             note: 'Steam 备份和云存档',
+          },
+          {
+            href: Routes.Subnautica2SaveRecoveryCloudSync,
+            label: '存档恢复',
+            note: '云同步冲突和 .bak 还原',
           },
         ],
       },

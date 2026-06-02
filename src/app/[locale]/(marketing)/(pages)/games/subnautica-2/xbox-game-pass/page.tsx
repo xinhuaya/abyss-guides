@@ -167,6 +167,10 @@ const xboxGamePassCopy: Record<string, XboxGamePassCopy> = {
       },
       { href: Routes.Subnautica2Hotfix2, label: 'Hotfix 2 Changes' },
       { href: Routes.Subnautica2SaveFileLocation, label: 'Save File Backup' },
+      {
+        href: Routes.Subnautica2SaveRecoveryCloudSync,
+        label: 'Save Recovery Checklist',
+      },
       { href: Routes.Subnautica2Beginner, label: 'Beginner Route' },
     ],
     sourcesTitle: 'Source note',

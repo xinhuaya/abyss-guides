@@ -165,6 +165,10 @@ const copyByLocale: Record<string, SaveFileCopy> = {
     readNextTitle: 'Read next',
     related: [
       {
+        href: Routes.Subnautica2SaveRecoveryCloudSync,
+        label: 'Save Recovery Checklist',
+      },
+      {
         href: Routes.Subnautica2StartupCrashAfterHotfix3,
         label: 'Startup Crash Checklist',
       },

@@ -201,6 +201,8 @@ const guideImageByPathname: Partial<Record<Routes, string>> = {
   [Routes.Subnautica2XboxGamePass]: '/abyss/chibi-platform-briefing.webp',
   [Routes.Subnautica2SystemRequirements]: '/abyss/chibi-platform-briefing.webp',
   [Routes.Subnautica2SaveFileLocation]: '/abyss/chibi-save-backup-guide.webp',
+  [Routes.Subnautica2SaveRecoveryCloudSync]:
+    '/abyss/chibi-save-recovery-cloud-sync.webp',
   [Routes.Subnautica2DlssSettingsAfterHotfix3]:
     '/abyss/chibi-platform-briefing.webp',
   [Routes.Subnautica2EarlyAccessWorthIt]: '/abyss/chibi-platform-briefing.webp',

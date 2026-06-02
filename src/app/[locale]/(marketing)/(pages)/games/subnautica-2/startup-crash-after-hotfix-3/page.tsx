@@ -179,6 +179,10 @@ const copyByLocale: Record<string, StartupCrashCopy> = {
         label: 'Save File Backup',
       },
       {
+        href: Routes.Subnautica2SaveRecoveryCloudSync,
+        label: 'Save Recovery Checklist',
+      },
+      {
         href: Routes.Subnautica2MultiplayerNotWorking,
         label: 'Multiplayer Not Working',
       },
@@ -323,6 +327,10 @@ const copyByLocale: Record<string, StartupCrashCopy> = {
       },
       { href: Routes.Subnautica2SystemRequirements, label: '配置要求' },
       { href: Routes.Subnautica2SaveFileLocation, label: '存档备份' },
+      {
+        href: Routes.Subnautica2SaveRecoveryCloudSync,
+        label: '存档恢复流程',
+      },
       { href: Routes.Subnautica2MultiplayerNotWorking, label: '联机问题修复' },
       {
         href: Routes.Subnautica2CoopRejoinAfterHotfix3,
