@@ -26,6 +26,7 @@ const abyssMetadataImageByPathname: Record<string, string> = {
   [Routes.Subnautica2Rebreather]: '/abyss/chibi-oxygen-depth.webp',
   [Routes.Subnautica2Coop]: '/abyss/chibi-coop-signal.webp',
   [Routes.Subnautica2CoopPlayerCount]: '/abyss/chibi-coop-signal.webp',
+  [Routes.Subnautica2SplitScreenCoop]: '/abyss/chibi-split-screen-coop.webp',
   [Routes.Subnautica2Crossplay]: '/abyss/chibi-coop-signal.webp',
   [Routes.Subnautica2MultiplayerNotWorking]: '/abyss/chibi-coop-signal.webp',
   [Routes.Subnautica2MultiplayerLagDesync]:

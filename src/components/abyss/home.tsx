@@ -90,6 +90,7 @@ const homeImageByRoute: Partial<Record<Routes, string>> = {
     '/abyss/chibi-best-settings-low-fps.webp',
   [Routes.Subnautica2EarlyAccessWorthIt]: '/abyss/chibi-platform-briefing.webp',
   [Routes.Subnautica2Crossplay]: '/abyss/chibi-coop-signal.webp',
+  [Routes.Subnautica2SplitScreenCoop]: '/abyss/chibi-split-screen-coop.webp',
   [Routes.Subnautica2Ps5ReleaseDate]: '/abyss/chibi-platform-briefing.webp',
   [Routes.Subnautica2Switch2ReleaseDate]:
     '/abyss/chibi-switch-2-release-date.webp',
@@ -252,6 +253,14 @@ const enCopy: HomeCopy = {
       href: Routes.Subnautica2Crossplay,
       icon: UsersRoundIcon,
       label: 'Co-op',
+    },
+    {
+      title: 'Split screen and couch co-op',
+      description:
+        'A plain answer for local co-op searches: online co-op is confirmed, shared-screen play is not.',
+      href: Routes.Subnautica2SplitScreenCoop,
+      icon: MonitorPlayIcon,
+      label: 'Local co-op',
     },
     {
       title: 'PS5 release date',
@@ -516,6 +525,14 @@ const zhCopy: HomeCopy = {
       href: Routes.Subnautica2Crossplay,
       icon: UsersRoundIcon,
       label: '联机',
+    },
+    {
+      title: '分屏和本地双人',
+      description:
+        '直接回答同屏合作搜索：在线合作有官方信息，本地分屏目前不能当成已确认。',
+      href: Routes.Subnautica2SplitScreenCoop,
+      icon: MonitorPlayIcon,
+      label: '本地合作',
     },
     {
       title: 'PS5 发售日',

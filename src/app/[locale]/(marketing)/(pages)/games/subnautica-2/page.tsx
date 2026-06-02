@@ -2229,6 +2229,11 @@ const guideIndexCopyByLocale: Record<'en' | 'zh', GuideIndexCopy> = {
             note: 'co-op platform checks',
           },
           {
+            href: Routes.Subnautica2SplitScreenCoop,
+            label: 'Split screen co-op',
+            note: 'local and couch co-op status',
+          },
+          {
             href: Routes.Subnautica2SystemRequirements,
             label: 'System requirements',
             note: 'PC spec and settings notes',
@@ -2490,6 +2495,11 @@ const guideIndexCopyByLocale: Record<'en' | 'zh', GuideIndexCopy> = {
             href: Routes.Subnautica2Crossplay,
             label: '跨平台联机',
             note: '联机平台检查',
+          },
+          {
+            href: Routes.Subnautica2SplitScreenCoop,
+            label: '分屏和本地双人',
+            note: '同屏合作状态',
           },
           {
             href: Routes.Subnautica2SystemRequirements,

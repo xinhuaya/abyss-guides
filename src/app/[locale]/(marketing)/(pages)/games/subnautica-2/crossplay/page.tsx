@@ -162,6 +162,10 @@ const crossplayCopy: Record<string, CrossplayCopy> = {
     related: [
       { href: Routes.Subnautica2CoopPlayerCount, label: 'Co-op Player Count' },
       {
+        href: Routes.Subnautica2SplitScreenCoop,
+        label: 'Split Screen and Couch Co-op',
+      },
+      {
         href: Routes.Subnautica2MultiplayerNotWorking,
         label: 'Multiplayer Not Working',
       },
@@ -306,6 +310,7 @@ const crossplayCopy: Record<string, CrossplayCopy> = {
     readNextTitle: '继续看',
     related: [
       { href: Routes.Subnautica2CoopPlayerCount, label: '联机人数' },
+      { href: Routes.Subnautica2SplitScreenCoop, label: '分屏和本地双人' },
       { href: Routes.Subnautica2MultiplayerNotWorking, label: '联机失败排查' },
       { href: Routes.Subnautica2XboxGamePass, label: 'Xbox Game Pass' },
       { href: Routes.Subnautica2SaveFileLocation, label: '存档备份' },

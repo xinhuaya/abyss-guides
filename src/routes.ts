@@ -96,6 +96,7 @@ export enum Routes {
   Subnautica2BaseLocationTierList = '/games/subnautica-2/base-location-tier-list',
   Subnautica2Coop = '/games/subnautica-2/co-op-guide',
   Subnautica2CoopPlayerCount = '/games/subnautica-2/co-op-player-count',
+  Subnautica2SplitScreenCoop = '/games/subnautica-2/split-screen-coop',
   Subnautica2Crossplay = '/games/subnautica-2/crossplay',
   Subnautica2MultiplayerNotWorking = '/games/subnautica-2/multiplayer-not-working',
   Subnautica2MultiplayerLagDesync = '/games/subnautica-2/multiplayer-lag-desync',

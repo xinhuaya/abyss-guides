@@ -192,6 +192,7 @@ const guideImageByPathname: Partial<Record<Routes, string>> = {
   [Routes.Subnautica2Crafting]: '/abyss/chibi-crafting-bench.webp',
   [Routes.Subnautica2Coop]: '/abyss/chibi-coop-signal.webp',
   [Routes.Subnautica2CoopPlayerCount]: '/abyss/chibi-coop-signal.webp',
+  [Routes.Subnautica2SplitScreenCoop]: '/abyss/chibi-split-screen-coop.webp',
   [Routes.Subnautica2Crossplay]: '/abyss/chibi-coop-signal.webp',
   [Routes.Subnautica2MultiplayerNotWorking]: '/abyss/chibi-coop-signal.webp',
   [Routes.Subnautica2MultiplayerLagDesync]:
