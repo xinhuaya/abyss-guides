@@ -2219,6 +2219,11 @@ const guideIndexCopyByLocale: Record<'en' | 'zh', GuideIndexCopy> = {
             note: 'subscription availability',
           },
           {
+            href: Routes.Subnautica2ControllerNotWorking,
+            label: 'Controller not working',
+            note: 'gamepad, Steam Input, and input lag',
+          },
+          {
             href: Routes.Subnautica2Crossplay,
             label: 'Crossplay',
             note: 'co-op platform checks',
@@ -2470,6 +2475,11 @@ const guideIndexCopyByLocale: Record<'en' | 'zh', GuideIndexCopy> = {
             href: Routes.Subnautica2XboxGamePass,
             label: 'Xbox Game Pass',
             note: '订阅平台可玩情况',
+          },
+          {
+            href: Routes.Subnautica2ControllerNotWorking,
+            label: '手柄没反应',
+            note: '控制器、Steam Input 和输入延迟',
           },
           {
             href: Routes.Subnautica2Crossplay,

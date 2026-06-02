@@ -30,6 +30,8 @@ const abyssMetadataImageByPathname: Record<string, string> = {
   [Routes.Subnautica2MultiplayerNotWorking]: '/abyss/chibi-coop-signal.webp',
   [Routes.Subnautica2MultiplayerLagDesync]:
     '/abyss/chibi-multiplayer-lag-desync.webp',
+  [Routes.Subnautica2ControllerNotWorking]:
+    '/abyss/chibi-controller-not-working.webp',
   [Routes.Subnautica2CoopRejoinAfterHotfix3]: '/abyss/chibi-coop-rejoin.webp',
   [Routes.Subnautica2Updates]: '/abyss/chibi-update-console.webp',
   [Routes.Subnautica2Hotfix2]: '/abyss/chibi-update-console.webp',

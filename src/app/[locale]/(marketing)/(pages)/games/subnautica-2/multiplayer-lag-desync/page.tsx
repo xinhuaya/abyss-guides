@@ -187,6 +187,10 @@ const copyByLocale: Record<string, LagCopy> = {
         href: Routes.Subnautica2BestSettingsLowFps,
         label: 'Best Settings for Low FPS',
       },
+      {
+        href: Routes.Subnautica2ControllerNotWorking,
+        label: 'Controller Not Working',
+      },
       { href: Routes.Subnautica2Hotfix3, label: 'Hotfix 3 Changes' },
       { href: Routes.Subnautica2XboxGamePass, label: 'Xbox Game Pass' },
     ],
@@ -342,6 +346,7 @@ const copyByLocale: Record<string, LagCopy> = {
         href: Routes.Subnautica2BestSettingsLowFps,
         label: '低 FPS 和最佳设置',
       },
+      { href: Routes.Subnautica2ControllerNotWorking, label: '手柄没反应' },
       { href: Routes.Subnautica2Hotfix3, label: 'Hotfix 3 更新内容' },
       { href: Routes.Subnautica2XboxGamePass, label: 'Xbox Game Pass' },
     ],

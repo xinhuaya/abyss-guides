@@ -79,6 +79,8 @@ const homeImageByRoute: Partial<Record<Routes, string>> = {
   [Routes.Subnautica2CoopPlayerCount]: '/abyss/chibi-coop-signal.webp',
   [Routes.Subnautica2MultiplayerLagDesync]:
     '/abyss/chibi-multiplayer-lag-desync.webp',
+  [Routes.Subnautica2ControllerNotWorking]:
+    '/abyss/chibi-controller-not-working.webp',
   [Routes.Subnautica2SilverAfterHotfix2]: '/abyss/chibi-update-console.webp',
   [Routes.Subnautica2XboxGamePass]: '/abyss/chibi-platform-briefing.webp',
   [Routes.Subnautica2SystemRequirements]: '/abyss/chibi-platform-briefing.webp',
@@ -118,7 +120,7 @@ const enCopy: HomeCopy = {
   primaryCta: 'Start the beginner route',
   secondaryCta: 'Find a resource',
   latestTitle: 'Homepage focus',
-  latestHeading: 'The nine pages players need first',
+  latestHeading: 'The ten pages players need first',
   latestDescription:
     'This front page is built around search intent, not filler. New players need a route, returning players need update notes, and undecided players need platform answers before they buy or install.',
   openLabel: 'Open',
@@ -188,6 +190,14 @@ const enCopy: HomeCopy = {
       label: 'Co-op',
     },
     {
+      title: 'Controller not working',
+      description:
+        'Gamepad detection, Steam Input, Xbox controllers, Steam Deck layout, cloud delay, and input lag checks.',
+      href: Routes.Subnautica2ControllerNotWorking,
+      icon: Gamepad2Icon,
+      label: 'Input',
+    },
+    {
       title: 'Silver after Hotfix 2',
       description:
         'A focused route for the material that blocks Scanner, Wiring Kit, and tank progress.',
@@ -248,6 +258,14 @@ const enCopy: HomeCopy = {
       href: Routes.Subnautica2Ps5ReleaseDate,
       icon: Gamepad2Icon,
       label: 'PS5',
+    },
+    {
+      title: 'Controller checklist',
+      description:
+        'Steam Input, Xbox controllers, handheld layouts, and input-delay checks before changing bindings.',
+      href: Routes.Subnautica2ControllerNotWorking,
+      icon: Gamepad2Icon,
+      label: 'Input',
     },
   ],
   popularTitle: 'In-game routes',
@@ -347,7 +365,7 @@ const enCopy: HomeCopy = {
     },
   ],
   stats: [
-    ['9', 'homepage entry points'],
+    ['10', 'homepage entry points'],
     ['Hotfix 3', 'latest tracked update'],
     ['8', 'search locales'],
   ],
@@ -365,7 +383,7 @@ const zhCopy: HomeCopy = {
   primaryCta: '先看新手路线',
   secondaryCta: '查资源',
   latestTitle: '首页核心入口',
-  latestHeading: '先展示这 9 个页面',
+  latestHeading: '先展示这 10 个页面',
   latestDescription:
     '这个首页不是用来堆内容的。新玩家要路线，老玩家要更新，准备入坑的人要平台和发售答案，这些内容必须先出现。',
   openLabel: '打开',
@@ -431,6 +449,14 @@ const zhCopy: HomeCopy = {
       label: '联机',
     },
     {
+      title: '手柄没反应',
+      description:
+        '排查手柄识别、Steam Input、Xbox 手柄、Steam Deck 布局、云游戏延迟和输入慢半拍。',
+      href: Routes.Subnautica2ControllerNotWorking,
+      icon: Gamepad2Icon,
+      label: '输入',
+    },
+    {
       title: 'Hotfix 2 后的 Silver',
       description: 'Scanner、Wiring Kit、气瓶进度最容易卡在这里。',
       href: Routes.Subnautica2SilverAfterHotfix2,
@@ -488,6 +514,14 @@ const zhCopy: HomeCopy = {
       href: Routes.Subnautica2Ps5ReleaseDate,
       icon: Gamepad2Icon,
       label: 'PS5',
+    },
+    {
+      title: '手柄和输入排查',
+      description:
+        'Steam Input、Xbox 手柄、掌机布局和输入延迟，先按平台分清楚。',
+      href: Routes.Subnautica2ControllerNotWorking,
+      icon: Gamepad2Icon,
+      label: '输入',
     },
   ],
   popularTitle: '进游戏后常用',
@@ -576,7 +610,7 @@ const zhCopy: HomeCopy = {
     },
   ],
   stats: [
-    ['9', '首页核心入口'],
+    ['10', '首页核心入口'],
     ['Hotfix 3', '最新追踪'],
     ['8', '搜索语言'],
   ],

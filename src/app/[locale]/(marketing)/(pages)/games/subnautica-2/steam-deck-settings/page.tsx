@@ -175,6 +175,10 @@ const copyByLocale: Record<string, SteamDeckCopy> = {
         label: 'Best Settings for Low FPS',
       },
       {
+        href: Routes.Subnautica2ControllerNotWorking,
+        label: 'Controller Not Working',
+      },
+      {
         href: Routes.Subnautica2BlackScreenFreezing,
         label: 'Black Screen and Freezing',
       },
@@ -320,6 +324,10 @@ const copyByLocale: Record<string, SteamDeckCopy> = {
     readNextTitle: '继续看',
     related: [
       { href: Routes.Subnautica2SystemRequirements, label: 'PC 配置要求' },
+      {
+        href: Routes.Subnautica2ControllerNotWorking,
+        label: '手柄没反应',
+      },
       {
         href: Routes.Subnautica2BlackScreenFreezing,
         label: '黑屏和卡死排查',

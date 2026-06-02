@@ -190,6 +190,10 @@ const copyByLocale: Record<string, SettingsCopy> = {
         label: 'Steam Deck Settings',
       },
       {
+        href: Routes.Subnautica2ControllerNotWorking,
+        label: 'Controller Not Working',
+      },
+      {
         href: Routes.Subnautica2StartupCrashAfterHotfix3,
         label: 'Startup Crash Checklist',
       },
@@ -337,6 +341,7 @@ const copyByLocale: Record<string, SettingsCopy> = {
       },
       { href: Routes.Subnautica2SystemRequirements, label: '配置要求' },
       { href: Routes.Subnautica2SteamDeckSettings, label: 'Steam Deck 设置' },
+      { href: Routes.Subnautica2ControllerNotWorking, label: '手柄没反应' },
       {
         href: Routes.Subnautica2StartupCrashAfterHotfix3,
         label: '启动崩溃排查',
