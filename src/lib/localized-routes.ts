@@ -2,6 +2,8 @@ import { routing } from '@/i18n/routing';
 import { Routes } from '@/routes';
 import type { Locale } from 'next-intl';
 
+const globallyLocalizedRoutes = new Set<string>([Routes.Root, Routes.Contact]);
+
 const localizedRoutes: Partial<Record<Locale, ReadonlySet<string>>> = {
   zh: new Set([
     Routes.Root,
@@ -844,6 +846,10 @@ export function isRouteReadyForLocale(
   const normalizedPath = normalizeRoutePath(pathname);
 
   if (!locale || locale === routing.defaultLocale || locale === 'default') {
+    return true;
+  }
+
+  if (globallyLocalizedRoutes.has(normalizedPath)) {
     return true;
   }
 
