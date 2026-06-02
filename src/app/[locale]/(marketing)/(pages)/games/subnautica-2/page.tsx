@@ -618,6 +618,16 @@ const copyByLocale: Record<'en' | 'zh', HubCopy> = {
             note: 'Hammerhead safety after Hotfix 3',
           },
           {
+            href: Routes.Subnautica2HammerheadAfterHotfix3,
+            label: 'Hammerhead',
+            note: 'behavior and Flare retest',
+          },
+          {
+            href: Routes.Subnautica2FlaresAfterHotfix3,
+            label: 'Flares',
+            note: 'distraction after Hotfix 3',
+          },
+          {
             href: Routes.Subnautica2DlssSettingsAfterHotfix3,
             label: 'DLSS settings',
             note: 'DLSS 4.5 and Frame Generation',
@@ -742,6 +752,18 @@ const copyByLocale: Record<'en' | 'zh', HubCopy> = {
         title: 'Tadpole Parking After Hotfix 3',
         description:
           'How to park empty Tadpoles now that Hammerheads no longer attack unpiloted vehicles, plus Flare and approach-lane notes.',
+      },
+      {
+        href: Routes.Subnautica2HammerheadAfterHotfix3,
+        title: 'Hammerhead After Hotfix 3',
+        description:
+          'What changed around unpiloted Tadpoles, Flare attraction, Tadpole lights, base approaches, and old creature advice.',
+      },
+      {
+        href: Routes.Subnautica2FlaresAfterHotfix3,
+        title: 'Flares After Hotfix 3',
+        description:
+          'How to use Flares after Hammerhead attraction was fixed, with hatch, base door, and co-op route notes.',
       },
       {
         href: Routes.Subnautica2DlssSettingsAfterHotfix3,
@@ -1261,6 +1283,16 @@ const copyByLocale: Record<'en' | 'zh', HubCopy> = {
             note: 'Hotfix 3 后 Hammerhead 安全性',
           },
           {
+            href: Routes.Subnautica2HammerheadAfterHotfix3,
+            label: 'Hammerhead',
+            note: '行为变化和 Flare 重测',
+          },
+          {
+            href: Routes.Subnautica2FlaresAfterHotfix3,
+            label: 'Flare',
+            note: 'Hotfix 3 后诱导用法',
+          },
+          {
             href: Routes.Subnautica2DlssSettingsAfterHotfix3,
             label: 'DLSS 设置',
             note: 'DLSS 4.5 和 Frame Generation',
@@ -1385,6 +1417,18 @@ const copyByLocale: Record<'en' | 'zh', HubCopy> = {
         title: 'Hotfix 3 后 Tadpole 怎么停',
         description:
           'Hammerhead 不再攻击无人 Tadpole 后，怎么停车、用 Flare、避开怪物路线和基地入口风险。',
+      },
+      {
+        href: Routes.Subnautica2HammerheadAfterHotfix3,
+        title: 'Hotfix 3 后 Hammerhead 怎么躲',
+        description:
+          '无人 Tadpole、Flare 吸引、Tadpole 灯光、基地入口和旧生物攻略该怎么重新判断。',
+      },
+      {
+        href: Routes.Subnautica2FlaresAfterHotfix3,
+        title: 'Hotfix 3 后 Flare 怎么用',
+        description:
+          'Hammerhead 对 Flare 的吸引修复后，怎么扔、什么时候走、哪些旧视频建议需要重测。',
       },
       {
         href: Routes.Subnautica2DlssSettingsAfterHotfix3,
@@ -1895,6 +1939,16 @@ const guideIndexCopyByLocale: Record<'en' | 'zh', GuideIndexCopy> = {
             note: 'Hammerhead safety after Hotfix 3',
           },
           {
+            href: Routes.Subnautica2HammerheadAfterHotfix3,
+            label: 'Hammerhead',
+            note: 'behavior after Hotfix 3',
+          },
+          {
+            href: Routes.Subnautica2FlaresAfterHotfix3,
+            label: 'Flares',
+            note: 'Hammerhead distraction checks',
+          },
+          {
             href: Routes.Subnautica2DlssSettingsAfterHotfix3,
             label: 'DLSS settings',
             note: 'DLSS 4.5 and Frame Generation',
@@ -2071,6 +2125,16 @@ const guideIndexCopyByLocale: Record<'en' | 'zh', GuideIndexCopy> = {
             href: Routes.Subnautica2TadpoleParkingAfterHotfix3,
             label: 'Tadpole 停放',
             note: 'Hotfix 3 后 Hammerhead 安全性',
+          },
+          {
+            href: Routes.Subnautica2HammerheadAfterHotfix3,
+            label: 'Hammerhead',
+            note: 'Hotfix 3 后行为变化',
+          },
+          {
+            href: Routes.Subnautica2FlaresAfterHotfix3,
+            label: 'Flare',
+            note: 'Hammerhead 诱导检查',
           },
           {
             href: Routes.Subnautica2DlssSettingsAfterHotfix3,

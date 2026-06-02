@@ -739,6 +739,8 @@ const zhOnlyRoutes = [
   Routes.Subnautica2Hotfix3,
   Routes.Subnautica2TadpoleParkingAfterHotfix3,
   Routes.Subnautica2DlssSettingsAfterHotfix3,
+  Routes.Subnautica2HammerheadAfterHotfix3,
+  Routes.Subnautica2FlaresAfterHotfix3,
   Routes.Subnautica2AdvancedWiringKit,
   Routes.Subnautica2BasicFins,
   Routes.Subnautica2BatteryTerminal,

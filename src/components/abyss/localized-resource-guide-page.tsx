@@ -108,6 +108,9 @@ const guideImageByPathname: Partial<Record<Routes, string>> = {
   [Routes.Subnautica2InsufficientSpaceToDock]:
     '/abyss/chibi-vehicle-route.webp',
   [Routes.Subnautica2CreaturesLeviathans]: '/abyss/chibi-creature-risk.webp',
+  [Routes.Subnautica2HammerheadAfterHotfix3]:
+    '/abyss/chibi-hammerhead-flare.webp',
+  [Routes.Subnautica2FlaresAfterHotfix3]: '/abyss/chibi-hammerhead-flare.webp',
   [Routes.Subnautica2CreatureEnamel]: '/abyss/chibi-creature-risk.webp',
   [Routes.Subnautica2AcidicRaionPouch]: '/abyss/chibi-creature-risk.webp',
   [Routes.Subnautica2NecroleiCyst]: '/abyss/chibi-creature-risk.webp',
