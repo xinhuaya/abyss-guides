@@ -30,6 +30,9 @@ const abyssMetadataImageByPathname: Record<string, string> = {
   [Routes.Subnautica2MultiplayerNotWorking]: '/abyss/chibi-coop-signal.webp',
   [Routes.Subnautica2Updates]: '/abyss/chibi-update-console.webp',
   [Routes.Subnautica2Hotfix2]: '/abyss/chibi-update-console.webp',
+  [Routes.Subnautica2Hotfix3]: '/abyss/chibi-update-console.webp',
+  [Routes.Subnautica2DlssSettingsAfterHotfix3]:
+    '/abyss/chibi-platform-briefing.webp',
   [Routes.Subnautica2SilverAfterHotfix2]: '/abyss/chibi-update-console.webp',
   [Routes.Subnautica2TroiliteAfterHotfix2]: '/abyss/chibi-update-console.webp',
   [Routes.Subnautica2ReleaseDate]: '/abyss/chibi-platform-briefing.webp',
@@ -39,6 +42,8 @@ const abyssMetadataImageByPathname: Record<string, string> = {
   [Routes.Subnautica2EarlyAccessWorthIt]: '/abyss/chibi-platform-briefing.webp',
   [Routes.Subnautica2Vehicles]: '/abyss/chibi-vehicle-route.webp',
   [Routes.Subnautica2Tadpole]: '/abyss/chibi-vehicle-route.webp',
+  [Routes.Subnautica2TadpoleParkingAfterHotfix3]:
+    '/abyss/chibi-vehicle-route.webp',
   [Routes.Subnautica2TadpoleDock]: '/abyss/chibi-vehicle-route.webp',
   [Routes.Subnautica2TadpoleDepthModule]: '/abyss/chibi-vehicle-route.webp',
   [Routes.Subnautica2VehicleFabricator]: '/abyss/chibi-vehicle-route.webp',

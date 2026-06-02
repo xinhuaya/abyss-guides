@@ -116,6 +116,8 @@ const staticRoutes = [
   Routes.Subnautica2MapSizeBiomes,
   Routes.Subnautica2Hotfix2,
   Routes.Subnautica2Hotfix3,
+  Routes.Subnautica2TadpoleParkingAfterHotfix3,
+  Routes.Subnautica2DlssSettingsAfterHotfix3,
   Routes.Subnautica2SilverAfterHotfix2,
   Routes.Subnautica2TroiliteAfterHotfix2,
   Routes.About,
@@ -167,7 +169,9 @@ function getChangeFrequency(
     route === Routes.Subnautica2 ||
     route === Routes.Subnautica2Updates ||
     route === Routes.Subnautica2Hotfix2 ||
-    route === Routes.Subnautica2Hotfix3
+    route === Routes.Subnautica2Hotfix3 ||
+    route === Routes.Subnautica2TadpoleParkingAfterHotfix3 ||
+    route === Routes.Subnautica2DlssSettingsAfterHotfix3
   ) {
     return 'daily';
   }

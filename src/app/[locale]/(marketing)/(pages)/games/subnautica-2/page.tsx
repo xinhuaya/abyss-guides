@@ -613,6 +613,16 @@ const copyByLocale: Record<'en' | 'zh', HubCopy> = {
             note: 'latest official patch',
           },
           {
+            href: Routes.Subnautica2TadpoleParkingAfterHotfix3,
+            label: 'Tadpole parking',
+            note: 'Hammerhead safety after Hotfix 3',
+          },
+          {
+            href: Routes.Subnautica2DlssSettingsAfterHotfix3,
+            label: 'DLSS settings',
+            note: 'DLSS 4.5 and Frame Generation',
+          },
+          {
             href: Routes.Subnautica2Hotfix2,
             label: 'Hotfix 2',
             note: 'official change summary',
@@ -726,6 +736,18 @@ const copyByLocale: Record<'en' | 'zh', HubCopy> = {
         title: 'Hotfix 3 Changes',
         description:
           'DLSS 4.5, Frame Generation, Interior Wall cost, Tadpoles, Hammerheads, creatures, co-op rejoin, and Strike Armor fixes.',
+      },
+      {
+        href: Routes.Subnautica2TadpoleParkingAfterHotfix3,
+        title: 'Tadpole Parking After Hotfix 3',
+        description:
+          'How to park empty Tadpoles now that Hammerheads no longer attack unpiloted vehicles, plus Flare and approach-lane notes.',
+      },
+      {
+        href: Routes.Subnautica2DlssSettingsAfterHotfix3,
+        title: 'DLSS Settings After Hotfix 3',
+        description:
+          'DLSS 4.5, Frame Generation availability, saved settings, and what old PC settings advice needs retesting.',
       },
       {
         href: Routes.Subnautica2Hotfix2,
@@ -1234,6 +1256,16 @@ const copyByLocale: Record<'en' | 'zh', HubCopy> = {
             note: '最新官方补丁',
           },
           {
+            href: Routes.Subnautica2TadpoleParkingAfterHotfix3,
+            label: 'Tadpole 停放',
+            note: 'Hotfix 3 后 Hammerhead 安全性',
+          },
+          {
+            href: Routes.Subnautica2DlssSettingsAfterHotfix3,
+            label: 'DLSS 设置',
+            note: 'DLSS 4.5 和 Frame Generation',
+          },
+          {
             href: Routes.Subnautica2Hotfix2,
             label: 'Hotfix 2',
             note: '官方改动整理',
@@ -1347,6 +1379,18 @@ const copyByLocale: Record<'en' | 'zh', HubCopy> = {
         title: 'Hotfix 3 更新内容',
         description:
           'DLSS 4.5、Frame Generation、Interior Wall、Tadpole、Hammerhead、怪物、联机重连和 Strike Armor 修复。',
+      },
+      {
+        href: Routes.Subnautica2TadpoleParkingAfterHotfix3,
+        title: 'Hotfix 3 后 Tadpole 怎么停',
+        description:
+          'Hammerhead 不再攻击无人 Tadpole 后，怎么停车、用 Flare、避开怪物路线和基地入口风险。',
+      },
+      {
+        href: Routes.Subnautica2DlssSettingsAfterHotfix3,
+        title: 'Hotfix 3 后 DLSS 设置',
+        description:
+          'DLSS 4.5、Frame Generation 可用性、设置保存和旧 PC 画质攻略该怎么重新判断。',
       },
       {
         href: Routes.Subnautica2Hotfix2,
@@ -1846,6 +1890,16 @@ const guideIndexCopyByLocale: Record<'en' | 'zh', GuideIndexCopy> = {
             note: 'DLSS, Tadpoles, creatures, co-op',
           },
           {
+            href: Routes.Subnautica2TadpoleParkingAfterHotfix3,
+            label: 'Tadpole parking',
+            note: 'Hammerhead safety after Hotfix 3',
+          },
+          {
+            href: Routes.Subnautica2DlssSettingsAfterHotfix3,
+            label: 'DLSS settings',
+            note: 'DLSS 4.5 and Frame Generation',
+          },
+          {
             href: Routes.Subnautica2Hotfix2,
             label: 'Hotfix 2',
             note: 'changed routes and known fixes',
@@ -2012,6 +2066,16 @@ const guideIndexCopyByLocale: Record<'en' | 'zh', GuideIndexCopy> = {
             href: Routes.Subnautica2Hotfix3,
             label: 'Hotfix 3',
             note: 'DLSS、Tadpole、怪物和联机',
+          },
+          {
+            href: Routes.Subnautica2TadpoleParkingAfterHotfix3,
+            label: 'Tadpole 停放',
+            note: 'Hotfix 3 后 Hammerhead 安全性',
+          },
+          {
+            href: Routes.Subnautica2DlssSettingsAfterHotfix3,
+            label: 'DLSS 设置',
+            note: 'DLSS 4.5 和 Frame Generation',
           },
           {
             href: Routes.Subnautica2Hotfix2,

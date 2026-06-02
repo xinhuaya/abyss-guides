@@ -99,6 +99,8 @@ const guideImageByPathname: Partial<Record<Routes, string>> = {
   [Routes.Subnautica2BatteryTerminal]: '/abyss/chibi-crafting-bench.webp',
   [Routes.Subnautica2Vehicles]: '/abyss/chibi-vehicle-route.webp',
   [Routes.Subnautica2Tadpole]: '/abyss/chibi-vehicle-route.webp',
+  [Routes.Subnautica2TadpoleParkingAfterHotfix3]:
+    '/abyss/chibi-vehicle-route.webp',
   [Routes.Subnautica2TadpoleDock]: '/abyss/chibi-vehicle-route.webp',
   [Routes.Subnautica2TadpoleDepthModule]: '/abyss/chibi-vehicle-route.webp',
   [Routes.Subnautica2VehicleFabricator]: '/abyss/chibi-vehicle-route.webp',
@@ -186,6 +188,8 @@ const guideImageByPathname: Partial<Record<Routes, string>> = {
   [Routes.Subnautica2Ps5ReleaseDate]: '/abyss/chibi-platform-briefing.webp',
   [Routes.Subnautica2XboxGamePass]: '/abyss/chibi-platform-briefing.webp',
   [Routes.Subnautica2SystemRequirements]: '/abyss/chibi-platform-briefing.webp',
+  [Routes.Subnautica2DlssSettingsAfterHotfix3]:
+    '/abyss/chibi-platform-briefing.webp',
   [Routes.Subnautica2EarlyAccessWorthIt]: '/abyss/chibi-platform-briefing.webp',
   [Routes.Subnautica2Hotfix2]: '/abyss/chibi-update-console.webp',
   [Routes.Subnautica2Hotfix3]: '/abyss/chibi-update-console.webp',
