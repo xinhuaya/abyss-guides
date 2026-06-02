@@ -107,6 +107,7 @@ const staticRoutes = [
   Routes.Subnautica2CoopPlayerCount,
   Routes.Subnautica2Crossplay,
   Routes.Subnautica2MultiplayerNotWorking,
+  Routes.Subnautica2CoopRejoinAfterHotfix3,
   Routes.Subnautica2Updates,
   Routes.Subnautica2ReleaseDate,
   Routes.Subnautica2Ps5ReleaseDate,
@@ -175,7 +176,8 @@ function getChangeFrequency(
     route === Routes.Subnautica2TadpoleParkingAfterHotfix3 ||
     route === Routes.Subnautica2DlssSettingsAfterHotfix3 ||
     route === Routes.Subnautica2HammerheadAfterHotfix3 ||
-    route === Routes.Subnautica2FlaresAfterHotfix3
+    route === Routes.Subnautica2FlaresAfterHotfix3 ||
+    route === Routes.Subnautica2CoopRejoinAfterHotfix3
   ) {
     return 'daily';
   }

@@ -160,6 +160,10 @@ const multiplayerFixCopy: Record<string, MultiplayerFixCopy> = {
     ],
     readNextTitle: 'Read next',
     related: [
+      {
+        href: Routes.Subnautica2CoopRejoinAfterHotfix3,
+        label: 'Co-op Rejoin After Hotfix 3',
+      },
       { href: Routes.Subnautica2Crossplay, label: 'Crossplay Guide' },
       { href: Routes.Subnautica2CoopPlayerCount, label: 'Co-op Player Count' },
       { href: Routes.Subnautica2XboxGamePass, label: 'Xbox Game Pass' },
@@ -288,6 +292,10 @@ const multiplayerFixCopy: Record<string, MultiplayerFixCopy> = {
     ],
     readNextTitle: '继续看',
     related: [
+      {
+        href: Routes.Subnautica2CoopRejoinAfterHotfix3,
+        label: 'Hotfix 3 后联机重连',
+      },
       { href: Routes.Subnautica2Crossplay, label: '跨平台联机' },
       { href: Routes.Subnautica2CoopPlayerCount, label: '联机人数' },
       { href: Routes.Subnautica2XboxGamePass, label: 'Xbox Game Pass' },

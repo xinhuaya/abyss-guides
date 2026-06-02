@@ -628,6 +628,11 @@ const copyByLocale: Record<'en' | 'zh', HubCopy> = {
             note: 'distraction after Hotfix 3',
           },
           {
+            href: Routes.Subnautica2CoopRejoinAfterHotfix3,
+            label: 'Co-op rejoin',
+            note: 'client position fix',
+          },
+          {
             href: Routes.Subnautica2DlssSettingsAfterHotfix3,
             label: 'DLSS settings',
             note: 'DLSS 4.5 and Frame Generation',
@@ -764,6 +769,12 @@ const copyByLocale: Record<'en' | 'zh', HubCopy> = {
         title: 'Flares After Hotfix 3',
         description:
           'How to use Flares after Hammerhead attraction was fixed, with hatch, base door, and co-op route notes.',
+      },
+      {
+        href: Routes.Subnautica2CoopRejoinAfterHotfix3,
+        title: 'Co-op Rejoin After Hotfix 3',
+        description:
+          'Client position fixes, base-distance checks, fresh invites, test saves, and safe oxygen callouts after rejoining.',
       },
       {
         href: Routes.Subnautica2DlssSettingsAfterHotfix3,
@@ -1293,6 +1304,11 @@ const copyByLocale: Record<'en' | 'zh', HubCopy> = {
             note: 'Hotfix 3 后诱导用法',
           },
           {
+            href: Routes.Subnautica2CoopRejoinAfterHotfix3,
+            label: '联机重连',
+            note: '客户端位置修复',
+          },
+          {
             href: Routes.Subnautica2DlssSettingsAfterHotfix3,
             label: 'DLSS 设置',
             note: 'DLSS 4.5 和 Frame Generation',
@@ -1429,6 +1445,12 @@ const copyByLocale: Record<'en' | 'zh', HubCopy> = {
         title: 'Hotfix 3 后 Flare 怎么用',
         description:
           'Hammerhead 对 Flare 的吸引修复后，怎么扔、什么时候走、哪些旧视频建议需要重测。',
+      },
+      {
+        href: Routes.Subnautica2CoopRejoinAfterHotfix3,
+        title: 'Hotfix 3 后联机重连位置错误怎么办',
+        description:
+          '客户端重连位置、离基地距离、新邀请、短测试存档、氧气报点和安全集合流程。',
       },
       {
         href: Routes.Subnautica2DlssSettingsAfterHotfix3,
@@ -1949,6 +1971,11 @@ const guideIndexCopyByLocale: Record<'en' | 'zh', GuideIndexCopy> = {
             note: 'Hammerhead distraction checks',
           },
           {
+            href: Routes.Subnautica2CoopRejoinAfterHotfix3,
+            label: 'Co-op rejoin',
+            note: 'position fix after Hotfix 3',
+          },
+          {
             href: Routes.Subnautica2DlssSettingsAfterHotfix3,
             label: 'DLSS settings',
             note: 'DLSS 4.5 and Frame Generation',
@@ -2135,6 +2162,11 @@ const guideIndexCopyByLocale: Record<'en' | 'zh', GuideIndexCopy> = {
             href: Routes.Subnautica2FlaresAfterHotfix3,
             label: 'Flare',
             note: 'Hammerhead 诱导检查',
+          },
+          {
+            href: Routes.Subnautica2CoopRejoinAfterHotfix3,
+            label: '联机重连',
+            note: 'Hotfix 3 后位置修复',
           },
           {
             href: Routes.Subnautica2DlssSettingsAfterHotfix3,

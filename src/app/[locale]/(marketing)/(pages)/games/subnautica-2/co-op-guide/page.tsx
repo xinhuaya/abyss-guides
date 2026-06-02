@@ -155,6 +155,14 @@ const coopCopy: Record<string, CoopCopy> = {
     ],
     readNextTitle: 'Read next',
     related: [
+      {
+        href: Routes.Subnautica2CoopRejoinAfterHotfix3,
+        label: 'Co-op Rejoin After Hotfix 3',
+      },
+      {
+        href: Routes.Subnautica2MultiplayerNotWorking,
+        label: 'Multiplayer Not Working',
+      },
       { href: Routes.Subnautica2Beginner, label: 'Beginner Route' },
       { href: Routes.Subnautica2Map, label: 'Map and Biomes' },
       { href: Routes.Subnautica2Resources, label: 'Resources Guide' },
@@ -288,6 +296,14 @@ const coopCopy: Record<string, CoopCopy> = {
     ],
     readNextTitle: '继续阅读',
     related: [
+      {
+        href: Routes.Subnautica2CoopRejoinAfterHotfix3,
+        label: 'Hotfix 3 后联机重连',
+      },
+      {
+        href: Routes.Subnautica2MultiplayerNotWorking,
+        label: '联机失败排查',
+      },
       { href: Routes.Subnautica2Beginner, label: '新手路线' },
       { href: Routes.Subnautica2Map, label: '地图与生态区' },
       { href: Routes.Subnautica2Resources, label: '资源指南' },
