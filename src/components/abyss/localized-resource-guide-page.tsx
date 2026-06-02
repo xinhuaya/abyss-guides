@@ -202,6 +202,8 @@ const guideImageByPathname: Partial<Record<Routes, string>> = {
   [Routes.Subnautica2Updates]: '/abyss/chibi-update-console.webp',
   [Routes.Subnautica2ReleaseDate]: '/abyss/chibi-platform-briefing.webp',
   [Routes.Subnautica2Ps5ReleaseDate]: '/abyss/chibi-platform-briefing.webp',
+  [Routes.Subnautica2Switch2ReleaseDate]:
+    '/abyss/chibi-switch-2-release-date.webp',
   [Routes.Subnautica2XboxGamePass]: '/abyss/chibi-platform-briefing.webp',
   [Routes.Subnautica2SystemRequirements]: '/abyss/chibi-platform-briefing.webp',
   [Routes.Subnautica2SteamDeckSettings]:

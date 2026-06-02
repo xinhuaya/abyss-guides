@@ -91,6 +91,8 @@ const homeImageByRoute: Partial<Record<Routes, string>> = {
   [Routes.Subnautica2EarlyAccessWorthIt]: '/abyss/chibi-platform-briefing.webp',
   [Routes.Subnautica2Crossplay]: '/abyss/chibi-coop-signal.webp',
   [Routes.Subnautica2Ps5ReleaseDate]: '/abyss/chibi-platform-briefing.webp',
+  [Routes.Subnautica2Switch2ReleaseDate]:
+    '/abyss/chibi-switch-2-release-date.webp',
   [Routes.Subnautica2OxygenDepth]: '/abyss/chibi-oxygen-depth.webp',
   [Routes.Subnautica2Scanner]: '/abyss/chibi-crafting-bench.webp',
   [Routes.Subnautica2Resources]: '/abyss/chibi-resource-scan.webp',
@@ -258,6 +260,14 @@ const enCopy: HomeCopy = {
       href: Routes.Subnautica2Ps5ReleaseDate,
       icon: Gamepad2Icon,
       label: 'PS5',
+    },
+    {
+      title: 'Switch 2 release date',
+      description:
+        'A Nintendo watch page that separates old Switch 2 Edition pages from real Subnautica 2 sources.',
+      href: Routes.Subnautica2Switch2ReleaseDate,
+      icon: Gamepad2Icon,
+      label: 'Switch 2',
     },
     {
       title: 'Controller checklist',
@@ -514,6 +524,14 @@ const zhCopy: HomeCopy = {
       href: Routes.Subnautica2Ps5ReleaseDate,
       icon: Gamepad2Icon,
       label: 'PS5',
+    },
+    {
+      title: 'Switch 2 发售日',
+      description:
+        '区分旧作 Switch 2 Edition 页面和 Subnautica 2 当前官方来源。',
+      href: Routes.Subnautica2Switch2ReleaseDate,
+      icon: Gamepad2Icon,
+      label: 'Switch 2',
     },
     {
       title: '手柄和输入排查',

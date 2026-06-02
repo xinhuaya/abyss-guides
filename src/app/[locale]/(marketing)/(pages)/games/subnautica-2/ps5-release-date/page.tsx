@@ -160,6 +160,10 @@ const ps5ReleaseCopy: Record<string, Ps5ReleaseCopy> = {
     readNextTitle: 'Read next',
     related: [
       { href: Routes.Subnautica2ReleaseDate, label: 'Release Date Guide' },
+      {
+        href: Routes.Subnautica2Switch2ReleaseDate,
+        label: 'Switch 2 Release Date',
+      },
       { href: Routes.Subnautica2XboxGamePass, label: 'Xbox Game Pass Guide' },
       {
         href: Routes.Subnautica2CoopPlayerCount,
@@ -292,6 +296,7 @@ const ps5ReleaseCopy: Record<string, Ps5ReleaseCopy> = {
     readNextTitle: '继续看',
     related: [
       { href: Routes.Subnautica2ReleaseDate, label: '发售日总览' },
+      { href: Routes.Subnautica2Switch2ReleaseDate, label: 'Switch 2 发售日' },
       { href: Routes.Subnautica2XboxGamePass, label: 'Xbox Game Pass 指南' },
       { href: Routes.Subnautica2CoopPlayerCount, label: '联机人数' },
       { href: Routes.Subnautica2Hotfix2, label: 'Hotfix 2 更新' },

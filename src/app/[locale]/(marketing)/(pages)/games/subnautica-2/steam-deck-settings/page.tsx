@@ -179,6 +179,10 @@ const copyByLocale: Record<string, SteamDeckCopy> = {
         label: 'Controller Not Working',
       },
       {
+        href: Routes.Subnautica2Switch2ReleaseDate,
+        label: 'Switch 2 Release Date',
+      },
+      {
         href: Routes.Subnautica2BlackScreenFreezing,
         label: 'Black Screen and Freezing',
       },
@@ -328,6 +332,7 @@ const copyByLocale: Record<string, SteamDeckCopy> = {
         href: Routes.Subnautica2ControllerNotWorking,
         label: '手柄没反应',
       },
+      { href: Routes.Subnautica2Switch2ReleaseDate, label: 'Switch 2 发售日' },
       {
         href: Routes.Subnautica2BlackScreenFreezing,
         label: '黑屏和卡死排查',

@@ -108,6 +108,7 @@ export enum Routes {
   Subnautica2Updates = '/games/subnautica-2/roadmap',
   Subnautica2ReleaseDate = '/games/subnautica-2/release-date',
   Subnautica2Ps5ReleaseDate = '/games/subnautica-2/ps5-release-date',
+  Subnautica2Switch2ReleaseDate = '/games/subnautica-2/switch-2-release-date',
   Subnautica2XboxGamePass = '/games/subnautica-2/xbox-game-pass',
   Subnautica2SystemRequirements = '/games/subnautica-2/system-requirements',
   Subnautica2SteamDeckSettings = '/games/subnautica-2/steam-deck-settings',

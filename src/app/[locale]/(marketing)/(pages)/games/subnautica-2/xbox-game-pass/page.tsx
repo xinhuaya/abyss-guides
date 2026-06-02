@@ -162,6 +162,10 @@ const xboxGamePassCopy: Record<string, XboxGamePassCopy> = {
       { href: Routes.Subnautica2ReleaseDate, label: 'Release Date Guide' },
       { href: Routes.Subnautica2Ps5ReleaseDate, label: 'PS5 Release Date' },
       {
+        href: Routes.Subnautica2Switch2ReleaseDate,
+        label: 'Switch 2 Release Date',
+      },
+      {
         href: Routes.Subnautica2CoopPlayerCount,
         label: 'Co-op Player Count',
       },
@@ -297,6 +301,7 @@ const xboxGamePassCopy: Record<string, XboxGamePassCopy> = {
     related: [
       { href: Routes.Subnautica2ReleaseDate, label: '发售日总览' },
       { href: Routes.Subnautica2Ps5ReleaseDate, label: 'PS5 发售日' },
+      { href: Routes.Subnautica2Switch2ReleaseDate, label: 'Switch 2 发售日' },
       { href: Routes.Subnautica2CoopPlayerCount, label: '联机人数' },
       { href: Routes.Subnautica2ControllerNotWorking, label: '手柄没反应' },
       { href: Routes.Subnautica2Hotfix2, label: 'Hotfix 2 更新' },

@@ -2239,6 +2239,11 @@ const guideIndexCopyByLocale: Record<'en' | 'zh', GuideIndexCopy> = {
             note: 'handheld frame caps and heat checks',
           },
           {
+            href: Routes.Subnautica2Switch2ReleaseDate,
+            label: 'Switch 2 release date',
+            note: 'Nintendo platform watch',
+          },
+          {
             href: Routes.Subnautica2SaveFileLocation,
             label: 'Save file location',
             note: 'Steam backup and cloud notes',
@@ -2490,6 +2495,11 @@ const guideIndexCopyByLocale: Record<'en' | 'zh', GuideIndexCopy> = {
             href: Routes.Subnautica2SystemRequirements,
             label: '配置要求',
             note: 'PC 配置和设置建议',
+          },
+          {
+            href: Routes.Subnautica2Switch2ReleaseDate,
+            label: 'Switch 2 发售日',
+            note: '任天堂平台观察',
           },
           {
             href: Routes.Subnautica2SaveFileLocation,

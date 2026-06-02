@@ -748,6 +748,7 @@ const zhOnlyRoutes = [
   Routes.Subnautica2NibblersMarrowbreachAfterHotfix3,
   Routes.Subnautica2StrikeArmorStackingAfterHotfix3,
   Routes.Subnautica2StartupCrashAfterHotfix3,
+  Routes.Subnautica2Switch2ReleaseDate,
   Routes.Subnautica2SteamDeckSettings,
   Routes.Subnautica2BlackScreenFreezing,
   Routes.Subnautica2BestSettingsLowFps,
