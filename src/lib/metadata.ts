@@ -42,6 +42,8 @@ const abyssMetadataImageByPathname: Record<string, string> = {
   [Routes.Subnautica2SystemRequirements]: '/abyss/chibi-platform-briefing.webp',
   [Routes.Subnautica2SteamDeckSettings]:
     '/abyss/chibi-steam-deck-settings.webp',
+  [Routes.Subnautica2BlackScreenFreezing]:
+    '/abyss/chibi-black-screen-freezing.webp',
   [Routes.Subnautica2SaveFileLocation]: '/abyss/chibi-save-backup-guide.webp',
   [Routes.Subnautica2SaveRecoveryCloudSync]:
     '/abyss/chibi-save-recovery-cloud-sync.webp',

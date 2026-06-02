@@ -658,6 +658,11 @@ const copyByLocale: Record<'en' | 'zh', HubCopy> = {
             note: 'handheld settings and heat checks',
           },
           {
+            href: Routes.Subnautica2BlackScreenFreezing,
+            label: 'Black screen',
+            note: 'freezing, stutter, and DLSS triage',
+          },
+          {
             href: Routes.Subnautica2StartupCrashAfterHotfix3,
             label: 'Startup crash',
             note: 'launch and DLSS crash checklist',
@@ -769,6 +774,11 @@ const copyByLocale: Record<'en' | 'zh', HubCopy> = {
             note: 'stock without overfilling',
           },
           {
+            href: Routes.Subnautica2BlackScreenFreezing,
+            label: '黑屏卡死',
+            note: '卡死、掉帧和 DLSS 排查',
+          },
+          {
             href: Routes.Subnautica2Glass,
             label: 'Glass',
             note: 'windows and upgrades',
@@ -840,6 +850,12 @@ const copyByLocale: Record<'en' | 'zh', HubCopy> = {
         title: 'Steam Deck and Handheld Settings',
         description:
           'Steam Deck compatibility checks, frame caps, heat, battery, DLSS limits, and short save tests for handheld play.',
+      },
+      {
+        href: Routes.Subnautica2BlackScreenFreezing,
+        title: 'Black Screen, Freezing, and Stuttering',
+        description:
+          'Black-screen triage, frozen saves, DLSS and Frame Generation retesting, file checks, stutter, co-op, and handheld heat.',
       },
       {
         href: Routes.Subnautica2StartupCrashAfterHotfix3,
@@ -1580,6 +1596,12 @@ const copyByLocale: Record<'en' | 'zh', HubCopy> = {
           'Steam Deck 兼容性、锁帧、发热、电量、DLSS 限制和短存档测试流程。',
       },
       {
+        href: Routes.Subnautica2BlackScreenFreezing,
+        title: '黑屏、卡死和掉帧排查',
+        description:
+          '黑屏、读档卡死、DLSS 和 Frame Generation 复测、文件验证、掉帧、联机和掌机发热。',
+      },
+      {
         href: Routes.Subnautica2StartupCrashAfterHotfix3,
         title: 'Hotfix 3 后启动崩溃怎么办',
         description:
@@ -2140,6 +2162,11 @@ const guideIndexCopyByLocale: Record<'en' | 'zh', GuideIndexCopy> = {
             note: 'DLSS 4.5 and Frame Generation',
           },
           {
+            href: Routes.Subnautica2BlackScreenFreezing,
+            label: 'Black screen',
+            note: 'freezing and stutter checks',
+          },
+          {
             href: Routes.Subnautica2StartupCrashAfterHotfix3,
             label: 'Startup crash',
             note: 'launch and DLSS crash checklist',
@@ -2386,6 +2413,11 @@ const guideIndexCopyByLocale: Record<'en' | 'zh', GuideIndexCopy> = {
             href: Routes.Subnautica2SteamDeckSettings,
             label: 'Steam Deck 设置',
             note: '掌机锁帧和发热测试',
+          },
+          {
+            href: Routes.Subnautica2BlackScreenFreezing,
+            label: '黑屏卡死',
+            note: '卡死和掉帧排查',
           },
           {
             href: Routes.Subnautica2StartupCrashAfterHotfix3,

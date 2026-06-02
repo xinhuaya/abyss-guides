@@ -747,6 +747,7 @@ const zhOnlyRoutes = [
   Routes.Subnautica2StrikeArmorStackingAfterHotfix3,
   Routes.Subnautica2StartupCrashAfterHotfix3,
   Routes.Subnautica2SteamDeckSettings,
+  Routes.Subnautica2BlackScreenFreezing,
   Routes.Subnautica2SaveFileLocation,
   Routes.Subnautica2SaveRecoveryCloudSync,
   Routes.Subnautica2AdvancedWiringKit,

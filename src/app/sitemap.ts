@@ -9,7 +9,7 @@ import { getBaseUrl } from '@/lib/urls';
 
 type Href = Parameters<typeof getLocalePathname>[0]['href'];
 
-const SUBNAUTICA_LAST_MODIFIED = new Date('2026-06-02');
+const SUBNAUTICA_LAST_MODIFIED = new Date('2026-06-03');
 
 /**
  * static routes for sitemap, you may change the routes for your own
@@ -118,6 +118,7 @@ const staticRoutes = [
   Routes.Subnautica2XboxGamePass,
   Routes.Subnautica2SystemRequirements,
   Routes.Subnautica2SteamDeckSettings,
+  Routes.Subnautica2BlackScreenFreezing,
   Routes.Subnautica2SaveFileLocation,
   Routes.Subnautica2SaveRecoveryCloudSync,
   Routes.Subnautica2EarlyAccessWorthIt,
@@ -190,6 +191,7 @@ function getChangeFrequency(
     route === Routes.Subnautica2StrikeArmorStackingAfterHotfix3 ||
     route === Routes.Subnautica2StartupCrashAfterHotfix3 ||
     route === Routes.Subnautica2SteamDeckSettings ||
+    route === Routes.Subnautica2BlackScreenFreezing ||
     route === Routes.Subnautica2SaveFileLocation ||
     route === Routes.Subnautica2SaveRecoveryCloudSync
   ) {

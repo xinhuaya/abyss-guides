@@ -109,6 +109,7 @@ export enum Routes {
   Subnautica2XboxGamePass = '/games/subnautica-2/xbox-game-pass',
   Subnautica2SystemRequirements = '/games/subnautica-2/system-requirements',
   Subnautica2SteamDeckSettings = '/games/subnautica-2/steam-deck-settings',
+  Subnautica2BlackScreenFreezing = '/games/subnautica-2/black-screen-freezing',
   Subnautica2SaveFileLocation = '/games/subnautica-2/save-file-location',
   Subnautica2SaveRecoveryCloudSync = '/games/subnautica-2/save-recovery-cloud-sync',
   Subnautica2EarlyAccessWorthIt = '/games/subnautica-2/early-access-worth-it',

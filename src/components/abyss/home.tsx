@@ -80,6 +80,8 @@ const homeImageByRoute: Partial<Record<Routes, string>> = {
   [Routes.Subnautica2SilverAfterHotfix2]: '/abyss/chibi-update-console.webp',
   [Routes.Subnautica2XboxGamePass]: '/abyss/chibi-platform-briefing.webp',
   [Routes.Subnautica2SystemRequirements]: '/abyss/chibi-platform-briefing.webp',
+  [Routes.Subnautica2BlackScreenFreezing]:
+    '/abyss/chibi-black-screen-freezing.webp',
   [Routes.Subnautica2EarlyAccessWorthIt]: '/abyss/chibi-platform-briefing.webp',
   [Routes.Subnautica2Crossplay]: '/abyss/chibi-coop-signal.webp',
   [Routes.Subnautica2Ps5ReleaseDate]: '/abyss/chibi-platform-briefing.webp',
@@ -112,7 +114,7 @@ const enCopy: HomeCopy = {
   primaryCta: 'Start the beginner route',
   secondaryCta: 'Find a resource',
   latestTitle: 'Homepage focus',
-  latestHeading: 'The six pages players need first',
+  latestHeading: 'The seven pages players need first',
   latestDescription:
     'This front page is built around search intent, not filler. New players need a route, returning players need update notes, and undecided players need platform answers before they buy or install.',
   openLabel: 'Open',
@@ -140,6 +142,14 @@ const enCopy: HomeCopy = {
       href: Routes.Subnautica2ReleaseDate,
       icon: CalendarDaysIcon,
       label: 'Platforms',
+    },
+    {
+      title: 'Black screen and freezing',
+      description:
+        'A practical checklist for black screens, frozen loads, stutter, DLSS retesting, files, saves, co-op, and handheld heat.',
+      href: Routes.Subnautica2BlackScreenFreezing,
+      icon: MonitorPlayIcon,
+      label: 'Fix',
     },
     {
       title: 'Interactive map',
@@ -335,7 +345,7 @@ const zhCopy: HomeCopy = {
   primaryCta: '先看新手路线',
   secondaryCta: '查资源',
   latestTitle: '首页核心入口',
-  latestHeading: '先展示这 6 个页面',
+  latestHeading: '先展示这 7 个页面',
   latestDescription:
     '这个首页不是用来堆内容的。新玩家要路线，老玩家要更新，准备入坑的人要平台和发售答案，这些内容必须先出现。',
   openLabel: '打开',
@@ -361,6 +371,14 @@ const zhCopy: HomeCopy = {
       href: Routes.Subnautica2ReleaseDate,
       icon: CalendarDaysIcon,
       label: '平台',
+    },
+    {
+      title: '黑屏和卡死排查',
+      description:
+        '面向黑屏、读档卡死、掉帧、DLSS 复测、文件、存档、联机和掌机发热的排查页。',
+      href: Routes.Subnautica2BlackScreenFreezing,
+      icon: MonitorPlayIcon,
+      label: '修复',
     },
     {
       title: '互动地图',
@@ -540,7 +558,7 @@ const jaCopy: HomeCopy = {
   primaryCta: '初心者ルートを見る',
   secondaryCta: '資源を探す',
   latestTitle: 'トップの中心',
-  latestHeading: '最初に必要な6ページ',
+  latestHeading: '最初に必要な7ページ',
   latestDescription:
     '新規プレイヤーはルートを探し、戻ってくる人は更新を確認します。購入前の人は対応機種と発売情報を見ます。だから、この6つを前に出します。',
   openLabel: '開く',

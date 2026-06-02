@@ -167,6 +167,10 @@ const copyByLocale: Record<string, StartupCrashCopy> = {
     related: [
       { href: Routes.Subnautica2Hotfix3, label: 'Hotfix 3 Changes' },
       {
+        href: Routes.Subnautica2BlackScreenFreezing,
+        label: 'Black Screen and Freezing',
+      },
+      {
         href: Routes.Subnautica2DlssSettingsAfterHotfix3,
         label: 'DLSS Settings After Hotfix 3',
       },
@@ -325,6 +329,10 @@ const copyByLocale: Record<string, StartupCrashCopy> = {
     readNextTitle: '继续看',
     related: [
       { href: Routes.Subnautica2Hotfix3, label: 'Hotfix 3 更新内容' },
+      {
+        href: Routes.Subnautica2BlackScreenFreezing,
+        label: '黑屏和卡死排查',
+      },
       {
         href: Routes.Subnautica2DlssSettingsAfterHotfix3,
         label: 'Hotfix 3 后 DLSS 设置',

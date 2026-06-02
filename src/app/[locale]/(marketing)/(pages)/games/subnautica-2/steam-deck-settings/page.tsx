@@ -171,6 +171,10 @@ const copyByLocale: Record<string, SteamDeckCopy> = {
     related: [
       { href: Routes.Subnautica2SystemRequirements, label: 'PC Requirements' },
       {
+        href: Routes.Subnautica2BlackScreenFreezing,
+        label: 'Black Screen and Freezing',
+      },
+      {
         href: Routes.Subnautica2DlssSettingsAfterHotfix3,
         label: 'DLSS Settings After Hotfix 3',
       },
@@ -312,6 +316,10 @@ const copyByLocale: Record<string, SteamDeckCopy> = {
     readNextTitle: '继续看',
     related: [
       { href: Routes.Subnautica2SystemRequirements, label: 'PC 配置要求' },
+      {
+        href: Routes.Subnautica2BlackScreenFreezing,
+        label: '黑屏和卡死排查',
+      },
       {
         href: Routes.Subnautica2DlssSettingsAfterHotfix3,
         label: 'Hotfix 3 后 DLSS 设置',
