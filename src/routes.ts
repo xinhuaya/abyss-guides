@@ -100,6 +100,7 @@ export enum Routes {
   Subnautica2MultiplayerNotWorking = '/games/subnautica-2/multiplayer-not-working',
   Subnautica2CoopRejoinAfterHotfix3 = '/games/subnautica-2/co-op-rejoin-after-hotfix-3',
   Subnautica2InteriorWallCostAfterHotfix3 = '/games/subnautica-2/interior-wall-cost-after-hotfix-3',
+  Subnautica2NibblersMarrowbreachAfterHotfix3 = '/games/subnautica-2/nibblers-marrowbreach-after-hotfix-3',
   Subnautica2Updates = '/games/subnautica-2/roadmap',
   Subnautica2ReleaseDate = '/games/subnautica-2/release-date',
   Subnautica2Ps5ReleaseDate = '/games/subnautica-2/ps5-release-date',

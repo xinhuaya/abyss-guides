@@ -177,6 +177,10 @@ const hotfixCopy: Record<string, HotfixCopy> = {
       { href: Routes.Subnautica2Hotfix2, label: 'Hotfix 2 Changes' },
       { href: Routes.Subnautica2Vehicles, label: 'Vehicle Guide' },
       { href: Routes.Subnautica2Tadpole, label: 'Tadpole Guide' },
+      {
+        href: Routes.Subnautica2NibblersMarrowbreachAfterHotfix3,
+        label: 'Nibblers and Marrowbreaches',
+      },
       { href: Routes.Subnautica2CreaturesLeviathans, label: 'Creatures Guide' },
       {
         href: Routes.Subnautica2MultiplayerNotWorking,
@@ -326,6 +330,10 @@ const hotfixCopy: Record<string, HotfixCopy> = {
       { href: Routes.Subnautica2Hotfix2, label: 'Hotfix 2 更新内容' },
       { href: Routes.Subnautica2Vehicles, label: '载具攻略' },
       { href: Routes.Subnautica2Tadpole, label: 'Tadpole 攻略' },
+      {
+        href: Routes.Subnautica2NibblersMarrowbreachAfterHotfix3,
+        label: 'Nibbler 和 Marrowbreach',
+      },
       { href: Routes.Subnautica2CreaturesLeviathans, label: '怪物攻略' },
       { href: Routes.Subnautica2MultiplayerNotWorking, label: '联机问题修复' },
       { href: Routes.Subnautica2BaseBuilding, label: '基地建造' },

@@ -628,6 +628,11 @@ const copyByLocale: Record<'en' | 'zh', HubCopy> = {
             note: 'distraction after Hotfix 3',
           },
           {
+            href: Routes.Subnautica2NibblersMarrowbreachAfterHotfix3,
+            label: 'Nibblers',
+            note: 'creature damage and timing',
+          },
+          {
             href: Routes.Subnautica2CoopRejoinAfterHotfix3,
             label: 'Co-op rejoin',
             note: 'client position fix',
@@ -774,6 +779,12 @@ const copyByLocale: Record<'en' | 'zh', HubCopy> = {
         title: 'Flares After Hotfix 3',
         description:
           'How to use Flares after Hammerhead attraction was fixed, with hatch, base door, and co-op route notes.',
+      },
+      {
+        href: Routes.Subnautica2NibblersMarrowbreachAfterHotfix3,
+        title: 'Nibblers and Marrowbreaches After Hotfix 3',
+        description:
+          'Nibbler perception, Multitool reactions, Marrowbreach damage, slower attacks, oxygen pressure, and old video retesting.',
       },
       {
         href: Routes.Subnautica2CoopRejoinAfterHotfix3,
@@ -1315,6 +1326,11 @@ const copyByLocale: Record<'en' | 'zh', HubCopy> = {
             note: 'Hotfix 3 后诱导用法',
           },
           {
+            href: Routes.Subnautica2NibblersMarrowbreachAfterHotfix3,
+            label: 'Nibbler',
+            note: '怪物伤害和节奏',
+          },
+          {
             href: Routes.Subnautica2CoopRejoinAfterHotfix3,
             label: '联机重连',
             note: '客户端位置修复',
@@ -1461,6 +1477,12 @@ const copyByLocale: Record<'en' | 'zh', HubCopy> = {
         title: 'Hotfix 3 后 Flare 怎么用',
         description:
           'Hammerhead 对 Flare 的吸引修复后，怎么扔、什么时候走、哪些旧视频建议需要重测。',
+      },
+      {
+        href: Routes.Subnautica2NibblersMarrowbreachAfterHotfix3,
+        title: 'Hotfix 3 后 Nibbler 和 Marrowbreach 怎么躲',
+        description:
+          'Nibbler 感知范围、Multitool 反应、Marrowbreach 伤害、攻击节奏、氧气压力和旧视频重测建议。',
       },
       {
         href: Routes.Subnautica2CoopRejoinAfterHotfix3,
@@ -1998,6 +2020,11 @@ const guideIndexCopyByLocale: Record<'en' | 'zh', GuideIndexCopy> = {
             note: 'Hammerhead distraction checks',
           },
           {
+            href: Routes.Subnautica2NibblersMarrowbreachAfterHotfix3,
+            label: 'Nibblers',
+            note: 'creature timing after Hotfix 3',
+          },
+          {
             href: Routes.Subnautica2CoopRejoinAfterHotfix3,
             label: 'Co-op rejoin',
             note: 'position fix after Hotfix 3',
@@ -2199,6 +2226,11 @@ const guideIndexCopyByLocale: Record<'en' | 'zh', GuideIndexCopy> = {
             href: Routes.Subnautica2FlaresAfterHotfix3,
             label: 'Flare',
             note: 'Hammerhead 诱导检查',
+          },
+          {
+            href: Routes.Subnautica2NibblersMarrowbreachAfterHotfix3,
+            label: 'Nibbler',
+            note: 'Hotfix 3 后生物节奏',
           },
           {
             href: Routes.Subnautica2CoopRejoinAfterHotfix3,

@@ -17,6 +17,10 @@ const UPDATED_AT = '2026-06-01';
 
 const sources = [
   {
+    href: 'https://unknownworlds.com/en/news/subnautica-2-ea1-hotfix-3',
+    label: 'Unknown Worlds Hotfix 3',
+  },
+  {
     href: 'https://unknownworlds.com/en/news/subnautica-2-ea1-hotfix-2',
     label: 'Unknown Worlds Hotfix 2',
   },
@@ -157,6 +161,10 @@ const copyByLocale: Record<string, CreaturesCopy> = {
     ],
     readNextTitle: 'Read next',
     related: [
+      {
+        href: Routes.Subnautica2NibblersMarrowbreachAfterHotfix3,
+        label: 'Nibblers and Marrowbreaches After Hotfix 3',
+      },
       { href: Routes.Subnautica2Vehicles, label: 'Vehicles Guide' },
       {
         href: Routes.Subnautica2BaseLocationTierList,
@@ -164,6 +172,7 @@ const copyByLocale: Record<string, CreaturesCopy> = {
       },
       { href: Routes.Subnautica2MapSizeBiomes, label: 'Map Size and Biomes' },
       { href: Routes.Subnautica2OxygenDepth, label: 'Oxygen and Depth' },
+      { href: Routes.Subnautica2Hotfix3, label: 'Hotfix 3' },
       { href: Routes.Subnautica2Hotfix2, label: 'Hotfix 2' },
     ],
     sourcesTitle: 'Source note',
@@ -285,10 +294,15 @@ const copyByLocale: Record<string, CreaturesCopy> = {
     ],
     readNextTitle: '继续看',
     related: [
+      {
+        href: Routes.Subnautica2NibblersMarrowbreachAfterHotfix3,
+        label: 'Hotfix 3 后 Nibbler 和 Marrowbreach',
+      },
       { href: Routes.Subnautica2Vehicles, label: '载具指南' },
       { href: Routes.Subnautica2BaseLocationTierList, label: '基地位置梯度' },
       { href: Routes.Subnautica2MapSizeBiomes, label: '地图大小和生态区' },
       { href: Routes.Subnautica2OxygenDepth, label: '氧气和深度' },
+      { href: Routes.Subnautica2Hotfix3, label: 'Hotfix 3' },
       { href: Routes.Subnautica2Hotfix2, label: 'Hotfix 2' },
     ],
     sourcesTitle: '来源说明',
