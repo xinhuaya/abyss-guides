@@ -164,6 +164,10 @@ const multiplayerFixCopy: Record<string, MultiplayerFixCopy> = {
         href: Routes.Subnautica2CoopRejoinAfterHotfix3,
         label: 'Co-op Rejoin After Hotfix 3',
       },
+      {
+        href: Routes.Subnautica2MultiplayerLagDesync,
+        label: 'Multiplayer Lag and Desync',
+      },
       { href: Routes.Subnautica2Crossplay, label: 'Crossplay Guide' },
       { href: Routes.Subnautica2CoopPlayerCount, label: 'Co-op Player Count' },
       { href: Routes.Subnautica2XboxGamePass, label: 'Xbox Game Pass' },

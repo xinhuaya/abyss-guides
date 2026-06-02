@@ -741,6 +741,7 @@ const zhOnlyRoutes = [
   Routes.Subnautica2DlssSettingsAfterHotfix3,
   Routes.Subnautica2HammerheadAfterHotfix3,
   Routes.Subnautica2FlaresAfterHotfix3,
+  Routes.Subnautica2MultiplayerLagDesync,
   Routes.Subnautica2CoopRejoinAfterHotfix3,
   Routes.Subnautica2InteriorWallCostAfterHotfix3,
   Routes.Subnautica2NibblersMarrowbreachAfterHotfix3,

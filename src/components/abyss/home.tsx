@@ -77,6 +77,8 @@ const homeImageByRoute: Partial<Record<Routes, string>> = {
   [Routes.Subnautica2ReleaseDate]: '/abyss/chibi-platform-briefing.webp',
   [Routes.Subnautica2InteractiveMap]: '/abyss/chibi-map-exploration.webp',
   [Routes.Subnautica2CoopPlayerCount]: '/abyss/chibi-coop-signal.webp',
+  [Routes.Subnautica2MultiplayerLagDesync]:
+    '/abyss/chibi-multiplayer-lag-desync.webp',
   [Routes.Subnautica2SilverAfterHotfix2]: '/abyss/chibi-update-console.webp',
   [Routes.Subnautica2XboxGamePass]: '/abyss/chibi-platform-briefing.webp',
   [Routes.Subnautica2SystemRequirements]: '/abyss/chibi-platform-briefing.webp',
@@ -116,7 +118,7 @@ const enCopy: HomeCopy = {
   primaryCta: 'Start the beginner route',
   secondaryCta: 'Find a resource',
   latestTitle: 'Homepage focus',
-  latestHeading: 'The eight pages players need first',
+  latestHeading: 'The nine pages players need first',
   latestDescription:
     'This front page is built around search intent, not filler. New players need a route, returning players need update notes, and undecided players need platform answers before they buy or install.',
   openLabel: 'Open',
@@ -175,6 +177,14 @@ const enCopy: HomeCopy = {
         'How many players can join, what crossplay means, and what local co-op searches get wrong.',
       href: Routes.Subnautica2CoopPlayerCount,
       icon: UsersRoundIcon,
+      label: 'Co-op',
+    },
+    {
+      title: 'Multiplayer lag and desync',
+      description:
+        'A co-op sync checklist for rubberbanding, delayed interactions, host load, rejoin positions, and busy bases.',
+      href: Routes.Subnautica2MultiplayerLagDesync,
+      icon: RadioIcon,
       label: 'Co-op',
     },
     {
@@ -337,7 +347,7 @@ const enCopy: HomeCopy = {
     },
   ],
   stats: [
-    ['8', 'homepage entry points'],
+    ['9', 'homepage entry points'],
     ['Hotfix 3', 'latest tracked update'],
     ['8', 'search locales'],
   ],
@@ -355,7 +365,7 @@ const zhCopy: HomeCopy = {
   primaryCta: '先看新手路线',
   secondaryCta: '查资源',
   latestTitle: '首页核心入口',
-  latestHeading: '先展示这 8 个页面',
+  latestHeading: '先展示这 9 个页面',
   latestDescription:
     '这个首页不是用来堆内容的。新玩家要路线，老玩家要更新，准备入坑的人要平台和发售答案，这些内容必须先出现。',
   openLabel: '打开',
@@ -410,6 +420,14 @@ const zhCopy: HomeCopy = {
       description: '最多几人联机、跨平台怎么理解，本地双人搜索为什么容易误解。',
       href: Routes.Subnautica2CoopPlayerCount,
       icon: UsersRoundIcon,
+      label: '联机',
+    },
+    {
+      title: '联机延迟和不同步',
+      description:
+        '处理橡皮筋、交互慢半拍、房主负载、重进位置和大型基地附近卡顿。',
+      href: Routes.Subnautica2MultiplayerLagDesync,
+      icon: RadioIcon,
       label: '联机',
     },
     {
@@ -558,7 +576,7 @@ const zhCopy: HomeCopy = {
     },
   ],
   stats: [
-    ['8', '首页核心入口'],
+    ['9', '首页核心入口'],
     ['Hotfix 3', '最新追踪'],
     ['8', '搜索语言'],
   ],

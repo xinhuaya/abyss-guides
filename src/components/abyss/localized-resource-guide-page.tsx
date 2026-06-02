@@ -194,6 +194,8 @@ const guideImageByPathname: Partial<Record<Routes, string>> = {
   [Routes.Subnautica2CoopPlayerCount]: '/abyss/chibi-coop-signal.webp',
   [Routes.Subnautica2Crossplay]: '/abyss/chibi-coop-signal.webp',
   [Routes.Subnautica2MultiplayerNotWorking]: '/abyss/chibi-coop-signal.webp',
+  [Routes.Subnautica2MultiplayerLagDesync]:
+    '/abyss/chibi-multiplayer-lag-desync.webp',
   [Routes.Subnautica2CoopRejoinAfterHotfix3]: '/abyss/chibi-coop-rejoin.webp',
   [Routes.Subnautica2Updates]: '/abyss/chibi-update-console.webp',
   [Routes.Subnautica2ReleaseDate]: '/abyss/chibi-platform-briefing.webp',

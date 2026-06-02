@@ -638,6 +638,11 @@ const copyByLocale: Record<'en' | 'zh', HubCopy> = {
             note: 'client position fix',
           },
           {
+            href: Routes.Subnautica2MultiplayerLagDesync,
+            label: 'Lag and desync',
+            note: 'host, network, and base load',
+          },
+          {
             href: Routes.Subnautica2InteriorWallCostAfterHotfix3,
             label: 'Interior Wall',
             note: 'cost cut and base layout',
@@ -831,6 +836,12 @@ const copyByLocale: Record<'en' | 'zh', HubCopy> = {
         title: 'Co-op Rejoin After Hotfix 3',
         description:
           'Client position fixes, base-distance checks, fresh invites, test saves, and safe oxygen callouts after rejoining.',
+      },
+      {
+        href: Routes.Subnautica2MultiplayerLagDesync,
+        title: 'Multiplayer Lag and Desync',
+        description:
+          'Rubberbanding, delayed interactions, host load, busy bases, rejoin positions, and Game Pass session checks.',
       },
       {
         href: Routes.Subnautica2InteriorWallCostAfterHotfix3,

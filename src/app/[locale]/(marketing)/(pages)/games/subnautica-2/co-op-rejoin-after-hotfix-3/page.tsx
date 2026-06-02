@@ -170,6 +170,10 @@ const copyByLocale: Record<string, CoopRejoinCopy> = {
         href: Routes.Subnautica2MultiplayerNotWorking,
         label: 'Multiplayer Not Working',
       },
+      {
+        href: Routes.Subnautica2MultiplayerLagDesync,
+        label: 'Multiplayer Lag and Desync',
+      },
       { href: Routes.Subnautica2Coop, label: 'Co-op Guide' },
       { href: Routes.Subnautica2CoopPlayerCount, label: 'Co-op Player Count' },
       { href: Routes.Subnautica2Hotfix3, label: 'Hotfix 3 Changes' },

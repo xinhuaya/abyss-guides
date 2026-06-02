@@ -165,6 +165,10 @@ const crossplayCopy: Record<string, CrossplayCopy> = {
         href: Routes.Subnautica2MultiplayerNotWorking,
         label: 'Multiplayer Not Working',
       },
+      {
+        href: Routes.Subnautica2MultiplayerLagDesync,
+        label: 'Multiplayer Lag and Desync',
+      },
       { href: Routes.Subnautica2XboxGamePass, label: 'Xbox Game Pass' },
       { href: Routes.Subnautica2SaveFileLocation, label: 'Save File Backup' },
       {
