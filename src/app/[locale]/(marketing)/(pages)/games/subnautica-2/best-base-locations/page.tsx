@@ -151,6 +151,10 @@ const baseLocationsCopy: Record<string, BaseLocationsCopy> = {
     ],
     readNextTitle: 'Read next',
     related: [
+      {
+        href: Routes.Subnautica2InteriorWallCostAfterHotfix3,
+        label: 'Interior Wall Cost After Hotfix 3',
+      },
       { href: Routes.Subnautica2BaseBuilding, label: 'Base Building Guide' },
       { href: Routes.Subnautica2Biomes, label: 'Biomes Guide' },
       { href: Routes.Subnautica2Map, label: 'Map and Biomes' },
@@ -279,6 +283,10 @@ const baseLocationsCopy: Record<string, BaseLocationsCopy> = {
     ],
     readNextTitle: '继续阅读',
     related: [
+      {
+        href: Routes.Subnautica2InteriorWallCostAfterHotfix3,
+        label: 'Hotfix 3 后 Interior Wall 成本',
+      },
       { href: Routes.Subnautica2BaseBuilding, label: '基地建造指南' },
       { href: Routes.Subnautica2Map, label: '地图与生态区' },
       { href: Routes.Subnautica2Resources, label: '资源指南' },

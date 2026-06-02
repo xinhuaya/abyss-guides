@@ -62,6 +62,8 @@ const abyssMetadataImageByPathname: Record<string, string> = {
   [Routes.Subnautica2BaseBuilding]: '/abyss/chibi-base-location.webp',
   [Routes.Subnautica2BestBaseLocations]: '/abyss/chibi-base-location.webp',
   [Routes.Subnautica2HabitatBuilder]: '/abyss/chibi-base-location.webp',
+  [Routes.Subnautica2InteriorWallCostAfterHotfix3]:
+    '/abyss/chibi-base-location.webp',
 };
 
 const resourceImageRoutes = [

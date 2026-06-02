@@ -118,6 +118,8 @@ const guideImageByPathname: Partial<Record<Routes, string>> = {
   [Routes.Subnautica2BaseBuilding]: '/abyss/chibi-base-location.webp',
   [Routes.Subnautica2BestBaseLocations]: '/abyss/chibi-base-location.webp',
   [Routes.Subnautica2HabitatBuilder]: '/abyss/chibi-base-location.webp',
+  [Routes.Subnautica2InteriorWallCostAfterHotfix3]:
+    '/abyss/chibi-base-location.webp',
   [Routes.Subnautica2Map]: '/abyss/chibi-map-exploration.webp',
   [Routes.Subnautica2InteractiveMap]: '/abyss/chibi-map-exploration.webp',
   [Routes.Subnautica2Biomes]: '/abyss/chibi-map-exploration.webp',

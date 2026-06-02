@@ -633,6 +633,11 @@ const copyByLocale: Record<'en' | 'zh', HubCopy> = {
             note: 'client position fix',
           },
           {
+            href: Routes.Subnautica2InteriorWallCostAfterHotfix3,
+            label: 'Interior Wall',
+            note: 'cost cut and base layout',
+          },
+          {
             href: Routes.Subnautica2DlssSettingsAfterHotfix3,
             label: 'DLSS settings',
             note: 'DLSS 4.5 and Frame Generation',
@@ -775,6 +780,12 @@ const copyByLocale: Record<'en' | 'zh', HubCopy> = {
         title: 'Co-op Rejoin After Hotfix 3',
         description:
           'Client position fixes, base-distance checks, fresh invites, test saves, and safe oxygen callouts after rejoining.',
+      },
+      {
+        href: Routes.Subnautica2InteriorWallCostAfterHotfix3,
+        title: 'Interior Wall Cost After Hotfix 3',
+        description:
+          'Interior Wall costs are now one quarter of the old price; use them for storage lanes, crafting corners, and co-op zones.',
       },
       {
         href: Routes.Subnautica2DlssSettingsAfterHotfix3,
@@ -1309,6 +1320,11 @@ const copyByLocale: Record<'en' | 'zh', HubCopy> = {
             note: '客户端位置修复',
           },
           {
+            href: Routes.Subnautica2InteriorWallCostAfterHotfix3,
+            label: 'Interior Wall',
+            note: '成本降低和基地布局',
+          },
+          {
             href: Routes.Subnautica2DlssSettingsAfterHotfix3,
             label: 'DLSS 设置',
             note: 'DLSS 4.5 和 Frame Generation',
@@ -1451,6 +1467,12 @@ const copyByLocale: Record<'en' | 'zh', HubCopy> = {
         title: 'Hotfix 3 后联机重连位置错误怎么办',
         description:
           '客户端重连位置、离基地距离、新邀请、短测试存档、氧气报点和安全集合流程。',
+      },
+      {
+        href: Routes.Subnautica2InteriorWallCostAfterHotfix3,
+        title: 'Hotfix 3 后 Interior Wall 成本怎么规划',
+        description:
+          'Interior Wall 成本降到原来的 1/4 后，怎么做储物隔断、制作角落和联机分区。',
       },
       {
         href: Routes.Subnautica2DlssSettingsAfterHotfix3,
@@ -1941,6 +1963,11 @@ const guideIndexCopyByLocale: Record<'en' | 'zh', GuideIndexCopy> = {
             note: 'safe build spots by route need',
           },
           {
+            href: Routes.Subnautica2InteriorWallCostAfterHotfix3,
+            label: 'Interior Wall',
+            note: 'storage lanes after Hotfix 3',
+          },
+          {
             href: Routes.Subnautica2MapSizeBiomes,
             label: 'Map size and biomes',
             note: 'where to explore next',
@@ -1974,6 +2001,11 @@ const guideIndexCopyByLocale: Record<'en' | 'zh', GuideIndexCopy> = {
             href: Routes.Subnautica2CoopRejoinAfterHotfix3,
             label: 'Co-op rejoin',
             note: 'position fix after Hotfix 3',
+          },
+          {
+            href: Routes.Subnautica2InteriorWallCostAfterHotfix3,
+            label: 'Interior Wall',
+            note: 'base cost after Hotfix 3',
           },
           {
             href: Routes.Subnautica2DlssSettingsAfterHotfix3,
@@ -2134,6 +2166,11 @@ const guideIndexCopyByLocale: Record<'en' | 'zh', GuideIndexCopy> = {
             note: '按路线需求选择安全据点',
           },
           {
+            href: Routes.Subnautica2InteriorWallCostAfterHotfix3,
+            label: 'Interior Wall',
+            note: 'Hotfix 3 后储物分区',
+          },
+          {
             href: Routes.Subnautica2MapSizeBiomes,
             label: '地图大小和生态区',
             note: '下一步该去哪里探索',
@@ -2167,6 +2204,11 @@ const guideIndexCopyByLocale: Record<'en' | 'zh', GuideIndexCopy> = {
             href: Routes.Subnautica2CoopRejoinAfterHotfix3,
             label: '联机重连',
             note: 'Hotfix 3 后位置修复',
+          },
+          {
+            href: Routes.Subnautica2InteriorWallCostAfterHotfix3,
+            label: 'Interior Wall',
+            note: 'Hotfix 3 后基地成本',
           },
           {
             href: Routes.Subnautica2DlssSettingsAfterHotfix3,

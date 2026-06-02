@@ -173,6 +173,10 @@ const baseCopy: Record<string, BaseCopy> = {
     readNextTitle: 'Read next',
     related: [
       {
+        href: Routes.Subnautica2InteriorWallCostAfterHotfix3,
+        label: 'Interior Wall Cost After Hotfix 3',
+      },
+      {
         href: Routes.Subnautica2HabitatBuilder,
         label: 'Habitat Builder Guide',
       },
@@ -332,6 +336,10 @@ const baseCopy: Record<string, BaseCopy> = {
     ],
     readNextTitle: '继续阅读',
     related: [
+      {
+        href: Routes.Subnautica2InteriorWallCostAfterHotfix3,
+        label: 'Hotfix 3 后 Interior Wall 成本',
+      },
       { href: Routes.Subnautica2Map, label: '地图与生态区' },
       {
         href: Routes.Subnautica2VehicleFabricator,
