@@ -658,6 +658,11 @@ const copyByLocale: Record<'en' | 'zh', HubCopy> = {
             note: 'handheld settings and heat checks',
           },
           {
+            href: Routes.Subnautica2BestSettingsLowFps,
+            label: 'Best settings',
+            note: 'low FPS, stutter, and frame caps',
+          },
+          {
             href: Routes.Subnautica2BlackScreenFreezing,
             label: 'Black screen',
             note: 'freezing, stutter, and DLSS triage',
@@ -850,6 +855,12 @@ const copyByLocale: Record<'en' | 'zh', HubCopy> = {
         title: 'Steam Deck and Handheld Settings',
         description:
           'Steam Deck compatibility checks, frame caps, heat, battery, DLSS limits, and short save tests for handheld play.',
+      },
+      {
+        href: Routes.Subnautica2BestSettingsLowFps,
+        title: 'Best Settings for Low FPS',
+        description:
+          'Frame caps, shadows, effects, view distance, DLSS, Frame Generation, co-op load, and base-heavy stutter checks.',
       },
       {
         href: Routes.Subnautica2BlackScreenFreezing,

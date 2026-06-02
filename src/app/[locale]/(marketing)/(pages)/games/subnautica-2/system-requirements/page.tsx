@@ -183,6 +183,10 @@ const copyByLocale: Record<string, SystemRequirementsCopy> = {
         href: Routes.Subnautica2SteamDeckSettings,
         label: 'Steam Deck Settings',
       },
+      {
+        href: Routes.Subnautica2BestSettingsLowFps,
+        label: 'Best Settings for Low FPS',
+      },
       { href: Routes.Subnautica2XboxGamePass, label: 'Xbox Game Pass' },
       {
         href: Routes.Subnautica2EarlyAccessWorthIt,

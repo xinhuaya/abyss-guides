@@ -82,6 +82,8 @@ const homeImageByRoute: Partial<Record<Routes, string>> = {
   [Routes.Subnautica2SystemRequirements]: '/abyss/chibi-platform-briefing.webp',
   [Routes.Subnautica2BlackScreenFreezing]:
     '/abyss/chibi-black-screen-freezing.webp',
+  [Routes.Subnautica2BestSettingsLowFps]:
+    '/abyss/chibi-best-settings-low-fps.webp',
   [Routes.Subnautica2EarlyAccessWorthIt]: '/abyss/chibi-platform-briefing.webp',
   [Routes.Subnautica2Crossplay]: '/abyss/chibi-coop-signal.webp',
   [Routes.Subnautica2Ps5ReleaseDate]: '/abyss/chibi-platform-briefing.webp',
@@ -114,7 +116,7 @@ const enCopy: HomeCopy = {
   primaryCta: 'Start the beginner route',
   secondaryCta: 'Find a resource',
   latestTitle: 'Homepage focus',
-  latestHeading: 'The seven pages players need first',
+  latestHeading: 'The eight pages players need first',
   latestDescription:
     'This front page is built around search intent, not filler. New players need a route, returning players need update notes, and undecided players need platform answers before they buy or install.',
   openLabel: 'Open',
@@ -142,6 +144,14 @@ const enCopy: HomeCopy = {
       href: Routes.Subnautica2ReleaseDate,
       icon: CalendarDaysIcon,
       label: 'Platforms',
+    },
+    {
+      title: 'Best settings for low FPS',
+      description:
+        'A careful settings order for low FPS, stutter, frame caps, DLSS, handheld heat, and co-op load.',
+      href: Routes.Subnautica2BestSettingsLowFps,
+      icon: MonitorPlayIcon,
+      label: 'Settings',
     },
     {
       title: 'Black screen and freezing',
@@ -327,7 +337,7 @@ const enCopy: HomeCopy = {
     },
   ],
   stats: [
-    ['6', 'homepage entry points'],
+    ['8', 'homepage entry points'],
     ['Hotfix 3', 'latest tracked update'],
     ['8', 'search locales'],
   ],
@@ -345,7 +355,7 @@ const zhCopy: HomeCopy = {
   primaryCta: '先看新手路线',
   secondaryCta: '查资源',
   latestTitle: '首页核心入口',
-  latestHeading: '先展示这 7 个页面',
+  latestHeading: '先展示这 8 个页面',
   latestDescription:
     '这个首页不是用来堆内容的。新玩家要路线，老玩家要更新，准备入坑的人要平台和发售答案，这些内容必须先出现。',
   openLabel: '打开',
@@ -371,6 +381,14 @@ const zhCopy: HomeCopy = {
       href: Routes.Subnautica2ReleaseDate,
       icon: CalendarDaysIcon,
       label: '平台',
+    },
+    {
+      title: '低 FPS 和最佳设置',
+      description:
+        '按顺序处理掉帧、卡顿、锁帧、DLSS、掌机发热和联机负载，不乱套所谓万能预设。',
+      href: Routes.Subnautica2BestSettingsLowFps,
+      icon: MonitorPlayIcon,
+      label: '设置',
     },
     {
       title: '黑屏和卡死排查',
@@ -540,7 +558,7 @@ const zhCopy: HomeCopy = {
     },
   ],
   stats: [
-    ['6', '首页核心入口'],
+    ['8', '首页核心入口'],
     ['Hotfix 3', '最新追踪'],
     ['8', '搜索语言'],
   ],
@@ -558,7 +576,7 @@ const jaCopy: HomeCopy = {
   primaryCta: '初心者ルートを見る',
   secondaryCta: '資源を探す',
   latestTitle: 'トップの中心',
-  latestHeading: '最初に必要な7ページ',
+  latestHeading: '最初に必要な6ページ',
   latestDescription:
     '新規プレイヤーはルートを探し、戻ってくる人は更新を確認します。購入前の人は対応機種と発売情報を見ます。だから、この6つを前に出します。',
   openLabel: '開く',

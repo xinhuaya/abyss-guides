@@ -182,6 +182,10 @@ const copyByLocale: Record<string, BlackScreenCopy> = {
         label: 'DLSS Settings After Hotfix 3',
       },
       {
+        href: Routes.Subnautica2BestSettingsLowFps,
+        label: 'Best Settings for Low FPS',
+      },
+      {
         href: Routes.Subnautica2SystemRequirements,
         label: 'System Requirements',
       },
@@ -344,6 +348,10 @@ const copyByLocale: Record<string, BlackScreenCopy> = {
       {
         href: Routes.Subnautica2DlssSettingsAfterHotfix3,
         label: 'Hotfix 3 后 DLSS 设置',
+      },
+      {
+        href: Routes.Subnautica2BestSettingsLowFps,
+        label: '低 FPS 和最佳设置',
       },
       { href: Routes.Subnautica2SystemRequirements, label: '配置要求' },
       { href: Routes.Subnautica2SteamDeckSettings, label: 'Steam Deck 设置' },

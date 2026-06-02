@@ -171,6 +171,10 @@ const copyByLocale: Record<string, DlssCopy> = {
         label: 'Black Screen and Freezing',
       },
       {
+        href: Routes.Subnautica2BestSettingsLowFps,
+        label: 'Best Settings for Low FPS',
+      },
+      {
         href: Routes.Subnautica2StartupCrashAfterHotfix3,
         label: 'Startup Crash Checklist',
       },

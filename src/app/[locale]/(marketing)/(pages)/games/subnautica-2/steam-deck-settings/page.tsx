@@ -171,6 +171,10 @@ const copyByLocale: Record<string, SteamDeckCopy> = {
     related: [
       { href: Routes.Subnautica2SystemRequirements, label: 'PC Requirements' },
       {
+        href: Routes.Subnautica2BestSettingsLowFps,
+        label: 'Best Settings for Low FPS',
+      },
+      {
         href: Routes.Subnautica2BlackScreenFreezing,
         label: 'Black Screen and Freezing',
       },
