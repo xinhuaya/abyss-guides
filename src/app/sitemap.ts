@@ -111,6 +111,7 @@ const staticRoutes = [
   Routes.Subnautica2InteriorWallCostAfterHotfix3,
   Routes.Subnautica2NibblersMarrowbreachAfterHotfix3,
   Routes.Subnautica2StrikeArmorStackingAfterHotfix3,
+  Routes.Subnautica2StartupCrashAfterHotfix3,
   Routes.Subnautica2Updates,
   Routes.Subnautica2ReleaseDate,
   Routes.Subnautica2Ps5ReleaseDate,
@@ -183,7 +184,8 @@ function getChangeFrequency(
     route === Routes.Subnautica2CoopRejoinAfterHotfix3 ||
     route === Routes.Subnautica2InteriorWallCostAfterHotfix3 ||
     route === Routes.Subnautica2NibblersMarrowbreachAfterHotfix3 ||
-    route === Routes.Subnautica2StrikeArmorStackingAfterHotfix3
+    route === Routes.Subnautica2StrikeArmorStackingAfterHotfix3 ||
+    route === Routes.Subnautica2StartupCrashAfterHotfix3
   ) {
     return 'daily';
   }

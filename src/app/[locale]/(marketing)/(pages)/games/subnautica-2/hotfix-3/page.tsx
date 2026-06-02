@@ -185,6 +185,10 @@ const hotfixCopy: Record<string, HotfixCopy> = {
         href: Routes.Subnautica2StrikeArmorStackingAfterHotfix3,
         label: 'Strike Armor Stacking',
       },
+      {
+        href: Routes.Subnautica2StartupCrashAfterHotfix3,
+        label: 'Startup Crash Checklist',
+      },
       { href: Routes.Subnautica2CreaturesLeviathans, label: 'Creatures Guide' },
       {
         href: Routes.Subnautica2MultiplayerNotWorking,
@@ -341,6 +345,10 @@ const hotfixCopy: Record<string, HotfixCopy> = {
       {
         href: Routes.Subnautica2StrikeArmorStackingAfterHotfix3,
         label: 'Strike Armor 叠加',
+      },
+      {
+        href: Routes.Subnautica2StartupCrashAfterHotfix3,
+        label: '启动崩溃排查',
       },
       { href: Routes.Subnautica2CreaturesLeviathans, label: '怪物攻略' },
       { href: Routes.Subnautica2MultiplayerNotWorking, label: '联机问题修复' },

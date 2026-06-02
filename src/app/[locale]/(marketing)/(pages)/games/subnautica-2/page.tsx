@@ -653,6 +653,11 @@ const copyByLocale: Record<'en' | 'zh', HubCopy> = {
             note: 'DLSS 4.5 and Frame Generation',
           },
           {
+            href: Routes.Subnautica2StartupCrashAfterHotfix3,
+            label: 'Startup crash',
+            note: 'launch and DLSS crash checklist',
+          },
+          {
             href: Routes.Subnautica2Hotfix2,
             label: 'Hotfix 2',
             note: 'official change summary',
@@ -814,6 +819,12 @@ const copyByLocale: Record<'en' | 'zh', HubCopy> = {
         title: 'DLSS Settings After Hotfix 3',
         description:
           'DLSS 4.5, Frame Generation availability, saved settings, and what old PC settings advice needs retesting.',
+      },
+      {
+        href: Routes.Subnautica2StartupCrashAfterHotfix3,
+        title: 'Startup Crash After Hotfix 3',
+        description:
+          'Launch-crash triage, DLSS crash retesting, Frame Generation checks, file verification, and solo versus co-op notes.',
       },
       {
         href: Routes.Subnautica2Hotfix2,
@@ -1525,6 +1536,12 @@ const copyByLocale: Record<'en' | 'zh', HubCopy> = {
           'DLSS 4.5、Frame Generation 可用性、设置保存和旧 PC 画质攻略该怎么重新判断。',
       },
       {
+        href: Routes.Subnautica2StartupCrashAfterHotfix3,
+        title: 'Hotfix 3 后启动崩溃怎么办',
+        description:
+          '启动崩溃、DLSS 崩溃、Frame Generation、验证文件、驱动复测和单人/联机区分。',
+      },
+      {
         href: Routes.Subnautica2Hotfix2,
         title: 'Hotfix 2 更新内容',
         description: '银、Troilite、氧气、Hammerhead、联机和崩溃修复整理。',
@@ -2067,6 +2084,11 @@ const guideIndexCopyByLocale: Record<'en' | 'zh', GuideIndexCopy> = {
             note: 'DLSS 4.5 and Frame Generation',
           },
           {
+            href: Routes.Subnautica2StartupCrashAfterHotfix3,
+            label: 'Startup crash',
+            note: 'launch and DLSS crash checklist',
+          },
+          {
             href: Routes.Subnautica2Hotfix2,
             label: 'Hotfix 2',
             note: 'changed routes and known fixes',
@@ -2278,6 +2300,11 @@ const guideIndexCopyByLocale: Record<'en' | 'zh', GuideIndexCopy> = {
             href: Routes.Subnautica2DlssSettingsAfterHotfix3,
             label: 'DLSS 设置',
             note: 'DLSS 4.5 和 Frame Generation',
+          },
+          {
+            href: Routes.Subnautica2StartupCrashAfterHotfix3,
+            label: '启动崩溃',
+            note: 'Hotfix 3 后启动和 DLSS 排查',
           },
           {
             href: Routes.Subnautica2Hotfix2,

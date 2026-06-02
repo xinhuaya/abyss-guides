@@ -167,6 +167,10 @@ const copyByLocale: Record<string, DlssCopy> = {
     related: [
       { href: Routes.Subnautica2Hotfix3, label: 'Hotfix 3 Changes' },
       {
+        href: Routes.Subnautica2StartupCrashAfterHotfix3,
+        label: 'Startup Crash Checklist',
+      },
+      {
         href: Routes.Subnautica2SystemRequirements,
         label: 'System Requirements',
       },
@@ -311,6 +315,10 @@ const copyByLocale: Record<string, DlssCopy> = {
     readNextTitle: '继续看',
     related: [
       { href: Routes.Subnautica2Hotfix3, label: 'Hotfix 3 更新内容' },
+      {
+        href: Routes.Subnautica2StartupCrashAfterHotfix3,
+        label: '启动崩溃排查',
+      },
       { href: Routes.Subnautica2SystemRequirements, label: '配置要求' },
       { href: Routes.Subnautica2XboxGamePass, label: 'Xbox Game Pass' },
       { href: Routes.Subnautica2MultiplayerNotWorking, label: '联机问题修复' },

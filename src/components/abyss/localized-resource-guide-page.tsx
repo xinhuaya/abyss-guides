@@ -115,6 +115,8 @@ const guideImageByPathname: Partial<Record<Routes, string>> = {
     '/abyss/chibi-creature-hotfix3.webp',
   [Routes.Subnautica2StrikeArmorStackingAfterHotfix3]:
     '/abyss/chibi-strike-armor-hotfix3.webp',
+  [Routes.Subnautica2StartupCrashAfterHotfix3]:
+    '/abyss/chibi-startup-crash-hotfix3.webp',
   [Routes.Subnautica2CreatureEnamel]: '/abyss/chibi-creature-risk.webp',
   [Routes.Subnautica2AcidicRaionPouch]: '/abyss/chibi-creature-risk.webp',
   [Routes.Subnautica2NecroleiCyst]: '/abyss/chibi-creature-risk.webp',

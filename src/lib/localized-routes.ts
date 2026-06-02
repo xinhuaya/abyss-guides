@@ -745,6 +745,7 @@ const zhOnlyRoutes = [
   Routes.Subnautica2InteriorWallCostAfterHotfix3,
   Routes.Subnautica2NibblersMarrowbreachAfterHotfix3,
   Routes.Subnautica2StrikeArmorStackingAfterHotfix3,
+  Routes.Subnautica2StartupCrashAfterHotfix3,
   Routes.Subnautica2AdvancedWiringKit,
   Routes.Subnautica2BasicFins,
   Routes.Subnautica2BatteryTerminal,

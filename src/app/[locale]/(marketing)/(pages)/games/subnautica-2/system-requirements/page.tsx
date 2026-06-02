@@ -187,6 +187,10 @@ const copyByLocale: Record<string, SystemRequirementsCopy> = {
       { href: Routes.Subnautica2Crossplay, label: 'Crossplay Guide' },
       { href: Routes.Subnautica2ReleaseDate, label: 'Release Date' },
       { href: Routes.Subnautica2Hotfix3, label: 'Hotfix 3' },
+      {
+        href: Routes.Subnautica2StartupCrashAfterHotfix3,
+        label: 'Startup Crash Checklist',
+      },
       { href: Routes.Subnautica2Hotfix2, label: 'Hotfix 2' },
     ],
     sourcesTitle: 'Source note',
@@ -313,6 +317,10 @@ const copyByLocale: Record<string, SystemRequirementsCopy> = {
       { href: Routes.Subnautica2Crossplay, label: '跨平台联机' },
       { href: Routes.Subnautica2ReleaseDate, label: '发售时间' },
       { href: Routes.Subnautica2Hotfix3, label: 'Hotfix 3' },
+      {
+        href: Routes.Subnautica2StartupCrashAfterHotfix3,
+        label: '启动崩溃排查',
+      },
       { href: Routes.Subnautica2Hotfix2, label: 'Hotfix 2' },
     ],
     sourcesTitle: '来源说明',
