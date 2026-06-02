@@ -68,7 +68,7 @@ export async function POST(request: NextRequest) {
       await consumeCredits({
         userId: session.user.id,
         amount: getLiveGenerationCreditCost(),
-        description: `ThumbAI live thumbnail generation: ${response.jobId}`,
+        description: `Legacy thumbnail generation: ${response.jobId}`,
       });
 
       generationId = await saveThumbnailGeneration({

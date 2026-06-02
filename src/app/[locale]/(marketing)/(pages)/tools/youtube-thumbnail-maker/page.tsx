@@ -1,29 +1,14 @@
-import { ThumbAIWorkbench } from '@/components/thumbai/workbench';
-import { constructMetadata } from '@/lib/metadata';
-import type { Metadata } from 'next';
+import { getPathWithLocale } from '@/lib/urls';
+import { Routes } from '@/routes';
+import { redirect } from 'next/navigation';
 import type { Locale } from 'next-intl';
-import { getTranslations } from 'next-intl/server';
 
-export async function generateMetadata({
+export default async function LegacyThumbnailMakerRedirect({
   params,
 }: {
   params: Promise<{ locale: Locale }>;
-}): Promise<Metadata | undefined> {
+}) {
   const { locale } = await params;
-  const t = await getTranslations({ locale, namespace: 'Metadata' });
-  const wt = await getTranslations({
-    locale,
-    namespace: 'GuideWorkbench.meta',
-  });
 
-  return constructMetadata({
-    title: `${wt('title')} | ${t('name')}`,
-    description: wt('description'),
-    locale,
-    pathname: '/tools/youtube-thumbnail-maker',
-  });
-}
-
-export default function YouTubeThumbnailMakerPage() {
-  return <ThumbAIWorkbench />;
+  redirect(getPathWithLocale(Routes.Subnautica2, locale));
 }

@@ -10,11 +10,16 @@ import {
 } from './i18n/routing';
 import {
   DEFAULT_LOGIN_REDIRECT,
+  Routes,
   protectedRoutes,
   routesNotAllowedByLoggedInUsers,
 } from './routes';
 
 const intlMiddleware = createMiddleware(routing);
+const legacyRedirectRoutes = new Set<string>([
+  Routes.Dashboard,
+  Routes.ThumbnailMaker,
+]);
 
 /**
  * Next.js 16 Proxy (formerly Middleware)
@@ -92,6 +97,16 @@ export default async function proxy(req: NextRequest) {
     LOCALES
   );
 
+  if (legacyRedirectRoutes.has(pathnameWithoutLocale)) {
+    const locale = getLocaleFromPathname(nextUrl.pathname, LOCALES);
+    const localizedTarget =
+      locale && locale !== DEFAULT_LOCALE
+        ? `/${locale}${Routes.Subnautica2}`
+        : Routes.Subnautica2;
+
+    return NextResponse.redirect(new URL(localizedTarget, nextUrl), 307);
+  }
+
   // If the route can not be accessed by logged in users, redirect if the user is logged in
   if (isLoggedIn) {
     const isNotAllowedRoute = routesNotAllowedByLoggedInUsers.some((route) =>
@@ -137,6 +152,15 @@ export default async function proxy(req: NextRequest) {
 function getPathnameWithoutLocale(pathname: string, locales: string[]): string {
   const localePattern = new RegExp(`^/(${locales.join('|')})/`);
   return pathname.replace(localePattern, '/');
+}
+
+function getLocaleFromPathname(
+  pathname: string,
+  locales: string[]
+): string | undefined {
+  return locales.find(
+    (locale) => pathname === `/${locale}` || pathname.startsWith(`/${locale}/`)
+  );
 }
 
 /**
