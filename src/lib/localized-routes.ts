@@ -817,6 +817,8 @@ const zhJaRoutes = [
   Routes.Subnautica2XboxGamePass,
 ] as const;
 
+const fullyLocalizedSearchRoutes = [Routes.Subnautica2ReleaseDate] as const;
+
 function createLocaleSet(locales: Locale[]): ReadonlySet<Locale> {
   return new Set<Locale>([routing.defaultLocale, ...locales]);
 }
@@ -824,6 +826,22 @@ function createLocaleSet(locales: Locale[]): ReadonlySet<Locale> {
 const routeLocaleOverrides = new Map<string, ReadonlySet<Locale>>([
   ...zhOnlyRoutes.map((route) => [route, createLocaleSet(['zh'])] as const),
   ...zhJaRoutes.map((route) => [route, createLocaleSet(['zh', 'ja'])] as const),
+  ...fullyLocalizedSearchRoutes.map(
+    (route) =>
+      [
+        route,
+        createLocaleSet([
+          'zh',
+          'ru',
+          'de',
+          'fr',
+          'pt-BR',
+          'es-419',
+          'ko',
+          'ja',
+        ]),
+      ] as const
+  ),
 ]);
 
 export function normalizeRoutePath(

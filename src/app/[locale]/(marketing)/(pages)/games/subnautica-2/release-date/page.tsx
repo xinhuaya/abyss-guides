@@ -645,8 +645,305 @@ const localizedReleaseDateCopy: Record<string, ReleaseDateCopy> = {
   },
 };
 
+const releaseDateLocaleOverrides: Record<string, ReleaseDateCopy> = {
+  ja: {
+    ...localizedReleaseDateCopy.en,
+    metadata: {
+      title: 'Subnautica 2 発売日、Early Access、PS5、Xbox、Game Pass',
+      description:
+        'Subnautica 2 の発売日を整理。Early Access、Steam、Xbox、Game Pass、PS5 検索、正式版 1.0 の未確認情報まで分けて確認します。',
+    },
+    eyebrow: 'Subnautica 2 発売日',
+    title: 'Subnautica 2 の発売日とプラットフォーム',
+    description:
+      '発売日検索では、Early Access、正式版 1.0、PS5、Xbox、Game Pass が混ざりがちです。このページでは確認済みの情報と未確認の話を分けます。',
+    quickLabel: '結論',
+    quickAnswer:
+      'Subnautica 2 は 2026 年 5 月 14 日に Early Access として公開されました。Steam 公式ページでは現在も Early Access 表記です。Unknown Worlds は 6 月 1 日に Hotfix 3 も公開しています。正式版 1.0 や PS5 の時期は、公式ソースが出るまで未確認として扱うのが安全です。',
+    fieldNotesTitle: '検索メモ',
+    routeChecklistTitle: '発売日記事を見る前に',
+    contentsLabel: '目次',
+    routeTitle: '現在の発売状況の読み方',
+    tableTitle: '発売日検索への答え',
+    tableHeaders: ['検索', '実用的な答え'],
+    cautionTitle: '推測を日付にしない',
+    cautionBody:
+      '検索需要が高くても、すべてのプラットフォーム噂に価値があるとは限りません。PS5、コンソール、1.0 の日付は、公式ソースがない限り未確認と書くべきです。',
+    faqTitle: 'FAQ',
+    faqs: [
+      {
+        title: 'Subnautica 2 はいつ発売されましたか？',
+        body: 'Subnautica 2 は 2026 年 5 月 14 日に Early Access として公開されました。',
+      },
+      {
+        title: 'Subnautica 2 は正式リリース済みですか？',
+        body: 'いいえ。現在の公開版は Early Access で、Hotfix とロードマップ更新が続いています。',
+      },
+      {
+        title: 'Subnautica 2 の PS5 発売日はありますか？',
+        body: 'Unknown Worlds または公式プラットフォームページが発表するまで、具体的な PS5 日付は未確認です。',
+      },
+    ],
+    readNextTitle: '次に読む',
+    sourcesTitle: 'ソースメモ',
+    sourceBody:
+      '2026 年 6 月 2 日に Steam 公式ページ、Unknown Worlds Early Access ロードマップ、6 月 1 日の Hotfix 3 を確認しました。',
+    cardKicker: '発売状況カード',
+    cardBody:
+      '発売日、プラットフォーム、Early Access、リリース後に読むべき攻略を探すプレイヤー向けの状況ページです。',
+    cardTypeLabel: '種類',
+    cardTypeValue: '状況ガイド',
+    cardVerifiedLabel: '確認日',
+    cardStatusLabel: '状態',
+    cardStatusValue: 'Early Access',
+  },
+  ko: {
+    ...localizedReleaseDateCopy.en,
+    metadata: {
+      title: 'Subnautica 2 출시일, 얼리 액세스, PS5, Xbox, Game Pass',
+      description:
+        'Subnautica 2 출시일 정리: 얼리 액세스, Steam, Xbox, Game Pass, PS5 검색, 정식 1.0 일정과 공식 확인 정보를 구분합니다.',
+    },
+    eyebrow: 'Subnautica 2 출시일',
+    title: 'Subnautica 2 출시일과 플랫폼 상태',
+    description:
+      '출시일 검색에는 얼리 액세스, 정식 1.0, PS5, Xbox, Game Pass 이야기가 섞여 있습니다. 확인된 내용과 미확인 내용을 분리해 둡니다.',
+    quickLabel: '빠른 결론',
+    quickAnswer:
+      'Subnautica 2는 2026년 5월 14일 얼리 액세스로 공개됐습니다. Steam 공식 페이지는 여전히 Early Access로 표시하며, Unknown Worlds는 6월 1일 Hotfix 3도 공개했습니다. 정식 1.0 일정과 PS5 날짜는 공식 출처가 나오기 전까지 미확인으로 보는 편이 맞습니다.',
+    fieldNotesTitle: '검색 의도 메모',
+    routeChecklistTitle: '출시일 글을 읽기 전에',
+    contentsLabel: '목차',
+    routeTitle: '현재 출시 상태 읽는 법',
+    tableTitle: '출시일 검색 답변',
+    tableHeaders: ['검색어', '실용적인 답변'],
+    cautionTitle: '추측을 날짜처럼 쓰지 않기',
+    cautionBody:
+      '검색 수요가 높다고 해서 모든 플랫폼 루머가 쓸 만한 정보가 되는 것은 아닙니다. PS5, 콘솔, 1.0 날짜는 공식 출처가 없으면 미확인으로 적어야 합니다.',
+    faqTitle: 'FAQ',
+    faqs: [
+      {
+        title: 'Subnautica 2는 언제 출시됐나요?',
+        body: 'Subnautica 2는 2026년 5월 14일 얼리 액세스로 공개됐습니다.',
+      },
+      {
+        title: 'Subnautica 2는 정식 출시됐나요?',
+        body: '아직 아닙니다. 현재 공개 버전은 Early Access이며, 핫픽스와 로드맵 업데이트가 이어지고 있습니다.',
+      },
+      {
+        title: 'Subnautica 2 PS5 출시일이 있나요?',
+        body: 'Unknown Worlds나 공식 플랫폼 페이지가 발표하기 전까지 구체적인 PS5 날짜는 미확인입니다.',
+      },
+    ],
+    readNextTitle: '다음 글',
+    sourcesTitle: '출처 메모',
+    sourceBody:
+      '2026년 6월 2일 Steam 공식 페이지, Unknown Worlds Early Access 로드맵, 6월 1일 Hotfix 3 공지를 확인했습니다.',
+    cardKicker: '출시 상태 카드',
+    cardBody:
+      '출시일, 플랫폼, 얼리 액세스, 출시 후 읽을 가이드를 찾는 플레이어를 위한 상태 페이지입니다.',
+    cardTypeLabel: '유형',
+    cardTypeValue: '상태 가이드',
+    cardVerifiedLabel: '확인일',
+    cardStatusLabel: '상태',
+    cardStatusValue: 'Early Access',
+  },
+  de: {
+    ...localizedReleaseDateCopy.en,
+    metadata: {
+      title: 'Subnautica 2 Release Date, Early Access, PS5, Xbox und Game Pass',
+      description:
+        'Subnautica 2 Release-Date-Guide mit Early Access, Steam, Xbox, Game Pass, PS5-Suchen und dem Unterschied zwischen Start und Version 1.0.',
+    },
+    eyebrow: 'Subnautica 2 Release Date',
+    title: 'Subnautica 2 Release Date und Plattformen',
+    description:
+      'Viele Suchanfragen mischen Early Access, Version 1.0, PS5, Xbox und Game Pass. Diese Seite trennt bestätigte Daten von offenen Fragen.',
+    quickLabel: 'Kurzantwort',
+    quickAnswer:
+      'Subnautica 2 ist am 14. Mai 2026 in den Early Access gestartet. Die offizielle Steam-Seite führt das Spiel weiterhin als Early Access, und Unknown Worlds hat am 1. Juni Hotfix 3 veröffentlicht. Genaue Angaben zu 1.0 oder PS5 sollten nur mit offizieller Quelle übernommen werden.',
+    fieldNotesTitle: 'Suchnotizen',
+    routeChecklistTitle: 'Vor dem Vertrauen in ein Release-Datum',
+    contentsLabel: 'Inhalt',
+    routeTitle: 'So liest du den aktuellen Release-Status',
+    tableTitle: 'Antworten auf Release-Suchen',
+    tableHeaders: ['Suche', 'Praktische Antwort'],
+    cautionTitle: 'Keine Gerüchte als Datum schreiben',
+    cautionBody:
+      'Hohe Suchnachfrage macht ein Plattformgerücht nicht automatisch nützlich. PS5-, Konsolen- und 1.0-Daten bleiben unbestätigt, bis es eine offizielle Quelle gibt.',
+    faqTitle: 'FAQ',
+    readNextTitle: 'Weiterlesen',
+    sourcesTitle: 'Quellenhinweis',
+    sourceBody:
+      'Geprüft am 2. Juni 2026 anhand der offiziellen Steam-Seite, der Unknown Worlds Early Access Roadmap und der Hotfix-3-Notizen vom 1. Juni.',
+    cardKicker: 'Release-Karte',
+    cardBody:
+      'Eine Statusseite für Spieler, die nach Release-Date, Plattformen, Early Access und den nächsten sinnvollen Guides suchen.',
+    cardTypeLabel: 'Typ',
+    cardTypeValue: 'Statusguide',
+    cardVerifiedLabel: 'Geprüft',
+    cardStatusLabel: 'Status',
+    cardStatusValue: 'Early Access',
+  },
+  fr: {
+    ...localizedReleaseDateCopy.en,
+    metadata: {
+      title:
+        'Date de sortie de Subnautica 2, Early Access, PS5, Xbox et Game Pass',
+      description:
+        'Guide de date de sortie de Subnautica 2 : Early Access, Steam, Xbox, Game Pass, PS5 et ce qui est confirmé officiellement.',
+    },
+    eyebrow: 'Date de sortie de Subnautica 2',
+    title: 'Date de sortie et plateformes de Subnautica 2',
+    description:
+      'Les recherches mélangent Early Access, version 1.0, PS5, Xbox et Game Pass. Cette page sépare les faits confirmés des points encore ouverts.',
+    quickLabel: 'Réponse rapide',
+    quickAnswer:
+      'Subnautica 2 est entré en Early Access le 14 mai 2026. La page Steam officielle le liste toujours en Early Access, et Unknown Worlds a publié le Hotfix 3 le 1er juin. Les dates PS5 ou 1.0 précises doivent rester non confirmées sans source officielle.',
+    fieldNotesTitle: 'Notes de recherche',
+    routeChecklistTitle: 'Avant de croire une date',
+    contentsLabel: 'Sommaire',
+    routeTitle: 'Lire le statut de sortie actuel',
+    tableTitle: 'Réponses aux recherches de date',
+    tableHeaders: ['Recherche', 'Réponse pratique'],
+    cautionTitle: 'Ne pas transformer une rumeur en date',
+    cautionBody:
+      'Une forte demande de recherche ne rend pas une rumeur de plateforme fiable. Pour PS5, consoles ou version 1.0, il faut une source officielle.',
+    faqTitle: 'FAQ',
+    readNextTitle: 'À lire ensuite',
+    sourcesTitle: 'Note de source',
+    sourceBody:
+      'Vérifié le 2 juin 2026 avec la page Steam officielle, la roadmap Early Access de Unknown Worlds et les notes Hotfix 3 du 1er juin.',
+    cardKicker: 'Carte de statut',
+    cardBody:
+      'Une page de statut pour les joueurs qui cherchent la date, les plateformes, l’Early Access et les guides à lire après le lancement.',
+    cardTypeLabel: 'Type',
+    cardTypeValue: 'Guide de statut',
+    cardVerifiedLabel: 'Vérifié',
+    cardStatusLabel: 'Statut',
+    cardStatusValue: 'Early Access',
+  },
+  'es-419': {
+    ...localizedReleaseDateCopy.en,
+    metadata: {
+      title:
+        'Fecha de lanzamiento de Subnautica 2, Early Access, PS5, Xbox y Game Pass',
+      description:
+        'Guía de fecha de lanzamiento de Subnautica 2 con Early Access, Steam, Xbox, Game Pass, PS5 y lo que sí está confirmado.',
+    },
+    eyebrow: 'Fecha de lanzamiento de Subnautica 2',
+    title: 'Fecha de lanzamiento y plataformas de Subnautica 2',
+    description:
+      'Las búsquedas mezclan Early Access, versión 1.0, PS5, Xbox y Game Pass. Aquí separamos lo confirmado de lo que aún no tiene fuente oficial.',
+    quickLabel: 'Respuesta rápida',
+    quickAnswer:
+      'Subnautica 2 entró en Early Access el 14 de mayo de 2026. La página oficial de Steam lo sigue mostrando como Early Access, y Unknown Worlds publicó el Hotfix 3 el 1 de junio. Las fechas exactas de PS5 o 1.0 deben tratarse como no confirmadas sin una fuente oficial.',
+    fieldNotesTitle: 'Notas de búsqueda',
+    routeChecklistTitle: 'Antes de confiar en una fecha',
+    contentsLabel: 'Contenido',
+    routeTitle: 'Cómo leer el estado de lanzamiento',
+    tableTitle: 'Respuestas para búsquedas de lanzamiento',
+    tableHeaders: ['Búsqueda', 'Respuesta útil'],
+    cautionTitle: 'No convertir rumores en fechas',
+    cautionBody:
+      'Que haya mucha búsqueda no vuelve fiable cualquier rumor de plataforma. Para PS5, consolas o 1.0, hace falta una fuente oficial.',
+    faqTitle: 'FAQ',
+    readNextTitle: 'Leer después',
+    sourcesTitle: 'Nota de fuentes',
+    sourceBody:
+      'Revisado el 2 de junio de 2026 con la página oficial de Steam, la hoja de ruta Early Access de Unknown Worlds y las notas del Hotfix 3 del 1 de junio.',
+    cardKicker: 'Tarjeta de estado',
+    cardBody:
+      'Página para jugadores que buscan fecha, plataformas, Early Access y qué guías leer después del lanzamiento.',
+    cardTypeLabel: 'Tipo',
+    cardTypeValue: 'Guía de estado',
+    cardVerifiedLabel: 'Revisado',
+    cardStatusLabel: 'Estado',
+    cardStatusValue: 'Early Access',
+  },
+  'pt-BR': {
+    ...localizedReleaseDateCopy.en,
+    metadata: {
+      title:
+        'Data de lançamento de Subnautica 2, Early Access, PS5, Xbox e Game Pass',
+      description:
+        'Guia de data de lançamento de Subnautica 2 com Early Access, Steam, Xbox, Game Pass, PS5 e o que foi confirmado oficialmente.',
+    },
+    eyebrow: 'Data de lançamento de Subnautica 2',
+    title: 'Data de lançamento e plataformas de Subnautica 2',
+    description:
+      'As buscas misturam Early Access, versão 1.0, PS5, Xbox e Game Pass. Esta página separa o que foi confirmado do que ainda não tem fonte oficial.',
+    quickLabel: 'Resposta rápida',
+    quickAnswer:
+      'Subnautica 2 entrou em Early Access em 14 de maio de 2026. A página oficial da Steam ainda mostra o jogo como Early Access, e a Unknown Worlds publicou o Hotfix 3 em 1 de junho. Datas exatas de PS5 ou 1.0 devem ficar como não confirmadas sem fonte oficial.',
+    fieldNotesTitle: 'Notas de busca',
+    routeChecklistTitle: 'Antes de confiar em uma data',
+    contentsLabel: 'Conteúdo',
+    routeTitle: 'Como ler o status de lançamento',
+    tableTitle: 'Respostas para buscas de lançamento',
+    tableHeaders: ['Busca', 'Resposta prática'],
+    cautionTitle: 'Não transformar rumor em data',
+    cautionBody:
+      'Muita busca não torna todo rumor de plataforma confiável. Para PS5, consoles ou versão 1.0, é preciso uma fonte oficial.',
+    faqTitle: 'FAQ',
+    readNextTitle: 'Leia também',
+    sourcesTitle: 'Nota de fontes',
+    sourceBody:
+      'Verificado em 2 de junho de 2026 com a página oficial da Steam, o roadmap de Early Access da Unknown Worlds e as notas do Hotfix 3 de 1 de junho.',
+    cardKicker: 'Cartão de status',
+    cardBody:
+      'Página de status para jogadores procurando data, plataformas, Early Access e quais guias ler depois do lançamento.',
+    cardTypeLabel: 'Tipo',
+    cardTypeValue: 'Guia de status',
+    cardVerifiedLabel: 'Verificado',
+    cardStatusLabel: 'Status',
+    cardStatusValue: 'Early Access',
+  },
+  ru: {
+    ...localizedReleaseDateCopy.en,
+    metadata: {
+      title: 'Дата выхода Subnautica 2, Early Access, PS5, Xbox и Game Pass',
+      description:
+        'Гайд по дате выхода Subnautica 2: Early Access, Steam, Xbox, Game Pass, PS5 и то, что подтверждено официально.',
+    },
+    eyebrow: 'Дата выхода Subnautica 2',
+    title: 'Дата выхода Subnautica 2 и платформы',
+    description:
+      'В поиске смешаны Early Access, версия 1.0, PS5, Xbox и Game Pass. Здесь мы отделяем подтвержденные данные от неподтвержденных.',
+    quickLabel: 'Короткий ответ',
+    quickAnswer:
+      'Subnautica 2 вышла в Early Access 14 мая 2026 года. Официальная страница Steam по-прежнему указывает Early Access, а Unknown Worlds выпустила Hotfix 3 1 июня. Точные даты PS5 или версии 1.0 стоит считать неподтвержденными без официального источника.',
+    fieldNotesTitle: 'Заметки по поиску',
+    routeChecklistTitle: 'Перед тем как верить дате',
+    contentsLabel: 'Содержание',
+    routeTitle: 'Как читать текущий статус релиза',
+    tableTitle: 'Ответы на поисковые запросы',
+    tableHeaders: ['Запрос', 'Практичный ответ'],
+    cautionTitle: 'Не превращайте слухи в даты',
+    cautionBody:
+      'Высокий спрос в поиске не делает каждый слух о платформе полезным. Для PS5, консолей или версии 1.0 нужна официальная ссылка.',
+    faqTitle: 'FAQ',
+    readNextTitle: 'Читать дальше',
+    sourcesTitle: 'Заметка об источниках',
+    sourceBody:
+      'Проверено 2 июня 2026 года по официальной странице Steam, дорожной карте Early Access от Unknown Worlds и заметкам Hotfix 3 от 1 июня.',
+    cardKicker: 'Карточка статуса',
+    cardBody:
+      'Страница для игроков, которые ищут дату выхода, платформы, Early Access и полезные гайды после запуска.',
+    cardTypeLabel: 'Тип',
+    cardTypeValue: 'Гайд по статусу',
+    cardVerifiedLabel: 'Проверено',
+    cardStatusLabel: 'Статус',
+    cardStatusValue: 'Early Access',
+  },
+};
+
 function getCopy(locale: Locale): ReleaseDateCopy {
-  return localizedReleaseDateCopy[locale] ?? localizedReleaseDateCopy.en;
+  return (
+    localizedReleaseDateCopy[locale] ??
+    releaseDateLocaleOverrides[locale] ??
+    localizedReleaseDateCopy.en
+  );
 }
 
 export async function generateMetadata({
