@@ -1,5 +1,6 @@
 import Container from '@/components/layout/container';
 import { LocaleLink } from '@/i18n/navigation';
+import { createAbyssImageObject } from '@/lib/abyss-media-schema';
 import { constructMetadata } from '@/lib/metadata';
 import { getBaseUrl, getUrlWithLocale } from '@/lib/urls';
 import { Routes } from '@/routes';
@@ -15,6 +16,7 @@ import type { Locale } from 'next-intl';
 
 const PUBLISHED_AT = '2026-05-23';
 const UPDATED_AT = '2026-05-29';
+const GUIDE_IMAGE = '/abyss/chibi-resource-scan.webp';
 
 const zhRouteNotes = [
   {
@@ -413,6 +415,7 @@ export default async function AtacamiteGuidePage({
     /\/$/,
     ''
   );
+  const guideImageUrl = `${baseUrl}${GUIDE_IMAGE}`;
   const hubUrl = getUrlWithLocale(Routes.Subnautica2, locale).replace(
     /\/$/,
     ''
@@ -424,6 +427,9 @@ export default async function AtacamiteGuidePage({
       headline: pageCopy.title,
       description: pageCopy.articleDescription,
       url: pageUrl,
+      image: {
+        '@id': `${pageUrl}#primaryimage`,
+      },
       datePublished: PUBLISHED_AT,
       dateModified: UPDATED_AT,
       inLanguage: locale,
@@ -439,6 +445,12 @@ export default async function AtacamiteGuidePage({
       },
       mainEntityOfPage: pageUrl,
     },
+    createAbyssImageObject({
+      caption: `${pageCopy.title} route artwork`,
+      imageUrl: guideImageUrl,
+      locale,
+      pageUrl,
+    }),
     {
       '@context': 'https://schema.org',
       '@type': 'BreadcrumbList',

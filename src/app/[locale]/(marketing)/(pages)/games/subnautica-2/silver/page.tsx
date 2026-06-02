@@ -1,5 +1,6 @@
 import Container from '@/components/layout/container';
 import { LocaleLink } from '@/i18n/navigation';
+import { createAbyssImageObject } from '@/lib/abyss-media-schema';
 import { constructMetadata } from '@/lib/metadata';
 import { getBaseUrl, getUrlWithLocale } from '@/lib/urls';
 import { Routes } from '@/routes';
@@ -17,6 +18,8 @@ type Step = {
   title: string;
   body: string;
 };
+
+const GUIDE_IMAGE = '/abyss/chibi-resource-scan.webp';
 
 type SilverCopy = {
   metadata: {
@@ -993,6 +996,7 @@ export default async function SilverGuidePage({
     /\/$/,
     ''
   );
+  const guideImageUrl = `${baseUrl}${GUIDE_IMAGE}`;
   const hubUrl = `${baseUrl}${locale === 'en' ? '' : `/${locale}`}${
     Routes.Subnautica2
   }`;
@@ -1003,6 +1007,9 @@ export default async function SilverGuidePage({
       headline: copy.title,
       description: copy.metadata.description,
       url: pageUrl,
+      image: {
+        '@id': `${pageUrl}#primaryimage`,
+      },
       datePublished: PUBLISHED_AT,
       dateModified: UPDATED_AT,
       inLanguage: locale,
@@ -1018,6 +1025,12 @@ export default async function SilverGuidePage({
       },
       mainEntityOfPage: pageUrl,
     },
+    createAbyssImageObject({
+      caption: `${copy.title} route artwork`,
+      imageUrl: guideImageUrl,
+      locale,
+      pageUrl,
+    }),
     {
       '@context': 'https://schema.org',
       '@type': 'BreadcrumbList',
@@ -1064,7 +1077,7 @@ export default async function SilverGuidePage({
           aria-hidden="true"
           className="absolute inset-0 bg-cover bg-right opacity-35"
           style={{
-            backgroundImage: "url('/abyss/chibi-deep-sea-hero.webp')",
+            backgroundImage: `url('${GUIDE_IMAGE}')`,
           }}
         />
         <div
@@ -1116,8 +1129,7 @@ export default async function SilverGuidePage({
                       aria-hidden="true"
                       className="h-28 bg-cover bg-center opacity-80"
                       style={{
-                        backgroundImage:
-                          "linear-gradient(90deg,rgba(3,19,20,.18),rgba(3,19,20,.88)),url('/abyss/chibi-deep-sea-hero.webp')",
+                        backgroundImage: `linear-gradient(90deg,rgba(3,19,20,.18),rgba(3,19,20,.88)),url('${GUIDE_IMAGE}')`,
                       }}
                     />
                     <div className="p-5">
@@ -1269,7 +1281,7 @@ export default async function SilverGuidePage({
                 aria-hidden="true"
                 className="h-40 bg-cover bg-right"
                 style={{
-                  backgroundImage: "url('/abyss/chibi-deep-sea-hero.webp')",
+                  backgroundImage: `url('${GUIDE_IMAGE}')`,
                 }}
               />
               <div className="border-t border-cyan-200/12 p-5">

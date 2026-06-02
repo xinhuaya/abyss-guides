@@ -1,5 +1,11 @@
 import Container from '@/components/layout/container';
 import { LocaleLink } from '@/i18n/navigation';
+import {
+  ABYSS_OFFICIAL_TRAILER_EMBED_URL,
+  ABYSS_OFFICIAL_TRAILER_URL,
+  createAbyssImageObject,
+  createAbyssVideoObject,
+} from '@/lib/abyss-media-schema';
 import { getBaseUrl, getPathWithLocale, getUrlWithLocale } from '@/lib/urls';
 import { Routes } from '@/routes';
 import type { LucideIcon } from 'lucide-react';
@@ -80,11 +86,6 @@ type LocalizedResourceGuidePageProps = {
 };
 
 const DEFAULT_CONTENT_DATE = '2026-05-23';
-const OFFICIAL_TRAILER_URL = 'https://www.youtube.com/watch?v=6t2nDHldoSk';
-const OFFICIAL_TRAILER_EMBED_URL =
-  'https://www.youtube-nocookie.com/embed/6t2nDHldoSk';
-const OFFICIAL_TRAILER_THUMBNAIL_URL =
-  'https://i.ytimg.com/vi/6t2nDHldoSk/hqdefault.jpg';
 const DEFAULT_GUIDE_IMAGE = '/abyss/chibi-deep-sea-hero.webp';
 
 const guideImageByPathname: Partial<Record<Routes, string>> = {
@@ -361,28 +362,18 @@ export function LocalizedResourceGuidePage({
       },
       mainEntityOfPage: pageUrl,
     },
-    {
-      '@context': 'https://schema.org',
-      '@type': 'ImageObject',
-      '@id': `${pageUrl}#primaryimage`,
-      url: guideImageUrl,
-      contentUrl: guideImageUrl,
+    createAbyssImageObject({
       caption: visualCopy.imageTitle,
-      creditText: 'Abyss Guides original artwork',
-      inLanguage: locale,
-    },
-    {
-      '@context': 'https://schema.org',
-      '@type': 'VideoObject',
-      '@id': `${pageUrl}#official-video`,
-      name: visualCopy.videoTitle,
+      imageUrl: guideImageUrl,
+      locale,
+      pageUrl,
+    }),
+    createAbyssVideoObject({
       description: visualCopy.videoBody,
-      url: OFFICIAL_TRAILER_URL,
-      embedUrl: OFFICIAL_TRAILER_EMBED_URL,
-      thumbnailUrl: [OFFICIAL_TRAILER_THUMBNAIL_URL],
-      inLanguage: locale,
-      isBasedOn: OFFICIAL_TRAILER_URL,
-    },
+      locale,
+      name: visualCopy.videoTitle,
+      pageUrl,
+    }),
     {
       '@context': 'https://schema.org',
       '@type': 'BreadcrumbList',
@@ -633,7 +624,7 @@ export function LocalizedResourceGuidePage({
                       className="h-full w-full"
                       loading="lazy"
                       referrerPolicy="strict-origin-when-cross-origin"
-                      src={OFFICIAL_TRAILER_EMBED_URL}
+                      src={ABYSS_OFFICIAL_TRAILER_EMBED_URL}
                       title={visualCopy.videoTitle}
                     />
                   </div>
@@ -647,7 +638,7 @@ export function LocalizedResourceGuidePage({
                     </p>
                     <a
                       className="mt-3 inline-flex items-center gap-2 text-xs font-semibold uppercase tracking-[0.16em] text-[#f08b4f] hover:text-[#ffb27e]"
-                      href={OFFICIAL_TRAILER_URL}
+                      href={ABYSS_OFFICIAL_TRAILER_URL}
                       rel="noreferrer"
                       target="_blank"
                     >

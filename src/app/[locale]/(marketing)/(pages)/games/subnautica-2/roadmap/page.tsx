@@ -1,5 +1,11 @@
 import Container from '@/components/layout/container';
 import { LocaleLink } from '@/i18n/navigation';
+import {
+  ABYSS_OFFICIAL_TRAILER_EMBED_URL,
+  ABYSS_OFFICIAL_TRAILER_URL,
+  createAbyssImageObject,
+  createAbyssVideoObject,
+} from '@/lib/abyss-media-schema';
 import { constructMetadata } from '@/lib/metadata';
 import { getBaseUrl, getPathWithLocale, getUrlWithLocale } from '@/lib/urls';
 import { Routes } from '@/routes';
@@ -86,7 +92,6 @@ type RoadmapCopy = {
 const PUBLISHED_AT = '2026-05-23';
 const MODIFIED_AT = '2026-05-29';
 const ROADMAP_IMAGE = '/abyss/chibi-update-console.webp';
-const OFFICIAL_TRAILER_URL = 'https://www.youtube.com/watch?v=6t2nDHldoSk';
 
 const roadmapMediaCopy: Record<
   string,
@@ -1768,6 +1773,7 @@ export default async function RoadmapGuidePage({
   );
   const hubUrl = `${baseUrl}${getPathWithLocale(Routes.Subnautica2, locale)}`;
   const mediaCopy = roadmapMediaCopy[locale] ?? roadmapMediaCopy.en;
+  const roadmapImageUrl = `${baseUrl}${ROADMAP_IMAGE}`;
   const jsonLd = [
     {
       '@context': 'https://schema.org',
@@ -1775,7 +1781,17 @@ export default async function RoadmapGuidePage({
       headline: copy.title,
       description: copy.metadata.description,
       url: pageUrl,
-      image: `${baseUrl}${ROADMAP_IMAGE}`,
+      image: {
+        '@id': `${pageUrl}#primaryimage`,
+      },
+      associatedMedia: [
+        {
+          '@id': `${pageUrl}#primaryimage`,
+        },
+        {
+          '@id': `${pageUrl}#official-video`,
+        },
+      ],
       datePublished: PUBLISHED_AT,
       dateModified: MODIFIED_AT,
       inLanguage: locale,
@@ -1791,6 +1807,18 @@ export default async function RoadmapGuidePage({
       },
       mainEntityOfPage: pageUrl,
     },
+    createAbyssImageObject({
+      caption: mediaCopy.imageTitle,
+      imageUrl: roadmapImageUrl,
+      locale,
+      pageUrl,
+    }),
+    createAbyssVideoObject({
+      description: mediaCopy.videoBody,
+      locale,
+      name: mediaCopy.videoTitle,
+      pageUrl,
+    }),
     {
       '@context': 'https://schema.org',
       '@type': 'BreadcrumbList',
@@ -1946,7 +1974,7 @@ export default async function RoadmapGuidePage({
                       className="h-full w-full"
                       loading="lazy"
                       referrerPolicy="strict-origin-when-cross-origin"
-                      src="https://www.youtube-nocookie.com/embed/6t2nDHldoSk"
+                      src={ABYSS_OFFICIAL_TRAILER_EMBED_URL}
                       title={mediaCopy.videoTitle}
                     />
                   </div>
@@ -1960,7 +1988,7 @@ export default async function RoadmapGuidePage({
                     </p>
                     <a
                       className="mt-3 inline-flex items-center gap-2 text-xs font-semibold uppercase tracking-[0.16em] text-[#f08b4f] hover:text-[#ffb27e]"
-                      href={OFFICIAL_TRAILER_URL}
+                      href={ABYSS_OFFICIAL_TRAILER_URL}
                       rel="noreferrer"
                       target="_blank"
                     >
