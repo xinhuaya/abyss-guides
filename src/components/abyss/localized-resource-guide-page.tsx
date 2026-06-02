@@ -81,6 +81,10 @@ type LocalizedResourceGuidePageProps = {
 
 const DEFAULT_CONTENT_DATE = '2026-05-23';
 const OFFICIAL_TRAILER_URL = 'https://www.youtube.com/watch?v=6t2nDHldoSk';
+const OFFICIAL_TRAILER_EMBED_URL =
+  'https://www.youtube-nocookie.com/embed/6t2nDHldoSk';
+const OFFICIAL_TRAILER_THUMBNAIL_URL =
+  'https://i.ytimg.com/vi/6t2nDHldoSk/hqdefault.jpg';
 const DEFAULT_GUIDE_IMAGE = '/abyss/chibi-deep-sea-hero.webp';
 
 const guideImageByPathname: Partial<Record<Routes, string>> = {
@@ -319,6 +323,7 @@ export function LocalizedResourceGuidePage({
   const pageUrl = getUrlWithLocale(pathname, locale).replace(/\/$/, '');
   const hubUrl = `${baseUrl}${getPathWithLocale(Routes.Subnautica2, locale)}`;
   const guideImage = guideImageByPathname[pathname] ?? DEFAULT_GUIDE_IMAGE;
+  const guideImageUrl = `${baseUrl}${guideImage}`;
   const publishedAt = copy.publishedAt ?? DEFAULT_CONTENT_DATE;
   const updatedAt = copy.updatedAt ?? publishedAt;
   const checkedAt = copy.checkedAt ?? formatGuideDate(updatedAt, locale);
@@ -330,7 +335,17 @@ export function LocalizedResourceGuidePage({
       headline: copy.title,
       description: copy.description,
       url: pageUrl,
-      image: `${baseUrl}${guideImage}`,
+      image: {
+        '@id': `${pageUrl}#primaryimage`,
+      },
+      associatedMedia: [
+        {
+          '@id': `${pageUrl}#primaryimage`,
+        },
+        {
+          '@id': `${pageUrl}#official-video`,
+        },
+      ],
       datePublished: publishedAt,
       dateModified: updatedAt,
       inLanguage: locale,
@@ -345,6 +360,28 @@ export function LocalizedResourceGuidePage({
         url: baseUrl,
       },
       mainEntityOfPage: pageUrl,
+    },
+    {
+      '@context': 'https://schema.org',
+      '@type': 'ImageObject',
+      '@id': `${pageUrl}#primaryimage`,
+      url: guideImageUrl,
+      contentUrl: guideImageUrl,
+      caption: visualCopy.imageTitle,
+      creditText: 'Abyss Guides original artwork',
+      inLanguage: locale,
+    },
+    {
+      '@context': 'https://schema.org',
+      '@type': 'VideoObject',
+      '@id': `${pageUrl}#official-video`,
+      name: visualCopy.videoTitle,
+      description: visualCopy.videoBody,
+      url: OFFICIAL_TRAILER_URL,
+      embedUrl: OFFICIAL_TRAILER_EMBED_URL,
+      thumbnailUrl: [OFFICIAL_TRAILER_THUMBNAIL_URL],
+      inLanguage: locale,
+      isBasedOn: OFFICIAL_TRAILER_URL,
     },
     {
       '@context': 'https://schema.org',
@@ -596,7 +633,7 @@ export function LocalizedResourceGuidePage({
                       className="h-full w-full"
                       loading="lazy"
                       referrerPolicy="strict-origin-when-cross-origin"
-                      src="https://www.youtube-nocookie.com/embed/6t2nDHldoSk"
+                      src={OFFICIAL_TRAILER_EMBED_URL}
                       title={visualCopy.videoTitle}
                     />
                   </div>
