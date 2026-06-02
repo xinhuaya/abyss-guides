@@ -1,6 +1,7 @@
 import Container from '@/components/layout/container';
 import { buttonVariants } from '@/components/ui/button';
 import { LocaleLink } from '@/i18n/navigation';
+import { getBaseUrl, getUrlWithLocale } from '@/lib/urls';
 import { cn } from '@/lib/utils';
 import { Routes } from '@/routes';
 import {
@@ -1133,9 +1134,48 @@ function MissionBoard({ locale }: { locale?: Locale }) {
 
 export function AbyssHome({ locale }: { locale?: Locale }) {
   const copy = getHomeCopy(locale);
+  const board = getMissionBoardCopy(locale);
+  const baseUrl = getBaseUrl().replace(/\/$/, '');
+  const pageUrl = getUrlWithLocale(Routes.Root, locale).replace(/\/$/, '');
+  const listLinks = [
+    ...board.missions,
+    ...copy.latestLinks,
+    ...copy.popularLinks.slice(0, 4),
+  ].filter(
+    (item, index, links) =>
+      links.findIndex((candidate) => candidate.href === item.href) === index
+  );
+  const jsonLd = [
+    {
+      '@context': 'https://schema.org',
+      '@type': 'CollectionPage',
+      name: copy.title,
+      description: copy.description,
+      url: pageUrl || baseUrl,
+      image: `${baseUrl}/abyss/chibi-deep-sea-hero.webp`,
+      inLanguage: locale ?? 'en',
+      mainEntity: {
+        '@id': `${pageUrl || baseUrl}#homepage-guide-list`,
+      },
+    },
+    {
+      '@context': 'https://schema.org',
+      '@type': 'ItemList',
+      '@id': `${pageUrl || baseUrl}#homepage-guide-list`,
+      name: board.title,
+      itemListElement: listLinks.map((item, index) => ({
+        '@type': 'ListItem',
+        position: index + 1,
+        url: getUrlWithLocale(item.href, locale).replace(/\/$/, ''),
+        name: item.title,
+        description: item.description,
+      })),
+    },
+  ];
 
   return (
     <main className="min-h-screen bg-[#031314] text-[#dff8f0] dark:bg-[#031314] dark:text-[#dff8f0]">
+      <script type="application/ld+json">{JSON.stringify(jsonLd)}</script>
       <section className="relative overflow-hidden border-b border-cyan-200/10">
         <div
           aria-hidden="true"
