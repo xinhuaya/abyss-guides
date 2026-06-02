@@ -1,7 +1,7 @@
 import Container from '@/components/layout/container';
 import { LocaleLink } from '@/i18n/navigation';
 import { constructMetadata } from '@/lib/metadata';
-import { getUrlWithLocale } from '@/lib/urls';
+import { getImageUrl, getUrlWithLocale } from '@/lib/urls';
 import { Routes } from '@/routes';
 import type { Metadata } from 'next';
 import type { Locale } from 'next-intl';
@@ -44,6 +44,28 @@ type HubCopy = {
   editorialTitle: string;
   editorialBody: string;
   disclaimer: string;
+};
+
+type IndexLink = {
+  href: Routes;
+  label: string;
+  note: string;
+};
+
+type GuideIndexCopy = {
+  eyebrow: string;
+  title: string;
+  description: string;
+  groups: Array<{
+    title: string;
+    links: IndexLink[];
+  }>;
+};
+
+type ItemListLink = {
+  href: Routes;
+  name: string;
+  description: string;
 };
 
 const copyByLocale: Record<'en' | 'zh', HubCopy> = {
@@ -1662,6 +1684,354 @@ const hubCopyOverrides: Record<string, Partial<HubCopy>> = {
   },
 };
 
+const guideIndexCopyByLocale: Record<'en' | 'zh', GuideIndexCopy> = {
+  en: {
+    eyebrow: 'Full guide index',
+    title: 'Pick the next page by the problem in front of you',
+    description:
+      'Use this index when you already know what is blocking the run: oxygen, one material, a crafting chain, a vehicle step, or a patch/platform question.',
+    groups: [
+      {
+        title: 'First hour',
+        links: [
+          {
+            href: Routes.Subnautica2Beginner,
+            label: 'Beginner route',
+            note: 'what to do before pushing deeper',
+          },
+          {
+            href: Routes.Subnautica2AirTank,
+            label: 'Air tank',
+            note: 'early oxygen upgrade planning',
+          },
+          {
+            href: Routes.Subnautica2OxygenDepth,
+            label: 'Oxygen and depth',
+            note: 'safe turn-back timing',
+          },
+          {
+            href: Routes.Subnautica2Scanner,
+            label: 'Scanner',
+            note: 'first tool and fragment habits',
+          },
+          {
+            href: Routes.Subnautica2Beacon,
+            label: 'Beacon',
+            note: 'mark routes before you forget them',
+          },
+        ],
+      },
+      {
+        title: 'Resources',
+        links: [
+          {
+            href: Routes.Subnautica2Resources,
+            label: 'Resource table',
+            note: 'start here when the item name is unclear',
+          },
+          {
+            href: Routes.Subnautica2Silver,
+            label: 'Silver',
+            note: 'the most common early bottleneck',
+          },
+          {
+            href: Routes.Subnautica2Copper,
+            label: 'Copper',
+            note: 'batteries, wire, and electronics',
+          },
+          {
+            href: Routes.Subnautica2Titanium,
+            label: 'Titanium',
+            note: 'base parts and ingot planning',
+          },
+          {
+            href: Routes.Subnautica2Troilite,
+            label: 'Troilite',
+            note: 'late-game route checks',
+          },
+          {
+            href: Routes.Subnautica2Atacamite,
+            label: 'Atacamite',
+            note: 'upgrade and recipe tracking',
+          },
+        ],
+      },
+      {
+        title: 'Crafting chains',
+        links: [
+          {
+            href: Routes.Subnautica2Crafting,
+            label: 'Crafting hub',
+            note: 'recipes and material chains',
+          },
+          {
+            href: Routes.Subnautica2BasicBattery,
+            label: 'Basic Battery',
+            note: 'tool power and early storage',
+          },
+          {
+            href: Routes.Subnautica2WiringKit,
+            label: 'Wiring Kit',
+            note: 'electronics bottleneck',
+          },
+          {
+            href: Routes.Subnautica2Fabricator,
+            label: 'Fabricator',
+            note: 'first base crafting station',
+          },
+          {
+            href: Routes.Subnautica2Processor,
+            label: 'Processor',
+            note: 'material conversion loop',
+          },
+        ],
+      },
+      {
+        title: 'Map, base, vehicles',
+        links: [
+          {
+            href: Routes.Subnautica2Tadpole,
+            label: 'Tadpole',
+            note: 'first vehicle planning',
+          },
+          {
+            href: Routes.Subnautica2Vehicles,
+            label: 'Vehicles',
+            note: 'modules, power, and route safety',
+          },
+          {
+            href: Routes.Subnautica2Moonpool,
+            label: 'Moonpool',
+            note: 'dock setup and space checks',
+          },
+          {
+            href: Routes.Subnautica2BaseLocationTierList,
+            label: 'Base locations',
+            note: 'safe build spots by route need',
+          },
+          {
+            href: Routes.Subnautica2MapSizeBiomes,
+            label: 'Map size and biomes',
+            note: 'where to explore next',
+          },
+        ],
+      },
+      {
+        title: 'Updates and platforms',
+        links: [
+          {
+            href: Routes.Subnautica2Hotfix2,
+            label: 'Hotfix 2',
+            note: 'changed routes and known fixes',
+          },
+          {
+            href: Routes.Subnautica2ReleaseDate,
+            label: 'Release date',
+            note: 'Early Access and full launch status',
+          },
+          {
+            href: Routes.Subnautica2XboxGamePass,
+            label: 'Xbox Game Pass',
+            note: 'subscription availability',
+          },
+          {
+            href: Routes.Subnautica2Crossplay,
+            label: 'Crossplay',
+            note: 'co-op platform checks',
+          },
+          {
+            href: Routes.Subnautica2SystemRequirements,
+            label: 'System requirements',
+            note: 'PC spec and settings notes',
+          },
+        ],
+      },
+    ],
+  },
+  zh: {
+    eyebrow: '全部攻略索引',
+    title: '按你现在卡住的问题选择下一篇',
+    description:
+      '已经知道自己卡在哪里时，可以直接从这里跳转：氧气、材料、制作链、载具路线、地图据点，或者版本和平台问题。',
+    groups: [
+      {
+        title: '开局一小时',
+        links: [
+          {
+            href: Routes.Subnautica2Beginner,
+            label: '新手路线',
+            note: '下潜更深之前先做什么',
+          },
+          {
+            href: Routes.Subnautica2AirTank,
+            label: '氧气罐',
+            note: '前期氧气升级顺序',
+          },
+          {
+            href: Routes.Subnautica2OxygenDepth,
+            label: '氧气和深度',
+            note: '什么时候该回头',
+          },
+          {
+            href: Routes.Subnautica2Scanner,
+            label: '扫描器',
+            note: '第一批工具和碎片习惯',
+          },
+          {
+            href: Routes.Subnautica2Beacon,
+            label: '信标',
+            note: '把路线标出来，别靠记忆硬撑',
+          },
+        ],
+      },
+      {
+        title: '资源材料',
+        links: [
+          {
+            href: Routes.Subnautica2Resources,
+            label: '资源总表',
+            note: '不知道材料名时先看这里',
+          },
+          {
+            href: Routes.Subnautica2Silver,
+            label: '银',
+            note: '最常见的前期卡点',
+          },
+          {
+            href: Routes.Subnautica2Copper,
+            label: '铜',
+            note: '电池、电线和电子件',
+          },
+          {
+            href: Routes.Subnautica2Titanium,
+            label: '钛',
+            note: '基地部件和锭材料规划',
+          },
+          {
+            href: Routes.Subnautica2Troilite,
+            label: 'Troilite',
+            note: '后期路线核对',
+          },
+          {
+            href: Routes.Subnautica2Atacamite,
+            label: 'Atacamite',
+            note: '升级材料和配方追踪',
+          },
+        ],
+      },
+      {
+        title: '制作链',
+        links: [
+          {
+            href: Routes.Subnautica2Crafting,
+            label: '制作总览',
+            note: '配方和材料链入口',
+          },
+          {
+            href: Routes.Subnautica2BasicBattery,
+            label: '基础电池',
+            note: '工具供电和前期备货',
+          },
+          {
+            href: Routes.Subnautica2WiringKit,
+            label: '接线套件',
+            note: '电子件卡点',
+          },
+          {
+            href: Routes.Subnautica2Fabricator,
+            label: 'Fabricator',
+            note: '第一个基地制作站',
+          },
+          {
+            href: Routes.Subnautica2Processor,
+            label: 'Processor',
+            note: '材料转换循环',
+          },
+        ],
+      },
+      {
+        title: '地图、基地、载具',
+        links: [
+          {
+            href: Routes.Subnautica2Tadpole,
+            label: 'Tadpole',
+            note: '第一辆载具怎么规划',
+          },
+          {
+            href: Routes.Subnautica2Vehicles,
+            label: '载具',
+            note: '模块、电力和路线安全',
+          },
+          {
+            href: Routes.Subnautica2Moonpool,
+            label: 'Moonpool',
+            note: '停靠和空间检查',
+          },
+          {
+            href: Routes.Subnautica2BaseLocationTierList,
+            label: '基地位置',
+            note: '按路线需求选择安全据点',
+          },
+          {
+            href: Routes.Subnautica2MapSizeBiomes,
+            label: '地图大小和生态区',
+            note: '下一步该去哪里探索',
+          },
+        ],
+      },
+      {
+        title: '更新和平台',
+        links: [
+          {
+            href: Routes.Subnautica2Hotfix2,
+            label: 'Hotfix 2',
+            note: '路线变化和修复整理',
+          },
+          {
+            href: Routes.Subnautica2ReleaseDate,
+            label: '发售时间',
+            note: '抢先体验和正式版状态',
+          },
+          {
+            href: Routes.Subnautica2XboxGamePass,
+            label: 'Xbox Game Pass',
+            note: '订阅平台可玩情况',
+          },
+          {
+            href: Routes.Subnautica2Crossplay,
+            label: '跨平台联机',
+            note: '联机平台检查',
+          },
+          {
+            href: Routes.Subnautica2SystemRequirements,
+            label: '配置要求',
+            note: 'PC 配置和设置建议',
+          },
+        ],
+      },
+    ],
+  },
+};
+
+function getGuideIndexCopy(locale: Locale): GuideIndexCopy {
+  return locale === 'zh'
+    ? guideIndexCopyByLocale.zh
+    : guideIndexCopyByLocale.en;
+}
+
+function dedupeItemListLinks(links: ItemListLink[]): ItemListLink[] {
+  const seen = new Set<Routes>();
+
+  return links.filter((item) => {
+    if (seen.has(item.href)) {
+      return false;
+    }
+
+    seen.add(item.href);
+    return true;
+  });
+}
+
 function getHubCopy(locale: Locale): HubCopy {
   if (locale === 'zh') {
     return copyByLocale.zh;
@@ -1696,9 +2066,16 @@ export default async function Subnautica2HubPage({
 }) {
   const { locale } = await params;
   const copy = getHubCopy(locale);
+  const guideIndex = getGuideIndexCopy(locale);
   const hubUrl = getUrlWithLocale(Routes.Subnautica2, locale);
-  const itemListLinks = [
+  const heroImageUrl = getImageUrl('/abyss/chibi-deep-sea-hero.webp');
+  const itemListLinks = dedupeItemListLinks([
     ...copy.sections.map((item) => ({
+      href: item.href,
+      name: item.title,
+      description: item.description,
+    })),
+    ...copy.priorityResources.map((item) => ({
       href: item.href,
       name: item.title,
       description: item.description,
@@ -1710,14 +2087,27 @@ export default async function Subnautica2HubPage({
         description: `${cluster.title}: ${item.note}`,
       }))
     ),
-  ];
+    ...copy.patchLinks.map((item) => ({
+      href: item.href,
+      name: item.title,
+      description: item.description,
+    })),
+    ...guideIndex.groups.flatMap((group) =>
+      group.links.map((item) => ({
+        href: item.href,
+        name: item.label,
+        description: `${group.title}: ${item.note}`,
+      }))
+    ),
+  ]);
   const jsonLd = [
     {
       '@context': 'https://schema.org',
-      '@type': 'WebPage',
+      '@type': 'CollectionPage',
       name: copy.metadata.title,
       description: copy.metadata.description,
       url: hubUrl,
+      image: heroImageUrl,
       inLanguage: locale,
       isPartOf: {
         '@type': 'WebSite',
@@ -1727,6 +2117,9 @@ export default async function Subnautica2HubPage({
       about: {
         '@type': 'VideoGame',
         name: 'Subnautica 2',
+      },
+      mainEntity: {
+        '@id': `${hubUrl}#subnautica-2-guide-index`,
       },
     },
     {
@@ -1750,7 +2143,8 @@ export default async function Subnautica2HubPage({
     {
       '@context': 'https://schema.org',
       '@type': 'ItemList',
-      name: copy.routeClustersTitle,
+      '@id': `${hubUrl}#subnautica-2-guide-index`,
+      name: guideIndex.title,
       itemListElement: itemListLinks.map((item, index) => ({
         '@type': 'ListItem',
         position: index + 1,
@@ -1814,6 +2208,51 @@ export default async function Subnautica2HubPage({
                   {item.description}
                 </p>
               </LocaleLink>
+            ))}
+          </div>
+        </section>
+
+        <section
+          id="subnautica-2-guide-index"
+          className="mt-12 border-y border-cyan-200/12 py-8"
+        >
+          <div className="max-w-3xl">
+            <p className="text-sm font-semibold uppercase tracking-[0.18em] text-[#bf6f45]">
+              {guideIndex.eyebrow}
+            </p>
+            <h2 className="mt-3 text-2xl font-semibold text-[#effffb]">
+              {guideIndex.title}
+            </h2>
+            <p className="mt-4 leading-7 text-[#abc8c3]">
+              {guideIndex.description}
+            </p>
+          </div>
+          <div className="mt-7 grid gap-4 lg:grid-cols-5">
+            {guideIndex.groups.map((group) => (
+              <div
+                key={group.title}
+                className="border border-cyan-200/12 bg-[#061d22] p-4"
+              >
+                <h3 className="text-sm font-semibold uppercase tracking-[0.12em] text-[#f08b4f]">
+                  {group.title}
+                </h3>
+                <div className="mt-4 grid gap-3">
+                  {group.links.map((link) => (
+                    <LocaleLink
+                      key={`${group.title}-${link.label}`}
+                      href={link.href}
+                      className="group block border-l border-cyan-200/20 pl-3 transition hover:border-[#78ead7]"
+                    >
+                      <span className="block text-sm font-semibold text-[#effffb] group-hover:text-[#78ead7]">
+                        {link.label}
+                      </span>
+                      <span className="mt-1 block text-xs leading-5 text-[#9fbdb6]">
+                        {link.note}
+                      </span>
+                    </LocaleLink>
+                  ))}
+                </div>
+              </div>
             ))}
           </div>
         </section>
