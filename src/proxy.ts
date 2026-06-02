@@ -17,8 +17,11 @@ import {
 
 const intlMiddleware = createMiddleware(routing);
 const legacyRedirectRoutes = new Set<string>([
+  Routes.Ai,
   Routes.Dashboard,
+  Routes.Pricing,
   Routes.ThumbnailMaker,
+  Routes.Waitlist,
 ]);
 
 /**
