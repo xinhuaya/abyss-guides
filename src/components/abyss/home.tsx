@@ -60,6 +60,16 @@ type HomeCopy = {
   disclaimerBody: string;
 };
 
+type MissionLink = HomeLink & {
+  meta: string;
+};
+
+type ResourcePill = {
+  label: string;
+  href: Routes;
+  group: string;
+};
+
 const homeImageByRoute: Partial<Record<Routes, string>> = {
   [Routes.Subnautica2Beginner]: '/abyss/chibi-crafting-bench.webp',
   [Routes.Subnautica2Hotfix2]: '/abyss/chibi-update-console.webp',
@@ -81,6 +91,11 @@ const homeImageByRoute: Partial<Record<Routes, string>> = {
   [Routes.Subnautica2MapSizeBiomes]: '/abyss/chibi-map-exploration.webp',
   [Routes.Subnautica2Crafting]: '/abyss/chibi-crafting-bench.webp',
   [Routes.Subnautica2Map]: '/abyss/chibi-map-exploration.webp',
+  [Routes.Subnautica2Silver]: '/abyss/chibi-resource-scan.webp',
+  [Routes.Subnautica2Troilite]: '/abyss/chibi-resource-scan.webp',
+  [Routes.Subnautica2Atacamite]: '/abyss/chibi-resource-scan.webp',
+  [Routes.Subnautica2Mangalloy]: '/abyss/chibi-resource-scan.webp',
+  [Routes.Subnautica2Tadpole]: '/abyss/chibi-vehicle-route.webp',
 };
 
 const enCopy: HomeCopy = {
@@ -735,6 +750,213 @@ function getHomeCopy(locale?: Locale): HomeCopy {
   return enCopy;
 }
 
+function getMissionBoardCopy(locale?: Locale) {
+  if (locale === 'zh') {
+    return {
+      eyebrow: '热门搜索作战板',
+      title: '先解决玩家现在最容易卡住的 4 件事',
+      description:
+        '首页不只展示栏目，也要像一张路线板：新手先走哪条路、补丁改了什么、关键材料怎么找、买前要确认什么。',
+      routeLabel: '今日优先路线',
+      resourceLabel: '资源速查',
+      sourceLabel: '来源口径',
+      sourceBody:
+        '补丁、平台和路线页面会优先引用 Unknown Worlds、Steam、Xbox、官方视频和当前攻略来源；不确定的内容不会写成确定日期。',
+      missions: [
+        {
+          title: 'Hotfix 2 后先看什么',
+          description:
+            '快速确认 Silver、氧气、联机和开局路线有没有因为补丁改变。',
+          href: Routes.Subnautica2Hotfix2,
+          icon: TimerResetIcon,
+          label: 'Latest',
+          meta: 'patch notes',
+        },
+        {
+          title: 'Silver 卡进度',
+          description:
+            'Scanner、Wiring Kit、Air Tank 相关进度很容易被 Silver 卡住。',
+          href: Routes.Subnautica2Silver,
+          icon: AlertTriangleIcon,
+          label: 'Material',
+          meta: 'high intent',
+        },
+        {
+          title: 'Tadpole 和载具路线',
+          description: '把探索范围、停靠、深度模块和基地位置放在一起规划。',
+          href: Routes.Subnautica2Tadpole,
+          icon: ShipWheelIcon,
+          label: 'Vehicle',
+          meta: 'route planning',
+        },
+        {
+          title: '买前确认平台',
+          description:
+            'Steam、Xbox、Game Pass、PS5、配置要求和抢先体验状态先看清。',
+          href: Routes.Subnautica2ReleaseDate,
+          icon: CalendarDaysIcon,
+          label: 'Platform',
+          meta: 'buy or wait',
+        },
+      ] satisfies MissionLink[],
+      resourcePills: [
+        { label: 'Silver', href: Routes.Subnautica2Silver, group: 'early' },
+        { label: 'Troilite', href: Routes.Subnautica2Troilite, group: 'rare' },
+        {
+          label: 'Atacamite',
+          href: Routes.Subnautica2Atacamite,
+          group: 'deep',
+        },
+        {
+          label: 'Mangalloy',
+          href: Routes.Subnautica2Mangalloy,
+          group: 'craft',
+        },
+        {
+          label: 'Oxygen Depth',
+          href: Routes.Subnautica2OxygenDepth,
+          group: 'survival',
+        },
+        { label: 'Tadpole', href: Routes.Subnautica2Tadpole, group: 'vehicle' },
+      ] satisfies ResourcePill[],
+    };
+  }
+
+  if (locale === 'ja') {
+    return {
+      eyebrow: '人気検索ボード',
+      title: '今つまずきやすい4つを先に置く',
+      description:
+        'トップは飾りではなく、ルート表として使えるようにします。序盤、パッチ、重要素材、購入前の確認を前面に出します。',
+      routeLabel: '今日の優先ルート',
+      resourceLabel: '素材クイックチェック',
+      sourceLabel: 'ソース方針',
+      sourceBody:
+        'パッチ、対応機種、ルート情報はUnknown Worlds、Steam、Xbox、公式動画、現在の攻略ソースを優先します。不確かな内容は確定日として書きません。',
+      missions: [
+        {
+          title: 'Hotfix 2後の確認',
+          description:
+            'Silver、酸素、協力プレイ、序盤ルートの変更点を先に確認します。',
+          href: Routes.Subnautica2Hotfix2,
+          icon: TimerResetIcon,
+          label: 'Latest',
+          meta: 'patch notes',
+        },
+        {
+          title: 'Silverで止まった時',
+          description:
+            'Scanner、Wiring Kit、Air Tankの進行でSilverが詰まりやすいです。',
+          href: Routes.Subnautica2Silver,
+          icon: AlertTriangleIcon,
+          label: 'Material',
+          meta: 'high intent',
+        },
+        {
+          title: 'Tadpoleと乗り物ルート',
+          description:
+            '探索範囲、ドック、深度モジュール、拠点候補をまとめて考えます。',
+          href: Routes.Subnautica2Tadpole,
+          icon: ShipWheelIcon,
+          label: 'Vehicle',
+          meta: 'route planning',
+        },
+        {
+          title: '購入前の対応機種確認',
+          description:
+            'Steam、Xbox、Game Pass、PS5、必要スペック、Early Access状況を整理します。',
+          href: Routes.Subnautica2ReleaseDate,
+          icon: CalendarDaysIcon,
+          label: 'Platform',
+          meta: 'buy or wait',
+        },
+      ] satisfies MissionLink[],
+      resourcePills: [
+        { label: 'Silver', href: Routes.Subnautica2Silver, group: 'early' },
+        { label: 'Troilite', href: Routes.Subnautica2Troilite, group: 'rare' },
+        {
+          label: 'Atacamite',
+          href: Routes.Subnautica2Atacamite,
+          group: 'deep',
+        },
+        {
+          label: 'Mangalloy',
+          href: Routes.Subnautica2Mangalloy,
+          group: 'craft',
+        },
+        {
+          label: 'Oxygen Depth',
+          href: Routes.Subnautica2OxygenDepth,
+          group: 'survival',
+        },
+        { label: 'Tadpole', href: Routes.Subnautica2Tadpole, group: 'vehicle' },
+      ] satisfies ResourcePill[],
+    };
+  }
+
+  return {
+    eyebrow: 'Popular search board',
+    title: 'Put the four highest-friction player jobs up front',
+    description:
+      'The homepage should work like a route board: what changed, where to go first, which material blocks progress, and what to check before buying or installing.',
+    routeLabel: 'Today route priority',
+    resourceLabel: 'Resource quick check',
+    sourceLabel: 'Source standard',
+    sourceBody:
+      'Patch, platform, and route pages prioritize Unknown Worlds, Steam, Xbox, official video, and current guide reporting. Unconfirmed items stay clearly marked.',
+    missions: [
+      {
+        title: 'What changed after Hotfix 2',
+        description:
+          'Check Silver, oxygen, co-op, and first-route notes before following an older guide.',
+        href: Routes.Subnautica2Hotfix2,
+        icon: TimerResetIcon,
+        label: 'Latest',
+        meta: 'patch notes',
+      },
+      {
+        title: 'Silver progress blocker',
+        description:
+          'Scanner, Wiring Kit, and Air Tank progress commonly bottleneck around Silver.',
+        href: Routes.Subnautica2Silver,
+        icon: AlertTriangleIcon,
+        label: 'Material',
+        meta: 'high intent',
+      },
+      {
+        title: 'Tadpole route planning',
+        description:
+          'Plan exploration range, docking, depth modules, and base placement together.',
+        href: Routes.Subnautica2Tadpole,
+        icon: ShipWheelIcon,
+        label: 'Vehicle',
+        meta: 'route planning',
+      },
+      {
+        title: 'Platform check before buying',
+        description:
+          'Steam, Xbox, Game Pass, PS5, PC specs, and Early Access status in one path.',
+        href: Routes.Subnautica2ReleaseDate,
+        icon: CalendarDaysIcon,
+        label: 'Platform',
+        meta: 'buy or wait',
+      },
+    ] satisfies MissionLink[],
+    resourcePills: [
+      { label: 'Silver', href: Routes.Subnautica2Silver, group: 'early' },
+      { label: 'Troilite', href: Routes.Subnautica2Troilite, group: 'rare' },
+      { label: 'Atacamite', href: Routes.Subnautica2Atacamite, group: 'deep' },
+      { label: 'Mangalloy', href: Routes.Subnautica2Mangalloy, group: 'craft' },
+      {
+        label: 'Oxygen Depth',
+        href: Routes.Subnautica2OxygenDepth,
+        group: 'survival',
+      },
+      { label: 'Tadpole', href: Routes.Subnautica2Tadpole, group: 'vehicle' },
+    ] satisfies ResourcePill[],
+  };
+}
+
 function LinkCard({
   item,
   openLabel,
@@ -786,6 +1008,126 @@ function LinkCard({
         </span>
       </div>
     </LocaleLink>
+  );
+}
+
+function MissionBoard({ locale }: { locale?: Locale }) {
+  const board = getMissionBoardCopy(locale);
+
+  return (
+    <section className="relative overflow-hidden border-b border-cyan-200/10 bg-[#04181c]">
+      <div
+        aria-hidden="true"
+        className="absolute inset-0 bg-cover bg-center opacity-[0.18]"
+        style={{
+          backgroundImage: "url('/abyss/chibi-resource-scan.webp')",
+        }}
+      />
+      <div
+        aria-hidden="true"
+        className="absolute inset-0 bg-[linear-gradient(180deg,rgba(4,24,28,.82),rgba(3,19,20,.98)),radial-gradient(circle_at_88%_12%,rgba(120,234,215,.14),transparent_30%),radial-gradient(circle_at_12%_88%,rgba(240,139,79,.12),transparent_28%)]"
+      />
+      <Container className="relative px-4 py-12">
+        <div className="grid gap-6 lg:grid-cols-[minmax(0,0.92fr)_minmax(0,1.08fr)] lg:items-stretch">
+          <section className="border border-cyan-200/14 bg-[#061f24]/88 p-5 md:p-6">
+            <div className="flex flex-col gap-5 sm:flex-row sm:items-start sm:justify-between">
+              <div className="min-w-0">
+                <p className="text-sm font-semibold uppercase tracking-[0.18em] text-[#f08b4f]">
+                  {board.eyebrow}
+                </p>
+                <h2 className="mt-3 max-w-2xl break-words text-3xl font-semibold leading-tight text-[#f0fffb] md:text-4xl">
+                  {board.title}
+                </h2>
+                <p className="mt-4 max-w-2xl text-sm leading-7 text-[#abc8c3] md:text-base">
+                  {board.description}
+                </p>
+              </div>
+              <div className="shrink-0 border border-cyan-200/12 bg-cyan-300/5 px-4 py-3">
+                <p className="text-xs uppercase tracking-[0.16em] text-[#78ead7]">
+                  {board.routeLabel}
+                </p>
+                <p className="mt-2 text-2xl font-semibold text-[#effffb]">4</p>
+              </div>
+            </div>
+
+            <div className="mt-6 grid gap-3 sm:grid-cols-2">
+              {board.missions.map((mission) => {
+                const Icon = mission.icon ?? CompassIcon;
+
+                return (
+                  <LocaleLink
+                    className="group min-w-0 border border-cyan-200/12 bg-[#08252a]/82 p-4 transition hover:-translate-y-0.5 hover:border-cyan-200/40 hover:bg-[#0a3036]"
+                    href={mission.href}
+                    key={mission.href}
+                  >
+                    <div className="flex min-w-0 items-start justify-between gap-3">
+                      <div className="flex min-w-0 items-center gap-2">
+                        <Icon className="size-5 shrink-0 text-[#78ead7]" />
+                        <span className="min-w-0 break-words text-xs uppercase tracking-[0.14em] text-[#8fb8b1]">
+                          {mission.meta}
+                        </span>
+                      </div>
+                      <span className="shrink-0 border border-[#f08b4f]/35 bg-[#f08b4f]/10 px-2 py-1 text-xs font-semibold text-[#ffc4a1]">
+                        {mission.label}
+                      </span>
+                    </div>
+                    <h3 className="mt-4 break-words text-lg font-semibold text-[#f0fffb]">
+                      {mission.title}
+                    </h3>
+                    <p className="mt-2 break-words text-sm leading-6 text-[#a8c6c0]">
+                      {mission.description}
+                    </p>
+                    <span className="mt-4 inline-flex items-center gap-2 text-sm font-medium text-[#78ead7]">
+                      {mission.label}
+                      <ArrowRightIcon className="size-4 transition group-hover:translate-x-1" />
+                    </span>
+                  </LocaleLink>
+                );
+              })}
+            </div>
+          </section>
+
+          <aside className="grid gap-4 md:grid-cols-[minmax(0,1fr)_260px] lg:grid-cols-1 xl:grid-cols-[minmax(0,1fr)_280px]">
+            <section className="border border-cyan-200/14 bg-[#082226]/92 p-5">
+              <div className="flex items-center gap-2 text-[#78ead7]">
+                <BoxesIcon className="size-5" />
+                <h2 className="text-lg font-semibold text-[#effffb]">
+                  {board.resourceLabel}
+                </h2>
+              </div>
+              <div className="mt-4 grid grid-cols-2 gap-2 sm:grid-cols-3 md:grid-cols-2">
+                {board.resourcePills.map((pill) => (
+                  <LocaleLink
+                    className="group min-w-0 border border-cyan-200/12 bg-[#031314]/70 px-3 py-3 transition hover:border-cyan-200/40 hover:bg-cyan-300/10"
+                    href={pill.href}
+                    key={pill.href}
+                  >
+                    <span className="block break-words text-sm font-semibold text-[#effffb]">
+                      {pill.label}
+                    </span>
+                    <span className="mt-1 block text-xs uppercase tracking-[0.12em] text-[#f08b4f]">
+                      {pill.group}
+                    </span>
+                  </LocaleLink>
+                ))}
+              </div>
+            </section>
+
+            <section className="border border-cyan-200/14 bg-[#082226]/92 p-5">
+              <div className="flex items-center gap-2 text-[#f08b4f]">
+                <BookOpenIcon className="size-5" />
+                <h2 className="text-lg font-semibold text-[#effffb]">
+                  {board.sourceLabel}
+                </h2>
+              </div>
+              <p className="mt-4 text-sm leading-7 text-[#abc8c3]">
+                {board.sourceBody}
+              </p>
+            </section>
+          </aside>
+        </div>
+      </Container>
+    </section>
   );
 }
 
@@ -871,6 +1213,8 @@ export function AbyssHome({ locale }: { locale?: Locale }) {
           </div>
         </Container>
       </section>
+
+      <MissionBoard locale={locale} />
 
       <section className="border-b border-cyan-200/10 bg-[#071f23]">
         <Container className="px-4 py-14">
