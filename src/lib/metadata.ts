@@ -1,5 +1,6 @@
 import { websiteConfig } from '@/config/website';
 import { defaultMessages } from '@/i18n/messages';
+import { Routes } from '@/routes';
 import type { Metadata } from 'next';
 import type { Locale } from 'next-intl';
 import { generateAlternates, getCurrentHreflang } from './hreflang';
@@ -8,6 +9,125 @@ import {
   isRouteReadyForLocale,
 } from './localized-routes';
 import { getBaseUrl, getImageUrl, getUrlWithLocale } from './urls';
+
+const abyssMetadataImageByPathname: Record<string, string> = {
+  '': '/abyss/chibi-deep-sea-hero.webp',
+  [Routes.Root]: '/abyss/chibi-deep-sea-hero.webp',
+  [Routes.Subnautica2]: '/abyss/chibi-deep-sea-hero.webp',
+  [Routes.Subnautica2Beginner]: '/abyss/chibi-crafting-bench.webp',
+  [Routes.Subnautica2Resources]: '/abyss/chibi-resource-scan.webp',
+  [Routes.Subnautica2Crafting]: '/abyss/chibi-crafting-bench.webp',
+  [Routes.Subnautica2Map]: '/abyss/chibi-map-exploration.webp',
+  [Routes.Subnautica2InteractiveMap]: '/abyss/chibi-map-exploration.webp',
+  [Routes.Subnautica2Biomes]: '/abyss/chibi-map-exploration.webp',
+  [Routes.Subnautica2MapSizeBiomes]: '/abyss/chibi-map-exploration.webp',
+  [Routes.Subnautica2OxygenDepth]: '/abyss/chibi-oxygen-depth.webp',
+  [Routes.Subnautica2AirTank]: '/abyss/chibi-oxygen-depth.webp',
+  [Routes.Subnautica2Rebreather]: '/abyss/chibi-oxygen-depth.webp',
+  [Routes.Subnautica2Coop]: '/abyss/chibi-coop-signal.webp',
+  [Routes.Subnautica2CoopPlayerCount]: '/abyss/chibi-coop-signal.webp',
+  [Routes.Subnautica2Crossplay]: '/abyss/chibi-coop-signal.webp',
+  [Routes.Subnautica2MultiplayerNotWorking]: '/abyss/chibi-coop-signal.webp',
+  [Routes.Subnautica2Updates]: '/abyss/chibi-update-console.webp',
+  [Routes.Subnautica2Hotfix2]: '/abyss/chibi-update-console.webp',
+  [Routes.Subnautica2SilverAfterHotfix2]: '/abyss/chibi-update-console.webp',
+  [Routes.Subnautica2TroiliteAfterHotfix2]: '/abyss/chibi-update-console.webp',
+  [Routes.Subnautica2ReleaseDate]: '/abyss/chibi-platform-briefing.webp',
+  [Routes.Subnautica2Ps5ReleaseDate]: '/abyss/chibi-platform-briefing.webp',
+  [Routes.Subnautica2XboxGamePass]: '/abyss/chibi-platform-briefing.webp',
+  [Routes.Subnautica2SystemRequirements]: '/abyss/chibi-platform-briefing.webp',
+  [Routes.Subnautica2EarlyAccessWorthIt]: '/abyss/chibi-platform-briefing.webp',
+  [Routes.Subnautica2Vehicles]: '/abyss/chibi-vehicle-route.webp',
+  [Routes.Subnautica2Tadpole]: '/abyss/chibi-vehicle-route.webp',
+  [Routes.Subnautica2TadpoleDock]: '/abyss/chibi-vehicle-route.webp',
+  [Routes.Subnautica2TadpoleDepthModule]: '/abyss/chibi-vehicle-route.webp',
+  [Routes.Subnautica2VehicleFabricator]: '/abyss/chibi-vehicle-route.webp',
+  [Routes.Subnautica2Moonpool]: '/abyss/chibi-vehicle-route.webp',
+  [Routes.Subnautica2InsufficientSpaceToDock]:
+    '/abyss/chibi-vehicle-route.webp',
+  [Routes.Subnautica2CreaturesLeviathans]: '/abyss/chibi-creature-risk.webp',
+  [Routes.Subnautica2CreatureEnamel]: '/abyss/chibi-creature-risk.webp',
+  [Routes.Subnautica2AcidicRaionPouch]: '/abyss/chibi-creature-risk.webp',
+  [Routes.Subnautica2NecroleiCyst]: '/abyss/chibi-creature-risk.webp',
+  [Routes.Subnautica2BaseLocationTierList]: '/abyss/chibi-base-location.webp',
+  [Routes.Subnautica2BaseBuilding]: '/abyss/chibi-base-location.webp',
+  [Routes.Subnautica2BestBaseLocations]: '/abyss/chibi-base-location.webp',
+  [Routes.Subnautica2HabitatBuilder]: '/abyss/chibi-base-location.webp',
+};
+
+const resourceImageRoutes = [
+  Routes.Subnautica2Silver,
+  Routes.Subnautica2SilverIngot,
+  Routes.Subnautica2Copper,
+  Routes.Subnautica2CopperIngot,
+  Routes.Subnautica2Titanium,
+  Routes.Subnautica2TitaniumIngot,
+  Routes.Subnautica2Sulfur,
+  Routes.Subnautica2Quartz,
+  Routes.Subnautica2Lithium,
+  Routes.Subnautica2Lead,
+  Routes.Subnautica2GermaniumIngot,
+  Routes.Subnautica2Gold,
+  Routes.Subnautica2GoldIngot,
+  Routes.Subnautica2Salt,
+  Routes.Subnautica2MetalSalvage,
+  Routes.Subnautica2ConduitCrystal,
+  Routes.Subnautica2AngelComb,
+  Routes.Subnautica2BloomBiofilm,
+  Routes.Subnautica2Celestine,
+  Routes.Subnautica2Strontium,
+  Routes.Subnautica2StrongAcid,
+  Routes.Subnautica2MildAcid,
+  Routes.Subnautica2FiberMesh,
+  Routes.Subnautica2Rubber,
+  Routes.Subnautica2Troilite,
+  Routes.Subnautica2Atacamite,
+  Routes.Subnautica2Mangalloy,
+  Routes.Subnautica2MetalFarm,
+  Routes.Subnautica2MineralizedClinker,
+  Routes.Subnautica2TroiliteSoftlock,
+];
+
+const craftingImageRoutes = [
+  Routes.Subnautica2BasicBattery,
+  Routes.Subnautica2BatteryTerminal,
+  Routes.Subnautica2Processor,
+  Routes.Subnautica2Biolab,
+  Routes.Subnautica2Fabricator,
+  Routes.Subnautica2EchoLocation,
+  Routes.Subnautica2ModificationStation,
+  Routes.Subnautica2EngineEfficiency,
+  Routes.Subnautica2CopperWire,
+  Routes.Subnautica2BasicFins,
+  Routes.Subnautica2ImprovedFins,
+  Routes.Subnautica2Wakemaker,
+  Routes.Subnautica2AdvancedBattery,
+  Routes.Subnautica2PowerCell,
+  Routes.Subnautica2ScannerStation,
+  Routes.Subnautica2Beacon,
+  Routes.Subnautica2RepairTool,
+  Routes.Subnautica2Glass,
+  Routes.Subnautica2PlasteelIngot,
+  Routes.Subnautica2EntangledPowerCell,
+  Routes.Subnautica2Scanner,
+  Routes.Subnautica2SystemChip,
+  Routes.Subnautica2WiringKit,
+  Routes.Subnautica2AdvancedWiringKit,
+  Routes.Subnautica2BioscannerBiomods,
+  Routes.Subnautica2SonicResonator,
+  Routes.Subnautica2AxumVision,
+  Routes.Subnautica2HeatTolerance,
+  Routes.Subnautica2FeedbackResonator,
+  Routes.Subnautica2EnameledGlass,
+];
+
+for (const route of resourceImageRoutes) {
+  abyssMetadataImageByPathname[route] = '/abyss/chibi-resource-scan.webp';
+}
+
+for (const route of craftingImageRoutes) {
+  abyssMetadataImageByPathname[route] = '/abyss/chibi-crafting-bench.webp';
+}
 
 /**
  * Construct the metadata object for the current page (in docs/guides)
@@ -29,7 +149,10 @@ export function constructMetadata({
 } = {}): Metadata {
   title = title || defaultMessages.Metadata.title;
   description = description || defaultMessages.Metadata.description;
-  image = image || websiteConfig.metadata.images?.ogImage;
+  const inferredImage =
+    pathname !== undefined ? abyssMetadataImageByPathname[pathname] : undefined;
+
+  image = image || inferredImage || websiteConfig.metadata.images?.ogImage;
   const ogImageUrl = getImageUrl(image || '');
 
   // Generate canonical URL from pathname and locale
