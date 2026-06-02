@@ -117,6 +117,7 @@ const staticRoutes = [
   Routes.Subnautica2Ps5ReleaseDate,
   Routes.Subnautica2XboxGamePass,
   Routes.Subnautica2SystemRequirements,
+  Routes.Subnautica2SaveFileLocation,
   Routes.Subnautica2EarlyAccessWorthIt,
   Routes.Subnautica2MapSizeBiomes,
   Routes.Subnautica2Hotfix2,
@@ -185,7 +186,8 @@ function getChangeFrequency(
     route === Routes.Subnautica2InteriorWallCostAfterHotfix3 ||
     route === Routes.Subnautica2NibblersMarrowbreachAfterHotfix3 ||
     route === Routes.Subnautica2StrikeArmorStackingAfterHotfix3 ||
-    route === Routes.Subnautica2StartupCrashAfterHotfix3
+    route === Routes.Subnautica2StartupCrashAfterHotfix3 ||
+    route === Routes.Subnautica2SaveFileLocation
   ) {
     return 'daily';
   }

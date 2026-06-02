@@ -658,6 +658,11 @@ const copyByLocale: Record<'en' | 'zh', HubCopy> = {
             note: 'launch and DLSS crash checklist',
           },
           {
+            href: Routes.Subnautica2SaveFileLocation,
+            label: 'Save file location',
+            note: 'Steam backups and cloud notes',
+          },
+          {
             href: Routes.Subnautica2Hotfix2,
             label: 'Hotfix 2',
             note: 'official change summary',
@@ -825,6 +830,12 @@ const copyByLocale: Record<'en' | 'zh', HubCopy> = {
         title: 'Startup Crash After Hotfix 3',
         description:
           'Launch-crash triage, DLSS crash retesting, Frame Generation checks, file verification, and solo versus co-op notes.',
+      },
+      {
+        href: Routes.Subnautica2SaveFileLocation,
+        title: 'Save File Location and Backup',
+        description:
+          'Steam save folder, .sav and .bak files, cloud sync timing, and Xbox/Game Pass backup caution.',
       },
       {
         href: Routes.Subnautica2Hotfix2,
@@ -1542,6 +1553,12 @@ const copyByLocale: Record<'en' | 'zh', HubCopy> = {
           '启动崩溃、DLSS 崩溃、Frame Generation、验证文件、驱动复测和单人/联机区分。',
       },
       {
+        href: Routes.Subnautica2SaveFileLocation,
+        title: 'Subnautica 2 存档位置和备份',
+        description:
+          'Steam 存档文件夹、.sav 和 .bak、云同步时间，以及 Xbox/Game Pass 备份注意事项。',
+      },
+      {
         href: Routes.Subnautica2Hotfix2,
         title: 'Hotfix 2 更新内容',
         description: '银、Troilite、氧气、Hammerhead、联机和崩溃修复整理。',
@@ -2089,6 +2106,11 @@ const guideIndexCopyByLocale: Record<'en' | 'zh', GuideIndexCopy> = {
             note: 'launch and DLSS crash checklist',
           },
           {
+            href: Routes.Subnautica2SaveFileLocation,
+            label: 'Save files',
+            note: 'Steam backups and cloud saves',
+          },
+          {
             href: Routes.Subnautica2Hotfix2,
             label: 'Hotfix 2',
             note: 'changed routes and known fixes',
@@ -2112,6 +2134,11 @@ const guideIndexCopyByLocale: Record<'en' | 'zh', GuideIndexCopy> = {
             href: Routes.Subnautica2SystemRequirements,
             label: 'System requirements',
             note: 'PC spec and settings notes',
+          },
+          {
+            href: Routes.Subnautica2SaveFileLocation,
+            label: 'Save file location',
+            note: 'Steam backup and cloud notes',
           },
         ],
       },
@@ -2307,6 +2334,11 @@ const guideIndexCopyByLocale: Record<'en' | 'zh', GuideIndexCopy> = {
             note: 'Hotfix 3 后启动和 DLSS 排查',
           },
           {
+            href: Routes.Subnautica2SaveFileLocation,
+            label: '存档位置',
+            note: 'Steam 备份和云存档',
+          },
+          {
             href: Routes.Subnautica2Hotfix2,
             label: 'Hotfix 2',
             note: '路线变化和修复整理',
@@ -2330,6 +2362,11 @@ const guideIndexCopyByLocale: Record<'en' | 'zh', GuideIndexCopy> = {
             href: Routes.Subnautica2SystemRequirements,
             label: '配置要求',
             note: 'PC 配置和设置建议',
+          },
+          {
+            href: Routes.Subnautica2SaveFileLocation,
+            label: '存档位置',
+            note: 'Steam 备份和云存档',
           },
         ],
       },

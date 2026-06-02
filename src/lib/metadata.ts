@@ -40,6 +40,7 @@ const abyssMetadataImageByPathname: Record<string, string> = {
   [Routes.Subnautica2Ps5ReleaseDate]: '/abyss/chibi-platform-briefing.webp',
   [Routes.Subnautica2XboxGamePass]: '/abyss/chibi-platform-briefing.webp',
   [Routes.Subnautica2SystemRequirements]: '/abyss/chibi-platform-briefing.webp',
+  [Routes.Subnautica2SaveFileLocation]: '/abyss/chibi-save-backup-guide.webp',
   [Routes.Subnautica2EarlyAccessWorthIt]: '/abyss/chibi-platform-briefing.webp',
   [Routes.Subnautica2Vehicles]: '/abyss/chibi-vehicle-route.webp',
   [Routes.Subnautica2Tadpole]: '/abyss/chibi-vehicle-route.webp',

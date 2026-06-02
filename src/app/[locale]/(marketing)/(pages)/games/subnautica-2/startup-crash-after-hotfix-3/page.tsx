@@ -175,6 +175,10 @@ const copyByLocale: Record<string, StartupCrashCopy> = {
         label: 'System Requirements',
       },
       {
+        href: Routes.Subnautica2SaveFileLocation,
+        label: 'Save File Backup',
+      },
+      {
         href: Routes.Subnautica2MultiplayerNotWorking,
         label: 'Multiplayer Not Working',
       },
@@ -318,6 +322,7 @@ const copyByLocale: Record<string, StartupCrashCopy> = {
         label: 'Hotfix 3 后 DLSS 设置',
       },
       { href: Routes.Subnautica2SystemRequirements, label: '配置要求' },
+      { href: Routes.Subnautica2SaveFileLocation, label: '存档备份' },
       { href: Routes.Subnautica2MultiplayerNotWorking, label: '联机问题修复' },
       {
         href: Routes.Subnautica2CoopRejoinAfterHotfix3,
