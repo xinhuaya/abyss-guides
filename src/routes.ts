@@ -103,6 +103,8 @@ export enum Routes {
   Subnautica2Sprint = '/games/subnautica-2/sprint',
   Subnautica2Crossplay = '/games/subnautica-2/crossplay',
   Subnautica2MultiplayerNotWorking = '/games/subnautica-2/multiplayer-not-working',
+  Subnautica2InviteNotWorking = '/games/subnautica-2/invite-not-working',
+  Subnautica2OnlineServicesConnectionFailed = '/games/subnautica-2/online-services-connection-failed',
   Subnautica2MultiplayerLagDesync = '/games/subnautica-2/multiplayer-lag-desync',
   Subnautica2ControllerNotWorking = '/games/subnautica-2/controller-not-working',
   Subnautica2CoopRejoinAfterHotfix3 = '/games/subnautica-2/co-op-rejoin-after-hotfix-3',

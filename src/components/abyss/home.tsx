@@ -101,6 +101,9 @@ const homeImageByRoute: Partial<Record<Routes, string>> = {
     '/abyss/chibi-steam-download-stuck.webp',
   [Routes.Subnautica2EarlyAccessWorthIt]: '/abyss/chibi-platform-briefing.webp',
   [Routes.Subnautica2Crossplay]: '/abyss/chibi-coop-signal.webp',
+  [Routes.Subnautica2InviteNotWorking]: '/abyss/chibi-invite-not-working.webp',
+  [Routes.Subnautica2OnlineServicesConnectionFailed]:
+    '/abyss/chibi-online-services-timeout.webp',
   [Routes.Subnautica2DedicatedServer]: '/abyss/chibi-dedicated-server.webp',
   [Routes.Subnautica2SplitScreenCoop]: '/abyss/chibi-split-screen-coop.webp',
   [Routes.Subnautica2VoiceChat]: '/abyss/chibi-voice-chat-roadmap.webp',
@@ -231,6 +234,22 @@ const enCopy: HomeCopy = {
       label: 'Co-op',
     },
     {
+      title: 'Invite not working',
+      description:
+        'Friend Code, Steam, Xbox, Game Pass, host, version, and privacy checks when a co-op invite will not land.',
+      href: Routes.Subnautica2InviteNotWorking,
+      icon: UsersRoundIcon,
+      label: 'Invite',
+    },
+    {
+      title: 'Online services failed',
+      description:
+        'A calm connection checklist for service status, timeouts, NAT, firewall, updates, and retry timing.',
+      href: Routes.Subnautica2OnlineServicesConnectionFailed,
+      icon: RadioIcon,
+      label: 'Network',
+    },
+    {
       title: 'Controller not working',
       description:
         'Gamepad detection, Steam Input, Xbox controllers, Steam Deck layout, cloud delay, and input lag checks.',
@@ -347,6 +366,22 @@ const enCopy: HomeCopy = {
       href: Routes.Subnautica2Crossplay,
       icon: UsersRoundIcon,
       label: 'Co-op',
+    },
+    {
+      title: 'Invite not working',
+      description:
+        'What to check when Steam, Xbox, Game Pass, or Friend Code invites do not bring players into the session.',
+      href: Routes.Subnautica2InviteNotWorking,
+      icon: UsersRoundIcon,
+      label: 'Invite',
+    },
+    {
+      title: 'Online services connection failed',
+      description:
+        'Service-status checks, local network fixes, firewall notes, and safe retry steps for co-op connection errors.',
+      href: Routes.Subnautica2OnlineServicesConnectionFailed,
+      icon: RadioIcon,
+      label: 'Network',
     },
     {
       title: 'Dedicated server status',
