@@ -206,6 +206,7 @@ const guideImageByPathname: Partial<Record<Routes, string>> = {
   [Routes.Subnautica2Switch2ReleaseDate]:
     '/abyss/chibi-switch-2-release-date.webp',
   [Routes.Subnautica2MacReleaseDate]: '/abyss/chibi-mac-release-date.webp',
+  [Routes.Subnautica2OfflineMode]: '/abyss/chibi-offline-mode.webp',
   [Routes.Subnautica2XboxGamePass]: '/abyss/chibi-platform-briefing.webp',
   [Routes.Subnautica2SystemRequirements]: '/abyss/chibi-platform-briefing.webp',
   [Routes.Subnautica2SteamDeckSettings]:

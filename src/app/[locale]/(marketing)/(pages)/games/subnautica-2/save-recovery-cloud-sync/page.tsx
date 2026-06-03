@@ -177,6 +177,7 @@ const copyByLocale: Record<string, SaveRecoveryCopy> = {
         href: Routes.Subnautica2SaveFileLocation,
         label: 'Save File Location',
       },
+      { href: Routes.Subnautica2OfflineMode, label: 'Offline Mode' },
       {
         href: Routes.Subnautica2StartupCrashAfterHotfix3,
         label: 'Startup Crash Checklist',
@@ -328,6 +329,7 @@ const copyByLocale: Record<string, SaveRecoveryCopy> = {
         href: Routes.Subnautica2SaveFileLocation,
         label: '存档位置和备份',
       },
+      { href: Routes.Subnautica2OfflineMode, label: '离线模式' },
       {
         href: Routes.Subnautica2StartupCrashAfterHotfix3,
         label: '启动崩溃排查',

@@ -156,6 +156,7 @@ const copyByLocale: Record<string, CoopCountCopy> = {
     readNextTitle: 'Read next',
     related: [
       { href: Routes.Subnautica2Coop, label: 'Full Co-op Guide' },
+      { href: Routes.Subnautica2OfflineMode, label: 'Offline Mode' },
       {
         href: Routes.Subnautica2SplitScreenCoop,
         label: 'Split Screen and Couch Co-op',
@@ -290,6 +291,7 @@ const copyByLocale: Record<string, CoopCountCopy> = {
     readNextTitle: '继续看',
     related: [
       { href: Routes.Subnautica2Coop, label: '完整联机指南' },
+      { href: Routes.Subnautica2OfflineMode, label: '离线模式' },
       { href: Routes.Subnautica2SplitScreenCoop, label: '分屏和本地双人' },
       { href: Routes.Subnautica2Map, label: '地图和生态区' },
       { href: Routes.Subnautica2BaseBuilding, label: '基地建造指南' },

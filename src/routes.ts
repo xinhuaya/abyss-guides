@@ -112,6 +112,7 @@ export enum Routes {
   Subnautica2Switch2ReleaseDate = '/games/subnautica-2/switch-2-release-date',
   Subnautica2MacReleaseDate = '/games/subnautica-2/mac-release-date',
   Subnautica2XboxGamePass = '/games/subnautica-2/xbox-game-pass',
+  Subnautica2OfflineMode = '/games/subnautica-2/offline-mode',
   Subnautica2SystemRequirements = '/games/subnautica-2/system-requirements',
   Subnautica2SteamDeckSettings = '/games/subnautica-2/steam-deck-settings',
   Subnautica2BlackScreenFreezing = '/games/subnautica-2/black-screen-freezing',

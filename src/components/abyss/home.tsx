@@ -95,6 +95,7 @@ const homeImageByRoute: Partial<Record<Routes, string>> = {
   [Routes.Subnautica2Switch2ReleaseDate]:
     '/abyss/chibi-switch-2-release-date.webp',
   [Routes.Subnautica2MacReleaseDate]: '/abyss/chibi-mac-release-date.webp',
+  [Routes.Subnautica2OfflineMode]: '/abyss/chibi-offline-mode.webp',
   [Routes.Subnautica2OxygenDepth]: '/abyss/chibi-oxygen-depth.webp',
   [Routes.Subnautica2Scanner]: '/abyss/chibi-crafting-bench.webp',
   [Routes.Subnautica2Resources]: '/abyss/chibi-resource-scan.webp',
@@ -286,6 +287,14 @@ const enCopy: HomeCopy = {
       href: Routes.Subnautica2MacReleaseDate,
       icon: MonitorPlayIcon,
       label: 'Mac',
+    },
+    {
+      title: 'Offline and single-player',
+      description:
+        'A careful offline-mode answer for solo saves, internet requirements, cloud sync, and travel play.',
+      href: Routes.Subnautica2OfflineMode,
+      icon: RadioIcon,
+      label: 'Offline',
     },
     {
       title: 'Controller checklist',
@@ -566,6 +575,13 @@ const zhCopy: HomeCopy = {
       href: Routes.Subnautica2MacReleaseDate,
       icon: MonitorPlayIcon,
       label: 'Mac',
+    },
+    {
+      title: '离线和单人模式',
+      description: '区分单人游玩、离线启动、联网需求、云存档和旅行设备测试。',
+      href: Routes.Subnautica2OfflineMode,
+      icon: RadioIcon,
+      label: '离线',
     },
     {
       title: '手柄和输入排查',

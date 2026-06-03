@@ -2254,6 +2254,11 @@ const guideIndexCopyByLocale: Record<'en' | 'zh', GuideIndexCopy> = {
             note: 'macOS and Apple Silicon watch',
           },
           {
+            href: Routes.Subnautica2OfflineMode,
+            label: 'Offline mode',
+            note: 'single-player and internet checks',
+          },
+          {
             href: Routes.Subnautica2SaveFileLocation,
             label: 'Save file location',
             note: 'Steam backup and cloud notes',
@@ -2520,6 +2525,11 @@ const guideIndexCopyByLocale: Record<'en' | 'zh', GuideIndexCopy> = {
             href: Routes.Subnautica2MacReleaseDate,
             label: 'Mac 发售日',
             note: 'macOS 和 Apple Silicon 观察',
+          },
+          {
+            href: Routes.Subnautica2OfflineMode,
+            label: '离线模式',
+            note: '单人和联网需求检查',
           },
           {
             href: Routes.Subnautica2SaveFileLocation,

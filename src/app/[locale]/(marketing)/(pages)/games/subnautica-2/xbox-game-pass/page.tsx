@@ -173,6 +173,7 @@ const xboxGamePassCopy: Record<string, XboxGamePassCopy> = {
         href: Routes.Subnautica2SplitScreenCoop,
         label: 'Split Screen and Couch Co-op',
       },
+      { href: Routes.Subnautica2OfflineMode, label: 'Offline Mode' },
       {
         href: Routes.Subnautica2ControllerNotWorking,
         label: 'Controller Not Working',
@@ -308,6 +309,7 @@ const xboxGamePassCopy: Record<string, XboxGamePassCopy> = {
       { href: Routes.Subnautica2Switch2ReleaseDate, label: 'Switch 2 发售日' },
       { href: Routes.Subnautica2CoopPlayerCount, label: '联机人数' },
       { href: Routes.Subnautica2SplitScreenCoop, label: '分屏和本地双人' },
+      { href: Routes.Subnautica2OfflineMode, label: '离线模式' },
       { href: Routes.Subnautica2ControllerNotWorking, label: '手柄没反应' },
       { href: Routes.Subnautica2Hotfix2, label: 'Hotfix 2 更新' },
       { href: Routes.Subnautica2SaveFileLocation, label: '存档备份' },
