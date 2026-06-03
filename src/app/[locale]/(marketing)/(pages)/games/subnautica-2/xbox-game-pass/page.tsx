@@ -159,6 +159,7 @@ const xboxGamePassCopy: Record<string, XboxGamePassCopy> = {
     ],
     readNextTitle: 'Read next',
     related: [
+      { href: Routes.Subnautica2Price, label: 'Price Guide' },
       { href: Routes.Subnautica2ReleaseDate, label: 'Release Date Guide' },
       { href: Routes.Subnautica2Ps5ReleaseDate, label: 'PS5 Release Date' },
       {
@@ -304,6 +305,7 @@ const xboxGamePassCopy: Record<string, XboxGamePassCopy> = {
     ],
     readNextTitle: '继续看',
     related: [
+      { href: Routes.Subnautica2Price, label: '价格指南' },
       { href: Routes.Subnautica2ReleaseDate, label: '发售日总览' },
       { href: Routes.Subnautica2Ps5ReleaseDate, label: 'PS5 发售日' },
       { href: Routes.Subnautica2Switch2ReleaseDate, label: 'Switch 2 发售日' },

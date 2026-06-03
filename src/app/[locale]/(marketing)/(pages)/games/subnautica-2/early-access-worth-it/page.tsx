@@ -157,6 +157,7 @@ const copyByLocale: Record<string, WorthItCopy> = {
     ],
     readNextTitle: 'Read next',
     related: [
+      { href: Routes.Subnautica2Price, label: 'Price Guide' },
       {
         href: Routes.Subnautica2SystemRequirements,
         label: 'System Requirements',

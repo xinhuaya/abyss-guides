@@ -157,6 +157,7 @@ const releaseDateCopy: Record<string, ReleaseDateCopy> = {
     readNextTitle: 'Read next',
     related: [
       { href: Routes.Subnautica2Updates, label: 'Roadmap and Updates' },
+      { href: Routes.Subnautica2Price, label: 'Price Guide' },
       { href: Routes.Subnautica2Ps5ReleaseDate, label: 'PS5 Release Date' },
       {
         href: Routes.Subnautica2Switch2ReleaseDate,
@@ -295,6 +296,7 @@ const releaseDateCopy: Record<string, ReleaseDateCopy> = {
     readNextTitle: '继续看',
     related: [
       { href: Routes.Subnautica2Updates, label: '路线图和更新' },
+      { href: Routes.Subnautica2Price, label: '价格指南' },
       { href: Routes.Subnautica2Switch2ReleaseDate, label: 'Switch 2 发售日' },
       { href: Routes.Subnautica2MacReleaseDate, label: 'Mac 发售日' },
       { href: Routes.Subnautica2Hotfix2, label: 'Hotfix 2 更新内容' },

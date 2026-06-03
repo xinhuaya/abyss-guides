@@ -751,6 +751,7 @@ const zhOnlyRoutes = [
   Routes.Subnautica2Switch2ReleaseDate,
   Routes.Subnautica2MacReleaseDate,
   Routes.Subnautica2OfflineMode,
+  Routes.Subnautica2Price,
   Routes.Subnautica2SplitScreenCoop,
   Routes.Subnautica2SteamDeckSettings,
   Routes.Subnautica2BlackScreenFreezing,

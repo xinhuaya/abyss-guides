@@ -7,6 +7,7 @@ import { Routes } from '@/routes';
 import {
   AlertTriangleIcon,
   ArrowRightIcon,
+  BadgeDollarSignIcon,
   BookOpenIcon,
   BoxesIcon,
   CalendarDaysIcon,
@@ -96,6 +97,7 @@ const homeImageByRoute: Partial<Record<Routes, string>> = {
     '/abyss/chibi-switch-2-release-date.webp',
   [Routes.Subnautica2MacReleaseDate]: '/abyss/chibi-mac-release-date.webp',
   [Routes.Subnautica2OfflineMode]: '/abyss/chibi-offline-mode.webp',
+  [Routes.Subnautica2Price]: '/abyss/chibi-price-check.webp',
   [Routes.Subnautica2OxygenDepth]: '/abyss/chibi-oxygen-depth.webp',
   [Routes.Subnautica2Scanner]: '/abyss/chibi-crafting-bench.webp',
   [Routes.Subnautica2Resources]: '/abyss/chibi-resource-scan.webp',
@@ -231,6 +233,14 @@ const enCopy: HomeCopy = {
       href: Routes.Subnautica2XboxGamePass,
       icon: MonitorPlayIcon,
       label: 'Xbox',
+    },
+    {
+      title: 'Price and buying path',
+      description:
+        'Steam regional pricing, the Xbox US listing, Game Pass, and whether Early Access is worth paying for now.',
+      href: Routes.Subnautica2Price,
+      icon: BadgeDollarSignIcon,
+      label: 'Price',
     },
     {
       title: 'System requirements',
@@ -521,6 +531,14 @@ const zhCopy: HomeCopy = {
       href: Routes.Subnautica2XboxGamePass,
       icon: MonitorPlayIcon,
       label: 'Xbox',
+    },
+    {
+      title: '价格和购买路径',
+      description:
+        'Steam 区域价格、Xbox 美区价格、Game Pass，以及抢先体验现在买不买。',
+      href: Routes.Subnautica2Price,
+      icon: BadgeDollarSignIcon,
+      label: '价格',
     },
     {
       title: '配置要求',

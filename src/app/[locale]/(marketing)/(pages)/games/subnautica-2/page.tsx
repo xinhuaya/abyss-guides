@@ -2219,6 +2219,11 @@ const guideIndexCopyByLocale: Record<'en' | 'zh', GuideIndexCopy> = {
             note: 'subscription availability',
           },
           {
+            href: Routes.Subnautica2Price,
+            label: 'Price guide',
+            note: 'Steam, Xbox, Game Pass, and buy-or-wait',
+          },
+          {
             href: Routes.Subnautica2ControllerNotWorking,
             label: 'Controller not working',
             note: 'gamepad, Steam Input, and input lag',
@@ -2495,6 +2500,11 @@ const guideIndexCopyByLocale: Record<'en' | 'zh', GuideIndexCopy> = {
             href: Routes.Subnautica2XboxGamePass,
             label: 'Xbox Game Pass',
             note: '订阅平台可玩情况',
+          },
+          {
+            href: Routes.Subnautica2Price,
+            label: '价格指南',
+            note: 'Steam、Xbox、Game Pass 和买不买',
           },
           {
             href: Routes.Subnautica2ControllerNotWorking,
