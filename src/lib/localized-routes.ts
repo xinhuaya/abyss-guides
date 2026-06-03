@@ -756,6 +756,8 @@ const zhOnlyRoutes = [
   Routes.Subnautica2Price,
   Routes.Subnautica2FreeDownload,
   Routes.Subnautica2Cheats,
+  Routes.Subnautica2Mods,
+  Routes.Subnautica2VrSupport,
   Routes.Subnautica2SplitScreenCoop,
   Routes.Subnautica2SteamDeckSettings,
   Routes.Subnautica2BlackScreenFreezing,

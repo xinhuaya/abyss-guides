@@ -105,6 +105,8 @@ const homeImageByRoute: Partial<Record<Routes, string>> = {
   [Routes.Subnautica2Price]: '/abyss/chibi-price-check.webp',
   [Routes.Subnautica2FreeDownload]: '/abyss/chibi-safe-download.webp',
   [Routes.Subnautica2Cheats]: '/abyss/chibi-cheat-risk.webp',
+  [Routes.Subnautica2Mods]: '/abyss/chibi-mods-safe-setup.webp',
+  [Routes.Subnautica2VrSupport]: '/abyss/chibi-vr-comfort.webp',
   [Routes.Subnautica2OxygenDepth]: '/abyss/chibi-oxygen-depth.webp',
   [Routes.Subnautica2Scanner]: '/abyss/chibi-crafting-bench.webp',
   [Routes.Subnautica2Resources]: '/abyss/chibi-resource-scan.webp',
@@ -265,6 +267,22 @@ const enCopy: HomeCopy = {
       href: Routes.Subnautica2Cheats,
       icon: AlertTriangleIcon,
       label: 'Risk',
+    },
+    {
+      title: 'Mods safety setup',
+      description:
+        'What to check before installing Subnautica 2 mods during Early Access: backups, hotfixes, co-op, and broken saves.',
+      href: Routes.Subnautica2Mods,
+      icon: WrenchIcon,
+      label: 'Mods',
+    },
+    {
+      title: 'VR support status',
+      description:
+        'Official VR wording, Flat2VR chatter, UEVR-style experiments, comfort checks, and when to wait.',
+      href: Routes.Subnautica2VrSupport,
+      icon: MonitorPlayIcon,
+      label: 'VR',
     },
     {
       title: 'System requirements',

@@ -52,6 +52,8 @@ const abyssMetadataImageByPathname: Record<string, string> = {
   [Routes.Subnautica2Price]: '/abyss/chibi-price-check.webp',
   [Routes.Subnautica2FreeDownload]: '/abyss/chibi-safe-download.webp',
   [Routes.Subnautica2Cheats]: '/abyss/chibi-cheat-risk.webp',
+  [Routes.Subnautica2Mods]: '/abyss/chibi-mods-safe-setup.webp',
+  [Routes.Subnautica2VrSupport]: '/abyss/chibi-vr-comfort.webp',
   [Routes.Subnautica2XboxGamePass]: '/abyss/chibi-platform-briefing.webp',
   [Routes.Subnautica2SystemRequirements]: '/abyss/chibi-platform-briefing.webp',
   [Routes.Subnautica2SteamDeckSettings]:

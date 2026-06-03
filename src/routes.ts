@@ -118,6 +118,8 @@ export enum Routes {
   Subnautica2Price = '/games/subnautica-2/price',
   Subnautica2FreeDownload = '/games/subnautica-2/free-download',
   Subnautica2Cheats = '/games/subnautica-2/cheats',
+  Subnautica2Mods = '/games/subnautica-2/mods',
+  Subnautica2VrSupport = '/games/subnautica-2/vr-support',
   Subnautica2SystemRequirements = '/games/subnautica-2/system-requirements',
   Subnautica2SteamDeckSettings = '/games/subnautica-2/steam-deck-settings',
   Subnautica2BlackScreenFreezing = '/games/subnautica-2/black-screen-freezing',
