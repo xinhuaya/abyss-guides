@@ -1,4 +1,5 @@
 import Container from '@/components/layout/container';
+import { AbyssResourceChecklistCallout } from '@/components/abyss/resource-checklist-callout';
 import { LocaleLink } from '@/i18n/navigation';
 import { constructMetadata } from '@/lib/metadata';
 import { getImageUrl, getUrlWithLocale } from '@/lib/urls';
@@ -2739,6 +2740,10 @@ export default async function Subnautica2HubPage({
               </p>
             </LocaleLink>
           ))}
+        </div>
+
+        <div className="mt-12">
+          <AbyssResourceChecklistCallout locale={locale} />
         </div>
 
         <section className="mt-12 border border-cyan-200/12 bg-[#082226] p-6">

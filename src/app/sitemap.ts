@@ -19,6 +19,7 @@ const staticRoutes = [
   Routes.Subnautica2,
   Routes.Subnautica2Beginner,
   Routes.Subnautica2Resources,
+  Routes.Subnautica2ResourceChecklist,
   Routes.Subnautica2Silver,
   Routes.Subnautica2SilverIngot,
   Routes.Subnautica2Copper,
@@ -234,6 +235,7 @@ function getPriority(route: (typeof staticRoutes)[number]) {
 
   if (
     route === Routes.Subnautica2Resources ||
+    route === Routes.Subnautica2ResourceChecklist ||
     route === Routes.Subnautica2Beginner ||
     route === Routes.Subnautica2Crafting ||
     route === Routes.Subnautica2Updates

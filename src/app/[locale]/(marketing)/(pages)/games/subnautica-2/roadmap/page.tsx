@@ -1,4 +1,5 @@
 import Container from '@/components/layout/container';
+import { AbyssUpdateAlertCard } from '@/components/abyss/update-alert-card';
 import { LocaleLink } from '@/i18n/navigation';
 import {
   ABYSS_OFFICIAL_TRAILER_EMBED_URL,
@@ -2193,6 +2194,8 @@ export default async function RoadmapGuidePage({
                 ))}
               </div>
             </section>
+
+            <AbyssUpdateAlertCard locale={locale} />
           </article>
 
           <aside className="space-y-5 lg:sticky lg:top-24 lg:self-start">

@@ -5,6 +5,7 @@ import {
   fontNotoSansMono,
   fontNotoSerif,
 } from '@/assets/fonts';
+import { GoogleAdsenseScript } from '@/components/ads/adsense-slot';
 import AffonsoScript from '@/components/affiliate/affonso';
 import PromotekitScript from '@/components/affiliate/promotekit';
 import { TailwindIndicator } from '@/components/layout/tailwind-indicator';
@@ -52,6 +53,7 @@ export default async function LocaleLayout({
       <head>
         <AffonsoScript />
         <PromotekitScript />
+        <GoogleAdsenseScript />
       </head>
       <body
         className={cn(

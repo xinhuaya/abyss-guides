@@ -1,3 +1,6 @@
+import { AdsenseSlot } from '@/components/ads/adsense-slot';
+import { AbyssResourceChecklistCallout } from '@/components/abyss/resource-checklist-callout';
+import { AbyssUpdateAlertCard } from '@/components/abyss/update-alert-card';
 import Container from '@/components/layout/container';
 import { LocaleLink } from '@/i18n/navigation';
 import {
@@ -91,6 +94,7 @@ const DEFAULT_GUIDE_IMAGE = '/abyss/chibi-deep-sea-hero.webp';
 const guideImageByPathname: Partial<Record<Routes, string>> = {
   [Routes.Subnautica2Beginner]: '/abyss/chibi-crafting-bench.webp',
   [Routes.Subnautica2Resources]: '/abyss/chibi-resource-scan.webp',
+  [Routes.Subnautica2ResourceChecklist]: '/abyss/chibi-resource-checklist.webp',
   [Routes.Subnautica2Silver]: '/abyss/chibi-resource-scan.webp',
   [Routes.Subnautica2SilverIngot]: '/abyss/chibi-resource-scan.webp',
   [Routes.Subnautica2Copper]: '/abyss/chibi-resource-scan.webp',
@@ -469,6 +473,14 @@ export function LocalizedResourceGuidePage({
   const updatedAt = copy.updatedAt ?? publishedAt;
   const checkedAt = copy.checkedAt ?? formatGuideDate(updatedAt, locale);
   const visualCopy = localizedMediaCopy[locale] ?? localizedMediaCopy.en;
+  const showResourceChecklistCallout =
+    pathname === Routes.Subnautica2Resources ||
+    pathname === Routes.Subnautica2Crafting ||
+    pathname === Routes.Subnautica2Beginner;
+  const showUpdateAlert =
+    pathname === Routes.Subnautica2Updates ||
+    pathname === Routes.Subnautica2Hotfix2 ||
+    pathname === Routes.Subnautica2Hotfix3;
   const jsonLd = [
     {
       '@context': 'https://schema.org',
@@ -675,6 +687,10 @@ export function LocalizedResourceGuidePage({
               </p>
             </section>
 
+            {showResourceChecklistCallout ? (
+              <AbyssResourceChecklistCallout locale={locale} />
+            ) : null}
+
             {copy.fieldNotes?.length || copy.routeChecklist?.length ? (
               <section className="grid gap-4 md:grid-cols-[minmax(0,1fr)_280px]">
                 {copy.fieldNotes?.length ? (
@@ -790,6 +806,11 @@ export function LocalizedResourceGuidePage({
               </div>
             </section>
 
+            <AdsenseSlot
+              className="my-2"
+              slot={process.env.NEXT_PUBLIC_GOOGLE_ADSENSE_ARTICLE_MID_SLOT}
+            />
+
             <section>
               <h2 className="text-3xl font-semibold text-[#effffb]">
                 {copy.routeTitle}
@@ -891,6 +912,13 @@ export function LocalizedResourceGuidePage({
                 {copy.cautionBody}
               </p>
             </section>
+
+            {showUpdateAlert ? <AbyssUpdateAlertCard locale={locale} /> : null}
+
+            <AdsenseSlot
+              className="my-2"
+              slot={process.env.NEXT_PUBLIC_GOOGLE_ADSENSE_ARTICLE_BOTTOM_SLOT}
+            />
 
             <section>
               <h2 className="text-3xl font-semibold text-[#effffb]">

@@ -1,4 +1,6 @@
 import Container from '@/components/layout/container';
+import { AbyssResourceChecklistCallout } from '@/components/abyss/resource-checklist-callout';
+import { AbyssUpdateAlertCard } from '@/components/abyss/update-alert-card';
 import { buttonVariants } from '@/components/ui/button';
 import { LocaleLink } from '@/i18n/navigation';
 import { getBaseUrl, getUrlWithLocale } from '@/lib/urls';
@@ -13,6 +15,7 @@ import {
   CalendarDaysIcon,
   CompassIcon,
   Gamepad2Icon,
+  ListChecksIcon,
   MapIcon,
   MapPinIcon,
   MonitorPlayIcon,
@@ -103,6 +106,7 @@ const homeImageByRoute: Partial<Record<Routes, string>> = {
   [Routes.Subnautica2OxygenDepth]: '/abyss/chibi-oxygen-depth.webp',
   [Routes.Subnautica2Scanner]: '/abyss/chibi-crafting-bench.webp',
   [Routes.Subnautica2Resources]: '/abyss/chibi-resource-scan.webp',
+  [Routes.Subnautica2ResourceChecklist]: '/abyss/chibi-resource-checklist.webp',
   [Routes.Subnautica2Vehicles]: '/abyss/chibi-vehicle-route.webp',
   [Routes.Subnautica2CreaturesLeviathans]: '/abyss/chibi-creature-risk.webp',
   [Routes.Subnautica2BaseLocationTierList]: '/abyss/chibi-base-location.webp',
@@ -400,6 +404,13 @@ const enCopy: HomeCopy = {
     'The site is built around repeatable guide work: routes first, resources second, crafting and map planning after that.',
   coreLinks: [
     {
+      title: 'Resource Checklist',
+      description:
+        'Tick off early materials, base parts, vehicle prep, and crafting blockers in your browser.',
+      href: Routes.Subnautica2ResourceChecklist,
+      icon: ListChecksIcon,
+    },
+    {
       title: 'Resources',
       description:
         'Material locations, farming notes, and page-by-page resource checks.',
@@ -424,7 +435,7 @@ const enCopy: HomeCopy = {
   stats: [
     ['10', 'homepage entry points'],
     ['Hotfix 3', 'latest tracked update'],
-    ['8', 'search locales'],
+    ['1', 'browser-saved checklist'],
   ],
   disclaimerTitle: 'Independent fan guide',
   disclaimerBody:
@@ -1537,7 +1548,7 @@ export function AbyssHome({ locale }: { locale?: Locale }) {
                 {copy.coreDescription}
               </p>
             </div>
-            <div className="grid grid-cols-1 gap-4 md:grid-cols-3">
+            <div className="grid grid-cols-1 gap-4 md:grid-cols-2 xl:grid-cols-4">
               {copy.coreLinks.map((item) => (
                 <LinkCard
                   compact
@@ -1548,6 +1559,13 @@ export function AbyssHome({ locale }: { locale?: Locale }) {
               ))}
             </div>
           </div>
+        </Container>
+      </section>
+
+      <section className="border-b border-cyan-200/10 bg-[#04181c]">
+        <Container className="grid gap-5 px-4 py-14 lg:grid-cols-[minmax(0,1.05fr)_minmax(0,.95fr)]">
+          <AbyssResourceChecklistCallout locale={locale} />
+          <AbyssUpdateAlertCard compact locale={locale} />
         </Container>
       </section>
 
