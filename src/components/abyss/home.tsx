@@ -93,6 +93,9 @@ const homeImageByRoute: Partial<Record<Routes, string>> = {
     '/abyss/chibi-black-screen-freezing.webp',
   [Routes.Subnautica2BestSettingsLowFps]:
     '/abyss/chibi-best-settings-low-fps.webp',
+  [Routes.Subnautica2NotLaunching]: '/abyss/chibi-not-launching.webp',
+  [Routes.Subnautica2GamePassInstallError]:
+    '/abyss/chibi-game-pass-install.webp',
   [Routes.Subnautica2EarlyAccessWorthIt]: '/abyss/chibi-platform-briefing.webp',
   [Routes.Subnautica2Crossplay]: '/abyss/chibi-coop-signal.webp',
   [Routes.Subnautica2DedicatedServer]: '/abyss/chibi-dedicated-server.webp',
@@ -183,6 +186,14 @@ const enCopy: HomeCopy = {
       label: 'Fix',
     },
     {
+      title: 'Not launching',
+      description:
+        'Steam and Xbox app launch checks for Subnautica 2 not opening, stuck splash screens, overlays, files, drivers, and logs.',
+      href: Routes.Subnautica2NotLaunching,
+      icon: AlertTriangleIcon,
+      label: 'Launch',
+    },
+    {
       title: 'Interactive map',
       description:
         'Map-size questions, confirmed map details, and how to plan routes before full tools arrive.',
@@ -243,6 +254,14 @@ const enCopy: HomeCopy = {
       href: Routes.Subnautica2XboxGamePass,
       icon: MonitorPlayIcon,
       label: 'Xbox',
+    },
+    {
+      title: 'Game Pass install error',
+      description:
+        'Xbox app and PC Game Pass install checks for stuck downloads, Gaming Services, storage, account state, and launch handoff.',
+      href: Routes.Subnautica2GamePassInstallError,
+      icon: MonitorPlayIcon,
+      label: 'Install',
     },
     {
       title: 'Price and buying path',
