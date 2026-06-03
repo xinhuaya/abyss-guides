@@ -170,6 +170,7 @@ const copyByLocale: Record<string, SteamDeckCopy> = {
     readNextTitle: 'Read next',
     related: [
       { href: Routes.Subnautica2SystemRequirements, label: 'PC Requirements' },
+      { href: Routes.Subnautica2MacReleaseDate, label: 'Mac Release Date' },
       {
         href: Routes.Subnautica2BestSettingsLowFps,
         label: 'Best Settings for Low FPS',
@@ -328,6 +329,7 @@ const copyByLocale: Record<string, SteamDeckCopy> = {
     readNextTitle: '继续看',
     related: [
       { href: Routes.Subnautica2SystemRequirements, label: 'PC 配置要求' },
+      { href: Routes.Subnautica2MacReleaseDate, label: 'Mac 发售日' },
       {
         href: Routes.Subnautica2ControllerNotWorking,
         label: '手柄没反应',

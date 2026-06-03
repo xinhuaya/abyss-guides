@@ -188,6 +188,7 @@ const copyByLocale: Record<string, SystemRequirementsCopy> = {
         label: 'Best Settings for Low FPS',
       },
       { href: Routes.Subnautica2XboxGamePass, label: 'Xbox Game Pass' },
+      { href: Routes.Subnautica2MacReleaseDate, label: 'Mac Release Date' },
       {
         href: Routes.Subnautica2EarlyAccessWorthIt,
         label: 'Is Early Access Worth It?',
@@ -326,6 +327,7 @@ const copyByLocale: Record<string, SystemRequirementsCopy> = {
         label: 'Steam Deck 设置',
       },
       { href: Routes.Subnautica2XboxGamePass, label: 'Xbox Game Pass' },
+      { href: Routes.Subnautica2MacReleaseDate, label: 'Mac ???' },
       {
         href: Routes.Subnautica2EarlyAccessWorthIt,
         label: '抢先体验值不值得买',

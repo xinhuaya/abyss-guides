@@ -163,6 +163,7 @@ const releaseDateCopy: Record<string, ReleaseDateCopy> = {
         label: 'Switch 2 Release Date',
       },
       { href: Routes.Subnautica2XboxGamePass, label: 'Xbox Game Pass Guide' },
+      { href: Routes.Subnautica2MacReleaseDate, label: 'Mac Release Date' },
       { href: Routes.Subnautica2Hotfix2, label: 'Hotfix 2 Changes' },
       { href: Routes.Subnautica2Coop, label: 'Co-op Guide' },
       { href: Routes.Subnautica2Map, label: 'Map Guide' },
@@ -295,6 +296,7 @@ const releaseDateCopy: Record<string, ReleaseDateCopy> = {
     related: [
       { href: Routes.Subnautica2Updates, label: '路线图和更新' },
       { href: Routes.Subnautica2Switch2ReleaseDate, label: 'Switch 2 发售日' },
+      { href: Routes.Subnautica2MacReleaseDate, label: 'Mac 发售日' },
       { href: Routes.Subnautica2Hotfix2, label: 'Hotfix 2 更新内容' },
       { href: Routes.Subnautica2Coop, label: '联机攻略' },
       { href: Routes.Subnautica2Map, label: '地图攻略' },

@@ -162,6 +162,7 @@ const copyByLocale: Record<string, WorthItCopy> = {
         label: 'System Requirements',
       },
       { href: Routes.Subnautica2XboxGamePass, label: 'Xbox Game Pass' },
+      { href: Routes.Subnautica2MacReleaseDate, label: 'Mac Release Date' },
       { href: Routes.Subnautica2ReleaseDate, label: 'Release Date' },
       {
         href: Routes.Subnautica2Switch2ReleaseDate,
@@ -282,6 +283,7 @@ const copyByLocale: Record<string, WorthItCopy> = {
     related: [
       { href: Routes.Subnautica2SystemRequirements, label: '配置要求' },
       { href: Routes.Subnautica2XboxGamePass, label: 'Xbox Game Pass' },
+      { href: Routes.Subnautica2MacReleaseDate, label: 'Mac 发售日' },
       { href: Routes.Subnautica2ReleaseDate, label: '发售时间' },
       { href: Routes.Subnautica2Switch2ReleaseDate, label: 'Switch 2 发售日' },
       { href: Routes.Subnautica2Crossplay, label: '跨平台联机' },

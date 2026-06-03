@@ -94,6 +94,7 @@ const homeImageByRoute: Partial<Record<Routes, string>> = {
   [Routes.Subnautica2Ps5ReleaseDate]: '/abyss/chibi-platform-briefing.webp',
   [Routes.Subnautica2Switch2ReleaseDate]:
     '/abyss/chibi-switch-2-release-date.webp',
+  [Routes.Subnautica2MacReleaseDate]: '/abyss/chibi-mac-release-date.webp',
   [Routes.Subnautica2OxygenDepth]: '/abyss/chibi-oxygen-depth.webp',
   [Routes.Subnautica2Scanner]: '/abyss/chibi-crafting-bench.webp',
   [Routes.Subnautica2Resources]: '/abyss/chibi-resource-scan.webp',
@@ -277,6 +278,14 @@ const enCopy: HomeCopy = {
       href: Routes.Subnautica2Switch2ReleaseDate,
       icon: Gamepad2Icon,
       label: 'Switch 2',
+    },
+    {
+      title: 'Mac release date',
+      description:
+        'A macOS and Apple Silicon watch page for Mac players checking Steam and official platform wording.',
+      href: Routes.Subnautica2MacReleaseDate,
+      icon: MonitorPlayIcon,
+      label: 'Mac',
     },
     {
       title: 'Controller checklist',
@@ -549,6 +558,14 @@ const zhCopy: HomeCopy = {
       href: Routes.Subnautica2Switch2ReleaseDate,
       icon: Gamepad2Icon,
       label: 'Switch 2',
+    },
+    {
+      title: 'Mac 发售日',
+      description:
+        '给 Mac、macOS 和 Apple Silicon 玩家看的平台状态页，先核对 Steam 和官方来源。',
+      href: Routes.Subnautica2MacReleaseDate,
+      icon: MonitorPlayIcon,
+      label: 'Mac',
     },
     {
       title: '手柄和输入排查',

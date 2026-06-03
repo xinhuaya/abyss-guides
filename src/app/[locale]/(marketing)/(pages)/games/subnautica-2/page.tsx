@@ -2249,6 +2249,11 @@ const guideIndexCopyByLocale: Record<'en' | 'zh', GuideIndexCopy> = {
             note: 'Nintendo platform watch',
           },
           {
+            href: Routes.Subnautica2MacReleaseDate,
+            label: 'Mac release date',
+            note: 'macOS and Apple Silicon watch',
+          },
+          {
             href: Routes.Subnautica2SaveFileLocation,
             label: 'Save file location',
             note: 'Steam backup and cloud notes',
@@ -2510,6 +2515,11 @@ const guideIndexCopyByLocale: Record<'en' | 'zh', GuideIndexCopy> = {
             href: Routes.Subnautica2Switch2ReleaseDate,
             label: 'Switch 2 发售日',
             note: '任天堂平台观察',
+          },
+          {
+            href: Routes.Subnautica2MacReleaseDate,
+            label: 'Mac 发售日',
+            note: 'macOS 和 Apple Silicon 观察',
           },
           {
             href: Routes.Subnautica2SaveFileLocation,
