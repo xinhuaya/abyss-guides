@@ -18,6 +18,7 @@ import {
   MonitorPlayIcon,
   RadioIcon,
   SearchIcon,
+  ServerIcon,
   ShipWheelIcon,
   TimerResetIcon,
   UsersRoundIcon,
@@ -91,6 +92,7 @@ const homeImageByRoute: Partial<Record<Routes, string>> = {
     '/abyss/chibi-best-settings-low-fps.webp',
   [Routes.Subnautica2EarlyAccessWorthIt]: '/abyss/chibi-platform-briefing.webp',
   [Routes.Subnautica2Crossplay]: '/abyss/chibi-coop-signal.webp',
+  [Routes.Subnautica2DedicatedServer]: '/abyss/chibi-dedicated-server.webp',
   [Routes.Subnautica2SplitScreenCoop]: '/abyss/chibi-split-screen-coop.webp',
   [Routes.Subnautica2Ps5ReleaseDate]: '/abyss/chibi-platform-briefing.webp',
   [Routes.Subnautica2Switch2ReleaseDate]:
@@ -265,6 +267,14 @@ const enCopy: HomeCopy = {
       href: Routes.Subnautica2Crossplay,
       icon: UsersRoundIcon,
       label: 'Co-op',
+    },
+    {
+      title: 'Dedicated server status',
+      description:
+        'Host saves, friends joining without the host, server-rental claims, and what official pages actually say.',
+      href: Routes.Subnautica2DedicatedServer,
+      icon: ServerIcon,
+      label: 'Server',
     },
     {
       title: 'Split screen and couch co-op',
@@ -561,6 +571,14 @@ const zhCopy: HomeCopy = {
       href: Routes.Subnautica2Crossplay,
       icon: UsersRoundIcon,
       label: '联机',
+    },
+    {
+      title: '专用服务器状态',
+      description:
+        '房主存档、朋友能否离线加入、租服页面风险，以及官方页面到底怎么写。',
+      href: Routes.Subnautica2DedicatedServer,
+      icon: ServerIcon,
+      label: '服务器',
     },
     {
       title: '分屏和本地双人',

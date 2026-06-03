@@ -156,6 +156,10 @@ const coopCopy: Record<string, CoopCopy> = {
     readNextTitle: 'Read next',
     related: [
       {
+        href: Routes.Subnautica2DedicatedServer,
+        label: 'Dedicated Server Status',
+      },
+      {
         href: Routes.Subnautica2CoopRejoinAfterHotfix3,
         label: 'Co-op Rejoin After Hotfix 3',
       },
@@ -300,6 +304,10 @@ const coopCopy: Record<string, CoopCopy> = {
     ],
     readNextTitle: '继续阅读',
     related: [
+      {
+        href: Routes.Subnautica2DedicatedServer,
+        label: '专用服务器状态',
+      },
       {
         href: Routes.Subnautica2CoopRejoinAfterHotfix3,
         label: 'Hotfix 3 后联机重连',

@@ -2234,6 +2234,11 @@ const guideIndexCopyByLocale: Record<'en' | 'zh', GuideIndexCopy> = {
             note: 'co-op platform checks',
           },
           {
+            href: Routes.Subnautica2DedicatedServer,
+            label: 'Dedicated server',
+            note: 'host saves and rental claims',
+          },
+          {
             href: Routes.Subnautica2SplitScreenCoop,
             label: 'Split screen co-op',
             note: 'local and couch co-op status',
@@ -2515,6 +2520,11 @@ const guideIndexCopyByLocale: Record<'en' | 'zh', GuideIndexCopy> = {
             href: Routes.Subnautica2Crossplay,
             label: '跨平台联机',
             note: '联机平台检查',
+          },
+          {
+            href: Routes.Subnautica2DedicatedServer,
+            label: '专用服务器',
+            note: '房主存档和租服说法',
           },
           {
             href: Routes.Subnautica2SplitScreenCoop,

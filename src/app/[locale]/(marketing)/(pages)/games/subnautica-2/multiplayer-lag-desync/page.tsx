@@ -174,6 +174,10 @@ const copyByLocale: Record<string, LagCopy> = {
     readNextTitle: 'Read next',
     related: [
       {
+        href: Routes.Subnautica2DedicatedServer,
+        label: 'Dedicated Server Status',
+      },
+      {
         href: Routes.Subnautica2MultiplayerNotWorking,
         label: 'Multiplayer Not Working',
       },
@@ -332,6 +336,10 @@ const copyByLocale: Record<string, LagCopy> = {
     ],
     readNextTitle: '继续看',
     related: [
+      {
+        href: Routes.Subnautica2DedicatedServer,
+        label: '专用服务器状态',
+      },
       {
         href: Routes.Subnautica2MultiplayerNotWorking,
         label: '联机失败排查',
