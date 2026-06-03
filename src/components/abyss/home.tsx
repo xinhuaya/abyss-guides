@@ -103,6 +103,8 @@ const homeImageByRoute: Partial<Record<Routes, string>> = {
   [Routes.Subnautica2MacReleaseDate]: '/abyss/chibi-mac-release-date.webp',
   [Routes.Subnautica2OfflineMode]: '/abyss/chibi-offline-mode.webp',
   [Routes.Subnautica2Price]: '/abyss/chibi-price-check.webp',
+  [Routes.Subnautica2FreeDownload]: '/abyss/chibi-safe-download.webp',
+  [Routes.Subnautica2Cheats]: '/abyss/chibi-cheat-risk.webp',
   [Routes.Subnautica2OxygenDepth]: '/abyss/chibi-oxygen-depth.webp',
   [Routes.Subnautica2Scanner]: '/abyss/chibi-crafting-bench.webp',
   [Routes.Subnautica2Resources]: '/abyss/chibi-resource-scan.webp',
@@ -247,6 +249,22 @@ const enCopy: HomeCopy = {
       href: Routes.Subnautica2Price,
       icon: BadgeDollarSignIcon,
       label: 'Price',
+    },
+    {
+      title: 'Free download safety',
+      description:
+        'A compliant answer for free download, crack, torrent, demo, and Game Pass searches.',
+      href: Routes.Subnautica2FreeDownload,
+      icon: AlertTriangleIcon,
+      label: 'Safety',
+    },
+    {
+      title: 'Cheats and trainers',
+      description:
+        'Console-command searches, trainer risks, save backups, co-op trust, and safer route fixes.',
+      href: Routes.Subnautica2Cheats,
+      icon: AlertTriangleIcon,
+      label: 'Risk',
     },
     {
       title: 'System requirements',

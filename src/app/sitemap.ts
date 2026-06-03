@@ -125,6 +125,8 @@ const staticRoutes = [
   Routes.Subnautica2XboxGamePass,
   Routes.Subnautica2OfflineMode,
   Routes.Subnautica2Price,
+  Routes.Subnautica2FreeDownload,
+  Routes.Subnautica2Cheats,
   Routes.Subnautica2SystemRequirements,
   Routes.Subnautica2SteamDeckSettings,
   Routes.Subnautica2BlackScreenFreezing,
@@ -195,6 +197,8 @@ function getChangeFrequency(
     route === Routes.Subnautica2MacReleaseDate ||
     route === Routes.Subnautica2OfflineMode ||
     route === Routes.Subnautica2Price ||
+    route === Routes.Subnautica2FreeDownload ||
+    route === Routes.Subnautica2Cheats ||
     route === Routes.Subnautica2TadpoleParkingAfterHotfix3 ||
     route === Routes.Subnautica2DlssSettingsAfterHotfix3 ||
     route === Routes.Subnautica2HammerheadAfterHotfix3 ||
