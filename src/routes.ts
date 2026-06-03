@@ -99,6 +99,8 @@ export enum Routes {
   Subnautica2CoopPlayerCount = '/games/subnautica-2/co-op-player-count',
   Subnautica2DedicatedServer = '/games/subnautica-2/dedicated-server',
   Subnautica2SplitScreenCoop = '/games/subnautica-2/split-screen-coop',
+  Subnautica2VoiceChat = '/games/subnautica-2/voice-chat',
+  Subnautica2Sprint = '/games/subnautica-2/sprint',
   Subnautica2Crossplay = '/games/subnautica-2/crossplay',
   Subnautica2MultiplayerNotWorking = '/games/subnautica-2/multiplayer-not-working',
   Subnautica2MultiplayerLagDesync = '/games/subnautica-2/multiplayer-lag-desync',

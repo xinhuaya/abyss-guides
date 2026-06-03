@@ -103,6 +103,8 @@ const homeImageByRoute: Partial<Record<Routes, string>> = {
   [Routes.Subnautica2Crossplay]: '/abyss/chibi-coop-signal.webp',
   [Routes.Subnautica2DedicatedServer]: '/abyss/chibi-dedicated-server.webp',
   [Routes.Subnautica2SplitScreenCoop]: '/abyss/chibi-split-screen-coop.webp',
+  [Routes.Subnautica2VoiceChat]: '/abyss/chibi-voice-chat-roadmap.webp',
+  [Routes.Subnautica2Sprint]: '/abyss/chibi-sprint-roadmap.webp',
   [Routes.Subnautica2Ps5ReleaseDate]: '/abyss/chibi-platform-briefing.webp',
   [Routes.Subnautica2Switch2ReleaseDate]:
     '/abyss/chibi-switch-2-release-date.webp',
@@ -143,7 +145,7 @@ const enCopy: HomeCopy = {
   primaryCta: 'Start the beginner route',
   secondaryCta: 'Find a resource',
   latestTitle: 'Homepage focus',
-  latestHeading: 'The ten pages players need first',
+  latestHeading: 'The pages players need first',
   latestDescription:
     'This front page is built around search intent, not filler. New players need a route, returning players need update notes, and undecided players need platform answers before they buy or install.',
   openLabel: 'Open',
@@ -361,6 +363,22 @@ const enCopy: HomeCopy = {
       href: Routes.Subnautica2SplitScreenCoop,
       icon: MonitorPlayIcon,
       label: 'Local co-op',
+    },
+    {
+      title: 'Voice chat status',
+      description:
+        'What the roadmap says about voice chat, how to handle co-op audio today, and what not to assume yet.',
+      href: Routes.Subnautica2VoiceChat,
+      icon: RadioIcon,
+      label: 'Audio',
+    },
+    {
+      title: 'Sprint status',
+      description:
+        'A roadmap watch page for sprint searches, movement comfort, stamina assumptions, and current workarounds.',
+      href: Routes.Subnautica2Sprint,
+      icon: CompassIcon,
+      label: 'Movement',
     },
     {
       title: 'PS5 release date',

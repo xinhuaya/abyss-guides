@@ -108,6 +108,8 @@ const staticRoutes = [
   Routes.Subnautica2CoopPlayerCount,
   Routes.Subnautica2DedicatedServer,
   Routes.Subnautica2SplitScreenCoop,
+  Routes.Subnautica2VoiceChat,
+  Routes.Subnautica2Sprint,
   Routes.Subnautica2Crossplay,
   Routes.Subnautica2MultiplayerNotWorking,
   Routes.Subnautica2MultiplayerLagDesync,
@@ -215,6 +217,8 @@ function getChangeFrequency(
     route === Routes.Subnautica2ControllerNotWorking ||
     route === Routes.Subnautica2DedicatedServer ||
     route === Routes.Subnautica2SplitScreenCoop ||
+    route === Routes.Subnautica2VoiceChat ||
+    route === Routes.Subnautica2Sprint ||
     route === Routes.Subnautica2CoopRejoinAfterHotfix3 ||
     route === Routes.Subnautica2InteriorWallCostAfterHotfix3 ||
     route === Routes.Subnautica2NibblersMarrowbreachAfterHotfix3 ||
