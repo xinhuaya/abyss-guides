@@ -228,6 +228,9 @@ const guideImageByPathname: Partial<Record<Routes, string>> = {
   [Routes.Subnautica2NotLaunching]: '/abyss/chibi-not-launching.webp',
   [Routes.Subnautica2GamePassInstallError]:
     '/abyss/chibi-game-pass-install.webp',
+  [Routes.Subnautica2StuckLoadingSave]: '/abyss/chibi-stuck-loading-save.webp',
+  [Routes.Subnautica2SteamDownloadStuck]:
+    '/abyss/chibi-steam-download-stuck.webp',
   [Routes.Subnautica2SaveFileLocation]: '/abyss/chibi-save-backup-guide.webp',
   [Routes.Subnautica2SaveRecoveryCloudSync]:
     '/abyss/chibi-save-recovery-cloud-sync.webp',
@@ -572,7 +575,7 @@ export function LocalizedResourceGuidePage({
   ];
 
   return (
-    <main className="min-h-screen bg-[#031314] text-[#dff8f0]">
+    <main className="min-h-screen overflow-x-hidden bg-[#031314] text-[#dff8f0] [overflow-wrap:anywhere]">
       <script type="application/ld+json">{JSON.stringify(jsonLd)}</script>
       <section className="relative overflow-hidden border-b border-cyan-200/10">
         <div
@@ -596,22 +599,22 @@ export function LocalizedResourceGuidePage({
           className="absolute inset-0 bg-[linear-gradient(90deg,rgba(1,12,18,.96)_0%,rgba(3,19,20,.86)_46%,rgba(3,19,20,.55)_74%,rgba(1,9,12,.74)_100%),radial-gradient(circle_at_18%_80%,rgba(240,139,79,.12),transparent_30%),linear-gradient(180deg,rgba(3,19,20,.16),rgba(1,9,12,.96))]"
         />
         <Container className="relative px-4 py-16 md:py-24">
-          <div className="grid gap-8 lg:grid-cols-[minmax(0,1fr)_340px] lg:items-end">
-            <div className="max-w-4xl">
+          <div className="grid min-w-0 gap-8 lg:grid-cols-[minmax(0,1fr)_340px] lg:items-end">
+            <div className="min-w-0 max-w-4xl">
               <div className="mb-6 inline-flex items-center gap-2 border border-cyan-200/20 bg-cyan-300/10 px-3 py-1 text-sm font-medium text-cyan-100">
                 <Icon className="size-4" />
                 {copy.eyebrow}
               </div>
-              <h1 className="text-balance break-words text-3xl font-semibold leading-tight text-[#e8fff9] sm:text-4xl md:text-6xl">
+              <h1 className="max-w-full break-words text-2xl font-semibold leading-tight text-[#e8fff9] sm:text-4xl md:text-6xl">
                 {copy.title}
               </h1>
-              <p className="mt-6 max-w-3xl text-lg leading-8 text-[#a9c9c3]">
+              <p className="mt-6 max-w-3xl text-base leading-7 text-[#a9c9c3] sm:text-lg sm:leading-8">
                 {copy.description}
               </p>
             </div>
-            <aside className="border border-cyan-200/20 bg-[#041d22]/88 p-5 shadow-2xl shadow-cyan-950/40 backdrop-blur-md">
+            <aside className="min-w-0 border border-cyan-200/20 bg-[#041d22]/88 p-5 shadow-2xl shadow-cyan-950/40 backdrop-blur-md">
               <div className="flex items-center justify-between border-b border-cyan-200/15 pb-3 text-xs uppercase tracking-[0.18em] text-[#9fe6d4]">
-                <span>{copy.cardKicker}</span>
+                <span className="min-w-0 break-words">{copy.cardKicker}</span>
                 <span>EA</span>
               </div>
               <div className="mt-5 flex items-start gap-4">
@@ -659,8 +662,8 @@ export function LocalizedResourceGuidePage({
       </section>
 
       <Container className="px-4 py-12">
-        <div className="grid gap-6 lg:grid-cols-[minmax(0,1fr)_320px]">
-          <article className="space-y-8">
+        <div className="grid min-w-0 gap-6 lg:grid-cols-[minmax(0,1fr)_320px]">
+          <article className="min-w-0 space-y-8">
             <nav
               aria-label={copy.contentsLabel}
               className="border border-cyan-200/12 bg-[#071f23] p-5"
@@ -674,12 +677,12 @@ export function LocalizedResourceGuidePage({
               <div className="mt-4 grid gap-2 md:grid-cols-2">
                 {copy.routeSteps.map((section, index) => (
                   <a
-                    className="flex items-center gap-2 border border-cyan-200/10 bg-cyan-300/5 px-3 py-2 text-sm text-[#d1e8e2] hover:border-cyan-200/30 hover:text-[#78ead7]"
+                    className="flex min-w-0 items-center gap-2 border border-cyan-200/10 bg-cyan-300/5 px-3 py-2 text-sm text-[#d1e8e2] hover:border-cyan-200/30 hover:text-[#78ead7]"
                     href={`#route-step-${index + 1}`}
                     key={section.title}
                   >
-                    <ChevronRightIcon className="size-4 text-[#f08b4f]" />
-                    {section.title}
+                    <ChevronRightIcon className="size-4 shrink-0 text-[#f08b4f]" />
+                    <span className="min-w-0 break-words">{section.title}</span>
                   </a>
                 ))}
               </div>
@@ -689,7 +692,7 @@ export function LocalizedResourceGuidePage({
               <p className="text-sm font-semibold uppercase tracking-[0.18em] text-[#f08b4f]">
                 {copy.quickLabel}
               </p>
-              <p className="mt-4 text-lg leading-8 text-[#d7eee8]">
+              <p className="mt-4 text-base leading-7 text-[#d7eee8] sm:text-lg sm:leading-8">
                 {copy.quickAnswer}
               </p>
             </section>
@@ -754,7 +757,7 @@ export function LocalizedResourceGuidePage({
             ) : null}
 
             <section>
-              <h2 className="text-3xl font-semibold text-[#effffb]">
+              <h2 className="text-2xl font-semibold text-[#effffb] sm:text-3xl">
                 {visualCopy.title}
               </h2>
               <div className="mt-5 grid gap-4 lg:grid-cols-[0.85fr_1.15fr]">
@@ -819,7 +822,7 @@ export function LocalizedResourceGuidePage({
             />
 
             <section>
-              <h2 className="text-3xl font-semibold text-[#effffb]">
+              <h2 className="text-2xl font-semibold text-[#effffb] sm:text-3xl">
                 {copy.routeTitle}
               </h2>
               <div className="mt-5 grid gap-4">
@@ -829,9 +832,11 @@ export function LocalizedResourceGuidePage({
                     id={`route-step-${index + 1}`}
                     key={section.title}
                   >
-                    <div className="flex items-center gap-2 text-[#78ead7]">
-                      <RadarIcon className="size-4" />
-                      <h3 className="font-semibold">{section.title}</h3>
+                    <div className="flex min-w-0 items-center gap-2 text-[#78ead7]">
+                      <RadarIcon className="size-4 shrink-0" />
+                      <h3 className="min-w-0 break-words font-semibold">
+                        {section.title}
+                      </h3>
                     </div>
                     <p className="mt-3 leading-7 text-[#abc8c3]">
                       {section.body}
@@ -843,7 +848,7 @@ export function LocalizedResourceGuidePage({
 
             {copy.visualItems && copy.visualItems.length > 0 ? (
               <section>
-                <h2 className="text-3xl font-semibold text-[#effffb]">
+                <h2 className="text-2xl font-semibold text-[#effffb] sm:text-3xl">
                   {copy.visualTitle}
                 </h2>
                 <div className="mt-5 grid gap-4 md:grid-cols-3">
@@ -879,11 +884,11 @@ export function LocalizedResourceGuidePage({
             ) : null}
 
             <section>
-              <h2 className="text-3xl font-semibold text-[#effffb]">
+              <h2 className="text-2xl font-semibold text-[#effffb] sm:text-3xl">
                 {copy.tableTitle}
               </h2>
-              <div className="mt-5 overflow-hidden border border-cyan-200/12">
-                <table className="w-full border-collapse bg-[#071f23] text-left text-sm">
+              <div className="mt-5 overflow-x-auto border border-cyan-200/12">
+                <table className="min-w-[520px] border-collapse bg-[#071f23] text-left text-sm sm:w-full sm:min-w-0">
                   <thead className="bg-[#0b2d33] text-[#dff8f0]">
                     <tr>
                       <th className="p-4 font-semibold">
@@ -910,8 +915,8 @@ export function LocalizedResourceGuidePage({
 
             <section className="border border-cyan-200/12 bg-[#082226] p-6">
               <div className="flex items-center gap-3">
-                <AlertTriangleIcon className="size-6 text-[#f08b4f]" />
-                <h2 className="text-3xl font-semibold text-[#effffb]">
+                <AlertTriangleIcon className="size-6 shrink-0 text-[#f08b4f]" />
+                <h2 className="text-2xl font-semibold text-[#effffb] sm:text-3xl">
                   {copy.cautionTitle}
                 </h2>
               </div>
@@ -928,7 +933,7 @@ export function LocalizedResourceGuidePage({
             />
 
             <section>
-              <h2 className="text-3xl font-semibold text-[#effffb]">
+              <h2 className="text-2xl font-semibold text-[#effffb] sm:text-3xl">
                 {copy.faqTitle}
               </h2>
               <div className="mt-5 grid gap-4">
@@ -937,9 +942,11 @@ export function LocalizedResourceGuidePage({
                     className="border border-cyan-200/12 bg-[#071f23] p-5"
                     key={faq.title}
                   >
-                    <div className="flex items-center gap-2 text-[#78ead7]">
-                      <HelpCircleIcon className="size-4" />
-                      <h3 className="font-semibold">{faq.title}</h3>
+                    <div className="flex min-w-0 items-center gap-2 text-[#78ead7]">
+                      <HelpCircleIcon className="size-4 shrink-0" />
+                      <h3 className="min-w-0 break-words font-semibold">
+                        {faq.title}
+                      </h3>
                     </div>
                     <p className="mt-3 leading-7 text-[#abc8c3]">{faq.body}</p>
                   </section>
@@ -948,7 +955,7 @@ export function LocalizedResourceGuidePage({
             </section>
           </article>
 
-          <aside className="space-y-5 lg:sticky lg:top-24 lg:self-start">
+          <aside className="min-w-0 space-y-5 lg:sticky lg:top-24 lg:self-start">
             <section className="overflow-hidden border border-cyan-200/12 bg-[#071f23]">
               <div
                 aria-hidden="true"

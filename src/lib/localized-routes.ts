@@ -764,6 +764,8 @@ const zhOnlyRoutes = [
   Routes.Subnautica2BestSettingsLowFps,
   Routes.Subnautica2NotLaunching,
   Routes.Subnautica2GamePassInstallError,
+  Routes.Subnautica2StuckLoadingSave,
+  Routes.Subnautica2SteamDownloadStuck,
   Routes.Subnautica2SaveFileLocation,
   Routes.Subnautica2SaveRecoveryCloudSync,
   Routes.Subnautica2AdvancedWiringKit,

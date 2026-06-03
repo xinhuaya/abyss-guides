@@ -135,6 +135,8 @@ const staticRoutes = [
   Routes.Subnautica2BestSettingsLowFps,
   Routes.Subnautica2NotLaunching,
   Routes.Subnautica2GamePassInstallError,
+  Routes.Subnautica2StuckLoadingSave,
+  Routes.Subnautica2SteamDownloadStuck,
   Routes.Subnautica2SaveFileLocation,
   Routes.Subnautica2SaveRecoveryCloudSync,
   Routes.Subnautica2EarlyAccessWorthIt,
@@ -223,6 +225,8 @@ function getChangeFrequency(
     route === Routes.Subnautica2BestSettingsLowFps ||
     route === Routes.Subnautica2NotLaunching ||
     route === Routes.Subnautica2GamePassInstallError ||
+    route === Routes.Subnautica2StuckLoadingSave ||
+    route === Routes.Subnautica2SteamDownloadStuck ||
     route === Routes.Subnautica2SaveFileLocation ||
     route === Routes.Subnautica2SaveRecoveryCloudSync
   ) {

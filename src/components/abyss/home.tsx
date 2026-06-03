@@ -96,6 +96,9 @@ const homeImageByRoute: Partial<Record<Routes, string>> = {
   [Routes.Subnautica2NotLaunching]: '/abyss/chibi-not-launching.webp',
   [Routes.Subnautica2GamePassInstallError]:
     '/abyss/chibi-game-pass-install.webp',
+  [Routes.Subnautica2StuckLoadingSave]: '/abyss/chibi-stuck-loading-save.webp',
+  [Routes.Subnautica2SteamDownloadStuck]:
+    '/abyss/chibi-steam-download-stuck.webp',
   [Routes.Subnautica2EarlyAccessWorthIt]: '/abyss/chibi-platform-briefing.webp',
   [Routes.Subnautica2Crossplay]: '/abyss/chibi-coop-signal.webp',
   [Routes.Subnautica2DedicatedServer]: '/abyss/chibi-dedicated-server.webp',
@@ -194,6 +197,14 @@ const enCopy: HomeCopy = {
       label: 'Launch',
     },
     {
+      title: 'Stuck loading save',
+      description:
+        'A save-safe checklist for endless loading, cloud sync waits, co-op saves, modded files, and when to restore a backup.',
+      href: Routes.Subnautica2StuckLoadingSave,
+      icon: AlertTriangleIcon,
+      label: 'Save',
+    },
+    {
       title: 'Interactive map',
       description:
         'Map-size questions, confirmed map details, and how to plan routes before full tools arrive.',
@@ -262,6 +273,14 @@ const enCopy: HomeCopy = {
       href: Routes.Subnautica2GamePassInstallError,
       icon: MonitorPlayIcon,
       label: 'Install',
+    },
+    {
+      title: 'Steam download stuck',
+      description:
+        'Steam update and download checks for paused progress, disk write issues, file verification, storage, and stuck patching.',
+      href: Routes.Subnautica2SteamDownloadStuck,
+      icon: MonitorPlayIcon,
+      label: 'Steam',
     },
     {
       title: 'Price and buying path',

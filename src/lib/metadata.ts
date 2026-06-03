@@ -65,6 +65,9 @@ const abyssMetadataImageByPathname: Record<string, string> = {
   [Routes.Subnautica2NotLaunching]: '/abyss/chibi-not-launching.webp',
   [Routes.Subnautica2GamePassInstallError]:
     '/abyss/chibi-game-pass-install.webp',
+  [Routes.Subnautica2StuckLoadingSave]: '/abyss/chibi-stuck-loading-save.webp',
+  [Routes.Subnautica2SteamDownloadStuck]:
+    '/abyss/chibi-steam-download-stuck.webp',
   [Routes.Subnautica2SaveFileLocation]: '/abyss/chibi-save-backup-guide.webp',
   [Routes.Subnautica2SaveRecoveryCloudSync]:
     '/abyss/chibi-save-recovery-cloud-sync.webp',

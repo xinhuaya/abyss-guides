@@ -126,6 +126,8 @@ export enum Routes {
   Subnautica2BestSettingsLowFps = '/games/subnautica-2/best-settings-low-fps',
   Subnautica2NotLaunching = '/games/subnautica-2/not-launching',
   Subnautica2GamePassInstallError = '/games/subnautica-2/game-pass-install-error',
+  Subnautica2StuckLoadingSave = '/games/subnautica-2/stuck-loading-save',
+  Subnautica2SteamDownloadStuck = '/games/subnautica-2/steam-download-stuck',
   Subnautica2SaveFileLocation = '/games/subnautica-2/save-file-location',
   Subnautica2SaveRecoveryCloudSync = '/games/subnautica-2/save-recovery-cloud-sync',
   Subnautica2EarlyAccessWorthIt = '/games/subnautica-2/early-access-worth-it',
