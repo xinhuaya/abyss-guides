@@ -2655,6 +2655,11 @@ export default async function Subnautica2HubPage({
       }))
     ),
   ]);
+  const featuredPriorityResources = copy.priorityResources.slice(0, 8);
+  const hiddenPriorityCount = Math.max(
+    0,
+    copy.priorityResources.length - featuredPriorityResources.length
+  );
   const jsonLd = [
     {
       '@context': 'https://schema.org',
@@ -2713,7 +2718,7 @@ export default async function Subnautica2HubPage({
   return (
     <main className="bg-[#031314] text-[#dff8f0]">
       <script type="application/ld+json">{JSON.stringify(jsonLd)}</script>
-      <Container className="px-4 py-16 md:py-24">
+      <Container className="px-4 py-12 md:py-16">
         <div className="max-w-3xl">
           <p className="text-sm font-semibold uppercase tracking-[0.18em] text-[#bf6f45]">
             {copy.updated}
@@ -2726,7 +2731,7 @@ export default async function Subnautica2HubPage({
           </p>
         </div>
 
-        <div className="mt-12 grid gap-4 md:grid-cols-2 lg:grid-cols-3">
+        <div className="mt-10 grid gap-4 md:grid-cols-2 lg:grid-cols-3">
           {copy.sections.map((section) => (
             <LocaleLink
               key={section.title}
@@ -2742,25 +2747,39 @@ export default async function Subnautica2HubPage({
           ))}
         </div>
 
-        <div className="mt-12">
+        <div className="mt-10">
           <AbyssResourceChecklistCallout locale={locale} />
         </div>
 
-        <section className="mt-12 border border-cyan-200/12 bg-[#082226] p-6">
-          <p className="text-sm font-semibold uppercase tracking-[0.18em] text-[#bf6f45]">
-            {copy.priorityEyebrow}
-          </p>
-          <h2 className="mt-3 text-2xl font-semibold text-[#effffb]">
-            {copy.priorityTitle}
-          </h2>
-          <div className="mt-5 grid gap-4 md:grid-cols-2">
-            {copy.priorityResources.map((item) => (
+        <section className="mt-10 overflow-hidden border border-cyan-200/12 bg-[#082226]">
+          <div className="border-b border-cyan-200/12 bg-[linear-gradient(135deg,rgba(120,234,215,.08),rgba(3,19,20,.32)_45%,rgba(240,139,79,.08))] p-5 md:p-6">
+            <div className="flex flex-col gap-4 md:flex-row md:items-end md:justify-between">
+              <div className="max-w-3xl">
+                <p className="text-sm font-semibold uppercase tracking-[0.18em] text-[#bf6f45]">
+                  {copy.priorityEyebrow}
+                </p>
+                <h2 className="mt-3 text-2xl font-semibold text-[#effffb]">
+                  {copy.priorityTitle}
+                </h2>
+              </div>
+              {hiddenPriorityCount ? (
+                <LocaleLink
+                  className="inline-flex w-fit border border-cyan-200/18 px-4 py-2 text-sm font-semibold text-[#78ead7] transition hover:border-cyan-200/45 hover:bg-cyan-300/10"
+                  href="#subnautica-2-guide-index"
+                >
+                  {hiddenPriorityCount} more in index
+                </LocaleLink>
+              ) : null}
+            </div>
+          </div>
+          <div className="grid gap-3 p-5 sm:grid-cols-2 lg:grid-cols-4 lg:p-6">
+            {featuredPriorityResources.map((item) => (
               <LocaleLink
                 key={item.title}
                 href={item.href}
-                className="border border-cyan-200/12 bg-[#071f23] p-5 transition hover:-translate-y-1 hover:border-cyan-200/40"
+                className="group min-w-0 border border-cyan-200/12 bg-[#071f23] p-4 transition hover:-translate-y-0.5 hover:border-cyan-200/40 hover:bg-[#0a2a30]"
               >
-                <h3 className="text-xl font-semibold text-[#78ead7]">
+                <h3 className="break-words text-lg font-semibold text-[#78ead7] group-hover:text-[#9ff5e8]">
                   {item.title}
                 </h3>
                 <p className="mt-3 text-sm leading-6 text-[#abc8c3]">
@@ -2773,7 +2792,7 @@ export default async function Subnautica2HubPage({
 
         <section
           id="subnautica-2-guide-index"
-          className="mt-12 border-y border-cyan-200/12 py-8"
+          className="mt-10 border-y border-cyan-200/12 py-8"
         >
           <div className="max-w-3xl">
             <p className="text-sm font-semibold uppercase tracking-[0.18em] text-[#bf6f45]">
@@ -2786,7 +2805,7 @@ export default async function Subnautica2HubPage({
               {guideIndex.description}
             </p>
           </div>
-          <div className="mt-7 grid gap-4 lg:grid-cols-5">
+          <div className="mt-7 grid gap-4 md:grid-cols-2 xl:grid-cols-3">
             {guideIndex.groups.map((group) => (
               <div
                 key={group.title}
@@ -2816,7 +2835,7 @@ export default async function Subnautica2HubPage({
           </div>
         </section>
 
-        <section className="mt-12 border border-cyan-200/12 bg-[#041b20] p-6">
+        <section className="mt-10 border border-cyan-200/12 bg-[#041b20] p-6">
           <p className="text-sm font-semibold uppercase tracking-[0.18em] text-[#bf6f45]">
             {copy.routeClustersEyebrow}
           </p>
@@ -2856,7 +2875,7 @@ export default async function Subnautica2HubPage({
           </div>
         </section>
 
-        <section className="mt-12 overflow-hidden border border-cyan-200/12 bg-[#071f23]">
+        <section className="mt-10 overflow-hidden border border-cyan-200/12 bg-[#071f23]">
           <div className="border-b border-cyan-200/12 bg-[#0a2a30] p-6">
             <p className="text-sm font-semibold uppercase tracking-[0.18em] text-[#f08b4f]">
               {copy.patchEyebrow}
@@ -2888,7 +2907,7 @@ export default async function Subnautica2HubPage({
 
         <section
           id="updates"
-          className="mt-12 border border-cyan-200/12 bg-[#082226] p-6"
+          className="mt-10 border border-cyan-200/12 bg-[#082226] p-6"
         >
           <h2 className="text-2xl font-semibold">{copy.editorialTitle}</h2>
           <p className="mt-4 max-w-3xl leading-8 text-[#abc8c3]">
@@ -2896,7 +2915,7 @@ export default async function Subnautica2HubPage({
           </p>
         </section>
 
-        <p className="mt-12 text-sm leading-6 text-[#8ba39e]">
+        <p className="mt-10 text-sm leading-6 text-[#8ba39e]">
           {copy.disclaimer}
         </p>
       </Container>
