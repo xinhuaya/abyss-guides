@@ -77,6 +77,19 @@ type ResourcePill = {
   group: string;
 };
 
+type CategoryLink = HomeLink & {
+  count: string;
+};
+
+type HomeSectionText = {
+  categoryEyebrow: string;
+  categoryHeading: string;
+  categoryDescription: string;
+  featuredEyebrow: string;
+  featuredHeading: string;
+  featuredDescription: string;
+};
+
 const homeImageByRoute: Partial<Record<Routes, string>> = {
   [Routes.Subnautica2Beginner]: '/abyss/chibi-crafting-bench.webp',
   [Routes.Subnautica2Hotfix2]: '/abyss/chibi-update-console.webp',
@@ -128,17 +141,23 @@ const homeImageByRoute: Partial<Record<Routes, string>> = {
   [Routes.Subnautica2Resources]: '/abyss/chibi-resource-scan.webp',
   [Routes.Subnautica2ResourceChecklist]: '/abyss/chibi-resource-checklist.webp',
   [Routes.Subnautica2Vehicles]: '/abyss/chibi-vehicle-route.webp',
+  [Routes.Subnautica2InsufficientSpaceToDock]:
+    '/abyss/chibi-base-location.webp',
   [Routes.Subnautica2CreaturesLeviathans]: '/abyss/chibi-creature-risk.webp',
   [Routes.Subnautica2BaseLocationTierList]: '/abyss/chibi-base-location.webp',
   [Routes.Subnautica2MapSizeBiomes]: '/abyss/chibi-map-exploration.webp',
   [Routes.Subnautica2Crafting]: '/abyss/chibi-crafting-bench.webp',
   [Routes.Subnautica2Map]: '/abyss/chibi-map-exploration.webp',
   [Routes.Subnautica2Silver]: '/abyss/chibi-resource-scan.webp',
+  [Routes.Subnautica2Moonpool]: '/abyss/chibi-resource-checklist.webp',
+  [Routes.Subnautica2TadpoleDock]: '/abyss/chibi-vehicle-route.webp',
+  [Routes.Subnautica2BaseBuilding]: '/abyss/chibi-base-location.webp',
+  [Routes.Subnautica2Hotfix3]: '/abyss/chibi-update-console.webp',
+  [Routes.Subnautica2Coop]: '/abyss/chibi-coop-signal.webp',
   [Routes.Subnautica2Troilite]: '/abyss/chibi-resource-scan.webp',
   [Routes.Subnautica2Atacamite]: '/abyss/chibi-resource-scan.webp',
   [Routes.Subnautica2Mangalloy]: '/abyss/chibi-resource-scan.webp',
   [Routes.Subnautica2Tadpole]: '/abyss/chibi-vehicle-route.webp',
-  [Routes.Subnautica2Hotfix3]: '/abyss/chibi-update-console.webp',
 };
 
 const enCopy: HomeCopy = {
@@ -1343,6 +1362,146 @@ function getMissionBoardCopy(locale?: Locale) {
   };
 }
 
+function getHomeSectionText(locale?: Locale): HomeSectionText {
+  if (locale === 'zh') {
+    return {
+      categoryEyebrow: '攻略入口',
+      categoryHeading: '按你现在要解决的事情进入',
+      categoryDescription:
+        '首页保持轻量，把新手路线、资源、联机平台和更新修复分开。更长的攻略列表放到对应分类页里，不在首页堆满。',
+      featuredEyebrow: '当前热门问题',
+      featuredHeading: '先处理玩家最常搜索的卡点',
+      featuredDescription:
+        '这些页面来自 Search Console 已经露出的搜索意图：停靠空间、Moonpool、联机和补丁变化。',
+    };
+  }
+
+  if (locale === 'ja') {
+    return {
+      categoryEyebrow: 'Guide paths',
+      categoryHeading: 'Start from the job you need to finish',
+      categoryDescription:
+        'The homepage stays short. Long lists live in the guide hub, resource pages, platform pages, and troubleshooting paths.',
+      featuredEyebrow: 'High-intent fixes',
+      featuredHeading: 'Solve the problems players are already searching',
+      featuredDescription:
+        'These picks focus on docking space, Moonpool routing, co-op, and current patch changes.',
+    };
+  }
+
+  return {
+    categoryEyebrow: 'Guide paths',
+    categoryHeading: 'Start from the job you need to finish',
+    categoryDescription:
+      'The homepage stays short. Deep article lists live in the guide hub, resource pages, platform pages, and troubleshooting paths.',
+    featuredEyebrow: 'High-intent fixes',
+    featuredHeading: 'Solve the problems players are already searching',
+    featuredDescription:
+      'These picks focus on docking space, Moonpool routing, co-op, and current patch changes.',
+  };
+}
+
+function getHomeCategoryLinks(copy: HomeCopy, locale?: Locale): CategoryLink[] {
+  if (locale === 'zh') {
+    return [
+      {
+        title: '新手路线',
+        description:
+          '从第一小时路线、氧气深度、Scanner、基地位置和 Tadpole 规划开始。',
+        href: Routes.Subnautica2Beginner,
+        icon: CompassIcon,
+        count: '入门',
+      },
+      {
+        title: '资源与制作',
+        description:
+          'Silver、Troilite、Atacamite、Mangalloy 和常用制作链集中查。',
+        href: Routes.Subnautica2Resources,
+        icon: BoxesIcon,
+        count: '材料',
+      },
+      {
+        title: '联机与平台',
+        description:
+          '好友代码、服务器状态、Xbox Game Pass、云游戏和跨平台问题。',
+        href: Routes.Subnautica2Coop,
+        icon: UsersRoundIcon,
+        count: '联机',
+      },
+      {
+        title: '更新与修复',
+        description:
+          'Hotfix、停靠空间、黑屏、低 FPS、云存档和启动失败优先排查。',
+        href: Routes.Subnautica2Hotfix3,
+        icon: WrenchIcon,
+        count: '修复',
+      },
+    ];
+  }
+
+  return [
+    {
+      title: 'Beginner route',
+      description:
+        'First-hour route, oxygen depth, Scanner progress, base placement, and Tadpole planning.',
+      href: Routes.Subnautica2Beginner,
+      icon: CompassIcon,
+      count: 'Start',
+    },
+    {
+      title: 'Resources and crafting',
+      description:
+        'Silver, Troilite, Atacamite, Mangalloy, and the early crafting chains players keep checking.',
+      href: Routes.Subnautica2Resources,
+      icon: BoxesIcon,
+      count: 'Materials',
+    },
+    {
+      title: 'Co-op and platforms',
+      description:
+        'Friend codes, server status, Game Pass, cloud gaming, crossplay, and install questions.',
+      href: Routes.Subnautica2Coop,
+      icon: UsersRoundIcon,
+      count: 'Co-op',
+    },
+    {
+      title: 'Updates and fixes',
+      description:
+        'Hotfix notes, docking space, black screens, low FPS, cloud saves, and launch problems.',
+      href: Routes.Subnautica2Hotfix3,
+      icon: WrenchIcon,
+      count: 'Fixes',
+    },
+  ];
+}
+
+function getFeaturedHomeLinks(copy: HomeCopy): HomeLink[] {
+  const preferredRoutes = [
+    Routes.Subnautica2InsufficientSpaceToDock,
+    Routes.Subnautica2Moonpool,
+    Routes.Subnautica2Hotfix3,
+    Routes.Subnautica2FriendCode,
+    Routes.Subnautica2ServerStatus,
+    Routes.Subnautica2SteamCloudSave,
+  ];
+  const sourceLinks = [
+    ...copy.latestLinks,
+    ...copy.platformLinks,
+    ...copy.popularLinks,
+    ...copy.coreLinks,
+  ];
+  const preferredLinks = preferredRoutes
+    .map((route) => sourceLinks.find((item) => item.href === route))
+    .filter((item): item is HomeLink => Boolean(item));
+
+  return [...preferredLinks, ...sourceLinks]
+    .filter(
+      (item, index, links) =>
+        links.findIndex((candidate) => candidate.href === item.href) === index
+    )
+    .slice(0, 4);
+}
+
 function LinkCard({
   item,
   openLabel,
@@ -1397,6 +1556,51 @@ function LinkCard({
   );
 }
 
+function CategoryCard({
+  item,
+  openLabel,
+}: {
+  item: CategoryLink;
+  openLabel: string;
+}) {
+  const Icon = item.icon ?? BookOpenIcon;
+  const image =
+    homeImageByRoute[item.href] ?? '/abyss/chibi-deep-sea-hero.webp';
+
+  return (
+    <LocaleLink
+      href={item.href}
+      className="group grid min-w-0 overflow-hidden border border-cyan-200/12 bg-[#08252a]/92 transition hover:-translate-y-0.5 hover:border-cyan-200/45 hover:bg-[#0a3036] sm:grid-cols-[138px_minmax(0,1fr)]"
+    >
+      <div
+        aria-hidden="true"
+        className="min-h-36 bg-cover bg-center opacity-90 transition duration-300 group-hover:scale-[1.03] sm:min-h-full"
+        style={{
+          backgroundImage: `linear-gradient(180deg,rgba(3,19,20,.08),rgba(3,19,20,.68)),url('${image}')`,
+        }}
+      />
+      <div className="min-w-0 p-4">
+        <div className="flex min-w-0 items-start justify-between gap-3">
+          <Icon className="size-5 shrink-0 text-[#78ead7]" />
+          <span className="border border-[#f08b4f]/35 bg-[#f08b4f]/10 px-2 py-1 text-xs font-semibold text-[#ffc4a1]">
+            {item.count}
+          </span>
+        </div>
+        <h3 className="mt-4 break-words text-lg font-semibold text-[#f0fffb]">
+          {item.title}
+        </h3>
+        <p className="mt-2 break-words text-sm leading-6 text-[#a8c6c0]">
+          {item.description}
+        </p>
+        <span className="mt-4 inline-flex items-center gap-2 text-sm font-medium text-[#78ead7]">
+          {openLabel}
+          <ArrowRightIcon className="size-4 transition group-hover:translate-x-1" />
+        </span>
+      </div>
+    </LocaleLink>
+  );
+}
+
 function MissionBoard({ locale }: { locale?: Locale }) {
   const board = getMissionBoardCopy(locale);
 
@@ -1413,8 +1617,8 @@ function MissionBoard({ locale }: { locale?: Locale }) {
         aria-hidden="true"
         className="absolute inset-0 bg-[linear-gradient(180deg,rgba(4,24,28,.82),rgba(3,19,20,.98)),radial-gradient(circle_at_88%_12%,rgba(120,234,215,.14),transparent_30%),radial-gradient(circle_at_12%_88%,rgba(240,139,79,.12),transparent_28%)]"
       />
-      <Container className="relative px-4 py-12">
-        <div className="grid gap-6 lg:grid-cols-[minmax(0,0.92fr)_minmax(0,1.08fr)] lg:items-stretch">
+      <Container className="relative px-4 py-10">
+        <div className="grid gap-5 lg:grid-cols-[minmax(0,1.1fr)_minmax(280px,0.9fr)] lg:items-start">
           <section className="border border-cyan-200/14 bg-[#061f24]/88 p-5 md:p-6">
             <div className="flex flex-col gap-5 sm:flex-row sm:items-start sm:justify-between">
               <div className="min-w-0">
@@ -1473,7 +1677,7 @@ function MissionBoard({ locale }: { locale?: Locale }) {
             </div>
           </section>
 
-          <aside className="grid gap-4 md:grid-cols-[minmax(0,1fr)_260px] lg:grid-cols-1 xl:grid-cols-[minmax(0,1fr)_280px]">
+          <aside className="grid gap-4 md:grid-cols-2 lg:grid-cols-1">
             <section className="border border-cyan-200/14 bg-[#082226]/92 p-5">
               <div className="flex items-center gap-2 text-[#78ead7]">
                 <BoxesIcon className="size-5" />
@@ -1520,13 +1724,12 @@ function MissionBoard({ locale }: { locale?: Locale }) {
 export function AbyssHome({ locale }: { locale?: Locale }) {
   const copy = getHomeCopy(locale);
   const board = getMissionBoardCopy(locale);
+  const sectionText = getHomeSectionText(locale);
+  const categories = getHomeCategoryLinks(copy, locale);
+  const featuredLinks = getFeaturedHomeLinks(copy);
   const baseUrl = getBaseUrl().replace(/\/$/, '');
   const pageUrl = getUrlWithLocale(Routes.Root, locale).replace(/\/$/, '');
-  const listLinks = [
-    ...board.missions,
-    ...copy.latestLinks,
-    ...copy.popularLinks.slice(0, 4),
-  ].filter(
+  const listLinks = [...board.missions, ...categories, ...featuredLinks].filter(
     (item, index, links) =>
       links.findIndex((candidate) => candidate.href === item.href) === index
   );
@@ -1564,7 +1767,7 @@ export function AbyssHome({ locale }: { locale?: Locale }) {
       <section className="relative overflow-hidden border-b border-cyan-200/10">
         <div
           aria-hidden="true"
-          className="absolute inset-0 bg-cover bg-center md:bg-right"
+          className="absolute inset-0 bg-cover bg-center motion-safe:animate-[pulse_12s_ease-in-out_infinite] md:bg-right"
           style={{
             backgroundImage: "url('/abyss/chibi-deep-sea-hero.webp')",
           }}
@@ -1583,7 +1786,7 @@ export function AbyssHome({ locale }: { locale?: Locale }) {
           }}
         />
 
-        <Container className="relative px-4 py-16 md:py-24">
+        <Container className="relative px-4 py-10 md:py-14">
           <div className="max-w-[820px]">
             <div className="mb-6 inline-flex items-center gap-2 border border-cyan-200/20 bg-cyan-300/10 px-3 py-1 text-sm font-medium text-cyan-100">
               <RadioIcon className="size-4" />
@@ -1599,10 +1802,10 @@ export function AbyssHome({ locale }: { locale?: Locale }) {
                 </span>
               ))}
             </h1>
-            <p className="mt-6 max-w-2xl text-lg leading-8 text-[#a9c9c3]">
+            <p className="mt-5 max-w-2xl text-lg leading-8 text-[#a9c9c3]">
               {copy.description}
             </p>
-            <div className="mt-8 flex flex-col gap-3 sm:flex-row">
+            <div className="mt-7 flex flex-col gap-3 sm:flex-row">
               <LocaleLink
                 href={Routes.Subnautica2Beginner}
                 className={cn(buttonVariants({ size: 'lg' }), 'rounded-md')}
@@ -1620,7 +1823,7 @@ export function AbyssHome({ locale }: { locale?: Locale }) {
               </LocaleLink>
             </div>
 
-            <div className="mt-10 grid max-w-2xl grid-cols-1 gap-2 sm:grid-cols-3">
+            <div className="mt-7 grid max-w-2xl grid-cols-1 gap-2 sm:grid-cols-3">
               {copy.stats.map(([value, label]) => (
                 <div
                   className="border border-cyan-200/14 bg-[#020d12]/70 p-3"
@@ -1642,19 +1845,21 @@ export function AbyssHome({ locale }: { locale?: Locale }) {
       <MissionBoard locale={locale} />
 
       <section className="border-b border-cyan-200/10 bg-[#071f23]">
-        <Container className="px-4 py-14">
-          <div className="mb-8 max-w-3xl">
+        <Container className="px-4 py-10">
+          <div className="mb-6 max-w-3xl">
             <p className="text-sm font-semibold uppercase tracking-[0.18em] text-[#bf6f45]">
-              {copy.latestTitle}
+              {sectionText.categoryEyebrow}
             </p>
             <h2 className="mt-3 break-words text-3xl font-semibold md:text-4xl">
-              {copy.latestHeading}
+              {sectionText.categoryHeading}
             </h2>
-            <p className="mt-4 text-[#abc8c3]">{copy.latestDescription}</p>
+            <p className="mt-4 text-[#abc8c3]">
+              {sectionText.categoryDescription}
+            </p>
           </div>
-          <div className="grid grid-cols-1 gap-4 md:grid-cols-2 lg:grid-cols-3">
-            {copy.latestLinks.map((item) => (
-              <LinkCard
+          <div className="grid grid-cols-1 gap-4 lg:grid-cols-2">
+            {categories.map((item) => (
+              <CategoryCard
                 item={item}
                 key={item.href}
                 openLabel={copy.openLabel}
@@ -1665,46 +1870,29 @@ export function AbyssHome({ locale }: { locale?: Locale }) {
       </section>
 
       <section className="border-b border-cyan-200/10 bg-[#04181c]">
-        <Container className="px-4 py-14">
-          <div className="grid grid-cols-1 gap-8 lg:grid-cols-[0.75fr_1.25fr] lg:items-start">
-            <div className="max-w-xl">
+        <Container className="px-4 py-10">
+          <div className="mb-6 flex flex-col gap-4 md:flex-row md:items-end md:justify-between">
+            <div className="max-w-3xl">
               <p className="text-sm font-semibold uppercase tracking-[0.18em] text-[#f08b4f]">
-                {copy.platformTitle}
+                {sectionText.featuredEyebrow}
               </p>
               <h2 className="mt-3 break-words text-3xl font-semibold md:text-4xl">
-                {copy.platformHeading}
+                {sectionText.featuredHeading}
               </h2>
               <p className="mt-4 leading-8 text-[#abc8c3]">
-                {copy.platformDescription}
+                {sectionText.featuredDescription}
               </p>
             </div>
-            <div className="grid grid-cols-1 gap-4 md:grid-cols-2 xl:grid-cols-3">
-              {copy.platformLinks.map((item) => (
-                <LinkCard
-                  compact
-                  item={item}
-                  key={item.href}
-                  openLabel={copy.openLabel}
-                />
-              ))}
-            </div>
-          </div>
-        </Container>
-      </section>
-
-      <section className="border-b border-cyan-200/10 bg-[#031314]">
-        <Container className="px-4 py-14">
-          <div className="mb-8 max-w-3xl">
-            <p className="text-sm font-semibold uppercase tracking-[0.18em] text-[#78ead7]">
-              {copy.popularTitle}
-            </p>
-            <h2 className="mt-3 break-words text-3xl font-semibold md:text-4xl">
-              {copy.popularHeading}
-            </h2>
-            <p className="mt-4 text-[#abc8c3]">{copy.popularDescription}</p>
+            <LocaleLink
+              href={Routes.Subnautica2}
+              className="inline-flex w-fit items-center gap-2 border border-cyan-200/18 px-4 py-2 text-sm font-medium text-[#78ead7] transition hover:border-cyan-200/45 hover:bg-cyan-300/10"
+            >
+              {copy.openLabel}
+              <ArrowRightIcon className="size-4" />
+            </LocaleLink>
           </div>
           <div className="grid grid-cols-1 gap-4 md:grid-cols-2 xl:grid-cols-4">
-            {copy.popularLinks.map((item) => (
+            {featuredLinks.map((item) => (
               <LinkCard
                 compact
                 item={item}
@@ -1716,41 +1904,15 @@ export function AbyssHome({ locale }: { locale?: Locale }) {
         </Container>
       </section>
 
-      <section className="border-b border-cyan-200/10 bg-[#071f23]">
-        <Container className="px-4 py-14">
-          <div className="grid grid-cols-1 gap-8 lg:grid-cols-[0.8fr_1.2fr] lg:items-start">
-            <div>
-              <BookOpenIcon className="mb-5 size-8 text-[#f08b4f]" />
-              <h2 className="break-words text-3xl font-semibold">
-                {copy.coreTitle}
-              </h2>
-              <p className="mt-4 leading-8 text-[#abc8c3]">
-                {copy.coreDescription}
-              </p>
-            </div>
-            <div className="grid grid-cols-1 gap-4 md:grid-cols-2 xl:grid-cols-4">
-              {copy.coreLinks.map((item) => (
-                <LinkCard
-                  compact
-                  item={item}
-                  key={item.href}
-                  openLabel={copy.openLabel}
-                />
-              ))}
-            </div>
-          </div>
-        </Container>
-      </section>
-
       <section className="border-b border-cyan-200/10 bg-[#04181c]">
-        <Container className="grid gap-5 px-4 py-14 lg:grid-cols-[minmax(0,1.05fr)_minmax(0,.95fr)]">
+        <Container className="grid gap-5 px-4 py-8 lg:grid-cols-[minmax(0,1.05fr)_minmax(0,.95fr)]">
           <AbyssResourceChecklistCallout locale={locale} />
           <AbyssUpdateAlertCard compact locale={locale} />
         </Container>
       </section>
 
       <section className="bg-[#031314]">
-        <Container className="px-4 py-12">
+        <Container className="px-4 py-10">
           <div className="max-w-3xl border-l border-[#f08b4f]/40 pl-5">
             <h2 className="text-2xl font-semibold">{copy.disclaimerTitle}</h2>
             <p className="mt-4 text-sm leading-7 text-[#b5c9c4]">
