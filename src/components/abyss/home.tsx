@@ -13,6 +13,7 @@ import {
   BookOpenIcon,
   BoxesIcon,
   CalendarDaysIcon,
+  CloudIcon,
   CompassIcon,
   Gamepad2Icon,
   ListChecksIcon,
@@ -88,6 +89,7 @@ const homeImageByRoute: Partial<Record<Routes, string>> = {
     '/abyss/chibi-controller-not-working.webp',
   [Routes.Subnautica2SilverAfterHotfix2]: '/abyss/chibi-update-console.webp',
   [Routes.Subnautica2XboxGamePass]: '/abyss/chibi-platform-briefing.webp',
+  [Routes.Subnautica2XboxCloudGaming]: '/abyss/chibi-xbox-cloud-gaming.webp',
   [Routes.Subnautica2SystemRequirements]: '/abyss/chibi-platform-briefing.webp',
   [Routes.Subnautica2BlackScreenFreezing]:
     '/abyss/chibi-black-screen-freezing.webp',
@@ -99,6 +101,7 @@ const homeImageByRoute: Partial<Record<Routes, string>> = {
   [Routes.Subnautica2StuckLoadingSave]: '/abyss/chibi-stuck-loading-save.webp',
   [Routes.Subnautica2SteamDownloadStuck]:
     '/abyss/chibi-steam-download-stuck.webp',
+  [Routes.Subnautica2SteamCloudSave]: '/abyss/chibi-steam-cloud-save.webp',
   [Routes.Subnautica2EarlyAccessWorthIt]: '/abyss/chibi-platform-briefing.webp',
   [Routes.Subnautica2Crossplay]: '/abyss/chibi-coop-signal.webp',
   [Routes.Subnautica2FriendCode]: '/abyss/chibi-friend-code.webp',
@@ -306,6 +309,14 @@ const enCopy: HomeCopy = {
       label: 'Xbox',
     },
     {
+      title: 'Xbox Cloud Gaming',
+      description:
+        'Cloud play checks for availability wording, latency, controller input, saves, and co-op planning.',
+      href: Routes.Subnautica2XboxCloudGaming,
+      icon: CloudIcon,
+      label: 'Cloud',
+    },
+    {
       title: 'Game Pass install error',
       description:
         'Xbox app and PC Game Pass install checks for stuck downloads, Gaming Services, storage, account state, and launch handoff.',
@@ -320,6 +331,14 @@ const enCopy: HomeCopy = {
       href: Routes.Subnautica2SteamDownloadStuck,
       icon: MonitorPlayIcon,
       label: 'Steam',
+    },
+    {
+      title: 'Steam Cloud save',
+      description:
+        'How Steam Cloud sync, fresh backups, cloud conflicts, and moving between PCs should be handled.',
+      href: Routes.Subnautica2SteamCloudSave,
+      icon: CloudIcon,
+      label: 'Cloud',
     },
     {
       title: 'Price and buying path',

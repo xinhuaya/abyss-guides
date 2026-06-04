@@ -223,6 +223,7 @@ const guideImageByPathname: Partial<Record<Routes, string>> = {
   [Routes.Subnautica2Mods]: '/abyss/chibi-mods-safe-setup.webp',
   [Routes.Subnautica2VrSupport]: '/abyss/chibi-vr-comfort.webp',
   [Routes.Subnautica2XboxGamePass]: '/abyss/chibi-platform-briefing.webp',
+  [Routes.Subnautica2XboxCloudGaming]: '/abyss/chibi-xbox-cloud-gaming.webp',
   [Routes.Subnautica2SystemRequirements]: '/abyss/chibi-platform-briefing.webp',
   [Routes.Subnautica2SteamDeckSettings]:
     '/abyss/chibi-steam-deck-settings.webp',
@@ -236,6 +237,7 @@ const guideImageByPathname: Partial<Record<Routes, string>> = {
   [Routes.Subnautica2StuckLoadingSave]: '/abyss/chibi-stuck-loading-save.webp',
   [Routes.Subnautica2SteamDownloadStuck]:
     '/abyss/chibi-steam-download-stuck.webp',
+  [Routes.Subnautica2SteamCloudSave]: '/abyss/chibi-steam-cloud-save.webp',
   [Routes.Subnautica2VoiceChat]: '/abyss/chibi-voice-chat-roadmap.webp',
   [Routes.Subnautica2Sprint]: '/abyss/chibi-sprint-roadmap.webp',
   [Routes.Subnautica2SaveFileLocation]: '/abyss/chibi-save-backup-guide.webp',

@@ -129,6 +129,7 @@ const staticRoutes = [
   Routes.Subnautica2Switch2ReleaseDate,
   Routes.Subnautica2MacReleaseDate,
   Routes.Subnautica2XboxGamePass,
+  Routes.Subnautica2XboxCloudGaming,
   Routes.Subnautica2OfflineMode,
   Routes.Subnautica2Price,
   Routes.Subnautica2FreeDownload,
@@ -143,6 +144,7 @@ const staticRoutes = [
   Routes.Subnautica2GamePassInstallError,
   Routes.Subnautica2StuckLoadingSave,
   Routes.Subnautica2SteamDownloadStuck,
+  Routes.Subnautica2SteamCloudSave,
   Routes.Subnautica2SaveFileLocation,
   Routes.Subnautica2SaveRecoveryCloudSync,
   Routes.Subnautica2EarlyAccessWorthIt,
@@ -207,6 +209,7 @@ function getChangeFrequency(
     route === Routes.Subnautica2Hotfix3 ||
     route === Routes.Subnautica2Switch2ReleaseDate ||
     route === Routes.Subnautica2MacReleaseDate ||
+    route === Routes.Subnautica2XboxCloudGaming ||
     route === Routes.Subnautica2OfflineMode ||
     route === Routes.Subnautica2Price ||
     route === Routes.Subnautica2FreeDownload ||
@@ -239,6 +242,7 @@ function getChangeFrequency(
     route === Routes.Subnautica2GamePassInstallError ||
     route === Routes.Subnautica2StuckLoadingSave ||
     route === Routes.Subnautica2SteamDownloadStuck ||
+    route === Routes.Subnautica2SteamCloudSave ||
     route === Routes.Subnautica2SaveFileLocation ||
     route === Routes.Subnautica2SaveRecoveryCloudSync
   ) {
