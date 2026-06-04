@@ -1536,7 +1536,7 @@ function LinkCard({
         aria-hidden="true"
         className={cn(
           'bg-cover bg-center opacity-90 transition duration-300 group-hover:scale-[1.03]',
-          compact ? 'h-24' : 'h-32'
+          compact ? 'h-20' : 'h-28'
         )}
         style={{
           backgroundImage: `linear-gradient(180deg,rgba(3,19,20,.08),rgba(3,19,20,.68)),url('${image}')`,
@@ -1551,7 +1551,7 @@ function LinkCard({
             </span>
           ) : null}
         </div>
-        <h3 className="mt-5 break-words text-lg font-semibold text-[#f0fffb]">
+        <h3 className="mt-4 break-words text-lg font-semibold text-[#f0fffb]">
           {item.title}
         </h3>
         <p className="mt-3 break-words text-sm leading-6 text-[#a8c6c0]">
@@ -1580,11 +1580,11 @@ function CategoryCard({
   return (
     <LocaleLink
       href={item.href}
-      className="group grid min-w-0 overflow-hidden border border-cyan-200/12 bg-[#08252a]/92 transition hover:-translate-y-0.5 hover:border-cyan-200/45 hover:bg-[#0a3036] sm:grid-cols-[138px_minmax(0,1fr)]"
+      className="group grid min-w-0 overflow-hidden border border-cyan-200/12 bg-[#08252a]/92 transition hover:-translate-y-0.5 hover:border-cyan-200/45 hover:bg-[#0a3036] sm:grid-cols-[126px_minmax(0,1fr)]"
     >
       <div
         aria-hidden="true"
-        className="min-h-36 bg-cover bg-center opacity-90 transition duration-300 group-hover:scale-[1.03] sm:min-h-full"
+        className="min-h-32 bg-cover bg-center opacity-90 transition duration-300 group-hover:scale-[1.03] sm:min-h-full"
         style={{
           backgroundImage: `linear-gradient(180deg,rgba(3,19,20,.08),rgba(3,19,20,.68)),url('${image}')`,
         }}
@@ -1627,9 +1627,9 @@ function MissionBoard({ locale }: { locale?: Locale }) {
         aria-hidden="true"
         className="absolute inset-0 bg-[linear-gradient(180deg,rgba(4,24,28,.82),rgba(3,19,20,.98)),radial-gradient(circle_at_88%_12%,rgba(120,234,215,.14),transparent_30%),radial-gradient(circle_at_12%_88%,rgba(240,139,79,.12),transparent_28%)]"
       />
-      <Container className="relative px-4 py-10">
+      <Container className="relative px-4 py-8 md:py-9">
         <div className="grid gap-5 lg:grid-cols-[minmax(0,1.1fr)_minmax(280px,0.9fr)] lg:items-start">
-          <section className="border border-cyan-200/14 bg-[#061f24]/88 p-5 md:p-6">
+          <section className="border border-cyan-200/14 bg-[#061f24]/88 p-5">
             <div className="flex flex-col gap-5 sm:flex-row sm:items-start sm:justify-between">
               <div className="min-w-0">
                 <p className="text-sm font-semibold uppercase tracking-[0.18em] text-[#f08b4f]">
@@ -1650,7 +1650,7 @@ function MissionBoard({ locale }: { locale?: Locale }) {
               </div>
             </div>
 
-            <div className="mt-6 grid gap-3 sm:grid-cols-2">
+            <div className="mt-5 grid gap-3 sm:grid-cols-2">
               {board.missions.map((mission) => {
                 const Icon = mission.icon ?? CompassIcon;
 
@@ -1796,7 +1796,7 @@ export function AbyssHome({ locale }: { locale?: Locale }) {
           }}
         />
 
-        <Container className="relative px-4 py-10 md:py-14">
+        <Container className="relative px-4 py-9 md:py-12">
           <div className="max-w-[820px]">
             <div className="mb-6 inline-flex items-center gap-2 border border-cyan-200/20 bg-cyan-300/10 px-3 py-1 text-sm font-medium text-cyan-100">
               <RadioIcon className="size-4" />
@@ -1812,7 +1812,7 @@ export function AbyssHome({ locale }: { locale?: Locale }) {
                 </span>
               ))}
             </h1>
-            <p className="mt-5 max-w-2xl text-lg leading-8 text-[#a9c9c3]">
+            <p className="mt-5 max-w-2xl text-base leading-7 text-[#a9c9c3] md:text-lg md:leading-8">
               {copy.description}
             </p>
             <div className="mt-7 flex flex-col gap-3 sm:flex-row">
@@ -1833,7 +1833,7 @@ export function AbyssHome({ locale }: { locale?: Locale }) {
               </LocaleLink>
             </div>
 
-            <div className="mt-7 grid max-w-2xl grid-cols-1 gap-2 sm:grid-cols-3">
+            <div className="mt-6 grid max-w-2xl grid-cols-1 gap-2 sm:grid-cols-3">
               {copy.stats.map(([value, label]) => (
                 <div
                   className="border border-cyan-200/14 bg-[#020d12]/70 p-3"
@@ -1855,15 +1855,15 @@ export function AbyssHome({ locale }: { locale?: Locale }) {
       <MissionBoard locale={locale} />
 
       <section className="border-b border-cyan-200/10 bg-[#071f23]">
-        <Container className="px-4 py-10">
-          <div className="mb-6 max-w-3xl">
+        <Container className="px-4 py-8">
+          <div className="mb-5 max-w-3xl">
             <p className="text-sm font-semibold uppercase tracking-[0.18em] text-[#bf6f45]">
               {sectionText.categoryEyebrow}
             </p>
-            <h2 className="mt-3 break-words text-3xl font-semibold md:text-4xl">
+            <h2 className="mt-2 break-words text-3xl font-semibold md:text-4xl">
               {sectionText.categoryHeading}
             </h2>
-            <p className="mt-4 text-[#abc8c3]">
+            <p className="mt-3 text-[#abc8c3]">
               {sectionText.categoryDescription}
             </p>
           </div>
@@ -1880,16 +1880,16 @@ export function AbyssHome({ locale }: { locale?: Locale }) {
       </section>
 
       <section className="border-b border-cyan-200/10 bg-[#04181c]">
-        <Container className="px-4 py-10">
-          <div className="mb-6 flex flex-col gap-4 md:flex-row md:items-end md:justify-between">
+        <Container className="px-4 py-8">
+          <div className="mb-5 flex flex-col gap-4 md:flex-row md:items-end md:justify-between">
             <div className="max-w-3xl">
               <p className="text-sm font-semibold uppercase tracking-[0.18em] text-[#f08b4f]">
                 {sectionText.featuredEyebrow}
               </p>
-              <h2 className="mt-3 break-words text-3xl font-semibold md:text-4xl">
+              <h2 className="mt-2 break-words text-3xl font-semibold md:text-4xl">
                 {sectionText.featuredHeading}
               </h2>
-              <p className="mt-4 leading-8 text-[#abc8c3]">
+              <p className="mt-3 leading-7 text-[#abc8c3]">
                 {sectionText.featuredDescription}
               </p>
             </div>
@@ -1915,14 +1915,14 @@ export function AbyssHome({ locale }: { locale?: Locale }) {
       </section>
 
       <section className="border-b border-cyan-200/10 bg-[#04181c]">
-        <Container className="grid gap-5 px-4 py-8 lg:grid-cols-[minmax(0,1.05fr)_minmax(0,.95fr)]">
+        <Container className="grid gap-4 px-4 py-7 lg:grid-cols-[minmax(0,1.05fr)_minmax(0,.95fr)]">
           <AbyssResourceChecklistCallout locale={locale} />
           <AbyssUpdateAlertCard compact locale={locale} />
         </Container>
       </section>
 
       <section className="bg-[#031314]">
-        <Container className="px-4 py-10">
+        <Container className="px-4 py-8">
           <div className="max-w-3xl border-l border-[#f08b4f]/40 pl-5">
             <h2 className="text-2xl font-semibold">{copy.disclaimerTitle}</h2>
             <p className="mt-4 text-sm leading-7 text-[#b5c9c4]">
