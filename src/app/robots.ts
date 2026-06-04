@@ -23,9 +23,9 @@ const hiddenPaths = [
   '/test',
 ];
 
-const localizedHiddenPaths = routing.locales
-  .filter((locale) => locale !== routing.defaultLocale)
-  .flatMap((locale) => hiddenPaths.map((path) => `/${locale}${path}`));
+const localizedHiddenPaths = routing.locales.flatMap((locale) =>
+  hiddenPaths.map((path) => `/${locale}${path}`)
+);
 
 export default function robots(): MetadataRoute.Robots {
   return {
