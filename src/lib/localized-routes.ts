@@ -743,6 +743,8 @@ const zhOnlyRoutes = [
   Routes.Subnautica2HammerheadAfterHotfix3,
   Routes.Subnautica2FlaresAfterHotfix3,
   Routes.Subnautica2MultiplayerLagDesync,
+  Routes.Subnautica2FriendCode,
+  Routes.Subnautica2ServerStatus,
   Routes.Subnautica2InviteNotWorking,
   Routes.Subnautica2OnlineServicesConnectionFailed,
   Routes.Subnautica2ControllerNotWorking,

@@ -200,6 +200,8 @@ const guideImageByPathname: Partial<Record<Routes, string>> = {
   [Routes.Subnautica2SplitScreenCoop]: '/abyss/chibi-split-screen-coop.webp',
   [Routes.Subnautica2Crossplay]: '/abyss/chibi-coop-signal.webp',
   [Routes.Subnautica2MultiplayerNotWorking]: '/abyss/chibi-coop-signal.webp',
+  [Routes.Subnautica2FriendCode]: '/abyss/chibi-friend-code.webp',
+  [Routes.Subnautica2ServerStatus]: '/abyss/chibi-server-status.webp',
   [Routes.Subnautica2InviteNotWorking]: '/abyss/chibi-invite-not-working.webp',
   [Routes.Subnautica2OnlineServicesConnectionFailed]:
     '/abyss/chibi-online-services-timeout.webp',

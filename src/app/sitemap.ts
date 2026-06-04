@@ -112,6 +112,8 @@ const staticRoutes = [
   Routes.Subnautica2Sprint,
   Routes.Subnautica2Crossplay,
   Routes.Subnautica2MultiplayerNotWorking,
+  Routes.Subnautica2FriendCode,
+  Routes.Subnautica2ServerStatus,
   Routes.Subnautica2InviteNotWorking,
   Routes.Subnautica2OnlineServicesConnectionFailed,
   Routes.Subnautica2MultiplayerLagDesync,
@@ -216,6 +218,8 @@ function getChangeFrequency(
     route === Routes.Subnautica2HammerheadAfterHotfix3 ||
     route === Routes.Subnautica2FlaresAfterHotfix3 ||
     route === Routes.Subnautica2MultiplayerLagDesync ||
+    route === Routes.Subnautica2FriendCode ||
+    route === Routes.Subnautica2ServerStatus ||
     route === Routes.Subnautica2InviteNotWorking ||
     route === Routes.Subnautica2OnlineServicesConnectionFailed ||
     route === Routes.Subnautica2ControllerNotWorking ||

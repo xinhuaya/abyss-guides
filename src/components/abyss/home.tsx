@@ -101,6 +101,8 @@ const homeImageByRoute: Partial<Record<Routes, string>> = {
     '/abyss/chibi-steam-download-stuck.webp',
   [Routes.Subnautica2EarlyAccessWorthIt]: '/abyss/chibi-platform-briefing.webp',
   [Routes.Subnautica2Crossplay]: '/abyss/chibi-coop-signal.webp',
+  [Routes.Subnautica2FriendCode]: '/abyss/chibi-friend-code.webp',
+  [Routes.Subnautica2ServerStatus]: '/abyss/chibi-server-status.webp',
   [Routes.Subnautica2InviteNotWorking]: '/abyss/chibi-invite-not-working.webp',
   [Routes.Subnautica2OnlineServicesConnectionFailed]:
     '/abyss/chibi-online-services-timeout.webp',
@@ -242,6 +244,22 @@ const enCopy: HomeCopy = {
       label: 'Invite',
     },
     {
+      title: 'Friend Code guide',
+      description:
+        'How to use Friend Code, when to refresh it, and what to check before blaming crossplay.',
+      href: Routes.Subnautica2FriendCode,
+      icon: UsersRoundIcon,
+      label: 'Join',
+    },
+    {
+      title: 'Server status check',
+      description:
+        'A practical status page for down searches, Xbox services, Steam login, hotfix timing, and co-op retries.',
+      href: Routes.Subnautica2ServerStatus,
+      icon: ServerIcon,
+      label: 'Status',
+    },
+    {
       title: 'Online services failed',
       description:
         'A calm connection checklist for service status, timeouts, NAT, firewall, updates, and retry timing.',
@@ -374,6 +392,22 @@ const enCopy: HomeCopy = {
       href: Routes.Subnautica2InviteNotWorking,
       icon: UsersRoundIcon,
       label: 'Invite',
+    },
+    {
+      title: 'Friend Code',
+      description:
+        'A clean setup guide for Friend Code joins, fresh sessions, platform invites, and code refreshes.',
+      href: Routes.Subnautica2FriendCode,
+      icon: UsersRoundIcon,
+      label: 'Join',
+    },
+    {
+      title: 'Server status',
+      description:
+        'How to check whether a co-op problem is platform-wide, local, or just one stale host session.',
+      href: Routes.Subnautica2ServerStatus,
+      icon: ServerIcon,
+      label: 'Status',
     },
     {
       title: 'Online services connection failed',
