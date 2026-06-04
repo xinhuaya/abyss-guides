@@ -16,6 +16,7 @@ const SUBNAUTICA_LAST_MODIFIED = new Date('2026-06-04');
  */
 const staticRoutes = [
   Routes.Root,
+  Routes.SubnauticaMap,
   Routes.Subnautica2,
   Routes.Subnautica2Beginner,
   Routes.Subnautica2Resources,
@@ -251,7 +252,10 @@ function getChangeFrequency(
     return 'daily';
   }
 
-  if (String(route).startsWith('/games/subnautica-2')) {
+  if (
+    String(route).startsWith('/games/subnautica-2') ||
+    String(route).startsWith('/games/subnautica/')
+  ) {
     return 'weekly';
   }
 
@@ -271,6 +275,7 @@ function getPriority(route: (typeof staticRoutes)[number]) {
     route === Routes.Subnautica2Resources ||
     route === Routes.Subnautica2ResourceChecklist ||
     route === Routes.Subnautica2Beginner ||
+    route === Routes.SubnauticaMap ||
     route === Routes.Subnautica2Crafting ||
     route === Routes.Subnautica2Updates ||
     route === Routes.Subnautica2LawsuitResponse

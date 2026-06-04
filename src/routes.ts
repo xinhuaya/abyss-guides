@@ -7,6 +7,7 @@ export enum Routes {
   // marketing pages
   FAQ = '/#faqs',
   Features = '/#features',
+  SubnauticaMap = '/games/subnautica/map',
   Subnautica2 = '/games/subnautica-2',
   Subnautica2Beginner = '/games/subnautica-2/beginner-guide',
   Subnautica2Resources = '/games/subnautica-2/resources',

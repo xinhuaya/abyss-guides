@@ -91,6 +91,7 @@ type HomeSectionText = {
 };
 
 const homeImageByRoute: Partial<Record<Routes, string>> = {
+  [Routes.SubnauticaMap]: '/abyss/chibi-subnautica-map-table.webp',
   [Routes.Subnautica2Beginner]: '/abyss/chibi-crafting-bench.webp',
   [Routes.Subnautica2Hotfix2]: '/abyss/chibi-update-console.webp',
   [Routes.Subnautica2ReleaseDate]: '/abyss/chibi-platform-briefing.webp',
@@ -602,6 +603,13 @@ const enCopy: HomeCopy = {
   coreDescription:
     'The site is built around repeatable guide work: routes first, resources second, crafting and map planning after that.',
   coreLinks: [
+    {
+      title: 'Subnautica map',
+      description:
+        'A spoiler-light original Subnautica map route guide for islands, wrecks, biomes, and safe return loops.',
+      href: Routes.SubnauticaMap,
+      icon: MapIcon,
+    },
     {
       title: 'Resource Checklist',
       description:
@@ -1477,6 +1485,7 @@ function getHomeCategoryLinks(copy: HomeCopy, locale?: Locale): CategoryLink[] {
 
 function getFeaturedHomeLinks(copy: HomeCopy): HomeLink[] {
   const preferredRoutes = [
+    Routes.SubnauticaMap,
     Routes.Subnautica2InsufficientSpaceToDock,
     Routes.Subnautica2Moonpool,
     Routes.Subnautica2Hotfix3,
