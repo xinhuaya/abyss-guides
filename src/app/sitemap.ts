@@ -208,6 +208,9 @@ function getChangeFrequency(
     route === Routes.Subnautica2 ||
     route === Routes.Subnautica2Updates ||
     route === Routes.Subnautica2LawsuitResponse ||
+    route === Routes.Subnautica2Coop ||
+    route === Routes.Subnautica2CoopPlayerCount ||
+    route === Routes.Subnautica2Crossplay ||
     route === Routes.Subnautica2Hotfix2 ||
     route === Routes.Subnautica2Hotfix3 ||
     route === Routes.Subnautica2Switch2ReleaseDate ||
@@ -276,6 +279,10 @@ function getPriority(route: (typeof staticRoutes)[number]) {
     route === Routes.Subnautica2ResourceChecklist ||
     route === Routes.Subnautica2Beginner ||
     route === Routes.SubnauticaMap ||
+    route === Routes.Subnautica2Coop ||
+    route === Routes.Subnautica2CoopPlayerCount ||
+    route === Routes.Subnautica2Crossplay ||
+    route === Routes.Subnautica2SplitScreenCoop ||
     route === Routes.Subnautica2Crafting ||
     route === Routes.Subnautica2Updates ||
     route === Routes.Subnautica2LawsuitResponse

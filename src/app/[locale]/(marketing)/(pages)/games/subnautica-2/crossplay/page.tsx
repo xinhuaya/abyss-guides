@@ -16,7 +16,7 @@ type CrossplayCopy = ResourceGuideCopy & {
 };
 
 const PUBLISHED_AT = '2026-06-01';
-const UPDATED_AT = '2026-06-01';
+const UPDATED_AT = '2026-06-04';
 
 const sharedSources = [
   {
@@ -51,7 +51,7 @@ const crossplayCopy: Record<string, CrossplayCopy> = {
       'Crossplay searches usually come from one real situation: a friend owns the game somewhere else and nobody wants to buy or install twice. This page keeps the answer practical and source-led.',
     quickLabel: 'Quick answer',
     quickAnswer:
-      'Use the official Steam and Xbox pages first, then check the current build notes before promising a mixed-platform co-op night. Subnautica 2 is built around co-op, but crossplay details can depend on the store build, account flow, and Early Access updates. If Steam, Xbox, or Game Pass wording changes, treat the newest official listing as stronger than old forum posts.',
+      'Steam lists Subnautica 2 with cross-platform multiplayer, and Xbox store wording points to cross-platform co-op and multiplayer. That is the best current answer, but still test invites before a serious mixed-platform save because store build, account flow, and Early Access updates can affect the actual session.',
     fieldNotesTitle: 'Why players search this',
     fieldNotes: [
       {
@@ -99,7 +99,7 @@ const crossplayCopy: Record<string, CrossplayCopy> = {
     tableRows: [
       [
         'subnautica 2 crossplay',
-        'Check current Steam and Xbox wording before treating any mixed-platform claim as final.',
+        'Steam lists cross-platform multiplayer, and Xbox wording points to cross-platform co-op. Test your actual platform mix before a long save.',
       ],
       [
         'subnautica 2 steam xbox crossplay',
@@ -107,7 +107,7 @@ const crossplayCopy: Record<string, CrossplayCopy> = {
       ],
       [
         'subnautica 2 game pass crossplay',
-        'Game Pass wording should be checked on the Xbox listing before installing.',
+        'Check the Xbox listing before installing, then test invites between Steam, Xbox, or PC Game Pass players.',
       ],
       [
         'subnautica 2 local co op',
@@ -143,11 +143,11 @@ const crossplayCopy: Record<string, CrossplayCopy> = {
     faqs: [
       {
         title: 'Does Subnautica 2 have crossplay?',
-        body: 'Check the official Steam and Xbox pages for the newest platform wording. This guide avoids treating old summaries as final because Early Access details can move.',
+        body: 'Yes, the checked Steam page lists cross-platform multiplayer, and Xbox wording points to cross-platform co-op and multiplayer. Because this is Early Access, test invites after major updates.',
       },
       {
         title: 'Can Steam and Xbox players play together?',
-        body: 'That is the exact case to verify against official store wording and the current build. Test with a short save before committing a group playthrough.',
+        body: 'That is the exact case to verify with the current build. Store wording supports the idea, but a short invite test is still the smartest first step.',
       },
       {
         title: 'Is local split-screen the same as crossplay?',
@@ -184,7 +184,7 @@ const crossplayCopy: Record<string, CrossplayCopy> = {
     ],
     sourcesTitle: 'Source note',
     sourceBody:
-      'Checked June 1, 2026 against official Steam, Xbox, Unknown Worlds roadmap notes, and the official trailer. The original image on this page is Abyss Guides artwork; the video embed is the official Subnautica trailer.',
+      'Checked June 4, 2026 against official Steam, Xbox, Unknown Worlds roadmap notes, and the official trailer. The original image on this page is Abyss Guides artwork; the video embed is the official Subnautica trailer.',
     cardKicker: 'Co-op watch',
     cardBody:
       'A pre-install page for players comparing Steam, Xbox, Game Pass, and friend-group saves.',

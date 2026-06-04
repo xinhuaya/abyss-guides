@@ -16,7 +16,7 @@ type CoopCountCopy = ResourceGuideCopy & {
 };
 
 const PUBLISHED_AT = '2026-06-01';
-const UPDATED_AT = '2026-06-01';
+const UPDATED_AT = '2026-06-04';
 
 const sharedSources = [
   {
@@ -36,9 +36,10 @@ const sharedSources = [
 const copyByLocale: Record<string, CoopCountCopy> = {
   en: {
     metadata: {
-      title: 'Subnautica 2 Co-op Player Count, Crossplay, and Local Co-op',
+      title:
+        'Subnautica 2 Multiplayer Player Count, Co-op, Crossplay, and Local Co-op',
       description:
-        'A source-backed Subnautica 2 co-op player count guide covering 2-4 player online co-op, crossplay, local couch co-op searches, hosting, invites, and Early Access caveats.',
+        'A source-backed Subnautica 2 multiplayer player count guide covering 2-4 player online co-op, crossplay, local couch co-op searches, hosting, invites, and Early Access caveats.',
     },
     eyebrow: 'Subnautica 2 co-op player count',
     title: 'Subnautica 2 Co-op Player Count and Crossplay',
@@ -46,7 +47,7 @@ const copyByLocale: Record<string, CoopCountCopy> = {
       'Most co-op searches are not about deep strategy. Players want one clean answer: how many people can play, whether crossplay works, and whether local couch co-op is a thing.',
     quickLabel: 'Quick answer',
     quickAnswer:
-      'Official store listings point to small-team online co-op, with Xbox listing 2-4 online co-op and Steam promoting four-player co-op plus cross-platform multiplayer. Treat local or couch co-op claims carefully: check the official store page for your platform before planning a shared-screen session.',
+      'Subnautica 2 multiplayer is online co-op for small teams. Official store listings point to 2-4 online co-op, with Steam promoting four-player co-op and listing cross-platform multiplayer. Treat local, couch, or split-screen co-op claims carefully: check the official store page for your platform before planning a shared-screen session.',
     fieldNotesTitle: 'Search intent notes',
     fieldNotes: [
       {
@@ -97,6 +98,10 @@ const copyByLocale: Record<string, CoopCountCopy> = {
         'Official listings point to small-team online co-op, with Xbox listing 2-4 players and Steam promoting four-player co-op.',
       ],
       [
+        'subnautica 2 multiplayer',
+        'Use this as online co-op wording unless a platform page clearly says local or split-screen multiplayer.',
+      ],
+      [
         'subnautica 2 crossplay',
         'Steam lists cross-platform multiplayer. Test invites for your own platform mix before a long session.',
       ],
@@ -141,6 +146,10 @@ const copyByLocale: Record<string, CoopCountCopy> = {
         body: 'Official listings point to small-team online co-op, with Xbox listing 2-4 players and Steam promoting four-player co-op.',
       },
       {
+        title: 'Is Subnautica 2 multiplayer online only?',
+        body: 'The checked official wording points to online co-op and cross-platform multiplayer. Do not read that as confirmed local split-screen play.',
+      },
+      {
         title: 'Does Subnautica 2 have crossplay?',
         body: 'Steam lists cross-platform multiplayer. Because the game is in Early Access, test your platform mix before a long shared save.',
       },
@@ -175,7 +184,7 @@ const copyByLocale: Record<string, CoopCountCopy> = {
     ],
     sourcesTitle: 'Source note',
     sourceBody:
-      'Checked June 1, 2026 against official Steam and Xbox listings plus the Unknown Worlds roadmap. Topic choice follows Bing autocomplete demand for co-op mode, co-op player count, local co-op, couch co-op, and cross-platform play.',
+      'Checked June 4, 2026 against official Steam and Xbox listings plus the Unknown Worlds roadmap. Topic choice follows SEMrush and autocomplete demand for multiplayer, co-op mode, co-op player count, local co-op, couch co-op, and cross-platform play.',
     cardKicker: 'Co-op search card',
     cardBody:
       'A direct answer page for player count, online co-op, crossplay, local co-op searches, hosting, and invite checks.',

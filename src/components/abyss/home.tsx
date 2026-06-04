@@ -96,7 +96,7 @@ const homeImageByRoute: Partial<Record<Routes, string>> = {
   [Routes.Subnautica2Hotfix2]: '/abyss/chibi-update-console.webp',
   [Routes.Subnautica2ReleaseDate]: '/abyss/chibi-release-status-console.webp',
   [Routes.Subnautica2InteractiveMap]: '/abyss/chibi-map-exploration.webp',
-  [Routes.Subnautica2CoopPlayerCount]: '/abyss/chibi-coop-signal.webp',
+  [Routes.Subnautica2CoopPlayerCount]: '/abyss/chibi-coop-crew-briefing.webp',
   [Routes.Subnautica2MultiplayerLagDesync]:
     '/abyss/chibi-multiplayer-lag-desync.webp',
   [Routes.Subnautica2ControllerNotWorking]:
@@ -117,7 +117,7 @@ const homeImageByRoute: Partial<Record<Routes, string>> = {
     '/abyss/chibi-steam-download-stuck.webp',
   [Routes.Subnautica2SteamCloudSave]: '/abyss/chibi-steam-cloud-save.webp',
   [Routes.Subnautica2EarlyAccessWorthIt]: '/abyss/chibi-platform-briefing.webp',
-  [Routes.Subnautica2Crossplay]: '/abyss/chibi-coop-signal.webp',
+  [Routes.Subnautica2Crossplay]: '/abyss/chibi-coop-crew-briefing.webp',
   [Routes.Subnautica2FriendCode]: '/abyss/chibi-friend-code.webp',
   [Routes.Subnautica2ServerStatus]: '/abyss/chibi-server-status.webp',
   [Routes.Subnautica2InviteNotWorking]: '/abyss/chibi-invite-not-working.webp',

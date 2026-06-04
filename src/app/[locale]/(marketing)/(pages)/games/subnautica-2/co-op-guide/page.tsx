@@ -16,7 +16,7 @@ type CoopCopy = ResourceGuideCopy & {
 };
 
 const PUBLISHED_AT = '2026-05-23';
-const UPDATED_AT = '2026-05-29';
+const UPDATED_AT = '2026-06-04';
 
 const sharedSources = [
   {
@@ -32,9 +32,10 @@ const sharedSources = [
 const coopCopy: Record<string, CoopCopy> = {
   en: {
     metadata: {
-      title: 'Subnautica 2 Co-op Guide - Multiplayer Roles and Team Survival',
+      title:
+        'Subnautica 2 Multiplayer Co-op Guide, Player Count, and Crossplay',
       description:
-        'A Subnautica 2 co-op guide for 2-4 player multiplayer, cross-platform play, team roles, shared bases, storage rules, route names, and invite checks.',
+        'A source-backed Subnautica 2 multiplayer guide for 2-4 player online co-op, crossplay, split-screen searches, team roles, shared bases, storage rules, and invite checks.',
     },
     eyebrow: 'Subnautica 2 multiplayer guide',
     title: 'Subnautica 2 Co-op Guide',
@@ -42,7 +43,7 @@ const coopCopy: Record<string, CoopCopy> = {
       'Co-op makes the ocean less lonely, but it also makes the base messy fast. The trick is simple: one shared plan before four players swim in four directions.',
     quickLabel: 'Quick answer',
     quickAnswer:
-      'Subnautica 2 supports online co-op for small teams, with official listings pointing to 2-4 player co-op and cross-platform multiplayer. Before starting, agree on the host, voice chat, storage rules, route names, and what the team is crafting next.',
+      'Subnautica 2 supports online multiplayer co-op for small teams. Official listings point to 2-4 player online co-op, Steam lists cross-platform multiplayer, and the checked store pages do not confirm split-screen or couch co-op. Before starting, agree on the host, voice chat, storage rules, route names, and what the team is crafting next.',
     fieldNotesTitle: 'Field notes for calmer co-op',
     fieldNotes: [
       {
@@ -134,6 +135,10 @@ const coopCopy: Record<string, CoopCopy> = {
         'Check platform invites',
         'Cross-platform play is listed officially, but invite behavior can still vary by store, account, and patch.',
       ],
+      [
+        'Do not assume split screen',
+        'Online co-op, crossplay, local co-op, and couch co-op are separate feature questions. Check exact store wording.',
+      ],
     ],
     cautionTitle: 'The base can become the real enemy',
     cautionBody:
@@ -145,8 +150,16 @@ const coopCopy: Record<string, CoopCopy> = {
         body: 'Official listings describe online co-op for small teams, with Xbox listing 2-4 players and Steam promoting four-player co-op.',
       },
       {
+        title: 'Is Subnautica 2 multiplayer?',
+        body: 'Yes. The official store wording points to online multiplayer co-op. This guide treats multiplayer as online co-op unless an official platform page clearly says otherwise.',
+      },
+      {
         title: 'Does Subnautica 2 support cross-platform multiplayer?',
         body: 'Steam lists cross-platform multiplayer, and the Xbox listing references cross-platform co-op and multiplayer. Because the game is in Early Access, check invite behavior after patches.',
+      },
+      {
+        title: 'Does Subnautica 2 have split-screen co-op?',
+        body: 'No checked official source confirms split-screen or couch co-op. Plan around separate devices and online co-op unless your platform store page later adds clear local co-op wording.',
       },
       {
         title: 'What roles should a co-op team use?',
@@ -155,6 +168,8 @@ const coopCopy: Record<string, CoopCopy> = {
     ],
     readNextTitle: 'Read next',
     related: [
+      { href: Routes.Subnautica2CoopPlayerCount, label: 'Co-op Player Count' },
+      { href: Routes.Subnautica2Crossplay, label: 'Crossplay Guide' },
       {
         href: Routes.Subnautica2DedicatedServer,
         label: 'Dedicated Server Status',
@@ -183,7 +198,7 @@ const coopCopy: Record<string, CoopCopy> = {
     ],
     sourcesTitle: 'Source note',
     sourceBody:
-      'Checked May 28, 2026 against official Steam and Xbox listings. Multiplayer details, invite behavior, and platform requirements can change during Early Access.',
+      'Checked June 4, 2026 against official Steam and Xbox listings. Steam lists online co-op and cross-platform multiplayer; Xbox lists 2-4 online co-op. Multiplayer details, invite behavior, and platform requirements can change during Early Access.',
     cardKicker: 'Co-op field card',
     cardBody:
       'Team setup notes for hosting, invites, route names, shared storage, roles, and rare-material spending.',

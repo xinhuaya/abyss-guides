@@ -16,7 +16,7 @@ type SplitScreenCopy = ResourceGuideCopy & {
 };
 
 const PUBLISHED_AT = '2026-06-03';
-const UPDATED_AT = '2026-06-03';
+const UPDATED_AT = '2026-06-04';
 
 const sharedSources = [
   {
@@ -46,7 +46,7 @@ const copyByLocale: Record<string, SplitScreenCopy> = {
       'This is the page to read before you put two controllers on the table. Subnautica 2 does have official online co-op wording, but split screen and couch co-op need a much stricter answer.',
     quickLabel: 'Quick answer',
     quickAnswer:
-      'No official source checked on June 3, 2026 confirms Subnautica 2 split screen or couch co-op. Steam and Xbox point players toward online co-op and cross-platform multiplayer, not a shared-screen local mode. If you want to play together today, plan around separate devices and an online session unless your platform store page later adds clear local co-op wording.',
+      'No official source checked on June 4, 2026 confirms Subnautica 2 split screen or couch co-op. Steam and Xbox point players toward online co-op and cross-platform multiplayer, not a shared-screen local mode. If you want to play together today, plan around separate devices and an online session unless your platform store page later adds clear local co-op wording.',
     fieldNotesTitle: 'Why this search gets messy',
     fieldNotes: [
       {
@@ -99,7 +99,7 @@ const copyByLocale: Record<string, SplitScreenCopy> = {
     tableRows: [
       [
         'Does Subnautica 2 have split screen?',
-        'No official split-screen confirmation was found in the checked Steam, Xbox, and Unknown Worlds sources.',
+        'No official split-screen confirmation was found in the checked Steam, Xbox, and Unknown Worlds sources on June 4, 2026.',
       ],
       [
         'Does Subnautica 2 have couch co-op?',
@@ -143,7 +143,7 @@ const copyByLocale: Record<string, SplitScreenCopy> = {
     faqs: [
       {
         title: 'Is Subnautica 2 split screen?',
-        body: 'Not from the official sources checked on June 3, 2026. The safe answer is online co-op, not confirmed split screen.',
+        body: 'Not from the official sources checked on June 4, 2026. The safe answer is online co-op, not confirmed split screen.',
       },
       {
         title: 'Can I play Subnautica 2 couch co-op on Xbox?',
@@ -171,7 +171,7 @@ const copyByLocale: Record<string, SplitScreenCopy> = {
     ],
     sourcesTitle: 'Source note',
     sourceBody:
-      'Checked June 3, 2026 against the official Steam Early Access page, Xbox listing, and Unknown Worlds roadmap. Abyss Guides artwork is original; it is used to explain the online-vs-local co-op distinction without copying official screenshots.',
+      'Checked June 4, 2026 against the official Steam Early Access page, Xbox listing, and Unknown Worlds roadmap. Abyss Guides artwork is original; it is used to explain the online-vs-local co-op distinction without copying official screenshots.',
     cardKicker: 'Co-op mode card',
     cardBody:
       'A quick status page for split-screen, couch co-op, local co-op, online co-op, crossplay, and invite planning.',
