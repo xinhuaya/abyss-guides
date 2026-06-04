@@ -16,7 +16,7 @@ type ReleaseDateCopy = ResourceGuideCopy & {
 };
 
 const PUBLISHED_AT = '2026-06-01';
-const UPDATED_AT = '2026-06-02';
+const UPDATED_AT = '2026-06-04';
 
 const sharedSources = [
   {
@@ -36,10 +36,9 @@ const sharedSources = [
 const releaseDateCopy: Record<string, ReleaseDateCopy> = {
   en: {
     metadata: {
-      title:
-        'Subnautica 2 Release Date, Early Access, PS5, Xbox, and Game Pass',
+      title: 'Subnautica 2 Release Date, Coming Out, Early Access, and 1.0',
       description:
-        'A source-backed Subnautica 2 release date guide covering Early Access status, Steam, Xbox, Game Pass, PS5 searches, release time, and what is confirmed.',
+        'A source-backed Subnautica 2 release date guide covering whether it is out, Early Access status, full 1.0 timing, Steam, Xbox, Game Pass, PS5 searches, and release-time confusion.',
     },
     eyebrow: 'Subnautica 2 release date',
     title: 'Subnautica 2 Release Date and Platforms',
@@ -47,12 +46,12 @@ const releaseDateCopy: Record<string, ReleaseDateCopy> = {
       'Release-date searches are noisy right now. This page keeps the practical answer separate from guesses about console ports, countdowns, and full 1.0 timing.',
     quickLabel: 'Quick answer',
     quickAnswer:
-      'Subnautica 2 launched into Early Access on May 14, 2026. The official Steam page lists the game as Early Access, and Unknown Worlds describes a long Early Access plan with hotfixes, improvement updates, co-op work, and larger content drops. Treat exact 1.0 release-date claims, PS5 timing, and countdown pages carefully unless they point back to an official source.',
+      'Subnautica 2 is already out in Early Access. It launched on May 14, 2026, and the official Steam page still labels it Early Access. If you are asking when Subnautica 2 is coming out, the playable answer is now. If you mean full 1.0, PS5 timing, or a final console date, treat any exact date as unconfirmed unless it comes from Unknown Worlds, Steam, Xbox, or another official platform page.',
     fieldNotesTitle: 'Search intent notes',
     fieldNotes: [
       {
         title: 'Release date means two different things',
-        body: 'Many players search for the launch day, while others mean the full 1.0 release. Keep those answers separate or the page becomes misleading.',
+        body: 'Many players search for the playable launch day, while others mean the full 1.0 release. Keep those answers separate or the page becomes misleading.',
       },
       {
         title: 'Platform searches need calm wording',
@@ -60,13 +59,14 @@ const releaseDateCopy: Record<string, ReleaseDateCopy> = {
       },
       {
         title: 'Countdown pages age fast',
-        body: 'If a countdown was written before Early Access launch, it is not useful anymore. After launch, the better page is a status tracker.',
+        body: 'If a countdown was written before Early Access launch, it is mostly stale now. After launch, the better page is a status tracker: what is playable, what is still Early Access, and which update players should read next.',
       },
     ],
     routeChecklistTitle: 'Before trusting a release page',
     routeChecklist: [
       'Check whether it means Early Access launch or full 1.0.',
       'Look for an official Steam or Unknown Worlds link.',
+      'Skip pages that still talk like the May 14 launch is in the future.',
       'Treat PS5 and console timing claims as unconfirmed unless sourced.',
       'Check the latest hotfix page if you already own Early Access.',
     ],
@@ -75,11 +75,11 @@ const releaseDateCopy: Record<string, ReleaseDateCopy> = {
     routeSteps: [
       {
         title: 'Start with Early Access',
-        body: 'The useful confirmed date is May 14, 2026, when Subnautica 2 entered Early Access. That is the build current guide pages are tracking.',
+        body: 'The confirmed playable date is May 14, 2026, when Subnautica 2 entered Early Access. That is the build current Abyss Guides pages are tracking.',
       },
       {
         title: 'Separate 1.0 from launch-week updates',
-        body: 'Unknown Worlds is still shipping hotfixes and planned Early Access updates. That means a final 1.0 release date should not be guessed from a hotfix schedule.',
+        body: 'Unknown Worlds is still shipping hotfixes and planned Early Access updates. That means the full 1.0 release date should not be guessed from a hotfix schedule.',
       },
       {
         title: 'Read platform claims by source',
@@ -95,7 +95,19 @@ const releaseDateCopy: Record<string, ReleaseDateCopy> = {
     tableRows: [
       [
         'subnautica 2 release date',
-        'Early Access started May 14, 2026. A final 1.0 date should be checked against official sources.',
+        'Early Access started May 14, 2026. Full 1.0 timing still needs an official source.',
+      ],
+      [
+        'when is subnautica 2 coming out',
+        'It is already playable in Early Access. If the search means 1.0, do not trust exact dates without an official source.',
+      ],
+      [
+        'when will subnautica 2 come out',
+        'Use the May 14, 2026 Early Access date for the playable launch, then check the roadmap for what is still planned.',
+      ],
+      [
+        'subnautica 2 full release',
+        'Do not mix full release with Early Access. A full 1.0 date should be handled as unconfirmed until officially dated.',
       ],
       [
         'subnautica 2 release time',
@@ -118,8 +130,8 @@ const releaseDateCopy: Record<string, ReleaseDateCopy> = {
     visualItems: [
       {
         label: 'Launch',
-        value: 'May 14',
-        note: 'Early Access launch date tracked here.',
+        value: 'Out now',
+        note: 'Playable Early Access launched May 14, 2026.',
       },
       {
         label: 'Status',
@@ -128,13 +140,13 @@ const releaseDateCopy: Record<string, ReleaseDateCopy> = {
       },
       {
         label: 'Watch',
-        value: 'Roadmap',
-        note: 'Best source for planned update shape.',
+        value: '1.0',
+        note: 'Full release timing still needs official wording.',
       },
     ],
     cautionTitle: 'Do not turn guesses into dates',
     cautionBody:
-      'Search demand is high, but that does not make every platform rumor useful. If a PS5, console, or 1.0 date is not official, write it as unconfirmed and point players to the source you checked.',
+      'Search demand is high, but that does not make every platform rumor useful. If a PS5, console, or 1.0 date is not official, write it as unconfirmed and point players to the source you checked. A page that still counts down to May 14, 2026 is behind the news cycle.',
     faqTitle: 'FAQ',
     faqs: [
       {
@@ -143,7 +155,11 @@ const releaseDateCopy: Record<string, ReleaseDateCopy> = {
       },
       {
         title: 'When is Subnautica 2 coming out?',
-        body: 'If you mean the playable Early Access launch, it is already out as of May 14, 2026. If you mean the full 1.0 launch, use official Unknown Worlds or platform pages before trusting a date.',
+        body: 'It is already out in Early Access. If you mean the full 1.0 launch, use official Unknown Worlds or platform pages before trusting a date.',
+      },
+      {
+        title: 'When will Subnautica 2 come out fully?',
+        body: 'A full 1.0 release date should be treated as unconfirmed until Unknown Worlds or an official platform page gives a dated announcement.',
       },
       {
         title: 'When does Subnautica 2 come out on consoles?',
@@ -187,7 +203,7 @@ const releaseDateCopy: Record<string, ReleaseDateCopy> = {
     ],
     sourcesTitle: 'Source note',
     sourceBody:
-      'Checked June 1, 2026 against the official Steam page, Unknown Worlds Early Access roadmap, and Hotfix 2 notes. Search topics were selected from Bing autocomplete suggestions for release date, release time, PS5, Xbox, Game Pass, and Steam.',
+      'Checked June 4, 2026 against the official Steam page, Unknown Worlds Early Access roadmap, and Hotfix 3 notes. Search topics were selected from SEMrush and autocomplete variants for release date, coming out, full release, release time, PS5, Xbox, Game Pass, and Steam.',
     cardKicker: 'Release card',
     cardBody:
       'A search-led status page for players asking about release date, platforms, Early Access, and what to read after launch.',

@@ -213,7 +213,7 @@ const guideImageByPathname: Partial<Record<Routes, string>> = {
   [Routes.Subnautica2CoopRejoinAfterHotfix3]: '/abyss/chibi-coop-rejoin.webp',
   [Routes.Subnautica2Updates]: '/abyss/chibi-update-console.webp',
   [Routes.Subnautica2LawsuitResponse]: '/abyss/chibi-legal-briefing.webp',
-  [Routes.Subnautica2ReleaseDate]: '/abyss/chibi-platform-briefing.webp',
+  [Routes.Subnautica2ReleaseDate]: '/abyss/chibi-release-status-console.webp',
   [Routes.Subnautica2Ps5ReleaseDate]: '/abyss/chibi-platform-briefing.webp',
   [Routes.Subnautica2Switch2ReleaseDate]:
     '/abyss/chibi-switch-2-release-date.webp',

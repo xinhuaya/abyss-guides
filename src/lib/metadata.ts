@@ -50,7 +50,7 @@ const abyssMetadataImageByPathname: Record<string, string> = {
     '/abyss/chibi-platform-briefing.webp',
   [Routes.Subnautica2SilverAfterHotfix2]: '/abyss/chibi-update-console.webp',
   [Routes.Subnautica2TroiliteAfterHotfix2]: '/abyss/chibi-update-console.webp',
-  [Routes.Subnautica2ReleaseDate]: '/abyss/chibi-platform-briefing.webp',
+  [Routes.Subnautica2ReleaseDate]: '/abyss/chibi-release-status-console.webp',
   [Routes.Subnautica2Ps5ReleaseDate]: '/abyss/chibi-platform-briefing.webp',
   [Routes.Subnautica2Switch2ReleaseDate]:
     '/abyss/chibi-switch-2-release-date.webp',

@@ -94,7 +94,7 @@ const homeImageByRoute: Partial<Record<Routes, string>> = {
   [Routes.SubnauticaMap]: '/abyss/chibi-subnautica-map-table.webp',
   [Routes.Subnautica2Beginner]: '/abyss/chibi-crafting-bench.webp',
   [Routes.Subnautica2Hotfix2]: '/abyss/chibi-update-console.webp',
-  [Routes.Subnautica2ReleaseDate]: '/abyss/chibi-platform-briefing.webp',
+  [Routes.Subnautica2ReleaseDate]: '/abyss/chibi-release-status-console.webp',
   [Routes.Subnautica2InteractiveMap]: '/abyss/chibi-map-exploration.webp',
   [Routes.Subnautica2CoopPlayerCount]: '/abyss/chibi-coop-signal.webp',
   [Routes.Subnautica2MultiplayerLagDesync]:
