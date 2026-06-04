@@ -211,6 +211,7 @@ const guideImageByPathname: Partial<Record<Routes, string>> = {
     '/abyss/chibi-controller-not-working.webp',
   [Routes.Subnautica2CoopRejoinAfterHotfix3]: '/abyss/chibi-coop-rejoin.webp',
   [Routes.Subnautica2Updates]: '/abyss/chibi-update-console.webp',
+  [Routes.Subnautica2LawsuitResponse]: '/abyss/chibi-legal-briefing.webp',
   [Routes.Subnautica2ReleaseDate]: '/abyss/chibi-platform-briefing.webp',
   [Routes.Subnautica2Ps5ReleaseDate]: '/abyss/chibi-platform-briefing.webp',
   [Routes.Subnautica2Switch2ReleaseDate]:
@@ -498,6 +499,7 @@ export function LocalizedResourceGuidePage({
     pathname === Routes.Subnautica2Beginner;
   const showUpdateAlert =
     pathname === Routes.Subnautica2Updates ||
+    pathname === Routes.Subnautica2LawsuitResponse ||
     pathname === Routes.Subnautica2Hotfix2 ||
     pathname === Routes.Subnautica2Hotfix3;
   const jsonLd = [

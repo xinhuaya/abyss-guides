@@ -9,7 +9,7 @@ import { getBaseUrl } from '@/lib/urls';
 
 type Href = Parameters<typeof getLocalePathname>[0]['href'];
 
-const SUBNAUTICA_LAST_MODIFIED = new Date('2026-06-03');
+const SUBNAUTICA_LAST_MODIFIED = new Date('2026-06-04');
 
 /**
  * static routes for sitemap, you may change the routes for your own
@@ -125,6 +125,7 @@ const staticRoutes = [
   Routes.Subnautica2StartupCrashAfterHotfix3,
   Routes.Subnautica2Updates,
   Routes.Subnautica2ReleaseDate,
+  Routes.Subnautica2LawsuitResponse,
   Routes.Subnautica2Ps5ReleaseDate,
   Routes.Subnautica2Switch2ReleaseDate,
   Routes.Subnautica2MacReleaseDate,
@@ -205,6 +206,7 @@ function getChangeFrequency(
     route === Routes.Root ||
     route === Routes.Subnautica2 ||
     route === Routes.Subnautica2Updates ||
+    route === Routes.Subnautica2LawsuitResponse ||
     route === Routes.Subnautica2Hotfix2 ||
     route === Routes.Subnautica2Hotfix3 ||
     route === Routes.Subnautica2Switch2ReleaseDate ||
@@ -270,7 +272,8 @@ function getPriority(route: (typeof staticRoutes)[number]) {
     route === Routes.Subnautica2ResourceChecklist ||
     route === Routes.Subnautica2Beginner ||
     route === Routes.Subnautica2Crafting ||
-    route === Routes.Subnautica2Updates
+    route === Routes.Subnautica2Updates ||
+    route === Routes.Subnautica2LawsuitResponse
   ) {
     return 0.9;
   }

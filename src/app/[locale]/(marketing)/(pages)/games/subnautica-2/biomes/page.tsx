@@ -146,6 +146,14 @@ const biomesCopy: Record<string, BiomesCopy> = {
         body: 'Early Access coverage is still changing, so this guide avoids pretending the final biome list and borders are locked. Use route zones until official or repeated in-game checks confirm details.',
       },
       {
+        title: 'What are the best Subnautica 2 biomes to learn first?',
+        body: 'Start with safe starter loops, then move into scan routes, wreck routes, and only later into deep rare-material routes. That order is more useful than memorizing every biome name early.',
+      },
+      {
+        title: 'Are Subnautica 2 biome borders final?',
+        body: 'Treat borders as patch-sensitive in Early Access. For practical play, landmarks, depth pressure, resources, and return cues are more useful than arguing over exact edges.',
+      },
+      {
         title: 'Which biome should beginners explore first?',
         body: 'Stay around the starter loop until Copper, Silver checks, Scanner progress, food, water, and oxygen returns feel repeatable.',
       },
@@ -161,6 +169,8 @@ const biomesCopy: Record<string, BiomesCopy> = {
     readNextTitle: 'Read next',
     related: [
       { href: Routes.Subnautica2Map, label: 'Map and Routes' },
+      { href: Routes.Subnautica2InteractiveMap, label: 'Interactive Map' },
+      { href: Routes.Subnautica2MapSizeBiomes, label: 'Map Size and Biomes' },
       { href: Routes.Subnautica2OxygenDepth, label: 'Oxygen and Depth' },
       {
         href: Routes.Subnautica2BestBaseLocations,

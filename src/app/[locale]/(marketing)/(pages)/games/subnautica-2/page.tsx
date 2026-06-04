@@ -809,6 +809,12 @@ const copyByLocale: Record<'en' | 'zh', HubCopy> = {
           'DLSS 4.5, Frame Generation, Interior Wall cost, Tadpoles, Hammerheads, creatures, co-op rejoin, and Strike Armor fixes.',
       },
       {
+        href: Routes.Subnautica2LawsuitResponse,
+        title: 'Krafton Lawsuit Response',
+        description:
+          'A dated, source-led explainer for players searching lawsuit response, Unknown Worlds claims, and what it means for Early Access.',
+      },
+      {
         href: Routes.Subnautica2TadpoleParkingAfterHotfix3,
         title: 'Tadpole Parking After Hotfix 3',
         description:
@@ -2213,6 +2219,11 @@ const guideIndexCopyByLocale: Record<'en' | 'zh', GuideIndexCopy> = {
             href: Routes.Subnautica2ReleaseDate,
             label: 'Release date',
             note: 'Early Access and full launch status',
+          },
+          {
+            href: Routes.Subnautica2LawsuitResponse,
+            label: 'Lawsuit response',
+            note: 'Krafton, Unknown Worlds, and public reporting',
           },
           {
             href: Routes.Subnautica2XboxGamePass,

@@ -116,6 +116,7 @@ export enum Routes {
   Subnautica2StartupCrashAfterHotfix3 = '/games/subnautica-2/startup-crash-after-hotfix-3',
   Subnautica2Updates = '/games/subnautica-2/roadmap',
   Subnautica2ReleaseDate = '/games/subnautica-2/release-date',
+  Subnautica2LawsuitResponse = '/games/subnautica-2/lawsuit-response',
   Subnautica2Ps5ReleaseDate = '/games/subnautica-2/ps5-release-date',
   Subnautica2Switch2ReleaseDate = '/games/subnautica-2/switch-2-release-date',
   Subnautica2MacReleaseDate = '/games/subnautica-2/mac-release-date',

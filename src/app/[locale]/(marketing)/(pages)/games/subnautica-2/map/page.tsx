@@ -141,6 +141,14 @@ const mapCopy: Record<string, MapCopy> = {
         body: 'Early Access map details can change, so a route-first guide is safer than pretending every boundary and resource cluster is final.',
       },
       {
+        title: 'Is this the same as a Subnautica 1 map?',
+        body: 'No. Searches for "subnautica map" often mean the original game, while this page is for Subnautica 2 route planning. Abyss Guides keeps Subnautica 1 map coverage separate so the two games do not get mixed.',
+      },
+      {
+        title: 'Should I use an interactive map or a route guide first?',
+        body: 'Use a route guide first when you are early in the run. Interactive maps are useful later, but they can spoil too much and may age quickly while Early Access routes are still being checked.',
+      },
+      {
         title: 'How should I choose a first base location?',
         body: 'Pick a spot that is easy to find, close to resources you use often, safe enough for routine returns, and near a route you expect to repeat.',
       },
@@ -152,6 +160,8 @@ const mapCopy: Record<string, MapCopy> = {
     readNextTitle: 'Read next',
     related: [
       { href: Routes.Subnautica2Biomes, label: 'Biomes Guide' },
+      { href: Routes.Subnautica2InteractiveMap, label: 'Interactive Map' },
+      { href: Routes.Subnautica2MapSizeBiomes, label: 'Map Size and Biomes' },
       { href: Routes.Subnautica2Beacon, label: 'Beacon Guide' },
       { href: Routes.Subnautica2Beginner, label: 'Beginner Route' },
       { href: Routes.Subnautica2Resources, label: 'Resources Guide' },

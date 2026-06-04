@@ -142,6 +142,14 @@ const releaseDateCopy: Record<string, ReleaseDateCopy> = {
         body: 'Subnautica 2 entered Early Access on May 14, 2026.',
       },
       {
+        title: 'When is Subnautica 2 coming out?',
+        body: 'If you mean the playable Early Access launch, it is already out as of May 14, 2026. If you mean the full 1.0 launch, use official Unknown Worlds or platform pages before trusting a date.',
+      },
+      {
+        title: 'When does Subnautica 2 come out on consoles?',
+        body: 'Console timing should be treated as unconfirmed unless Unknown Worlds or the platform holder publishes it. Do not use countdown pages as a source after Early Access launch.',
+      },
+      {
         title: 'Is Subnautica 2 fully released?',
         body: 'No. The current public build is Early Access, and Unknown Worlds is still tracking hotfixes and planned updates.',
       },
@@ -157,6 +165,10 @@ const releaseDateCopy: Record<string, ReleaseDateCopy> = {
     readNextTitle: 'Read next',
     related: [
       { href: Routes.Subnautica2Updates, label: 'Roadmap and Updates' },
+      {
+        href: Routes.Subnautica2LawsuitResponse,
+        label: 'Lawsuit Response Explainer',
+      },
       { href: Routes.Subnautica2Price, label: 'Price Guide' },
       { href: Routes.Subnautica2Ps5ReleaseDate, label: 'PS5 Release Date' },
       {
