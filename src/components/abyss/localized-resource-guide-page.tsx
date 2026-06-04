@@ -226,13 +226,14 @@ const guideImageByPathname: Partial<Record<Routes, string>> = {
   [Routes.Subnautica2VrSupport]: '/abyss/chibi-vr-comfort.webp',
   [Routes.Subnautica2XboxGamePass]: '/abyss/chibi-platform-briefing.webp',
   [Routes.Subnautica2XboxCloudGaming]: '/abyss/chibi-xbox-cloud-gaming.webp',
-  [Routes.Subnautica2SystemRequirements]: '/abyss/chibi-platform-briefing.webp',
+  [Routes.Subnautica2SystemRequirements]:
+    '/abyss/chibi-performance-settings-lab.webp',
   [Routes.Subnautica2SteamDeckSettings]:
     '/abyss/chibi-steam-deck-settings.webp',
   [Routes.Subnautica2BlackScreenFreezing]:
     '/abyss/chibi-black-screen-freezing.webp',
   [Routes.Subnautica2BestSettingsLowFps]:
-    '/abyss/chibi-best-settings-low-fps.webp',
+    '/abyss/chibi-performance-settings-lab.webp',
   [Routes.Subnautica2NotLaunching]: '/abyss/chibi-not-launching.webp',
   [Routes.Subnautica2GamePassInstallError]:
     '/abyss/chibi-game-pass-install.webp',
@@ -246,7 +247,7 @@ const guideImageByPathname: Partial<Record<Routes, string>> = {
   [Routes.Subnautica2SaveRecoveryCloudSync]:
     '/abyss/chibi-save-recovery-cloud-sync.webp',
   [Routes.Subnautica2DlssSettingsAfterHotfix3]:
-    '/abyss/chibi-platform-briefing.webp',
+    '/abyss/chibi-performance-settings-lab.webp',
   [Routes.Subnautica2EarlyAccessWorthIt]: '/abyss/chibi-platform-briefing.webp',
   [Routes.Subnautica2Hotfix2]: '/abyss/chibi-update-console.webp',
   [Routes.Subnautica2Hotfix3]: '/abyss/chibi-update-console.webp',

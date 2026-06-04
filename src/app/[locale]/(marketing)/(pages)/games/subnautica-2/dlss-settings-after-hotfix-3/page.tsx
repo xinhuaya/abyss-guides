@@ -16,7 +16,7 @@ type DlssCopy = ResourceGuideCopy & {
 };
 
 const PUBLISHED_AT = '2026-06-02';
-const UPDATED_AT = '2026-06-02';
+const UPDATED_AT = '2026-06-04';
 
 const sharedSources = [
   {
@@ -162,6 +162,14 @@ const copyByLocale: Record<string, DlssCopy> = {
         title: 'Should I follow older DLSS guides?',
         body: 'Use them carefully. Anything written before June 1, 2026 should be checked against Hotfix 3 because the DLSS and Frame Generation behavior changed.',
       },
+      {
+        title: 'Is DLSS 4.5 required to play Subnautica 2?',
+        body: 'No. DLSS is a supported NVIDIA feature, not a requirement for every PC. Use the official Steam requirements first, then treat DLSS as a performance and image-quality option.',
+      },
+      {
+        title: 'Should I use Frame Generation for low FPS?',
+        body: 'Test it separately after the patched build is installed. Frame Generation can help supported systems, but it should not hide base load, co-op load, heat, or below-spec hardware.',
+      },
     ],
     readNextTitle: 'Read next',
     related: [
@@ -198,7 +206,7 @@ const copyByLocale: Record<string, DlssCopy> = {
     ],
     sourcesTitle: 'Source note',
     sourceBody:
-      'Checked June 2, 2026 against Unknown Worlds Hotfix 3, Steam system requirements, the Xbox listing, and the Early Access roadmap. This page explains the patch impact; it does not benchmark every GPU.',
+      'Checked June 4, 2026 against Unknown Worlds Hotfix 3, Steam system requirements, the Xbox listing, and the Early Access roadmap. This page explains the patch impact; it does not benchmark every GPU.',
     cardKicker: 'Settings field card',
     cardBody:
       'A Hotfix 3 PC settings guide for DLSS 4.5, saved DLSS settings, Frame Generation availability, crash retesting, and stale launch-week advice.',

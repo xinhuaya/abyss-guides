@@ -241,6 +241,7 @@ function getChangeFrequency(
     route === Routes.Subnautica2NibblersMarrowbreachAfterHotfix3 ||
     route === Routes.Subnautica2StrikeArmorStackingAfterHotfix3 ||
     route === Routes.Subnautica2StartupCrashAfterHotfix3 ||
+    route === Routes.Subnautica2SystemRequirements ||
     route === Routes.Subnautica2SteamDeckSettings ||
     route === Routes.Subnautica2BlackScreenFreezing ||
     route === Routes.Subnautica2BestSettingsLowFps ||
@@ -285,7 +286,11 @@ function getPriority(route: (typeof staticRoutes)[number]) {
     route === Routes.Subnautica2SplitScreenCoop ||
     route === Routes.Subnautica2Crafting ||
     route === Routes.Subnautica2Updates ||
-    route === Routes.Subnautica2LawsuitResponse
+    route === Routes.Subnautica2LawsuitResponse ||
+    route === Routes.Subnautica2SystemRequirements ||
+    route === Routes.Subnautica2BestSettingsLowFps ||
+    route === Routes.Subnautica2SteamDeckSettings ||
+    route === Routes.Subnautica2DlssSettingsAfterHotfix3
   ) {
     return 0.9;
   }

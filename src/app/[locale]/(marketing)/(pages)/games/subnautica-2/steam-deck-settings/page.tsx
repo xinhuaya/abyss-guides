@@ -16,7 +16,7 @@ type SteamDeckCopy = ResourceGuideCopy & {
 };
 
 const PUBLISHED_AT = '2026-06-02';
-const UPDATED_AT = '2026-06-02';
+const UPDATED_AT = '2026-06-04';
 
 const sharedSources = [
   {
@@ -166,6 +166,14 @@ const copyByLocale: Record<string, SteamDeckCopy> = {
         title: 'Should I test co-op on handheld right away?',
         body: 'Test solo first. If solo play already stutters or overheats, co-op will make the diagnosis harder.',
       },
+      {
+        title: 'Is Subnautica 2 Steam Deck Verified?',
+        body: 'Check the current Steam compatibility label before buying for Deck. Early Access patches can change the practical feel, so this page treats Deck play as a test plan instead of a promise.',
+      },
+      {
+        title: 'What frame cap should I try first on Steam Deck?',
+        body: 'Try a stable 30 or 40 FPS cap before chasing higher settings. A steady handheld frame time is usually more useful than a peak number that drops in bases or caves.',
+      },
     ],
     readNextTitle: 'Read next',
     related: [
@@ -203,7 +211,7 @@ const copyByLocale: Record<string, SteamDeckCopy> = {
     ],
     sourcesTitle: 'Source note',
     sourceBody:
-      'Checked June 2, 2026 against the official Steam page, Valve Steam Deck Verified program notes, Unknown Worlds Hotfix 3, and the Early Access roadmap. The page uses cautious settings language because handheld performance depends on device model, patch, driver, heat, and player comfort.',
+      'Checked June 4, 2026 against the official Steam page, Valve Steam Deck Verified program notes, Unknown Worlds Hotfix 3, and the Early Access roadmap. The page uses cautious settings language because handheld performance depends on device model, patch, driver, heat, and player comfort.',
     cardKicker: 'Handheld field card',
     cardBody:
       'A portable-device checklist for Steam Deck, Windows handhelds, frame caps, heat, battery, DLSS limits, and short save tests.',

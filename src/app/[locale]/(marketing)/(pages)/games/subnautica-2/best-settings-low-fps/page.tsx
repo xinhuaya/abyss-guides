@@ -16,7 +16,7 @@ type SettingsCopy = ResourceGuideCopy & {
 };
 
 const PUBLISHED_AT = '2026-06-03';
-const UPDATED_AT = '2026-06-03';
+const UPDATED_AT = '2026-06-04';
 
 const sharedSources = [
   {
@@ -170,6 +170,14 @@ const copyByLocale: Record<string, SettingsCopy> = {
         title: 'Should Steam Deck use the same settings as a desktop PC?',
         body: 'No. A handheld needs a frame cap, heat control, and battery-aware settings. Start with the Steam Deck page if that is your main device.',
       },
+      {
+        title: 'What is the best first fix for Subnautica 2 stutter?',
+        body: 'Use a stable frame cap and retest the same short route. Random slider changes can hide the real cause, especially near bases, vehicles, and co-op sessions.',
+      },
+      {
+        title: 'Should I lower textures for low FPS?',
+        body: 'Not first. Lower textures when VRAM or shared memory is the likely limit. For general low FPS, shadows, effects, post-processing, and view distance are better first tests.',
+      },
     ],
     readNextTitle: 'Read next',
     related: [
@@ -200,7 +208,7 @@ const copyByLocale: Record<string, SettingsCopy> = {
     ],
     sourcesTitle: 'Source note',
     sourceBody:
-      'Checked June 3, 2026 against the official Steam page, Unknown Worlds Hotfix 3, and the Early Access roadmap. Page art is original Abyss Guides artwork; the video embed is the official Subnautica trailer.',
+      'Checked June 4, 2026 against the official Steam page, Unknown Worlds Hotfix 3, and the Early Access roadmap. Page art is original Abyss Guides artwork; the video embed is the official Subnautica trailer.',
     cardKicker: 'Settings field card',
     cardBody:
       'A low-FPS tuning page for frame caps, shadows, effects, DLSS, Frame Generation, handheld heat, co-op sessions, and base-heavy saves.',

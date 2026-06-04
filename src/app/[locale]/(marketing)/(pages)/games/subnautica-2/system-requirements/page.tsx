@@ -13,7 +13,7 @@ type SystemRequirementsCopy = ResourceGuideCopy & {
 };
 
 const PUBLISHED_AT = '2026-06-01';
-const UPDATED_AT = '2026-06-02';
+const UPDATED_AT = '2026-06-04';
 
 const sharedSources = [
   {
@@ -52,7 +52,7 @@ const copyByLocale: Record<string, SystemRequirementsCopy> = {
       'Before you buy or install, check the official Steam specs and leave room for Early Access changes. The game may run today, but future biomes, vehicles, and effects can raise practical expectations.',
     quickLabel: 'Quick answer',
     quickAnswer:
-      'The official Steam page lists Windows 10/11, a 64-bit system, 12 GB RAM, GTX 1660 6GB or RX 5500 XT 6GB, DirectX 12, broadband internet, and 50 GB storage as the minimum baseline. Recommended specs move up to Windows 11, 16 GB RAM, an RTX 3070 8GB or RX 6700 XT 8GB, and stronger CPUs. Hotfix 3 also matters for PC players because it fixes DLSS crashes, saved DLSS settings, Frame Generation availability in some versions, and upgrades DLSS to 4.5.',
+      'The official Steam page lists Windows 10/11, a 64-bit system, 12 GB RAM, GTX 1660 6GB or RX 5500 XT 6GB, DirectX 12, broadband internet, and 50 GB storage as the minimum baseline. Recommended specs move up to Windows 11, 16 GB RAM, an RTX 3070 8GB or RX 6700 XT 8GB, and stronger CPUs. If you are asking "can my PC run Subnautica 2?", minimum is the entry line and recommended is the safer comfort line. If you sit near minimum, read the low-FPS settings page before blaming a bug.',
     fieldNotesTitle: 'What the specs really mean',
     fieldNotes: [
       {
@@ -176,6 +176,14 @@ const copyByLocale: Record<string, SystemRequirementsCopy> = {
         title: 'Did Hotfix 3 change PC graphics advice?',
         body: 'Yes. It fixes DLSS crashes, DLSS settings not saving correctly, Frame Generation availability in some versions, and upgrades DLSS to 4.5.',
       },
+      {
+        title: 'Can my PC run Subnautica 2 if it is close to minimum?',
+        body: 'It may run, but expect compromises. Start with a frame cap, lower expensive visual settings, and avoid judging performance from one quiet area only.',
+      },
+      {
+        title: 'What GPU do I need for Subnautica 2?',
+        body: 'Steam lists GTX 1660 6GB or RX 5500 XT 6GB as the minimum GPU tier, and RTX 3070 8GB or RX 6700 XT 8GB as the recommended tier.',
+      },
     ],
     readNextTitle: 'Read next',
     related: [
@@ -199,6 +207,10 @@ const copyByLocale: Record<string, SystemRequirementsCopy> = {
       { href: Routes.Subnautica2ReleaseDate, label: 'Release Date' },
       { href: Routes.Subnautica2Hotfix3, label: 'Hotfix 3' },
       {
+        href: Routes.Subnautica2DlssSettingsAfterHotfix3,
+        label: 'DLSS Settings After Hotfix 3',
+      },
+      {
         href: Routes.Subnautica2BlackScreenFreezing,
         label: 'Black Screen and Freezing',
       },
@@ -210,7 +222,7 @@ const copyByLocale: Record<string, SystemRequirementsCopy> = {
     ],
     sourcesTitle: 'Source note',
     sourceBody:
-      'Checked June 2, 2026 against Hotfix 3, the official Steam requirements, Xbox listing, Unknown Worlds roadmap, and official trailer. The page image is Abyss Guides original art; the video is the official Subnautica embed.',
+      'Checked June 4, 2026 against Hotfix 3, the official Steam requirements, Xbox listing, Unknown Worlds roadmap, and official trailer. The page image is Abyss Guides original art; the video is the official Subnautica embed.',
     cardKicker: 'Install check',
     cardBody:
       'A buy-before-install page for players checking RAM, GPU, storage, and Early Access performance risk.',

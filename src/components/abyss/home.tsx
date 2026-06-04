@@ -104,11 +104,12 @@ const homeImageByRoute: Partial<Record<Routes, string>> = {
   [Routes.Subnautica2SilverAfterHotfix2]: '/abyss/chibi-update-console.webp',
   [Routes.Subnautica2XboxGamePass]: '/abyss/chibi-platform-briefing.webp',
   [Routes.Subnautica2XboxCloudGaming]: '/abyss/chibi-xbox-cloud-gaming.webp',
-  [Routes.Subnautica2SystemRequirements]: '/abyss/chibi-platform-briefing.webp',
+  [Routes.Subnautica2SystemRequirements]:
+    '/abyss/chibi-performance-settings-lab.webp',
   [Routes.Subnautica2BlackScreenFreezing]:
     '/abyss/chibi-black-screen-freezing.webp',
   [Routes.Subnautica2BestSettingsLowFps]:
-    '/abyss/chibi-best-settings-low-fps.webp',
+    '/abyss/chibi-performance-settings-lab.webp',
   [Routes.Subnautica2NotLaunching]: '/abyss/chibi-not-launching.webp',
   [Routes.Subnautica2GamePassInstallError]:
     '/abyss/chibi-game-pass-install.webp',
