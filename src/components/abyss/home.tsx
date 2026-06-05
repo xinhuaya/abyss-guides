@@ -95,6 +95,8 @@ const homeImageByRoute: Partial<Record<Routes, string>> = {
   [Routes.Subnautica2Beginner]: '/abyss/chibi-crafting-bench.webp',
   [Routes.Subnautica2ShallowCaveOxygenRoute]:
     '/abyss/chibi-shallow-cave-oxygen-route.webp',
+  [Routes.Subnautica2ScanFirstFragmentRoute]:
+    '/abyss/chibi-scan-first-fragment-route.webp',
   [Routes.Subnautica2Hotfix2]: '/abyss/chibi-update-console.webp',
   [Routes.Subnautica2ReleaseDate]: '/abyss/chibi-release-status-console.webp',
   [Routes.Subnautica2InteractiveMap]: '/abyss/chibi-map-exploration.webp',
@@ -544,6 +546,14 @@ const enCopy: HomeCopy = {
       href: Routes.Subnautica2ShallowCaveOxygenRoute,
       icon: CompassIcon,
       label: 'Route',
+    },
+    {
+      title: 'Scan first route',
+      description:
+        'Fragment scanning order, resource-room pauses, and when looting should wait.',
+      href: Routes.Subnautica2ScanFirstFragmentRoute,
+      icon: SearchIcon,
+      label: 'Scanner',
     },
     {
       title: 'Oxygen and depth',

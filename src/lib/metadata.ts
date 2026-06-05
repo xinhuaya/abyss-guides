@@ -18,6 +18,8 @@ const abyssMetadataImageByPathname: Record<string, string> = {
   [Routes.Subnautica2Beginner]: '/abyss/chibi-first-50-minute-route.webp',
   [Routes.Subnautica2ShallowCaveOxygenRoute]:
     '/abyss/chibi-shallow-cave-oxygen-route.webp',
+  [Routes.Subnautica2ScanFirstFragmentRoute]:
+    '/abyss/chibi-scan-first-fragment-route.webp',
   [Routes.Subnautica2Resources]: '/abyss/chibi-resource-scan.webp',
   [Routes.Subnautica2ResourceChecklist]: '/abyss/chibi-resource-checklist.webp',
   [Routes.Subnautica2Crafting]: '/abyss/chibi-crafting-bench.webp',

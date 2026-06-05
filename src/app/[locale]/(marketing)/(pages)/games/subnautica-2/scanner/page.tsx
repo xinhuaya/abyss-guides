@@ -160,6 +160,10 @@ const scannerCopy: Record<string, ScannerCopy> = {
     readNextTitle: 'Read next',
     related: [
       {
+        href: Routes.Subnautica2ScanFirstFragmentRoute,
+        label: 'Scan First Route',
+      },
+      {
         href: Routes.Subnautica2BioscannerBiomods,
         label: 'Bioscanner and Biomods',
       },

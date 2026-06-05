@@ -20,6 +20,7 @@ const staticRoutes = [
   Routes.Subnautica2,
   Routes.Subnautica2Beginner,
   Routes.Subnautica2ShallowCaveOxygenRoute,
+  Routes.Subnautica2ScanFirstFragmentRoute,
   Routes.Subnautica2Resources,
   Routes.Subnautica2ResourceChecklist,
   Routes.Subnautica2Silver,
@@ -281,6 +282,7 @@ function getPriority(route: (typeof staticRoutes)[number]) {
     route === Routes.Subnautica2ResourceChecklist ||
     route === Routes.Subnautica2Beginner ||
     route === Routes.Subnautica2ShallowCaveOxygenRoute ||
+    route === Routes.Subnautica2ScanFirstFragmentRoute ||
     route === Routes.SubnauticaMap ||
     route === Routes.Subnautica2Coop ||
     route === Routes.Subnautica2CoopPlayerCount ||

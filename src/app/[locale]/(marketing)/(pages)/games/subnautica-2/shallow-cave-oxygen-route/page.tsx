@@ -206,6 +206,10 @@ const copyByLocale: Record<string, ShallowCaveCopy> = {
     ],
     readNextTitle: 'Read next',
     related: [
+      {
+        href: Routes.Subnautica2ScanFirstFragmentRoute,
+        label: 'Scan First Route',
+      },
       { href: Routes.Subnautica2Beginner, label: 'First 50 Minutes Route' },
       { href: Routes.Subnautica2OxygenDepth, label: 'Oxygen and Depth Guide' },
       { href: Routes.Subnautica2AirTank, label: 'Air Tank Guide' },
@@ -342,6 +346,7 @@ const copyByLocale: Record<string, ShallowCaveCopy> = {
     ],
     readNextTitle: '继续阅读',
     related: [
+      { href: Routes.Subnautica2ScanFirstFragmentRoute, label: '先扫描路线' },
       { href: Routes.Subnautica2Beginner, label: '前 50 分钟新手路线' },
       { href: Routes.Subnautica2OxygenDepth, label: '氧气与深度指南' },
       { href: Routes.Subnautica2AirTank, label: '气瓶指南' },

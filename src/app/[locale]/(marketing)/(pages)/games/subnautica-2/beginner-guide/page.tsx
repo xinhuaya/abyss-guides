@@ -187,6 +187,10 @@ const beginnerCopy: Record<string, BeginnerCopy> = {
         href: Routes.Subnautica2ShallowCaveOxygenRoute,
         label: 'Shallow Cave Route',
       },
+      {
+        href: Routes.Subnautica2ScanFirstFragmentRoute,
+        label: 'Scan First Route',
+      },
       { href: Routes.Subnautica2Copper, label: 'Copper Location' },
       { href: Routes.Subnautica2Silver, label: 'Silver Location' },
       { href: Routes.Subnautica2OxygenDepth, label: 'Oxygen and Depth' },
