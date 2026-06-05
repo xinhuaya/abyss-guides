@@ -168,6 +168,10 @@ const oxygenDepthCopy: Record<string, OxygenDepthCopy> = {
     ],
     readNextTitle: 'Read next',
     related: [
+      {
+        href: Routes.Subnautica2ShallowCaveOxygenRoute,
+        label: 'Shallow Cave Route',
+      },
       { href: Routes.Subnautica2AirTank, label: 'Air Tank and O2' },
       { href: Routes.Subnautica2Rebreather, label: 'Rebreather Guide' },
       { href: Routes.Subnautica2Wakemaker, label: 'Wakemaker Guide' },

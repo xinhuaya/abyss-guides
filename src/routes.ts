@@ -10,6 +10,7 @@ export enum Routes {
   SubnauticaMap = '/games/subnautica/map',
   Subnautica2 = '/games/subnautica-2',
   Subnautica2Beginner = '/games/subnautica-2/beginner-guide',
+  Subnautica2ShallowCaveOxygenRoute = '/games/subnautica-2/shallow-cave-oxygen-route',
   Subnautica2Resources = '/games/subnautica-2/resources',
   Subnautica2ResourceChecklist = '/games/subnautica-2/resource-checklist',
   Subnautica2Silver = '/games/subnautica-2/silver',

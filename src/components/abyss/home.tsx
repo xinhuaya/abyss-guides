@@ -93,6 +93,8 @@ type HomeSectionText = {
 const homeImageByRoute: Partial<Record<Routes, string>> = {
   [Routes.SubnauticaMap]: '/abyss/chibi-subnautica-map-table.webp',
   [Routes.Subnautica2Beginner]: '/abyss/chibi-crafting-bench.webp',
+  [Routes.Subnautica2ShallowCaveOxygenRoute]:
+    '/abyss/chibi-shallow-cave-oxygen-route.webp',
   [Routes.Subnautica2Hotfix2]: '/abyss/chibi-update-console.webp',
   [Routes.Subnautica2ReleaseDate]: '/abyss/chibi-release-status-console.webp',
   [Routes.Subnautica2InteractiveMap]: '/abyss/chibi-map-exploration.webp',
@@ -535,6 +537,14 @@ const enCopy: HomeCopy = {
   popularDescription:
     'These are not homepage decoration. They are the pages players come back to while scanning, diving deeper, and building their first reliable kit.',
   popularLinks: [
+    {
+      title: 'Shallow cave route',
+      description:
+        'Video-backed cave cues, scan timing, oxygen margin, and when to turn back.',
+      href: Routes.Subnautica2ShallowCaveOxygenRoute,
+      icon: CompassIcon,
+      label: 'Route',
+    },
     {
       title: 'Oxygen and depth',
       description:

@@ -183,6 +183,10 @@ const beginnerCopy: Record<string, BeginnerCopy> = {
     ],
     readNextTitle: 'Read next',
     related: [
+      {
+        href: Routes.Subnautica2ShallowCaveOxygenRoute,
+        label: 'Shallow Cave Route',
+      },
       { href: Routes.Subnautica2Copper, label: 'Copper Location' },
       { href: Routes.Subnautica2Silver, label: 'Silver Location' },
       { href: Routes.Subnautica2OxygenDepth, label: 'Oxygen and Depth' },

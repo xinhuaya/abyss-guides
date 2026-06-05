@@ -736,6 +736,7 @@ const localizedRoutes: Partial<Record<Locale, ReadonlySet<string>>> = {
 };
 
 const zhOnlyRoutes = [
+  Routes.Subnautica2ShallowCaveOxygenRoute,
   Routes.Subnautica2ResourceChecklist,
   Routes.Subnautica2LawsuitResponse,
   Routes.Subnautica2Hotfix3,

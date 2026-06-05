@@ -155,6 +155,10 @@ const resourcesCopy: Record<string, ResourcesCopy> = {
     ],
     readNextTitle: 'Read next',
     related: [
+      {
+        href: Routes.Subnautica2ShallowCaveOxygenRoute,
+        label: 'Shallow Cave Route',
+      },
       { href: Routes.Subnautica2Beginner, label: 'Beginner Route' },
       { href: Routes.Subnautica2Copper, label: 'Copper Location' },
       { href: Routes.Subnautica2CopperIngot, label: 'Copper Ingot Guide' },
