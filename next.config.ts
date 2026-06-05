@@ -2,6 +2,33 @@ import { createMDX } from 'fumadocs-mdx/next';
 import type { NextConfig } from 'next';
 import createNextIntlPlugin from 'next-intl/plugin';
 
+const localeRedirectPrefixes = [
+  '',
+  '/en',
+  '/zh',
+  '/ru',
+  '/de',
+  '/fr',
+  '/pt-BR',
+  '/es-419',
+  '/ko',
+  '/ja',
+];
+
+function getLocalizedDestination(prefix: string, destination: string) {
+  return prefix && prefix !== '/en' ? `${prefix}${destination}` : destination;
+}
+
+function getLocalizedRedirects(sources: string[], destination: string) {
+  return sources.flatMap((source) =>
+    localeRedirectPrefixes.map((prefix) => ({
+      source: `${prefix}${source}`,
+      destination: getLocalizedDestination(prefix, destination),
+      permanent: false,
+    }))
+  );
+}
+
 /**
  * https://nextjs.org/docs/app/api-reference/config/next-config-js
  */
@@ -77,46 +104,38 @@ const nextConfig: NextConfig = {
   },
   async redirects() {
     return [
-      ...[
-        '/pricing',
-        '/tools/:path*',
-        '/blog/:path*',
-        '/docs/:path*',
-        '/ai',
-        '/waitlist',
-        '/changelog',
-        '/roadmap',
-        '/test',
-      ].flatMap((source) => [
-        {
-          source,
-          destination: '/games/subnautica-2',
-          permanent: false,
-        },
-        {
-          source: `/en${source}`,
-          destination: '/games/subnautica-2',
-          permanent: false,
-        },
-      ]),
-      ...[
-        '/auth/:path*',
-        '/dashboard/:path*',
-        '/settings/:path*',
-        '/admin/:path*',
-        '/payment/:path*',
-      ].flatMap((source) => [
-        {
-          source,
-          destination: '/',
-          permanent: false,
-        },
-        {
-          source: `/en${source}`,
-          destination: '/',
-          permanent: false,
-        },
-      ]),
+      ...getLocalizedRedirects(
+        [
+          '/pricing',
+          '/tools',
+          '/tools/:path*',
+          '/blog',
+          '/blog/:path*',
+          '/docs',
+          '/docs/:path*',
+          '/ai',
+          '/waitlist',
+          '/changelog',
+          '/roadmap',
+          '/test',
+        ],
+        '/games/subnautica-2'
+      ),
+      ...getLocalizedRedirects(
+        [
+          '/auth',
+          '/auth/:path*',
+          '/dashboard',
+          '/dashboard/:path*',
+          '/settings',
+          '/settings/:path*',
+          '/admin',
+          '/admin/:path*',
+          '/payment',
+          '/payment/:path*',
+        ],
+        '/'
+      ),
     ];
   },
 };

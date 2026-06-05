@@ -189,6 +189,39 @@ for (const route of craftingImageRoutes) {
   abyssMetadataImageByPathname[route] = '/abyss/chibi-crafting-bench.webp';
 }
 
+const noindexPathPrefixes = [
+  '/admin',
+  '/auth',
+  '/dashboard',
+  '/payment',
+  '/settings',
+  '/tools',
+  '/blog',
+  '/docs',
+];
+
+const noindexExactPathnames = new Set([
+  '/ai',
+  '/changelog',
+  '/pricing',
+  '/roadmap',
+  '/test',
+  '/waitlist',
+]);
+
+function shouldNoindexPathname(pathname?: string) {
+  if (!pathname) {
+    return false;
+  }
+
+  return (
+    noindexExactPathnames.has(pathname) ||
+    noindexPathPrefixes.some(
+      (prefix) => pathname === prefix || pathname.startsWith(`${prefix}/`)
+    )
+  );
+}
+
 /**
  * Construct the metadata object for the current page (in docs/guides)
  */
@@ -221,6 +254,7 @@ export function constructMetadata({
     : undefined;
   const routeReadyForLocale =
     locale && pathname ? isRouteReadyForLocale(pathname, locale) : true;
+  const shouldNoindex = noIndex || shouldNoindexPathname(pathname);
   const hasLocaleAlternates =
     pathname && getReadyLocalesForPathname(pathname).length > 1;
 
@@ -262,7 +296,7 @@ export function constructMetadata({
     },
     metadataBase: new URL(getBaseUrl()),
     manifest: `${getBaseUrl()}/manifest.webmanifest`,
-    ...((noIndex || !routeReadyForLocale) && {
+    ...((shouldNoindex || !routeReadyForLocale) && {
       robots: {
         index: false,
         follow: false,
