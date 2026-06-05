@@ -17,6 +17,8 @@ type BeginnerCopy = ResourceGuideCopy & {
 
 const PUBLISHED_AT = '2026-05-23';
 const UPDATED_AT = '2026-06-05';
+const BILIBILI_FIRST_RUN_SOURCE =
+  'https://www.bilibili.com/video/BV1zh5d68Eft/';
 
 const sharedSources = [
   {
@@ -28,7 +30,7 @@ const sharedSources = [
     label: 'PC Gamer beginner tips',
   },
   {
-    href: 'https://www.bilibili.com/video/BV1zh5d68Eft/',
+    href: BILIBILI_FIRST_RUN_SOURCE,
     label: 'Bilibili first-run gameplay reference',
   },
 ];
@@ -72,6 +74,43 @@ const beginnerCopy: Record<string, BeginnerCopy> = {
       'You have at least one oxygen backup or refill point.',
       'You scanned nearby fragments instead of leaving them for later.',
       'You know which material this run is supposed to solve.',
+    ],
+    referenceStillsTitle: 'Gameplay stills for the route',
+    referenceStillsIntro:
+      'These stills are not exact coordinates. They are timestamped visual checks from the linked Bilibili run, so you can compare landmarks, depth pressure, and what the player is doing before you copy the habit in your own save.',
+    referenceStills: [
+      {
+        src: '/abyss/video-stills/bv1zh5d68eft/base-check-151s.webp',
+        alt: 'Subnautica 2 base interior with early tool stations from the Bilibili first-run video at 2 minutes 31 seconds.',
+        title: 'Base check before the next swim',
+        body: 'Use the first base stop to empty storage, check tools, and decide one goal for the next dive. Leaving with a messy bag is how short routes turn into panic routes.',
+        sourceLabel: 'Source: Bilibili video 00:02:31',
+        sourceHref: BILIBILI_FIRST_RUN_SOURCE,
+      },
+      {
+        src: '/abyss/video-stills/bv1zh5d68eft/shallow-route-607s.webp',
+        alt: 'Subnautica 2 shallow cave opening and oxygen-safe return cue from the Bilibili first-run video at 10 minutes 7 seconds.',
+        title: 'Shallow landmark, not a blind tunnel',
+        body: 'Before entering a cave, look for the return shape and your oxygen margin. The useful clue here is the opening itself: if you cannot describe the exit, do not fill the inventory yet.',
+        sourceLabel: 'Source: Bilibili video 00:10:07',
+        sourceHref: BILIBILI_FIRST_RUN_SOURCE,
+      },
+      {
+        src: '/abyss/video-stills/bv1zh5d68eft/resource-scan-1063s.webp',
+        alt: 'Subnautica 2 purple resource scan moment from the Bilibili first-run video at 17 minutes 43 seconds.',
+        title: 'Scan the resource, then leave cleanly',
+        body: 'This kind of purple resource room is where beginners overstay. Scan or grab the target, check the tool prompt, then leave while the exit is still obvious.',
+        sourceLabel: 'Source: Bilibili video 00:17:43',
+        sourceHref: BILIBILI_FIRST_RUN_SOURCE,
+      },
+      {
+        src: '/abyss/video-stills/bv1zh5d68eft/cave-cue-1215s.webp',
+        alt: 'Subnautica 2 cave resource cue with handheld tool from the Bilibili first-run video at 20 minutes 15 seconds.',
+        title: 'Mark the exit before looting',
+        body: 'The screenshot is useful because it shows the problem: tool out, cave walls close, oxygen ticking. Do the scan, take the item, and leave before exploring side branches.',
+        sourceLabel: 'Source: Bilibili video 00:20:15',
+        sourceHref: BILIBILI_FIRST_RUN_SOURCE,
+      },
     ],
     contentsLabel: 'Contents',
     routeTitle: 'First-hour route',

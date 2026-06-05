@@ -45,6 +45,16 @@ export type ResourceGuideCopy = {
   fieldNotes?: ResourceGuideSection[];
   routeChecklistTitle?: string;
   routeChecklist?: string[];
+  referenceStillsTitle?: string;
+  referenceStillsIntro?: string;
+  referenceStills?: Array<{
+    src: string;
+    alt: string;
+    title: string;
+    body: string;
+    sourceLabel: string;
+    sourceHref: string;
+  }>;
   contentsLabel: string;
   routeTitle: string;
   routeSteps: ResourceGuideSection[];
@@ -766,6 +776,51 @@ export function LocalizedResourceGuidePage({
                     </ul>
                   </aside>
                 ) : null}
+              </section>
+            ) : null}
+
+            {copy.referenceStills?.length ? (
+              <section>
+                <h2 className="text-2xl font-semibold text-[#effffb] sm:text-3xl">
+                  {copy.referenceStillsTitle}
+                </h2>
+                {copy.referenceStillsIntro ? (
+                  <p className="mt-3 max-w-3xl text-sm leading-6 text-[#abc8c3] sm:text-base sm:leading-7">
+                    {copy.referenceStillsIntro}
+                  </p>
+                ) : null}
+                <div className="mt-5 grid gap-4 md:grid-cols-2">
+                  {copy.referenceStills.map((still) => (
+                    <figure
+                      className="overflow-hidden border border-cyan-200/12 bg-[#071f23]"
+                      key={still.src}
+                    >
+                      <img
+                        alt={still.alt}
+                        className="aspect-video w-full bg-[#020b0d] object-cover"
+                        loading="lazy"
+                        src={still.src}
+                      />
+                      <figcaption className="border-t border-cyan-200/12 p-5">
+                        <h3 className="font-semibold text-[#78ead7]">
+                          {still.title}
+                        </h3>
+                        <p className="mt-2 text-sm leading-6 text-[#abc8c3]">
+                          {still.body}
+                        </p>
+                        <a
+                          className="mt-3 inline-flex items-center gap-2 text-xs font-semibold uppercase tracking-[0.16em] text-[#f08b4f] hover:text-[#ffb27e]"
+                          href={still.sourceHref}
+                          rel="noreferrer"
+                          target="_blank"
+                        >
+                          {still.sourceLabel}
+                          <ExternalLinkIcon className="size-3.5" />
+                        </a>
+                      </figcaption>
+                    </figure>
+                  ))}
+                </div>
               </section>
             ) : null}
 
