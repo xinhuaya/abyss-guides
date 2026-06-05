@@ -1009,7 +1009,18 @@ const beginnerCopy: Record<string, BeginnerCopy> = {
 };
 
 function getCopy(locale: Locale): BeginnerCopy {
-  return beginnerCopy[locale] ?? beginnerCopy.en;
+  const copy = beginnerCopy[locale] ?? beginnerCopy.en;
+
+  if (copy.referenceStills?.length) {
+    return copy;
+  }
+
+  return {
+    ...copy,
+    referenceStills: beginnerCopy.en.referenceStills,
+    referenceStillsIntro: beginnerCopy.en.referenceStillsIntro,
+    referenceStillsTitle: beginnerCopy.en.referenceStillsTitle,
+  };
 }
 
 export async function generateMetadata({
