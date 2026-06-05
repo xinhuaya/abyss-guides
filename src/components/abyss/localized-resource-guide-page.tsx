@@ -93,7 +93,7 @@ const DEFAULT_GUIDE_IMAGE = '/abyss/chibi-deep-sea-hero.webp';
 
 const guideImageByPathname: Partial<Record<Routes, string>> = {
   [Routes.SubnauticaMap]: '/abyss/chibi-subnautica-map-table.webp',
-  [Routes.Subnautica2Beginner]: '/abyss/chibi-crafting-bench.webp',
+  [Routes.Subnautica2Beginner]: '/abyss/chibi-first-50-minute-route.webp',
   [Routes.Subnautica2Resources]: '/abyss/chibi-resource-scan.webp',
   [Routes.Subnautica2ResourceChecklist]: '/abyss/chibi-resource-checklist.webp',
   [Routes.Subnautica2Silver]: '/abyss/chibi-resource-scan.webp',

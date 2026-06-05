@@ -15,7 +15,7 @@ const abyssMetadataImageByPathname: Record<string, string> = {
   [Routes.Root]: '/abyss/chibi-deep-sea-hero.webp',
   [Routes.SubnauticaMap]: '/abyss/chibi-subnautica-map-table.webp',
   [Routes.Subnautica2]: '/abyss/chibi-deep-sea-hero.webp',
-  [Routes.Subnautica2Beginner]: '/abyss/chibi-crafting-bench.webp',
+  [Routes.Subnautica2Beginner]: '/abyss/chibi-first-50-minute-route.webp',
   [Routes.Subnautica2Resources]: '/abyss/chibi-resource-scan.webp',
   [Routes.Subnautica2ResourceChecklist]: '/abyss/chibi-resource-checklist.webp',
   [Routes.Subnautica2Crafting]: '/abyss/chibi-crafting-bench.webp',

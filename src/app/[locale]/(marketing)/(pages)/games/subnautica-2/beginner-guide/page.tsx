@@ -16,7 +16,7 @@ type BeginnerCopy = ResourceGuideCopy & {
 };
 
 const PUBLISHED_AT = '2026-05-23';
-const UPDATED_AT = '2026-05-28';
+const UPDATED_AT = '2026-06-05';
 
 const sharedSources = [
   {
@@ -27,19 +27,23 @@ const sharedSources = [
     href: 'https://www.pcgamer.com/games/survival-crafting/subnautica-2-tips/',
     label: 'PC Gamer beginner tips',
   },
+  {
+    href: 'https://www.bilibili.com/video/BV1zh5d68Eft/',
+    label: 'Bilibili first-run gameplay reference',
+  },
 ];
 
 const beginnerCopy: Record<string, BeginnerCopy> = {
   en: {
     metadata: {
-      title: 'Subnautica 2 Beginner Route - First 60 Minutes Guide',
+      title: 'Subnautica 2 Beginner Route - First 50-60 Minutes Guide',
       description:
-        'A spoiler-light Subnautica 2 beginner route for the first 60 minutes, including Copper, Silver, Scanner, oxygen, storage, and common mistakes.',
+        'A spoiler-light Subnautica 2 beginner route for the first 50-60 minutes, including Copper, Silver, Scanner, oxygen, storage, and common mistakes.',
     },
-    eyebrow: 'Subnautica 2 first 60 minutes',
-    title: 'Subnautica 2 Beginner Route: First 60 Minutes',
+    eyebrow: 'Subnautica 2 first 50-60 minutes',
+    title: 'Subnautica 2 Beginner Route: First 50-60 Minutes',
     description:
-      'Your first hour should not be a heroic deep dive. It should be a calm loop: stabilize, scan, build a short resource route, then push outward only when the route has a reason.',
+      'Your first hour should not be a heroic deep dive. It should be a calm loop: stabilize, scan, build a short resource route, then push outward only when the route has a reason. A recent Bilibili first-run video is useful because it shows how quickly a player can drift between base work, caves, PDA text, and oxygen pressure.',
     quickLabel: 'Quick answer',
     quickAnswer:
       'In the first 60 minutes, stay close to the Lifepod, craft the early tool chain, scan before looting, collect Copper for batteries and Scanner progress, find Silver for O2 upgrades, and avoid building a large base until a route proves useful. Subnautica 2 is Early Access, so keep the plan flexible after patches.',
@@ -56,6 +60,10 @@ const beginnerCopy: Record<string, BeginnerCopy> = {
       {
         title: 'End the hour with one boring loop',
         body: 'The best first-hour result is not a rare find. It is one route you can repeat for Copper, Silver, scans, or base pieces without thinking too hard on the return.',
+      },
+      {
+        title: 'Video routes are evidence, not coordinates',
+        body: 'The Bilibili run shows the rhythm well: short base checks, quick scans, cautious cave dips, and frequent returns. Use it to copy the habit, not the exact path. Your save, patch version, and spawn-side landmarks can change the route.',
       },
     ],
     routeChecklistTitle: 'Before pushing farther',
@@ -83,6 +91,10 @@ const beginnerCopy: Record<string, BeginnerCopy> = {
       {
         title: '45-60 minutes: choose a repeatable route',
         body: 'Pick one short loop for Copper, Silver, scans, or base materials. A boring route that works beats a dramatic swim you barely survive.',
+      },
+      {
+        title: 'After the first loop: review the video, not your memory',
+        body: 'If you watched a long first-run video, pause after your own first loop and compare categories: did the player check base storage, scan a fragment, gather oxygen-safe materials, or push a new cave? That is more useful than copying every turn.',
       },
     ],
     visualTitle: 'First-hour flow',
@@ -149,7 +161,7 @@ const beginnerCopy: Record<string, BeginnerCopy> = {
     ],
     sourcesTitle: 'Source note',
     sourceBody:
-      'Checked May 28, 2026 against the official Steam Early Access listing and current beginner tips. Routes, recipes, and balance can change.',
+      'Checked June 5, 2026 against the official Steam Early Access listing, PC Gamer beginner tips, and a Bilibili first-run gameplay reference. The Bilibili video is used for route rhythm and visual context, not copied screenshots or exact coordinates. Routes, recipes, and balance can change during Early Access.',
     cardKicker: 'Starter route card',
     cardBody:
       'Spoiler-light first-hour route with tools, oxygen, scans, and resource loops.',
